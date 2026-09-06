@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-01T00:00:00Z",
+  "generated_at": "2026-09-06T00:00:00Z",
   "minimum_reshade_version": "6.7.0",
   "games": [
     {
@@ -4449,6 +4449,24 @@
           ]
         }
       }
+    },
+    {
+      "id": "metal-gear-solid-4-guns-of-the-patriots",
+      "name": "Metal Gear Solid 4: Guns of the Patriots",
+      "architecture": "X64",
+      "status": "working",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "2492670",
+          "tier": 100
+        }
+      ],
+      "package": {
+        "release_asset": "Luma-Metal_Gear_Solid_4_Guns_of_the_Patriots.zip",
+        "addon_file": "Luma-Metal Gear Solid 4 Guns of the Patriots.addon"
+      },
+      "profile": "game"
     },
     {
       "id": "metaphor-refantazio",

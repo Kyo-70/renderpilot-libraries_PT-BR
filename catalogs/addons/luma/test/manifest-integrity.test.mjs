@@ -37,7 +37,7 @@ test("manifest integrity - committed Luma v1 document is well-formed and interna
   assert.ok(Array.isArray(manifest.games), "Manifest should have a games array");
   assert.ok(manifest.games.length > 0, "Manifest should have at least one game");
   assert.equal(manifest.schema_version, 1);
-  assert.equal(manifest.games.length, 191);
+  assert.equal(manifest.games.length, 192);
   assert.match(manifest.generated_at, /^\d{4}-\d{2}-\d{2}T00:00:00Z$/);
   assert.match(manifest.minimum_reshade_version, /^\d+\.\d+\.\d+$/);
   assert.equal("host" in manifest, false);
@@ -119,6 +119,23 @@ test("manifest integrity - committed Luma v1 document is well-formed and interna
   assert.equal(medalOfHonor.package.release_asset, "Luma-Medal_of_Honor_Airborne-x32.zip");
   assert.equal(medalOfHonor.package.addon_file, "Luma-Medal of Honor Airborne.addon");
   assert.deepEqual(medalOfHonor.requirements.managed_dependency, dependency);
+
+  const mgs4 = manifest.games.find(
+    (t) => t.id === "metal-gear-solid-4-guns-of-the-patriots",
+  );
+  assert.ok(mgs4, "Metal Gear Solid 4 must be present");
+  assert.equal(mgs4.architecture, "X64");
+  assert.equal(mgs4.status, "working");
+  assert.equal(mgs4.profile, "game");
+  assert.deepEqual(mgs4.match, [{ kind: "steam_appid", value: "2492670", tier: 100 }]);
+  assert.equal(
+    mgs4.package.release_asset,
+    "Luma-Metal_Gear_Solid_4_Guns_of_the_Patriots.zip",
+  );
+  assert.equal(
+    mgs4.package.addon_file,
+    "Luma-Metal Gear Solid 4 Guns of the Patriots.addon",
+  );
 
   const metaphor = manifest.games.find((t) => t.id === METAPHOR_REFANTAZIO);
   assert.ok(metaphor, `${METAPHOR_REFANTAZIO} must be present`);
