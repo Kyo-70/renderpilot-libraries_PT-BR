@@ -281,6 +281,7 @@ export const addonCatalogs = Object.freeze({
     "renodx",
     {
       wiki: "wiki_games.json",
+      curatedGames: "curated_games.json",
       overlay: "match_overlay.json",
       pending: "pending_match.json",
       unmatched: "unmatched.json",

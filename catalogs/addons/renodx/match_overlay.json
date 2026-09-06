@@ -39,9 +39,6 @@
   "abzu": {
     "appids": ["384190"]
   },
-  "ace-combat-7": {
-    "appids": ["502500"]
-  },
   "adorable-adventures": {
     "appids": ["3840230"]
   },
@@ -208,6 +205,9 @@
   "assault-android-cactus": {
     "appids": ["250110"]
   },
+  "assetto-corsa-rally": {
+    "appids": ["3917090"]
+  },
   "asterigos-curse-of-the-stars": {
     "appids": ["1731070"]
   },
@@ -370,10 +370,6 @@
   "bionic-bay": {
     "appids": ["1928690"]
   },
-  "bioshock-remastered": {
-    "slug": "bioshock",
-    "appids": ["409710"]
-  },
   "biped": {
     "appids": ["1071870"]
   },
@@ -381,7 +377,6 @@
     "appids": ["582660"]
   },
   "black-myth-wukong": {
-    "slug": "bmw",
     "appids": ["2358720"]
   },
   "blacktail": {
@@ -482,6 +477,9 @@
   },
   "chorus": {
     "appids": ["1153640"]
+  },
+  "chromatic-conundrum": {
+    "appids": ["3081690"]
   },
   "circuit-superstars": {
     "appids": ["1097130"]
@@ -718,9 +716,6 @@
   "dnf-duel": {
     "appids": ["1216060"]
   },
-  "doom-eternal": {
-    "appids": ["782330"]
-  },
   "doom-the-dark-ages": {
     "appids": ["3017860"]
   },
@@ -785,9 +780,6 @@
   },
   "dying-light": {
     "appids": ["239140"]
-  },
-  "dying-light-2": {
-    "appids": ["534380"]
   },
   "dying-light-the-beast": {
     "appids": ["3008130"]
@@ -1166,9 +1158,6 @@
   "hollowbody": {
     "appids": ["2123640"]
   },
-  "honkai-star-rail": {
-    "exe": "StarRail.exe"
-  },
   "hordelord": {
     "appids": ["3676260"]
   },
@@ -1351,9 +1340,6 @@
   "kona-ii-brume": {
     "appids": ["1229020"]
   },
-  "l-a-noire": {
-    "appids": ["110800"]
-  },
   "lasers": {
     "appids": ["2675290"]
   },
@@ -1385,25 +1371,16 @@
     "appids": ["1677110"]
   },
   "like-a-dragon-gaiden-the-man-who-erased-his-name": {
-    "external": {
-      "url": "https://www.nexusmods.com/likeadragonpirateyakuzainhawaii/mods/31",
-      "label_key": "renodx.external.nexus"
-    },
-    "appids": ["2375550"]
+    "appids": ["2375550"],
+    "download_url": "https://marat569.github.io/renodx/renodx-yakuzapirates.addon64"
   },
   "like-a-dragon-infinite-wealth": {
-    "external": {
-      "url": "https://www.nexusmods.com/likeadragonpirateyakuzainhawaii/mods/31",
-      "label_key": "renodx.external.nexus"
-    },
-    "appids": ["2072450"]
+    "appids": ["2072450"],
+    "download_url": "https://marat569.github.io/renodx/renodx-yakuzapirates.addon64"
   },
   "like-a-dragon-pirate-yakuza-in-hawaii": {
-    "external": {
-      "url": "https://www.nexusmods.com/likeadragonpirateyakuzainhawaii/mods/31",
-      "label_key": "renodx.external.nexus"
-    },
-    "appids": ["3061810"]
+    "appids": ["3061810"],
+    "download_url": "https://marat569.github.io/renodx/renodx-yakuzapirates.addon64"
   },
   "little-big-adventure-twinsen-s-quest": {
     "appids": ["2318070"]
@@ -1422,6 +1399,9 @@
   },
   "little-nightmares-ii": {
     "appids": ["860510"]
+  },
+  "little-nightmares-ii-enhanced": {
+    "ignore": true
   },
   "little-nightmares-iii": {
     "appids": ["1392860"]
@@ -1498,12 +1478,6 @@
   "manor-lords": {
     "appids": ["1363080"]
   },
-  "mario-kart-8-deluxe": {
-    "external": {
-      "url": "https://www.nexusmods.com/mariokart8deluxe/mods/57",
-      "label_key": "renodx.external.nexus"
-    }
-  },
   "mars-attracts": {
     "appids": ["2760580"]
   },
@@ -1530,6 +1504,9 @@
   },
   "max-payne-3": {
     "appids": ["204100"]
+  },
+  "meccha-chameleon": {
+    "appids": ["4704690"]
   },
   "megabonk": {
     "appids": ["3405340"]
@@ -1737,9 +1714,6 @@
   "order-13": {
     "appids": ["2259310"]
   },
-  "ori-and-the-blind-forest-definitive-edition": {
-    "appids": ["387290"]
-  },
   "ori-and-the-will-of-the-wisps": {
     "appids": ["1057090"]
   },
@@ -1813,9 +1787,6 @@
   },
   "persona-5-royal": {
     "appids": ["1687950"]
-  },
-  "persona-5-royal-2": {
-    "ignore": true
   },
   "persona-5-strikers": {
     "download_url": "https://github.com/pmnoxx/renodx/releases/download/snapshot/renodx-_p5s.addon64",
@@ -2047,9 +2018,6 @@
   },
   "sea-of-stars": {
     "appids": ["1244090"]
-  },
-  "sea-of-thieves": {
-    "appids": ["1172620"]
   },
   "sekiro-shadows-die-twice": {
     "appids": ["814380"]
@@ -2285,6 +2253,9 @@
   "subnautica": {
     "appids": ["264710"]
   },
+  "subnautica-2": {
+    "appids": ["1962700"]
+  },
   "subnautica-below-zero": {
     "appids": ["848450"]
   },
@@ -2398,6 +2369,9 @@
   "the-awesome-adventures-of-captain-spirit": {
     "appids": ["845070"]
   },
+  "the-blood-of-dawnwalker": {
+    "appids": ["3751260"]
+  },
   "the-cabin-factory": {
     "appids": ["3311740"]
   },
@@ -2409,6 +2383,10 @@
   },
   "the-elder-scrolls-iv-oblivion-remastered": {
     "appids": ["2623190"]
+  },
+  "the-enjenir": {
+    "appids": ["1800940"],
+    "exe": "The_Enjenir.exe"
   },
   "the-eternal-cylinder": {
     "appids": ["865680"]
@@ -2535,9 +2513,6 @@
   "the-witness": {
     "appids": ["210970"]
   },
-  "this-war-of-mine": {
-    "appids": ["282070"]
-  },
   "threshold": {
     "appids": ["2580020"]
   },
@@ -2650,10 +2625,7 @@
         "appid": "1668540"
       }
     ],
-    "external": {
-      "url": "https://discord.com/channels/1408098019194310818/1410855640112566375",
-      "label_key": "renodx.external.discord"
-    }
+    "download_url": "https://danaforever.github.io/renodx/renodx-senkiseki.addon64"
   },
   "trails-through-daybreak-1-2": {
     "split": [
@@ -2840,12 +2812,6 @@
     "download_url": "https://sgtforgery.github.io/renodx/renodx-xcom2.addon64",
     "appids": ["268500"]
   },
-  "xenoblade-chronicles-x-definitive-edition": {
-    "external": {
-      "url": "https://www.nexusmods.com/xenobladechroniclesx/mods/12",
-      "label_key": "renodx.external.nexus"
-    }
-  },
   "xf-extreme-formula": {
     "appids": ["2539910"]
   },
@@ -2866,10 +2832,7 @@
   },
   "ys-x-nordics": {
     "appids": ["2570810", "2731870"],
-    "external": {
-      "url": "https://www.nexusmods.com/ysxnordics/mods/11",
-      "label_key": "renodx.external.nexus"
-    }
+    "download_url": "https://marat569.github.io/renodx/renodx-ys10.addon64"
   },
   "ys-x-proud-nordics": {
     "appids": ["3821790", "3949290"],

@@ -12,6 +12,7 @@ import { addonCatalogs, repoRoot, sharedFiles } from "../../../scripts/catalog.m
 
 const FILES = Object.freeze({
   wiki: addonCatalogs.renodx.sources.wiki,
+  curatedGames: addonCatalogs.renodx.sources.curatedGames,
   overlay: addonCatalogs.renodx.sources.overlay,
   exeCache: sharedFiles.steamExeCache,
   outputs: {
@@ -45,6 +46,7 @@ runGenerateManifestMain(() => ({
   },
   readInputs: ({ exeCache, generatedAt }) => ({
     wiki: readJsonFile(FILES.wiki, "wiki_games.json"),
+    curatedGames: readJsonFile(FILES.curatedGames, "curated_games.json"),
     overlay: readJsonFile(FILES.overlay, "match_overlay.json"),
     exeCache,
     generatedAt,

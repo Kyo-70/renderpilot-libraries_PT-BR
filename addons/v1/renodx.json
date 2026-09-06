@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-05T00:00:00Z",
+  "generated_at": "2026-09-06T00:00:00Z",
   "games": [
     {
       "id": "007-first-light",
@@ -872,27 +872,6 @@
       }
     },
     {
-      "id": "black-myth-wukong",
-      "name": "Black Myth: Wukong",
-      "architecture": "X64",
-      "status": "working",
-      "match": [
-        {
-          "kind": "steam_appid",
-          "value": "2358720",
-          "tier": 100
-        },
-        {
-          "kind": "exe_name",
-          "value": "b1.exe",
-          "tier": 70
-        }
-      ],
-      "addon": {
-        "slug": "bmw"
-      }
-    },
-    {
       "id": "black-desert-online",
       "name": "Black Desert Online",
       "architecture": "X64",
@@ -1497,7 +1476,7 @@
     {
       "id": "dishonored",
       "name": "Dishonored",
-      "architecture": "X64",
+      "architecture": "X86",
       "status": "working",
       "match": [
         {
@@ -2790,15 +2769,8 @@
         }
       ],
       "addon": {
-        "slug": "senkiseki"
-      },
-      "availability": {
-        "kind": "external",
-        "url": "https://discord.com/channels/1408098019194310818/1410855640112566375",
-        "message": {
-          "id": "renodx.external.discord",
-          "fallback_text": "Get the add-on from Discord, then install the downloaded file."
-        }
+        "slug": "senkiseki",
+        "source": "https://danaforever.github.io/renodx/renodx-senkiseki.addon64"
       }
     },
     {
@@ -2819,15 +2791,8 @@
         }
       ],
       "addon": {
-        "slug": "senkiseki"
-      },
-      "availability": {
-        "kind": "external",
-        "url": "https://discord.com/channels/1408098019194310818/1410855640112566375",
-        "message": {
-          "id": "renodx.external.discord",
-          "fallback_text": "Get the add-on from Discord, then install the downloaded file."
-        }
+        "slug": "senkiseki",
+        "source": "https://danaforever.github.io/renodx/renodx-senkiseki.addon64"
       }
     },
     {
@@ -2848,15 +2813,8 @@
         }
       ],
       "addon": {
-        "slug": "senkiseki"
-      },
-      "availability": {
-        "kind": "external",
-        "url": "https://discord.com/channels/1408098019194310818/1410855640112566375",
-        "message": {
-          "id": "renodx.external.discord",
-          "fallback_text": "Get the add-on from Discord, then install the downloaded file."
-        }
+        "slug": "senkiseki",
+        "source": "https://danaforever.github.io/renodx/renodx-senkiseki.addon64"
       }
     },
     {
@@ -3049,15 +3007,8 @@
         }
       ],
       "addon": {
-        "slug": "yakuzapirates"
-      },
-      "availability": {
-        "kind": "external",
-        "url": "https://www.nexusmods.com/likeadragonpirateyakuzainhawaii/mods/31",
-        "message": {
-          "id": "renodx.external.nexus",
-          "fallback_text": "Get the add-on from Nexus Mods, then install the downloaded file."
-        }
+        "slug": "yakuzapirates",
+        "source": "https://marat569.github.io/renodx/renodx-yakuzapirates.addon64"
       }
     },
     {
@@ -3078,15 +3029,8 @@
         }
       ],
       "addon": {
-        "slug": "yakuzapirates"
-      },
-      "availability": {
-        "kind": "external",
-        "url": "https://www.nexusmods.com/likeadragonpirateyakuzainhawaii/mods/31",
-        "message": {
-          "id": "renodx.external.nexus",
-          "fallback_text": "Get the add-on from Nexus Mods, then install the downloaded file."
-        }
+        "slug": "yakuzapirates",
+        "source": "https://marat569.github.io/renodx/renodx-yakuzapirates.addon64"
       }
     },
     {
@@ -3102,15 +3046,8 @@
         }
       ],
       "addon": {
-        "slug": "yakuzapirates"
-      },
-      "availability": {
-        "kind": "external",
-        "url": "https://www.nexusmods.com/likeadragonpirateyakuzainhawaii/mods/31",
-        "message": {
-          "id": "renodx.external.nexus",
-          "fallback_text": "Get the add-on from Nexus Mods, then install the downloaded file."
-        }
+        "slug": "yakuzapirates",
+        "source": "https://marat569.github.io/renodx/renodx-yakuzapirates.addon64"
       }
     },
     {
@@ -4250,7 +4187,7 @@
         }
       ],
       "addon": {
-        "slug": "routine"
+        "slug": "robocop"
       }
     },
     {
@@ -5175,7 +5112,7 @@
     {
       "id": "titan-quest-anniversary-edition",
       "name": "Titan Quest Anniversary Edition",
-      "architecture": "X64",
+      "architecture": "X86",
       "status": "working",
       "match": [
         {
@@ -5578,15 +5515,8 @@
         }
       ],
       "addon": {
-        "slug": "ys10"
-      },
-      "availability": {
-        "kind": "external",
-        "url": "https://www.nexusmods.com/ysxnordics/mods/11",
-        "message": {
-          "id": "renodx.external.nexus",
-          "fallback_text": "Get the add-on from Nexus Mods, then install the downloaded file."
-        }
+        "slug": "ys10",
+        "source": "https://marat569.github.io/renodx/renodx-ys10.addon64"
       }
     },
     {
@@ -5642,7 +5572,7 @@
       "id": "abiotic-factor",
       "name": "Abiotic Factor",
       "architecture": "X64",
-      "status": "construction",
+      "status": "working",
       "match": [
         {
           "kind": "steam_appid",
@@ -5656,14 +5586,15 @@
         }
       ],
       "addon": {
-        "slug": "unrealengine"
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
       }
     },
     {
       "id": "abzu",
       "name": "ABZÛ",
       "architecture": "X64",
-      "status": "working",
+      "status": "construction",
       "match": [
         {
           "kind": "steam_appid",
@@ -5677,7 +5608,8 @@
         }
       ],
       "addon": {
-        "slug": "unrealengine"
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
       }
     },
     {
@@ -5847,7 +5779,8 @@
         }
       ],
       "addon": {
-        "slug": "unrealengine"
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
       }
     },
     {
@@ -6093,7 +6026,7 @@
       "id": "choo-choo-charles",
       "name": "Choo-Choo Charles",
       "architecture": "X64",
-      "status": "construction",
+      "status": "working",
       "match": [
         {
           "kind": "steam_appid",
@@ -6102,7 +6035,8 @@
         }
       ],
       "addon": {
-        "slug": "unrealengine"
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
       }
     },
     {
@@ -6383,7 +6317,8 @@
         }
       ],
       "addon": {
-        "slug": "unrealengine"
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
       }
     },
     {
@@ -6656,7 +6591,7 @@
       "id": "flyknight",
       "name": "FlyKnight",
       "architecture": "X64",
-      "status": "working",
+      "status": "construction",
       "match": [
         {
           "kind": "steam_appid",
@@ -6665,7 +6600,8 @@
         }
       ],
       "addon": {
-        "slug": "unrealengine"
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
       }
     },
     {
@@ -6734,14 +6670,15 @@
         }
       ],
       "addon": {
-        "slug": "unrealengine"
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
       }
     },
     {
       "id": "ghostrunner-2",
       "name": "Ghostrunner 2",
       "architecture": "X64",
-      "status": "working",
+      "status": "construction",
       "match": [
         {
           "kind": "steam_appid",
@@ -6750,7 +6687,8 @@
         }
       ],
       "addon": {
-        "slug": "unrealengine"
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
       }
     },
     {
@@ -6903,7 +6841,8 @@
         }
       ],
       "addon": {
-        "slug": "unrealengine"
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
       }
     },
     {
@@ -6951,7 +6890,8 @@
         }
       ],
       "addon": {
-        "slug": "unrealengine"
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
       }
     },
     {
@@ -7116,7 +7056,8 @@
         }
       ],
       "addon": {
-        "slug": "unrealengine"
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
       }
     },
     {
@@ -7307,12 +7248,13 @@
         }
       ],
       "addon": {
-        "slug": "unrealengine"
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
       }
     },
     {
       "id": "little-nightmares-enhanced-edition",
-      "name": "Little Nightmares (Enhanced Edition)",
+      "name": "Little Nightmares Enhanced",
       "architecture": "X64",
       "status": "working",
       "match": [
@@ -7320,10 +7262,16 @@
           "kind": "steam_appid",
           "value": "2149010",
           "tier": 100
+        },
+        {
+          "kind": "exe_name",
+          "value": "Little_Nightmares_Enhanced.exe",
+          "tier": 70
         }
       ],
       "addon": {
-        "slug": "unrealengine"
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
       }
     },
     {
@@ -7336,10 +7284,21 @@
           "kind": "steam_appid",
           "value": "860510",
           "tier": 100
+        },
+        {
+          "kind": "exe_name",
+          "value": "Little Nightmares II.exe",
+          "tier": 70
+        },
+        {
+          "kind": "exe_name",
+          "value": "Little_Nightmares_II_Enhanced.exe",
+          "tier": 70
         }
       ],
       "addon": {
-        "slug": "unrealengine"
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
       }
     },
     {
@@ -8063,7 +8022,8 @@
         }
       ],
       "addon": {
-        "slug": "unrealengine"
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
       }
     },
     {
@@ -8091,7 +8051,7 @@
       "id": "scorn",
       "name": "Scorn",
       "architecture": "X64",
-      "status": "construction",
+      "status": "working",
       "match": [
         {
           "kind": "steam_appid",
@@ -8105,7 +8065,8 @@
         }
       ],
       "addon": {
-        "slug": "unrealengine"
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
       }
     },
     {
@@ -8153,7 +8114,8 @@
         }
       ],
       "addon": {
-        "slug": "unrealengine"
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
       }
     },
     {
@@ -8355,7 +8317,8 @@
         }
       ],
       "addon": {
-        "slug": "unrealengine"
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
       }
     },
     {
@@ -8600,7 +8563,7 @@
       "id": "tokyo-xtreme-racer",
       "name": "Tokyo Xtreme Racer",
       "architecture": "X64",
-      "status": "working",
+      "status": "construction",
       "match": [
         {
           "kind": "steam_appid",
@@ -8609,7 +8572,8 @@
         }
       ],
       "addon": {
-        "slug": "unrealengine"
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
       }
     },
     {
@@ -8842,7 +8806,8 @@
         }
       ],
       "addon": {
-        "slug": "unrealengine"
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
       }
     },
     {
@@ -8859,6 +8824,113 @@
       ],
       "addon": {
         "slug": "unrealengine"
+      }
+    },
+    {
+      "id": "assetto-corsa-rally",
+      "name": "Assetto Corsa Rally",
+      "architecture": "X64",
+      "status": "working",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "3917090",
+          "tier": 100
+        }
+      ],
+      "addon": {
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
+      }
+    },
+    {
+      "id": "chromatic-conundrum",
+      "name": "Chromatic Conundrum",
+      "architecture": "X64",
+      "status": "working",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "3081690",
+          "tier": 100
+        }
+      ],
+      "addon": {
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
+      }
+    },
+    {
+      "id": "meccha-chameleon",
+      "name": "MECCHA CHAMELEON",
+      "architecture": "X64",
+      "status": "working",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "4704690",
+          "tier": 100
+        }
+      ],
+      "addon": {
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
+      }
+    },
+    {
+      "id": "subnautica-2",
+      "name": "Subnautica 2",
+      "architecture": "X64",
+      "status": "working",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "1962700",
+          "tier": 100
+        }
+      ],
+      "addon": {
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
+      }
+    },
+    {
+      "id": "the-blood-of-dawnwalker",
+      "name": "The Blood of Dawnwalker",
+      "architecture": "X64",
+      "status": "construction",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "3751260",
+          "tier": 100
+        }
+      ],
+      "addon": {
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
+      }
+    },
+    {
+      "id": "the-enjenir",
+      "name": "The Enjenir",
+      "architecture": "X64",
+      "status": "working",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "1800940",
+          "tier": 100
+        },
+        {
+          "kind": "exe_name",
+          "value": "The_Enjenir.exe",
+          "tier": 70
+        }
+      ],
+      "addon": {
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
       }
     },
     {
@@ -9178,7 +9250,7 @@
         }
       ],
       "addon": {
-        "slug": "angerfoot"
+        "slug": "unityengine"
       }
     },
     {
@@ -9274,7 +9346,7 @@
         }
       ],
       "addon": {
-        "slug": "artofrally"
+        "slug": "unityengine"
       }
     },
     {
@@ -9418,7 +9490,7 @@
         }
       ],
       "addon": {
-        "slug": "awakenastralblade"
+        "slug": "unityengine"
       }
     },
     {
@@ -9754,7 +9826,7 @@
         }
       ],
       "addon": {
-        "slug": "betonbrutal"
+        "slug": "unityengine"
       }
     },
     {
@@ -10058,7 +10130,7 @@
         }
       ],
       "addon": {
-        "slug": "childrenofthesun"
+        "slug": "unityengine"
       }
     },
     {
@@ -10383,7 +10455,7 @@
         }
       ],
       "addon": {
-        "slug": "deathsdoor"
+        "slug": "unityengine"
       }
     },
     {
@@ -10436,7 +10508,7 @@
         }
       ],
       "addon": {
-        "slug": "descenders"
+        "slug": "unityengine"
       }
     },
     {
@@ -11113,7 +11185,7 @@
         }
       ],
       "addon": {
-        "slug": "fe"
+        "slug": "unityengine"
       }
     },
     {
@@ -11518,7 +11590,7 @@
         }
       ],
       "addon": {
-        "slug": "haste"
+        "slug": "unityengine"
       }
     },
     {
@@ -11646,7 +11718,7 @@
         }
       ],
       "addon": {
-        "slug": "hollowcocoon"
+        "slug": "unityengine"
       }
     },
     {
@@ -12158,7 +12230,7 @@
         }
       ],
       "addon": {
-        "slug": "lastepoch"
+        "slug": "unityengine"
       }
     },
     {
@@ -12318,7 +12390,7 @@
         }
       ],
       "addon": {
-        "slug": "lostinrandom"
+        "slug": "unityengine"
       }
     },
     {
@@ -13038,7 +13110,7 @@
         }
       ],
       "addon": {
-        "slug": "osirisnewdawn"
+        "slug": "unityengine"
       }
     },
     {
@@ -13059,7 +13131,7 @@
         }
       ],
       "addon": {
-        "slug": "outerwilds"
+        "slug": "unityengine"
       }
     },
     {
@@ -13271,38 +13343,6 @@
       }
     },
     {
-      "id": "pillars-of-eternity",
-      "name": "Pillars of Eternity",
-      "architecture": "X64",
-      "status": "construction",
-      "match": [
-        {
-          "kind": "steam_appid",
-          "value": "291650",
-          "tier": 100
-        }
-      ],
-      "addon": {
-        "slug": "unityengine"
-      }
-    },
-    {
-      "id": "pillars-of-eternity-ii-deadfire",
-      "name": "Pillars of Eternity II: Deadfire",
-      "architecture": "X64",
-      "status": "construction",
-      "match": [
-        {
-          "kind": "steam_appid",
-          "value": "560130",
-          "tier": 100
-        }
-      ],
-      "addon": {
-        "slug": "unityengine"
-      }
-    },
-    {
       "id": "plan-b-terraform",
       "name": "Plan B: Terraform",
       "architecture": "X64",
@@ -13359,6 +13399,38 @@
         {
           "kind": "steam_appid",
           "value": "1409160",
+          "tier": 100
+        }
+      ],
+      "addon": {
+        "slug": "unityengine"
+      }
+    },
+    {
+      "id": "pillars-of-eternity",
+      "name": "Pillars of Eternity",
+      "architecture": "X64",
+      "status": "construction",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "291650",
+          "tier": 100
+        }
+      ],
+      "addon": {
+        "slug": "unityengine"
+      }
+    },
+    {
+      "id": "pillars-of-eternity-ii-deadfire",
+      "name": "Pillars of Eternity II: Deadfire",
+      "architecture": "X64",
+      "status": "construction",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "560130",
           "tier": 100
         }
       ],
@@ -13447,6 +13519,27 @@
       }
     },
     {
+      "id": "prince-of-persia-the-lost-crown",
+      "name": "Prince of Persia: The Lost Crown",
+      "architecture": "X64",
+      "status": "unknown",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "2751000",
+          "tier": 100
+        },
+        {
+          "kind": "exe_name",
+          "value": "TheLostCrown.exe",
+          "tier": 70
+        }
+      ],
+      "addon": {
+        "slug": "unityengine"
+      }
+    },
+    {
       "id": "pummel-party",
       "name": "Pummel Party",
       "architecture": "X64",
@@ -13523,7 +13616,7 @@
         }
       ],
       "addon": {
-        "slug": "reka"
+        "slug": "unityengine"
       }
     },
     {
@@ -13571,7 +13664,7 @@
         }
       ],
       "addon": {
-        "slug": "reveil"
+        "slug": "unityengine"
       }
     },
     {
@@ -13811,7 +13904,7 @@
         }
       ],
       "addon": {
-        "slug": "shadowsawakening"
+        "slug": "unityengine"
       }
     },
     {
@@ -15149,7 +15242,7 @@
         }
       ],
       "addon": {
-        "slug": "vrising"
+        "slug": "unityengine"
       }
     },
     {
@@ -15389,7 +15482,7 @@
         }
       ],
       "addon": {
-        "slug": "windblown"
+        "slug": "unityengine"
       }
     },
     {
@@ -15458,7 +15551,7 @@
         }
       ],
       "addon": {
-        "slug": "xfextremeformula"
+        "slug": "unityengine"
       }
     },
     {
@@ -15495,7 +15588,7 @@
         }
       ],
       "addon": {
-        "slug": "unityengine"
+        "slug": "control-hdr-ultrawide-dlss-rt-patch"
       },
       "availability": {
         "kind": "external",
@@ -15524,7 +15617,7 @@
         }
       ],
       "addon": {
-        "slug": "unityengine"
+        "slug": "dark-souls-2-ds2lightingengine-sotfs"
       },
       "availability": {
         "kind": "external",
@@ -15553,7 +15646,7 @@
         }
       ],
       "addon": {
-        "slug": "unityengine"
+        "slug": "dark-souls-3-ds3lightingengine-light"
       },
       "availability": {
         "kind": "external",
@@ -15582,7 +15675,7 @@
         }
       ],
       "addon": {
-        "slug": "unityengine"
+        "slug": "prey-remastered-luma"
       },
       "availability": {
         "kind": "external",
@@ -15594,226 +15687,32 @@
       }
     },
     {
-      "id": "dying-light-2",
-      "name": "Dying Light 2",
+      "id": "black-myth-wukong",
+      "name": "Black Myth: Wukong",
       "architecture": "X64",
-      "status": "unknown",
+      "status": "working",
       "match": [
         {
           "kind": "steam_appid",
-          "value": "534380",
+          "value": "2358720",
           "tier": 100
         },
         {
           "kind": "exe_name",
-          "value": "DyingLightGame_x64_rwdi.exe",
+          "value": "b1.exe",
           "tier": 70
         }
       ],
       "addon": {
-        "slug": "dyinglight2"
-      }
-    },
-    {
-      "id": "l-a-noire",
-      "name": "L.A. Noire",
-      "architecture": "X86",
-      "status": "unknown",
-      "match": [
-        {
-          "kind": "steam_appid",
-          "value": "110800",
-          "tier": 100
-        },
-        {
-          "kind": "exe_name",
-          "value": "PlayLAN.exe",
-          "tier": 70
-        }
-      ],
-      "addon": {
-        "slug": "lanoire"
-      }
-    },
-    {
-      "id": "doom-eternal",
-      "name": "Doom Eternal",
-      "architecture": "X64",
-      "status": "unknown",
-      "match": [
-        {
-          "kind": "steam_appid",
-          "value": "782330",
-          "tier": 100
-        }
-      ],
-      "addon": {
-        "slug": "doom-eternal"
-      }
-    },
-    {
-      "id": "sea-of-thieves",
-      "name": "Sea of Thieves",
-      "architecture": "X64",
-      "status": "unknown",
-      "match": [
-        {
-          "kind": "steam_appid",
-          "value": "1172620",
-          "tier": 100
-        },
-        {
-          "kind": "exe_name",
-          "value": "SeaOfThieves.exe",
-          "tier": 70
-        }
-      ],
-      "addon": {
-        "slug": "seaofthieves"
-      }
-    },
-    {
-      "id": "this-war-of-mine",
-      "name": "This War of mine",
-      "architecture": "X64",
-      "status": "unknown",
-      "match": [
-        {
-          "kind": "steam_appid",
-          "value": "282070",
-          "tier": 100
-        }
-      ],
-      "addon": {
-        "slug": "unityengine"
-      }
-    },
-    {
-      "id": "ori-and-the-blind-forest-definitive-edition",
-      "name": "Ori and the Blind Forest: Definitive Edition",
-      "architecture": "X64",
-      "status": "unknown",
-      "match": [
-        {
-          "kind": "steam_appid",
-          "value": "387290",
-          "tier": 100
-        },
-        {
-          "kind": "exe_name",
-          "value": "OriDE.exe",
-          "tier": 70
-        }
-      ],
-      "addon": {
-        "slug": "unityengine"
-      }
-    },
-    {
-      "id": "bioshock-remastered",
-      "name": "Bioshock Remastered",
-      "architecture": "X64",
-      "status": "unknown",
-      "match": [
-        {
-          "kind": "steam_appid",
-          "value": "409710",
-          "tier": 100
-        },
-        {
-          "kind": "exe_name",
-          "value": "BioshockHD.exe",
-          "tier": 70
-        }
-      ],
-      "addon": {
-        "slug": "bioshock"
-      }
-    },
-    {
-      "id": "prince-of-persia-the-lost-crown",
-      "name": "Prince of Persia The Lost Crown",
-      "architecture": "X64",
-      "status": "unknown",
-      "match": [
-        {
-          "kind": "steam_appid",
-          "value": "2751000",
-          "tier": 100
-        },
-        {
-          "kind": "exe_name",
-          "value": "TheLostCrown.exe",
-          "tier": 70
-        }
-      ],
-      "addon": {
-        "slug": "unityengine"
-      }
-    },
-    {
-      "id": "ace-combat-7",
-      "name": "Ace Combat 7",
-      "architecture": "X64",
-      "status": "unknown",
-      "match": [
-        {
-          "kind": "steam_appid",
-          "value": "502500",
-          "tier": 100
-        },
-        {
-          "kind": "exe_name",
-          "value": "Ace7Game.exe",
-          "tier": 70
-        }
-      ],
-      "addon": {
-        "slug": "acecombat7"
-      }
-    },
-    {
-      "id": "honkai-star-rail",
-      "name": "Honkai: Star Rail",
-      "architecture": "X64",
-      "status": "unknown",
-      "match": [
-        {
-          "kind": "exe_name",
-          "value": "StarRail.exe",
-          "tier": 70
-        }
-      ],
-      "addon": {
-        "slug": "unityengine"
-      }
-    },
-    {
-      "id": "wuchang-fallen-feathers",
-      "name": "Wuchang: Fallen Feathers",
-      "architecture": "X64",
-      "status": "unknown",
-      "match": [
-        {
-          "kind": "steam_appid",
-          "value": "2277560",
-          "tier": 100
-        },
-        {
-          "kind": "exe_name",
-          "value": "Project_Plague.exe",
-          "tier": 70
-        }
-      ],
-      "addon": {
-        "slug": "unityengine"
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
       }
     },
     {
       "id": "borderlands-4",
       "name": "Borderlands 4",
       "architecture": "X64",
-      "status": "unknown",
+      "status": "working",
       "match": [
         {
           "kind": "steam_appid",
@@ -15827,7 +15726,30 @@
         }
       ],
       "addon": {
-        "slug": "borderlands4"
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
+      }
+    },
+    {
+      "id": "wuchang-fallen-feathers",
+      "name": "Wuchang: Fallen Feathers",
+      "architecture": "X64",
+      "status": "working",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "2277560",
+          "tier": 100
+        },
+        {
+          "kind": "exe_name",
+          "value": "Project_Plague.exe",
+          "tier": 70
+        }
+      ],
+      "addon": {
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
       }
     }
   ],

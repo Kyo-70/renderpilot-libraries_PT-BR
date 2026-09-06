@@ -22,8 +22,91 @@ test("manifest integrity - committed RenoDX v1 document is well-formed and inter
     "Manifest should have at least one engine profile",
   );
   assert.equal(manifest.schema_version, 1);
-  assert.equal(manifest.games.length, 879);
+  assert.equal(manifest.games.length, 876);
   assert.match(manifest.generated_at, /^\d{4}-\d{2}-\d{2}T00:00:00Z$/);
+
+  const enjenir = manifest.games.find((t) => t.id === "the-enjenir");
+  assert.ok(enjenir, "The Enjenir must be present in manifest");
+  assert.equal(enjenir.addon.slug, "ue-extended");
+  assert.equal(
+    enjenir.addon.source,
+    "https://marat569.github.io/renodx/renodx-ue-extended.addon64",
+  );
+  assert.ok(enjenir.match.some((r) => r.kind === "steam_appid" && r.value === "1800940"));
+  assert.ok(
+    enjenir.match.some((r) => r.kind === "exe_name" && r.value === "The_Enjenir.exe"),
+  );
+
+  const ln2 = manifest.games.find((t) => t.id === "little-nightmares-ii");
+  assert.ok(ln2, "Little Nightmares II must be present in manifest");
+  assert.equal(ln2.addon.slug, "ue-extended");
+  assert.equal(
+    ln2.addon.source,
+    "https://marat569.github.io/renodx/renodx-ue-extended.addon64",
+  );
+  assert.ok(ln2.match.some((r) => r.kind === "steam_appid" && r.value === "860510"));
+  assert.ok(
+    ln2.match.some((r) => r.kind === "exe_name" && r.value === "Little Nightmares II.exe"),
+  );
+  assert.ok(
+    ln2.match.some(
+      (r) => r.kind === "exe_name" && r.value === "Little_Nightmares_II_Enhanced.exe",
+    ),
+  );
+  assert.equal(
+    manifest.games.find((t) => t.id === "little-nightmares-ii-enhanced"),
+    undefined,
+    "duplicate wiki entry little-nightmares-ii-enhanced must be ignored in favor of little-nightmares-ii",
+  );
+
+  const lnEnhanced = manifest.games.find(
+    (t) => t.id === "little-nightmares-enhanced-edition",
+  );
+  assert.ok(lnEnhanced, "Little Nightmares Enhanced Edition must be present in manifest");
+  assert.equal(lnEnhanced.addon.slug, "ue-extended");
+  assert.equal(
+    lnEnhanced.addon.source,
+    "https://marat569.github.io/renodx/renodx-ue-extended.addon64",
+  );
+  assert.ok(
+    lnEnhanced.match.some((r) => r.kind === "steam_appid" && r.value === "2149010"),
+  );
+
+  const wukong = manifest.games.find((t) => t.id === "black-myth-wukong");
+  assert.ok(wukong, "Black Myth: Wukong must be present in manifest");
+  assert.equal(wukong.addon.slug, "ue-extended");
+  assert.equal(
+    wukong.addon.source,
+    "https://marat569.github.io/renodx/renodx-ue-extended.addon64",
+  );
+  assert.ok(wukong.match.some((r) => r.kind === "steam_appid" && r.value === "2358720"));
+
+  const bl4 = manifest.games.find((t) => t.id === "borderlands-4");
+  assert.ok(bl4, "Borderlands 4 must be present in manifest");
+  assert.equal(bl4.addon.slug, "ue-extended");
+  assert.equal(
+    bl4.addon.source,
+    "https://marat569.github.io/renodx/renodx-ue-extended.addon64",
+  );
+
+  const wuchang = manifest.games.find((t) => t.id === "wuchang-fallen-feathers");
+  assert.ok(wuchang, "Wuchang: Fallen Feathers must be present in manifest");
+  assert.equal(wuchang.addon.slug, "ue-extended");
+  assert.equal(
+    wuchang.addon.source,
+    "https://marat569.github.io/renodx/renodx-ue-extended.addon64",
+  );
+
+  assert.equal(
+    manifest.games.find((t) => t.id === "honkai-star-rail"),
+    undefined,
+    "Deprecated mods must not be in manifest",
+  );
+  assert.equal(
+    manifest.games.find((t) => t.id === "sea-of-thieves"),
+    undefined,
+    "Deprecated mods must not be in manifest",
+  );
 
   const spooky = manifest.games.find(
     (title) => title.id === "spooky-s-jump-scare-mansion-hd-renovation",
@@ -44,8 +127,8 @@ test("manifest integrity - committed RenoDX v1 document is well-formed and inter
   const scorn = manifest.games.find((title) => title.id === "scorn");
   assert.ok(scorn, "Scorn must be present in the generated manifest");
   assert.equal(scorn.architecture, "X64");
-  assert.equal(scorn.status, "construction");
-  assert.equal(scorn.addon.slug, "unrealengine");
+  assert.equal(scorn.status, "working");
+  assert.equal(scorn.addon.slug, "ue-extended");
   assert.ok(
     scorn.match.some((rule) => rule.kind === "steam_appid" && rule.value === "698670"),
   );

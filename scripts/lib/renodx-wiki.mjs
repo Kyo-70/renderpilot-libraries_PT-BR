@@ -7,7 +7,7 @@ import {
 } from "./wiki-markdown.mjs";
 
 export const ADDON_URL_RE =
-  /(https:\/\/[^/]+\/[^/]+\/renodx[a-zA-Z0-9_-]*\/releases\/download\/[^/]+\/renodx-[a-zA-Z0-9_-]+\.addon(32|64))/i;
+  /(https:\/\/[^\s\)\"'>]+\/renodx-[a-zA-Z0-9_-]+\.addon(32|64))/i;
 export const NEXUS_URL_RE =
   /(https:\/\/www\.nexusmods\.com\/(?:[a-zA-Z0-9_-]+\/mods\/\d+|mods\/\d+(?:\?[^\s\)\"'>]+)?))/i;
 export const DISCORD_URL_RE = /(https:\/\/(?:ptb\.)?discord\.com\/channels\/\d+\/\d+)/i;
@@ -59,6 +59,7 @@ export function parseWikiRow(columns, columnsMapping, engineContext) {
   let addonSlug = addonUrl?.match(/renodx-([a-zA-Z0-9_-]+)\.addon(?:32|64)/i)?.[1] ?? null;
   if (!addonUrl && engineContext === "unity") addonSlug = "unityengine";
   if (!addonUrl && engineContext === "unreal") addonSlug = "unrealengine";
+  if (!addonUrl && engineContext === "ue-extended") addonSlug = "ue-extended";
 
   return {
     name,
@@ -93,6 +94,7 @@ export function parseRenodxWikiRows(markdown) {
   let sawModsTable = false;
 
   for (const table of extractMarkdownTables(markdown)) {
+    if (table.isDeprecated) continue;
     const columnsMapping = getModsTableHeaderColumns(table.headers);
     if (!columnsMapping) continue;
 
@@ -177,8 +179,14 @@ function getOverlayEntry(overlay, id) {
   return entry;
 }
 
+export const GENERIC_ENGINE_SLUGS = new Set(["unityengine", "unrealengine", "ue-extended"]);
+
 function preferredSlugForGame({ id, row, overlayEntry, oldGame }) {
-  const slug = overlayEntry?.slug ?? row.addonSlug ?? oldGame?.slug ?? id;
+  let fallbackOldSlug = oldGame?.slug;
+  if (GENERIC_ENGINE_SLUGS.has(fallbackOldSlug) && row.addonSlug !== fallbackOldSlug) {
+    fallbackOldSlug = null;
+  }
+  const slug = overlayEntry?.slug ?? row.addonSlug ?? fallbackOldSlug ?? id;
   if (typeof slug !== "string" || slug.length === 0) {
     throw new Error(`Could not resolve a non-empty slug for "${row.name}" (${id}).`);
   }
@@ -210,6 +218,9 @@ function uniqueNonEmpty(values) {
 }
 
 function resolveOfficialAddon({ addonUrl, slug, arch, name, officialAssets }) {
+  if (GENERIC_ENGINE_SLUGS.has(slug)) {
+    return { isOfficial: false, slug, arch };
+  }
   let isOfficial = isOfficialAddonUrl(addonUrl);
   if (officialAssets.size > 0 && officialAssets.has(addonAssetName(slug, arch))) {
     isOfficial = true;
@@ -299,18 +310,34 @@ export function reconcileRenodxWiki({ rows, existingWiki, overlay, officialAsset
   const lookups = buildIdLookups(existingWiki);
   const wikiGames = [];
   const seenIds = new Set();
+  const gameIndexById = new Map();
   const warnings = [];
   const stats = { official: 0, download_url: 0, external: 0, unchanged: 0 };
 
   for (const row of rows) {
     const id = resolveId(row.name, lookups);
     if (seenIds.has(id)) {
+      const existingIndex = gameIndexById.get(id);
+      if (existingIndex !== undefined) {
+        const existing = wikiGames[existingIndex];
+        if (existing.slug === "unrealengine" && row.addonSlug === "ue-extended") {
+          wikiGames[existingIndex] = {
+            name: row.name,
+            slug: "ue-extended",
+            arch: row.arch,
+            status: row.status,
+            id,
+          };
+          continue;
+        }
+      }
       warnings.push(
         `Wiki produced duplicate id "${id}" while processing "${row.name}", skipping duplicate row.`,
       );
       continue;
     }
     seenIds.add(id);
+    gameIndexById.set(id, wikiGames.length);
 
     const overlayEntry = getOverlayEntry(nextOverlay, id);
     const preferredSlug = preferredSlugForGame({

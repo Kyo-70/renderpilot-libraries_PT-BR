@@ -209,3 +209,38 @@ test("v1 schema accepts constraints sample and rejects empty/unknown shapes", ()
   assert.equal(validate(minimalManifest({ proxy_dll: "path/to.dll" })), false);
   assert.equal(validate(minimalManifest({ proxy_dll: "path\\to.dll" })), false);
 });
+
+test("buildManifest merges curatedGames and attaches ue-extended canonical source", () => {
+  const result = buildManifest({
+    generatedAt: "2026-06-27T00:00:00Z",
+    wiki: [game("some-game", "Some Game")],
+    curatedGames: [
+      {
+        id: "black-myth-wukong",
+        name: "Black Myth: Wukong",
+        slug: "ue-extended",
+        downloadUrl: "https://marat569.github.io/renodx/renodx-ue-extended.addon64",
+        arch: "X64",
+        status: "working",
+      },
+    ],
+    overlay: {
+      "some-game": { appid: "10" },
+      "black-myth-wukong": { appid: "2358720" },
+    },
+    warn: () => {},
+  });
+
+  assert.equal(result.manifest.games.length, 2);
+  const wukong = result.manifest.games.find((g) => g.id === "black-myth-wukong");
+  assert.ok(wukong);
+  assert.equal(wukong.addon.slug, "ue-extended");
+  assert.equal(
+    wukong.addon.source,
+    "https://marat569.github.io/renodx/renodx-ue-extended.addon64",
+  );
+  assert.ok(wukong.match.some((r) => r.kind === "steam_appid" && r.value === "2358720"));
+
+  const validate = compileRenodxSchema();
+  assert.equal(validate(result.manifest), true, JSON.stringify(validate.errors, null, 2));
+});

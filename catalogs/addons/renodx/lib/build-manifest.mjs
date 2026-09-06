@@ -53,18 +53,29 @@ export const GENERICS = deepFreeze([
  */
 export function buildManifest({
   wiki,
+  curatedGames = [],
   overlay = {},
   exeCache = {},
   generatedAt,
   warn = console.warn,
 } = {}) {
   const wikiGames = normalizeWikiGames(wiki);
+  const normalizedCurated = normalizeCuratedGames(curatedGames);
   const overlayById = assertOverlayShape(overlay);
-  const wikiIds = new Set(wikiGames.map((game) => game.id));
 
-  validateOverlay(overlayById, wikiIds, warn);
+  const seenInputIds = new Set();
+  const allInputGames = [];
+  for (const game of [...wikiGames, ...normalizedCurated]) {
+    if (seenInputIds.has(game.id)) {
+      throw new Error(`Duplicate game id "${game.id}" across wiki and curated inputs`);
+    }
+    seenInputIds.add(game.id);
+    allInputGames.push(game);
+  }
 
-  const activeAppids = collectMatchedAppids(wikiGames, overlayById);
+  validateOverlay(overlayById, seenInputIds, warn);
+
+  const activeAppids = collectMatchedAppids(allInputGames, overlayById);
   const { exeToAppids, exeCache: normalizedExeCache } = normalizeExeCache(
     exeCache,
     activeAppids,
@@ -79,7 +90,7 @@ export function buildManifest({
   const pending = [];
   const seenOutputIds = new Set();
 
-  const emit = ({ id, name, slug, arch, status, entry, context }) => {
+  const emit = ({ id, name, slug, arch, status, entry, downloadUrl, context }) => {
     reserveOutputId(seenOutputIds, id, context);
 
     const appids = normalizeAppids(entry, context);
@@ -107,11 +118,12 @@ export function buildManifest({
         derivedExes: uniqueExesForAppids(appids),
         overlay: entry,
         category: categoryOf(entry, context),
+        downloadUrl,
       }),
     );
   };
 
-  for (const game of wikiGames) {
+  for (const game of allInputGames) {
     const entry = overlayById[game.id] ?? {};
     const baseSlug = normalizeSlug(entry.slug ?? game.slug, `overlay "${game.id}".slug`);
 
@@ -127,6 +139,7 @@ export function buildManifest({
       arch: game.arch,
       status: game.status,
       entry,
+      downloadUrl: game.download_url,
       context: `overlay "${game.id}"`,
     });
   }
@@ -160,6 +173,7 @@ function emitSplits({ game, entry, emit }) {
       arch: game.arch,
       status: game.status,
       entry: splitOverlay,
+      downloadUrl: game.download_url,
       context,
     });
   }
@@ -176,10 +190,17 @@ function makeGame({
   derivedExes,
   overlay,
   category,
+  downloadUrl,
 }) {
   const gameStatus = normalizedStatus(status, VALID_STATUSES);
   const addon = { slug };
-  if (overlay.download_url) addon.source = overlay.download_url;
+  const effectiveDownloadUrl =
+    overlay.download_url ??
+    downloadUrl ??
+    (slug === "ue-extended"
+      ? "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
+      : undefined);
+  if (effectiveDownloadUrl) addon.source = effectiveDownloadUrl;
 
   const game = {
     id,
@@ -219,6 +240,31 @@ function constraintsFromOverlay(overlay) {
   }
 
   return Object.keys(constraints).length > 0 ? constraints : null;
+}
+
+function normalizeCuratedGames(curated) {
+  if (curated === undefined || curated === null) return [];
+  if (!Array.isArray(curated)) {
+    throw new Error("curated_games.json must be an array");
+  }
+
+  return curated.map((game, index) => {
+    const context = `curated_games.json[${index}]`;
+    assertPlainObject(game, context);
+    return {
+      ...game,
+      id: requiredNonEmptyString(game.id, `${context}.id`),
+      name: requiredNonEmptyString(game.name, `${context}.name`),
+      slug: normalizeSlug(
+        requiredNonEmptyString(game.slug, `${context}.slug`),
+        `${context}.slug`,
+      ),
+      arch: requiredNonEmptyString(game.arch, `${context}.arch`),
+      download_url: game.download_url
+        ? requiredNonEmptyString(game.download_url, `${context}.download_url`)
+        : undefined,
+    };
+  });
 }
 
 function normalizeWikiGames(wiki) {

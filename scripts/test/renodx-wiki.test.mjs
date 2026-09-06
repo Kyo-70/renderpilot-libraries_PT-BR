@@ -419,3 +419,163 @@ test("reconcileRenodxWiki resolves official addon architecture when preferred sl
   assert.equal(result.wikiGames[0].slug, "asscreed1");
   assert.equal(result.stats.official, 1);
 });
+
+test("extractMarkdownTables resets engineContext on # and ## headings", () => {
+  const markdown = `
+### Unity Engine
+| Name | Status | Notes |
+|:---|:---|:---|
+| Unity Game | :white_check_mark: | Works |
+
+### Unreal Engine
+| Name | Status | Notes |
+|:---|:---|:---|
+| UE Game | :white_check_mark: | Works |
+
+# Related Mods
+| Name | Maintainer | Links | Status |
+|:---|:---|:---|:---|
+| External Mod | Author | [Nexus](https://nexusmods.com/1) | :white_check_mark: |
+
+## Other Section
+| Name | Maintainer | Links | Status |
+|:---|:---|:---|:---|
+| Standalone Game | Author | https://github.com/foo/releases/download/v1/renodx-foo.addon64 | :white_check_mark: |
+  `;
+
+  const tables = extractMarkdownTables(markdown);
+  assert.equal(tables.length, 4);
+  assert.equal(tables[0].engineContext, "unity");
+  assert.equal(tables[1].engineContext, "unreal");
+  assert.equal(tables[2].engineContext, null);
+  assert.equal(tables[3].engineContext, null);
+});
+
+test("parseWikiRow matches github.io addon URLs", () => {
+  const columnsMapping = { nameIndex: 0, statusIndex: 3, linksIndex: 2, notesIndex: -1 };
+  const row = parseWikiRow(
+    [
+      "Wuchang: Fallen Feathers",
+      "OopyDoopy (Jon)",
+      "[Snapshot](https://oopydoopy.github.io/renodx/renodx-wuchang.addon64)",
+      "Superseded by Generic Unreal Engine mod",
+    ],
+    columnsMapping,
+    null,
+  );
+
+  assert.ok(row);
+  assert.equal(row.name, "Wuchang: Fallen Feathers");
+  assert.equal(row.addonUrl, "https://oopydoopy.github.io/renodx/renodx-wuchang.addon64");
+  assert.equal(row.addonSlug, "wuchang");
+  assert.equal(row.arch, "X64");
+  assert.equal(row.status, "unknown");
+});
+
+test("reconcileRenodxWiki discards poisoned generic engine slug for external/standalone game", () => {
+  const result = reconcileRenodxWiki({
+    rows: [
+      {
+        name: "Dark Souls 2 - DS2LightingEngine SotFS",
+        status: "construction",
+        addonUrl: null,
+        arch: "X64",
+        addonSlug: null,
+        nexusUrl: "https://www.nexusmods.com/darksouls2/mods/1146",
+        discordUrl: null,
+      },
+    ],
+    existingWiki: [
+      {
+        id: "dark-souls-2-ds2lightingengine-sotfs",
+        name: "Dark Souls 2 - DS2LightingEngine SotFS",
+        slug: "unityengine",
+        arch: "X64",
+        status: "construction",
+      },
+    ],
+    overlay: {
+      "dark-souls-2-ds2lightingengine-sotfs": {
+        external: {
+          url: "https://www.nexusmods.com/darksouls2/mods/1146",
+          label_key: "renodx.external.nexus",
+        },
+      },
+    },
+    officialAssets: new Set(),
+  });
+
+  assert.equal(result.wikiGames[0].slug, "dark-souls-2-ds2lightingengine-sotfs");
+  assert.notEqual(result.wikiGames[0].slug, "unityengine");
+});
+
+test("extractMarkdownTables detects isDeprecated and ue-extended engine context", () => {
+  const markdown = `
+### UE Extended
+| Name | Status | Notes |
+|:---|:---|:---|
+| Extended Game | :white_check_mark: | Works |
+
+### Deprecated mods
+| Name | Status | Notes |
+|:---|:---|:---|
+| Old Broken Mod | :x: | Broken |
+  `;
+
+  const tables = extractMarkdownTables(markdown);
+  assert.equal(tables.length, 2);
+  assert.equal(tables[0].engineContext, "ue-extended");
+  assert.equal(tables[0].isDeprecated, false);
+  assert.equal(tables[1].isDeprecated, true);
+});
+
+test("parseRenodxWikiRows skips tables flagged with isDeprecated", () => {
+  const markdown = `
+### UE Extended
+| Name | Status | Notes |
+|:---|:---|:---|
+| Extended Game | :white_check_mark: | Works |
+
+### Deprecated mods
+| Name | Status | Notes |
+|:---|:---|:---|
+| Deprecated Game | :x: | Old |
+  `;
+
+  const rows = parseRenodxWikiRows(markdown);
+  assert.equal(rows.length, 1);
+  assert.equal(rows[0].name, "Extended Game");
+  assert.equal(rows[0].addonSlug, "ue-extended");
+});
+
+test("reconcileRenodxWiki upgrades unrealengine to ue-extended when encountered", () => {
+  const result = reconcileRenodxWiki({
+    rows: [
+      {
+        name: "Some Game",
+        status: "working",
+        addonUrl: null,
+        arch: "X64",
+        addonSlug: "unrealengine",
+        nexusUrl: null,
+        discordUrl: null,
+      },
+      {
+        name: "Some Game",
+        status: "working",
+        addonUrl: "https://marat569.github.io/renodx/renodx-ue-extended.addon64",
+        arch: "X64",
+        addonSlug: "ue-extended",
+        nexusUrl: null,
+        discordUrl: null,
+      },
+    ],
+    existingWiki: [],
+    overlay: {},
+    officialAssets: new Set(),
+  });
+
+  assert.equal(result.wikiGames.length, 1);
+  assert.equal(result.wikiGames[0].slug, "ue-extended");
+  assert.equal(result.wikiGames[0].status, "working");
+});

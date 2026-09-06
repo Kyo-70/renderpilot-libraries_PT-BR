@@ -44,15 +44,24 @@ export function extractMarkdownTables(markdown) {
   const tables = [];
   let currentTable = null;
   let engineContext = null;
+  let isDeprecated = false;
 
   for (const line of String(markdown).split(/\r?\n/)) {
     const trimmed = line.trim();
 
-    if (trimmed.startsWith("### ")) {
-      const heading = trimmed.substring(4).toLowerCase();
-      if (heading.includes("unity")) {
+    const headingMatch = trimmed.match(/^#{1,6}\s+(.*)$/);
+    if (headingMatch) {
+      const heading = headingMatch[1].trim().toLowerCase();
+      isDeprecated = heading.includes("deprecated");
+      if (heading.includes("ue extended") || heading.includes("ue-extended")) {
+        engineContext = "ue-extended";
+      } else if (heading.includes("unity")) {
         engineContext = "unity";
-      } else if (heading.includes("unreal")) {
+      } else if (
+        heading.includes("unreal") ||
+        heading.startsWith("ue ") ||
+        heading === "ue"
+      ) {
         engineContext = "unreal";
       } else {
         engineContext = null;
@@ -74,6 +83,7 @@ export function extractMarkdownTables(markdown) {
         headers: cells.map((cell) => cell.trim().toLowerCase()),
         rows: [],
         engineContext,
+        isDeprecated,
       };
       tables.push(currentTable);
     } else {
