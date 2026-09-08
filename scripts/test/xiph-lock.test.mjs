@@ -3,7 +3,7 @@ import { readFile, readdir } from "node:fs/promises";
 import path from "node:path";
 import test from "node:test";
 
-import { resolveRepoPath } from "../catalog.mjs";
+import { resolveRepoPath } from "../lib/repo-paths.mjs";
 import { assertXiphLock, assertXiphLockExtendsBaseline } from "../lib/xiph-lock.mjs";
 import {
   XIPH_BUILD_MATRIX,

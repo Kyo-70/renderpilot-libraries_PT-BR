@@ -4,7 +4,7 @@ import { execFile } from "node:child_process";
 import { readFile } from "node:fs/promises";
 import { promisify } from "node:util";
 
-import { resolveRepoPath } from "./catalog.mjs";
+import { resolveRepoPath } from "./lib/repo-paths.mjs";
 import { parseCliArgs } from "./lib/cli-args.mjs";
 import { runCliMain } from "./lib/cli-main.mjs";
 import { assertXiphCatalogMatchesLock } from "./lib/xiph-catalog-state.mjs";

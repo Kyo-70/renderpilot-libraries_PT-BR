@@ -2,7 +2,7 @@
 
 import path from "node:path";
 
-import { repoRoot } from "./catalog.mjs";
+import { repoRoot } from "./lib/repo-paths.mjs";
 import { parseCliArgs } from "./lib/cli-args.mjs";
 import { UsageError } from "./lib/common.mjs";
 import { runCliMain } from "./lib/cli-main.mjs";

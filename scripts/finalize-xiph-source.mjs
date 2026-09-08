@@ -5,7 +5,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { isDeepStrictEqual } from "node:util";
 
-import { resolveRepoPath } from "./catalog.mjs";
+import { resolveRepoPath } from "./lib/repo-paths.mjs";
 import {
   persistPreparedLibraryObject,
   prepareCompressedDll,

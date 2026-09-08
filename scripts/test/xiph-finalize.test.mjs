@@ -6,7 +6,7 @@ import test from "node:test";
 
 import * as prettier from "prettier";
 
-import { resolveRepoPath } from "../catalog.mjs";
+import { resolveRepoPath } from "../lib/repo-paths.mjs";
 import { finalizeXiphSource } from "../finalize-xiph-source.mjs";
 import { sha256Hex } from "../lib/hash.mjs";
 import { assertXiphCatalogMatchesLock } from "../lib/xiph-catalog-state.mjs";

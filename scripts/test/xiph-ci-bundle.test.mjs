@@ -4,7 +4,7 @@ import os from "node:os";
 import path from "node:path";
 import test from "node:test";
 
-import { resolveRepoPath } from "../catalog.mjs";
+import { resolveRepoPath } from "../lib/repo-paths.mjs";
 import { sha256Hex } from "../lib/hash.mjs";
 import { buildVendorSnapshot } from "../lib/library-catalog.mjs";
 import {

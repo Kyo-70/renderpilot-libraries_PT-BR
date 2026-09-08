@@ -5,7 +5,7 @@ import path from "node:path";
 import { isDeepStrictEqual, promisify } from "node:util";
 import { constants as zlibConstants, zstdCompress, zstdDecompress } from "node:zlib";
 
-import { resolveRepoPath } from "../catalog.mjs";
+import { resolveRepoPath } from "./repo-paths.mjs";
 import { sha256Hex } from "./hash.mjs";
 import {
   assertLegalDocumentPayload,

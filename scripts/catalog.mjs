@@ -7,16 +7,11 @@
 // Both validation and publication scripts should import from this module so
 // validation and publishing rules cannot drift apart.
 
-import path from "node:path";
-
 import { assertLibraryVendorRegistry } from "./lib/library-source-adapters.mjs";
 import { generatedLibrarySourceKind } from "./lib/library-source-kinds.mjs";
+import { repoRoot, resolveRepoPath } from "./lib/repo-paths.mjs";
 
-const moduleDir = import.meta.dirname;
-
-export const repoRoot = path.resolve(moduleDir, "..");
-
-export const resolveRepoPath = (...segments) => path.join(repoRoot, ...segments);
+export { repoRoot, resolveRepoPath };
 
 export const sharedFiles = Object.freeze({
   steamExeCache: resolveRepoPath("scripts", "steam-appid-exe.json"),
