@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-06T00:00:00Z",
+  "generated_at": "2026-09-08T00:00:00Z",
   "games": [
     {
       "id": "007-first-light",
@@ -5594,7 +5594,7 @@
       "id": "abzu",
       "name": "ABZÛ",
       "architecture": "X64",
-      "status": "construction",
+      "status": "working",
       "match": [
         {
           "kind": "steam_appid",
@@ -5608,8 +5608,7 @@
         }
       ],
       "addon": {
-        "slug": "ue-extended",
-        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
+        "slug": "unrealengine"
       }
     },
     {
@@ -6591,7 +6590,7 @@
       "id": "flyknight",
       "name": "FlyKnight",
       "architecture": "X64",
-      "status": "construction",
+      "status": "working",
       "match": [
         {
           "kind": "steam_appid",
@@ -6600,8 +6599,7 @@
         }
       ],
       "addon": {
-        "slug": "ue-extended",
-        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
+        "slug": "unrealengine"
       }
     },
     {
@@ -6678,7 +6676,7 @@
       "id": "ghostrunner-2",
       "name": "Ghostrunner 2",
       "architecture": "X64",
-      "status": "construction",
+      "status": "working",
       "match": [
         {
           "kind": "steam_appid",
@@ -6687,8 +6685,7 @@
         }
       ],
       "addon": {
-        "slug": "ue-extended",
-        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
+        "slug": "unrealengine"
       }
     },
     {
@@ -6746,7 +6743,8 @@
         }
       ],
       "addon": {
-        "slug": "unrealengine"
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
       }
     },
     {
@@ -7362,7 +7360,8 @@
         }
       ],
       "addon": {
-        "slug": "unrealengine"
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
       }
     },
     {
@@ -7963,7 +7962,7 @@
     },
     {
       "id": "rv-there-yet",
-      "name": "RV There Yet?",
+      "name": "RV There Yet",
       "architecture": "X64",
       "status": "working",
       "match": [
@@ -7974,7 +7973,8 @@
         }
       ],
       "addon": {
-        "slug": "unrealengine"
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
       }
     },
     {
@@ -8563,7 +8563,7 @@
       "id": "tokyo-xtreme-racer",
       "name": "Tokyo Xtreme Racer",
       "architecture": "X64",
-      "status": "construction",
+      "status": "working",
       "match": [
         {
           "kind": "steam_appid",
@@ -8572,8 +8572,7 @@
         }
       ],
       "addon": {
-        "slug": "ue-extended",
-        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
+        "slug": "unrealengine"
       }
     },
     {
@@ -8844,6 +8843,67 @@
       }
     },
     {
+      "id": "a-way-out",
+      "name": "A Way Out",
+      "architecture": "X64",
+      "status": "construction",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "1222700",
+          "tier": 100
+        }
+      ],
+      "addon": {
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
+      }
+    },
+    {
+      "id": "black-myth-wukong",
+      "name": "Black Myth: Wukong",
+      "architecture": "X64",
+      "status": "working",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "2358720",
+          "tier": 100
+        },
+        {
+          "kind": "exe_name",
+          "value": "b1.exe",
+          "tier": 70
+        }
+      ],
+      "addon": {
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
+      }
+    },
+    {
+      "id": "borderlands-4",
+      "name": "Borderlands 4",
+      "architecture": "X64",
+      "status": "working",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "1285190",
+          "tier": 100
+        },
+        {
+          "kind": "exe_name",
+          "value": "Borderlands4.exe",
+          "tier": 70
+        }
+      ],
+      "addon": {
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
+      }
+    },
+    {
       "id": "chromatic-conundrum",
       "name": "Chromatic Conundrum",
       "architecture": "X64",
@@ -8926,6 +8986,23 @@
           "kind": "exe_name",
           "value": "The_Enjenir.exe",
           "tier": 70
+        }
+      ],
+      "addon": {
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
+      }
+    },
+    {
+      "id": "until-dawn",
+      "name": "Until Dawn",
+      "architecture": "X64",
+      "status": "working",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "2172010",
+          "tier": 100
         }
       ],
       "addon": {
@@ -15684,50 +15761,6 @@
           "id": "renodx.external.nexus",
           "fallback_text": "Get the add-on from Nexus Mods, then install the downloaded file."
         }
-      }
-    },
-    {
-      "id": "black-myth-wukong",
-      "name": "Black Myth: Wukong",
-      "architecture": "X64",
-      "status": "working",
-      "match": [
-        {
-          "kind": "steam_appid",
-          "value": "2358720",
-          "tier": 100
-        },
-        {
-          "kind": "exe_name",
-          "value": "b1.exe",
-          "tier": 70
-        }
-      ],
-      "addon": {
-        "slug": "ue-extended",
-        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
-      }
-    },
-    {
-      "id": "borderlands-4",
-      "name": "Borderlands 4",
-      "architecture": "X64",
-      "status": "working",
-      "match": [
-        {
-          "kind": "steam_appid",
-          "value": "1285190",
-          "tier": 100
-        },
-        {
-          "kind": "exe_name",
-          "value": "Borderlands4.exe",
-          "tier": 70
-        }
-      ],
-      "addon": {
-        "slug": "ue-extended",
-        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
       }
     },
     {

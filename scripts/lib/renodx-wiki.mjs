@@ -321,6 +321,9 @@ export function reconcileRenodxWiki({ rows, existingWiki, overlay, officialAsset
       if (existingIndex !== undefined) {
         const existing = wikiGames[existingIndex];
         if (existing.slug === "unrealengine" && row.addonSlug === "ue-extended") {
+          if (existing.status === "working" && row.status !== "working") {
+            continue;
+          }
           wikiGames[existingIndex] = {
             name: row.name,
             slug: "ue-extended",

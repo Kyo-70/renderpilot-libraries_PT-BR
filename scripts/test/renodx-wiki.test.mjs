@@ -579,3 +579,67 @@ test("reconcileRenodxWiki upgrades unrealengine to ue-extended when encountered"
   assert.equal(result.wikiGames[0].slug, "ue-extended");
   assert.equal(result.wikiGames[0].status, "working");
 });
+
+test("reconcileRenodxWiki preserves working unrealengine when ue-extended is construction", () => {
+  const result = reconcileRenodxWiki({
+    rows: [
+      {
+        name: "It Takes Two",
+        status: "working",
+        addonUrl: null,
+        arch: "X64",
+        addonSlug: "unrealengine",
+        nexusUrl: null,
+        discordUrl: null,
+      },
+      {
+        name: "It Takes Two",
+        status: "construction",
+        addonUrl: "https://marat569.github.io/renodx/renodx-ue-extended.addon64",
+        arch: "X64",
+        addonSlug: "ue-extended",
+        nexusUrl: null,
+        discordUrl: null,
+      },
+    ],
+    existingWiki: [],
+    overlay: {},
+    officialAssets: new Set(),
+  });
+
+  assert.equal(result.wikiGames.length, 1);
+  assert.equal(result.wikiGames[0].slug, "unrealengine");
+  assert.equal(result.wikiGames[0].status, "working");
+});
+
+test("reconcileRenodxWiki upgrades construction unrealengine when ue-extended is working", () => {
+  const result = reconcileRenodxWiki({
+    rows: [
+      {
+        name: "Scorn",
+        status: "construction",
+        addonUrl: null,
+        arch: "X64",
+        addonSlug: "unrealengine",
+        nexusUrl: null,
+        discordUrl: null,
+      },
+      {
+        name: "Scorn",
+        status: "working",
+        addonUrl: "https://marat569.github.io/renodx/renodx-ue-extended.addon64",
+        arch: "X64",
+        addonSlug: "ue-extended",
+        nexusUrl: null,
+        discordUrl: null,
+      },
+    ],
+    existingWiki: [],
+    overlay: {},
+    officialAssets: new Set(),
+  });
+
+  assert.equal(result.wikiGames.length, 1);
+  assert.equal(result.wikiGames[0].slug, "ue-extended");
+  assert.equal(result.wikiGames[0].status, "working");
+});

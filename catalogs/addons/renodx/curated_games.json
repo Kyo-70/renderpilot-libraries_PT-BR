@@ -1,21 +1,5 @@
 [
   {
-    "name": "Black Myth: Wukong",
-    "slug": "ue-extended",
-    "arch": "X64",
-    "status": "working",
-    "id": "black-myth-wukong",
-    "download_url": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
-  },
-  {
-    "name": "Borderlands 4",
-    "slug": "ue-extended",
-    "arch": "X64",
-    "status": "working",
-    "id": "borderlands-4",
-    "download_url": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
-  },
-  {
     "name": "Wuchang: Fallen Feathers",
     "slug": "ue-extended",
     "arch": "X64",
