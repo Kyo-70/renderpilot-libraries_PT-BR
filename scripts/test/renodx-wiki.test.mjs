@@ -8,6 +8,7 @@ import {
   parseStatus,
   parseWikiRow,
   reconcileRenodxWiki,
+  shouldReplaceExistingUeGeneric,
   slugify,
 } from "../lib/renodx-wiki.mjs";
 
@@ -642,4 +643,135 @@ test("reconcileRenodxWiki upgrades construction unrealengine when ue-extended is
   assert.equal(result.wikiGames.length, 1);
   assert.equal(result.wikiGames[0].slug, "ue-extended");
   assert.equal(result.wikiGames[0].status, "working");
+});
+
+test("reconcileRenodxWiki preserves working unrealengine when ue-extended is encountered first as construction", () => {
+  const result = reconcileRenodxWiki({
+    rows: [
+      {
+        name: "ABZÛ",
+        status: "construction",
+        addonUrl: "https://marat569.github.io/renodx/renodx-ue-extended.addon64",
+        arch: "X64",
+        addonSlug: "ue-extended",
+        nexusUrl: null,
+        discordUrl: null,
+      },
+      {
+        name: "ABZÛ",
+        status: "working",
+        addonUrl: null,
+        arch: "X64",
+        addonSlug: "unrealengine",
+        nexusUrl: null,
+        discordUrl: null,
+      },
+    ],
+    existingWiki: [],
+    overlay: {},
+    officialAssets: new Set(),
+  });
+
+  assert.equal(result.wikiGames.length, 1);
+  assert.equal(result.wikiGames[0].slug, "unrealengine");
+  assert.equal(result.wikiGames[0].status, "working");
+});
+
+test("reconcileRenodxWiki keeps working ue-extended when unrealengine is encountered second as working", () => {
+  const result = reconcileRenodxWiki({
+    rows: [
+      {
+        name: "It Takes Two",
+        status: "working",
+        addonUrl: "https://marat569.github.io/renodx/renodx-ue-extended.addon64",
+        arch: "X64",
+        addonSlug: "ue-extended",
+        nexusUrl: null,
+        discordUrl: null,
+      },
+      {
+        name: "It Takes Two",
+        status: "working",
+        addonUrl: null,
+        arch: "X64",
+        addonSlug: "unrealengine",
+        nexusUrl: null,
+        discordUrl: null,
+      },
+    ],
+    existingWiki: [],
+    overlay: {},
+    officialAssets: new Set(),
+  });
+
+  assert.equal(result.wikiGames.length, 1);
+  assert.equal(result.wikiGames[0].slug, "ue-extended");
+  assert.equal(result.wikiGames[0].status, "working");
+});
+
+test("reconcileRenodxWiki keeps ue-extended when both are construction and ue-extended is encountered first", () => {
+  const result = reconcileRenodxWiki({
+    rows: [
+      {
+        name: "Astroneer",
+        status: "construction",
+        addonUrl: "https://marat569.github.io/renodx/renodx-ue-extended.addon64",
+        arch: "X64",
+        addonSlug: "ue-extended",
+        nexusUrl: null,
+        discordUrl: null,
+      },
+      {
+        name: "Astroneer",
+        status: "construction",
+        addonUrl: null,
+        arch: "X64",
+        addonSlug: "unrealengine",
+        nexusUrl: null,
+        discordUrl: null,
+      },
+    ],
+    existingWiki: [],
+    overlay: {},
+    officialAssets: new Set(),
+  });
+
+  assert.equal(result.wikiGames.length, 1);
+  assert.equal(result.wikiGames[0].slug, "ue-extended");
+  assert.equal(result.wikiGames[0].status, "construction");
+});
+
+test("shouldReplaceExistingUeGeneric satisfies complete priority matrix across ordering", () => {
+  const cases = [
+    // existingSlug, existingStatus, rowSlug, rowStatus, expected
+    ["unrealengine", "working", "ue-extended", "construction", false],
+    ["unrealengine", "construction", "ue-extended", "working", true],
+    ["unrealengine", "working", "ue-extended", "working", true],
+    ["unrealengine", "construction", "ue-extended", "construction", true],
+
+    ["ue-extended", "working", "unrealengine", "construction", false],
+    ["ue-extended", "construction", "unrealengine", "working", true],
+    ["ue-extended", "working", "unrealengine", "working", false],
+    ["ue-extended", "construction", "unrealengine", "construction", false],
+  ];
+
+  for (const [eSlug, eStatus, rSlug, rStatus, expected] of cases) {
+    const actual = shouldReplaceExistingUeGeneric(
+      { slug: eSlug, status: eStatus },
+      { addonSlug: rSlug, status: rStatus },
+    );
+    assert.equal(
+      actual,
+      expected,
+      `Failed for ${eSlug} (${eStatus}) vs ${rSlug} (${rStatus})`,
+    );
+  }
+
+  assert.equal(
+    shouldReplaceExistingUeGeneric(
+      { slug: "unityengine", status: "working" },
+      { addonSlug: "ue-extended", status: "working" },
+    ),
+    null,
+  );
 });

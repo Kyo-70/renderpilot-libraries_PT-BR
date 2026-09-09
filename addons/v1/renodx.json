@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-08T00:00:00Z",
+  "generated_at": "2026-09-09T00:00:00Z",
   "games": [
     {
       "id": "007-first-light",
@@ -5612,6 +5612,847 @@
       }
     },
     {
+      "id": "assetto-corsa-rally",
+      "name": "Assetto Corsa Rally",
+      "architecture": "X64",
+      "status": "working",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "3917090",
+          "tier": 100
+        }
+      ],
+      "addon": {
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
+      }
+    },
+    {
+      "id": "astroneer",
+      "name": "Astroneer",
+      "architecture": "X64",
+      "status": "construction",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "361420",
+          "tier": 100
+        }
+      ],
+      "addon": {
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
+      }
+    },
+    {
+      "id": "a-way-out",
+      "name": "A Way Out",
+      "architecture": "X64",
+      "status": "construction",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "1222700",
+          "tier": 100
+        }
+      ],
+      "addon": {
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
+      }
+    },
+    {
+      "id": "black-myth-wukong",
+      "name": "Black Myth: Wukong",
+      "architecture": "X64",
+      "status": "working",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "2358720",
+          "tier": 100
+        },
+        {
+          "kind": "exe_name",
+          "value": "b1.exe",
+          "tier": 70
+        }
+      ],
+      "addon": {
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
+      }
+    },
+    {
+      "id": "borderlands-4",
+      "name": "Borderlands 4",
+      "architecture": "X64",
+      "status": "working",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "1285190",
+          "tier": 100
+        },
+        {
+          "kind": "exe_name",
+          "value": "Borderlands4.exe",
+          "tier": 70
+        }
+      ],
+      "addon": {
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
+      }
+    },
+    {
+      "id": "bodycam",
+      "name": "Bodycam",
+      "architecture": "X64",
+      "status": "working",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "2406770",
+          "tier": 100
+        }
+      ],
+      "addon": {
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
+      }
+    },
+    {
+      "id": "choo-choo-charles",
+      "name": "Choo-Choo Charles",
+      "architecture": "X64",
+      "status": "working",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "1766740",
+          "tier": 100
+        }
+      ],
+      "addon": {
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
+      }
+    },
+    {
+      "id": "chromatic-conundrum",
+      "name": "Chromatic Conundrum",
+      "architecture": "X64",
+      "status": "working",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "3081690",
+          "tier": 100
+        }
+      ],
+      "addon": {
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
+      }
+    },
+    {
+      "id": "crab-champions",
+      "name": "Crab Champions",
+      "architecture": "X64",
+      "status": "working",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "774801",
+          "tier": 100
+        },
+        {
+          "kind": "exe_name",
+          "value": "CrabChampions.exe",
+          "tier": 70
+        }
+      ],
+      "addon": {
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
+      }
+    },
+    {
+      "id": "deep-rock-galactic",
+      "name": "Deep Rock Galactic",
+      "architecture": "X64",
+      "status": "working",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "548430",
+          "tier": 100
+        }
+      ],
+      "addon": {
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
+      }
+    },
+    {
+      "id": "escape-the-backrooms",
+      "name": "Escape the Backrooms",
+      "architecture": "X64",
+      "status": "construction",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "1943950",
+          "tier": 100
+        }
+      ],
+      "addon": {
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
+      }
+    },
+    {
+      "id": "far-far-west",
+      "name": "Far Far West",
+      "architecture": "X64",
+      "status": "working",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "3124540",
+          "tier": 100
+        }
+      ],
+      "addon": {
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
+      }
+    },
+    {
+      "id": "flyknight",
+      "name": "FlyKnight",
+      "architecture": "X64",
+      "status": "working",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "3108510",
+          "tier": 100
+        }
+      ],
+      "addon": {
+        "slug": "unrealengine"
+      }
+    },
+    {
+      "id": "goat-simulator-3",
+      "name": "Goat Simulator 3",
+      "architecture": "X64",
+      "status": "working",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "850190",
+          "tier": 100
+        },
+        {
+          "kind": "exe_name",
+          "value": "Goat2.exe",
+          "tier": 70
+        }
+      ],
+      "addon": {
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
+      }
+    },
+    {
+      "id": "ghostrunner",
+      "name": "Ghostrunner",
+      "architecture": "X64",
+      "status": "working",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "1139900",
+          "tier": 100
+        },
+        {
+          "kind": "exe_name",
+          "value": "Ghostrunner.exe",
+          "tier": 70
+        }
+      ],
+      "addon": {
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
+      }
+    },
+    {
+      "id": "ghostrunner-2",
+      "name": "Ghostrunner 2",
+      "architecture": "X64",
+      "status": "working",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "2144740",
+          "tier": 100
+        }
+      ],
+      "addon": {
+        "slug": "unrealengine"
+      }
+    },
+    {
+      "id": "grand-theft-auto-the-trilogy-the-definitive-edition-iii-vice-city-san-andreas",
+      "name": "Grand Theft Auto: The Trilogy – The Definitive Edition (III, Vice City, San Andreas)",
+      "architecture": "X64",
+      "status": "working",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "1546970",
+          "tier": 100
+        },
+        {
+          "kind": "steam_appid",
+          "value": "1546990",
+          "tier": 100
+        },
+        {
+          "kind": "steam_appid",
+          "value": "1547000",
+          "tier": 100
+        }
+      ],
+      "addon": {
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
+      }
+    },
+    {
+      "id": "grounded-2",
+      "name": "Grounded 2",
+      "architecture": "X64",
+      "status": "working",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "2661300",
+          "tier": 100
+        }
+      ],
+      "addon": {
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
+      }
+    },
+    {
+      "id": "hi-fi-rush",
+      "name": "Hi-Fi Rush",
+      "architecture": "X64",
+      "status": "construction",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "1817230",
+          "tier": 100
+        }
+      ],
+      "addon": {
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
+      }
+    },
+    {
+      "id": "the-idolm-ster-starlit-season",
+      "name": "The iDOLM@STER: Starlit Season",
+      "architecture": "X64",
+      "status": "construction",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "1046480",
+          "tier": 100
+        }
+      ],
+      "addon": {
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
+      }
+    },
+    {
+      "id": "it-takes-two",
+      "name": "It Takes Two",
+      "architecture": "X64",
+      "status": "working",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "1426210",
+          "tier": 100
+        },
+        {
+          "kind": "exe_name",
+          "value": "ItTakesTwo.exe",
+          "tier": 70
+        }
+      ],
+      "addon": {
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
+      }
+    },
+    {
+      "id": "jusant",
+      "name": "Jusant",
+      "architecture": "X64",
+      "status": "working",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "1977170",
+          "tier": 100
+        }
+      ],
+      "addon": {
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
+      }
+    },
+    {
+      "id": "lego-batmantm-legacy-of-the-dark-knight",
+      "name": "LEGO® Batman™: Legacy of the Dark Knight",
+      "architecture": "X64",
+      "status": "construction",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "2215200",
+          "tier": 100
+        }
+      ],
+      "addon": {
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
+      }
+    },
+    {
+      "id": "little-nightmares",
+      "name": "Little Nightmares",
+      "architecture": "X64",
+      "status": "working",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "424840",
+          "tier": 100
+        },
+        {
+          "kind": "exe_name",
+          "value": "LittleNightmares.exe",
+          "tier": 70
+        }
+      ],
+      "addon": {
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
+      }
+    },
+    {
+      "id": "little-nightmares-enhanced-edition",
+      "name": "Little Nightmares Enhanced",
+      "architecture": "X64",
+      "status": "working",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "2149010",
+          "tier": 100
+        },
+        {
+          "kind": "exe_name",
+          "value": "Little_Nightmares_Enhanced.exe",
+          "tier": 70
+        }
+      ],
+      "addon": {
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
+      }
+    },
+    {
+      "id": "little-nightmares-ii",
+      "name": "Little Nightmares II",
+      "architecture": "X64",
+      "status": "construction",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "860510",
+          "tier": 100
+        },
+        {
+          "kind": "exe_name",
+          "value": "Little Nightmares II.exe",
+          "tier": 70
+        },
+        {
+          "kind": "exe_name",
+          "value": "Little_Nightmares_II_Enhanced.exe",
+          "tier": 70
+        }
+      ],
+      "addon": {
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
+      }
+    },
+    {
+      "id": "mafia-the-old-country",
+      "name": "Mafia: The Old Country",
+      "architecture": "X64",
+      "status": "working",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "1941540",
+          "tier": 100
+        }
+      ],
+      "addon": {
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
+      }
+    },
+    {
+      "id": "meccha-chameleon",
+      "name": "MECCHA CHAMELEON",
+      "architecture": "X64",
+      "status": "working",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "4704690",
+          "tier": 100
+        }
+      ],
+      "addon": {
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
+      }
+    },
+    {
+      "id": "mortal-shell-ii",
+      "name": "Mortal Shell II",
+      "architecture": "X64",
+      "status": "working",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "2584270",
+          "tier": 100
+        }
+      ],
+      "addon": {
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
+      }
+    },
+    {
+      "id": "nobody-wants-to-die",
+      "name": "Nobody Wants to Die",
+      "architecture": "X64",
+      "status": "working",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "1939970",
+          "tier": 100
+        }
+      ],
+      "addon": {
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
+      }
+    },
+    {
+      "id": "palworld",
+      "name": "Palworld",
+      "architecture": "X64",
+      "status": "working",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "1623730",
+          "tier": 100
+        }
+      ],
+      "addon": {
+        "slug": "unrealengine"
+      }
+    },
+    {
+      "id": "persona-3-reload",
+      "name": "Persona 3 Reload",
+      "architecture": "X64",
+      "status": "construction",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "2161700",
+          "tier": 100
+        }
+      ],
+      "addon": {
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
+      }
+    },
+    {
+      "id": "ready-or-not",
+      "name": "Ready or Not",
+      "architecture": "X64",
+      "status": "construction",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "1144200",
+          "tier": 100
+        }
+      ],
+      "addon": {
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
+      }
+    },
+    {
+      "id": "rv-there-yet",
+      "name": "RV There Yet",
+      "architecture": "X64",
+      "status": "working",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "3949040",
+          "tier": 100
+        }
+      ],
+      "addon": {
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
+      }
+    },
+    {
+      "id": "satisfactory",
+      "name": "Satisfactory",
+      "architecture": "X64",
+      "status": "working",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "526870",
+          "tier": 100
+        }
+      ],
+      "addon": {
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
+      }
+    },
+    {
+      "id": "scorn",
+      "name": "Scorn",
+      "architecture": "X64",
+      "status": "working",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "698670",
+          "tier": 100
+        },
+        {
+          "kind": "exe_name",
+          "value": "Scorn.exe",
+          "tier": 70
+        }
+      ],
+      "addon": {
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
+      }
+    },
+    {
+      "id": "sifu",
+      "name": "Sifu",
+      "architecture": "X64",
+      "status": "construction",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "2138710",
+          "tier": 100
+        }
+      ],
+      "addon": {
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
+      }
+    },
+    {
+      "id": "stray",
+      "name": "Stray",
+      "architecture": "X64",
+      "status": "working",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "1332010",
+          "tier": 100
+        },
+        {
+          "kind": "exe_name",
+          "value": "Stray.exe",
+          "tier": 70
+        }
+      ],
+      "addon": {
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
+      }
+    },
+    {
+      "id": "subnautica-2",
+      "name": "Subnautica 2",
+      "architecture": "X64",
+      "status": "working",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "1962700",
+          "tier": 100
+        }
+      ],
+      "addon": {
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
+      }
+    },
+    {
+      "id": "the-blood-of-dawnwalker",
+      "name": "The Blood of Dawnwalker",
+      "architecture": "X64",
+      "status": "construction",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "3751260",
+          "tier": 100
+        }
+      ],
+      "addon": {
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
+      }
+    },
+    {
+      "id": "the-enjenir",
+      "name": "The Enjenir",
+      "architecture": "X64",
+      "status": "working",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "1800940",
+          "tier": 100
+        },
+        {
+          "kind": "exe_name",
+          "value": "The_Enjenir.exe",
+          "tier": 70
+        }
+      ],
+      "addon": {
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
+      }
+    },
+    {
+      "id": "tokyo-xtreme-racer",
+      "name": "Tokyo Xtreme Racer",
+      "architecture": "X64",
+      "status": "working",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "2634950",
+          "tier": 100
+        }
+      ],
+      "addon": {
+        "slug": "unrealengine"
+      }
+    },
+    {
+      "id": "until-dawn",
+      "name": "Until Dawn",
+      "architecture": "X64",
+      "status": "working",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "2172010",
+          "tier": 100
+        }
+      ],
+      "addon": {
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
+      }
+    },
+    {
+      "id": "vholume",
+      "name": "VHOLUME",
+      "architecture": "X64",
+      "status": "working",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "4131730",
+          "tier": 100
+        }
+      ],
+      "addon": {
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
+      }
+    },
+    {
+      "id": "what-remains-of-edith-finch",
+      "name": "What Remains of Edith Finch",
+      "architecture": "X64",
+      "status": "working",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "501300",
+          "tier": 100
+        },
+        {
+          "kind": "exe_name",
+          "value": "FinchGame.exe",
+          "tier": 70
+        }
+      ],
+      "addon": {
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
+      }
+    },
+    {
       "id": "adorable-adventures",
       "name": "Adorable Adventures",
       "architecture": "X64",
@@ -5763,23 +6604,6 @@
       ],
       "addon": {
         "slug": "unrealengine"
-      }
-    },
-    {
-      "id": "astroneer",
-      "name": "Astroneer",
-      "architecture": "X64",
-      "status": "construction",
-      "match": [
-        {
-          "kind": "steam_appid",
-          "value": "361420",
-          "tier": 100
-        }
-      ],
-      "addon": {
-        "slug": "ue-extended",
-        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
       }
     },
     {
@@ -6019,23 +6843,6 @@
       ],
       "addon": {
         "slug": "unrealengine"
-      }
-    },
-    {
-      "id": "choo-choo-charles",
-      "name": "Choo-Choo Charles",
-      "architecture": "X64",
-      "status": "working",
-      "match": [
-        {
-          "kind": "steam_appid",
-          "value": "1766740",
-          "tier": 100
-        }
-      ],
-      "addon": {
-        "slug": "ue-extended",
-        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
       }
     },
     {
@@ -6301,23 +7108,6 @@
       ],
       "addon": {
         "slug": "unrealengine"
-      }
-    },
-    {
-      "id": "deep-rock-galactic",
-      "name": "Deep Rock Galactic",
-      "architecture": "X64",
-      "status": "working",
-      "match": [
-        {
-          "kind": "steam_appid",
-          "value": "548430",
-          "tier": 100
-        }
-      ],
-      "addon": {
-        "slug": "ue-extended",
-        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
       }
     },
     {
@@ -6587,22 +7377,6 @@
       }
     },
     {
-      "id": "flyknight",
-      "name": "FlyKnight",
-      "architecture": "X64",
-      "status": "working",
-      "match": [
-        {
-          "kind": "steam_appid",
-          "value": "3108510",
-          "tier": 100
-        }
-      ],
-      "addon": {
-        "slug": "unrealengine"
-      }
-    },
-    {
       "id": "forgive-me-father",
       "name": "Forgive Me Father",
       "architecture": "X64",
@@ -6651,44 +7425,6 @@
       }
     },
     {
-      "id": "ghostrunner",
-      "name": "Ghostrunner",
-      "architecture": "X64",
-      "status": "working",
-      "match": [
-        {
-          "kind": "steam_appid",
-          "value": "1139900",
-          "tier": 100
-        },
-        {
-          "kind": "exe_name",
-          "value": "Ghostrunner.exe",
-          "tier": 70
-        }
-      ],
-      "addon": {
-        "slug": "ue-extended",
-        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
-      }
-    },
-    {
-      "id": "ghostrunner-2",
-      "name": "Ghostrunner 2",
-      "architecture": "X64",
-      "status": "working",
-      "match": [
-        {
-          "kind": "steam_appid",
-          "value": "2144740",
-          "tier": 100
-        }
-      ],
-      "addon": {
-        "slug": "unrealengine"
-      }
-    },
-    {
       "id": "gothic-1-remake",
       "name": "Gothic 1 Remake",
       "architecture": "X64",
@@ -6718,33 +7454,6 @@
       ],
       "addon": {
         "slug": "unrealengine"
-      }
-    },
-    {
-      "id": "grand-theft-auto-the-trilogy-the-definitive-edition-iii-vice-city-san-andreas",
-      "name": "Grand Theft Auto: The Trilogy – The Definitive Edition (III, Vice City, San Andreas)",
-      "architecture": "X64",
-      "status": "working",
-      "match": [
-        {
-          "kind": "steam_appid",
-          "value": "1546970",
-          "tier": 100
-        },
-        {
-          "kind": "steam_appid",
-          "value": "1546990",
-          "tier": 100
-        },
-        {
-          "kind": "steam_appid",
-          "value": "1547000",
-          "tier": 100
-        }
-      ],
-      "addon": {
-        "slug": "ue-extended",
-        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
       }
     },
     {
@@ -6827,23 +7536,6 @@
       }
     },
     {
-      "id": "hi-fi-rush",
-      "name": "Hi-Fi Rush",
-      "architecture": "X64",
-      "status": "construction",
-      "match": [
-        {
-          "kind": "steam_appid",
-          "value": "1817230",
-          "tier": 100
-        }
-      ],
-      "addon": {
-        "slug": "ue-extended",
-        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
-      }
-    },
-    {
       "id": "hogwarts-legacy",
       "name": "Hogwarts Legacy",
       "architecture": "X64",
@@ -6873,23 +7565,6 @@
       ],
       "addon": {
         "slug": "unrealengine"
-      }
-    },
-    {
-      "id": "the-idolm-ster-starlit-season",
-      "name": "The iDOLM@STER: Starlit Season",
-      "architecture": "X64",
-      "status": "construction",
-      "match": [
-        {
-          "kind": "steam_appid",
-          "value": "1046480",
-          "tier": 100
-        }
-      ],
-      "addon": {
-        "slug": "ue-extended",
-        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
       }
     },
     {
@@ -6989,27 +7664,6 @@
       }
     },
     {
-      "id": "it-takes-two",
-      "name": "It Takes Two",
-      "architecture": "X64",
-      "status": "working",
-      "match": [
-        {
-          "kind": "steam_appid",
-          "value": "1426210",
-          "tier": 100
-        },
-        {
-          "kind": "exe_name",
-          "value": "ItTakesTwo.exe",
-          "tier": 70
-        }
-      ],
-      "addon": {
-        "slug": "unrealengine"
-      }
-    },
-    {
       "id": "jdm-japanese-drift-master",
       "name": "JDM: Japanese Drift Master",
       "architecture": "X64",
@@ -7039,23 +7693,6 @@
       ],
       "addon": {
         "slug": "unrealengine"
-      }
-    },
-    {
-      "id": "jusant",
-      "name": "Jusant",
-      "architecture": "X64",
-      "status": "working",
-      "match": [
-        {
-          "kind": "steam_appid",
-          "value": "1977170",
-          "tier": 100
-        }
-      ],
-      "addon": {
-        "slug": "ue-extended",
-        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
       }
     },
     {
@@ -7229,77 +7866,6 @@
       }
     },
     {
-      "id": "little-nightmares",
-      "name": "Little Nightmares",
-      "architecture": "X64",
-      "status": "working",
-      "match": [
-        {
-          "kind": "steam_appid",
-          "value": "424840",
-          "tier": 100
-        },
-        {
-          "kind": "exe_name",
-          "value": "LittleNightmares.exe",
-          "tier": 70
-        }
-      ],
-      "addon": {
-        "slug": "ue-extended",
-        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
-      }
-    },
-    {
-      "id": "little-nightmares-enhanced-edition",
-      "name": "Little Nightmares Enhanced",
-      "architecture": "X64",
-      "status": "working",
-      "match": [
-        {
-          "kind": "steam_appid",
-          "value": "2149010",
-          "tier": 100
-        },
-        {
-          "kind": "exe_name",
-          "value": "Little_Nightmares_Enhanced.exe",
-          "tier": 70
-        }
-      ],
-      "addon": {
-        "slug": "ue-extended",
-        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
-      }
-    },
-    {
-      "id": "little-nightmares-ii",
-      "name": "Little Nightmares II",
-      "architecture": "X64",
-      "status": "construction",
-      "match": [
-        {
-          "kind": "steam_appid",
-          "value": "860510",
-          "tier": 100
-        },
-        {
-          "kind": "exe_name",
-          "value": "Little Nightmares II.exe",
-          "tier": 70
-        },
-        {
-          "kind": "exe_name",
-          "value": "Little_Nightmares_II_Enhanced.exe",
-          "tier": 70
-        }
-      ],
-      "addon": {
-        "slug": "ue-extended",
-        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
-      }
-    },
-    {
       "id": "little-nightmares-iii",
       "name": "Little Nightmares III",
       "architecture": "X64",
@@ -7345,23 +7911,6 @@
       ],
       "addon": {
         "slug": "unrealengine"
-      }
-    },
-    {
-      "id": "mafia-the-old-country",
-      "name": "Mafia: The Old Country",
-      "architecture": "X64",
-      "status": "working",
-      "match": [
-        {
-          "kind": "steam_appid",
-          "value": "1941540",
-          "tier": 100
-        }
-      ],
-      "addon": {
-        "slug": "ue-extended",
-        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
       }
     },
     {
@@ -7573,22 +8122,6 @@
       }
     },
     {
-      "id": "nobody-wants-to-die",
-      "name": "Nobody Wants to Die",
-      "architecture": "X64",
-      "status": "construction",
-      "match": [
-        {
-          "kind": "steam_appid",
-          "value": "1939970",
-          "tier": 100
-        }
-      ],
-      "addon": {
-        "slug": "unrealengine"
-      }
-    },
-    {
       "id": "the-occupation",
       "name": "The Occupation",
       "architecture": "X64",
@@ -7722,38 +8255,6 @@
       }
     },
     {
-      "id": "palworld",
-      "name": "Palworld",
-      "architecture": "X64",
-      "status": "working",
-      "match": [
-        {
-          "kind": "steam_appid",
-          "value": "1623730",
-          "tier": 100
-        }
-      ],
-      "addon": {
-        "slug": "unrealengine"
-      }
-    },
-    {
-      "id": "persona-3-reload",
-      "name": "Persona 3 Reload",
-      "architecture": "X64",
-      "status": "construction",
-      "match": [
-        {
-          "kind": "steam_appid",
-          "value": "2161700",
-          "tier": 100
-        }
-      ],
-      "addon": {
-        "slug": "unrealengine"
-      }
-    },
-    {
       "id": "police-simulator-patrol-officer",
       "name": "Police Simulator: Patrol Officer",
       "architecture": "X64",
@@ -7799,22 +8300,6 @@
         {
           "kind": "steam_appid",
           "value": "1577120",
-          "tier": 100
-        }
-      ],
-      "addon": {
-        "slug": "unrealengine"
-      }
-    },
-    {
-      "id": "ready-or-not",
-      "name": "Ready or Not",
-      "architecture": "X64",
-      "status": "construction",
-      "match": [
-        {
-          "kind": "steam_appid",
-          "value": "1144200",
           "tier": 100
         }
       ],
@@ -7961,23 +8446,6 @@
       }
     },
     {
-      "id": "rv-there-yet",
-      "name": "RV There Yet",
-      "architecture": "X64",
-      "status": "working",
-      "match": [
-        {
-          "kind": "steam_appid",
-          "value": "3949040",
-          "tier": 100
-        }
-      ],
-      "addon": {
-        "slug": "ue-extended",
-        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
-      }
-    },
-    {
       "id": "sackboy-a-big-adventure",
       "name": "Sackboy: A Big Adventure",
       "architecture": "X64",
@@ -8010,23 +8478,6 @@
       }
     },
     {
-      "id": "satisfactory",
-      "name": "Satisfactory",
-      "architecture": "X64",
-      "status": "working",
-      "match": [
-        {
-          "kind": "steam_appid",
-          "value": "526870",
-          "tier": 100
-        }
-      ],
-      "addon": {
-        "slug": "ue-extended",
-        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
-      }
-    },
-    {
       "id": "scarlet-nexus",
       "name": "Scarlet Nexus",
       "architecture": "X64",
@@ -8045,28 +8496,6 @@
       ],
       "addon": {
         "slug": "unrealengine"
-      }
-    },
-    {
-      "id": "scorn",
-      "name": "Scorn",
-      "architecture": "X64",
-      "status": "working",
-      "match": [
-        {
-          "kind": "steam_appid",
-          "value": "698670",
-          "tier": 100
-        },
-        {
-          "kind": "exe_name",
-          "value": "Scorn.exe",
-          "tier": 70
-        }
-      ],
-      "addon": {
-        "slug": "ue-extended",
-        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
       }
     },
     {
@@ -8099,23 +8528,6 @@
       ],
       "addon": {
         "slug": "unrealengine"
-      }
-    },
-    {
-      "id": "sifu",
-      "name": "Sifu",
-      "architecture": "X64",
-      "status": "construction",
-      "match": [
-        {
-          "kind": "steam_appid",
-          "value": "2138710",
-          "tier": 100
-        }
-      ],
-      "addon": {
-        "slug": "ue-extended",
-        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
       }
     },
     {
@@ -8297,28 +8709,6 @@
       ],
       "addon": {
         "slug": "unrealengine"
-      }
-    },
-    {
-      "id": "stray",
-      "name": "Stray",
-      "architecture": "X64",
-      "status": "working",
-      "match": [
-        {
-          "kind": "steam_appid",
-          "value": "1332010",
-          "tier": 100
-        },
-        {
-          "kind": "exe_name",
-          "value": "Stray.exe",
-          "tier": 70
-        }
-      ],
-      "addon": {
-        "slug": "ue-extended",
-        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
       }
     },
     {
@@ -8560,22 +8950,6 @@
       }
     },
     {
-      "id": "tokyo-xtreme-racer",
-      "name": "Tokyo Xtreme Racer",
-      "architecture": "X64",
-      "status": "working",
-      "match": [
-        {
-          "kind": "steam_appid",
-          "value": "2634950",
-          "tier": 100
-        }
-      ],
-      "addon": {
-        "slug": "unrealengine"
-      }
-    },
-    {
       "id": "tormented-souls-2",
       "name": "Tormented Souls 2",
       "architecture": "X64",
@@ -8788,28 +9162,6 @@
       }
     },
     {
-      "id": "what-remains-of-edith-finch",
-      "name": "What Remains of Edith Finch",
-      "architecture": "X64",
-      "status": "working",
-      "match": [
-        {
-          "kind": "steam_appid",
-          "value": "501300",
-          "tier": 100
-        },
-        {
-          "kind": "exe_name",
-          "value": "FinchGame.exe",
-          "tier": 70
-        }
-      ],
-      "addon": {
-        "slug": "ue-extended",
-        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
-      }
-    },
-    {
       "id": "witchfire",
       "name": "Witchfire",
       "architecture": "X64",
@@ -8823,191 +9175,6 @@
       ],
       "addon": {
         "slug": "unrealengine"
-      }
-    },
-    {
-      "id": "assetto-corsa-rally",
-      "name": "Assetto Corsa Rally",
-      "architecture": "X64",
-      "status": "working",
-      "match": [
-        {
-          "kind": "steam_appid",
-          "value": "3917090",
-          "tier": 100
-        }
-      ],
-      "addon": {
-        "slug": "ue-extended",
-        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
-      }
-    },
-    {
-      "id": "a-way-out",
-      "name": "A Way Out",
-      "architecture": "X64",
-      "status": "construction",
-      "match": [
-        {
-          "kind": "steam_appid",
-          "value": "1222700",
-          "tier": 100
-        }
-      ],
-      "addon": {
-        "slug": "ue-extended",
-        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
-      }
-    },
-    {
-      "id": "black-myth-wukong",
-      "name": "Black Myth: Wukong",
-      "architecture": "X64",
-      "status": "working",
-      "match": [
-        {
-          "kind": "steam_appid",
-          "value": "2358720",
-          "tier": 100
-        },
-        {
-          "kind": "exe_name",
-          "value": "b1.exe",
-          "tier": 70
-        }
-      ],
-      "addon": {
-        "slug": "ue-extended",
-        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
-      }
-    },
-    {
-      "id": "borderlands-4",
-      "name": "Borderlands 4",
-      "architecture": "X64",
-      "status": "working",
-      "match": [
-        {
-          "kind": "steam_appid",
-          "value": "1285190",
-          "tier": 100
-        },
-        {
-          "kind": "exe_name",
-          "value": "Borderlands4.exe",
-          "tier": 70
-        }
-      ],
-      "addon": {
-        "slug": "ue-extended",
-        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
-      }
-    },
-    {
-      "id": "chromatic-conundrum",
-      "name": "Chromatic Conundrum",
-      "architecture": "X64",
-      "status": "working",
-      "match": [
-        {
-          "kind": "steam_appid",
-          "value": "3081690",
-          "tier": 100
-        }
-      ],
-      "addon": {
-        "slug": "ue-extended",
-        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
-      }
-    },
-    {
-      "id": "meccha-chameleon",
-      "name": "MECCHA CHAMELEON",
-      "architecture": "X64",
-      "status": "working",
-      "match": [
-        {
-          "kind": "steam_appid",
-          "value": "4704690",
-          "tier": 100
-        }
-      ],
-      "addon": {
-        "slug": "ue-extended",
-        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
-      }
-    },
-    {
-      "id": "subnautica-2",
-      "name": "Subnautica 2",
-      "architecture": "X64",
-      "status": "working",
-      "match": [
-        {
-          "kind": "steam_appid",
-          "value": "1962700",
-          "tier": 100
-        }
-      ],
-      "addon": {
-        "slug": "ue-extended",
-        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
-      }
-    },
-    {
-      "id": "the-blood-of-dawnwalker",
-      "name": "The Blood of Dawnwalker",
-      "architecture": "X64",
-      "status": "construction",
-      "match": [
-        {
-          "kind": "steam_appid",
-          "value": "3751260",
-          "tier": 100
-        }
-      ],
-      "addon": {
-        "slug": "ue-extended",
-        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
-      }
-    },
-    {
-      "id": "the-enjenir",
-      "name": "The Enjenir",
-      "architecture": "X64",
-      "status": "working",
-      "match": [
-        {
-          "kind": "steam_appid",
-          "value": "1800940",
-          "tier": 100
-        },
-        {
-          "kind": "exe_name",
-          "value": "The_Enjenir.exe",
-          "tier": 70
-        }
-      ],
-      "addon": {
-        "slug": "ue-extended",
-        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
-      }
-    },
-    {
-      "id": "until-dawn",
-      "name": "Until Dawn",
-      "architecture": "X64",
-      "status": "working",
-      "match": [
-        {
-          "kind": "steam_appid",
-          "value": "2172010",
-          "tier": 100
-        }
-      ],
-      "addon": {
-        "slug": "ue-extended",
-        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
       }
     },
     {

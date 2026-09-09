@@ -298,6 +298,21 @@ function applyOverlayAvailability({
   return "unchanged";
 }
 
+export function shouldReplaceExistingUeGeneric(existing, row) {
+  const isUeConflict =
+    (existing.slug === "unrealengine" && row.addonSlug === "ue-extended") ||
+    (existing.slug === "ue-extended" && row.addonSlug === "unrealengine");
+  if (!isUeConflict) return null;
+
+  const existingWorking = existing.status === "working";
+  const rowWorking = row.status === "working";
+
+  if (existingWorking !== rowWorking) {
+    return rowWorking;
+  }
+  return row.addonSlug === "ue-extended";
+}
+
 export function reconcileRenodxWiki({ rows, existingWiki, overlay, officialAssets }) {
   if (!Array.isArray(rows) || !Array.isArray(existingWiki) || !isPlainObject(overlay)) {
     throw new Error(
@@ -320,17 +335,17 @@ export function reconcileRenodxWiki({ rows, existingWiki, overlay, officialAsset
       const existingIndex = gameIndexById.get(id);
       if (existingIndex !== undefined) {
         const existing = wikiGames[existingIndex];
-        if (existing.slug === "unrealengine" && row.addonSlug === "ue-extended") {
-          if (existing.status === "working" && row.status !== "working") {
-            continue;
+        const ueReplace = shouldReplaceExistingUeGeneric(existing, row);
+        if (ueReplace !== null) {
+          if (ueReplace) {
+            wikiGames[existingIndex] = {
+              name: row.name,
+              slug: row.addonSlug,
+              arch: row.arch,
+              status: row.status,
+              id,
+            };
           }
-          wikiGames[existingIndex] = {
-            name: row.name,
-            slug: "ue-extended",
-            arch: row.arch,
-            status: row.status,
-            id,
-          };
           continue;
         }
       }

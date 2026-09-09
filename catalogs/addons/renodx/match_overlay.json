@@ -400,6 +400,9 @@
   "blue-prince": {
     "appids": ["1569580"]
   },
+  "bodycam": {
+    "appids": ["2406770"]
+  },
   "boomeroad": {
     "appids": ["2512820"]
   },
@@ -539,6 +542,9 @@
   },
   "coridden": {
     "appids": ["1656930"]
+  },
+  "crab-champions": {
+    "appids": ["774801"]
   },
   "crab-game": {
     "appids": ["1782210"]
@@ -860,6 +866,9 @@
   "escape-from-ever-after": {
     "appids": ["1996390"]
   },
+  "escape-the-backrooms": {
+    "appids": ["1943950"]
+  },
   "eternal-threads": {
     "appids": ["1046790"]
   },
@@ -918,6 +927,9 @@
       "label_key": "renodx.external.nexus"
     },
     "appids": ["371660"]
+  },
+  "far-far-west": {
+    "appids": ["3124540"]
   },
   "far-lone-sails": {
     "appids": ["609320"]
@@ -1031,6 +1043,9 @@
   "go-mecha-ball": {
     "appids": ["2008510"]
   },
+  "goat-simulator-3": {
+    "appids": ["850190"]
+  },
   "god-of-war": {
     "appids": ["1593500"]
   },
@@ -1079,6 +1094,9 @@
   },
   "grounded": {
     "appids": ["962130"]
+  },
+  "grounded-2": {
+    "appids": ["2661300"]
   },
   "guild-wars-2": {
     "download_url": "https://notvoosh.github.io/renodx/renodx-guildwars2.addon64",
@@ -1355,6 +1373,9 @@
   "lego-2k-drive": {
     "appids": ["1490060"]
   },
+  "lego-batmantm-legacy-of-the-dark-knight": {
+    "appids": ["2215200"]
+  },
   "lego-bricktales": {
     "appids": ["1898290"]
   },
@@ -1584,6 +1605,9 @@
   },
   "morbid-metal-demo": {
     "appids": ["3762220"]
+  },
+  "mortal-shell-ii": {
+    "appids": ["2584270"]
   },
   "motorslice": {
     "appids": ["2830030"]
@@ -2708,6 +2732,9 @@
   },
   "vampyr": {
     "appids": ["427290"]
+  },
+  "vholume": {
+    "appids": ["4131730"]
   },
   "viewfinder": {
     "appids": ["1382070"]
