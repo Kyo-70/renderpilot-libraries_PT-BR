@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-06T00:00:00Z",
+  "generated_at": "2026-09-09T00:00:00Z",
   "minimum_reshade_version": "6.7.0",
   "games": [
     {
@@ -123,7 +123,7 @@
         {
           "id": "luma.deus-ex-human-revolution.compatibility",
           "kind": "compatibility",
-          "fallback_text": "Not compatible with Boris ENB (DX9). Works on DE and original Edition. The Gold Filter Restoration mod is redundant with this"
+          "fallback_text": "Not compatible with Boris ENB (DX9). Compatible with the Director's Cut and original edition. The Gold Filter Restoration mod is redundant with Luma."
         }
       ]
     },
@@ -268,7 +268,7 @@
         {
           "id": "luma.greedfall.warning",
           "kind": "warning",
-          "fallback_text": "DLSS only (no HDR atm)"
+          "fallback_text": "This profile supports DLSS only; HDR is not currently supported."
         }
       ]
     },
@@ -298,7 +298,7 @@
         {
           "id": "luma.hatsune-miku-project-diva-mega-mix-plus.warning",
           "kind": "warning",
-          "fallback_text": "If bugged, don't use Exclusive Fullscreen. Press (ALT + ENTER) to exit it."
+          "fallback_text": "If display issues occur, avoid Exclusive Fullscreen. Press Alt+Enter to switch modes."
         }
       ]
     },
@@ -328,7 +328,7 @@
         {
           "id": "luma.heavy-rain.warning",
           "kind": "warning",
-          "fallback_text": "Ultrawide might only work on Steam"
+          "fallback_text": "Ultrawide support may only work on Steam."
         }
       ]
     },
@@ -440,7 +440,7 @@
         {
           "id": "luma.inside.compatibility",
           "kind": "compatibility",
-          "fallback_text": "Not compatible with Xbox Store version"
+          "fallback_text": "Not compatible with the Xbox Store version."
         }
       ]
     },
@@ -493,7 +493,7 @@
         {
           "id": "luma.lara-croft-temple-of-osiris.compatibility",
           "kind": "compatibility",
-          "fallback_text": "Not compatible with Xbox Store version"
+          "fallback_text": "Not compatible with the Xbox Store version."
         }
       ]
     },
@@ -592,7 +592,7 @@
         {
           "id": "luma.metro-2033-redux.warning",
           "kind": "warning",
-          "fallback_text": "Requires using windowed/borderless windowed modes, either via mods or setting fullscreen off in the game's config file."
+          "fallback_text": "Requires windowed or borderless mode, configured via mods or by disabling fullscreen in the game config."
         },
         {
           "id": "luma.metro-2033-redux.windowed_borderless_only",
@@ -627,7 +627,7 @@
         {
           "id": "luma.middle-earth-shadow-of-war.dlss-only",
           "kind": "compatibility",
-          "fallback_text": "This profile adds DLSS support only; HDR is not currently supported."
+          "fallback_text": "This profile supports DLSS only; HDR is not currently supported."
         }
       ]
     },
@@ -965,7 +965,7 @@
         {
           "id": "luma.ace-combat-7.game_setting",
           "kind": "game_setting",
-          "fallback_text": "Follow this in-game prerequisite: AA \"FXAA High\"."
+          "fallback_text": "In the game settings, use: AA \"FXAA High\"."
         },
         {
           "id": "luma.ace-combat-7.engine_ini",
@@ -1393,7 +1393,7 @@
         {
           "id": "luma.crash-bandicoot-4.game_setting",
           "kind": "game_setting",
-          "fallback_text": "In the game settings, use: at least Medium (2x) Antialiasing Quality."
+          "fallback_text": "In the game settings, use: at least Medium (2x) Anti-aliasing Quality."
         }
       ]
     },
@@ -1758,7 +1758,7 @@
         {
           "id": "luma.dnf-duel.game_setting",
           "kind": "game_setting",
-          "fallback_text": "Follow this in-game prerequisite: AA does not work in character selection screen."
+          "fallback_text": "Anti-aliasing does not work on the character selection screen."
         },
         {
           "id": "luma.dnf-duel.engine_ini",
@@ -1798,7 +1798,7 @@
         {
           "id": "luma.dragon-ball-z-kakarot.game_setting",
           "kind": "game_setting",
-          "fallback_text": "In the game settings, use: TAA + use BDZKFix for the Legacy version/its updated fork for the HD version."
+          "fallback_text": "In the game settings, use: TAA. Use BDZKFix for the Legacy version or its updated fork for the HD version."
         }
       ]
     },
@@ -2016,7 +2016,7 @@
         {
           "id": "luma.guilty-gear-strive.warning",
           "kind": "warning",
-          "fallback_text": "AA does not work in character selection screen. In-game: AA \"Temporal Anti Aliasing\" Modify Engine.ini [SystemSettings] r.DefaultFeature.AntiAliasing=2 r.PostProcessAAQuality=4"
+          "fallback_text": "Anti-aliasing does not work on the character selection screen. In-game: AA \"Temporal Anti Aliasing\". In Engine.ini under [SystemSettings], add: r.DefaultFeature.AntiAliasing=2 and r.PostProcessAAQuality=4."
         }
       ]
     },
@@ -2126,7 +2126,7 @@
         {
           "id": "luma.it-takes-two.warning",
           "kind": "warning",
-          "fallback_text": "Only works on the title screen sequence"
+          "fallback_text": "Only works during the title screen sequence."
         }
       ]
     },
@@ -2229,7 +2229,7 @@
         {
           "id": "luma.kingdom-hearts-3.game_setting",
           "kind": "game_setting",
-          "fallback_text": "Follow this in-game prerequisite: \"TXAA\"."
+          "fallback_text": "In the game settings, use: \"TXAA\"."
         },
         {
           "id": "luma.kingdom-hearts-3.engine_ini",
@@ -2480,7 +2480,7 @@
         {
           "id": "luma.mutant-year-zero-road-to-eden.game_setting",
           "kind": "game_setting",
-          "fallback_text": "In the game settings, use: AA \"High\". Recommended to use r.motionblur.amount=0 via Engine.ini for motion clarity."
+          "fallback_text": "In the game settings, use: AA \"High\". For improved motion clarity, set r.motionblur.amount=0 in Engine.ini."
         }
       ]
     },
@@ -2548,7 +2548,7 @@
         {
           "id": "luma.project-wingman.game_setting",
           "kind": "game_setting",
-          "fallback_text": "Follow this in-game prerequisite: AA \"FXAA\"."
+          "fallback_text": "In the game settings, use: AA \"FXAA\"."
         },
         {
           "id": "luma.project-wingman.engine_ini",
@@ -2852,7 +2852,7 @@
         {
           "id": "luma.scorn.warning",
           "kind": "warning",
-          "fallback_text": "Has native support of FSR 2.1, so DLSS or any other upscaler can be added via OptiScaler."
+          "fallback_text": "Has native support for FSR 2.1; DLSS or other upscalers can be added via OptiScaler."
         }
       ]
     },
@@ -2913,7 +2913,7 @@
         {
           "id": "luma.shin-megami-tensei-5-vengeance.warning",
           "kind": "warning",
-          "fallback_text": "Needs Lyall's Fix to force TAA."
+          "fallback_text": "Requires Lyall's Fix to force TAA."
         }
       ]
     },
@@ -3302,7 +3302,7 @@
         {
           "id": "luma.tales-of-arise.warning",
           "kind": "warning",
-          "fallback_text": "Requires Arise-SDK, UseUE4TAA = true"
+          "fallback_text": "Requires Arise-SDK with UseUE4TAA=true."
         }
       ]
     },
@@ -3366,7 +3366,7 @@
         {
           "id": "luma.tekken-7.game_setting",
           "kind": "game_setting",
-          "fallback_text": "Follow this in-game prerequisite: Use -nod3d9ex launch argument."
+          "fallback_text": "Requires the -nod3d9ex launch argument."
         },
         {
           "id": "luma.tekken-7.engine_ini",
@@ -3433,7 +3433,7 @@
         {
           "id": "luma.tetris-effect-connected.game_setting",
           "kind": "game_setting",
-          "fallback_text": "Follow this in-game prerequisite: AA \"FXAA:6\" and Rendering Scale 100%."
+          "fallback_text": "In the game settings, use: AA \"FXAA:6\" and Rendering Scale 100%."
         },
         {
           "id": "luma.tetris-effect-connected.engine_ini",
@@ -3632,7 +3632,7 @@
         {
           "id": "luma.the-sinking-city.warning",
           "kind": "warning",
-          "fallback_text": "The original works. Remastered unknown."
+          "fallback_text": "Compatible with the original release; compatibility with the Remastered edition is unconfirmed."
         }
       ]
     },
@@ -3883,7 +3883,7 @@
         {
           "id": "luma.what-remains-of-edith-finch.warning",
           "kind": "warning",
-          "fallback_text": "The game is broken at 4K. Set Effects to Low before applying the manual Engine.ini settings."
+          "fallback_text": "The game is unstable at 4K resolution. Set Effects to Low before applying manual Engine.ini settings."
         },
         {
           "id": "luma.what-remains-of-edith-finch.engine_ini",
@@ -3970,7 +3970,7 @@
         {
           "id": "luma.sherlock-holmes-chapter-one.warning",
           "kind": "warning",
-          "fallback_text": "-dx11 launch argument Issues Poor CPU performance in DX11 mode. DLAA with AutoExposure:On have jagged edges on grass."
+          "fallback_text": "The -dx11 launch argument causes poor CPU performance. DLAA with Auto Exposure enabled produces jagged edges on grass."
         }
       ]
     },
@@ -4071,7 +4071,7 @@
         {
           "id": "luma.batman-arkham-knight.warning",
           "kind": "warning",
-          "fallback_text": "DLSS only (no HDR atm)"
+          "fallback_text": "This profile supports DLSS only; HDR is not currently supported."
         }
       ]
     },
@@ -4238,7 +4238,7 @@
         {
           "id": "luma.deus-ex-mankind-divided.warning",
           "kind": "warning",
-          "fallback_text": "DLSS only (no HDR atm)"
+          "fallback_text": "This profile supports DLSS only; HDR is not currently supported."
         }
       ]
     },
@@ -4736,7 +4736,7 @@
         {
           "id": "luma.blairwitch.game_setting",
           "kind": "game_setting",
-          "fallback_text": "In the game settings, use: TXAA, res. scalability \"Full\"."
+          "fallback_text": "In the game settings, use: TXAA and Resolution Scalability \"Full\"."
         }
       ]
     },
@@ -4765,7 +4765,7 @@
         {
           "id": "luma.borderlands-3.warning",
           "kind": "warning",
-          "fallback_text": "Seems to have flickering issues"
+          "fallback_text": "Visual flickering may occur."
         }
       ]
     },
@@ -4940,7 +4940,7 @@
         {
           "id": "luma.deceiveinc.compatibility",
           "kind": "compatibility",
-          "fallback_text": "blocked by Easy Anti-Cheat"
+          "fallback_text": "Blocked by Easy Anti-Cheat."
         }
       ]
     },
@@ -4991,7 +4991,7 @@
         {
           "id": "luma.echo.warning",
           "kind": "warning",
-          "fallback_text": "DLAA stopped working after first level. While its working with AutoExposure: On light sources are strobing, with AutoExposure: Off antialiasing became much worse."
+          "fallback_text": "DLAA stops working after the first level. With Auto Exposure enabled, light sources strobe; with Auto Exposure disabled, anti-aliasing quality degrades significantly."
         }
       ]
     },
@@ -5042,7 +5042,7 @@
         {
           "id": "luma.hellletloose.compatibility",
           "kind": "compatibility",
-          "fallback_text": "blocked by Easy Anti-Cheat"
+          "fallback_text": "Blocked by Easy Anti-Cheat."
         }
       ]
     },
@@ -5123,7 +5123,7 @@
         {
           "id": "luma.littlenightmaresiii.compatibility",
           "kind": "compatibility",
-          "fallback_text": "Doesn't boot in DX11"
+          "fallback_text": "Does not launch in DirectX 11 mode."
         }
       ]
     },
@@ -5152,7 +5152,7 @@
         {
           "id": "luma.masterdetectivearchivesraincodeplus.game_setting",
           "kind": "game_setting",
-          "fallback_text": "In the game settings, use: AA quality \"High\", resolution slider at max."
+          "fallback_text": "In the game settings, use: AA quality \"High\" and maximum resolution scale."
         }
       ]
     },
@@ -5181,7 +5181,7 @@
         {
           "id": "luma.narutotoborutoshinobistriker.compatibility",
           "kind": "compatibility",
-          "fallback_text": "blocked by Easy Anti-Cheat"
+          "fallback_text": "Blocked by Easy Anti-Cheat."
         }
       ]
     },
@@ -5210,7 +5210,7 @@
         {
           "id": "luma.persona-3reload.compatibility",
           "kind": "compatibility",
-          "fallback_text": "Doesn't boot in DX11"
+          "fallback_text": "Does not launch in DirectX 11 mode."
         }
       ]
     },
@@ -5261,7 +5261,7 @@
         {
           "id": "luma.predecessor.compatibility",
           "kind": "compatibility",
-          "fallback_text": "blocked by Easy Anti-Cheat"
+          "fallback_text": "Blocked by Easy Anti-Cheat."
         }
       ]
     },
@@ -5385,7 +5385,7 @@
         {
           "id": "luma.theouterworldsspacerschoiceedition.compatibility",
           "kind": "compatibility",
-          "fallback_text": "Doesn't boot in DX11"
+          "fallback_text": "Does not launch in DirectX 11 mode."
         }
       ]
     },
