@@ -21,7 +21,7 @@ This repository is the catalog producer for RenderPilot. It keeps reviewed sourc
 - **Publishes in dependency order.** Content-addressed assets and immutable vendor snapshots are uploaded and verified before `libraries/v1/index.json` becomes the new catalog commit point.
 - **Separates discovery from publication.** Refresh, materialization, generation, review, and R2 publication remain explicit operations with different authority and failure modes.
 
-The root `manifest.json` is frozen for legacy clients. Current RenderPilot builds consume the versioned `libraries/v1` and `addons/v1` contracts.
+Current RenderPilot builds consume the versioned `libraries/v1` and `addons/v1` contracts.
 
 ## Published ecosystem
 
@@ -61,7 +61,7 @@ Refresh and publication commands can write reviewed catalog state or remote obje
 | `libraries/v1/`       | Generated library index and local vendor snapshot projections                   |
 | `addons/v1/`          | Generated add-on manifests consumed by RenderPilot                              |
 | `cdn/`                | Local content-addressed DLL transports and legal documents                      |
-| Root JSON files       | Frozen legacy data plus current DLSS preset and settings contracts              |
+| Root JSON files       | DLSS preset and settings contracts                                              |
 | `schemas/`            | Public and authoring JSON Schemas                                               |
 | `scripts/`            | Validation, generation, import, inspection, refresh, and publication tooling    |
 | `.github/workflows/`  | Validation, scheduled refresh, withdrawal, and R2 publication automation        |

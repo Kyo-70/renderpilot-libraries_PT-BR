@@ -172,7 +172,6 @@ Before the first v1 index publication, `publish:assets` must run from a workspac
 - Published content-addressed objects are never overwritten with different bytes.
 - Recompression creates a new transport object and requires an explicit lock migration.
 - `publish:json` fails before the index if any remote prerequisite is absent or has unexpected metadata.
-- Publication never mutates or deletes the frozen root `manifest.json` or legacy R2 objects.
 - Publication commands do not delete obsolete root keys. The separately authorized Microsoft prune operation deletes only tombstone-scoped, globally unreferenced transport objects after proving the production commit point.
 
 ## Automation

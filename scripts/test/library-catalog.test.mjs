@@ -610,59 +610,6 @@ test("generated catalog has explicit package units and repaired DLSS-D identitie
   );
 });
 
-test("every frozen legacy DLL is represented in the v1 catalog", async () => {
-  const [legacy, ...snapshots] = await Promise.all([
-    readFile(path.join(repoRoot, "manifest.json"), "utf8").then(JSON.parse),
-    ...libraryVendors.map(async ({ outputFile }) =>
-      JSON.parse(await readFile(path.join(repoRoot, outputFile), "utf8")),
-    ),
-  ]);
-  const artifacts = new Map(
-    snapshots.flatMap((snapshot) =>
-      snapshot.artifacts.map((artifact) => [artifact.dll.sha256, artifact]),
-    ),
-  );
-
-  for (const entry of legacy.entries) {
-    const artifact = artifacts.get(entry.files.dll.hashes.sha256);
-    assert.ok(artifact, `${entry.entry_id}: DLL identity is missing from v1`);
-    assert.equal(artifact.library_id, entry.library.id, `${entry.entry_id}: library id`);
-    assert.equal(
-      artifact.file_name,
-      entry.library.file_name,
-      `${entry.entry_id}: filename`,
-    );
-    assert.equal(
-      normalizeNumericVersion(artifact.file_version),
-      normalizeNumericVersion(entry.version.value),
-      `${entry.entry_id}: file version`,
-    );
-    assert.equal(
-      artifact.dll.size_bytes,
-      entry.files.dll.size_bytes,
-      `${entry.entry_id}: size`,
-    );
-    assert.equal(
-      artifact.signature.status,
-      entry.signature.status,
-      `${entry.entry_id}: signature`,
-    );
-  }
-});
-
-test("legacy root manifest is frozen and excluded from publication", async () => {
-  const body = await readFile(path.join(repoRoot, "manifest.json"));
-  assert.equal(body.length, 245_101);
-  assert.equal(
-    sha256Hex(body),
-    "28437a39c46e7f19f5d952552a5562de9a1a7ae5f375b43b7d7ff138db0bb7f8",
-  );
-  assert.equal(
-    publishedJsonDocuments.some((document) => document.r2Key === "manifest.json"),
-    false,
-  );
-});
-
 function source() {
   return {
     schema_version: 1,

@@ -100,7 +100,6 @@ export const microsoftLibraryVendor = libraryVendors.find(
 export const libraryIndexFile = "libraries/v1/index.json";
 
 const SCHEMAS = Object.freeze({
-  libraryCatalog: "schemas/library_catalog.schema.json",
   libraryIndexV1: "schemas/library_index_v1.schema.json",
   libraryVendorV1: "schemas/library_vendor_v1.schema.json",
   libraryVendorSource: "schemas/library_vendor_source.schema.json",
@@ -152,11 +151,6 @@ export const jsonDocuments = defineDocuments([
         ]
       : []),
   ]),
-  {
-    file: "manifest.json",
-    schema: SCHEMAS.libraryCatalog,
-    publishedToR2: false,
-  },
   ...libraryVendors.map(({ outputFile }) => ({
     file: outputFile,
     schema: SCHEMAS.libraryVendorV1,

@@ -40,7 +40,6 @@ Generated add-on manifests expose only reviewed structured guidance. Raw Wiki no
 - Raw DLL identity and compressed transport identity are separate. Recompression cannot silently masquerade as the same transport object.
 - Vendor snapshots published under content-addressed keys are immutable.
 - `libraries/v1/index.json` is mutable only as the final commit point for a complete generation.
-- The root `manifest.json` is a frozen legacy document and is not regenerated or published by current tooling.
 - Generated repository files are review surfaces, not alternative authoring sources.
 
 ## Failure boundaries

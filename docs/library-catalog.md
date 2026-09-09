@@ -118,8 +118,7 @@ The generator:
 - prepares every vendor snapshot and the index as one immutable generation plan;
 - orders vendor outputs lexicographically and keeps the index last as the publication commit point;
 - writes the exact prepared UTF-8 bytes from that plan;
-- stages every output before replacement and rolls back earlier replacements if the batch fails;
-- never edits the frozen root `manifest.json`.
+- stages every output before replacement and rolls back earlier replacements if the batch fails.
 
 `scripts/catalog.mjs` is the repository and publication registry. Generators, validators, synchronizers, and remote checks obtain their explicit source paths, schemas, output paths, and R2 keys from that registry.
 
