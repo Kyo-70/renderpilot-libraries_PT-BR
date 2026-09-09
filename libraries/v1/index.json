@@ -26,9 +26,9 @@
     {
       "vendor_id": "nvidia",
       "display_name": "NVIDIA",
-      "snapshot_key": "libraries/v1/vendors/nvidia/c47bb867a44be23404b5f90cac475195d0c7f17b0c715df620af70c513573754.json",
-      "snapshot_sha256": "c47bb867a44be23404b5f90cac475195d0c7f17b0c715df620af70c513573754",
-      "snapshot_size_bytes": 355420
+      "snapshot_key": "libraries/v1/vendors/nvidia/ee9606811ebbf1ad3c0d41ede63888311a3bf040d0aba39f37fe4d317b9dba30.json",
+      "snapshot_sha256": "ee9606811ebbf1ad3c0d41ede63888311a3bf040d0aba39f37fe4d317b9dba30",
+      "snapshot_size_bytes": 371044
     },
     {
       "vendor_id": "valve",
