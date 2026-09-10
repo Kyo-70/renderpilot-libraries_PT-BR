@@ -1,10 +1,8 @@
 import {
-  addNormalizedAppids,
-  normalizeAppid,
-  normalizeAppids,
-  normalizeExeName,
+  directGameMatchField,
   warnUnknownFields,
 } from "../../../../scripts/lib/overlay-shared.mjs";
+import { resolveTargetRuleSets } from "../../../../scripts/lib/match-registry.mjs";
 import {
   assertNonEmptyArray,
   assertPlainObject,
@@ -13,9 +11,7 @@ import {
 } from "../../../../scripts/lib/common.mjs";
 
 export const KNOWN_OVERLAY_FIELDS = new Set([
-  "appid",
-  "appids",
-  "exe",
+  "game_target_ids",
   "slug",
   "conflicts",
   "required_api",
@@ -33,7 +29,7 @@ export const KNOWN_SPLIT_FIELDS = new Set([...KNOWN_OVERLAY_FIELDS, "suffix", "n
 
 const SPLIT_LOCAL_FIELDS = new Set(["suffix", "name"]);
 
-const NON_INHERITABLE_SPLIT_FIELDS = new Set(["appid", "appids", "exe", "split"]);
+const NON_INHERITABLE_SPLIT_FIELDS = new Set(["game_target_ids", "split"]);
 
 const INHERITED_SPLIT_FIELDS = new Set(
   [...KNOWN_OVERLAY_FIELDS].filter((field) => !NON_INHERITABLE_SPLIT_FIELDS.has(field)),
@@ -97,9 +93,18 @@ function validateExternalCategory(overlay, context) {
   };
 }
 
-function validateOverlayShape(overlay, context) {
-  normalizeAppids(overlay, context);
-  normalizeExeName(overlay.exe, `${context}.exe`);
+export function resolveOverlayTargetMatches(overlay, registry, context) {
+  if (!hasOwn(overlay, "game_target_ids")) return [];
+  return resolveTargetRuleSets(registry, overlay.game_target_ids, context);
+}
+
+function validateOverlayShape(overlay, context, registry) {
+  rejectRetiredDirectMatchFields(overlay, context);
+
+  if (hasOwn(overlay, "game_target_id")) {
+    throw new Error(`${context}.game_target_id is obsolete; use game_target_ids`);
+  }
+  resolveOverlayTargetMatches(overlay, registry, context);
 
   if (hasOwn(overlay, "slug")) {
     normalizeSlug(overlay.slug, `${context}.slug`);
@@ -121,6 +126,13 @@ function validateOverlayShape(overlay, context) {
   categoryOf(overlay, context);
 }
 
+function rejectRetiredDirectMatchFields(overlay, context) {
+  const field = directGameMatchField(overlay);
+  if (field !== null) {
+    throw new Error(`${context}.${field} is direct game matching; use game_target_ids`);
+  }
+}
+
 function rejectRemovedOverlayFields(overlay, context) {
   for (const field of REMOVED_OVERLAY_FIELDS) {
     if (hasOwn(overlay, field)) {
@@ -131,49 +143,18 @@ function rejectRemovedOverlayFields(overlay, context) {
   }
 }
 
-function validateSplit(parent, split, splitContext, warn) {
+function validateSplit(parent, split, splitContext, registry, warn) {
   assertPlainObject(split, splitContext);
 
   rejectRemovedOverlayFields(split, splitContext);
+  rejectRetiredDirectMatchFields(split, splitContext);
 
   warnUnknownFields(split, KNOWN_SPLIT_FIELDS, splitContext, warn);
 
   validateOptionalString(split.suffix, `${splitContext}.suffix`);
   validateOptionalString(split.name, `${splitContext}.name`);
 
-  validateOverlayShape(inheritedSplitOverlay(parent, split), splitContext);
-}
-
-function collectAppidsRecursively(value, into, context) {
-  if (Array.isArray(value)) {
-    value.forEach((item, index) => {
-      collectAppidsRecursively(item, into, `${context}[${index}]`);
-    });
-    return;
-  }
-
-  if (!value || typeof value !== "object") {
-    return;
-  }
-
-  for (const [key, val] of Object.entries(value)) {
-    if (key === "appid") {
-      into.add(normalizeAppid(val, `${context}.appid`));
-      continue;
-    }
-
-    if (key === "appids") {
-      assertNonEmptyArray(val, `${context}.appids`);
-
-      val.forEach((appid, index) => {
-        into.add(normalizeAppid(appid, `${context}.appids[${index}]`));
-      });
-
-      continue;
-    }
-
-    collectAppidsRecursively(val, into, `${context}.${key}`);
-  }
+  validateOverlayShape(inheritedSplitOverlay(parent, split), splitContext, registry);
 }
 
 export function normalizeSlug(value, context) {
@@ -257,7 +238,7 @@ export function inheritedSplitOverlay(parent, split) {
   return merged;
 }
 
-export function validateOverlay(overlay, wikiIds, warn = console.warn) {
+export function validateOverlay(overlay, wikiIds, registry, warn = console.warn) {
   assertPlainObject(overlay, "match_overlay.json");
 
   for (const [id, entry] of Object.entries(overlay)) {
@@ -272,7 +253,7 @@ export function validateOverlay(overlay, wikiIds, warn = console.warn) {
     }
 
     warnUnknownFields(entry, KNOWN_OVERLAY_FIELDS, context, warn);
-    validateOverlayShape(entry, context);
+    validateOverlayShape(entry, context, registry);
 
     if (!hasOwn(entry, "split")) {
       continue;
@@ -281,46 +262,7 @@ export function validateOverlay(overlay, wikiIds, warn = console.warn) {
     assertNonEmptyArray(entry.split, `${context}.split`);
 
     entry.split.forEach((split, index) => {
-      validateSplit(entry, split, `${context}.split[${index}]`, warn);
+      validateSplit(entry, split, `${context}.split[${index}]`, registry, warn);
     });
   }
-}
-
-export function collectOverlayAppids(value, into, context = "match_overlay.json") {
-  collectAppidsRecursively(value, into, context);
-}
-
-export function collectMatchedAppids(wiki, overlay) {
-  if (!Array.isArray(wiki)) {
-    throw new Error("wiki_games.json must be an array");
-  }
-
-  assertPlainObject(overlay, "match_overlay.json");
-
-  const appids = new Set();
-
-  wiki.forEach((game, index) => {
-    assertPlainObject(game, `wiki[${index}]`);
-
-    const id = requiredNonEmptyString(game.id, `wiki[${index}].id`);
-    const entry = overlay[id] ?? {};
-    const context = `overlay "${id}"`;
-
-    if (!hasOwn(entry, "split")) {
-      addNormalizedAppids(appids, entry, context);
-      return;
-    }
-
-    assertNonEmptyArray(entry.split, `${context}.split`);
-
-    entry.split.forEach((split, splitIndex) => {
-      const splitContext = `${context}.split[${splitIndex}]`;
-
-      assertPlainObject(split, splitContext);
-
-      addNormalizedAppids(appids, inheritedSplitOverlay(entry, split), splitContext);
-    });
-  });
-
-  return appids;
 }

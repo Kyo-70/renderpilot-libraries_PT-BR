@@ -12,18 +12,16 @@ import { SCHEMA_VERSION } from "./v1.mjs";
 export const MIN_RESHADE_VERSION = "6.7.0";
 
 /** Builds the public Luma v1 wire document from normalized authoring profiles. */
-export function buildManifest({ curatedGames, generatedAt } = {}) {
-  const profiles = normalizeCuratedGames(curatedGames);
+export function buildManifest({ curatedGames, registry, generatedAt } = {}) {
+  const profiles = normalizeCuratedGames(curatedGames, registry);
   const games = [];
   const pending = [];
   const seenOutputIds = new Set();
 
   for (const profile of profiles) {
-    reserveOutputId(seenOutputIds, profile.id, `curated_games.json "${profile.id}"`);
-
     if (profile.match_ignore) continue;
 
-    if (profile.match.length === 0) {
+    if (profile.target_matches.length === 0) {
       pending.push({
         id: profile.id,
         name: profile.name,
@@ -33,7 +31,21 @@ export function buildManifest({ curatedGames, generatedAt } = {}) {
       continue;
     }
 
-    games.push(assembleGame(profile));
+    if (profile.target_matches.length > 1 && profile.guidance.length > 0) {
+      throw new Error(
+        `curated_games.json "${profile.id}" cannot share guidance across multiple game targets`,
+      );
+    }
+
+    for (const { targetId, match } of profile.target_matches) {
+      const id = profile.target_matches.length === 1 ? profile.id : targetId;
+      reserveOutputId(
+        seenOutputIds,
+        id,
+        `curated_games.json "${profile.id}" target "${targetId}"`,
+      );
+      games.push(assembleGame(profile, { id, match }));
+    }
   }
 
   assertUniqueMatchRules(games);
@@ -52,7 +64,7 @@ export function buildManifest({ curatedGames, generatedAt } = {}) {
   };
 }
 
-function assembleGame(profile) {
+function assembleGame(profile, { id, match }) {
   const requirements = {};
   if (profile.launch_args.length > 0) {
     requirements.launch_arguments = profile.launch_args;
@@ -62,11 +74,11 @@ function assembleGame(profile) {
   }
 
   const game = {
-    id: profile.id,
+    id,
     name: profile.name,
     architecture: profile.arch,
     status: normalizedStatus(profile.status, VALID_STATUSES),
-    match: profile.match,
+    match,
     package: {
       release_asset: profile.asset,
       addon_file: profile.addon_file,

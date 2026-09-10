@@ -22,7 +22,16 @@ test("manifest integrity - committed RenoDX v1 document is well-formed and inter
     "Manifest should have at least one engine profile",
   );
   assert.equal(manifest.schema_version, 1);
-  assert.equal(manifest.games.length, 887);
+  assert.equal(manifest.games.length, 907);
+
+  const dragonQuestS = manifest.games.find((title) => title.id === "dragon-quest-11-s");
+  assert.ok(dragonQuestS, "Dragon Quest XI S must be a distinct exact RenoDX target");
+  assert.equal(dragonQuestS.addon.slug, "dragonquest-ue");
+  assert.ok(
+    dragonQuestS.match.some(
+      (rule) => rule.kind === "steam_appid" && rule.value === "1295510",
+    ),
+  );
   assert.match(manifest.generated_at, /^\d{4}-\d{2}-\d{2}T00:00:00Z$/);
 
   const enjenir = manifest.games.find((t) => t.id === "the-enjenir");

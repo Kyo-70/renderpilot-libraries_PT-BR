@@ -1,8 +1,12 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 
-import { buildManifest } from "../lib/build-manifest.mjs";
-import { authoringGame as game } from "./helpers.mjs";
+import {
+  authoringGame as game,
+  buildLumaManifestForTest as buildManifest,
+} from "./helpers.mjs";
+import { normalizeCuratedGames } from "../lib/authoring-profile.mjs";
+import { createMatchRegistry } from "../../../../scripts/lib/match-registry.mjs";
 
 const dgVoodooRequirement = (overrides = {}) => ({
   kind: "dgvoodoo2",
@@ -36,6 +40,42 @@ const dgVoodooRequirement = (overrides = {}) => ({
   ...overrides,
 });
 
+test("Luma authoring rejects retired direct game-matching fields", () => {
+  const registry = createMatchRegistry({
+    targets: [
+      {
+        id: "test-game",
+        rules: [
+          {
+            id: "steam-1",
+            kind: "steam_appid",
+            value: "1",
+            provenance: { source: "test", locator: "test" },
+          },
+        ],
+      },
+    ],
+  });
+  const { test_target_rules: _testTargetRules, ...base } = game("direct-match", {
+    game_target_ids: ["test-game"],
+  });
+
+  const values = {
+    match: [],
+    appid: "1",
+    appids: ["1"],
+    exe: "Game.exe",
+    exe_name: "Game.exe",
+  };
+
+  for (const [field, value] of Object.entries(values)) {
+    assert.throws(
+      () => normalizeCuratedGames([{ ...base, [field]: value }], registry),
+      new RegExp(`curated_games\\.json\\[0\\]\\.${field} is direct game matching`),
+    );
+  }
+});
+
 test("buildManifest emits a v1 game once it has a match identifier", () => {
   const result = buildManifest({
     generatedAt: "2026-07-05T00:00:00Z",
@@ -43,7 +83,7 @@ test("buildManifest emits a v1 game once it has a match identifier", () => {
       game("dishonored-2", {
         name: "Dishonored 2",
         asset: "Luma-Dishonored_2.zip",
-        match: [{ kind: "steam_appid", value: "403640", tier: 100 }],
+        test_target_rules: [{ kind: "steam_appid", value: "403640" }],
       }),
     ],
   });
@@ -132,7 +172,7 @@ test("buildManifest rejects incompatible profile and shared asset combinations",
 test("buildManifest keeps unmatched rows pending", () => {
   const result = buildManifest({
     generatedAt: "2026-07-05T00:00:00Z",
-    curatedGames: [game("no-match-game", { name: "No Match Game", match: [] })],
+    curatedGames: [game("no-match-game", { name: "No Match Game", test_target_rules: [] })],
   });
 
   assert.equal(result.manifest.games.length, 0);
@@ -149,7 +189,13 @@ test("buildManifest keeps unmatched rows pending", () => {
 test("buildManifest skips match_ignore profiles from pending and output", () => {
   const result = buildManifest({
     generatedAt: "2026-07-05T00:00:00Z",
-    curatedGames: [game("ignored-dup", { name: "Ignored", match: [], match_ignore: true })],
+    curatedGames: [
+      game("ignored-dup", {
+        name: "Ignored",
+        test_target_rules: [],
+        match_ignore: true,
+      }),
+    ],
   });
 
   assert.equal(result.manifest.games.length, 0);
@@ -162,11 +208,11 @@ test("buildManifest rejects duplicate match rules across titles", () => {
       buildManifest({
         generatedAt: "2026-07-05T00:00:00Z",
         curatedGames: [
-          game("one", { match: [{ kind: "steam_appid", value: "100", tier: 100 }] }),
-          game("two", { match: [{ kind: "steam_appid", value: "100", tier: 100 }] }),
+          game("one", { test_target_rules: [{ kind: "steam_appid", value: "100" }] }),
+          game("two", { test_target_rules: [{ kind: "steam_appid", value: "100" }] }),
         ],
       }),
-    /duplicate match rules/,
+    /duplicates exact identity/,
   );
 });
 
@@ -177,9 +223,9 @@ test("buildManifest lets one title carry multiple Steam AppIDs", () => {
       game("bioshock-series", {
         asset: "Luma-BioShock_Series-x32.zip",
         arch: "X86",
-        match: [
-          { kind: "steam_appid", value: "409710", tier: 100 },
-          { kind: "steam_appid", value: "409720", tier: 100 },
+        test_target_rules: [
+          { kind: "steam_appid", value: "409710" },
+          { kind: "steam_appid", value: "409720" },
         ],
       }),
     ],
@@ -417,9 +463,9 @@ test("buildManifest preserves an explicit executable-name match rule", () => {
     generatedAt: "2026-07-05T00:00:00Z",
     curatedGames: [
       game("stray", {
-        match: [
-          { kind: "steam_appid", value: "1332010", tier: 100 },
-          { kind: "exe_name", value: "Stray.exe", tier: 70 },
+        test_target_rules: [
+          { kind: "steam_appid", value: "1332010" },
+          { kind: "exe_name", value: "Stray.exe" },
         ],
       }),
     ],
@@ -431,36 +477,33 @@ test("buildManifest preserves an explicit executable-name match rule", () => {
   );
 });
 
-test("buildManifest normalizes valid match-rule values by kind", () => {
-  const match = [
-    { kind: "steam_appid", value: " 42 ", tier: 100 },
-    { kind: "epic_id", value: " epic-catalog-id ", tier: 90 },
-    { kind: "gog_id", value: " gog-product-id ", tier: 90 },
-    { kind: "exe_sha256", value: ` ${"a".repeat(64)} `, tier: 80 },
-    { kind: "exe_name", value: " Game.EXE ", tier: 70 },
+test("buildManifest normalizes valid target-rule values by kind", () => {
+  const testTargetRules = [
+    { kind: "steam_appid", value: " 42 " },
+    { kind: "epic_id", value: " epic-catalog-id " },
+    { kind: "gog_id", value: " gog-product-id " },
+    { kind: "exe_name", value: " Game.EXE " },
   ];
   const result = buildManifest({
     generatedAt: "2026-07-05T00:00:00Z",
-    curatedGames: [game("match-values", { match })],
+    curatedGames: [game("match-values", { test_target_rules: testTargetRules })],
   });
 
   assert.deepEqual(result.manifest.games[0].match, [
     { kind: "steam_appid", value: "42", tier: 100 },
-    { kind: "epic_id", value: "epic-catalog-id", tier: 90 },
-    { kind: "gog_id", value: "gog-product-id", tier: 90 },
-    { kind: "exe_sha256", value: "a".repeat(64), tier: 80 },
+    { kind: "epic_id", value: "epic-catalog-id", tier: 100 },
+    { kind: "gog_id", value: "gog-product-id", tier: 100 },
     { kind: "exe_name", value: "Game.EXE", tier: 70 },
   ]);
 });
 
-test("buildManifest rejects malformed match-rule values by kind", () => {
+test("buildManifest rejects malformed target-rule values by kind", () => {
   const invalidRules = [
     [{ kind: "steam_appid", value: "0", tier: 100 }, /positive Steam AppID/],
     [{ kind: "steam_appid", value: "12x", tier: 100 }, /positive Steam AppID/],
     [{ kind: "exe_name", value: "Game", tier: 70 }, /\.exe basename/],
     [{ kind: "exe_name", value: "bin\\Game.exe", tier: 70 }, /\.exe basename/],
-    [{ kind: "exe_sha256", value: "A".repeat(64), tier: 80 }, /lowercase SHA-256 digest/],
-    [{ kind: "exe_sha256", value: "a".repeat(63), tier: 80 }, /lowercase SHA-256 digest/],
+    [{ kind: "binary_digest", value: "a".repeat(64), tier: 80 }, /kind is unsupported/],
   ];
 
   for (const [rule, expectedError] of invalidRules) {
@@ -468,7 +511,7 @@ test("buildManifest rejects malformed match-rule values by kind", () => {
       () =>
         buildManifest({
           generatedAt: "2026-07-05T00:00:00Z",
-          curatedGames: [game("invalid-match-value", { match: [rule] })],
+          curatedGames: [game("invalid-match-value", { test_target_rules: [rule] })],
         }),
       expectedError,
     );

@@ -16,6 +16,7 @@ Legacy root keys such as `renodx_manifest.json` and `reshade_manifest.json` are 
 
 | Path                       | Responsibility                                                                             |
 | -------------------------- | ------------------------------------------------------------------------------------------ |
+| `catalogs/games/`          | Canonical exact game/edition targets, their verified match facts, and provenance           |
 | `catalogs/addons/renodx/`  | Wiki snapshot, reviewed matching overlay, pending identities, schema, generator, and tests |
 | `catalogs/addons/luma/`    | Curated profiles, reviewed Wiki data, managed dependencies, schema, generator, and tests   |
 | `catalogs/addons/reshade/` | ReShade channel contract, schema, generator, and provider-local tests                      |
@@ -35,12 +36,15 @@ A public manifest can describe reviewed requirements or instructions. It does no
 
 ## Curation rules
 
-- Match rules describe concrete game identities. Engine-wide RenoDX fallbacks belong in `engine_profiles`.
+- `catalogs/games/match-registry.json` is the sole authoring source for exact game/edition match facts. Luma and RenoDX profiles refer to one or more `game_target_ids`. Generators project each target's complete canonical fact set.
+- A target is an install-compatible game or edition, not a broad title. Split genuinely different editions into distinct targets rather than making an add-on choose individual rules.
+- Exact store identities are globally unique. A bare executable leaf is published only when it identifies one target globally.
+- Engine-wide RenoDX fallbacks belong in `engine_profiles`.
 - Luma game-specific payloads omit `profile`; engine profiles explicitly use `"unreal"` or `"unity"`.
 - Public Luma v1 restricts the profile enum to `"game" | "unreal" | "unity"`.
 - Luma feature status is required only for Unreal profiles and is never inferred from free-form Wiki text.
 - Guidance must be concise, reviewed, and action-oriented. Exact code, archive paths, hashes, and URLs remain structured where the contract requires them.
-- A missing trustworthy AppID or executable identity creates a pending review entry instead of an installable public profile.
+- A missing trustworthy identity creates a pending review entry instead of an installable public profile.
 - Generic Unreal Luma profiles retain the manual `-dx11` requirement when DirectX 12 is detected.
 
 Detailed authoring rules live beside each source:
@@ -62,6 +66,8 @@ See [Operations and publishing](operations.md#refreshing-add-ons) for the exact 
 ## Sources of truth
 
 - [Catalog registry](../scripts/catalog.mjs)
+- [Canonical game targets](../catalogs/games/match-registry.json)
+- [Game match registry schema](../catalogs/games/match-registry.schema.json)
 - [RenoDX manifest schema](../catalogs/addons/renodx/manifest-v1.schema.json)
 - [Luma manifest schema](../catalogs/addons/luma/manifest-v1.schema.json)
 - [ReShade manifest schema](../catalogs/addons/reshade/manifest-v1.schema.json)

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-09T00:00:00Z",
+  "generated_at": "2026-09-10T00:00:00Z",
   "games": [
     {
       "id": "007-first-light",
@@ -265,7 +265,36 @@
       }
     },
     {
-      "id": "assassin-s-creed-ezio-trilogy-dgvoodoo",
+      "id": "assassins-creed-brotherhood",
+      "name": "Assassin’s Creed® Ezio Trilogy (dgVoodoo)",
+      "architecture": "X64",
+      "status": "construction",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "48190",
+          "tier": 100
+        },
+        {
+          "kind": "exe_name",
+          "value": "ACBSP.exe",
+          "tier": 70
+        }
+      ],
+      "addon": {
+        "slug": "assassin-s-creed-ezio-trilogy-dgvoodoo"
+      },
+      "availability": {
+        "kind": "external",
+        "url": "https://www.nexusmods.com/assassinscreedii/mods/250",
+        "message": {
+          "id": "renodx.external.nexus",
+          "fallback_text": "Get the add-on from Nexus Mods, then install the downloaded file."
+        }
+      }
+    },
+    {
+      "id": "assassins-creed-ii",
       "name": "Assassin’s Creed® Ezio Trilogy (dgVoodoo)",
       "architecture": "X64",
       "status": "construction",
@@ -276,24 +305,33 @@
           "tier": 100
         },
         {
-          "kind": "steam_appid",
-          "value": "48190",
-          "tier": 100
-        },
+          "kind": "exe_name",
+          "value": "AssassinsCreedIIGame.exe",
+          "tier": 70
+        }
+      ],
+      "addon": {
+        "slug": "assassin-s-creed-ezio-trilogy-dgvoodoo"
+      },
+      "availability": {
+        "kind": "external",
+        "url": "https://www.nexusmods.com/assassinscreedii/mods/250",
+        "message": {
+          "id": "renodx.external.nexus",
+          "fallback_text": "Get the add-on from Nexus Mods, then install the downloaded file."
+        }
+      }
+    },
+    {
+      "id": "assassins-creed-revelations",
+      "name": "Assassin’s Creed® Ezio Trilogy (dgVoodoo)",
+      "architecture": "X64",
+      "status": "construction",
+      "match": [
         {
           "kind": "steam_appid",
           "value": "201870",
           "tier": 100
-        },
-        {
-          "kind": "exe_name",
-          "value": "AssassinsCreedIIGame.exe",
-          "tier": 70
-        },
-        {
-          "kind": "exe_name",
-          "value": "ACBSP.exe",
-          "tier": 70
         },
         {
           "kind": "exe_name",
@@ -720,12 +758,12 @@
         },
         {
           "kind": "exe_name",
-          "value": "AtlasFallen.exe",
+          "value": "AtlasFallen (DirectX 12).exe",
           "tier": 70
         },
         {
           "kind": "exe_name",
-          "value": "AtlasFallen (DirectX 12).exe",
+          "value": "AtlasFallen.exe",
           "tier": 70
         }
       ],
@@ -904,7 +942,7 @@
       }
     },
     {
-      "id": "borderlands-2-the-pre-sequel",
+      "id": "borderlands-2",
       "name": "Borderlands 2 & The Pre-Sequel",
       "architecture": "X64",
       "status": "working",
@@ -913,7 +951,18 @@
           "kind": "steam_appid",
           "value": "49520",
           "tier": 100
-        },
+        }
+      ],
+      "addon": {
+        "slug": "borderlands2"
+      }
+    },
+    {
+      "id": "borderlands-the-pre-sequel",
+      "name": "Borderlands 2 & The Pre-Sequel",
+      "architecture": "X64",
+      "status": "working",
+      "match": [
         {
           "kind": "steam_appid",
           "value": "261640",
@@ -958,12 +1007,12 @@
         },
         {
           "kind": "exe_name",
-          "value": "CoJ.exe",
+          "value": "CoJ_DX10.exe",
           "tier": 70
         },
         {
           "kind": "exe_name",
-          "value": "CoJ_DX10.exe",
+          "value": "CoJ.exe",
           "tier": 70
         }
       ],
@@ -1277,14 +1326,26 @@
           "tier": 100
         },
         {
-          "kind": "steam_appid",
-          "value": "383180",
-          "tier": 100
-        },
-        {
           "kind": "exe_name",
           "value": "DeadIslandGame.exe",
           "tier": 70
+        }
+      ],
+      "addon": {
+        "slug": "deadislandde",
+        "source": "https://notvoosh.github.io/renodx/renodx-deadislandde.addon64"
+      }
+    },
+    {
+      "id": "dead-island-riptide-definitive-edition",
+      "name": "Dead Island (& Riptide) Definitive Edition",
+      "architecture": "X64",
+      "status": "construction",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "383180",
+          "tier": 100
         },
         {
           "kind": "exe_name",
@@ -1548,6 +1609,28 @@
       }
     },
     {
+      "id": "dragon-quest-11-s",
+      "name": "Dragon Quest XI (Original & DE)",
+      "architecture": "X64",
+      "status": "working",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "1295510",
+          "tier": 100
+        },
+        {
+          "kind": "exe_name",
+          "value": "DRAGON QUEST XI S.exe",
+          "tier": 70
+        }
+      ],
+      "addon": {
+        "slug": "dragonquest-ue",
+        "source": "https://danaforever.github.io/renodx/renodx-dragonquest-ue.addon64"
+      }
+    },
+    {
       "id": "dragon-quest-xi",
       "name": "Dragon Quest XI (Original & DE)",
       "architecture": "X64",
@@ -1559,18 +1642,8 @@
           "tier": 100
         },
         {
-          "kind": "steam_appid",
-          "value": "1295510",
-          "tier": 100
-        },
-        {
           "kind": "exe_name",
           "value": "DRAGON QUEST XI.exe",
-          "tier": 70
-        },
-        {
-          "kind": "exe_name",
-          "value": "DRAGON QUEST XI S.exe",
           "tier": 70
         }
       ],
@@ -2019,6 +2092,16 @@
           "tier": 100
         },
         {
+          "kind": "xbox_store_id",
+          "value": "9N431PX143P8",
+          "tier": 100
+        },
+        {
+          "kind": "xbox_store_id",
+          "value": "9NR1R1XWLCNB",
+          "tier": 100
+        },
+        {
           "kind": "exe_name",
           "value": "forzahorizon6.exe",
           "tier": 70
@@ -2048,6 +2131,30 @@
       ],
       "addon": {
         "slug": "gfl2"
+      }
+    },
+    {
+      "id": "ghost-of-tsushima-director-s-cut",
+      "name": "Ghost of Tsushima DIRECTOR'S CUT",
+      "architecture": "X64",
+      "status": "working",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "2215430",
+          "tier": 100
+        }
+      ],
+      "addon": {
+        "slug": "ghost-of-tsushima-director-s-cut"
+      },
+      "availability": {
+        "kind": "external",
+        "url": "https://www.nexusmods.com/ghostoftsushima/mods/886",
+        "message": {
+          "id": "renodx.external.nexus",
+          "fallback_text": "Get the add-on from Nexus Mods, then install the downloaded file."
+        }
       }
     },
     {
@@ -2700,9 +2807,9 @@
           "tier": 100
         },
         {
-          "kind": "exe_name",
-          "value": "KingdomCome.exe",
-          "tier": 70
+          "kind": "gog_id",
+          "value": "1248083010",
+          "tier": 100
         }
       ],
       "addon": {
@@ -3063,12 +3170,12 @@
         },
         {
           "kind": "exe_name",
-          "value": "LostPlanetDX9.exe",
+          "value": "LostPlanetDX10.exe",
           "tier": 70
         },
         {
           "kind": "exe_name",
-          "value": "LostPlanetDX10.exe",
+          "value": "LostPlanetDX9.exe",
           "tier": 70
         }
       ],
@@ -3887,7 +3994,7 @@
       "id": "red-dead-redemption-2-vulkan",
       "name": "Red Dead Redemption 2 (Vulkan)",
       "architecture": "X64",
-      "status": "construction",
+      "status": "working",
       "match": [
         {
           "kind": "steam_appid",
@@ -3901,15 +4008,7 @@
         }
       ],
       "addon": {
-        "slug": "red-dead-redemption-2-vulkan"
-      },
-      "availability": {
-        "kind": "external",
-        "url": "https://discord.com/invite/renodx",
-        "message": {
-          "id": "renodx.external.discord",
-          "fallback_text": "Get the add-on from Discord, then install the downloaded file."
-        }
+        "slug": "rdr2vk"
       }
     },
     {
@@ -5724,6 +5823,23 @@
       }
     },
     {
+      "id": "chained-together",
+      "name": "Chained Together",
+      "architecture": "X64",
+      "status": "working",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "2567870",
+          "tier": 100
+        }
+      ],
+      "addon": {
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
+      }
+    },
+    {
       "id": "choo-choo-charles",
       "name": "Choo-Choo Charles",
       "architecture": "X64",
@@ -5758,6 +5874,23 @@
       }
     },
     {
+      "id": "conan-exiles-enhanced",
+      "name": "Conan Exiles Enhanced",
+      "architecture": "X64",
+      "status": "working",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "440900",
+          "tier": 100
+        }
+      ],
+      "addon": {
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
+      }
+    },
+    {
       "id": "crab-champions",
       "name": "Crab Champions",
       "architecture": "X64",
@@ -5780,6 +5913,22 @@
       }
     },
     {
+      "id": "dead-as-disco",
+      "name": "Dead as Disco",
+      "architecture": "X64",
+      "status": "working",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "3404260",
+          "tier": 100
+        }
+      ],
+      "addon": {
+        "slug": "unrealengine"
+      }
+    },
+    {
       "id": "deep-rock-galactic",
       "name": "Deep Rock Galactic",
       "architecture": "X64",
@@ -5797,6 +5946,23 @@
       }
     },
     {
+      "id": "deep-rock-galactic-rogue-core",
+      "name": "Deep Rock Galactic: Rogue Core",
+      "architecture": "X64",
+      "status": "construction",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "2605790",
+          "tier": 100
+        }
+      ],
+      "addon": {
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
+      }
+    },
+    {
       "id": "escape-the-backrooms",
       "name": "Escape the Backrooms",
       "architecture": "X64",
@@ -5805,6 +5971,23 @@
         {
           "kind": "steam_appid",
           "value": "1943950",
+          "tier": 100
+        }
+      ],
+      "addon": {
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
+      }
+    },
+    {
+      "id": "everwind",
+      "name": "Everwind",
+      "architecture": "X64",
+      "status": "working",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "2253100",
           "tier": 100
         }
       ],
@@ -5844,6 +6027,23 @@
       ],
       "addon": {
         "slug": "unrealengine"
+      }
+    },
+    {
+      "id": "frostpunk-2",
+      "name": "Frostpunk 2",
+      "architecture": "X64",
+      "status": "construction",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "1601580",
+          "tier": 100
+        }
+      ],
+      "addon": {
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
       }
     },
     {
@@ -5907,7 +6107,23 @@
       }
     },
     {
-      "id": "grand-theft-auto-the-trilogy-the-definitive-edition-iii-vice-city-san-andreas",
+      "id": "gothic-1-remake",
+      "name": "Gothic 1 Remake",
+      "architecture": "X64",
+      "status": "working",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "1297900",
+          "tier": 100
+        }
+      ],
+      "addon": {
+        "slug": "unrealengine"
+      }
+    },
+    {
+      "id": "grand-theft-auto-iii-definitive-edition",
       "name": "Grand Theft Auto: The Trilogy – The Definitive Edition (III, Vice City, San Andreas)",
       "architecture": "X64",
       "status": "working",
@@ -5916,15 +6132,39 @@
           "kind": "steam_appid",
           "value": "1546970",
           "tier": 100
-        },
-        {
-          "kind": "steam_appid",
-          "value": "1546990",
-          "tier": 100
-        },
+        }
+      ],
+      "addon": {
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
+      }
+    },
+    {
+      "id": "grand-theft-auto-san-andreas-definitive-edition",
+      "name": "Grand Theft Auto: The Trilogy – The Definitive Edition (III, Vice City, San Andreas)",
+      "architecture": "X64",
+      "status": "working",
+      "match": [
         {
           "kind": "steam_appid",
           "value": "1547000",
+          "tier": 100
+        }
+      ],
+      "addon": {
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
+      }
+    },
+    {
+      "id": "grand-theft-auto-vice-city-definitive-edition",
+      "name": "Grand Theft Auto: The Trilogy – The Definitive Edition (III, Vice City, San Andreas)",
+      "architecture": "X64",
+      "status": "working",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "1546990",
           "tier": 100
         }
       ],
@@ -5951,6 +6191,23 @@
       }
     },
     {
+      "id": "hellblade-ii-senua-s-saga",
+      "name": "Hellblade II: Senua’s Saga",
+      "architecture": "X64",
+      "status": "construction",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "2461850",
+          "tier": 100
+        }
+      ],
+      "addon": {
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
+      }
+    },
+    {
       "id": "hi-fi-rush",
       "name": "Hi-Fi Rush",
       "architecture": "X64",
@@ -5968,6 +6225,23 @@
       }
     },
     {
+      "id": "hydroneer",
+      "name": "Hydroneer",
+      "architecture": "X64",
+      "status": "working",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "1106840",
+          "tier": 100
+        }
+      ],
+      "addon": {
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
+      }
+    },
+    {
       "id": "the-idolm-ster-starlit-season",
       "name": "The iDOLM@STER: Starlit Season",
       "architecture": "X64",
@@ -5976,6 +6250,23 @@
         {
           "kind": "steam_appid",
           "value": "1046480",
+          "tier": 100
+        }
+      ],
+      "addon": {
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
+      }
+    },
+    {
+      "id": "inzoi",
+      "name": "inZOI",
+      "architecture": "X64",
+      "status": "working",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "2456740",
           "tier": 100
         }
       ],
@@ -6032,6 +6323,23 @@
         {
           "kind": "steam_appid",
           "value": "2215200",
+          "tier": 100
+        }
+      ],
+      "addon": {
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
+      }
+    },
+    {
+      "id": "lies-of-p",
+      "name": "Lies of P",
+      "architecture": "X64",
+      "status": "construction",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "1627720",
           "tier": 100
         }
       ],
@@ -6163,6 +6471,23 @@
       }
     },
     {
+      "id": "motor-town-behind-the-wheel",
+      "name": "Motor Town: Behind The Wheel",
+      "architecture": "X64",
+      "status": "construction",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "1369670",
+          "tier": 100
+        }
+      ],
+      "addon": {
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
+      }
+    },
+    {
       "id": "nobody-wants-to-die",
       "name": "Nobody Wants to Die",
       "architecture": "X64",
@@ -6171,6 +6496,23 @@
         {
           "kind": "steam_appid",
           "value": "1939970",
+          "tier": 100
+        }
+      ],
+      "addon": {
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
+      }
+    },
+    {
+      "id": "pacific-drive",
+      "name": "Pacific Drive",
+      "architecture": "X64",
+      "status": "working",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "1458140",
           "tier": 100
         }
       ],
@@ -6204,6 +6546,23 @@
         {
           "kind": "steam_appid",
           "value": "2161700",
+          "tier": 100
+        }
+      ],
+      "addon": {
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
+      }
+    },
+    {
+      "id": "quarantine-zone-the-last-check",
+      "name": "Quarantine Zone: The Last Check",
+      "architecture": "X64",
+      "status": "working",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "3419520",
           "tier": 100
         }
       ],
@@ -6303,6 +6662,40 @@
       }
     },
     {
+      "id": "solarpunk",
+      "name": "Solarpunk",
+      "architecture": "X64",
+      "status": "working",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "1805110",
+          "tier": 100
+        }
+      ],
+      "addon": {
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
+      }
+    },
+    {
+      "id": "star-wars-zero-companytm",
+      "name": "STAR WARS Zero Company™",
+      "architecture": "X64",
+      "status": "working",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "2075800",
+          "tier": 100
+        }
+      ],
+      "addon": {
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
+      }
+    },
+    {
       "id": "stray",
       "name": "Stray",
       "architecture": "X64",
@@ -6333,6 +6726,23 @@
         {
           "kind": "steam_appid",
           "value": "1962700",
+          "tier": 100
+        }
+      ],
+      "addon": {
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
+      }
+    },
+    {
+      "id": "the-alters",
+      "name": "The Alters",
+      "architecture": "X64",
+      "status": "working",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "1601570",
           "tier": 100
         }
       ],
@@ -6526,6 +6936,11 @@
           "kind": "steam_appid",
           "value": "1966410",
           "tier": 100
+        },
+        {
+          "kind": "xbox_store_id",
+          "value": "9NK8947Z28XL",
+          "tier": 100
         }
       ],
       "addon": {
@@ -6547,22 +6962,6 @@
           "kind": "exe_name",
           "value": "TheAscent.exe",
           "tier": 70
-        }
-      ],
-      "addon": {
-        "slug": "unrealengine"
-      }
-    },
-    {
-      "id": "the-alters",
-      "name": "The Alters",
-      "architecture": "X64",
-      "status": "working",
-      "match": [
-        {
-          "kind": "steam_appid",
-          "value": "1601570",
-          "tier": 100
         }
       ],
       "addon": {
@@ -7058,22 +7457,6 @@
       }
     },
     {
-      "id": "dead-as-disco",
-      "name": "Dead as Disco",
-      "architecture": "X64",
-      "status": "working",
-      "match": [
-        {
-          "kind": "steam_appid",
-          "value": "3404260",
-          "tier": 100
-        }
-      ],
-      "addon": {
-        "slug": "unrealengine"
-      }
-    },
-    {
       "id": "deadline-delivery",
       "name": "DEADLINE DELIVERY",
       "architecture": "X64",
@@ -7425,22 +7808,6 @@
       }
     },
     {
-      "id": "gothic-1-remake",
-      "name": "Gothic 1 Remake",
-      "architecture": "X64",
-      "status": "working",
-      "match": [
-        {
-          "kind": "steam_appid",
-          "value": "1297900",
-          "tier": 100
-        }
-      ],
-      "addon": {
-        "slug": "unrealengine"
-      }
-    },
-    {
       "id": "granblue-fantasy-versus",
       "name": "Granblue Fantasy: Versus",
       "architecture": "X64",
@@ -7608,22 +7975,6 @@
         {
           "kind": "steam_appid",
           "value": "3164330",
-          "tier": 100
-        }
-      ],
-      "addon": {
-        "slug": "unrealengine"
-      }
-    },
-    {
-      "id": "inzoi",
-      "name": "InZOI",
-      "architecture": "X64",
-      "status": "working",
-      "match": [
-        {
-          "kind": "steam_appid",
-          "value": "2456740",
           "tier": 100
         }
       ],
@@ -7805,22 +8156,6 @@
         {
           "kind": "steam_appid",
           "value": "1490060",
-          "tier": 100
-        }
-      ],
-      "addon": {
-        "slug": "unrealengine"
-      }
-    },
-    {
-      "id": "lies-of-p",
-      "name": "Lies of P",
-      "architecture": "X64",
-      "status": "construction",
-      "match": [
-        {
-          "kind": "steam_appid",
-          "value": "1627720",
           "tier": 100
         }
       ],
@@ -8115,6 +8450,11 @@
           "kind": "steam_appid",
           "value": "3287520",
           "tier": 100
+        },
+        {
+          "kind": "xbox_store_id",
+          "value": "9N51FH42VQDS",
+          "tier": 100
         }
       ],
       "addon": {
@@ -8193,12 +8533,7 @@
       "match": [
         {
           "kind": "steam_appid",
-          "value": "257120",
-          "tier": 100
-        },
-        {
-          "kind": "steam_appid",
-          "value": "1692250",
+          "value": "578650",
           "tier": 100
         }
       ],
@@ -8231,22 +8566,6 @@
         {
           "kind": "steam_appid",
           "value": "1304930",
-          "tier": 100
-        }
-      ],
-      "addon": {
-        "slug": "unrealengine"
-      }
-    },
-    {
-      "id": "pacific-drive",
-      "name": "Pacific Drive",
-      "architecture": "X64",
-      "status": "construction",
-      "match": [
-        {
-          "kind": "steam_appid",
-          "value": "1458140",
           "tier": 100
         }
       ],
@@ -8572,6 +8891,11 @@
           "kind": "steam_appid",
           "value": "1867530",
           "tier": 100
+        },
+        {
+          "kind": "exe_name",
+          "value": "SolarAsh.exe",
+          "tier": 70
         }
       ],
       "addon": {
@@ -12998,6 +13322,22 @@
         {
           "kind": "steam_appid",
           "value": "3762220",
+          "tier": 100
+        }
+      ],
+      "addon": {
+        "slug": "unityengine"
+      }
+    },
+    {
+      "id": "mouthwashing",
+      "name": "Mouthwashing",
+      "architecture": "X64",
+      "status": "construction",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "2475490",
           "tier": 100
         }
       ],

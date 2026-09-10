@@ -5,7 +5,31 @@ import path from "node:path";
 import Ajv2020 from "ajv/dist/2020.js";
 import addFormats from "ajv-formats";
 
-import { buildManifest } from "../lib/build-manifest.mjs";
+import { buildManifest as buildProductionManifest } from "../lib/build-manifest.mjs";
+import { createMatchRegistry } from "../../../../scripts/lib/match-registry.mjs";
+
+// Fixtures model the same target-reference relationship as production
+// authoring. The registry rules are supplied separately from overlays.
+function buildManifest({ overlay = {}, testTargets = [], ...options }) {
+  return buildProductionManifest({
+    ...options,
+    overlay,
+    registry: createMatchRegistry({
+      targets: [...testTargets].sort((left, right) => left.id.localeCompare(right.id)),
+    }),
+  });
+}
+
+function target(id, rules) {
+  return {
+    id,
+    rules: rules.map((rule, index) => ({
+      id: `test-rule-${id}-${index}`,
+      ...rule,
+      provenance: { source: "test", locator: `${id}:${index}` },
+    })),
+  };
+}
 
 const SCHEMA_PATH = path.join(import.meta.dirname, "..", "manifest-v1.schema.json");
 
@@ -61,12 +85,18 @@ test("buildManifest promotes matched split entries into v1 games", () => {
       collection: {
         slug: "shared",
         split: [
-          { suffix: "one", name: "One", appid: "100" },
-          { suffix: "two", name: "Two", exe: "Two.exe" },
+          { suffix: "one", name: "One", game_target_ids: ["collection-one"] },
+          { suffix: "two", name: "Two", game_target_ids: ["collection-two"] },
         ],
       },
     },
-    exeCache: { 100: ["One.exe"] },
+    testTargets: [
+      target("collection-one", [
+        { kind: "steam_appid", value: "100" },
+        { kind: "exe_name", value: "One.exe" },
+      ]),
+      target("collection-two", [{ kind: "exe_name", value: "Two.exe" }]),
+    ],
     warn: () => {},
   });
 
@@ -113,13 +143,14 @@ test("buildManifest maps external category onto v1 availability", () => {
     wiki: [game("external-game", "External Game")],
     overlay: {
       "external-game": {
-        appid: "42",
+        game_target_ids: ["external-game"],
         external: {
           url: "https://www.nexusmods.com/example/mods/1",
           label_key: "renodx.external.nexus",
         },
       },
     },
+    testTargets: [target("external-game", [{ kind: "steam_appid", value: "42" }])],
     warn: () => {},
   });
 
@@ -153,12 +184,16 @@ test("buildManifest rejects duplicate match rules across titles", () => {
         generatedAt: "2026-06-27T00:00:00Z",
         wiki: [game("one"), game("two")],
         overlay: {
-          one: { appid: "100" },
-          two: { appid: "100" },
+          one: { game_target_ids: ["one"] },
+          two: { game_target_ids: ["two"] },
         },
+        testTargets: [
+          target("one", [{ kind: "steam_appid", value: "100" }]),
+          target("two", [{ kind: "steam_appid", value: "100" }]),
+        ],
         warn: () => {},
       }),
-    /duplicate match rules/,
+    /duplicates exact identity/,
   );
 });
 
@@ -168,13 +203,14 @@ test("buildManifest projects overlay constraints and proxy_dll onto v1", () => {
     wiki: [game("constrained-game", "Constrained Game")],
     overlay: {
       "constrained-game": {
-        appid: "9001",
+        game_target_ids: ["constrained-game"],
         required_api: ["D3D11"],
         conflicts: ["hdr"],
         compatibility_source: "https://example.com/notes",
         proxy_dll_override: "dxgi.dll",
       },
     },
+    testTargets: [target("constrained-game", [{ kind: "steam_appid", value: "9001" }])],
     warn: () => {},
   });
 
@@ -225,9 +261,13 @@ test("buildManifest merges curatedGames and attaches ue-extended canonical sourc
       },
     ],
     overlay: {
-      "some-game": { appid: "10" },
-      "black-myth-wukong": { appid: "2358720" },
+      "some-game": { game_target_ids: ["some-game"] },
+      "black-myth-wukong": { game_target_ids: ["black-myth-wukong"] },
     },
+    testTargets: [
+      target("some-game", [{ kind: "steam_appid", value: "10" }]),
+      target("black-myth-wukong", [{ kind: "steam_appid", value: "2358720" }]),
+    ],
     warn: () => {},
   });
 

@@ -7,18 +7,7 @@
     "arch": "X64",
     "status": "working",
     "profile": "unity",
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "1449320",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "Vertigo.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["alfred-hitchcock-vertigo"]
   },
   {
     "id": "burnout-paradise-remastered",
@@ -27,13 +16,7 @@
     "addon_file": "Luma-Burnout Paradise Remastered.addon",
     "arch": "X86",
     "status": "working",
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "1238080",
-        "tier": 100
-      }
-    ]
+    "game_target_ids": ["burnout-paradise-remastered"]
   },
   {
     "id": "cod-black-ops-3",
@@ -58,18 +41,7 @@
         "guidance_ids": ["luma.cod-black-ops-3.warning"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "311210",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "blackops3.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["cod-black-ops-3"]
   },
   {
     "id": "cocoon",
@@ -79,18 +51,7 @@
     "arch": "X64",
     "status": "working",
     "profile": "unity",
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "1497440",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "universe.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["cocoon"]
   },
   {
     "id": "deus-ex-human-revolution",
@@ -115,18 +76,7 @@
         "guidance_ids": ["luma.deus-ex-human-revolution.compatibility"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "238010",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "DXHRDC.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["deus-ex-human-revolution"]
   },
   {
     "id": "dishonored-2",
@@ -135,18 +85,7 @@
     "addon_file": "Luma-Dishonored 2.addon",
     "arch": "X64",
     "status": "construction",
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "403640",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "Dishonored2.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["dishonored-2"]
   },
   {
     "id": "far-changing-tides",
@@ -156,18 +95,7 @@
     "arch": "X64",
     "status": "working",
     "profile": "unity",
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "1570010",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "FarChangingTides.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["far-changing-tides"]
   },
   {
     "id": "far-lone-sails",
@@ -177,18 +105,7 @@
     "arch": "X64",
     "status": "working",
     "profile": "unity",
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "609320",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "FarLoneSails.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["far-lone-sails"]
   },
   {
     "id": "final-fantasy-7-remake",
@@ -197,18 +114,7 @@
     "addon_file": "Luma-Final Fantasy VII Remake.addon",
     "arch": "X64",
     "status": "working",
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "1462040",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "ff7remake.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["final-fantasy-vii-remake-intergrade"]
   },
   {
     "id": "granblue-fantasy-relink",
@@ -217,18 +123,7 @@
     "addon_file": "Luma-Granblue Fantasy Relink.addon",
     "arch": "X64",
     "status": "working",
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "881020",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "granblue_fantasy_relink.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["granblue-fantasy-relink"]
   },
   {
     "id": "greedfall",
@@ -253,18 +148,7 @@
         "guidance_ids": ["luma.greedfall.warning"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "606880",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "GreedFall.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["greedfall"]
   },
   {
     "id": "hatsune-miku-project-diva-mega-mix-plus",
@@ -289,18 +173,7 @@
         "guidance_ids": ["luma.hatsune-miku-project-diva-mega-mix-plus.warning"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "1761390",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "DivaMegaMix.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["hatsune-miku-project-diva-mega-mix-plus"]
   },
   {
     "id": "heavy-rain",
@@ -325,18 +198,7 @@
         "guidance_ids": ["luma.heavy-rain.warning"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "960910",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "HeavyRain.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["heavy-rain"]
   },
   {
     "id": "hollow-knight-silksong",
@@ -346,18 +208,7 @@
     "arch": "X64",
     "status": "working",
     "profile": "unity",
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "1030300",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "Hollow Knight Silksong.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["hollow-knight-silksong"]
   },
   {
     "id": "prince-of-persia-the-lost-crown",
@@ -367,18 +218,7 @@
     "arch": "X64",
     "status": "working",
     "profile": "unity",
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "2751000",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "TheLostCrown.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["prince-of-persia-the-lost-crown"]
   },
   {
     "id": "shadows-of-doubt",
@@ -388,13 +228,7 @@
     "arch": "X64",
     "status": "working",
     "profile": "unity",
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "986130",
-        "tier": 100
-      }
-    ]
+    "game_target_ids": ["shadows-of-doubt"]
   },
   {
     "id": "white-knuckle",
@@ -404,13 +238,7 @@
     "arch": "X64",
     "status": "working",
     "profile": "unity",
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "3195790",
-        "tier": 100
-      }
-    ]
+    "game_target_ids": ["white-knuckle"]
   },
   {
     "id": "inside",
@@ -435,18 +263,7 @@
         "guidance_ids": ["luma.inside.compatibility"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "304430",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "INSIDE.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["inside"]
   },
   {
     "id": "just-cause-3",
@@ -455,18 +272,7 @@
     "addon_file": "Luma-Just Cause 3.addon",
     "arch": "X64",
     "status": "working",
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "225540",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "JustCause3.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["just-cause-3"]
   },
   {
     "id": "lara-croft-temple-of-osiris",
@@ -491,18 +297,7 @@
         "guidance_ids": ["luma.lara-croft-temple-of-osiris.compatibility"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "289690",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "LC2.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["lara-croft-temple-of-osiris"]
   },
   {
     "id": "lego-city-undercover",
@@ -511,18 +306,7 @@
     "addon_file": "Luma-Lego City Undercover.addon",
     "arch": "X64",
     "status": "working",
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "578330",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "LEGOLCUR_DX11.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["lego-city-undercover"]
   },
   {
     "id": "mafia-2-definitive-edition",
@@ -531,18 +315,7 @@
     "addon_file": "Luma-Mafia II Definitive Edition.addon",
     "arch": "X64",
     "status": "working",
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "1030830",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "Mafia II Definitive Edition.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["mafia-2-definitive-edition"]
   },
   {
     "id": "mafia-3",
@@ -551,18 +324,7 @@
     "addon_file": "Luma-Mafia III.addon",
     "arch": "X64",
     "status": "working",
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "360430",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "mafia3definitiveedition.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["mafia-3"]
   },
   {
     "id": "metro-2033-redux",
@@ -593,18 +355,7 @@
         "guidance_ids": ["luma.metro-2033-redux.warning"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "286690",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "metro.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["metro-2033-redux"]
   },
   {
     "id": "middle-earth-shadow-of-war",
@@ -629,18 +380,7 @@
         "guidance_ids": ["luma.middle-earth-shadow-of-war.dlss-only"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "356190",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "ShadowOfWar.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["middle-earth-shadow-of-war"]
   },
   {
     "id": "nioh",
@@ -649,18 +389,7 @@
     "addon_file": "Luma-Nioh.addon",
     "arch": "X64",
     "status": "working",
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "485510",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "nioh.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["nioh"]
   },
   {
     "id": "persona-5-royal",
@@ -669,18 +398,7 @@
     "addon_file": "Luma-Persona 5.addon",
     "arch": "X64",
     "status": "working",
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "1687950",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "P5R.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["persona-5-royal"]
   },
   {
     "id": "prey-2017",
@@ -696,18 +414,7 @@
         "fallback_text": "Keep Prey's additional Luma data files together with the add-on."
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "480490",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "Prey.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["prey-2017"]
   },
   {
     "id": "thief-2014",
@@ -716,18 +423,7 @@
     "addon_file": "Luma-Thief (2014).addon",
     "arch": "X64",
     "status": "working",
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "239160",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "shipping-thiefgame.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["thief-2014"]
   },
   {
     "id": "thumper",
@@ -736,23 +432,7 @@
     "addon_file": "Luma-Thumper.addon",
     "arch": "X64",
     "status": "working",
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "356400",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "THUMPER_win8.exe",
-        "tier": 70
-      },
-      {
-        "kind": "exe_name",
-        "value": "THUMPER_dx9.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["thumper"]
   },
   {
     "id": "trine-5",
@@ -761,18 +441,7 @@
     "addon_file": "Luma-Trine 5.addon",
     "arch": "X64",
     "status": "working",
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "1436700",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "trine5.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["trine-5"]
   },
   {
     "id": "watch-dogs-2",
@@ -781,18 +450,7 @@
     "addon_file": "Luma-Watch Dogs 2.addon",
     "arch": "X64",
     "status": "construction",
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "447040",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "WatchDogs2.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["watch-dogs-2"]
   },
   {
     "id": "quantum-break",
@@ -801,18 +459,7 @@
     "addon_file": "Luma-Quantum Break.addon",
     "arch": "X64",
     "status": "working",
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "474960",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "QuantumBreak.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["quantum-break"]
   },
   {
     "id": "mass-effect-andromeda",
@@ -837,13 +484,7 @@
         "guidance_ids": ["luma.mass-effect-andromeda.compatibility"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "1238000",
-        "tier": 100
-      }
-    ]
+    "game_target_ids": ["mass-effect-andromeda"]
   },
   {
     "id": "mass-effect-legendary-edition",
@@ -852,13 +493,7 @@
     "addon_file": "Luma-Mass Effect Legendary Edition.addon",
     "arch": "X64",
     "status": "working",
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "1328670",
-        "tier": 100
-      }
-    ]
+    "game_target_ids": ["mass-effect-legendary-edition"]
   },
   {
     "id": "abiotic-factor",
@@ -890,18 +525,7 @@
         "guidance_ids": ["luma.abiotic-factor.launch_argument"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "427410",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "AbioticFactor.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["abiotic-factor"]
   },
   {
     "id": "abzu",
@@ -915,18 +539,7 @@
       "dlss_fsr": "unsupported",
       "hdr": "supported"
     },
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "384190",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "AbzuGame.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["abzu"]
   },
   {
     "id": "ace-combat-7",
@@ -962,18 +575,7 @@
         "guidance_ids": ["luma.ace-combat-7.game_setting", "luma.ace-combat-7.engine_ini"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "502500",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "Ace7Game.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["ace-combat-7"]
   },
   {
     "id": "agony-unrated",
@@ -987,18 +589,7 @@
       "dlss_fsr": "supported",
       "hdr": "unknown"
     },
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "879420",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "Agony.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["agony-unrated"]
   },
   {
     "id": "alchemy-garden",
@@ -1012,18 +603,7 @@
       "dlss_fsr": "supported",
       "hdr": "unknown"
     },
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "935400",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "AlchemyGardenUE.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["alchemy-garden"]
   },
   {
     "id": "aliens-fireteam-elite",
@@ -1037,18 +617,7 @@
       "dlss_fsr": "supported",
       "hdr": "supported"
     },
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "1549970",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "Endeavor.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["aliens-fireteam-elite"]
   },
   {
     "id": "ancestors-the-humankind-odyssey",
@@ -1062,18 +631,7 @@
       "dlss_fsr": "supported",
       "hdr": "unknown"
     },
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "536270",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "Ancestors-Win64-Shipping.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["ancestors-the-humankind-odyssey"]
   },
   {
     "id": "ancestors-legacy",
@@ -1104,18 +662,7 @@
         "guidance_ids": ["luma.ancestors-legacy.engine_ini"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "620590",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "Anc-Win64-Shipping.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["ancestors-legacy"]
   },
   {
     "id": "ashen",
@@ -1129,18 +676,7 @@
       "dlss_fsr": "supported",
       "hdr": "supported"
     },
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "649950",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "Ashen.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["ashen"]
   },
   {
     "id": "bloodstained-ritual-of-the-night",
@@ -1154,18 +690,7 @@
       "dlss_fsr": "supported",
       "hdr": "unknown"
     },
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "692850",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "BloodstainedRotN.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["bloodstained-ritual-of-the-night"]
   },
   {
     "id": "call-of-the-sea",
@@ -1195,18 +720,7 @@
         "guidance_ids": ["luma.call-of-the-sea.game_setting"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "1042490",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "COTS.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["call-of-the-sea"]
   },
   {
     "id": "chess-ultra",
@@ -1220,23 +734,7 @@
       "dlss_fsr": "supported",
       "hdr": "unknown"
     },
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "518060",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "Chess2-Win64-Shipping.exe",
-        "tier": 70
-      },
-      {
-        "kind": "exe_name",
-        "value": "Chess2-Win32-Shipping.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["chess-ultra"]
   },
   {
     "id": "circus-electrique",
@@ -1267,18 +765,7 @@
         "guidance_ids": ["luma.circus-electrique.engine_ini"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "1666250",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "CircusElectrique.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["circus-electrique"]
   },
   {
     "id": "code-vein",
@@ -1308,18 +795,7 @@
         "guidance_ids": ["luma.code-vein.game_setting"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "678960",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "CodeVein.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["code-vein"]
   },
   {
     "id": "coral-island",
@@ -1333,18 +809,7 @@
       "dlss_fsr": "supported",
       "hdr": "unknown"
     },
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "1158160",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "ProjectCoral.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["coral-island"]
   },
   {
     "id": "crab-champions",
@@ -1374,18 +839,7 @@
         "guidance_ids": ["luma.crab-champions.game_setting"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "774801",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "CrabChampions.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["crab-champions"]
   },
   {
     "id": "crash-bandicoot-4",
@@ -1415,13 +869,7 @@
         "guidance_ids": ["luma.crash-bandicoot-4.game_setting"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "1378990",
-        "tier": 100
-      }
-    ]
+    "game_target_ids": ["crash-bandicoot-4-its-about-time"]
   },
   {
     "id": "clash-artifacts-of-chaos",
@@ -1451,18 +899,7 @@
         "guidance_ids": ["luma.clash-artifacts-of-chaos.game_setting"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "1430680",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "Clash.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["clash-artifacts-of-chaos"]
   },
   {
     "id": "close-to-the-sun",
@@ -1492,18 +929,7 @@
         "guidance_ids": ["luma.close-to-the-sun.game_setting"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "968870",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "ctts.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["close-to-the-sun"]
   },
   {
     "id": "cygni-all-guns-blazing",
@@ -1534,18 +960,7 @@
         "guidance_ids": ["luma.cygni-all-guns-blazing.engine_ini"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "1248080",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "Cygni.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["cygni-all-guns-blazing"]
   },
   {
     "id": "darksiders-3",
@@ -1576,18 +991,7 @@
         "guidance_ids": ["luma.darksiders-3.game_setting"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "606280",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "Darksiders3.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["darksiders-iii"]
   },
   {
     "id": "daymare-1998",
@@ -1617,18 +1021,7 @@
         "guidance_ids": ["luma.daymare-1998.compatibility"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "842100",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "Daymare_MASTER.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["daymare-1998"]
   },
   {
     "id": "dead-island-2",
@@ -1660,18 +1053,7 @@
         "guidance_ids": ["luma.dead-island-2.launch_argument"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "934700",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "DeadIsland.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["dead-island-2"]
   },
   {
     "id": "deadline-delivery",
@@ -1701,18 +1083,7 @@
         "guidance_ids": ["luma.deadline-delivery.game_setting"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "3745310",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "DEADLINE_DELIVERY.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["deadline-delivery"]
   },
   {
     "id": "desolate",
@@ -1726,13 +1097,7 @@
       "dlss_fsr": "supported",
       "hdr": "unknown"
     },
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "671510",
-        "tier": 100
-      }
-    ]
+    "game_target_ids": ["desolate"]
   },
   {
     "id": "devils-hunt",
@@ -1746,18 +1111,7 @@
       "dlss_fsr": "supported",
       "hdr": "unknown"
     },
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "887720",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "DevilsHuntUnreal.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["devils-hunt"]
   },
   {
     "id": "die-young",
@@ -1787,23 +1141,7 @@
         "guidance_ids": ["luma.die-young.game_setting"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "433170",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "DieYoung-Win64-Shipping.exe",
-        "tier": 70
-      },
-      {
-        "kind": "exe_name",
-        "value": "DieYoungPrologue-Win64-Shipping.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["die-young"]
   },
   {
     "id": "dnf-duel",
@@ -1839,18 +1177,7 @@
         "guidance_ids": ["luma.dnf-duel.game_setting", "luma.dnf-duel.engine_ini"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "1216060",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "DNFDUEL.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["dnf-duel"]
   },
   {
     "id": "dragon-ball-z-kakarot",
@@ -1880,18 +1207,7 @@
         "guidance_ids": ["luma.dragon-ball-z-kakarot.game_setting"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "851850",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "AT.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["dragon-ball-z-kakarot"]
   },
   {
     "id": "dragon-quest-11-s",
@@ -1910,7 +1226,7 @@
         "id": "luma.dragon-quest-11-s.engine_ini",
         "kind": "engine_ini",
         "fallback_text": "Apply the following settings manually in Engine.ini.",
-        "code": "[SystemSettings]\nr.DefaultFeature.AntiAliasing=2\nr.PostProcessAAQuality=6\nr.temporalaasamples=2"
+        "code": "[SystemSettings]\nr.DefaultFeature.AntiAliasing=2\nr.PostProcessAAQuality=6\nr.TemporalAASamples=2"
       }
     ],
     "wiki_note_reviews": [
@@ -1922,18 +1238,7 @@
         "guidance_ids": ["luma.dragon-quest-11-s.engine_ini"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "1295510",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "DRAGON QUEST XI S.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["dragon-quest-11-s"]
   },
   {
     "id": "eriksholm-the-stolen-dream",
@@ -1947,18 +1252,7 @@
       "dlss_fsr": "supported",
       "hdr": "unknown"
     },
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "2377280",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "Eriksholm.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["eriksholm-the-stolen-dream"]
   },
   {
     "id": "filament",
@@ -1988,18 +1282,7 @@
         "guidance_ids": ["luma.filament.game_setting"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "1137350",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "Filament.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["filament"]
   },
   {
     "id": "ghostrunner",
@@ -2013,18 +1296,7 @@
       "dlss_fsr": "unknown",
       "hdr": "supported"
     },
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "1139900",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "Ghostrunner.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["ghostrunner"]
   },
   {
     "id": "goat-simulator-3",
@@ -2054,18 +1326,7 @@
         "guidance_ids": ["luma.goat-simulator-3.game_setting"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "850190",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "Goat2.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["goat-simulator-3"]
   },
   {
     "id": "grounded",
@@ -2079,18 +1340,7 @@
       "dlss_fsr": "supported",
       "hdr": "unknown"
     },
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "962130",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "Grounded.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["grounded"]
   },
   {
     "id": "guilty-gear-strive",
@@ -2120,18 +1370,7 @@
         "guidance_ids": ["luma.guilty-gear-strive.warning"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "1384160",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "GGST.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["guilty-gear-strive"]
   },
   {
     "id": "gylt",
@@ -2163,18 +1402,7 @@
         "guidance_ids": ["luma.gylt.launch_argument"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "2206210",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "Gylt.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["gylt"]
   },
   {
     "id": "hellblade-senuas-sacrifice",
@@ -2206,18 +1434,7 @@
         "guidance_ids": ["luma.hellblade-senuas-sacrifice.launch_argument"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "414340",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "HellbladeGame.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["hellblade-senuas-sacrifice"]
   },
   {
     "id": "it-takes-two",
@@ -2247,18 +1464,7 @@
         "guidance_ids": ["luma.it-takes-two.warning"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "1426210",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "ItTakesTwo.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["it-takes-two"]
   },
   {
     "id": "just-die-already",
@@ -2289,18 +1495,7 @@
         "guidance_ids": ["luma.just-die-already.engine_ini"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "979070",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "JDGame.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["just-die-already"]
   },
   {
     "id": "kao-the-kangaroo",
@@ -2330,18 +1525,7 @@
         "guidance_ids": ["luma.kao-the-kangaroo.game_setting"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "1370140",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "Kao the Kangaroo.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["kao-the-kangaroo"]
   },
   {
     "id": "kid-a-mnesia-exhibition",
@@ -2354,7 +1538,8 @@
     "features": {
       "dlss_fsr": "supported",
       "hdr": "unknown"
-    }
+    },
+    "game_target_ids": ["kid-a-mnesia-exhibition"]
   },
   {
     "id": "kingdom-hearts-3",
@@ -2394,18 +1579,7 @@
         ]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "2552450",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "KINGDOM HEARTS III.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["kingdom-hearts-3"]
   },
   {
     "id": "layers-of-fear-2",
@@ -2419,18 +1593,7 @@
       "dlss_fsr": "supported",
       "hdr": "unknown"
     },
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "1029890",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "LOF2.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["layers-of-fear-2"]
   },
   {
     "id": "life-is-strange-2",
@@ -2444,18 +1607,7 @@
       "dlss_fsr": "supported",
       "hdr": "unknown"
     },
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "532210",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "LIS2-Win64-Shipping.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["life-is-strange-2"]
   },
   {
     "id": "life-is-strange-true-colors",
@@ -2487,18 +1639,7 @@
         "guidance_ids": ["luma.life-is-strange-true-colors.launch_argument"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "936790",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "LifeIsStrange3.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["life-is-strange-true-colors"]
   },
   {
     "id": "little-nightmares",
@@ -2513,18 +1654,7 @@
       "dlss_fsr": "supported",
       "hdr": "unknown"
     },
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "424840",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "LittleNightmares.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["little-nightmares"]
   },
   {
     "id": "maneater",
@@ -2538,18 +1668,7 @@
       "dlss_fsr": "supported",
       "hdr": "unknown"
     },
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "629820",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "Maneater.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["maneater"]
   },
   {
     "id": "mothergunship",
@@ -2580,18 +1699,7 @@
         "guidance_ids": ["luma.mothergunship.engine_ini"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "574090",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "TowerOfGuns2.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["mothergunship"]
   },
   {
     "id": "mordhau",
@@ -2605,18 +1713,7 @@
       "dlss_fsr": "supported",
       "hdr": "unknown"
     },
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "629760",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "Mordhau.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["mordhau"]
   },
   {
     "id": "mutant-year-zero-road-to-eden",
@@ -2646,18 +1743,7 @@
         "guidance_ids": ["luma.mutant-year-zero-road-to-eden.game_setting"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "760060",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "ZoneUE4.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["mutant-year-zero-road-to-eden"]
   },
   {
     "id": "orcs-must-die-3",
@@ -2687,18 +1773,7 @@
         "guidance_ids": ["luma.orcs-must-die-3.game_setting"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "1522820",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "Orcs Must Die! 3.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["orcs-must-die-3"]
   },
   {
     "id": "project-wingman",
@@ -2737,18 +1812,7 @@
         ]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "895870",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "ProjectWingman.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["project-wingman"]
   },
   {
     "id": "psychonauts-2",
@@ -2780,18 +1844,7 @@
         "guidance_ids": ["luma.psychonauts-2.launch_argument"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "607080",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "Psychonauts2.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["psychonauts-2"]
   },
   {
     "id": "redeemer-enhanced-edition",
@@ -2806,18 +1859,7 @@
       "hdr": "unknown"
     },
     "wiki_aliases": ["Redeemer"],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "447290",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "ExampleGame-Win64-Shipping.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["redeemer-enhanced-edition"]
   },
   {
     "id": "redout",
@@ -2849,18 +1891,7 @@
         "guidance_ids": ["luma.redout.launch_argument"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "517710",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "redout.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["redout-enhanced-edition"]
   },
   {
     "id": "redout-2",
@@ -2892,18 +1923,7 @@
         "guidance_ids": ["luma.redout-2.launch_argument"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "1799930",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "Redout2.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["redout-2"]
   },
   {
     "id": "relicta",
@@ -2917,18 +1937,7 @@
       "dlss_fsr": "supported",
       "hdr": "unknown"
     },
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "941570",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "Relicta.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["relicta"]
   },
   {
     "id": "remnant-from-the-ashes",
@@ -2959,18 +1968,7 @@
         "guidance_ids": ["luma.remnant-from-the-ashes.engine_ini"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "617290",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "Remnant.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["remnant-from-the-ashes"]
   },
   {
     "id": "ruiner",
@@ -2984,18 +1982,7 @@
       "dlss_fsr": "supported",
       "hdr": "unknown"
     },
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "464060",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "Ruiner.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["ruiner"]
   },
   {
     "id": "scarlet-nexus",
@@ -3025,18 +2012,7 @@
         "guidance_ids": ["luma.scarlet-nexus.game_setting"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "775500",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "ScarletNexus.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["scarlet-nexus"]
   },
   {
     "id": "scorn",
@@ -3066,18 +2042,7 @@
         "guidance_ids": ["luma.scorn.warning"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "698670",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "Scorn.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["scorn"]
   },
   {
     "id": "selfloss",
@@ -3091,18 +2056,7 @@
       "dlss_fsr": "supported",
       "hdr": "unknown"
     },
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "1086620",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "Selfloss.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["selfloss"]
   },
   {
     "id": "shin-megami-tensei-5-vengeance",
@@ -3132,18 +2086,7 @@
         "guidance_ids": ["luma.shin-megami-tensei-5-vengeance.warning"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "1875830",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "SMT5V.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["shin-megami-tensei-5-vengeance"]
   },
   {
     "id": "shenmue-3",
@@ -3158,18 +2101,7 @@
       "hdr": "unknown"
     },
     "wiki_aliases": ["Shenmue3"],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "878670",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "Shenmue3.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["shenmue-3"]
   },
   {
     "id": "snake-pass",
@@ -3183,18 +2115,7 @@
       "dlss_fsr": "supported",
       "hdr": "unknown"
     },
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "544330",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "SnakePass.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["snake-pass"]
   },
   {
     "id": "spirit-of-the-north",
@@ -3224,18 +2145,7 @@
         "guidance_ids": ["luma.spirit-of-the-north.game_setting"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "1213700",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "Infused.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["spirit-of-the-north"]
   },
   {
     "id": "spyro-reignited-trilogy",
@@ -3265,18 +2175,7 @@
         "guidance_ids": ["luma.spyro-reignited-trilogy.game_setting"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "996580",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "Spyro.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["spyro-reignited-trilogy"]
   },
   {
     "id": "star-wars-jedi-fallen-order",
@@ -3290,13 +2189,7 @@
       "dlss_fsr": "supported",
       "hdr": "supported"
     },
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "1172380",
-        "tier": 100
-      }
-    ]
+    "game_target_ids": ["star-wars-jedi-fallen-order"]
   },
   {
     "id": "state-of-decay-2",
@@ -3311,18 +2204,7 @@
       "hdr": "unknown"
     },
     "wiki_aliases": ["State of Decay 2: Juggernaut Edition"],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "495420",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "StateOfDecay2-Win64-Shipping.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["state-of-decay-2"]
   },
   {
     "id": "steel-rats",
@@ -3336,18 +2218,7 @@
       "dlss_fsr": "supported",
       "hdr": "unknown"
     },
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "619700",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "SteelRats.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["steel-rats"]
   },
   {
     "id": "stray",
@@ -3361,18 +2232,7 @@
       "dlss_fsr": "supported",
       "hdr": "unknown"
     },
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "1332010",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "Stray.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["stray"]
   },
   {
     "id": "styx-shards-of-darkness",
@@ -3403,18 +2263,7 @@
         "guidance_ids": ["luma.styx-shards-of-darkness.engine_ini"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "355790",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "Styx2.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["styx-shards-of-darkness"]
   },
   {
     "id": "submerged-hidden-depths",
@@ -3444,18 +2293,7 @@
         "guidance_ids": ["luma.submerged-hidden-depths.game_setting"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "1614270",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "Submerged.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["submerged-hidden-depths"]
   },
   {
     "id": "succubus",
@@ -3469,18 +2307,7 @@
       "dlss_fsr": "supported",
       "hdr": "unknown"
     },
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "985830",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "Succubus.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["succubus"]
   },
   {
     "id": "supraland",
@@ -3510,18 +2337,7 @@
         "guidance_ids": ["luma.supraland.game_setting"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "813630",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "Supraland.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["supraland"]
   },
   {
     "id": "tales-of-arise",
@@ -3551,18 +2367,7 @@
         "guidance_ids": ["luma.tales-of-arise.warning"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "740130",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "Tales of Arise.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["tales-of-arise"]
   },
   {
     "id": "tandem-a-tale-of-shadows",
@@ -3576,18 +2381,7 @@
       "dlss_fsr": "supported",
       "hdr": "unknown"
     },
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "1436920",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "Shadows.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["tandem-a-tale-of-shadows"]
   },
   {
     "id": "tekken-7",
@@ -3624,18 +2418,7 @@
         "guidance_ids": ["luma.tekken-7.game_setting", "luma.tekken-7.engine_ini"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "389730",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "TEKKEN 7.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["tekken-7"]
   },
   {
     "id": "tell-me-why",
@@ -3649,18 +2432,7 @@
       "dlss_fsr": "supported",
       "hdr": "unknown"
     },
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "1180660",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "TME-Win64-Shipping.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["tell-me-why"]
   },
   {
     "id": "tetris-effect-connected",
@@ -3699,18 +2471,7 @@
         ]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "1003590",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "TetrisEffect.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["tetris-effect-connected"]
   },
   {
     "id": "the-ascent",
@@ -3741,18 +2502,7 @@
         "guidance_ids": ["luma.the-ascent.launch_argument"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "979690",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "TheAscent.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["the-ascent"]
   },
   {
     "id": "the-awesome-adventures-of-captain-spirit",
@@ -3766,18 +2516,7 @@
       "dlss_fsr": "supported",
       "hdr": "unknown"
     },
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "845070",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "CaptainSpirit-Win64-Shipping.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["the-awesome-adventures-of-captain-spirit"]
   },
   {
     "id": "the-dark-pictures-man-of-medan",
@@ -3809,18 +2548,7 @@
         "guidance_ids": ["luma.the-dark-pictures-man-of-medan.launch_argument"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "939850",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "ManOfMedan.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["the-dark-pictures-man-of-medan"]
   },
   {
     "id": "the-gunk",
@@ -3834,18 +2562,7 @@
       "dlss_fsr": "supported",
       "hdr": "unknown"
     },
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "1087760",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "Dust.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["the-gunk"]
   },
   {
     "id": "the-pathless",
@@ -3859,18 +2576,7 @@
       "dlss_fsr": "supported",
       "hdr": "unknown"
     },
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "1492680",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "Pathless.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["the-pathless"]
   },
   {
     "id": "the-sinking-city",
@@ -3900,23 +2606,7 @@
         "guidance_ids": ["luma.the-sinking-city.warning"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "750130",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "TheSinkingCityRemastered.exe",
-        "tier": 70
-      },
-      {
-        "kind": "exe_name",
-        "value": "TSCGame.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["the-sinking-city"]
   },
   {
     "id": "tiny-tinas-wonderlands",
@@ -3930,18 +2620,7 @@
       "dlss_fsr": "supported",
       "hdr": "unknown"
     },
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "1286680",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "Wonderlands.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["tiny-tina-s-wonderlands"]
   },
   {
     "id": "trek-to-yomi",
@@ -3955,18 +2634,7 @@
       "dlss_fsr": "supported",
       "hdr": "unknown"
     },
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "1370050",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "TrekToYomi.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["trek-to-yomi"]
   },
   {
     "id": "tribes-of-midgard",
@@ -3997,18 +2665,7 @@
         "guidance_ids": ["luma.tribes-of-midgard.engine_ini"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "858820",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "TOM.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["tribes-of-midgard"]
   },
   {
     "id": "tyrants-realm",
@@ -4022,18 +2679,7 @@
       "dlss_fsr": "supported",
       "hdr": "supported"
     },
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "2259260",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "AIProject.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["tyrants-realm"]
   },
   {
     "id": "vampyr",
@@ -4063,18 +2709,7 @@
         "guidance_ids": ["luma.vampyr.game_setting"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "427290",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "AVGame-Win64-Shipping.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["vampyr"]
   },
   {
     "id": "warhammer-40000-boltgun",
@@ -4105,18 +2740,7 @@
         "guidance_ids": ["luma.warhammer-40000-boltgun.engine_ini"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "2005010",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "Warhammer 40,000 Boltgun.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["warhammer-40000-boltgun"]
   },
   {
     "id": "weird-west",
@@ -4130,18 +2754,7 @@
       "dlss_fsr": "supported",
       "hdr": "unknown"
     },
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "1097350",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "WeirdWest.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["weird-west"]
   },
   {
     "id": "what-remains-of-edith-finch",
@@ -4186,18 +2799,7 @@
         ]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "501300",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "FinchGame.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["what-remains-of-edith-finch"]
   },
   {
     "id": "witch-it",
@@ -4229,18 +2831,7 @@
         "guidance_ids": ["luma.witch-it.launch_argument"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "559650",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "PropWitchHuntModule-Win64-Shipping.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["witch-it"]
   },
   {
     "id": "sherlock-holmes-chapter-one",
@@ -4280,18 +2871,7 @@
         ]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "1137300",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "SHCO.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["sherlock-holmes-chapter-one"]
   },
   {
     "id": "song-of-nunu",
@@ -4324,18 +2904,7 @@
         "guidance_ids": ["luma.song-of-nunu.launch_argument"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "1333200",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "SongOfNunu.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["song-of-nunu"]
   },
   {
     "id": "bioshock-series",
@@ -4344,28 +2913,7 @@
     "addon_file": "Luma-BioShock Series.addon",
     "arch": "X86",
     "status": "working",
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "409710",
-        "tier": 100
-      },
-      {
-        "kind": "steam_appid",
-        "value": "409720",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "BioshockHD.exe",
-        "tier": 70
-      },
-      {
-        "kind": "exe_name",
-        "value": "Bioshock2HD.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["bioshock-2-remastered", "bioshock-remastered"]
   },
   {
     "id": "batman-arkham-knight",
@@ -4390,18 +2938,7 @@
         "guidance_ids": ["luma.batman-arkham-knight.warning"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "208650",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "BatmanAK.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["batman-arkham-knight"]
   },
   {
     "id": "beyond-two-souls",
@@ -4410,18 +2947,7 @@
     "addon_file": "Luma-Beyond Two Souls.addon",
     "arch": "X64",
     "status": "construction",
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "960990",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "BeyondTwoSouls_Steam.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["beyond-two-souls"]
   },
   {
     "id": "blue-reflection-second-light",
@@ -4430,18 +2956,7 @@
     "addon_file": "Luma-Blue Reflection Second Light.addon",
     "arch": "X64",
     "status": "unknown",
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "1423600",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "BLUE REFLECTION Second Light.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["blue-reflection-second-light"]
   },
   {
     "id": "borderlands-goty-enhanced",
@@ -4450,13 +2965,7 @@
     "addon_file": "Luma-Borderlands GOTY Enhanced.addon",
     "arch": "X64",
     "status": "working",
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "729040",
-        "tier": 100
-      }
-    ]
+    "game_target_ids": ["borderlands-goty-enhanced"]
   },
   {
     "id": "borderlands-2-and-the-pre-sequel",
@@ -4522,18 +3031,7 @@
         "reason": "RenderPilot installs and configures the managed dgVoodoo dependency."
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "49520",
-        "tier": 100
-      },
-      {
-        "kind": "steam_appid",
-        "value": "261640",
-        "tier": 100
-      }
-    ]
+    "game_target_ids": ["borderlands-2", "borderlands-the-pre-sequel"]
   },
   {
     "id": "deus-ex-mankind-divided",
@@ -4558,18 +3056,7 @@
         "guidance_ids": ["luma.deus-ex-mankind-divided.warning"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "337000",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "DXMD.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["deus-ex-mankind-divided"]
   },
   {
     "id": "dying-light-2",
@@ -4579,18 +3066,7 @@
     "arch": "X64",
     "status": "construction",
     "wiki_aliases": ["Dying Light 2"],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "534380",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "DyingLightGame_x64_rwdi.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["dying-light-2"]
   },
   {
     "id": "fallout-4",
@@ -4615,13 +3091,7 @@
         "guidance_ids": ["luma.fallout-4.compatibility"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "377160",
-        "tier": 100
-      }
-    ]
+    "game_target_ids": ["fallout-4"]
   },
   {
     "id": "final-fantasy-15",
@@ -4630,18 +3100,7 @@
     "addon_file": "Luma-Final Fantasy XV.addon",
     "arch": "X64",
     "status": "construction",
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "637650",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "ffxv_s.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["final-fantasy-15"]
   },
   {
     "id": "heaven-burns-red",
@@ -4650,13 +3109,7 @@
     "addon_file": "Luma-Heaven Burns Red.addon",
     "arch": "X64",
     "status": "unknown",
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "1973710",
-        "tier": 100
-      }
-    ]
+    "game_target_ids": ["heaven-burns-red"]
   },
   {
     "id": "kingdom-come-deliverance",
@@ -4665,18 +3118,7 @@
     "addon_file": "Luma-Kingdom Come Deliverance.addon",
     "arch": "X64",
     "status": "construction",
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "379430",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "KingdomCome.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["kingdom-come-deliverance"]
   },
   {
     "id": "la-noire",
@@ -4685,18 +3127,7 @@
     "addon_file": "Luma-L.A. Noire.addon",
     "arch": "X86",
     "status": "construction",
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "110800",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "PlayLAN.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["la-noire"]
   },
   {
     "id": "medal-of-honor-airborne",
@@ -4762,18 +3193,7 @@
         "reason": "RenderPilot installs and configures the managed dgVoodoo dependency."
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "24840",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "MOHA.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["medal-of-honor-airborne"]
   },
   {
     "id": "metal-gear-solid-4-guns-of-the-patriots",
@@ -4791,13 +3211,7 @@
         "reason": "Informative note stating compatibility with other fix mods; no client action needed."
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "2492670",
-        "tier": 100
-      }
-    ]
+    "game_target_ids": ["metal-gear-solid-4-guns-of-the-patriots"]
   },
   {
     "id": "metaphor-refantazio",
@@ -4806,18 +3220,7 @@
     "addon_file": "Luma-Metaphor.addon",
     "arch": "X64",
     "status": "working",
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "2679460",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "METAPHOR.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["metaphor-refantazio"]
   },
   {
     "id": "mirrors-edge-catalyst",
@@ -4826,13 +3229,7 @@
     "addon_file": "Luma-Mirror's Edge Catalyst.addon",
     "arch": "X64",
     "status": "construction",
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "1233570",
-        "tier": 100
-      }
-    ]
+    "game_target_ids": ["mirrors-edge-catalyst"]
   },
   {
     "id": "monster-hunter-world",
@@ -4841,18 +3238,7 @@
     "addon_file": "Luma-Monster Hunter World.addon",
     "arch": "X64",
     "status": "unknown",
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "582010",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "MonsterHunterWorld.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["monster-hunter-world"]
   },
   {
     "id": "mortal-kombat-11",
@@ -4861,18 +3247,7 @@
     "addon_file": "Luma-Mortal Kombat 11.addon",
     "arch": "X64",
     "status": "unknown",
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "976310",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "MK11.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["mortal-kombat-11"]
   },
   {
     "id": "nier-automata",
@@ -4881,18 +3256,7 @@
     "addon_file": "Luma-NieR Automata.addon",
     "arch": "X64",
     "status": "construction",
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "524220",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "NieRAutomata.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["nier-automata"]
   },
   {
     "id": "saints-row-the-third-remastered",
@@ -4901,18 +3265,7 @@
     "addon_file": "Luma-Saints Row The Third Remastered.addon",
     "arch": "X64",
     "status": "unknown",
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "978300",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "SRTTR.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["saints-row-the-third-remastered"]
   },
   {
     "id": "shenmue-1-and-2",
@@ -4921,13 +3274,7 @@
     "addon_file": "Luma-Shenmue I & II.addon",
     "arch": "X64",
     "status": "construction",
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "758330",
-        "tier": 100
-      }
-    ]
+    "game_target_ids": ["shenmue-1-and-2"]
   },
   {
     "id": "the-evil-within-2",
@@ -4936,18 +3283,7 @@
     "addon_file": "Luma-The Evil Within 2.addon",
     "arch": "X64",
     "status": "unknown",
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "601430",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "TEW2.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["the-evil-within-2"]
   },
   {
     "id": "titanfall-2",
@@ -4956,13 +3292,7 @@
     "addon_file": "Luma-Titanfall 2.addon",
     "arch": "X64",
     "status": "construction",
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "1237970",
-        "tier": 100
-      }
-    ]
+    "game_target_ids": ["titanfall-2"]
   },
   {
     "id": "avencolony",
@@ -4976,13 +3306,7 @@
       "dlss_fsr": "unsupported",
       "hdr": "unknown"
     },
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "484900",
-        "tier": 100
-      }
-    ]
+    "game_target_ids": ["avencolony"]
   },
   {
     "id": "biomutant",
@@ -5012,13 +3336,7 @@
         "guidance_ids": ["luma.biomutant.game_setting"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "597820",
-        "tier": 100
-      }
-    ]
+    "game_target_ids": ["biomutant"]
   },
   {
     "id": "blairwitch",
@@ -5048,13 +3366,7 @@
         "guidance_ids": ["luma.blairwitch.game_setting"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "1092660",
-        "tier": 100
-      }
-    ]
+    "game_target_ids": ["blairwitch"]
   },
   {
     "id": "borderlands-3",
@@ -5084,13 +3396,7 @@
         "guidance_ids": ["luma.borderlands-3.warning"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "397540",
-        "tier": 100
-      }
-    ]
+    "game_target_ids": ["borderlands-3"]
   },
   {
     "id": "bramblethemountainking",
@@ -5120,13 +3426,7 @@
         "guidance_ids": ["luma.bramblethemountainking.warning"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "1623940",
-        "tier": 100
-      }
-    ]
+    "game_target_ids": ["bramblethemountainking"]
   },
   {
     "id": "breathedge",
@@ -5140,13 +3440,7 @@
       "dlss_fsr": "supported",
       "hdr": "unknown"
     },
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "738520",
-        "tier": 100
-      }
-    ]
+    "game_target_ids": ["breathedge"]
   },
   {
     "id": "bussimulator-21",
@@ -5160,13 +3454,7 @@
       "dlss_fsr": "unsupported",
       "hdr": "unknown"
     },
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "976590",
-        "tier": 100
-      }
-    ]
+    "game_target_ids": ["bus-simulator-21"]
   },
   {
     "id": "daemonxmachina",
@@ -5196,13 +3484,7 @@
         "guidance_ids": ["luma.daemonxmachina.warning"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "1167450",
-        "tier": 100
-      }
-    ]
+    "game_target_ids": ["daemonxmachina"]
   },
   {
     "id": "daylight",
@@ -5216,13 +3498,7 @@
       "dlss_fsr": "unsupported",
       "hdr": "unknown"
     },
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "230840",
-        "tier": 100
-      }
-    ]
+    "game_target_ids": ["daylight"]
   },
   {
     "id": "daysgone",
@@ -5236,13 +3512,7 @@
       "dlss_fsr": "unsupported",
       "hdr": "unknown"
     },
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "1259420",
-        "tier": 100
-      }
-    ]
+    "game_target_ids": ["daysgone"]
   },
   {
     "id": "deceiveinc",
@@ -5272,13 +3542,7 @@
         "guidance_ids": ["luma.deceiveinc.compatibility"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "820520",
-        "tier": 100
-      }
-    ]
+    "game_target_ids": ["deceiveinc"]
   },
   {
     "id": "destroyallhumansclonecarnage",
@@ -5292,13 +3556,7 @@
       "dlss_fsr": "unsupported",
       "hdr": "unknown"
     },
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "1872550",
-        "tier": 100
-      }
-    ]
+    "game_target_ids": ["destroyallhumansclonecarnage"]
   },
   {
     "id": "dragonquestxiechoesofanelusiveage",
@@ -5317,7 +3575,7 @@
         "id": "luma.dragonquestxiechoesofanelusiveage.engine_ini",
         "kind": "engine_ini",
         "fallback_text": "Apply the following settings manually in Engine.ini.",
-        "code": "[SystemSettings]\nr.DefaultFeature.AntiAliasing=2\nr.PostProcessAAQuality=6\nr.temporalaasamples=2"
+        "code": "[SystemSettings]\nr.DefaultFeature.AntiAliasing=2\nr.PostProcessAAQuality=6\nr.TemporalAASamples=2"
       }
     ],
     "wiki_note_reviews": [
@@ -5329,8 +3587,7 @@
         "guidance_ids": ["luma.dragonquestxiechoesofanelusiveage.engine_ini"]
       }
     ],
-    "match_ignore": true,
-    "match": []
+    "game_target_ids": ["dragon-quest-xi"]
   },
   {
     "id": "echo",
@@ -5351,13 +3608,6 @@
         "fallback_text": "DLAA stops working after the first level. With Auto Exposure enabled, light sources strobe; with Auto Exposure disabled, anti-aliasing quality degrades significantly."
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "551770",
-        "tier": 100
-      }
-    ],
     "wiki_note_reviews": [
       {
         "section": "unreal",
@@ -5366,7 +3616,8 @@
         "disposition": "published",
         "guidance_ids": ["luma.echo.warning"]
       }
-    ]
+    ],
+    "game_target_ids": ["echo"]
   },
   {
     "id": "gigabash",
@@ -5380,13 +3631,7 @@
       "dlss_fsr": "unsupported",
       "hdr": "unknown"
     },
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "1546400",
-        "tier": 100
-      }
-    ]
+    "game_target_ids": ["gigabash"]
   },
   {
     "id": "hellletloose",
@@ -5416,13 +3661,7 @@
         "guidance_ids": ["luma.hellletloose.compatibility"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "686810",
-        "tier": 100
-      }
-    ]
+    "game_target_ids": ["hellletloose"]
   },
   {
     "id": "kholat",
@@ -5436,13 +3675,7 @@
       "dlss_fsr": "unsupported",
       "hdr": "unknown"
     },
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "343710",
-        "tier": 100
-      }
-    ]
+    "game_target_ids": ["kholat"]
   },
   {
     "id": "littlenightmaresenhancededition",
@@ -5464,13 +3697,6 @@
         "code": "-DX11"
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "2149010",
-        "tier": 100
-      }
-    ],
     "wiki_note_reviews": [
       {
         "section": "unreal",
@@ -5479,7 +3705,8 @@
         "disposition": "published",
         "guidance_ids": ["luma.littlenightmaresenhancededition.launch_argument"]
       }
-    ]
+    ],
+    "game_target_ids": ["littlenightmaresenhancededition"]
   },
   {
     "id": "littlenightmaresiii",
@@ -5509,13 +3736,7 @@
         "guidance_ids": ["luma.littlenightmaresiii.compatibility"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "1392860",
-        "tier": 100
-      }
-    ]
+    "game_target_ids": ["little-nightmares-iii"]
   },
   {
     "id": "masterdetectivearchivesraincodeplus",
@@ -5545,13 +3766,7 @@
         "guidance_ids": ["luma.masterdetectivearchivesraincodeplus.game_setting"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "2903950",
-        "tier": 100
-      }
-    ]
+    "game_target_ids": ["masterdetectivearchivesraincodeplus"]
   },
   {
     "id": "narutotoborutoshinobistriker",
@@ -5581,13 +3796,7 @@
         "guidance_ids": ["luma.narutotoborutoshinobistriker.compatibility"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "633230",
-        "tier": 100
-      }
-    ]
+    "game_target_ids": ["narutotoborutoshinobistriker"]
   },
   {
     "id": "persona-3reload",
@@ -5617,13 +3826,7 @@
         "guidance_ids": ["luma.persona-3reload.compatibility"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "2161700",
-        "tier": 100
-      }
-    ]
+    "game_target_ids": ["persona-3reload"]
   },
   {
     "id": "poppyplaytime",
@@ -5637,13 +3840,7 @@
       "dlss_fsr": "unsupported",
       "hdr": "unknown"
     },
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "1721470",
-        "tier": 100
-      }
-    ]
+    "game_target_ids": ["poppyplaytime"]
   },
   {
     "id": "predecessor",
@@ -5673,13 +3870,7 @@
         "guidance_ids": ["luma.predecessor.compatibility"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "961200",
-        "tier": 100
-      }
-    ]
+    "game_target_ids": ["predecessor"]
   },
   {
     "id": "rime",
@@ -5693,13 +3884,7 @@
       "dlss_fsr": "unsupported",
       "hdr": "supported"
     },
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "493200",
-        "tier": 100
-      }
-    ]
+    "game_target_ids": ["rime"]
   },
   {
     "id": "roboquest",
@@ -5729,13 +3914,7 @@
         "guidance_ids": ["luma.roboquest.game_setting"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "692890",
-        "tier": 100
-      }
-    ]
+    "game_target_ids": ["roboquest"]
   },
   {
     "id": "sherwoodextreme",
@@ -5749,13 +3928,7 @@
       "dlss_fsr": "experimental",
       "hdr": "unknown"
     },
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "1340180",
-        "tier": 100
-      }
-    ]
+    "game_target_ids": ["sherwoodextreme"]
   },
   {
     "id": "sifu",
@@ -5769,13 +3942,7 @@
       "dlss_fsr": "unknown",
       "hdr": "unsupported"
     },
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "2138710",
-        "tier": 100
-      }
-    ]
+    "game_target_ids": ["sifu"]
   },
   {
     "id": "theouterworldsspacerschoiceedition",
@@ -5805,13 +3972,7 @@
         "guidance_ids": ["luma.theouterworldsspacerschoiceedition.compatibility"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "1920490",
-        "tier": 100
-      }
-    ]
+    "game_target_ids": ["the-outer-worlds-spacer-s-choice-edition"]
   },
   {
     "id": "thevanishingofethancarterredux",
@@ -5825,13 +3986,7 @@
       "dlss_fsr": "unsupported",
       "hdr": "unknown"
     },
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "400430",
-        "tier": 100
-      }
-    ]
+    "game_target_ids": ["thevanishingofethancarterredux"]
   },
   {
     "id": "vanquish",
@@ -5880,18 +4035,7 @@
         "reason": "RenderPilot installs and configures the managed dgVoodoo dependency."
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "460810",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "Vanquish.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["vanquish"]
   },
   {
     "id": "the-witcher-2",
@@ -5958,18 +4102,7 @@
         "reason": "RenderPilot installs and configures the managed dgVoodoo dependency."
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "20920",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "witcher2.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["the-witcher-2"]
   },
   {
     "id": "destroy-all-humans",
@@ -5999,23 +4132,7 @@
         "guidance_ids": ["luma.destroy-all-humans.game_setting"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "803330",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "DH.exe",
-        "tier": 70
-      },
-      {
-        "kind": "exe_name",
-        "value": "DestroyAllHumans.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["destroy-all-humans"]
   },
   {
     "id": "no-more-heroes-3",
@@ -6046,18 +4163,7 @@
         "guidance_ids": ["luma.no-more-heroes-3.engine_ini"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "1744330",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "NMH3.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["no-more-heroes-3"]
   },
   {
     "id": "rad",
@@ -6087,18 +4193,7 @@
         "guidance_ids": ["luma.rad.game_setting"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "722560",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "RAD.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["rad"]
   },
   {
     "id": "solar-ash",
@@ -6129,18 +4224,7 @@
         "guidance_ids": ["luma.solar-ash.engine_ini"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "1867530",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "SolarAsh.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["solar-ash"]
   },
   {
     "id": "spongebob-squarepants-the-cosmic-shake",
@@ -6170,17 +4254,6 @@
         "guidance_ids": ["luma.spongebob-squarepants-the-cosmic-shake.game_setting"]
       }
     ],
-    "match": [
-      {
-        "kind": "steam_appid",
-        "value": "1282150",
-        "tier": 100
-      },
-      {
-        "kind": "exe_name",
-        "value": "CosmicShake.exe",
-        "tier": 70
-      }
-    ]
+    "game_target_ids": ["spongebob-squarepants-the-cosmic-shake"]
   }
 ]

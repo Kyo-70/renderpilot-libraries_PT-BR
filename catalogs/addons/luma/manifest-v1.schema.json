@@ -61,7 +61,9 @@
       "additionalProperties": false,
       "required": ["kind", "value", "tier"],
       "properties": {
-        "kind": { "enum": ["steam_appid", "epic_id", "gog_id", "exe_sha256", "exe_name"] },
+        "kind": {
+          "enum": ["steam_appid", "epic_id", "gog_id", "xbox_store_id", "exe_name"]
+        },
         "value": { "type": "string", "minLength": 1, "pattern": "\\S" },
         "tier": { "type": "integer", "minimum": 1 }
       },
@@ -75,20 +77,20 @@
           }
         },
         {
+          "if": { "properties": { "kind": { "const": "xbox_store_id" } } },
+          "then": {
+            "properties": {
+              "value": { "pattern": "^[A-Z0-9]{12}$" }
+            }
+          }
+        },
+        {
           "if": { "properties": { "kind": { "const": "exe_name" } } },
           "then": {
             "properties": {
               "value": {
                 "pattern": "^(?!\\.[eE][xX][eE]$)[^<>:\"/\\\\|?*\\u0000-\\u001F]+\\.[eE][xX][eE]$"
               }
-            }
-          }
-        },
-        {
-          "if": { "properties": { "kind": { "const": "exe_sha256" } } },
-          "then": {
-            "properties": {
-              "value": { "$ref": "#/$defs/sha256" }
             }
           }
         }

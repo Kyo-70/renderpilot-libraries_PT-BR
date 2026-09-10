@@ -7,10 +7,9 @@ import {
   assertOptionalNonEmptyStringArray,
   LOWERCASE_SHA256_RE,
 } from "../../../../scripts/lib/validators.mjs";
-import {
-  normalizeAppid,
-  normalizeExeName,
-} from "../../../../scripts/lib/overlay-shared.mjs";
+import { tierForMatchKind } from "../../../../scripts/lib/build-manifest-shared.mjs";
+import { resolveTargetRuleSets } from "../../../../scripts/lib/match-registry.mjs";
+import { directGameMatchField } from "../../../../scripts/lib/overlay-shared.mjs";
 import {
   normalizeExternalRequirement,
   normalizeGameDirectoryFile,
@@ -43,18 +42,18 @@ const CODE_GUIDANCE_KINDS = new Set(["engine_ini", "launch_argument"]);
 const GUIDANCE_ID_RE = /^[a-z0-9][a-z0-9._-]*$/u;
 const WIKI_REVIEW_SECTIONS = new Set(["completed", "unreal"]);
 const WIKI_REVIEW_DISPOSITIONS = new Set(["published", "omitted"]);
-const MATCH_KINDS = new Set(["steam_appid", "epic_id", "gog_id", "exe_sha256", "exe_name"]);
-
-export function normalizeCuratedGames(curatedGames) {
+export function normalizeCuratedGames(curatedGames, registry) {
   if (!Array.isArray(curatedGames)) {
     throw new Error("curated_games.json must be an array");
   }
-  return curatedGames.map(normalizeCuratedGame);
+  return curatedGames.map((game, index) => normalizeCuratedGame(game, index, registry));
 }
 
-function normalizeCuratedGame(game, index) {
+function normalizeCuratedGame(game, index, registry) {
   const context = `curated_games.json[${index}]`;
   assertPlainObject(game, context);
+
+  rejectRetiredDirectMatchFields(game, context);
 
   if (game.generic !== undefined) {
     throw new Error(`${context}.generic is obsolete; use an explicit engine profile`);
@@ -81,6 +80,9 @@ function normalizeCuratedGame(game, index) {
   if (game.match_ignore !== undefined && typeof game.match_ignore !== "boolean") {
     throw new Error(`${context}.match_ignore must be a boolean when present`);
   }
+  if (game.game_target_id !== undefined) {
+    throw new Error(`${context}.game_target_id is obsolete; use game_target_ids`);
+  }
 
   return {
     id: requiredNonEmptyString(game.id, `${context}.id`),
@@ -93,7 +95,7 @@ function normalizeCuratedGame(game, index) {
     arch,
     profile,
     status: game.status,
-    match: normalizeMatchRules(game.match, `${context}.match`),
+    target_matches: normalizeTargetMatches(game.game_target_ids, registry, context),
     match_ignore: game.match_ignore === true,
     blacklist:
       game.blacklist === undefined
@@ -111,6 +113,13 @@ function normalizeCuratedGame(game, index) {
     guidance,
     wiki_note_reviews: wikiNoteReviews,
   };
+}
+
+function rejectRetiredDirectMatchFields(game, context) {
+  const field = directGameMatchField(game);
+  if (field !== null) {
+    throw new Error(`${context}.${field} is direct game matching; use game_target_ids`);
+  }
 }
 
 function normalizeProfile(value, asset, arch, context) {
@@ -139,41 +148,16 @@ function normalizeProfile(value, asset, arch, context) {
   return profile;
 }
 
-export function normalizeMatchRules(value, context) {
-  if (value === undefined) return [];
-  if (!Array.isArray(value)) throw new Error(`${context} must be an array when present`);
-
-  return value.map((rule, index) => {
-    const ruleContext = `${context}[${index}]`;
-    assertPlainObject(rule, ruleContext);
-    const kind = requiredNonEmptyString(rule.kind, `${ruleContext}.kind`);
-    if (!MATCH_KINDS.has(kind)) {
-      throw new Error(`${ruleContext}.kind is unsupported: ${kind}`);
-    }
-    const ruleValue = normalizeMatchRuleValue(kind, rule.value, `${ruleContext}.value`);
-    if (!Number.isInteger(rule.tier) || rule.tier <= 0) {
-      throw new Error(`${ruleContext}.tier must be a positive integer`);
-    }
-    return { kind, value: ruleValue, tier: rule.tier };
-  });
-}
-
-function normalizeMatchRuleValue(kind, value, context) {
-  const normalized = requiredNonEmptyString(value, context);
-
-  switch (kind) {
-    case "steam_appid":
-      return normalizeAppid(normalized, context);
-    case "exe_name":
-      return normalizeExeName(normalized, context);
-    case "exe_sha256":
-      if (!LOWERCASE_SHA256_RE.test(normalized)) {
-        throw new Error(`${context} must be a lowercase SHA-256 digest`);
-      }
-      return normalized;
-    default:
-      return normalized;
-  }
+export function normalizeTargetMatches(targetIds, registry, context) {
+  if (targetIds === undefined) return [];
+  return resolveTargetRuleSets(registry, targetIds, context).map(({ targetId, rules }) => ({
+    targetId,
+    match: rules.map((rule) => ({
+      kind: rule.kind,
+      value: rule.value,
+      tier: tierForMatchKind(rule.kind),
+    })),
+  }));
 }
 
 function normalizeFeatures(features, profile, context) {

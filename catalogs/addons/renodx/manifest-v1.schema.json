@@ -32,10 +32,22 @@
       "additionalProperties": false,
       "required": ["kind", "value", "tier"],
       "properties": {
-        "kind": { "enum": ["steam_appid", "epic_id", "gog_id", "exe_sha256", "exe_name"] },
+        "kind": {
+          "enum": ["steam_appid", "epic_id", "gog_id", "xbox_store_id", "exe_name"]
+        },
         "value": { "type": "string", "minLength": 1 },
         "tier": { "type": "integer", "minimum": 1 }
-      }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "kind": { "const": "xbox_store_id" } } },
+          "then": {
+            "properties": {
+              "value": { "pattern": "^[A-Z0-9]{12}$" }
+            }
+          }
+        }
+      ]
     },
     "addon": {
       "type": "object",

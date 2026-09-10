@@ -8,7 +8,6 @@
 //   await runGenerateManifest({
 //     files: {
 //       outputs: { manifest, pending?, ... },
-//       exeCache?,
 //     },
 //     build: (inputs) => ({ outputs, stats? }),
 //     readInputs,
@@ -22,12 +21,7 @@
 import { existsSync } from "node:fs";
 import path from "node:path";
 
-import {
-  errorMessage,
-  generatedAtFromEnv,
-  assertPlainObject,
-  UsageError,
-} from "./common.mjs";
+import { errorMessage, generatedAtFromEnv, UsageError } from "./common.mjs";
 import { parseCliArgs, wantsHelp } from "./cli-args.mjs";
 import { applyExitCode } from "./cli-main.mjs";
 import {
@@ -55,23 +49,6 @@ export function parseCheckStyleArgs(argv) {
     help: false,
     check: Boolean(values.check),
   };
-}
-
-function readExeCache(exeCacheFile) {
-  if (!exeCacheFile) {
-    return {};
-  }
-
-  if (!existsSync(exeCacheFile)) {
-    console.warn(
-      "Warning: steam-appid-exe.json missing -- run enrich-exe.mjs for cross-launcher exe rules",
-    );
-    return {};
-  }
-
-  const cache = readJsonFile(exeCacheFile, path.basename(exeCacheFile));
-  assertPlainObject(cache, path.basename(exeCacheFile));
-  return cache;
 }
 
 function primaryManifestFile(files) {
@@ -185,9 +162,9 @@ async function writeGeneratedOutput({ file, text }, repoRoot) {
 
 /**
  * @param {object} opts
- * @param {object}    opts.files       — { outputs: { manifest, ... }, exeCache? }
+ * @param {object}    opts.files       — { outputs: { manifest, ... } }
  * @param {function}  opts.build       — ({ ...inputs }) => { outputs, stats? }
- * @param {function}  opts.readInputs  — ({ exeCache, generatedAt }) => inputs for `build`
+ * @param {function}  opts.readInputs  — ({ generatedAt }) => inputs for `build`
  * @param {function} [opts.printSummary] — (stats, context) => void
  * @param {string}    opts.helpText
  * @param {string}    opts.repoRoot    — absolute repo root, for relative labels
@@ -221,9 +198,8 @@ export async function runGenerateManifest({
     return 0;
   }
 
-  const exeCache = readExeCache(files.exeCache);
   const generatedAt = readGeneratedAtForRun(args.check, primaryManifestFile(files));
-  const inputs = readInputs({ exeCache, generatedAt });
+  const inputs = readInputs({ generatedAt });
 
   const result = build(inputs);
 

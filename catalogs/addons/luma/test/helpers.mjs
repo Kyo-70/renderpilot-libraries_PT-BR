@@ -4,7 +4,47 @@ import path from "node:path";
 import Ajv2020 from "ajv/dist/2020.js";
 import addFormats from "ajv-formats";
 
+import { buildManifest as buildProductionManifest } from "../lib/build-manifest.mjs";
+import { createMatchRegistry } from "../../../../scripts/lib/match-registry.mjs";
+
 const SCHEMA_PATH = path.join(import.meta.dirname, "..", "manifest-v1.schema.json");
+
+// Unit fixtures name a target and provide its registry rules separately. The
+// production authoring object itself is always target-reference-only.
+export function buildLumaManifestForTest({ curatedGames, ...options }) {
+  const targets = [];
+  const profiles = curatedGames.map((profile, profileIndex) => {
+    const { test_target_rules: rules, ...authoredProfile } = profile;
+    if (rules === undefined || rules.length === 0) return authoredProfile;
+
+    const [targetId] = authoredProfile.game_target_ids ?? [];
+    if (!targetId || authoredProfile.game_target_ids.length !== 1) {
+      throw new Error(`test profile ${profileIndex} must reference exactly one target`);
+    }
+    const refs = rules.map(
+      (_rule, ruleIndex) =>
+        `test-rule-${String(profileIndex).padStart(4, "0")}-${String(ruleIndex).padStart(4, "0")}`,
+    );
+    targets.push({
+      id: targetId,
+      rules: rules.map((rule, ruleIndex) => ({
+        id: refs[ruleIndex],
+        kind: rule.kind,
+        value: rule.value,
+        provenance: { source: "test", locator: `${profileIndex}:${ruleIndex}` },
+      })),
+    });
+    return authoredProfile;
+  });
+
+  return buildProductionManifest({
+    ...options,
+    curatedGames: profiles,
+    registry: createMatchRegistry({
+      targets: targets.sort((left, right) => left.id.localeCompare(right.id)),
+    }),
+  });
+}
 
 export function compileLumaSchema() {
   const schema = JSON.parse(readFileSync(SCHEMA_PATH, "utf8"));
@@ -14,7 +54,16 @@ export function compileLumaSchema() {
 }
 
 export function authoringGame(id, overrides = {}) {
+  const {
+    test_target_rules: testTargetRules = [
+      { kind: "steam_appid", value: defaultSteamAppid(id) },
+    ],
+    ...authoringOverrides
+  } = overrides;
   const asset = overrides.asset ?? `Luma-${id}.zip`;
+  const targetIds =
+    authoringOverrides.game_target_ids ??
+    (testTargetRules.length > 0 ? [`test-game-${id}`] : undefined);
   return {
     id,
     name: overrides.name ?? id,
@@ -23,10 +72,9 @@ export function authoringGame(id, overrides = {}) {
     arch: overrides.arch ?? "X64",
     status: overrides.status ?? "working",
     ...(overrides.features === undefined ? {} : { features: overrides.features }),
-    ...overrides,
-    match: overrides.match ?? [
-      { kind: "steam_appid", value: defaultSteamAppid(id), tier: 100 },
-    ],
+    ...authoringOverrides,
+    ...(targetIds === undefined ? {} : { game_target_ids: targetIds }),
+    test_target_rules: testTargetRules,
   };
 }
 

@@ -29,7 +29,6 @@ const REQUEST_THROTTLE_MS = 250;
 const RETRY_BASE_DELAY_MS = 500;
 const RETRY_MAX_DELAY_MS = 5_000;
 
-const HIGH_CONFIDENCE_SCORE = 88;
 const DEFAULT_ACCEPT_SCORE = 78;
 const AMBIGUITY_MARGIN = 3;
 
@@ -46,9 +45,13 @@ const ROMAN_NUMERAL_REPLACEMENTS = new Map([
 
 const ROMAN_NUMERAL_PATTERN = /\b(?:viii|vii|vi|iv|iii|ii|ix|v)\b/gu;
 const RELEASE_YEAR_PATTERN = /\((?:19|20)\d{2}\)/gu;
+const EXPLICIT_RELEASE_YEAR_PATTERN = /\b(?:19|20)\d{2}\b/gu;
 const TRADEMARK_PATTERN = /[™®©]/gu;
 const DIACRITIC_PATTERN = /\p{Diacritic}/gu;
 const NON_WORD_PATTERN = /[^\p{Letter}\p{Number}]+/gu;
+const SEARCH_PUNCTUATION_PATTERN = /[^\p{Letter}\p{Number}\s]+/gu;
+const DOTTED_INITIALISM_PATTERN = /(?:\p{Letter}\.){2,}\p{Letter}?/gu;
+const COMPATIBILITY_NUMBER_PATTERN = /[\u00B2\u00B3\u00B9\u2070-\u2079\u2080-\u2089]/gu;
 
 /**
  * Expand only abbreviations whose meaning is sufficiently unambiguous in a
@@ -65,6 +68,31 @@ const TITLE_ABBREVIATION_REPLACEMENTS = Object.freeze([
  */
 const TITLE_EQUIVALENCE_GROUPS = Object.freeze([
   Object.freeze(["Heaven Burns Red", "ヘブンバーンズレッド", "緋染天空 Heaven Burns Red"]),
+  Object.freeze(["Roundtrip", "Round Trip"]),
+  Object.freeze(["Wonderball", "Wonder Ball"]),
+  Object.freeze(["DCS World", "DCS World Steam Edition"]),
+  Object.freeze(["Desordre", "DESORDRE : A Puzzle Game Adventure"]),
+  Object.freeze(["Jump Space (formerly Jump Ship)", "Jump Space"]),
+  Object.freeze(["METAL GEAR SOLID DELTA: SNAKE EATER", "METAL GEAR SOLID Δ: SNAKE EATER"]),
+  Object.freeze([
+    "Microsoft Flight Simulator 2020",
+    "Microsoft Flight Simulator (2020) 40th Anniversary Edition",
+  ]),
+  Object.freeze(["Neverness to Everness (NTE)", "NTE: Neverness to Everness"]),
+  Object.freeze(["Ranch Simulator", "Ranch Simulator: Build, Hunt, Farm"]),
+  Object.freeze(["Resident Evil 8 Village", "Resident Evil Village"]),
+  Object.freeze(["Resident Evil 9 Requiem", "Resident Evil Requiem"]),
+  Object.freeze(["Senua’s Saga: Hellblade II", "Hellblade II: Senua’s Saga"]),
+  Object.freeze(["Stygion: Outer Gods", "Stygian: Outer Gods"]),
+  Object.freeze(["Trine 5", "Trine 5: A Clockwork Conspiracy"]),
+  Object.freeze(["WRC Generations", "WRC Generations – The FIA WRC Official Game"]),
+  Object.freeze(["NORSE Demo", "NORSE: Oath of Blood Demo"]),
+  Object.freeze(["Zouhri Demo", "Zouhri: The Cursed Blood Demo"]),
+  Object.freeze([
+    "Venus Vacation PRISM",
+    "Venus Vacation PRISM - DEAD OR ALIVE Xtreme",
+    "Venus Vacation PRISM - DEAD OR ALIVE Xtreme -",
+  ]),
 ]);
 
 const EDITION_DEFINITIONS = Object.freeze([
@@ -124,6 +152,7 @@ const EDITION_DEFINITIONS = Object.freeze([
  *   reason: string;
  *   item: SteamStoreItem;
  *   searchRank: number;
+ *   surfaceExact: boolean;
  * }>} RankedSteamMatch
  */
 
@@ -208,11 +237,43 @@ export function normalizeBaseTitle(name) {
  * @param {string} actualName
  * @returns {{score: number; reason: string}}
  */
+const VARIANT_SUFFIX_PATTERN = /\b(demo|playtest|prologue|spt)$/iu;
+
+/**
+ * Extracts a known preview or variant suffix from a normalized phrase.
+ *
+ * @param {string} phrase
+ * @returns {string | null}
+ */
+function getVariantSuffix(phrase) {
+  const match = phrase.match(VARIANT_SUFFIX_PATTERN);
+  return match?.[1]?.toLowerCase() ?? null;
+}
+
+/**
+ * Prevents preview releases (Demos, Playtests, Prologues) and standalone mods
+ * from falsely matching full base games.
+ *
+ * @param {string} expectedPhrase
+ * @param {string} actualPhrase
+ * @returns {boolean}
+ */
+function hasVariantSuffixMismatch(expectedPhrase, actualPhrase) {
+  const expected = getVariantSuffix(expectedPhrase);
+  const actual = getVariantSuffix(actualPhrase);
+
+  return expected !== actual && (expected !== null || actual !== null);
+}
+
 export function scoreTitleMatch(expectedName, actualName) {
   const comparison = createTitleComparison(expectedName, actualName);
 
   if (comparison.hasEmptyTitle) {
     return matchScore(0, "empty-normalized-title");
+  }
+
+  if (comparison.hasReleaseYearConflict) {
+    return matchScore(0, "conflicting-release-years");
   }
 
   if (comparison.isExactMatch) {
@@ -222,6 +283,10 @@ export function scoreTitleMatch(expectedName, actualName) {
   const editionMismatch = scoreEditionMismatch(comparison.editionRelation);
   if (editionMismatch) {
     return editionMismatch;
+  }
+
+  if (hasVariantSuffixMismatch(comparison.expectedPhrase, comparison.actualPhrase)) {
+    return matchScore(35, "requested-variant-missing");
   }
 
   return (
@@ -251,12 +316,47 @@ function createTitleComparison(expectedName, actualName) {
     expectedTokens,
     actualTokens,
     hasEmptyTitle: expectedPhrase.length === 0 || actualPhrase.length === 0,
+    hasReleaseYearConflict: hasConflictingReleaseYears(expectedName, actualName),
     isExactMatch: expectedPhrase === actualPhrase,
     editionRelation: compareEditionSets(
       getEditionIds(expectedPhrase),
       getEditionIds(actualPhrase),
     ),
   };
+}
+
+/**
+ * Explicit release years are durable edition signals. A candidate that names
+ * a different year must not become an automatic match merely because the
+ * title normalizer intentionally removes parenthesized release years.
+ *
+ * @param {string} expectedName
+ * @param {string} actualName
+ * @returns {boolean}
+ */
+function hasConflictingReleaseYears(expectedName, actualName) {
+  const expectedYears = getExplicitReleaseYears(expectedName);
+  const actualYears = getExplicitReleaseYears(actualName);
+
+  if (expectedYears.size === 0 || actualYears.size === 0) {
+    return false;
+  }
+
+  return ![...expectedYears].some((year) => actualYears.has(year));
+}
+
+/**
+ * @param {string} title
+ * @returns {Set<string>}
+ */
+function getExplicitReleaseYears(title) {
+  const years = new Set();
+
+  for (const year of title.matchAll(EXPLICIT_RELEASE_YEAR_PATTERN)) {
+    years.add(year[0]);
+  }
+
+  return years;
 }
 
 /**
@@ -391,6 +491,78 @@ function tokenizePhrase(phrase) {
   return phrase.length === 0 ? [] : phrase.split(" ");
 }
 
+const AUXILIARY_CONTENT_DEFINITIONS = Object.freeze([
+  /\b(?:soundtrack|ost|original soundtrack)\b/iu,
+  /\bartbook\b/iu,
+  /\bwallpapers?\b/iu,
+]);
+
+/**
+ * Checks whether the candidate title introduces auxiliary content markers that
+ * were not present in the requested game title.
+ *
+ * @param {string} expectedName
+ * @param {string} actualName
+ * @returns {boolean}
+ */
+function hasAddedAuxiliaryContent(expectedName, actualName) {
+  return AUXILIARY_CONTENT_DEFINITIONS.some(
+    (pattern) => !pattern.test(expectedName) && pattern.test(actualName),
+  );
+}
+
+/**
+ * Caps match confidence below acceptance when a candidate is not an application
+ * or represents auxiliary content added to the requested base game title.
+ *
+ * @param {string} expectedName
+ * @param {SteamStoreItem} item
+ * @param {{score: number; reason: string}} match
+ * @returns {{score: number; reason: string}}
+ */
+function applyCandidateTypeGate(expectedName, item, match) {
+  if (item.type.toLowerCase() !== "app") {
+    return {
+      score: Math.min(match.score, 60),
+      reason: `non-app:${item.type}`,
+    };
+  }
+
+  if (hasAddedAuxiliaryContent(expectedName, item.name)) {
+    return {
+      score: Math.min(match.score, 60),
+      reason: "auxiliary-content",
+    };
+  }
+
+  return match;
+}
+
+/**
+ * Normalizes title text while preserving surface punctuation characters
+ * such as slashes for tie-breaking.
+ *
+ * @param {string} name
+ * @returns {string}
+ */
+function normalizeSurfaceTitle(name) {
+  return collapseWhitespace(
+    name.replace(TRADEMARK_PATTERN, "").normalize("NFKC").toLowerCase(),
+  );
+}
+
+/**
+ * Checks whether two titles are identical after surface normalization,
+ * distinguishing e.g. "VOID/BREAKER" from "Void Breaker".
+ *
+ * @param {string} expectedName
+ * @param {string} actualName
+ * @returns {boolean}
+ */
+function preservesSourceTitle(expectedName, actualName) {
+  return normalizeSurfaceTitle(expectedName) === normalizeSurfaceTitle(actualName);
+}
+
 /**
  * Ranks Steam results while preserving Steam's own relevance order as the
  * final tie-breaker.
@@ -401,14 +573,24 @@ function tokenizePhrase(phrase) {
  */
 export function rankSteamMatches(gameName, items) {
   return items
-    .map((item, searchRank) => ({
-      ...scoreTitleMatch(gameName, item.name),
-      item,
-      searchRank,
-    }))
+    .map((item, searchRank) => {
+      const match = applyCandidateTypeGate(
+        gameName,
+        item,
+        scoreTitleMatch(gameName, item.name),
+      );
+
+      return {
+        ...match,
+        item,
+        searchRank,
+        surfaceExact: preservesSourceTitle(gameName, item.name),
+      };
+    })
     .sort(
       (left, right) =>
         right.score - left.score ||
+        Number(right.surfaceExact) - Number(left.surfaceExact) ||
         typePriority(right.item.type) - typePriority(left.item.type) ||
         left.searchRank - right.searchRank ||
         left.item.id - right.item.id,
@@ -441,10 +623,20 @@ export function findBestSteamMatch(gameName, items, options = {}) {
   }
 
   const second = ranked[1];
+  // When top candidates share the same score, a candidate that preserves
+  // original surface punctuation (e.g. "VOID/BREAKER" vs "Void Breaker") breaks
+  // the tie and is not flagged as ambiguous.
+  const exactSurfaceTieResolved =
+    second !== undefined &&
+    best.score === second.score &&
+    best.surfaceExact &&
+    !second.surfaceExact;
+
   const ambiguous =
     second !== undefined &&
     second.item.id !== best.item.id &&
-    best.score - second.score <= ambiguityMargin;
+    best.score - second.score <= ambiguityMargin &&
+    !exactSurfaceTieResolved;
 
   return {
     item: best.item,
@@ -456,13 +648,40 @@ export function findBestSteamMatch(gameName, items, options = {}) {
 }
 
 /**
+ * Maps store search languages to their primary storefront countries to ensure
+ * regional Steam catalog entries are discoverable during search.
+ *
+ * @param {string} language
+ * @returns {string}
+ */
+function defaultCountryForLanguage(language) {
+  switch (language) {
+    case "japanese":
+      return "JP";
+    case "tchinese":
+      return "TW";
+    case "schinese":
+      return "CN";
+    case "koreana":
+      return "KR";
+    default:
+      return DEFAULT_STEAM_COUNTRY;
+  }
+}
+
+/**
  * Searches Steam in a small set of useful locales, merges duplicate App IDs,
  * and returns candidates ordered by title-match quality.
  *
  * This remains backward-compatible with the original one-argument function.
  *
  * @param {string} gameName
- * @param {{country?: string; languages?: readonly string[]}} [options]
+ * @param {{
+ *   country?: string;
+ *   languages?: readonly string[];
+ *   minimumScore?: number;
+ *   ambiguityMargin?: number;
+ * }} [options]
  * @returns {Promise<SteamStoreItem[] | null>}
  */
 export async function searchSteamStore(gameName, options = {}) {
@@ -481,8 +700,11 @@ export async function searchSteamStore(gameName, options = {}) {
   let completedRequest = false;
 
   for (const language of languages) {
+    const effectiveCountry = options.country
+      ? country
+      : defaultCountryForLanguage(language);
     for (const searchTerm of searchTerms) {
-      const items = await searchSteamStoreTerm(searchTerm, language, country);
+      const items = await searchSteamStoreTerm(searchTerm, language, effectiveCountry);
 
       if (items === null) {
         continue;
@@ -494,11 +716,6 @@ export async function searchSteamStore(gameName, options = {}) {
         if (!candidatesById.has(item.id)) {
           candidatesById.set(item.id, item);
         }
-      }
-
-      const ranked = rankSteamMatches(gameName, [...candidatesById.values()]);
-      if (ranked[0]?.score >= HIGH_CONFIDENCE_SCORE) {
-        return ranked.map((match) => match.item);
       }
     }
   }
@@ -663,18 +880,57 @@ function scheduleSteamRequest(operation) {
 }
 
 /**
+ * Strips preview and modification suffixes like Demo, Playtest, Prologue, SPT
+ * along with their delimiters to expand candidate discovery in the Steam Store.
+ *
+ * @param {string} searchTerm
+ * @returns {string}
+ */
+export function buildVariantBaseSearchTerm(searchTerm) {
+  assertString(searchTerm);
+  return collapseWhitespace(
+    searchTerm.replace(/(?:\s*[:\-–—]\s*|\s+)(?:demo|playtest|prologue|spt)$/iu, ""),
+  );
+}
+
+/**
+ * Generates primary, punctuationless, core, variant-stripped, and alias search
+ * terms for a game title to maximize candidate discovery in the Steam Store.
+ *
  * @param {string} gameName
  * @returns {string[]}
  */
-function buildSearchTerms(gameName) {
+export function buildSearchTerms(gameName) {
   const original = normalizeSearchTerm(gameName, false);
   const expanded = normalizeSearchTerm(gameName, true);
+  const punctuationless = buildPunctuationlessSearchTerm(expanded);
   const core = buildCoreSearchTerm(expanded);
+  const variantBase = buildVariantBaseSearchTerm(expanded);
   const aliases = buildEquivalenceSearchTerms(gameName);
 
   return [
-    ...new Set([expanded, original, core, ...aliases].filter((term) => term.length > 0)),
+    ...new Set(
+      [expanded, original, punctuationless, core, variantBase, ...aliases].filter(
+        (term) => term.length > 0,
+      ),
+    ),
   ];
+}
+
+/**
+ * Steam's search endpoint occasionally misses punctuation-bearing titles.
+ * This expands candidate recall only; rankSteamMatches still applies the same
+ * strict score and ambiguity rules before a result can be accepted.
+ *
+ * @param {string} searchTerm
+ * @returns {string}
+ */
+export function buildPunctuationlessSearchTerm(searchTerm) {
+  assertString(searchTerm);
+  const collapsedInitialisms = searchTerm.replace(DOTTED_INITIALISM_PATTERN, (initialism) =>
+    initialism.replaceAll(".", ""),
+  );
+  return collapseWhitespace(collapsedInitialisms.replace(SEARCH_PUNCTUATION_PATTERN, " "));
 }
 
 /**
@@ -759,10 +1015,14 @@ function normalizePhrase(name) {
     expanded
       // Remove before NFKD; otherwise ™ can decompose into the letters "TM".
       .replace(TRADEMARK_PATTERN, "")
+      // Preserve a word boundary when NFKD turns a compatibility numeral such
+      // as ² into an ASCII digit. Do not split ordinary title tokens like F1.
+      .replace(COMPATIBILITY_NUMBER_PATTERN, (number) => ` ${number} `)
       .normalize("NFKD")
       .replace(DIACRITIC_PATTERN, "")
       .toLowerCase()
       .replace(RELEASE_YEAR_PATTERN, " ")
+      .replace(DOTTED_INITIALISM_PATTERN, (initialism) => initialism.replaceAll(".", ""))
       .replace(
         ROMAN_NUMERAL_PATTERN,
         (roman) => ROMAN_NUMERAL_REPLACEMENTS.get(roman) ?? roman,

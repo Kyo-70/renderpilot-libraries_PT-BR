@@ -11,7 +11,8 @@ const DISHONORED_2 = {
   asset: "Luma-Dishonored_2.zip",
   appid: "403640",
 };
-const BORDERLANDS_2_AND_TPS = "borderlands-2-and-the-pre-sequel";
+const BORDERLANDS_2 = "borderlands-2";
+const BORDERLANDS_THE_PRE_SEQUEL = "borderlands-the-pre-sequel";
 const MEDAL_OF_HONOR_AIRBORNE = "medal-of-honor-airborne";
 const METAPHOR_REFANTAZIO = "metaphor-refantazio";
 const TEKKEN_7 = "tekken-7";
@@ -28,6 +29,17 @@ const MASS_EFFECT_LEGENDARY_EDITION = {
   addonFile: "Luma-Mass Effect Legendary Edition.addon",
   match: [{ kind: "steam_appid", value: "1328670", tier: 100 }],
 };
+const KID_A_MNESIA_EXHIBITION = {
+  id: "kid-a-mnesia-exhibition",
+  match: [{ kind: "epic_id", value: "KIDAMNESIAEXHIBITION", tier: 100 }],
+};
+const DRAGON_QUEST_XI = {
+  id: "dragonquestxiechoesofanelusiveage",
+  match: [
+    { kind: "steam_appid", value: "742120", tier: 100 },
+    { kind: "exe_name", value: "DRAGON QUEST XI.exe", tier: 70 },
+  ],
+};
 
 test("manifest integrity - committed Luma v1 document is well-formed and internally consistent", async () => {
   const manifestPath = path.join(REPO_ROOT, "addons", "v1", "luma.json");
@@ -37,10 +49,16 @@ test("manifest integrity - committed Luma v1 document is well-formed and interna
   assert.ok(Array.isArray(manifest.games), "Manifest should have a games array");
   assert.ok(manifest.games.length > 0, "Manifest should have at least one game");
   assert.equal(manifest.schema_version, 1);
-  assert.equal(manifest.games.length, 192);
+  assert.equal(manifest.games.length, 196);
   assert.match(manifest.generated_at, /^\d{4}-\d{2}-\d{2}T00:00:00Z$/);
   assert.match(manifest.minimum_reshade_version, /^\d+\.\d+\.\d+$/);
   assert.equal("host" in manifest, false);
+
+  for (const expected of [KID_A_MNESIA_EXHIBITION, DRAGON_QUEST_XI]) {
+    const game = manifest.games.find((title) => title.id === expected.id);
+    assert.ok(game, `${expected.id} must be public`);
+    assert.deepEqual(game.match, expected.match);
+  }
 
   const dishonored2 = manifest.games.find((t) => t.id === DISHONORED_2.id);
   assert.ok(dishonored2, `${DISHONORED_2.id} must be present`);
@@ -80,13 +98,13 @@ test("manifest integrity - committed Luma v1 document is well-formed and interna
   );
   assert.deepEqual(massEffectLegendaryEdition.match, MASS_EFFECT_LEGENDARY_EDITION.match);
 
-  const borderlands = manifest.games.find((t) => t.id === BORDERLANDS_2_AND_TPS);
-  assert.ok(borderlands, `${BORDERLANDS_2_AND_TPS} must be present`);
-  assert.equal(
-    borderlands.package.addon_file,
-    "Luma-Borderlands 2 and The Pre-Sequel.addon",
-  );
-  const dependency = borderlands.requirements.managed_dependency;
+  const borderlands = [BORDERLANDS_2, BORDERLANDS_THE_PRE_SEQUEL].map((id) => {
+    const game = manifest.games.find((title) => title.id === id);
+    assert.ok(game, `${id} must be present`);
+    assert.equal(game.package.addon_file, "Luma-Borderlands 2 and The Pre-Sequel.addon");
+    return game;
+  });
+  const dependency = borderlands[0].requirements.managed_dependency;
   assert.equal(dependency.kind, "dgvoodoo2");
   assert.equal(dependency.version, "2.87.3");
   assert.deepEqual(dependency.accepted_detected_apis, ["D3D9"]);

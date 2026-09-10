@@ -1,6 +1,13 @@
 # Luma curation
 
-`curated_games.json` is the Luma authoring catalog. It holds profiles, verified install identities, requirements, features, reviewed guidance, and the upstream note-review audit. Omit `profile` for a game-specific payload; set it explicitly to `"unreal"` or `"unity"` for an engine profile. The obsolete `generic` flag is rejected.
+`curated_games.json` is the Luma policy catalog. It holds profiles,
+requirements, features, reviewed guidance, the upstream note-review audit, and
+one or more exact `game_target_ids` where a shared profile is installable. Verified install
+identities and their provenance are owned once by
+[`catalogs/games/match-registry.json`](../../games/match-registry.json), not by
+Luma. Omit `profile` for a game-specific payload; set it explicitly to
+`"unreal"` or `"unity"` for an engine profile. The obsolete `generic` flag is
+rejected.
 
 Only reviewed `guidance` reaches the public v1 manifest. Unmatched records are written to `pending_match.json` and are not published as installable. Set `match_ignore: true` on a profile to permanently skip Steam matching (for example after a duplicate AppID); ignored profiles are neither pending nor published.
 
@@ -24,6 +31,7 @@ Do not publish raw Wiki notes. Keep dgVoodoo requirements fully pinned: archive 
 ## Sources of truth
 
 - [Curated game profiles](curated_games.json)
+- [Canonical game targets](../../games/match-registry.json)
 - [Manifest generator](generate-manifest.mjs)
 - [Manifest schema](manifest-v1.schema.json)
 - [Wiki drift workflow](../../../.github/workflows/wiki-drift.yml)

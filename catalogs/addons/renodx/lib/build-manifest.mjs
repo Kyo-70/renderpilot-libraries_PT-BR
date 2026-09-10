@@ -1,8 +1,8 @@
 import {
   categoryOf,
-  collectMatchedAppids,
   inheritedSplitOverlay,
   normalizeSlug,
+  resolveOverlayTargetMatches,
   validateOverlay,
 } from "./overlay.mjs";
 import {
@@ -18,16 +18,10 @@ import {
 import {
   VALID_STATUSES,
   assertUniqueMatchRules,
-  createDerivedExeResolver,
-  makeMatchRules,
-  normalizeExeCache,
   normalizedStatus,
   reserveOutputId,
+  tierForMatchKind,
 } from "../../../../scripts/lib/build-manifest-shared.mjs";
-import {
-  normalizeAppids,
-  normalizeExeName,
-} from "../../../../scripts/lib/overlay-shared.mjs";
 
 export const GENERICS = deepFreeze([
   {
@@ -55,7 +49,7 @@ export function buildManifest({
   wiki,
   curatedGames = [],
   overlay = {},
-  exeCache = {},
+  registry,
   generatedAt,
   warn = console.warn,
 } = {}) {
@@ -73,54 +67,46 @@ export function buildManifest({
     allInputGames.push(game);
   }
 
-  validateOverlay(overlayById, seenInputIds, warn);
-
-  const activeAppids = collectMatchedAppids(allInputGames, overlayById);
-  const { exeToAppids, exeCache: normalizedExeCache } = normalizeExeCache(
-    exeCache,
-    activeAppids,
-  );
-
-  const { uniqueExesForAppids, ambiguousDerivedExeKeys } = createDerivedExeResolver(
-    normalizedExeCache,
-    exeToAppids,
-  );
+  validateOverlay(overlayById, seenInputIds, registry, warn);
 
   const games = [];
   const pending = [];
   const seenOutputIds = new Set();
 
   const emit = ({ id, name, slug, arch, status, entry, downloadUrl, context }) => {
-    reserveOutputId(seenOutputIds, id, context);
-
-    const appids = normalizeAppids(entry, context);
-    const exe = normalizeExeName(entry.exe, `${context}.exe`);
+    const targetMatches = resolveOverlayTargetMatches(entry, registry, context);
 
     if (entry.ignore) {
       // Skip duplicate or broken wiki entries so they don't clutter pending_match.
       return;
     }
 
-    if (appids.length === 0 && !exe) {
+    if (targetMatches.length === 0) {
       pending.push({ id, name, slug, arch });
       return;
     }
 
-    games.push(
-      makeGame({
-        id,
-        name,
-        slug,
-        arch,
-        status,
-        appids,
-        exe,
-        derivedExes: uniqueExesForAppids(appids),
-        overlay: entry,
-        category: categoryOf(entry, context),
-        downloadUrl,
-      }),
-    );
+    for (const { targetId, rules } of targetMatches) {
+      const outputId = targetMatches.length === 1 ? id : targetId;
+      reserveOutputId(seenOutputIds, outputId, `${context} target "${targetId}"`);
+      games.push(
+        makeGame({
+          id: outputId,
+          name,
+          slug,
+          arch,
+          status,
+          matchRules: rules.map((rule) => ({
+            kind: rule.kind,
+            value: rule.value,
+            tier: tierForMatchKind(rule.kind),
+          })),
+          overlay: entry,
+          category: categoryOf(entry, context),
+          downloadUrl,
+        }),
+      );
+    }
   };
 
   for (const game of allInputGames) {
@@ -154,7 +140,7 @@ export function buildManifest({
       engine_profiles: GENERICS.map(engineProfileFromGeneric),
     },
     pending,
-    stats: buildStats(games, pending, ambiguousDerivedExeKeys),
+    stats: buildStats(games, pending),
   };
 }
 
@@ -185,9 +171,7 @@ function makeGame({
   slug,
   arch,
   status,
-  appids,
-  exe,
-  derivedExes,
+  matchRules,
   overlay,
   category,
   downloadUrl,
@@ -207,7 +191,11 @@ function makeGame({
     name,
     architecture: arch,
     status: gameStatus,
-    match: makeMatchRules({ id, appids, exe, derivedExes }),
+    match: matchRules.map(({ kind, value }) => ({
+      kind,
+      value,
+      tier: tierForMatchKind(kind),
+    })),
     addon,
   };
 
@@ -301,12 +289,11 @@ function countByAvailabilityKind(games, kind) {
   return games.filter((game) => game.availability?.kind === kind).length;
 }
 
-function buildStats(games, pending, ambiguousDerivedExeKeys) {
+function buildStats(games, pending) {
   return {
     games: games.length,
     pending: pending.length,
     engineProfiles: GENERICS.length,
-    ambiguousDerivedExes: ambiguousDerivedExeKeys.size,
     external: countByAvailabilityKind(games, "external"),
     native_hdr: countByAvailabilityKind(games, "native_hdr"),
     blocked: countByAvailabilityKind(games, "blocked"),

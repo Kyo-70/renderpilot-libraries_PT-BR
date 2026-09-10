@@ -21,7 +21,6 @@
     "check:reshade-generated": "node scripts/generate-reshade-manifest.mjs --check",
     "check:renodx-generated": "node catalogs/addons/renodx/generate-manifest.mjs --check",
     "check:luma-generated": "node catalogs/addons/luma/generate-manifest.mjs --check",
-    "enrich:exe": "node scripts/enrich-exe.mjs",
     "generate:reshade": "node scripts/generate-reshade-manifest.mjs",
     "generate:renodx": "node catalogs/addons/renodx/generate-manifest.mjs",
     "generate:luma": "node catalogs/addons/luma/generate-manifest.mjs",

@@ -1,59 +1,121 @@
 import path from "node:path";
 
-import { normalizeMatchRules as normalizeLumaMatchRules } from "../../catalogs/addons/luma/lib/authoring-profile.mjs";
-import { collectOverlayAppids as collectRenoOverlayAppIds } from "../../catalogs/addons/renodx/lib/overlay.mjs";
-import { MATCH_TIERS } from "./build-manifest-shared.mjs";
 import { isMissingFileError } from "./common.mjs";
-import { readJsonFileAsync, writeFormattedJsonFile } from "./json.mjs";
-import { normalizeAppid } from "./overlay-shared.mjs";
+import { addRegistryRule, createMatchRegistry } from "./match-registry.mjs";
+import {
+  readJsonFileAsync,
+  stringifyFormattedJson,
+  writeJsonFilesBatchWithRollback,
+} from "./json.mjs";
+import { directGameMatchField, normalizeAppid } from "./overlay-shared.mjs";
 
 export async function createRenodxPendingStore(files) {
-  const matchOverlay = await readOptionalJsonFile(
-    files.matchOverlay,
-    () => new Map(),
-    validateMatchOverlay,
-    "No existing match_overlay.json found, starting fresh.",
-  );
+  const [matchOverlay, registrySource] = await Promise.all([
+    readOptionalJsonFile(
+      files.matchOverlay,
+      () => new Map(),
+      validateMatchOverlay,
+      "No existing match_overlay.json found, starting fresh.",
+    ),
+    readJsonFile(files.matchRegistry, "match-registry.json"),
+  ]);
+  createMatchRegistry(registrySource);
 
   return {
-    ...createRenodxStoreApi(matchOverlay),
+    ...createRenodxStoreApi(matchOverlay, registrySource),
     async save() {
-      await writeFormattedJsonFile(files.matchOverlay, mapToSortedObject(matchOverlay));
+      await writeAuthoringPair({
+        registryFile: files.matchRegistry,
+        registrySource,
+        authoringFile: files.matchOverlay,
+        authoringSource: mapToSortedObject(matchOverlay),
+      });
     },
   };
 }
 
 export async function createLumaPendingStore(files) {
-  const profiles = await readJsonFile(files.profiles, validateLumaProfiles);
+  const [profiles, registrySource] = await Promise.all([
+    readJsonFile(files.profiles, "curated_games.json"),
+    readJsonFile(files.matchRegistry, "match-registry.json"),
+  ]);
+  validateLumaProfiles(profiles, registrySource);
 
   return {
-    ...createLumaStoreApi(profiles),
+    ...createLumaStoreApi(profiles, registrySource),
     async save() {
-      await writeFormattedJsonFile(files.profiles, profiles);
+      await writeAuthoringPair({
+        registryFile: files.matchRegistry,
+        registrySource,
+        authoringFile: files.profiles,
+        authoringSource: profiles,
+      });
     },
   };
 }
 
-export function createRenodxStoreApi(matchOverlay) {
+export function createRenodxStoreApi(matchOverlay, registrySource) {
   return {
     isResolved(gameId) {
       const target = findRenodxTarget(matchOverlay, gameId);
       return target !== null && hasResolution(target.entry, target.parent);
     },
     claimAppIds() {
-      return collectOverlaySteamAppIds(matchOverlay);
+      return collectRegistrySteamAppIds(registrySource);
     },
-    applyMatch(gameId, appid) {
+    getTargetForSteamAppId(appid) {
+      return findTargetIdForSteamAppId(registrySource, appid);
+    },
+    hasTarget(targetId) {
+      return registrySource.targets?.some((target) => target?.id === targetId) ?? false;
+    },
+    isTargetClaimedByAnotherEntry(gameId, targetId) {
+      for (const [id, entry] of matchOverlay) {
+        if (
+          id !== gameId &&
+          Array.isArray(entry.game_target_ids) &&
+          entry.game_target_ids.includes(targetId)
+        ) {
+          return true;
+        }
+        for (const split of Array.isArray(entry.split) ? entry.split : []) {
+          if (
+            `${id}-${split.suffix}` !== gameId &&
+            Array.isArray(split.game_target_ids) &&
+            split.game_target_ids.includes(targetId)
+          ) {
+            return true;
+          }
+        }
+      }
+      return false;
+    },
+    linkExistingTarget(gameId, targetId) {
       const target = getOrCreateRenodxTarget(matchOverlay, gameId);
-      target.appids = [normalizeAppid(appid, `pending match "${gameId}" AppID`)];
-      delete target.appid;
+      target.game_target_ids = [targetId];
+      delete target.ignore;
+    },
+    applyMatch(gameId, appid, requestedTargetId) {
+      const existing = findRenodxTarget(matchOverlay, gameId);
+      const target = existing?.entry ?? {};
+      const normalizedAppid = normalizeAppid(appid, `pending match "${gameId}" AppID`);
+      const targetId = pendingTargetId(target, gameId, "RenoDX", requestedTargetId);
+      addRegistryRule(registrySource, {
+        targetId,
+        kind: "steam_appid",
+        value: normalizedAppid,
+        provenance: {
+          source: "steam-store-search",
+          locator: `pending:renodx:${gameId}`,
+        },
+      });
+      if (existing === null) matchOverlay.set(gameId, target);
+      target.game_target_ids = [targetId];
       delete target.ignore;
     },
     applyDuplicateIgnore(gameId) {
       const target = getOrCreateRenodxTarget(matchOverlay, gameId);
-      delete target.appid;
-      delete target.appids;
-      delete target.exe;
+      delete target.game_target_ids;
       target.ignore = true;
     },
   };
@@ -85,44 +147,63 @@ function getOrCreateRenodxTarget(matchOverlay, gameId) {
 
 function hasResolution(entry, inherited = null) {
   if (entry.ignore === true || inherited?.ignore === true) return true;
-  if (nonEmpty(entry.exe) || nonEmpty(entry.appid)) return true;
-  if (Array.isArray(entry.appids) && entry.appids.some(nonEmpty)) return true;
-
-  // A split collection is resolved only when every emitted split has a match
-  // or an explicit ignore. Metadata such as category alone is not a match.
-  return (
-    Array.isArray(entry.split) &&
-    entry.split.length > 0 &&
-    entry.split.every((split) => hasResolution(split, entry))
-  );
+  return Array.isArray(entry.game_target_ids) && entry.game_target_ids.length > 0;
 }
 
-function nonEmpty(value) {
-  return value !== undefined && value !== null && String(value).trim() !== "";
-}
-
-export function createLumaStoreApi(profiles) {
+export function createLumaStoreApi(profiles, registrySource) {
   const byId = new Map(profiles.map((profile) => [profile.id, profile]));
 
   return {
     isResolved(gameId) {
       const profile = byId.get(gameId);
       return Boolean(
-        profile && (profile.match_ignore === true || (profile.match?.length ?? 0) > 0),
+        profile &&
+        (profile.match_ignore === true ||
+          (Array.isArray(profile.game_target_ids) && profile.game_target_ids.length > 0)),
       );
     },
     claimAppIds() {
-      return collectProfileSteamAppIds(profiles);
+      return collectRegistrySteamAppIds(registrySource);
     },
-    applyMatch(gameId, appid) {
+    getTargetForSteamAppId(appid) {
+      return findTargetIdForSteamAppId(registrySource, appid);
+    },
+    hasTarget(targetId) {
+      return registrySource.targets?.some((target) => target?.id === targetId) ?? false;
+    },
+    isTargetClaimedByAnotherEntry(gameId, targetId) {
+      return profiles.some(
+        (profile) =>
+          profile.id !== gameId &&
+          Array.isArray(profile.game_target_ids) &&
+          profile.game_target_ids.includes(targetId),
+      );
+    },
+    linkExistingTarget(gameId, targetId) {
       const profile = requiredProfile(byId, gameId);
-      profile.match = [{ kind: "steam_appid", value: appid, tier: MATCH_TIERS.steamAppid }];
+      profile.game_target_ids = [targetId];
+      delete profile.match_ignore;
+    },
+    applyMatch(gameId, appid, requestedTargetId) {
+      const profile = requiredProfile(byId, gameId);
+      const normalizedAppid = normalizeAppid(appid, `pending match "${gameId}" AppID`);
+      const targetId = pendingTargetId(profile, gameId, "Luma", requestedTargetId);
+      addRegistryRule(registrySource, {
+        targetId,
+        kind: "steam_appid",
+        value: normalizedAppid,
+        provenance: {
+          source: "steam-store-search",
+          locator: `pending:luma:${gameId}`,
+        },
+      });
+      profile.game_target_ids = [targetId];
       delete profile.match_ignore;
     },
     applyDuplicateIgnore(gameId) {
       const profile = requiredProfile(byId, gameId);
       profile.match_ignore = true;
-      if (!Array.isArray(profile.match)) profile.match = [];
+      delete profile.game_target_ids;
     },
   };
 }
@@ -142,57 +223,179 @@ export function validateMatchOverlay(value, filePath) {
 
   const overlay = new Map();
   for (const [gameId, entry] of Object.entries(value)) {
-    if (!isRecord(entry)) {
-      throw new TypeError(`match_overlay.json entry "${gameId}" must be an object.`);
-    }
-    const normalizedEntry = { ...entry };
-    if ("appids" in normalizedEntry) {
-      if (!Array.isArray(normalizedEntry.appids)) {
-        throw new TypeError(
-          `match_overlay.json entry "${gameId}".appids must be an array.`,
-        );
-      }
-      normalizedEntry.appids = normalizedEntry.appids.map(String);
-    }
-    if ("ignore" in normalizedEntry && typeof normalizedEntry.ignore !== "boolean") {
+    validateOverlayEntry(entry, `match_overlay.json entry "${gameId}"`);
+    if ("ignore" in entry && typeof entry.ignore !== "boolean") {
       throw new TypeError(`match_overlay.json entry "${gameId}".ignore must be boolean.`);
     }
-    overlay.set(String(gameId), normalizedEntry);
+    overlay.set(String(gameId), structuredClone(entry));
   }
   return overlay;
 }
 
-export function collectOverlaySteamAppIds(matchOverlay) {
-  const appIds = new Set();
-  collectRenoOverlayAppIds(mapToSortedObject(matchOverlay), appIds);
-  return appIds;
+export function collectRegistrySteamAppIds(registrySource) {
+  const registry = createMatchRegistry(registrySource);
+  return new Set(
+    registry.targets.flatMap((target) =>
+      target.rules.filter((rule) => rule.kind === "steam_appid").map((rule) => rule.value),
+    ),
+  );
 }
 
-export function collectProfileSteamAppIds(profiles) {
-  const appIds = new Set();
-  for (const [profileIndex, profile] of profiles.entries()) {
-    for (const [ruleIndex, rule] of (profile.match ?? []).entries()) {
-      if (isSteamAppIdRule(rule)) {
-        appIds.add(
-          normalizeAppid(
-            rule.value,
-            `curated_games.json[${profileIndex}].match[${ruleIndex}].value`,
-          ),
-        );
-      }
+export function findTargetIdForSteamAppId(registrySource, appid) {
+  const normalized = String(appid).trim();
+  const owners = [];
+  for (const target of registrySource?.targets ?? []) {
+    if (
+      target?.rules?.some(
+        (rule) => rule?.kind === "steam_appid" && String(rule.value).trim() === normalized,
+      )
+    ) {
+      owners.push(target.id);
     }
   }
-  return appIds;
+  if (owners.length > 1) {
+    throw new Error(
+      `Registry invariant violation: Steam AppID ${normalized} is owned by multiple targets: ${owners.join(", ")}`,
+    );
+  }
+  return owners[0] ?? null;
 }
 
-async function readJsonFile(filePath, validate) {
-  const parsedJson = await readJsonFileAsync(filePath, path.basename(filePath));
-  return validate(parsedJson, path.basename(filePath));
+function validateLumaProfiles(value, registrySource) {
+  if (!Array.isArray(value)) {
+    throw new TypeError("curated_games.json must contain an array.");
+  }
+  const registry = createMatchRegistry(registrySource);
+  const ids = new Set();
+  for (const [index, profile] of value.entries()) {
+    if (!isRecord(profile)) {
+      throw new TypeError(`curated_games.json item #${index + 1} must be an object.`);
+    }
+    const id = String(profile.id ?? "").trim();
+    if (!id || ids.has(id)) {
+      throw new TypeError(
+        `curated_games.json contains an invalid or duplicate id at #${index + 1}.`,
+      );
+    }
+    ids.add(id);
+    if (profile.match_ignore !== undefined && typeof profile.match_ignore !== "boolean") {
+      throw new TypeError(
+        `curated_games.json item #${index + 1}.match_ignore must be boolean.`,
+      );
+    }
+    if (profile.game_target_id !== undefined) {
+      throw new TypeError(
+        `curated_games.json item #${index + 1} must use game_target_ids instead of game_target_id.`,
+      );
+    }
+    rejectRetiredDirectMatchFields(profile, `curated_games.json item #${index + 1}`);
+    if (profile.game_target_ids !== undefined) {
+      validateTargetIds(
+        profile.game_target_ids,
+        registry,
+        `curated_games.json item #${index + 1}`,
+      );
+    }
+  }
 }
 
-async function readOptionalJsonFile(filePath, fallback, validate, missingMessage) {
+function pendingTargetId(entry, gameId, addon, requestedTargetId) {
+  if (entry.game_target_id !== undefined) {
+    throw new TypeError(`${addon} pending entry ${gameId} uses obsolete game_target_id.`);
+  }
+  if (entry.game_target_ids === undefined) {
+    if (typeof requestedTargetId !== "string" || requestedTargetId.trim() === "") {
+      throw new TypeError(
+        `${addon} pending entry ${gameId} requires an explicit target id before adding an identity.`,
+      );
+    }
+    return requestedTargetId.trim();
+  }
+  if (!Array.isArray(entry.game_target_ids) || entry.game_target_ids.length !== 1) {
+    throw new TypeError(
+      `${addon} pending entry ${gameId} cannot add an identity to a shared target profile.`,
+    );
+  }
+  if (
+    requestedTargetId !== undefined &&
+    (typeof requestedTargetId !== "string" ||
+      requestedTargetId.trim() !== entry.game_target_ids[0])
+  ) {
+    throw new TypeError(
+      `${addon} pending entry ${gameId} already references ${entry.game_target_ids[0]}; target id must agree.`,
+    );
+  }
+  return entry.game_target_ids[0];
+}
+
+function validateOverlayEntry(entry, context) {
+  if (!isRecord(entry)) {
+    throw new TypeError(`${context} must be an object.`);
+  }
+  rejectRetiredDirectMatchFields(entry, context);
+  if (entry.split === undefined) return;
+  if (!Array.isArray(entry.split)) {
+    throw new TypeError(`${context}.split must be an array when present.`);
+  }
+  entry.split.forEach((split, index) => {
+    validateOverlayEntry(split, `${context}.split[${index}]`);
+  });
+}
+
+function rejectRetiredDirectMatchFields(entry, context) {
+  const field = directGameMatchField(entry);
+  if (field !== null) {
+    throw new TypeError(
+      `${context}.${field} is direct game matching; use game_target_ids.`,
+    );
+  }
+}
+
+function validateTargetIds(value, registry, context) {
+  if (!Array.isArray(value) || value.length === 0) {
+    throw new TypeError(`${context}.game_target_ids must be a non-empty array.`);
+  }
+  const seen = new Set();
+  let previous = null;
+  for (const targetId of value) {
+    if (typeof targetId !== "string" || !registry.targetsById.has(targetId)) {
+      throw new TypeError(`${context}.game_target_ids has an unknown target.`);
+    }
+    if (
+      seen.has(targetId) ||
+      (previous !== null && previous.localeCompare(targetId) >= 0)
+    ) {
+      throw new TypeError(`${context}.game_target_ids must be unique and ordered.`);
+    }
+    seen.add(targetId);
+    previous = targetId;
+  }
+}
+
+async function writeAuthoringPair({
+  registryFile,
+  registrySource,
+  authoringFile,
+  authoringSource,
+}) {
+  createMatchRegistry(registrySource);
+  const [registryBody, authoringBody] = await Promise.all([
+    stringifyFormattedJson(registrySource, registryFile),
+    stringifyFormattedJson(authoringSource, authoringFile),
+  ]);
+  await writeJsonFilesBatchWithRollback([
+    { file: registryFile, body: registryBody },
+    { file: authoringFile, body: authoringBody },
+  ]);
+}
+
+async function readJsonFile(file, context) {
+  return readJsonFileAsync(file, context);
+}
+
+async function readOptionalJsonFile(file, fallback, validate, missingMessage) {
   try {
-    return await readJsonFile(filePath, validate);
+    return validate(await readJsonFile(file, path.basename(file)), path.basename(file));
   } catch (error) {
     if (isMissingFileError(error)) {
       console.log(missingMessage);
@@ -202,55 +405,12 @@ async function readOptionalJsonFile(filePath, fallback, validate, missingMessage
   }
 }
 
-function validateLumaProfiles(value, filePath) {
-  if (!Array.isArray(value)) {
-    throw new TypeError(`${filePath} must contain an array.`);
-  }
-
-  const ids = new Set();
-  return value.map((profile, index) => {
-    if (!isRecord(profile)) {
-      throw new TypeError(`curated_games.json item #${index + 1} must be an object.`);
-    }
-    const id = toNonEmptyString(profile.id);
-    if (!id || ids.has(id)) {
-      throw new TypeError(
-        `curated_games.json contains an invalid or duplicate id at #${index + 1}.`,
-      );
-    }
-    ids.add(id);
-
-    if (profile.match_ignore !== undefined && typeof profile.match_ignore !== "boolean") {
-      throw new TypeError(
-        `curated_games.json item #${index + 1}.match_ignore must be boolean.`,
-      );
-    }
-
-    const normalized = { ...profile, id };
-    if (profile.match !== undefined) {
-      normalized.match = normalizeLumaMatchRules(
-        profile.match,
-        `${filePath}[${index}].match`,
-      );
-    }
-    return normalized;
-  });
-}
-
 function mapToSortedObject(map) {
   return Object.fromEntries(
     [...map.entries()].sort(([left], [right]) => left.localeCompare(right)),
   );
 }
 
-function isSteamAppIdRule(value) {
-  return isRecord(value) && value.kind === "steam_appid" && value.value != null;
-}
-
 function isRecord(value) {
   return value !== null && typeof value === "object" && !Array.isArray(value);
-}
-
-function toNonEmptyString(value) {
-  return value == null ? "" : String(value).trim();
 }

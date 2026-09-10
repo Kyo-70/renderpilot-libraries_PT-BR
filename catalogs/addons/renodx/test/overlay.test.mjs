@@ -2,6 +2,25 @@ import test from "node:test";
 import assert from "node:assert/strict";
 
 import { categoryOf, inheritedSplitOverlay, validateOverlay } from "../lib/overlay.mjs";
+import { createMatchRegistry } from "../../../../scripts/lib/match-registry.mjs";
+
+function testRegistry() {
+  return createMatchRegistry({
+    targets: [
+      {
+        id: "test-game",
+        rules: [
+          {
+            id: "steam-1",
+            kind: "steam_appid",
+            value: "1",
+            provenance: { source: "test", locator: "test" },
+          },
+        ],
+      },
+    ],
+  });
+}
 
 test("rejects category conflicts and category plus download_url", () => {
   assert.deepEqual(
@@ -41,21 +60,70 @@ test("rejects category conflicts and category plus download_url", () => {
   );
 });
 
-test("split overlays inherit metadata but not parent match identifiers", () => {
+test("split overlays inherit policy but not parent game-target references", () => {
   const split = inheritedSplitOverlay(
     {
-      appid: "100",
-      exe: "Parent.exe",
+      game_target_ids: ["parent-game"],
       slug: "sharedslug",
       conflicts: ["SpecialK"],
     },
-    { suffix: "child", name: "Child", appid: "200" },
+    {
+      suffix: "child",
+      name: "Child",
+      game_target_ids: ["child-game"],
+    },
   );
 
-  assert.equal(split.appid, "200");
-  assert.equal(split.exe, undefined);
+  assert.deepEqual(split.game_target_ids, ["child-game"]);
   assert.equal(split.slug, "sharedslug");
   assert.deepEqual(split.conflicts, ["SpecialK"]);
+});
+
+test("RenoDX overlays and splits reject retired direct game-matching fields", () => {
+  const values = {
+    match: [],
+    appid: "1",
+    appids: ["1"],
+    exe: "Game.exe",
+    exe_name: "Game.exe",
+  };
+
+  for (const [field, value] of Object.entries(values)) {
+    assert.throws(
+      () =>
+        validateOverlay(
+          {
+            game: { game_target_ids: ["test-game"], [field]: value },
+          },
+          new Set(["game"]),
+          testRegistry(),
+          () => {},
+        ),
+      new RegExp(`overlay "game"\\.${field} is direct game matching`),
+    );
+    assert.throws(
+      () =>
+        validateOverlay(
+          {
+            collection: {
+              game_target_ids: ["test-game"],
+              split: [
+                {
+                  suffix: "child",
+                  name: "Child",
+                  game_target_ids: ["test-game"],
+                  [field]: value,
+                },
+              ],
+            },
+          },
+          new Set(["collection"]),
+          testRegistry(),
+          () => {},
+        ),
+      new RegExp(`overlay "collection"\\.split\\[0\\]\\.${field} is direct game matching`),
+    );
+  }
 });
 
 test("validateOverlay rejects removed fields that have no publication contract", () => {
@@ -65,11 +133,12 @@ test("validateOverlay rejects removed fields that have no publication contract",
         validateOverlay(
           {
             game: {
-              appid: "100",
+              game_target_ids: ["test-game"],
               [field]: field === "notes_keys" ? ["note.key"] : "1.0.0",
             },
           },
           new Set(["game"]),
+          testRegistry(),
           () => {},
         ),
       new RegExp(`${field}.*no RenoDX publication contract`),
@@ -81,17 +150,19 @@ test("validateOverlay rejects removed fields that have no publication contract",
       validateOverlay(
         {
           collection: {
+            game_target_ids: ["test-game"],
             split: [
               {
                 suffix: "child",
                 name: "Child",
-                appid: "100",
+                game_target_ids: ["test-game"],
                 notes_keys: ["note.key"],
               },
             ],
           },
         },
         new Set(["collection"]),
+        testRegistry(),
         () => {},
       ),
     /split\[0\]\.notes_keys.*no RenoDX publication contract/,

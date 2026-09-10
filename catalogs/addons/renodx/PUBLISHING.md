@@ -1,6 +1,13 @@
 # RenoDX curation
 
-`wiki_games.json` is the upstream snapshot; `match_overlay.json` contains explicit RenderPilot curation such as store identities, executable names, variants, source URLs, and availability exceptions. Rows without a trustworthy match become `pending_match.json`. Availability/category metadata alone is not a match: add `appid`/`appids`/`exe`, a resolved split, or an explicit `ignore`.
+`wiki_games.json` is the upstream snapshot. `match_overlay.json` contains only
+RenoDX policy: availability, variants, source URLs, and an exact
+`game_target_ids`. The referenced targets in
+[`catalogs/games/match-registry.json`](../../games/match-registry.json) owns
+every verified store identity and globally unambiguous executable-leaf fact with its
+provenance. Rows without a trustworthy target become `pending_match.json`.
+Availability/category metadata alone is not a match: assign a reviewed target,
+resolve a split to its own target, or set explicit `ignore`.
 
 Run:
 
@@ -19,7 +26,8 @@ Use structured availability and localized messages in v1. Engine-wide fallbacks 
 ## Sources of truth
 
 - [Wiki snapshot](wiki_games.json)
-- [Reviewed matching overlay](match_overlay.json)
+- [RenoDX policy overlay](match_overlay.json)
+- [Canonical game targets](../../games/match-registry.json)
 - [Manifest generator](generate-manifest.mjs)
 - [Manifest schema](manifest-v1.schema.json)
 - [Wiki drift workflow](../../../.github/workflows/wiki-drift.yml)

@@ -3,10 +3,10 @@ import assert from "node:assert/strict";
 import fs from "node:fs/promises";
 import path from "node:path";
 
-import { buildManifest } from "../lib/build-manifest.mjs";
 import {
   DGVOODOO_REQUIREMENT,
   authoringGame as game,
+  buildLumaManifestForTest as buildManifest,
   compileLumaSchema,
   minimalManifest,
 } from "./helpers.mjs";
@@ -638,7 +638,6 @@ test("v1 schema validates match-rule values by kind", () => {
     { kind: "steam_appid", value: "42", tier: 100 },
     { kind: "epic_id", value: "epic-catalog-id", tier: 90 },
     { kind: "gog_id", value: "gog-product-id", tier: 90 },
-    { kind: "exe_sha256", value: "a".repeat(64), tier: 80 },
     { kind: "exe_name", value: "Game.EXE", tier: 70 },
   ];
 
@@ -654,8 +653,7 @@ test("v1 schema validates match-rule values by kind", () => {
     { kind: "steam_appid", value: "0", tier: 100 },
     { kind: "steam_appid", value: "12x", tier: 100 },
     { kind: "epic_id", value: "   ", tier: 90 },
-    { kind: "exe_sha256", value: "A".repeat(64), tier: 80 },
-    { kind: "exe_sha256", value: "a".repeat(63), tier: 80 },
+    { kind: "binary_digest", value: "a".repeat(64), tier: 80 },
     { kind: "exe_name", value: "Game", tier: 70 },
     { kind: "exe_name", value: "bin/Game.exe", tier: 70 },
   ];

@@ -51,26 +51,23 @@ test("runGenerateManifest writes and checks manifest plus pending outputs", asyn
         manifest: path.join(repoRoot, "tool_manifest.json"),
         pending: path.join(repoRoot, "tool_pending.json"),
       },
-      exeCache: path.join(repoRoot, "steam-appid-exe.json"),
     };
-
-    await fs.writeFile(files.exeCache, '{ "10": ["Game.exe"] }\n', "utf8");
 
     const options = {
       files,
       repoRoot,
       helpText: "help",
-      build: ({ generatedAt, exeCache }) => ({
+      build: ({ generatedAt }) => ({
         outputs: {
           manifest: {
             schema_version: 1,
             generated_at: generatedAt,
-            exes: exeCache["10"],
+            source: "explicit-authoring",
           },
           pending: [{ id: "needs-match" }],
         },
       }),
-      readInputs: ({ exeCache, generatedAt }) => ({ exeCache, generatedAt }),
+      readInputs: ({ generatedAt }) => ({ generatedAt }),
     };
 
     assert.equal(await runGenerateManifest(options), 0);

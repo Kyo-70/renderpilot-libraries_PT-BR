@@ -11,6 +11,7 @@ import {
   shouldReplaceExistingUeGeneric,
   slugify,
 } from "../lib/renodx-wiki.mjs";
+import { createMatchRegistry } from "../lib/match-registry.mjs";
 
 test("extractMarkdownTables captures tables and their preceding context", () => {
   const markdown = `
@@ -108,6 +109,21 @@ test("slugify preserves Latin letters with combining marks", () => {
 });
 
 function assertStyledTitlePreservesIdentity({ existingId, existingName, incomingName }) {
+  const registry = createMatchRegistry({
+    targets: [
+      {
+        id: existingId,
+        rules: [
+          {
+            id: "steam-384190",
+            kind: "steam_appid",
+            value: "384190",
+            provenance: { source: "test", locator: "steam:384190" },
+          },
+        ],
+      },
+    ],
+  });
   const result = reconcileRenodxWiki({
     rows: [
       {
@@ -129,16 +145,17 @@ function assertStyledTitlePreservesIdentity({ existingId, existingName, incoming
         status: "working",
       },
     ],
-    overlay: { [existingId]: { appids: ["384190"] } },
+    overlay: { [existingId]: { game_target_ids: [existingId] } },
     officialAssets: new Set(["renodx-unrealengine.addon64"]),
   });
 
   assert.equal(result.wikiGames[0].id, existingId);
-  assert.deepEqual(result.overlay, { [existingId]: { appids: ["384190"] } });
+  assert.deepEqual(result.overlay, { [existingId]: { game_target_ids: [existingId] } });
 
   const generated = buildManifest({
     wiki: result.wikiGames,
     overlay: result.overlay,
+    registry,
     generatedAt: "2026-08-24T00:00:00Z",
     warn: () => {},
   });

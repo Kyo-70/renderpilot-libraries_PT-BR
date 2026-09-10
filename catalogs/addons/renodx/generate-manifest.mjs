@@ -8,13 +8,14 @@
 import { buildManifest } from "./lib/build-manifest.mjs";
 import { readJsonFile } from "../../../scripts/lib/json.mjs";
 import { runGenerateManifestMain } from "../../../scripts/lib/generate-manifest-runner.mjs";
-import { addonCatalogs, repoRoot, sharedFiles } from "../../../scripts/catalog.mjs";
+import { addonCatalogs, repoRoot } from "../../../scripts/catalog.mjs";
+import { createMatchRegistry } from "../../../scripts/lib/match-registry.mjs";
 
 const FILES = Object.freeze({
   wiki: addonCatalogs.renodx.sources.wiki,
   curatedGames: addonCatalogs.renodx.sources.curatedGames,
   overlay: addonCatalogs.renodx.sources.overlay,
-  exeCache: sharedFiles.steamExeCache,
+  matchRegistry: addonCatalogs.renodx.sources.matchRegistry,
   outputs: {
     manifest: addonCatalogs.renodx.outputs.manifest.file,
     pending: addonCatalogs.renodx.sources.pending,
@@ -23,8 +24,7 @@ const FILES = Object.freeze({
 
 const HELP_TEXT = `Usage: node generate-manifest.mjs [--check]
 
-Generate the v1 RenoDX document from the curation inputs and optional
-steam-appid-exe.json cache.
+Generate the v1 RenoDX document from the curation inputs and neutral match registry.
 
   --check   Do not write files; fail if the generated output differs.
   -h, --help
@@ -44,11 +44,11 @@ runGenerateManifestMain(() => ({
       stats: result.stats,
     };
   },
-  readInputs: ({ exeCache, generatedAt }) => ({
+  readInputs: ({ generatedAt }) => ({
     wiki: readJsonFile(FILES.wiki, "wiki_games.json"),
     curatedGames: readJsonFile(FILES.curatedGames, "curated_games.json"),
     overlay: readJsonFile(FILES.overlay, "match_overlay.json"),
-    exeCache,
+    registry: createMatchRegistry(readJsonFile(FILES.matchRegistry, "match-registry.json")),
     generatedAt,
   }),
   printSummary: (stats) => {
@@ -57,10 +57,6 @@ runGenerateManifestMain(() => ({
         `${stats.native_hdr} native-hdr, ${stats.blocked} blocked), ` +
         `${stats.engineProfiles} engine profiles`,
     );
-
-    if (stats.ambiguousDerivedExes > 0) {
-      console.log(`skipped ambiguous derived exe names: ${stats.ambiguousDerivedExes}`);
-    }
 
     console.log(`pending (no AppID/exe yet): ${stats.pending} -> pending_match.json`);
   },

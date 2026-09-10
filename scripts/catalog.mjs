@@ -13,10 +13,6 @@ import { repoRoot, resolveRepoPath } from "./lib/repo-paths.mjs";
 
 export { repoRoot, resolveRepoPath };
 
-export const sharedFiles = Object.freeze({
-  steamExeCache: resolveRepoPath("scripts", "steam-appid-exe.json"),
-});
-
 const defineLibraryVendors = (vendors) => {
   assertLibraryVendorRegistry(vendors);
   return Object.freeze(vendors.map((vendor) => Object.freeze({ ...vendor })));
@@ -105,6 +101,7 @@ const SCHEMAS = Object.freeze({
   libraryVendorSource: "schemas/library_vendor_source.schema.json",
   dlssPresetManifest: "schemas/dlss_preset_manifest.schema.json",
   dlssSettingsCatalog: "schemas/dlss_settings_catalog.schema.json",
+  gameMatchRegistry: "catalogs/games/match-registry.schema.json",
   renodxManifestV1: "catalogs/addons/renodx/manifest-v1.schema.json",
   lumaManifestV1: "catalogs/addons/luma/manifest-v1.schema.json",
   reshadeManifestV1: "catalogs/addons/reshade/manifest-v1.schema.json",
@@ -186,6 +183,11 @@ export const jsonDocuments = defineDocuments([
     publishedToR2: false,
   },
   {
+    file: "catalogs/games/match-registry.json",
+    schema: SCHEMAS.gameMatchRegistry,
+    publishedToR2: false,
+  },
+  {
     file: "addons/v1/renodx.json",
     schema: SCHEMAS.renodxManifestV1,
     r2Key: "addons/v1/renodx.json",
@@ -261,6 +263,7 @@ export const addonCatalogs = Object.freeze({
     "luma",
     {
       curatedGames: "curated_games.json",
+      matchRegistry: "../../games/match-registry.json",
       pending: "pending_match.json",
       unmatched: "unmatched.json",
     },
@@ -272,6 +275,7 @@ export const addonCatalogs = Object.freeze({
       wiki: "wiki_games.json",
       curatedGames: "curated_games.json",
       overlay: "match_overlay.json",
+      matchRegistry: "../../games/match-registry.json",
       pending: "pending_match.json",
       unmatched: "unmatched.json",
     },

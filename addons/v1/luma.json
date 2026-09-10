@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-09T00:00:00Z",
+  "generated_at": "2026-09-10T00:00:00Z",
   "minimum_reshade_version": "6.7.0",
   "games": [
     {
@@ -743,12 +743,12 @@
         },
         {
           "kind": "exe_name",
-          "value": "THUMPER_win8.exe",
+          "value": "THUMPER_dx9.exe",
           "tier": 70
         },
         {
           "kind": "exe_name",
-          "value": "THUMPER_dx9.exe",
+          "value": "THUMPER_win8.exe",
           "tier": 70
         }
       ],
@@ -1219,12 +1219,12 @@
         },
         {
           "kind": "exe_name",
-          "value": "Chess2-Win64-Shipping.exe",
+          "value": "Chess2-Win32-Shipping.exe",
           "tier": 70
         },
         {
           "kind": "exe_name",
-          "value": "Chess2-Win32-Shipping.exe",
+          "value": "Chess2-Win64-Shipping.exe",
           "tier": 70
         }
       ],
@@ -1833,7 +1833,7 @@
           "id": "luma.dragon-quest-11-s.engine_ini",
           "kind": "engine_ini",
           "fallback_text": "Apply the following settings manually in Engine.ini.",
-          "code": "[SystemSettings]\nr.DefaultFeature.AntiAliasing=2\nr.PostProcessAAQuality=6\nr.temporalaasamples=2"
+          "code": "[SystemSettings]\nr.DefaultFeature.AntiAliasing=2\nr.PostProcessAAQuality=6\nr.TemporalAASamples=2"
         }
       ]
     },
@@ -2198,6 +2198,28 @@
           "fallback_text": "In the game settings, use: AA \"High\"."
         }
       ]
+    },
+    {
+      "id": "kid-a-mnesia-exhibition",
+      "name": "Kid A Mnesia Exhibition",
+      "architecture": "X64",
+      "status": "working",
+      "match": [
+        {
+          "kind": "epic_id",
+          "value": "KIDAMNESIAEXHIBITION",
+          "tier": 100
+        }
+      ],
+      "package": {
+        "release_asset": "Luma-Unreal_Engine.zip",
+        "addon_file": "Luma-Unreal Engine.addon"
+      },
+      "profile": "unreal",
+      "features": {
+        "dlss_fsr": "supported",
+        "hdr": "unknown"
+      }
     },
     {
       "id": "kingdom-hearts-3",
@@ -4013,7 +4035,30 @@
       ]
     },
     {
-      "id": "bioshock-series",
+      "id": "bioshock-2-remastered",
+      "name": "BioShock Remastered / BioShock 2 Remastered",
+      "architecture": "X86",
+      "status": "working",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "409720",
+          "tier": 100
+        },
+        {
+          "kind": "exe_name",
+          "value": "Bioshock2HD.exe",
+          "tier": 70
+        }
+      ],
+      "package": {
+        "release_asset": "Luma-BioShock_Series-x32.zip",
+        "addon_file": "Luma-BioShock Series.addon"
+      },
+      "profile": "game"
+    },
+    {
+      "id": "bioshock-remastered",
       "name": "BioShock Remastered / BioShock 2 Remastered",
       "architecture": "X86",
       "status": "working",
@@ -4024,18 +4069,8 @@
           "tier": 100
         },
         {
-          "kind": "steam_appid",
-          "value": "409720",
-          "tier": 100
-        },
-        {
           "kind": "exe_name",
           "value": "BioshockHD.exe",
-          "tier": 70
-        },
-        {
-          "kind": "exe_name",
-          "value": "Bioshock2HD.exe",
           "tier": 70
         }
       ],
@@ -4140,7 +4175,7 @@
       "profile": "game"
     },
     {
-      "id": "borderlands-2-and-the-pre-sequel",
+      "id": "borderlands-2",
       "name": "Borderlands 2 and The Pre-Sequel",
       "architecture": "X86",
       "status": "working",
@@ -4149,7 +4184,70 @@
           "kind": "steam_appid",
           "value": "49520",
           "tier": 100
-        },
+        }
+      ],
+      "package": {
+        "release_asset": "Luma-Borderlands_2_and_The_Pre-Sequel-x32.zip",
+        "addon_file": "Luma-Borderlands 2 and The Pre-Sequel.addon"
+      },
+      "profile": "game",
+      "requirements": {
+        "managed_dependency": {
+          "kind": "dgvoodoo2",
+          "version": "2.87.3",
+          "accepted_detected_apis": ["D3D9"],
+          "reshade_proxy_dll": "dxgi.dll",
+          "source": {
+            "url": "https://github.com/dege-diosg/dgVoodoo2/releases/download/v2.87.3/dgVoodoo2_87_3.zip",
+            "sha256": "6fb954bed55bf70e948c5045a663a9df31ea206faf105e327bafe46c318f867f",
+            "size": 9082391
+          },
+          "install_map": [
+            {
+              "source": "MS/x86/D3D9.dll",
+              "dest": "D3D9.dll",
+              "sha256": "c13e3c0969d2c70a1a63cf96b83c7cd3bc47f925f28ec92c07d5b72d6df4c240",
+              "size": 485888
+            }
+          ],
+          "config_file": "dgVoodoo.conf",
+          "config": [
+            {
+              "section": "General",
+              "entries": [
+                {
+                  "key": "OutputAPI",
+                  "value": "d3d11_fl11_0"
+                }
+              ]
+            },
+            {
+              "section": "DirectX",
+              "entries": [
+                {
+                  "key": "VideoCard",
+                  "value": "geforce_9800_gt"
+                },
+                {
+                  "key": "dgVoodooWatermark",
+                  "value": "false"
+                },
+                {
+                  "key": "VRAM",
+                  "value": "1024"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "borderlands-the-pre-sequel",
+      "name": "Borderlands 2 and The Pre-Sequel",
+      "architecture": "X86",
+      "status": "working",
+      "match": [
         {
           "kind": "steam_appid",
           "value": "261640",
@@ -4323,6 +4421,11 @@
           "kind": "steam_appid",
           "value": "1973710",
           "tier": 100
+        },
+        {
+          "kind": "exe_name",
+          "value": "HeavenBurnsRed.exe",
+          "tier": 70
         }
       ],
       "package": {
@@ -4343,9 +4446,9 @@
           "tier": 100
         },
         {
-          "kind": "exe_name",
-          "value": "KingdomCome.exe",
-          "tier": 70
+          "kind": "gog_id",
+          "value": "1719198803",
+          "tier": 100
         }
       ],
       "package": {
@@ -4967,6 +5070,41 @@
       }
     },
     {
+      "id": "dragonquestxiechoesofanelusiveage",
+      "name": "DRAGON QUEST XI: Echoes of an Elusive Age",
+      "architecture": "X64",
+      "status": "working",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "742120",
+          "tier": 100
+        },
+        {
+          "kind": "exe_name",
+          "value": "DRAGON QUEST XI.exe",
+          "tier": 70
+        }
+      ],
+      "package": {
+        "release_asset": "Luma-Unreal_Engine.zip",
+        "addon_file": "Luma-Unreal Engine.addon"
+      },
+      "profile": "unreal",
+      "features": {
+        "dlss_fsr": "supported",
+        "hdr": "unknown"
+      },
+      "guidance": [
+        {
+          "id": "luma.dragonquestxiechoesofanelusiveage.engine_ini",
+          "kind": "engine_ini",
+          "fallback_text": "Apply the following settings manually in Engine.ini.",
+          "code": "[SystemSettings]\nr.DefaultFeature.AntiAliasing=2\nr.PostProcessAAQuality=6\nr.TemporalAASamples=2"
+        }
+      ]
+    },
+    {
       "id": "echo",
       "name": "ECHO",
       "architecture": "X64",
@@ -5078,6 +5216,11 @@
           "kind": "steam_appid",
           "value": "2149010",
           "tier": 100
+        },
+        {
+          "kind": "exe_name",
+          "value": "Little_Nightmares_Enhanced.exe",
+          "tier": 70
         }
       ],
       "package": {
@@ -5553,12 +5696,12 @@
         },
         {
           "kind": "exe_name",
-          "value": "DH.exe",
+          "value": "DestroyAllHumans.exe",
           "tier": 70
         },
         {
           "kind": "exe_name",
-          "value": "DestroyAllHumans.exe",
+          "value": "DH.exe",
           "tier": 70
         }
       ],

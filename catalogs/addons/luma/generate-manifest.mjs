@@ -10,9 +10,11 @@ import { buildManifest } from "./lib/build-manifest.mjs";
 import { readJsonFile } from "../../../scripts/lib/json.mjs";
 import { runGenerateManifestMain } from "../../../scripts/lib/generate-manifest-runner.mjs";
 import { addonCatalogs, repoRoot } from "../../../scripts/catalog.mjs";
+import { createMatchRegistry } from "../../../scripts/lib/match-registry.mjs";
 
 const FILES = Object.freeze({
   curatedGames: addonCatalogs.luma.sources.curatedGames,
+  matchRegistry: addonCatalogs.luma.sources.matchRegistry,
   outputs: {
     manifest: addonCatalogs.luma.outputs.manifest.file,
     pending: addonCatalogs.luma.sources.pending,
@@ -40,6 +42,7 @@ runGenerateManifestMain(() => ({
   },
   readInputs: ({ generatedAt }) => ({
     curatedGames: readJsonFile(FILES.curatedGames, "curated_games.json"),
+    registry: createMatchRegistry(readJsonFile(FILES.matchRegistry, "match-registry.json")),
     generatedAt,
   }),
   printSummary: (stats) => {

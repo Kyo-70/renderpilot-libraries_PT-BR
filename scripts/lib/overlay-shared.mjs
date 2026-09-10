@@ -1,22 +1,24 @@
-// Shared match-identity and overlay primitives. AppID parsing and executable
-// basename rules are used by both add-on authoring pipelines; unknown-field
-// warnings and recursive collectors support the RenoDX match overlay.
-//
-// Luma no longer uses a separate match_overlay; match rules live on curated
-// profiles. RenoDX-specific concerns (`split` / `slug` / `category` /
-// `external` / `native_hdr`) stay in `catalogs/addons/renodx/lib/overlay.mjs`.
+// Shared executable-basename validation and unknown-field warnings for add-on
+// authoring. Canonical game match facts belong only to match-registry.json.
 
-import {
-  addCaseInsensitiveUnique,
-  assertNonEmptyArray,
-  assertPlainObject,
-  hasOwn,
-  requiredNonEmptyString,
-} from "./common.mjs";
+import { requiredNonEmptyString } from "./common.mjs";
 
 const APPID_RE = /^[1-9]\d*$/u;
 const EXE_EXTENSION_RE = /\.exe$/iu;
 const WINDOWS_BASENAME_FORBIDDEN_RE = /[<>:"/\\|?*\u0000-\u001F]/u;
+
+// Add-on policy documents must reference a neutral game target rather than
+// carry direct matching facts. `exe_*` reserves every executable-derived form
+// for the registry rather than enumerating historical spellings here.
+const DIRECT_GAME_MATCH_FIELDS = new Set(["match", "appid", "appids", "exe"]);
+
+export function directGameMatchField(value) {
+  return (
+    Object.keys(value).find(
+      (field) => DIRECT_GAME_MATCH_FIELDS.has(field) || field.startsWith("exe_"),
+    ) ?? null
+  );
+}
 
 function validateWarningSink(warn) {
   if (typeof warn !== "function") {
@@ -49,30 +51,6 @@ export function normalizeAppid(value, context) {
   return appid;
 }
 
-export function normalizeAppids(overlay, context) {
-  assertPlainObject(overlay, context);
-
-  const appids = [];
-
-  const push = (value, field) => {
-    addCaseInsensitiveUnique(appids, normalizeAppid(value, `${context}.${field}`));
-  };
-
-  if (hasOwn(overlay, "appid")) {
-    push(overlay.appid, "appid");
-  }
-
-  if (hasOwn(overlay, "appids")) {
-    assertNonEmptyArray(overlay.appids, `${context}.appids`);
-
-    overlay.appids.forEach((appid, index) => {
-      push(appid, `appids[${index}]`);
-    });
-  }
-
-  return appids;
-}
-
 export function normalizeExeName(value, context) {
   if (value === null || value === undefined) {
     return null;
@@ -89,30 +67,4 @@ export function normalizeExeName(value, context) {
   }
 
   return exe;
-}
-
-export function normalizeCachedExes(value, context) {
-  if (!Array.isArray(value)) {
-    throw new Error(`${context} must be an array`);
-  }
-
-  const out = [];
-
-  value.forEach((exe, index) => {
-    const normalized = normalizeExeName(exe, `${context}[${index}]`);
-
-    if (normalized === null) {
-      throw new Error(`${context}[${index}] must be an .exe basename`);
-    }
-
-    addCaseInsensitiveUnique(out, normalized);
-  });
-
-  return out;
-}
-
-export function addNormalizedAppids(out, overlay, context) {
-  for (const appid of normalizeAppids(overlay, context)) {
-    out.add(appid);
-  }
 }
