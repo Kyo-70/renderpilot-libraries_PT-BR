@@ -76,6 +76,133 @@ test("Luma authoring rejects retired direct game-matching fields", () => {
   }
 });
 
+test("Luma authoring records reviewed launch arguments without product guidance", () => {
+  const review = {
+    section: "unreal",
+    name: "Launch Game",
+    fingerprint: "a".repeat(64),
+    disposition: "published",
+    launch_arguments: true,
+  };
+  const result = buildManifest({
+    generatedAt: "2026-07-05T00:00:00Z",
+    curatedGames: [
+      game("launch-game", {
+        asset: "Luma-Unreal_Engine.zip",
+        profile: "unreal",
+        features: { dlss_fsr: "unknown", hdr: "unknown" },
+        launch_args: ["-dx11"],
+        wiki_note_reviews: [review],
+      }),
+    ],
+  });
+  assert.deepEqual(result.manifest.games[0].requirements.launch_arguments, ["-dx11"]);
+  assert.equal("guidance" in result.manifest.games[0], false);
+
+  assert.throws(
+    () =>
+      buildManifest({
+        generatedAt: "2026-07-05T00:00:00Z",
+        curatedGames: [
+          game("missing-launch-argument", {
+            asset: "Luma-Unreal_Engine.zip",
+            profile: "unreal",
+            features: { dlss_fsr: "unknown", hdr: "unknown" },
+            wiki_note_reviews: [review],
+          }),
+        ],
+      }),
+    /launch_arguments requires a non-empty game\.launch_args/,
+  );
+  assert.throws(
+    () =>
+      buildManifest({
+        generatedAt: "2026-07-05T00:00:00Z",
+        curatedGames: [
+          game("unreviewed-launch-argument", {
+            asset: "Luma-Unreal_Engine.zip",
+            profile: "unreal",
+            features: { dlss_fsr: "unknown", hdr: "unknown" },
+            launch_args: ["-dx11"],
+            guidance: [
+              {
+                id: "luma.unreviewed-launch-argument.warning",
+                kind: "warning",
+                fallback_text: "Keep a local backup.",
+              },
+            ],
+            wiki_note_reviews: [
+              {
+                ...review,
+                launch_arguments: undefined,
+                guidance_ids: ["luma.unreviewed-launch-argument.warning"],
+              },
+            ],
+          }),
+        ],
+      }),
+    /launch_args requires a published wiki_note_reviews launch_arguments carrier/,
+  );
+  assert.throws(
+    () =>
+      buildManifest({
+        generatedAt: "2026-07-05T00:00:00Z",
+        curatedGames: [
+          game("launch-argument-without-review", {
+            asset: "Luma-Unreal_Engine.zip",
+            profile: "unreal",
+            features: { dlss_fsr: "unknown", hdr: "unknown" },
+            launch_args: ["-dx11"],
+          }),
+        ],
+      }),
+    /launch_args requires a published wiki_note_reviews launch_arguments carrier/,
+  );
+  assert.throws(
+    () =>
+      buildManifest({
+        generatedAt: "2026-07-05T00:00:00Z",
+        curatedGames: [
+          game("launch-argument-with-omitted-review", {
+            asset: "Luma-Unreal_Engine.zip",
+            profile: "unreal",
+            features: { dlss_fsr: "unknown", hdr: "unknown" },
+            launch_args: ["-dx11"],
+            wiki_note_reviews: [
+              {
+                section: "unreal",
+                name: "Launch Game",
+                fingerprint: "b".repeat(64),
+                disposition: "omitted",
+                reason: "No product guidance is needed.",
+              },
+            ],
+          }),
+        ],
+      }),
+    /launch_args requires a published wiki_note_reviews launch_arguments carrier/,
+  );
+  assert.throws(
+    () =>
+      buildManifest({
+        generatedAt: "2026-07-05T00:00:00Z",
+        curatedGames: [
+          game("retired-launch-guidance", {
+            guidance: [
+              {
+                id: "luma.retired-launch-guidance.launch",
+                kind: "launch_argument",
+                fallback_text: "Add this launch argument manually.",
+                code: "-dx11",
+              },
+            ],
+          }),
+        ],
+      }),
+    /guidance\[0\]\.kind .* must be one of/,
+  );
+});
+
 test("buildManifest emits a v1 game once it has a match identifier", () => {
   const result = buildManifest({
     generatedAt: "2026-07-05T00:00:00Z",
@@ -252,7 +379,7 @@ test("buildManifest emits blocked availability from the curated blacklist field"
   });
 });
 
-test("buildManifest carries engine profile, launch arguments, and reviewed guidance", () => {
+test("buildManifest carries launch arguments only through requirements", () => {
   const result = buildManifest({
     generatedAt: "2026-07-05T00:00:00Z",
     curatedGames: [
@@ -261,12 +388,13 @@ test("buildManifest carries engine profile, launch arguments, and reviewed guida
         profile: "unreal",
         features: { dlss_fsr: "unknown", hdr: "unknown" },
         launch_args: ["-nod3d9ex"],
-        guidance: [
+        wiki_note_reviews: [
           {
-            id: "luma.tekken-7.launch",
-            kind: "launch_argument",
-            fallback_text: "Add the argument in the game's launcher.",
-            code: "-nod3d9ex",
+            section: "unreal",
+            name: "Tekken 7",
+            fingerprint: "c".repeat(64),
+            disposition: "published",
+            launch_arguments: true,
           },
         ],
       }),
@@ -276,14 +404,7 @@ test("buildManifest carries engine profile, launch arguments, and reviewed guida
   const [published] = result.manifest.games;
   assert.equal(published.profile, "unreal");
   assert.deepEqual(published.requirements.launch_arguments, ["-nod3d9ex"]);
-  assert.deepEqual(published.guidance, [
-    {
-      id: "luma.tekken-7.launch",
-      kind: "launch_argument",
-      fallback_text: "Add the argument in the game's launcher.",
-      code: "-nod3d9ex",
-    },
-  ]);
+  assert.equal("guidance" in published, false);
   assert.equal("generic" in published, false);
   assert.equal("launch_args" in published, false);
 });

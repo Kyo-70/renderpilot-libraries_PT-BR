@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "messages"],
+  "properties": {
+    "schema_version": { "const": 1 },
+    "messages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "fallback_text", "kind", "context", "translations"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^[a-z0-9_.-]+$"
+          },
+          "fallback_text": { "type": "string", "minLength": 1 },
+          "kind": {
+            "enum": [
+              "warning",
+              "game_setting",
+              "engine_ini",
+              "compatibility",
+              "external_tool",
+              "blocked"
+            ]
+          },
+          "context": { "type": "string", "minLength": 1 },
+          "translations": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["de", "es", "fr", "ja", "ru", "zh-Hans", "zh-Hant"],
+            "properties": {
+              "de": { "type": "string", "minLength": 1 },
+              "es": { "type": "string", "minLength": 1 },
+              "fr": { "type": "string", "minLength": 1 },
+              "ja": { "type": "string", "minLength": 1 },
+              "ru": { "type": "string", "minLength": 1 },
+              "zh-Hans": { "type": "string", "minLength": 1 },
+              "zh-Hant": { "type": "string", "minLength": 1 }
+            }
+          }
+        }
+      }
+    }
+  }
+}

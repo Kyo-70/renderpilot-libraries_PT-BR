@@ -1,0 +1,1340 @@
+{
+  "schema_version": 1,
+  "messages": [
+    {
+      "id": "luma.ace-combat-7.engine_ini",
+      "fallback_text": "Apply the following settings manually in Engine.ini.",
+      "kind": "engine_ini",
+      "context": "guidance.engine_ini",
+      "translations": {
+        "de": "Übernimm die folgenden Einstellungen manuell in Engine.ini.",
+        "es": "Aplica los siguientes ajustes manualmente en Engine.ini.",
+        "fr": "Appliquez manuellement les paramètres suivants dans Engine.ini.",
+        "ja": "次の設定を Engine.ini に手動で適用してください。",
+        "ru": "Вручную добавьте в Engine.ini следующие настройки.",
+        "zh-Hans": "请在 Engine.ini 中手动应用以下设置。",
+        "zh-Hant": "請在 Engine.ini 中手動套用以下設定。"
+      }
+    },
+    {
+      "id": "luma.ace-combat-7.game_setting",
+      "fallback_text": "In the game settings, use: AA \"FXAA High\".",
+      "kind": "game_setting",
+      "context": "guidance.game_setting",
+      "translations": {
+        "de": "Wähle in den Spieleinstellungen: AA „FXAA High“.",
+        "es": "En los ajustes del juego, usa: AA «FXAA High».",
+        "fr": "Dans les paramètres du jeu, utilisez : AA « FXAA High ».",
+        "ja": "ゲーム設定: AA「FXAA High」を選択してください。",
+        "ru": "В настройках игры выберите AA «FXAA High».",
+        "zh-Hans": "在游戏设置中选择：AA “FXAA High”。",
+        "zh-Hant": "在遊戲設定中選擇：AA 「FXAA High」。"
+      }
+    },
+    {
+      "id": "luma.ancestors-legacy.engine_ini",
+      "fallback_text": "Apply the following settings manually in Engine.ini.",
+      "kind": "engine_ini",
+      "context": "guidance.engine_ini",
+      "translations": {
+        "de": "Übernimm die folgenden Einstellungen manuell in Engine.ini.",
+        "es": "Aplica los siguientes ajustes manualmente en Engine.ini.",
+        "fr": "Appliquez manuellement les paramètres suivants dans Engine.ini.",
+        "ja": "次の設定を Engine.ini に手動で適用してください。",
+        "ru": "Вручную добавьте в Engine.ini следующие настройки.",
+        "zh-Hans": "请在 Engine.ini 中手动应用以下设置。",
+        "zh-Hant": "請在 Engine.ini 中手動套用以下設定。"
+      }
+    },
+    {
+      "id": "luma.batman-arkham-knight.warning",
+      "fallback_text": "This profile supports DLSS only; HDR is not currently supported.",
+      "kind": "warning",
+      "context": "guidance.warning",
+      "translations": {
+        "de": "Dieses Profil unterstützt nur DLSS; HDR wird derzeit nicht unterstützt.",
+        "es": "Este perfil solo admite DLSS; HDR no es compatible actualmente.",
+        "fr": "Ce profil prend en charge uniquement le DLSS ; le HDR n’est pas pris en charge actuellement.",
+        "ja": "このプロファイルは DLSS のみをサポートしています（現在 HDR には非対応）。",
+        "ru": "Этот профиль добавляет только поддержку DLSS; HDR сейчас не поддерживается.",
+        "zh-Hans": "此配置文件仅支持 DLSS，目前不支持 HDR。",
+        "zh-Hant": "此設定檔僅支援 DLSS，目前不支援 HDR。"
+      }
+    },
+    {
+      "id": "luma.biomutant.game_setting",
+      "fallback_text": "In the game settings, use: AA \"High\" or \"Max\".",
+      "kind": "game_setting",
+      "context": "guidance.game_setting",
+      "translations": {
+        "de": "Wähle in den Spieleinstellungen AA „High“ oder „Max“.",
+        "es": "En los ajustes del juego, selecciona AA «High» o «Max».",
+        "fr": "Dans les paramètres du jeu, sélectionnez AA « High » ou « Max ».",
+        "ja": "ゲーム設定で AA を「High」または「Max」にしてください。",
+        "ru": "В настройках игры выберите AA «High» или «Max».",
+        "zh-Hans": "在游戏设置中选择 AA “High” 或 “Max”。",
+        "zh-Hant": "在遊戲設定中選擇 AA 「High」 或 「Max」。"
+      }
+    },
+    {
+      "id": "luma.blairwitch.game_setting",
+      "fallback_text": "In the game settings, use: TXAA and Resolution Scalability \"Full\".",
+      "kind": "game_setting",
+      "context": "guidance.game_setting",
+      "translations": {
+        "de": "Wähle in den Spieleinstellungen: TXAA und Auflösungsskalierung „Full“.",
+        "es": "En los ajustes del juego, usa: TXAA y escala de resolución «Full».",
+        "fr": "Dans les paramètres du jeu, utilisez : TXAA et échelle de résolution « Full ».",
+        "ja": "ゲーム設定: TXAA および解像度スケーラビリティ「Full」を設定してください。",
+        "ru": "В настройках игры выберите TXAA и масштаб разрешения «Full».",
+        "zh-Hans": "在游戏设置中选择：TXAA 以及分辨率缩放 “Full”。",
+        "zh-Hant": "在遊戲設定中選擇：TXAA 以及解析度縮放 「Full」。"
+      }
+    },
+    {
+      "id": "luma.borderlands-3.warning",
+      "fallback_text": "Visual flickering may occur.",
+      "kind": "warning",
+      "context": "guidance.warning",
+      "translations": {
+        "de": "Visuelles Flackern kann auftreten.",
+        "es": "Pueden producirse parpadeos visuales.",
+        "fr": "Des clignotements visuels peuvent survenir.",
+        "ja": "画面のちらつきが発生する場合があります。",
+        "ru": "Возможно мерцание изображения.",
+        "zh-Hans": "可能会出现画面闪烁。",
+        "zh-Hant": "可能會出現畫面閃爍。"
+      }
+    },
+    {
+      "id": "luma.bramblethemountainking.warning",
+      "fallback_text": "Epic quality can steadily fill VRAM and cause stuttering. Avoid repeatedly switching between High and Epic while Luma is active.",
+      "kind": "warning",
+      "context": "guidance.warning",
+      "translations": {
+        "de": "Die Qualitätsstufe Epic kann den VRAM stetig füllen und Ruckeln verursachen. Wechsle bei aktivem Luma nicht wiederholt zwischen High und Epic.",
+        "es": "La calidad Epic puede llenar progresivamente la VRAM y provocar tirones. Evita alternar repetidamente entre High y Epic con Luma activo.",
+        "fr": "La qualité Epic peut saturer progressivement la VRAM et provoquer des saccades. Évitez de basculer à répétition entre High et Epic lorsque Luma est actif.",
+        "ja": "Epic 品質は VRAM を徐々に消費し、カクつきの原因になることがあります。Luma の動作中に High と Epic を何度も切り替えないでください。",
+        "ru": "Качество Epic может со временем заполнить видеопамять (VRAM) и вызвать микрофризы. Избегайте многократного переключения между High и Epic при активной Luma.",
+        "zh-Hans": "Epic 画质会持续占用显存 (VRAM) 并导致卡顿。在 Luma 运行时，请避免在 High 和 Epic 之间频繁切换。",
+        "zh-Hant": "Epic 畫質會持續佔用視訊記憶體 (VRAM) 並導致卡頓。在 Luma 運作時，請避免在 High 和 Epic 之間頻繁切換。"
+      }
+    },
+    {
+      "id": "luma.call-of-the-sea.game_setting",
+      "fallback_text": "In the game settings, use: Global quality \"Epic\".",
+      "kind": "game_setting",
+      "context": "guidance.game_setting",
+      "translations": {
+        "de": "Wähle in den Spieleinstellungen die Gesamtqualität „Epic“ aus.",
+        "es": "En los ajustes del juego, selecciona calidad general «Epic».",
+        "fr": "Dans les paramètres du jeu, sélectionnez la qualité globale « Epic ».",
+        "ja": "ゲーム設定で全体品質を「Epic」にしてください。",
+        "ru": "В настройках игры выберите общее качество «Epic».",
+        "zh-Hans": "在游戏设置中将整体质量设为 “Epic”。",
+        "zh-Hant": "在遊戲設定中將整體品質設為 「Epic」。"
+      }
+    },
+    {
+      "id": "luma.circus-electrique.engine_ini",
+      "fallback_text": "Apply the following settings manually in Engine.ini.",
+      "kind": "engine_ini",
+      "context": "guidance.engine_ini",
+      "translations": {
+        "de": "Übernimm die folgenden Einstellungen manuell in Engine.ini.",
+        "es": "Aplica los siguientes ajustes manualmente en Engine.ini.",
+        "fr": "Appliquez manuellement les paramètres suivants dans Engine.ini.",
+        "ja": "次の設定を Engine.ini に手動で適用してください。",
+        "ru": "Вручную добавьте в Engine.ini следующие настройки.",
+        "zh-Hans": "请在 Engine.ini 中手动应用以下设置。",
+        "zh-Hant": "請在 Engine.ini 中手動套用以下設定。"
+      }
+    },
+    {
+      "id": "luma.clash-artifacts-of-chaos.game_setting",
+      "fallback_text": "In the game settings, use: AA quality \"Very High\".",
+      "kind": "game_setting",
+      "context": "guidance.game_setting",
+      "translations": {
+        "de": "Wähle in den Spieleinstellungen die AA-Qualität „Very High“ aus.",
+        "es": "En los ajustes del juego, selecciona calidad de AA «Very High».",
+        "fr": "Dans les paramètres du jeu, sélectionnez la qualité d’AA « Very High ».",
+        "ja": "ゲーム設定で AA 品質を「Very High」にしてください。",
+        "ru": "В настройках игры выберите качество AA «Very High».",
+        "zh-Hans": "在游戏设置中将 AA 质量设为 “Very High”。",
+        "zh-Hant": "在遊戲設定中將 AA 品質設為 「Very High」。"
+      }
+    },
+    {
+      "id": "luma.close-to-the-sun.game_setting",
+      "fallback_text": "In the game settings, use: AA 4X.",
+      "kind": "game_setting",
+      "context": "guidance.game_setting",
+      "translations": {
+        "de": "Wähle in den Spieleinstellungen AA 4X aus.",
+        "es": "En los ajustes del juego, selecciona AA 4X.",
+        "fr": "Dans les paramètres du jeu, sélectionnez AA 4X.",
+        "ja": "ゲーム設定で AA を 4X にしてください。",
+        "ru": "В настройках игры выберите AA 4X.",
+        "zh-Hans": "在游戏设置中选择 AA 4X。",
+        "zh-Hant": "在遊戲設定中選擇 AA 4X。"
+      }
+    },
+    {
+      "id": "luma.cod-black-ops-3.warning",
+      "fallback_text": "Avoid official public matchmaking while Luma is installed. This may result in a ban.",
+      "kind": "warning",
+      "context": "guidance.warning",
+      "translations": {
+        "de": "Vermeide offizielles öffentliches Matchmaking, solange Luma installiert ist. Dies kann zu einer Sperre führen.",
+        "es": "Evita el emparejamiento público oficial mientras Luma esté instalado. Podría ocasionar un bloqueo.",
+        "fr": "Évitez le matchmaking public officiel lorsque Luma est installé. Cela pourrait entraîner un bannissement.",
+        "ja": "Luma のインストール中は公式の公開マッチメイキングを利用しないでください。BAN される可能性があります。",
+        "ru": "Не используйте официальный публичный матчмейкинг, пока Luma установлена. Это может привести к бану.",
+        "zh-Hans": "安装 Luma 期间请勿使用官方公开匹配，否则可能导致封禁。",
+        "zh-Hant": "安裝 Luma 期間請勿使用官方公開配對，否則可能導致封鎖。"
+      }
+    },
+    {
+      "id": "luma.code-vein.game_setting",
+      "fallback_text": "In the game settings, use: AA Highest.",
+      "kind": "game_setting",
+      "context": "guidance.game_setting",
+      "translations": {
+        "de": "Wähle in den Spieleinstellungen AA Highest aus.",
+        "es": "En los ajustes del juego, selecciona AA Highest.",
+        "fr": "Dans les paramètres du jeu, sélectionnez AA Highest.",
+        "ja": "ゲーム設定で AA を Highest にしてください。",
+        "ru": "В настройках игры выберите AA Highest.",
+        "zh-Hans": "在游戏设置中选择 AA Highest。",
+        "zh-Hant": "在遊戲設定中選擇 AA Highest。"
+      }
+    },
+    {
+      "id": "luma.crab-champions.game_setting",
+      "fallback_text": "In the game settings, use: High Anti-aliasing Type.",
+      "kind": "game_setting",
+      "context": "guidance.game_setting",
+      "translations": {
+        "de": "Wähle in den Spieleinstellungen High Anti-aliasing Type aus.",
+        "es": "En los ajustes del juego, selecciona High Anti-aliasing Type.",
+        "fr": "Dans les paramètres du jeu, sélectionnez High Anti-aliasing Type.",
+        "ja": "ゲーム設定で High Anti-aliasing Type を選択してください。",
+        "ru": "В настройках игры выберите High Anti-aliasing Type.",
+        "zh-Hans": "在游戏设置中选择 High Anti-aliasing Type。",
+        "zh-Hant": "在遊戲設定中選擇 High Anti-aliasing Type。"
+      }
+    },
+    {
+      "id": "luma.crash-bandicoot-4.game_setting",
+      "fallback_text": "In the game settings, use: at least Medium (2x) Anti-aliasing Quality.",
+      "kind": "game_setting",
+      "context": "guidance.game_setting",
+      "translations": {
+        "de": "Wähle in den Spieleinstellungen mindestens die Antialiasing-Qualität Medium (2x).",
+        "es": "En los ajustes del juego, usa: calidad de suavizado al menos Medium (2x).",
+        "fr": "Dans les paramètres du jeu, utilisez : qualité d’anticrénelage au moins Medium (2x).",
+        "ja": "ゲーム設定: アンチエイリアス品質を少なくとも Medium (2x) に設定してください。",
+        "ru": "В настройках игры выберите качество сглаживания не ниже Medium (2x).",
+        "zh-Hans": "在游戏设置中选择：至少 Medium (2x) 的抗锯齿质量。",
+        "zh-Hant": "在遊戲設定中選擇：至少 Medium (2x) 的反鋸齒品質。"
+      }
+    },
+    {
+      "id": "luma.cygni-all-guns-blazing.engine_ini",
+      "fallback_text": "Apply the following settings manually in Engine.ini.",
+      "kind": "engine_ini",
+      "context": "guidance.engine_ini",
+      "translations": {
+        "de": "Übernimm die folgenden Einstellungen manuell in Engine.ini.",
+        "es": "Aplica los siguientes ajustes manualmente en Engine.ini.",
+        "fr": "Appliquez manuellement les paramètres suivants dans Engine.ini.",
+        "ja": "次の設定を Engine.ini に手動で適用してください。",
+        "ru": "Вручную добавьте в Engine.ini следующие настройки.",
+        "zh-Hans": "请在 Engine.ini 中手动应用以下设置。",
+        "zh-Hant": "請在 Engine.ini 中手動套用以下設定。"
+      }
+    },
+    {
+      "id": "luma.daemonxmachina.warning",
+      "fallback_text": "Loading a level or changing graphics settings forces r.TemporalAASamples=1 and disables DLAA.",
+      "kind": "warning",
+      "context": "guidance.warning",
+      "translations": {
+        "de": "Das Laden eines Levels oder das Ändern der Grafikeinstellungen erzwingt r.TemporalAASamples=1 und deaktiviert DLAA.",
+        "es": "Cargar un nivel o cambiar los ajustes gráficos fuerza r.TemporalAASamples=1 y desactiva DLAA.",
+        "fr": "Le chargement d’un niveau ou la modification des réglages graphiques force r.TemporalAASamples=1 et désactive DLAA.",
+        "ja": "レベルのロードやグラフィック設定の変更により、強制的に r.TemporalAASamples=1 が設定され DLAA が無効化されます。",
+        "ru": "Загрузка уровня или изменение настроек графики принудительно задаёт r.TemporalAASamples=1 и отключает DLAA.",
+        "zh-Hans": "加载关卡或更改图形设置会强制设为 r.TemporalAASamples=1 并禁用 DLAA。",
+        "zh-Hant": "載入關卡或變更圖形設定會強制設為 r.TemporalAASamples=1 並停用 DLAA。"
+      }
+    },
+    {
+      "id": "luma.darksiders-3.game_setting",
+      "fallback_text": "In the game settings, use: AA Epic.",
+      "kind": "game_setting",
+      "context": "guidance.game_setting",
+      "translations": {
+        "de": "Wähle in den Spieleinstellungen AA Epic aus.",
+        "es": "En los ajustes del juego, selecciona AA Epic.",
+        "fr": "Dans les paramètres du jeu, sélectionnez AA Epic.",
+        "ja": "ゲーム設定で AA を Epic にしてください。",
+        "ru": "В настройках игры выберите AA Epic.",
+        "zh-Hans": "在游戏设置中选择 AA Epic。",
+        "zh-Hant": "在遊戲設定中選擇 AA Epic。"
+      }
+    },
+    {
+      "id": "luma.daymare-1998.compatibility",
+      "fallback_text": "Luma works on its own but crashes when combined with OptiScaler or UUU.",
+      "kind": "compatibility",
+      "context": "guidance.compatibility",
+      "translations": {
+        "de": "Luma funktioniert allein, stürzt jedoch in Kombination mit OptiScaler oder UUU ab.",
+        "es": "Luma funciona por sí solo, pero se bloquea si se combina con OptiScaler o UUU.",
+        "fr": "Luma fonctionne seul, mais plante lorsqu’il est combiné avec OptiScaler ou UUU.",
+        "ja": "Luma は単体では動作しますが、OptiScaler または UUU と併用するとクラッシュします。",
+        "ru": "Luma работает автономно, но вылетает при совместном использовании с OptiScaler или UUU.",
+        "zh-Hans": "Luma 可单独运行，但与 OptiScaler 或 UUU 配合使用时会发生崩溃。",
+        "zh-Hant": "Luma 可單獨運作，但與 OptiScaler 或 UUU 配合使用時會發生當機。"
+      }
+    },
+    {
+      "id": "luma.deadline-delivery.game_setting",
+      "fallback_text": "In the game settings, use: \"Ultra\".",
+      "kind": "game_setting",
+      "context": "guidance.game_setting",
+      "translations": {
+        "de": "Wähle in den Spieleinstellungen „Ultra“ aus.",
+        "es": "En los ajustes del juego, selecciona «Ultra».",
+        "fr": "Dans les paramètres du jeu, sélectionnez « Ultra ».",
+        "ja": "ゲーム設定で「Ultra」を選択してください。",
+        "ru": "В настройках игры выберите «Ultra».",
+        "zh-Hans": "在游戏设置中选择 “Ultra”。",
+        "zh-Hant": "在遊戲設定中選擇 「Ultra」。"
+      }
+    },
+    {
+      "id": "luma.deceiveinc.compatibility",
+      "fallback_text": "Blocked by Easy Anti-Cheat.",
+      "kind": "compatibility",
+      "context": "guidance.compatibility",
+      "translations": {
+        "de": "Durch Easy Anti-Cheat blockiert.",
+        "es": "Bloqueado por Easy Anti-Cheat.",
+        "fr": "Bloqué par Easy Anti-Cheat.",
+        "ja": "Easy Anti-Cheat によりブロックされます。",
+        "ru": "Заблокировано системой Easy Anti-Cheat.",
+        "zh-Hans": "被 Easy Anti-Cheat 拦截。",
+        "zh-Hant": "被 Easy Anti-Cheat 攔截。"
+      }
+    },
+    {
+      "id": "luma.destroy-all-humans.game_setting",
+      "fallback_text": "In the game settings, use: AA \"Ultra\".",
+      "kind": "game_setting",
+      "context": "guidance.game_setting",
+      "translations": {
+        "de": "Wähle in den Spieleinstellungen AA „Ultra“ aus.",
+        "es": "En los ajustes del juego, selecciona AA «Ultra».",
+        "fr": "Dans les paramètres du jeu, sélectionnez AA « Ultra ».",
+        "ja": "ゲーム設定で AA を「Ultra」にしてください。",
+        "ru": "В настройках игры выберите AA «Ultra».",
+        "zh-Hans": "在游戏设置中选择 AA “Ultra”。",
+        "zh-Hant": "在遊戲設定中選擇 AA 「Ultra」。"
+      }
+    },
+    {
+      "id": "luma.deus-ex-human-revolution.compatibility",
+      "fallback_text": "Not compatible with Boris ENB (DX9). Compatible with the Director's Cut and original edition. The Gold Filter Restoration mod is redundant with Luma.",
+      "kind": "compatibility",
+      "context": "guidance.compatibility",
+      "translations": {
+        "de": "Nicht kompatibel mit Boris ENB (DX9). Kompatibel mit Director’s Cut und der Originalausgabe. Die Mod Gold Filter Restoration ist bei Verwendung von Luma überflüssig.",
+        "es": "Incompatible con Boris ENB (DX9). Funciona con la versión Director’s Cut y la original. El mod Gold Filter Restoration es redundante con Luma.",
+        "fr": "Incompatible avec Boris ENB (DX9). Fonctionne avec la version Director’s Cut et l’édition originale. Le mod Gold Filter Restoration est superflu avec Luma.",
+        "ja": "Boris ENB（DX9）とは互換性がありません。Director’s Cut およびオリジナル版と互換性があります。Luma 使用時は Gold Filter Restoration MOD は不要です。",
+        "ru": "Несовместимо с Boris ENB (DX9). Совместимо с Director’s Cut и оригинальным изданием. Мод Gold Filter Restoration при использовании Luma не требуется.",
+        "zh-Hans": "与 Boris ENB (DX9) 不兼容。兼容导剪版 (Director’s Cut) 和原版。使用 Luma 时无需 Gold Filter Restoration 模组。",
+        "zh-Hant": "與 Boris ENB (DX9) 不相容。相容導演剪輯版 (Director’s Cut) 和原版。使用 Luma 時無需 Gold Filter Restoration 模組。"
+      }
+    },
+    {
+      "id": "luma.deus-ex-mankind-divided.warning",
+      "fallback_text": "This profile supports DLSS only; HDR is not currently supported.",
+      "kind": "warning",
+      "context": "guidance.warning",
+      "translations": {
+        "de": "Dieses Profil unterstützt nur DLSS; HDR wird derzeit nicht unterstützt.",
+        "es": "Este perfil solo admite DLSS; HDR no es compatible actualmente.",
+        "fr": "Ce profil prend en charge uniquement le DLSS ; le HDR n’est pas pris en charge actuellement.",
+        "ja": "このプロファイルは DLSS のみをサポートしています（現在 HDR には非対応）。",
+        "ru": "Этот профиль добавляет только поддержку DLSS; HDR сейчас не поддерживается.",
+        "zh-Hans": "此配置文件仅支持 DLSS，目前不支持 HDR。",
+        "zh-Hant": "此設定檔僅支援 DLSS，目前不支援 HDR。"
+      }
+    },
+    {
+      "id": "luma.die-young.game_setting",
+      "fallback_text": "In the game settings, use: TAA \"High\" or \"Epic\".",
+      "kind": "game_setting",
+      "context": "guidance.game_setting",
+      "translations": {
+        "de": "Wähle in den Spieleinstellungen TAA „High“ oder „Epic“ aus.",
+        "es": "En los ajustes del juego, selecciona TAA «High» o «Epic».",
+        "fr": "Dans les paramètres du jeu, sélectionnez TAA « High » ou « Epic ».",
+        "ja": "ゲーム設定で TAA を「High」または「Epic」にしてください。",
+        "ru": "В настройках игры выберите TAA «High» или «Epic».",
+        "zh-Hans": "在游戏设置中选择 TAA “High” 或 “Epic”。",
+        "zh-Hant": "在遊戲設定中選擇 TAA 「High」 或 「Epic」。"
+      }
+    },
+    {
+      "id": "luma.dnf-duel.engine_ini",
+      "fallback_text": "Apply the following settings manually in Engine.ini.",
+      "kind": "engine_ini",
+      "context": "guidance.engine_ini",
+      "translations": {
+        "de": "Übernimm die folgenden Einstellungen manuell in Engine.ini.",
+        "es": "Aplica los siguientes ajustes manualmente en Engine.ini.",
+        "fr": "Appliquez manuellement les paramètres suivants dans Engine.ini.",
+        "ja": "次の設定を Engine.ini に手動で適用してください。",
+        "ru": "Вручную добавьте в Engine.ini следующие настройки.",
+        "zh-Hans": "请在 Engine.ini 中手动应用以下设置。",
+        "zh-Hant": "請在 Engine.ini 中手動套用以下設定。"
+      }
+    },
+    {
+      "id": "luma.dnf-duel.game_setting",
+      "fallback_text": "Anti-aliasing does not work on the character selection screen.",
+      "kind": "game_setting",
+      "context": "guidance.game_setting",
+      "translations": {
+        "de": "Antialiasing funktioniert im Charakterauswahlbildschirm nicht.",
+        "es": "El suavizado no funciona en la pantalla de selección de personajes.",
+        "fr": "L’anticrénelage ne fonctionne pas sur l’écran de sélection des personnages.",
+        "ja": "キャラクター選択画面ではアンチエイリアスが機能しません。",
+        "ru": "Сглаживание не работает на экране выбора персонажа.",
+        "zh-Hans": "抗锯齿在角色选择界面无效。",
+        "zh-Hant": "反鋸齒在角色選擇畫面無效。"
+      }
+    },
+    {
+      "id": "luma.dragon-ball-z-kakarot.game_setting",
+      "fallback_text": "In the game settings, use: TAA. Use BDZKFix for the Legacy version or its updated fork for the HD version.",
+      "kind": "game_setting",
+      "context": "guidance.game_setting",
+      "translations": {
+        "de": "Wähle in den Spieleinstellungen: TAA. Nutze BDZKFix für die Legacy-Version oder dessen aktualisierten Fork für die HD-Version.",
+        "es": "En los ajustes del juego, usa: TAA. Usa BDZKFix para la versión Legacy o su fork actualizado para la versión HD.",
+        "fr": "Dans les paramètres du jeu, utilisez : TAA. Utilisez BDZKFix pour la version Legacy ou son fork mis à jour pour la version HD.",
+        "ja": "ゲーム設定: TAA を選択してください。Legacy 版では BDZKFix、HD 版ではその更新フォークを使用してください。",
+        "ru": "В настройках игры выберите TAA. Используйте BDZKFix для Legacy-версии либо его обновлённый форк для HD-версии.",
+        "zh-Hans": "在游戏设置中选择：TAA。原版 (Legacy) 请使用 BDZKFix，HD 版请使用其更新分支。",
+        "zh-Hant": "在遊戲設定中選擇：TAA。原版 (Legacy) 請使用 BDZKFix，HD 版請使用其更新分支。"
+      }
+    },
+    {
+      "id": "luma.dragon-quest-11-s.engine_ini",
+      "fallback_text": "Apply the following settings manually in Engine.ini.",
+      "kind": "engine_ini",
+      "context": "guidance.engine_ini",
+      "translations": {
+        "de": "Übernimm die folgenden Einstellungen manuell in Engine.ini.",
+        "es": "Aplica los siguientes ajustes manualmente en Engine.ini.",
+        "fr": "Appliquez manuellement les paramètres suivants dans Engine.ini.",
+        "ja": "次の設定を Engine.ini に手動で適用してください。",
+        "ru": "Вручную добавьте в Engine.ini следующие настройки.",
+        "zh-Hans": "请在 Engine.ini 中手动应用以下设置。",
+        "zh-Hant": "請在 Engine.ini 中手動套用以下設定。"
+      }
+    },
+    {
+      "id": "luma.dragonquestxiechoesofanelusiveage.engine_ini",
+      "fallback_text": "Apply the following settings manually in Engine.ini.",
+      "kind": "engine_ini",
+      "context": "guidance.engine_ini",
+      "translations": {
+        "de": "Übernimm die folgenden Einstellungen manuell in Engine.ini.",
+        "es": "Aplica los siguientes ajustes manualmente en Engine.ini.",
+        "fr": "Appliquez manuellement les paramètres suivants dans Engine.ini.",
+        "ja": "次の設定を Engine.ini に手動で適用してください。",
+        "ru": "Вручную добавьте в Engine.ini следующие настройки.",
+        "zh-Hans": "请在 Engine.ini 中手动应用以下设置。",
+        "zh-Hant": "請在 Engine.ini 中手動套用以下設定。"
+      }
+    },
+    {
+      "id": "luma.echo.warning",
+      "fallback_text": "DLAA stops working after the first level. With Auto Exposure enabled, light sources strobe; with Auto Exposure disabled, anti-aliasing quality degrades significantly.",
+      "kind": "warning",
+      "context": "guidance.warning",
+      "translations": {
+        "de": "DLAA funktioniert nach dem ersten Level nicht mehr. Bei aktiviertem Auto Exposure flackern Lichtquellen; bei deaktiviertem Auto Exposure verschlechtert sich die Antialiasing-Qualität deutlich.",
+        "es": "DLAA deja de funcionar tras el primer nivel. Con Auto Exposure activado, las fuentes de luz parpadean; con Auto Exposure desactivado, la calidad del suavizado disminuye notablemente.",
+        "fr": "DLAA cesse de fonctionner après le premier niveau. Avec Auto Exposure activé, les sources lumineuses clignotent ; avec Auto Exposure désactivé, la qualité d’anticrénelage se dégrade nettement.",
+        "ja": "最初のレベルをクリアすると DLAA が機能しなくなります。Auto Exposure を有効にすると光源が点滅し、無効にするとアンチエイリアス品質が著しく低下します。",
+        "ru": "После первого уровня DLAA перестаёт работать. При включённом Auto Exposure источники света мерцают, а при отключённом качество сглаживания заметно ухудшается.",
+        "zh-Hans": "第一关后 DLAA 将停止工作。启用 Auto Exposure 时光源会出现频闪；禁用 Auto Exposure 时抗锯齿质量会明显下降。",
+        "zh-Hant": "第一關後 DLAA 將停止運作。啟用 Auto Exposure 時光源會出現頻閃；停用 Auto Exposure 時反鋸齒品質會明顯下降。"
+      }
+    },
+    {
+      "id": "luma.fallout-4.compatibility",
+      "fallback_text": "This profile currently supports only DLSS and GTAO.",
+      "kind": "compatibility",
+      "context": "guidance.compatibility",
+      "translations": {
+        "de": "Dieses Profil unterstützt derzeit nur DLSS und GTAO.",
+        "es": "Actualmente este perfil solo admite DLSS y GTAO.",
+        "fr": "Ce profil ne prend actuellement en charge que DLSS et GTAO.",
+        "ja": "現在、このプロファイルがサポートするのは DLSS と GTAO のみです。",
+        "ru": "Сейчас этот профиль поддерживает только DLSS и GTAO.",
+        "zh-Hans": "此配置文件目前仅支持 DLSS 和 GTAO。",
+        "zh-Hant": "此設定檔目前僅支援 DLSS 和 GTAO。"
+      }
+    },
+    {
+      "id": "luma.filament.game_setting",
+      "fallback_text": "In the game settings, use: AA \"High\" or \"Very High\".",
+      "kind": "game_setting",
+      "context": "guidance.game_setting",
+      "translations": {
+        "de": "Wähle in den Spieleinstellungen AA „High“ oder „Very High“ aus.",
+        "es": "En los ajustes del juego, selecciona AA «High» o «Very High».",
+        "fr": "Dans les paramètres du jeu, sélectionnez AA « High » ou « Very High ».",
+        "ja": "ゲーム設定で AA を「High」または「Very High」にしてください。",
+        "ru": "В настройках игры выберите AA «High» или «Very High».",
+        "zh-Hans": "在游戏设置中选择 AA “High” 或 “Very High”。",
+        "zh-Hant": "在遊戲設定中選擇 AA 「High」 或 「Very High」。"
+      }
+    },
+    {
+      "id": "luma.goat-simulator-3.game_setting",
+      "fallback_text": "In the game settings, use: High AA.",
+      "kind": "game_setting",
+      "context": "guidance.game_setting",
+      "translations": {
+        "de": "Wähle in den Spieleinstellungen High AA aus.",
+        "es": "En los ajustes del juego, selecciona High AA.",
+        "fr": "Dans les paramètres du jeu, sélectionnez High AA.",
+        "ja": "ゲーム設定で High AA を選択してください。",
+        "ru": "В настройках игры выберите High AA.",
+        "zh-Hans": "在游戏设置中选择 High AA。",
+        "zh-Hant": "在遊戲設定中選擇 High AA。"
+      }
+    },
+    {
+      "id": "luma.greedfall.warning",
+      "fallback_text": "This profile supports DLSS only; HDR is not currently supported.",
+      "kind": "warning",
+      "context": "guidance.warning",
+      "translations": {
+        "de": "Dieses Profil unterstützt nur DLSS; HDR wird derzeit nicht unterstützt.",
+        "es": "Este perfil solo admite DLSS; HDR no es compatible actualmente.",
+        "fr": "Ce profil prend en charge uniquement le DLSS ; le HDR n’est pas pris en charge actuellement.",
+        "ja": "このプロファイルは DLSS のみをサポートしています（現在 HDR には非対応）。",
+        "ru": "Этот профиль добавляет только поддержку DLSS; HDR сейчас не поддерживается.",
+        "zh-Hans": "此配置文件仅支持 DLSS，目前不支持 HDR。",
+        "zh-Hant": "此設定檔僅支援 DLSS，目前不支援 HDR。"
+      }
+    },
+    {
+      "id": "luma.guilty-gear-strive.warning",
+      "fallback_text": "Anti-aliasing does not work on the character selection screen. In-game: AA \"Temporal Anti Aliasing\". In Engine.ini under [SystemSettings], add: r.DefaultFeature.AntiAliasing=2 and r.PostProcessAAQuality=4.",
+      "kind": "warning",
+      "context": "guidance.warning",
+      "translations": {
+        "de": "Antialiasing funktioniert im Charakterauswahlbildschirm nicht. Wähle im Spiel: AA „Temporal Anti Aliasing“. Ergänze in der Engine.ini unter [SystemSettings]: r.DefaultFeature.AntiAliasing=2 und r.PostProcessAAQuality=4.",
+        "es": "El suavizado no funciona en la pantalla de selección de personajes. En el juego: AA «Temporal Anti Aliasing». En Engine.ini en [SystemSettings], añade: r.DefaultFeature.AntiAliasing=2 y r.PostProcessAAQuality=4.",
+        "fr": "L’anticrénelage ne fonctionne pas sur l’écran de sélection des personnages. En jeu : AA « Temporal Anti Aliasing ». Dans Engine.ini sous [SystemSettings], ajoutez : r.DefaultFeature.AntiAliasing=2 et r.PostProcessAAQuality=4.",
+        "ja": "キャラクター選択画面ではアンチエイリアスが機能しません。ゲーム内設定: AA「Temporal Anti Aliasing」。Engine.ini の [SystemSettings] に追加: r.DefaultFeature.AntiAliasing=2 および r.PostProcessAAQuality=4。",
+        "ru": "Сглаживание не работает на экране выбора персонажа. В игре: AA «Temporal Anti Aliasing». В Engine.ini в секции [SystemSettings] добавьте: r.DefaultFeature.AntiAliasing=2 и r.PostProcessAAQuality=4.",
+        "zh-Hans": "抗锯齿在角色选择界面无效。游戏内设置：AA “Temporal Anti Aliasing”。在 Engine.ini 的 [SystemSettings] 下添加：r.DefaultFeature.AntiAliasing=2 与 r.PostProcessAAQuality=4。",
+        "zh-Hant": "反鋸齒在角色選擇畫面無效。遊戲內設定：AA 「Temporal Anti Aliasing」。在 Engine.ini 的 [SystemSettings] 下新增：r.DefaultFeature.AntiAliasing=2 與 r.PostProcessAAQuality=4。"
+      }
+    },
+    {
+      "id": "luma.hatsune-miku-project-diva-mega-mix-plus.warning",
+      "fallback_text": "If display issues occur, avoid Exclusive Fullscreen. Press Alt+Enter to switch modes.",
+      "kind": "warning",
+      "context": "guidance.warning",
+      "translations": {
+        "de": "Vermeide bei Anzeigeproblemen den exklusiven Vollbildmodus. Drücke Alt+Enter, um den Modus zu wechseln.",
+        "es": "Si surgen problemas de visualización, evita la pantalla completa exclusiva. Pulsa Alt+Enter para cambiar de modo.",
+        "fr": "En cas de problème d’affichage, évitez le plein écran exclusif. Appuyez sur Alt+Entrée pour changer de mode.",
+        "ja": "表示に問題が生じる場合は排他的フルスクリーンを避けてください。Alt+Enter で表示モードを切り替えられます。",
+        "ru": "При проблемах с отображением избегайте эксклюзивного полноэкранного режима. Чтобы переключить режим, нажмите Alt+Enter.",
+        "zh-Hans": "若出现显示异常，请避免使用独占全屏。按 Alt+Enter 可切换窗口模式。",
+        "zh-Hant": "若出現顯示異常，請避免使用獨佔全螢幕。按 Alt+Enter 可切換視窗模式。"
+      }
+    },
+    {
+      "id": "luma.heavy-rain.warning",
+      "fallback_text": "Ultrawide support may only work on Steam.",
+      "kind": "warning",
+      "context": "guidance.warning",
+      "translations": {
+        "de": "Ultrawide-Unterstützung funktioniert möglicherweise nur auf Steam.",
+        "es": "La compatibilidad con pantalla ultraancha puede funcionar solo en Steam.",
+        "fr": "La prise en charge du format ultra-large peut ne fonctionner que sur Steam.",
+        "ja": "ウルトラワイド対応は Steam でのみ動作する可能性があります。",
+        "ru": "Ультраширокий режим может работать только при запуске через Steam.",
+        "zh-Hans": "超宽屏支持可能仅在 Steam 上有效。",
+        "zh-Hant": "超寬螢幕支援可能僅在 Steam 上有效。"
+      }
+    },
+    {
+      "id": "luma.hellletloose.compatibility",
+      "fallback_text": "Blocked by Easy Anti-Cheat.",
+      "kind": "compatibility",
+      "context": "guidance.compatibility",
+      "translations": {
+        "de": "Durch Easy Anti-Cheat blockiert.",
+        "es": "Bloqueado por Easy Anti-Cheat.",
+        "fr": "Bloqué par Easy Anti-Cheat.",
+        "ja": "Easy Anti-Cheat によりブロックされます。",
+        "ru": "Заблокировано системой Easy Anti-Cheat.",
+        "zh-Hans": "被 Easy Anti-Cheat 拦截。",
+        "zh-Hant": "被 Easy Anti-Cheat 攔截。"
+      }
+    },
+    {
+      "id": "luma.inside.compatibility",
+      "fallback_text": "Not compatible with the Xbox Store version.",
+      "kind": "compatibility",
+      "context": "guidance.compatibility",
+      "translations": {
+        "de": "Nicht kompatibel mit der Xbox-Store-Version.",
+        "es": "No es compatible con la versión de Xbox Store.",
+        "fr": "Incompatible avec la version Xbox Store.",
+        "ja": "Xbox Store 版とは互換性がありません。",
+        "ru": "Несовместимо с версией из Xbox Store.",
+        "zh-Hans": "与 Xbox Store 版本不兼容。",
+        "zh-Hant": "與 Xbox Store 版本不相容。"
+      }
+    },
+    {
+      "id": "luma.it-takes-two.warning",
+      "fallback_text": "Only works during the title screen sequence.",
+      "kind": "warning",
+      "context": "guidance.warning",
+      "translations": {
+        "de": "Funktioniert nur während der Titelsequenz.",
+        "es": "Solo funciona durante la secuencia de la pantalla de título.",
+        "fr": "Fonctionne uniquement pendant la séquence de l’écran titre.",
+        "ja": "タイトル画面のシーケンス中のみ動作します。",
+        "ru": "Работает только во время вступительной заставки на титульном экране.",
+        "zh-Hans": "仅在标题画面过场期间有效。",
+        "zh-Hant": "僅在標題畫面過場期間有效。"
+      }
+    },
+    {
+      "id": "luma.just-die-already.engine_ini",
+      "fallback_text": "Apply the following settings manually in Engine.ini.",
+      "kind": "engine_ini",
+      "context": "guidance.engine_ini",
+      "translations": {
+        "de": "Übernimm die folgenden Einstellungen manuell in Engine.ini.",
+        "es": "Aplica los siguientes ajustes manualmente en Engine.ini.",
+        "fr": "Appliquez manuellement les paramètres suivants dans Engine.ini.",
+        "ja": "次の設定を Engine.ini に手動で適用してください。",
+        "ru": "Вручную добавьте в Engine.ini следующие настройки.",
+        "zh-Hans": "请在 Engine.ini 中手动应用以下设置。",
+        "zh-Hant": "請在 Engine.ini 中手動套用以下設定。"
+      }
+    },
+    {
+      "id": "luma.kao-the-kangaroo.game_setting",
+      "fallback_text": "In the game settings, use: AA \"High\".",
+      "kind": "game_setting",
+      "context": "guidance.game_setting",
+      "translations": {
+        "de": "Wähle in den Spieleinstellungen AA „High“ aus.",
+        "es": "En los ajustes del juego, selecciona AA «High».",
+        "fr": "Dans les paramètres du jeu, sélectionnez AA « High ».",
+        "ja": "ゲーム設定で AA を「High」にしてください。",
+        "ru": "В настройках игры выберите AA «High».",
+        "zh-Hans": "在游戏设置中选择 AA “High”。",
+        "zh-Hant": "在遊戲設定中選擇 AA 「High」。"
+      }
+    },
+    {
+      "id": "luma.kingdom-hearts-3.engine_ini",
+      "fallback_text": "Apply the following settings manually in Engine.ini.",
+      "kind": "engine_ini",
+      "context": "guidance.engine_ini",
+      "translations": {
+        "de": "Übernimm die folgenden Einstellungen manuell in Engine.ini.",
+        "es": "Aplica los siguientes ajustes manualmente en Engine.ini.",
+        "fr": "Appliquez manuellement les paramètres suivants dans Engine.ini.",
+        "ja": "次の設定を Engine.ini に手動で適用してください。",
+        "ru": "Вручную добавьте в Engine.ini следующие настройки.",
+        "zh-Hans": "请在 Engine.ini 中手动应用以下设置。",
+        "zh-Hant": "請在 Engine.ini 中手動套用以下設定。"
+      }
+    },
+    {
+      "id": "luma.kingdom-hearts-3.game_setting",
+      "fallback_text": "In the game settings, use: \"TXAA\".",
+      "kind": "game_setting",
+      "context": "guidance.game_setting",
+      "translations": {
+        "de": "Wähle in den Spieleinstellungen: „TXAA“.",
+        "es": "En los ajustes del juego, usa: «TXAA».",
+        "fr": "Dans les paramètres du jeu, utilisez : « TXAA ».",
+        "ja": "ゲーム設定:「TXAA」を選択してください。",
+        "ru": "В настройках игры выберите «TXAA».",
+        "zh-Hans": "在游戏设置中选择：“TXAA”。",
+        "zh-Hant": "在遊戲設定中選擇：「TXAA」。"
+      }
+    },
+    {
+      "id": "luma.lara-croft-temple-of-osiris.compatibility",
+      "fallback_text": "Not compatible with the Xbox Store version.",
+      "kind": "compatibility",
+      "context": "guidance.compatibility",
+      "translations": {
+        "de": "Nicht kompatibel mit der Xbox-Store-Version.",
+        "es": "No es compatible con la versión de Xbox Store.",
+        "fr": "Incompatible avec la version Xbox Store.",
+        "ja": "Xbox Store 版とは互換性がありません。",
+        "ru": "Несовместимо с версией из Xbox Store.",
+        "zh-Hans": "与 Xbox Store 版本不兼容。",
+        "zh-Hant": "與 Xbox Store 版本不相容。"
+      }
+    },
+    {
+      "id": "luma.littlenightmaresiii.compatibility",
+      "fallback_text": "Does not launch in DirectX 11 mode.",
+      "kind": "compatibility",
+      "context": "guidance.compatibility",
+      "translations": {
+        "de": "Startet nicht im DirectX-11-Modus.",
+        "es": "No se ejecuta en modo DirectX 11.",
+        "fr": "Ne se lance pas en mode DirectX 11.",
+        "ja": "DirectX 11 モードでは起動しません。",
+        "ru": "Не запускается в режиме DirectX 11.",
+        "zh-Hans": "无法在 DirectX 11 模式下启动。",
+        "zh-Hant": "無法在 DirectX 11 模式下啟動。"
+      }
+    },
+    {
+      "id": "luma.mass-effect-andromeda.compatibility",
+      "fallback_text": "Only DLAA / FSR 3 Native AA modes are available; this is not DLSS or FSR super-resolution.",
+      "kind": "compatibility",
+      "context": "guidance.compatibility",
+      "translations": {
+        "de": "Nur DLAA / FSR 3 Native AA sind verfügbar; dies ist kein DLSS- oder FSR-Super-Resolution-Modus.",
+        "es": "Solo están disponibles los modos DLAA / FSR 3 Native AA; esto no es superresolución DLSS ni FSR.",
+        "fr": "Seuls les modes DLAA / FSR 3 Native AA sont disponibles ; il ne s’agit pas de super-résolution DLSS ou FSR.",
+        "ja": "利用できるのは DLAA / FSR 3 Native AA モードのみで、DLSS または FSR の超解像ではありません。",
+        "ru": "Доступны только режимы сглаживания DLAA / FSR 3 Native AA; суперразрешение DLSS или FSR не поддерживается.",
+        "zh-Hans": "仅提供 DLAA / FSR 3 原生抗锯齿 (Native AA) 模式；这不是 DLSS 或 FSR 超分辨率。",
+        "zh-Hant": "僅提供 DLAA / FSR 3 原生反鋸齒 (Native AA) 模式；這不是 DLSS 或 FSR 超解析度。"
+      }
+    },
+    {
+      "id": "luma.masterdetectivearchivesraincodeplus.game_setting",
+      "fallback_text": "In the game settings, use: AA quality \"High\" and maximum resolution scale.",
+      "kind": "game_setting",
+      "context": "guidance.game_setting",
+      "translations": {
+        "de": "Wähle in den Spieleinstellungen: AA-Qualität „High“ und maximale Auflösungsskalierung.",
+        "es": "En los ajustes del juego, usa: calidad de AA «High» y escala de resolución al máximo.",
+        "fr": "Dans les paramètres du jeu, utilisez : qualité d’AA « High » et curseur de résolution au maximum.",
+        "ja": "ゲーム設定: AA 品質「High」および最大解像度スライダーを設定してください。",
+        "ru": "В настройках игры выберите качество AA «High» и установите ползунок разрешения на максимум.",
+        "zh-Hans": "在游戏设置中选择：AA 质量 “High” 并将分辨率滑块拉至最大。",
+        "zh-Hant": "在遊戲設定中選擇：AA 品質 「High」 並將解析度滑桿拉至最大。"
+      }
+    },
+    {
+      "id": "luma.metro-2033-redux.warning",
+      "fallback_text": "Requires windowed or borderless mode, configured via mods or by disabling fullscreen in the game config.",
+      "kind": "warning",
+      "context": "guidance.warning",
+      "translations": {
+        "de": "Erfordert Fenster- oder rahmenlosen Modus, konfiguriert über Mods oder durch Deaktivieren von Vollbild in der Spielkonfiguration.",
+        "es": "Requiere modo ventana o sin bordes, configurado mediante mods o desactivando la pantalla completa en la configuración del juego.",
+        "fr": "Nécessite le mode fenêtré ou sans bordures, configuré via des mods ou en désactivant le plein écran dans la configuration du jeu.",
+        "ja": "ウィンドウまたはボーダーレスモードが必要です。MOD を使用するか、ゲーム設定ファイルでフルスクリーンを無効化してください。",
+        "ru": "Требуется оконный или безрамочный режим: через моды либо отключением полноэкранного режима в конфиге игры.",
+        "zh-Hans": "需要窗口化或无边框模式，可通过模组或在游戏配置文件中关闭全屏进行设置。",
+        "zh-Hant": "需要視窗化或無邊框模式，可透過模組或在遊戲設定檔中關閉全螢幕進行設定。"
+      }
+    },
+    {
+      "id": "luma.metro-2033-redux.windowed_borderless_only",
+      "fallback_text": "Use borderless windowed mode.",
+      "kind": "game_setting",
+      "context": "guidance.game_setting",
+      "translations": {
+        "de": "Verwende den rahmenlosen Fenstermodus.",
+        "es": "Usa el modo ventana sin bordes.",
+        "fr": "Utilisez le mode fenêtré sans bordures.",
+        "ja": "ボーダーレスウィンドウモードを使用してください。",
+        "ru": "Используйте безрамочный оконный режим.",
+        "zh-Hans": "请使用无边框窗口模式。",
+        "zh-Hant": "請使用無邊框視窗模式。"
+      }
+    },
+    {
+      "id": "luma.middle-earth-shadow-of-war.dlss-only",
+      "fallback_text": "This profile supports DLSS only; HDR is not currently supported.",
+      "kind": "compatibility",
+      "context": "guidance.compatibility",
+      "translations": {
+        "de": "Dieses Profil unterstützt nur DLSS; HDR wird derzeit nicht unterstützt.",
+        "es": "Este perfil solo admite DLSS; HDR no es compatible actualmente.",
+        "fr": "Ce profil prend en charge uniquement le DLSS ; le HDR n’est pas pris en charge actuellement.",
+        "ja": "このプロファイルは DLSS のみをサポートしています（現在 HDR には非対応）。",
+        "ru": "Этот профиль добавляет только поддержку DLSS; HDR сейчас не поддерживается.",
+        "zh-Hans": "此配置文件仅支持 DLSS，目前不支持 HDR。",
+        "zh-Hant": "此設定檔僅支援 DLSS，目前不支援 HDR。"
+      }
+    },
+    {
+      "id": "luma.mothergunship.engine_ini",
+      "fallback_text": "Apply the following settings manually in Engine.ini.",
+      "kind": "engine_ini",
+      "context": "guidance.engine_ini",
+      "translations": {
+        "de": "Übernimm die folgenden Einstellungen manuell in Engine.ini.",
+        "es": "Aplica los siguientes ajustes manualmente en Engine.ini.",
+        "fr": "Appliquez manuellement les paramètres suivants dans Engine.ini.",
+        "ja": "次の設定を Engine.ini に手動で適用してください。",
+        "ru": "Вручную добавьте в Engine.ini следующие настройки.",
+        "zh-Hans": "请在 Engine.ini 中手动应用以下设置。",
+        "zh-Hant": "請在 Engine.ini 中手動套用以下設定。"
+      }
+    },
+    {
+      "id": "luma.mutant-year-zero-road-to-eden.game_setting",
+      "fallback_text": "In the game settings, use: AA \"High\". For improved motion clarity, set r.motionblur.amount=0 in Engine.ini.",
+      "kind": "game_setting",
+      "context": "guidance.game_setting",
+      "translations": {
+        "de": "Wähle in den Spieleinstellungen: AA „High“. Für klarere Bewegung setze r.motionblur.amount=0 in der Engine.ini.",
+        "es": "En los ajustes del juego, usa: AA «High». Para mayor claridad de movimiento, se recomienda r.motionblur.amount=0 en Engine.ini.",
+        "fr": "Dans les paramètres du jeu, utilisez : AA « High ». Pour une meilleure netteté des mouvements, définissez r.motionblur.amount=0 dans Engine.ini.",
+        "ja": "ゲーム設定: AA「High」。動きの鮮明さを向上させるには、Engine.ini で r.motionblur.amount=0 を設定することを推奨します。",
+        "ru": "В настройках игры выберите AA «High». Для лучшей чёткости в движении задайте r.motionblur.amount=0 в Engine.ini.",
+        "zh-Hans": "在游戏设置中选择：AA “High”。为了获得更清晰的动态画面，建议在 Engine.ini 中设置 r.motionblur.amount=0。",
+        "zh-Hant": "在遊戲設定中選擇：AA 「High」。為了獲得更清晰的動態畫面，建議在 Engine.ini 中設定 r.motionblur.amount=0。"
+      }
+    },
+    {
+      "id": "luma.narutotoborutoshinobistriker.compatibility",
+      "fallback_text": "Blocked by Easy Anti-Cheat.",
+      "kind": "compatibility",
+      "context": "guidance.compatibility",
+      "translations": {
+        "de": "Durch Easy Anti-Cheat blockiert.",
+        "es": "Bloqueado por Easy Anti-Cheat.",
+        "fr": "Bloqué par Easy Anti-Cheat.",
+        "ja": "Easy Anti-Cheat によりブロックされます。",
+        "ru": "Заблокировано системой Easy Anti-Cheat.",
+        "zh-Hans": "被 Easy Anti-Cheat 拦截。",
+        "zh-Hant": "被 Easy Anti-Cheat 攔截。"
+      }
+    },
+    {
+      "id": "luma.no-more-heroes-3.engine_ini",
+      "fallback_text": "Apply the following settings manually in Engine.ini.",
+      "kind": "engine_ini",
+      "context": "guidance.engine_ini",
+      "translations": {
+        "de": "Übernimm die folgenden Einstellungen manuell in Engine.ini.",
+        "es": "Aplica los siguientes ajustes manualmente en Engine.ini.",
+        "fr": "Appliquez manuellement les paramètres suivants dans Engine.ini.",
+        "ja": "次の設定を Engine.ini に手動で適用してください。",
+        "ru": "Вручную добавьте в Engine.ini следующие настройки.",
+        "zh-Hans": "请在 Engine.ini 中手动应用以下设置。",
+        "zh-Hant": "請在 Engine.ini 中手動套用以下設定。"
+      }
+    },
+    {
+      "id": "luma.orcs-must-die-3.game_setting",
+      "fallback_text": "In the game settings, use: AA quality \"High\".",
+      "kind": "game_setting",
+      "context": "guidance.game_setting",
+      "translations": {
+        "de": "Wähle in den Spieleinstellungen die AA-Qualität „High“ aus.",
+        "es": "En los ajustes del juego, selecciona calidad de AA «High».",
+        "fr": "Dans les paramètres du jeu, sélectionnez la qualité d’AA « High ».",
+        "ja": "ゲーム設定で AA 品質を「High」にしてください。",
+        "ru": "В настройках игры выберите качество AA «High».",
+        "zh-Hans": "在游戏设置中将 AA 质量设为 “High”。",
+        "zh-Hant": "在遊戲設定中將 AA 品質設為 「High」。"
+      }
+    },
+    {
+      "id": "luma.persona-3reload.compatibility",
+      "fallback_text": "Does not launch in DirectX 11 mode.",
+      "kind": "compatibility",
+      "context": "guidance.compatibility",
+      "translations": {
+        "de": "Startet nicht im DirectX-11-Modus.",
+        "es": "No se ejecuta en modo DirectX 11.",
+        "fr": "Ne se lance pas en mode DirectX 11.",
+        "ja": "DirectX 11 モードでは起動しません。",
+        "ru": "Не запускается в режиме DirectX 11.",
+        "zh-Hans": "无法在 DirectX 11 模式下启动。",
+        "zh-Hant": "無法在 DirectX 11 模式下啟動。"
+      }
+    },
+    {
+      "id": "luma.predecessor.compatibility",
+      "fallback_text": "Blocked by Easy Anti-Cheat.",
+      "kind": "compatibility",
+      "context": "guidance.compatibility",
+      "translations": {
+        "de": "Durch Easy Anti-Cheat blockiert.",
+        "es": "Bloqueado por Easy Anti-Cheat.",
+        "fr": "Bloqué par Easy Anti-Cheat.",
+        "ja": "Easy Anti-Cheat によりブロックされます。",
+        "ru": "Заблокировано системой Easy Anti-Cheat.",
+        "zh-Hans": "被 Easy Anti-Cheat 拦截。",
+        "zh-Hant": "被 Easy Anti-Cheat 攔截。"
+      }
+    },
+    {
+      "id": "luma.prey-2017.prey_extra_data",
+      "fallback_text": "Keep Prey's additional Luma data files together with the add-on.",
+      "kind": "warning",
+      "context": "guidance.warning",
+      "translations": {
+        "de": "Bewahre die zusätzlichen Luma-Datendateien für Prey zusammen mit dem Add-on auf.",
+        "es": "Mantén los archivos de datos adicionales de Luma para Prey junto con el complemento.",
+        "fr": "Conservez les fichiers de données Luma supplémentaires pour Prey avec le module complémentaire.",
+        "ja": "Prey 用の追加 Luma データファイルは、アドオンと同じ場所に置いてください。",
+        "ru": "Дополнительные файлы данных Luma для Prey должны оставаться рядом с аддоном.",
+        "zh-Hans": "请将 Prey 的附加 Luma 数据文件与插件放置在同一目录下。",
+        "zh-Hant": "請將 Prey 的附加 Luma 資料檔案與外掛程式放置在同一目錄下。"
+      }
+    },
+    {
+      "id": "luma.project-wingman.engine_ini",
+      "fallback_text": "Apply the following settings manually in Engine.ini.",
+      "kind": "engine_ini",
+      "context": "guidance.engine_ini",
+      "translations": {
+        "de": "Übernimm die folgenden Einstellungen manuell in Engine.ini.",
+        "es": "Aplica los siguientes ajustes manualmente en Engine.ini.",
+        "fr": "Appliquez manuellement les paramètres suivants dans Engine.ini.",
+        "ja": "次の設定を Engine.ini に手動で適用してください。",
+        "ru": "Вручную добавьте в Engine.ini следующие настройки.",
+        "zh-Hans": "请在 Engine.ini 中手动应用以下设置。",
+        "zh-Hant": "請在 Engine.ini 中手動套用以下設定。"
+      }
+    },
+    {
+      "id": "luma.project-wingman.game_setting",
+      "fallback_text": "In the game settings, use: AA \"FXAA\".",
+      "kind": "game_setting",
+      "context": "guidance.game_setting",
+      "translations": {
+        "de": "Wähle in den Spieleinstellungen: AA „FXAA“.",
+        "es": "En los ajustes del juego, usa: AA «FXAA».",
+        "fr": "Dans les paramètres du jeu, utilisez : AA « FXAA ».",
+        "ja": "ゲーム設定: AA「FXAA」を選択してください。",
+        "ru": "В настройках игры выберите AA «FXAA».",
+        "zh-Hans": "在游戏设置中选择：AA “FXAA”。",
+        "zh-Hant": "在遊戲設定中選擇：AA 「FXAA」。"
+      }
+    },
+    {
+      "id": "luma.rad.game_setting",
+      "fallback_text": "In the game settings, use: AA \"Ultra\".",
+      "kind": "game_setting",
+      "context": "guidance.game_setting",
+      "translations": {
+        "de": "Wähle in den Spieleinstellungen AA „Ultra“ aus.",
+        "es": "En los ajustes del juego, selecciona AA «Ultra».",
+        "fr": "Dans les paramètres du jeu, sélectionnez AA « Ultra ».",
+        "ja": "ゲーム設定で AA を「Ultra」にしてください。",
+        "ru": "В настройках игры выберите AA «Ultra».",
+        "zh-Hans": "在游戏设置中选择 AA “Ultra”。",
+        "zh-Hant": "在遊戲設定中選擇 AA 「Ultra」。"
+      }
+    },
+    {
+      "id": "luma.remnant-from-the-ashes.engine_ini",
+      "fallback_text": "Apply the following settings manually in Engine.ini.",
+      "kind": "engine_ini",
+      "context": "guidance.engine_ini",
+      "translations": {
+        "de": "Übernimm die folgenden Einstellungen manuell in Engine.ini.",
+        "es": "Aplica los siguientes ajustes manualmente en Engine.ini.",
+        "fr": "Appliquez manuellement les paramètres suivants dans Engine.ini.",
+        "ja": "次の設定を Engine.ini に手動で適用してください。",
+        "ru": "Вручную добавьте в Engine.ini следующие настройки.",
+        "zh-Hans": "请在 Engine.ini 中手动应用以下设置。",
+        "zh-Hant": "請在 Engine.ini 中手動套用以下設定。"
+      }
+    },
+    {
+      "id": "luma.roboquest.game_setting",
+      "fallback_text": "In the game settings, use: TAA, Quality \"3\".",
+      "kind": "game_setting",
+      "context": "guidance.game_setting",
+      "translations": {
+        "de": "Wähle in den Spieleinstellungen TAA und Qualität „3“.",
+        "es": "En los ajustes del juego, selecciona TAA y calidad «3».",
+        "fr": "Dans les paramètres du jeu, sélectionnez TAA et la qualité « 3 ».",
+        "ja": "ゲーム設定で TAA と品質「3」を選択してください。",
+        "ru": "В настройках игры выберите TAA и качество «3».",
+        "zh-Hans": "在游戏设置中选择 TAA，并将质量设为 “3”。",
+        "zh-Hant": "在遊戲設定中選擇 TAA，並將品質設為 「3」。"
+      }
+    },
+    {
+      "id": "luma.scarlet-nexus.game_setting",
+      "fallback_text": "In the game settings, use: AA \"TXAA\".",
+      "kind": "game_setting",
+      "context": "guidance.game_setting",
+      "translations": {
+        "de": "Wähle in den Spieleinstellungen AA „TXAA“ aus.",
+        "es": "En los ajustes del juego, selecciona AA «TXAA».",
+        "fr": "Dans les paramètres du jeu, sélectionnez AA « TXAA ».",
+        "ja": "ゲーム設定で AA を「TXAA」にしてください。",
+        "ru": "В настройках игры выберите AA «TXAA».",
+        "zh-Hans": "在游戏设置中选择 AA “TXAA”。",
+        "zh-Hant": "在遊戲設定中選擇 AA 「TXAA」。"
+      }
+    },
+    {
+      "id": "luma.scorn.warning",
+      "fallback_text": "Has native support for FSR 2.1; DLSS or other upscalers can be added via OptiScaler.",
+      "kind": "warning",
+      "context": "guidance.warning",
+      "translations": {
+        "de": "Das Spiel unterstützt FSR 2.1 nativ; DLSS oder andere Upscaler können über OptiScaler hinzugefügt werden.",
+        "es": "Tiene compatibilidad nativa con FSR 2.1; se puede añadir DLSS u otros escaladores mediante OptiScaler.",
+        "fr": "Prend en charge FSR 2.1 nativement ; DLSS ou d’autres upscalers peuvent être ajoutés via OptiScaler.",
+        "ja": "FSR 2.1 をネイティブサポートしています。DLSS やその他のアップスケーラーは OptiScaler 経由で追加できます。",
+        "ru": "В игре есть нативная поддержка FSR 2.1; DLSS или другие апскейлеры можно добавить через OptiScaler.",
+        "zh-Hans": "原生支持 FSR 2.1；可通过 OptiScaler 添加 DLSS 或其他缩放器。",
+        "zh-Hant": "原生支援 FSR 2.1；可透過 OptiScaler 新增 DLSS 或其他縮放器。"
+      }
+    },
+    {
+      "id": "luma.sherlock-holmes-chapter-one.warning",
+      "fallback_text": "The required -dx11 launch argument may reduce CPU performance. With Auto Exposure enabled, DLAA produces jagged edges on grass.",
+      "kind": "warning",
+      "context": "guidance.warning",
+      "translations": {
+        "de": "Das erforderliche Startargument -dx11 kann die CPU-Leistung verringern. Bei aktiviertem Auto Exposure erzeugt DLAA gezackte Kanten auf Gras.",
+        "es": "El argumento de inicio obligatorio -dx11 puede reducir el rendimiento de la CPU. Con Auto Exposure activado, DLAA produce bordes dentados en la hierba.",
+        "fr": "L’argument de lancement requis -dx11 peut réduire les performances du processeur. Avec Auto Exposure activé, DLAA produit des bords crénelés sur l’herbe.",
+        "ja": "必要な起動引数 -dx11 により、CPU 性能が低下する場合があります。Auto Exposure を有効にした DLAA では、草の縁にジャギーが生じます。",
+        "ru": "Требуемый аргумент запуска -dx11 может снизить производительность процессора. При включённом Auto Exposure режим DLAA даёт зубчатые края на траве.",
+        "zh-Hans": "所需的启动参数 -dx11 可能会降低 CPU 性能。启用 Auto Exposure 时，DLAA 会使草地边缘出现锯齿。",
+        "zh-Hant": "所需的啟動參數 -dx11 可能會降低 CPU 效能。啟用 Auto Exposure 時，DLAA 會讓草地邊緣出現鋸齒。"
+      }
+    },
+    {
+      "id": "luma.shin-megami-tensei-5-vengeance.warning",
+      "fallback_text": "Requires Lyall's Fix to force TAA.",
+      "kind": "warning",
+      "context": "guidance.warning",
+      "translations": {
+        "de": "Erfordert Lyall’s Fix, um TAA zu erzwingen.",
+        "es": "Requiere Lyall’s Fix para forzar TAA.",
+        "fr": "Nécessite Lyall’s Fix pour forcer le TAA.",
+        "ja": "TAA を強制するには Lyall’s Fix が必要です。",
+        "ru": "Для принудительного включения TAA требуется Lyall’s Fix.",
+        "zh-Hans": "需要 Lyall’s Fix 强制开启 TAA。",
+        "zh-Hant": "需要 Lyall’s Fix 強制開啟 TAA。"
+      }
+    },
+    {
+      "id": "luma.solar-ash.engine_ini",
+      "fallback_text": "Apply the following settings manually in Engine.ini.",
+      "kind": "engine_ini",
+      "context": "guidance.engine_ini",
+      "translations": {
+        "de": "Übernimm die folgenden Einstellungen manuell in Engine.ini.",
+        "es": "Aplica los siguientes ajustes manualmente en Engine.ini.",
+        "fr": "Appliquez manuellement les paramètres suivants dans Engine.ini.",
+        "ja": "次の設定を Engine.ini に手動で適用してください。",
+        "ru": "Вручную добавьте в Engine.ini следующие настройки.",
+        "zh-Hans": "请在 Engine.ini 中手动应用以下设置。",
+        "zh-Hant": "請在 Engine.ini 中手動套用以下設定。"
+      }
+    },
+    {
+      "id": "luma.spirit-of-the-north.game_setting",
+      "fallback_text": "In the game settings, use: Graphics Quality \"Ultra\".",
+      "kind": "game_setting",
+      "context": "guidance.game_setting",
+      "translations": {
+        "de": "Wähle in den Spieleinstellungen die Grafikqualität „Ultra“ aus.",
+        "es": "En los ajustes del juego, selecciona calidad gráfica «Ultra».",
+        "fr": "Dans les paramètres du jeu, sélectionnez la qualité graphique « Ultra ».",
+        "ja": "ゲーム設定でグラフィック品質を「Ultra」にしてください。",
+        "ru": "В настройках игры выберите качество графики «Ultra».",
+        "zh-Hans": "在游戏设置中将图形质量设为 “Ultra”。",
+        "zh-Hant": "在遊戲設定中將圖形品質設為 「Ultra」。"
+      }
+    },
+    {
+      "id": "luma.spongebob-squarepants-the-cosmic-shake.game_setting",
+      "fallback_text": "In the game settings, use: AA \"Ultra\".",
+      "kind": "game_setting",
+      "context": "guidance.game_setting",
+      "translations": {
+        "de": "Wähle in den Spieleinstellungen AA „Ultra“ aus.",
+        "es": "En los ajustes del juego, selecciona AA «Ultra».",
+        "fr": "Dans les paramètres du jeu, sélectionnez AA « Ultra ».",
+        "ja": "ゲーム設定で AA を「Ultra」にしてください。",
+        "ru": "В настройках игры выберите AA «Ultra».",
+        "zh-Hans": "在游戏设置中选择 AA “Ultra”。",
+        "zh-Hant": "在遊戲設定中選擇 AA 「Ultra」。"
+      }
+    },
+    {
+      "id": "luma.spyro-reignited-trilogy.game_setting",
+      "fallback_text": "In the game settings, use: High TAA.",
+      "kind": "game_setting",
+      "context": "guidance.game_setting",
+      "translations": {
+        "de": "Wähle in den Spieleinstellungen High TAA aus.",
+        "es": "En los ajustes del juego, selecciona High TAA.",
+        "fr": "Dans les paramètres du jeu, sélectionnez High TAA.",
+        "ja": "ゲーム設定で High TAA を選択してください。",
+        "ru": "В настройках игры выберите High TAA.",
+        "zh-Hans": "在游戏设置中选择 High TAA。",
+        "zh-Hant": "在遊戲設定中選擇 High TAA。"
+      }
+    },
+    {
+      "id": "luma.styx-shards-of-darkness.engine_ini",
+      "fallback_text": "Apply the following settings manually in Engine.ini.",
+      "kind": "engine_ini",
+      "context": "guidance.engine_ini",
+      "translations": {
+        "de": "Übernimm die folgenden Einstellungen manuell in Engine.ini.",
+        "es": "Aplica los siguientes ajustes manualmente en Engine.ini.",
+        "fr": "Appliquez manuellement les paramètres suivants dans Engine.ini.",
+        "ja": "次の設定を Engine.ini に手動で適用してください。",
+        "ru": "Вручную добавьте в Engine.ini следующие настройки.",
+        "zh-Hans": "请在 Engine.ini 中手动应用以下设置。",
+        "zh-Hant": "請在 Engine.ini 中手動套用以下設定。"
+      }
+    },
+    {
+      "id": "luma.submerged-hidden-depths.game_setting",
+      "fallback_text": "In the game settings, use: AA \"High\".",
+      "kind": "game_setting",
+      "context": "guidance.game_setting",
+      "translations": {
+        "de": "Wähle in den Spieleinstellungen AA „High“ aus.",
+        "es": "En los ajustes del juego, selecciona AA «High».",
+        "fr": "Dans les paramètres du jeu, sélectionnez AA « High ».",
+        "ja": "ゲーム設定で AA を「High」にしてください。",
+        "ru": "В настройках игры выберите AA «High».",
+        "zh-Hans": "在游戏设置中选择 AA “High”。",
+        "zh-Hant": "在遊戲設定中選擇 AA 「High」。"
+      }
+    },
+    {
+      "id": "luma.supraland.game_setting",
+      "fallback_text": "In the game settings, use: AA \"Temporal Anti Aliasing\".",
+      "kind": "game_setting",
+      "context": "guidance.game_setting",
+      "translations": {
+        "de": "Wähle in den Spieleinstellungen AA „Temporal Anti Aliasing“ aus.",
+        "es": "En los ajustes del juego, selecciona AA «Temporal Anti Aliasing».",
+        "fr": "Dans les paramètres du jeu, sélectionnez AA « Temporal Anti Aliasing ».",
+        "ja": "ゲーム設定で AA を「Temporal Anti Aliasing」にしてください。",
+        "ru": "В настройках игры выберите AA «Temporal Anti Aliasing».",
+        "zh-Hans": "在游戏设置中选择 AA “Temporal Anti Aliasing”。",
+        "zh-Hant": "在遊戲設定中選擇 AA 「Temporal Anti Aliasing」。"
+      }
+    },
+    {
+      "id": "luma.tales-of-arise.warning",
+      "fallback_text": "Requires Arise-SDK with UseUE4TAA=true.",
+      "kind": "warning",
+      "context": "guidance.warning",
+      "translations": {
+        "de": "Erfordert Arise-SDK mit UseUE4TAA=true.",
+        "es": "Requiere Arise-SDK con UseUE4TAA=true.",
+        "fr": "Nécessite Arise-SDK avec UseUE4TAA=true.",
+        "ja": "UseUE4TAA=true を設定した Arise-SDK が必要です。",
+        "ru": "Требуется Arise-SDK с параметром UseUE4TAA=true.",
+        "zh-Hans": "需要 Arise-SDK 并设置 UseUE4TAA=true。",
+        "zh-Hant": "需要 Arise-SDK 並設定 UseUE4TAA=true。"
+      }
+    },
+    {
+      "id": "luma.tekken-7.engine_ini",
+      "fallback_text": "Apply the following settings manually in Engine.ini.",
+      "kind": "engine_ini",
+      "context": "guidance.engine_ini",
+      "translations": {
+        "de": "Übernimm die folgenden Einstellungen manuell in Engine.ini.",
+        "es": "Aplica los siguientes ajustes manualmente en Engine.ini.",
+        "fr": "Appliquez manuellement les paramètres suivants dans Engine.ini.",
+        "ja": "次の設定を Engine.ini に手動で適用してください。",
+        "ru": "Вручную добавьте в Engine.ini следующие настройки.",
+        "zh-Hans": "请在 Engine.ini 中手动应用以下设置。",
+        "zh-Hant": "請在 Engine.ini 中手動套用以下設定。"
+      }
+    },
+    {
+      "id": "luma.tetris-effect-connected.engine_ini",
+      "fallback_text": "Apply the following settings manually in Engine.ini.",
+      "kind": "engine_ini",
+      "context": "guidance.engine_ini",
+      "translations": {
+        "de": "Übernimm die folgenden Einstellungen manuell in Engine.ini.",
+        "es": "Aplica los siguientes ajustes manualmente en Engine.ini.",
+        "fr": "Appliquez manuellement les paramètres suivants dans Engine.ini.",
+        "ja": "次の設定を Engine.ini に手動で適用してください。",
+        "ru": "Вручную добавьте в Engine.ini следующие настройки.",
+        "zh-Hans": "请在 Engine.ini 中手动应用以下设置。",
+        "zh-Hant": "請在 Engine.ini 中手動套用以下設定。"
+      }
+    },
+    {
+      "id": "luma.tetris-effect-connected.game_setting",
+      "fallback_text": "In the game settings, use: AA \"FXAA:6\" and Rendering Scale 100%.",
+      "kind": "game_setting",
+      "context": "guidance.game_setting",
+      "translations": {
+        "de": "Wähle in den Spieleinstellungen: AA „FXAA:6“ und 100 % Render-Skalierung.",
+        "es": "En los ajustes del juego, usa: AA «FXAA:6» y escala de renderizado al 100%.",
+        "fr": "Dans les paramètres du jeu, utilisez : AA « FXAA:6 » et échelle de rendu à 100 %.",
+        "ja": "ゲーム設定: AA「FXAA:6」およびレンダリングスケール 100% を選択してください。",
+        "ru": "В настройках игры выберите AA «FXAA:6» и масштаб рендеринга 100%.",
+        "zh-Hans": "在游戏设置中选择：AA “FXAA:6” 且渲染比例为 100%。",
+        "zh-Hant": "在遊戲設定中選擇：AA 「FXAA:6」 且渲染比例為 100%。"
+      }
+    },
+    {
+      "id": "luma.the-sinking-city.warning",
+      "fallback_text": "Compatible with the original release; compatibility with the Remastered edition is unconfirmed.",
+      "kind": "warning",
+      "context": "guidance.warning",
+      "translations": {
+        "de": "Kompatibel mit der Originalversion; Kompatibilität mit der Remastered-Version ist unbestätigt.",
+        "es": "Compatible con la versión original; la compatibilidad con la edición Remastered no está confirmada.",
+        "fr": "Compatible avec la version originale ; compatibilité non confirmée avec l’édition Remastered.",
+        "ja": "オリジナル版と互換性があります。Remastered 版との互換性は未確認です。",
+        "ru": "Совместимо с оригинальным релизом; совместимость с изданием Remastered не подтверждена.",
+        "zh-Hans": "兼容原版；重制版 (Remastered) 的兼容性尚未确认。",
+        "zh-Hant": "相容原版；重製版 (Remastered) 的相容性尚未確認。"
+      }
+    },
+    {
+      "id": "luma.theouterworldsspacerschoiceedition.compatibility",
+      "fallback_text": "Does not launch in DirectX 11 mode.",
+      "kind": "compatibility",
+      "context": "guidance.compatibility",
+      "translations": {
+        "de": "Startet nicht im DirectX-11-Modus.",
+        "es": "No se ejecuta en modo DirectX 11.",
+        "fr": "Ne se lance pas en mode DirectX 11.",
+        "ja": "DirectX 11 モードでは起動しません。",
+        "ru": "Не запускается в режиме DirectX 11.",
+        "zh-Hans": "无法在 DirectX 11 模式下启动。",
+        "zh-Hant": "無法在 DirectX 11 模式下啟動。"
+      }
+    },
+    {
+      "id": "luma.tribes-of-midgard.engine_ini",
+      "fallback_text": "Apply the following settings manually in Engine.ini.",
+      "kind": "engine_ini",
+      "context": "guidance.engine_ini",
+      "translations": {
+        "de": "Übernimm die folgenden Einstellungen manuell in Engine.ini.",
+        "es": "Aplica los siguientes ajustes manualmente en Engine.ini.",
+        "fr": "Appliquez manuellement les paramètres suivants dans Engine.ini.",
+        "ja": "次の設定を Engine.ini に手動で適用してください。",
+        "ru": "Вручную добавьте в Engine.ini следующие настройки.",
+        "zh-Hans": "请在 Engine.ini 中手动应用以下设置。",
+        "zh-Hant": "請在 Engine.ini 中手動套用以下設定。"
+      }
+    },
+    {
+      "id": "luma.vampyr.game_setting",
+      "fallback_text": "In the game settings, use: AA TXAA 6X.",
+      "kind": "game_setting",
+      "context": "guidance.game_setting",
+      "translations": {
+        "de": "Wähle in den Spieleinstellungen AA TXAA 6X aus.",
+        "es": "En los ajustes del juego, selecciona AA TXAA 6X.",
+        "fr": "Dans les paramètres du jeu, sélectionnez AA TXAA 6X.",
+        "ja": "ゲーム設定で AA を TXAA 6X にしてください。",
+        "ru": "В настройках игры выберите AA TXAA 6X.",
+        "zh-Hans": "在游戏设置中选择 AA TXAA 6X。",
+        "zh-Hant": "在遊戲設定中選擇 AA TXAA 6X。"
+      }
+    },
+    {
+      "id": "luma.warhammer-40000-boltgun.engine_ini",
+      "fallback_text": "Apply the following settings manually in Engine.ini.",
+      "kind": "engine_ini",
+      "context": "guidance.engine_ini",
+      "translations": {
+        "de": "Übernimm die folgenden Einstellungen manuell in Engine.ini.",
+        "es": "Aplica los siguientes ajustes manualmente en Engine.ini.",
+        "fr": "Appliquez manuellement les paramètres suivants dans Engine.ini.",
+        "ja": "次の設定を Engine.ini に手動で適用してください。",
+        "ru": "Вручную добавьте в Engine.ini следующие настройки.",
+        "zh-Hans": "请在 Engine.ini 中手动应用以下设置。",
+        "zh-Hant": "請在 Engine.ini 中手動套用以下設定。"
+      }
+    },
+    {
+      "id": "luma.what-remains-of-edith-finch.compatibility",
+      "fallback_text": "DLAA works without extra changes, but the game may not fully close after exit. OptiScaler can resolve the exit issue.",
+      "kind": "compatibility",
+      "context": "guidance.compatibility",
+      "translations": {
+        "de": "DLAA funktioniert ohne weitere Änderungen, doch das Spiel schließt sich nach dem Beenden möglicherweise nicht vollständig. OptiScaler kann das Problem beheben.",
+        "es": "DLAA funciona sin cambios adicionales, pero es posible que el juego no se cierre por completo al salir. OptiScaler puede solucionar este problema.",
+        "fr": "DLAA fonctionne sans modifications supplémentaires, mais le jeu peut ne pas se fermer complètement après l’avoir quitté. OptiScaler peut résoudre ce problème.",
+        "ja": "DLAA は追加の変更なしで動作しますが、終了後にゲームが完全に閉じないことがあります。OptiScaler で解決できる場合があります。",
+        "ru": "DLAA работает без дополнительных изменений, но игра может не завершаться полностью после выхода. OptiScaler может устранить эту проблему.",
+        "zh-Hans": "DLAA 无需额外修改即可运行，但退出后游戏可能无法完全关闭。OptiScaler 可以解决此问题。",
+        "zh-Hant": "DLAA 無需額外修改即可運作，但結束後遊戲可能無法完全關閉。OptiScaler 可以解決此問題。"
+      }
+    },
+    {
+      "id": "luma.what-remains-of-edith-finch.engine_ini",
+      "fallback_text": "Apply the following settings manually in Engine.ini.",
+      "kind": "engine_ini",
+      "context": "guidance.engine_ini",
+      "translations": {
+        "de": "Übernimm die folgenden Einstellungen manuell in Engine.ini.",
+        "es": "Aplica los siguientes ajustes manualmente en Engine.ini.",
+        "fr": "Appliquez manuellement les paramètres suivants dans Engine.ini.",
+        "ja": "次の設定を Engine.ini に手動で適用してください。",
+        "ru": "Вручную добавьте в Engine.ini следующие настройки.",
+        "zh-Hans": "请在 Engine.ini 中手动应用以下设置。",
+        "zh-Hant": "請在 Engine.ini 中手動套用以下設定。"
+      }
+    },
+    {
+      "id": "luma.what-remains-of-edith-finch.warning",
+      "fallback_text": "The game is unstable at 4K resolution. Set Effects to Low before applying manual Engine.ini settings.",
+      "kind": "warning",
+      "context": "guidance.warning",
+      "translations": {
+        "de": "Das Spiel läuft bei 4K-Auflösung instabil. Stelle Effects auf Low, bevor du manuelle Engine.ini-Einstellungen anwendest.",
+        "es": "El juego es inestable en resolución 4K. Ajusta Effects en Low antes de aplicar los cambios manuales en Engine.ini.",
+        "fr": "Le jeu est instable en résolution 4K. Réglez Effects sur Low avant d’appliquer les paramètres manuels dans Engine.ini.",
+        "ja": "ゲームは 4K 解像度で動作が不安定になります。手動で Engine.ini の設定を適用する前に Effects を Low に設定してください。",
+        "ru": "Игра работает нестабильно в разрешении 4K. Перед внесением настроек в Engine.ini установите Effects на Low.",
+        "zh-Hans": "该游戏在 4K 分辨率下运行不稳定。在手动应用 Engine.ini 设置前，请将 Effects 设为 Low。",
+        "zh-Hant": "該遊戲在 4K 解析度下運作不穩定。在手動套用 Engine.ini 設定前，請將 Effects 設為 Low。"
+      }
+    }
+  ]
+}

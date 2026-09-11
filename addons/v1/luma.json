@@ -898,15 +898,7 @@
       },
       "requirements": {
         "launch_arguments": ["-dx11"]
-      },
-      "guidance": [
-        {
-          "id": "luma.abiotic-factor.launch_argument",
-          "kind": "launch_argument",
-          "fallback_text": "Add this launch argument manually.",
-          "code": "-DX11"
-        }
-      ]
+      }
     },
     {
       "id": "abzu",
@@ -1596,15 +1588,7 @@
       },
       "requirements": {
         "launch_arguments": ["-dx11"]
-      },
-      "guidance": [
-        {
-          "id": "luma.dead-island-2.launch_argument",
-          "kind": "launch_argument",
-          "fallback_text": "Add this launch argument manually.",
-          "code": "-dx11"
-        }
-      ]
+      }
     },
     {
       "id": "deadline-delivery",
@@ -2048,15 +2032,7 @@
       },
       "requirements": {
         "launch_arguments": ["-dx11"]
-      },
-      "guidance": [
-        {
-          "id": "luma.gylt.launch_argument",
-          "kind": "launch_argument",
-          "fallback_text": "Add this launch argument manually.",
-          "code": "-dx11"
-        }
-      ]
+      }
     },
     {
       "id": "hellblade-senuas-sacrifice",
@@ -2086,15 +2062,7 @@
       },
       "requirements": {
         "launch_arguments": ["-dx11"]
-      },
-      "guidance": [
-        {
-          "id": "luma.hellblade-senuas-sacrifice.launch_argument",
-          "kind": "launch_argument",
-          "fallback_text": "Add this launch argument manually.",
-          "code": "-DX11"
-        }
-      ]
+      }
     },
     {
       "id": "it-takes-two",
@@ -2343,15 +2311,7 @@
       },
       "requirements": {
         "launch_arguments": ["-dx11"]
-      },
-      "guidance": [
-        {
-          "id": "luma.life-is-strange-true-colors.launch_argument",
-          "kind": "launch_argument",
-          "fallback_text": "Add this launch argument manually.",
-          "code": "-dx11"
-        }
-      ]
+      }
     },
     {
       "id": "little-nightmares",
@@ -2378,9 +2338,6 @@
       "features": {
         "dlss_fsr": "supported",
         "hdr": "unknown"
-      },
-      "requirements": {
-        "launch_arguments": ["-dx11"]
       }
     },
     {
@@ -2608,15 +2565,7 @@
       },
       "requirements": {
         "launch_arguments": ["-dx11"]
-      },
-      "guidance": [
-        {
-          "id": "luma.psychonauts-2.launch_argument",
-          "kind": "launch_argument",
-          "fallback_text": "Add this launch argument manually.",
-          "code": "-dx11"
-        }
-      ]
+      }
     },
     {
       "id": "redeemer-enhanced-edition",
@@ -2673,15 +2622,7 @@
       },
       "requirements": {
         "launch_arguments": ["-dx11"]
-      },
-      "guidance": [
-        {
-          "id": "luma.redout.launch_argument",
-          "kind": "launch_argument",
-          "fallback_text": "Add this launch argument manually.",
-          "code": "-DX11"
-        }
-      ]
+      }
     },
     {
       "id": "redout-2",
@@ -2711,15 +2652,7 @@
       },
       "requirements": {
         "launch_arguments": ["-dx11"]
-      },
-      "guidance": [
-        {
-          "id": "luma.redout-2.launch_argument",
-          "kind": "launch_argument",
-          "fallback_text": "Add this launch argument manually.",
-          "code": "-DX11"
-        }
-      ]
+      }
     },
     {
       "id": "relicta",
@@ -3386,11 +3319,6 @@
       },
       "guidance": [
         {
-          "id": "luma.tekken-7.game_setting",
-          "kind": "game_setting",
-          "fallback_text": "Requires the -nod3d9ex launch argument."
-        },
-        {
           "id": "luma.tekken-7.engine_ini",
           "kind": "engine_ini",
           "fallback_text": "Apply the following settings manually in Engine.ini.",
@@ -3491,14 +3419,9 @@
         "dlss_fsr": "supported",
         "hdr": "supported"
       },
-      "guidance": [
-        {
-          "id": "luma.the-ascent.launch_argument",
-          "kind": "launch_argument",
-          "fallback_text": "Add this launch argument manually.",
-          "code": "-DX11"
-        }
-      ]
+      "requirements": {
+        "launch_arguments": ["-dx11"]
+      }
     },
     {
       "id": "the-awesome-adventures-of-captain-spirit",
@@ -3555,15 +3478,7 @@
       },
       "requirements": {
         "launch_arguments": ["-dx11"]
-      },
-      "guidance": [
-        {
-          "id": "luma.the-dark-pictures-man-of-medan.launch_argument",
-          "kind": "launch_argument",
-          "fallback_text": "Add this launch argument manually.",
-          "code": "-dx11"
-        }
-      ]
+      }
     },
     {
       "id": "the-gunk",
@@ -3943,15 +3858,7 @@
       },
       "requirements": {
         "launch_arguments": ["-dx11"]
-      },
-      "guidance": [
-        {
-          "id": "luma.witch-it.launch_argument",
-          "kind": "launch_argument",
-          "fallback_text": "Add this launch argument manually.",
-          "code": "-DX11"
-        }
-      ]
+      }
     },
     {
       "id": "sherlock-holmes-chapter-one",
@@ -3984,15 +3891,9 @@
       },
       "guidance": [
         {
-          "id": "luma.sherlock-holmes-chapter-one.launch_argument",
-          "kind": "launch_argument",
-          "fallback_text": "Add this launch argument manually.",
-          "code": "-dx11"
-        },
-        {
           "id": "luma.sherlock-holmes-chapter-one.warning",
           "kind": "warning",
-          "fallback_text": "The -dx11 launch argument causes poor CPU performance. DLAA with Auto Exposure enabled produces jagged edges on grass."
+          "fallback_text": "The required -dx11 launch argument may reduce CPU performance. With Auto Exposure enabled, DLAA produces jagged edges on grass."
         }
       ]
     },
@@ -4023,16 +3924,8 @@
         "hdr": "unknown"
       },
       "requirements": {
-        "launch_arguments": ["-dx11"]
-      },
-      "guidance": [
-        {
-          "id": "luma.song-of-nunu.launch_argument",
-          "kind": "launch_argument",
-          "fallback_text": "Add this launch argument manually.",
-          "code": "-oss=Steam -dx11"
-        }
-      ]
+        "launch_arguments": ["-oss=Steam -dx11"]
+      }
     },
     {
       "id": "bioshock-2-remastered",
@@ -5232,14 +5125,9 @@
         "dlss_fsr": "unknown",
         "hdr": "supported"
       },
-      "guidance": [
-        {
-          "id": "luma.littlenightmaresenhancededition.launch_argument",
-          "kind": "launch_argument",
-          "fallback_text": "Add this launch argument manually.",
-          "code": "-DX11"
-        }
-      ]
+      "requirements": {
+        "launch_arguments": ["-dx11"]
+      }
     },
     {
       "id": "littlenightmaresiii",

@@ -508,21 +508,13 @@
       "dlss_fsr": "supported",
       "hdr": "unknown"
     },
-    "guidance": [
-      {
-        "id": "luma.abiotic-factor.launch_argument",
-        "kind": "launch_argument",
-        "fallback_text": "Add this launch argument manually.",
-        "code": "-DX11"
-      }
-    ],
     "wiki_note_reviews": [
       {
         "section": "unreal",
         "name": "Abiotic Factor",
         "fingerprint": "adbb2c501da1a1619a4f3eb8a3ad358374847965feb920079a6ed83b2343a9e1",
         "disposition": "published",
-        "guidance_ids": ["luma.abiotic-factor.launch_argument"]
+        "launch_arguments": true
       }
     ],
     "game_target_ids": ["abiotic-factor"]
@@ -1036,21 +1028,13 @@
       "dlss_fsr": "supported",
       "hdr": "unknown"
     },
-    "guidance": [
-      {
-        "id": "luma.dead-island-2.launch_argument",
-        "kind": "launch_argument",
-        "fallback_text": "Add this launch argument manually.",
-        "code": "-dx11"
-      }
-    ],
     "wiki_note_reviews": [
       {
         "section": "unreal",
         "name": "Dead Island 2",
         "fingerprint": "52f8c45b90d398d6f3df05af7a722130cdbbb5645fb41bf60addcf22adb872da",
         "disposition": "published",
-        "guidance_ids": ["luma.dead-island-2.launch_argument"]
+        "launch_arguments": true
       }
     ],
     "game_target_ids": ["dead-island-2"]
@@ -1385,21 +1369,13 @@
       "dlss_fsr": "supported",
       "hdr": "unknown"
     },
-    "guidance": [
-      {
-        "id": "luma.gylt.launch_argument",
-        "kind": "launch_argument",
-        "fallback_text": "Add this launch argument manually.",
-        "code": "-dx11"
-      }
-    ],
     "wiki_note_reviews": [
       {
         "section": "unreal",
         "name": "Gylt",
         "fingerprint": "8320400f21d57edd2facf1b6a5fb7251fdf086989d1b2efe602c941057947c99",
         "disposition": "published",
-        "guidance_ids": ["luma.gylt.launch_argument"]
+        "launch_arguments": true
       }
     ],
     "game_target_ids": ["gylt"]
@@ -1417,21 +1393,13 @@
       "dlss_fsr": "supported",
       "hdr": "unknown"
     },
-    "guidance": [
-      {
-        "id": "luma.hellblade-senuas-sacrifice.launch_argument",
-        "kind": "launch_argument",
-        "fallback_text": "Add this launch argument manually.",
-        "code": "-DX11"
-      }
-    ],
     "wiki_note_reviews": [
       {
         "section": "unreal",
         "name": "Hellblade: Senua's Sacrifice",
         "fingerprint": "adbb2c501da1a1619a4f3eb8a3ad358374847965feb920079a6ed83b2343a9e1",
         "disposition": "published",
-        "guidance_ids": ["luma.hellblade-senuas-sacrifice.launch_argument"]
+        "launch_arguments": true
       }
     ],
     "game_target_ids": ["hellblade-senuas-sacrifice"]
@@ -1622,21 +1590,13 @@
       "dlss_fsr": "experimental",
       "hdr": "unknown"
     },
-    "guidance": [
-      {
-        "id": "luma.life-is-strange-true-colors.launch_argument",
-        "kind": "launch_argument",
-        "fallback_text": "Add this launch argument manually.",
-        "code": "-dx11"
-      }
-    ],
     "wiki_note_reviews": [
       {
         "section": "unreal",
         "name": "Life is Strange: True Colors",
         "fingerprint": "07f6665e7b89499e5dd2e4eb05592f59c08cb8b9b866be02a35b504b1eeeebe3",
         "disposition": "published",
-        "guidance_ids": ["luma.life-is-strange-true-colors.launch_argument"]
+        "launch_arguments": true
       }
     ],
     "game_target_ids": ["life-is-strange-true-colors"]
@@ -1649,7 +1609,6 @@
     "arch": "X64",
     "status": "working",
     "profile": "unreal",
-    "launch_args": ["-dx11"],
     "features": {
       "dlss_fsr": "supported",
       "hdr": "unknown"
@@ -1827,21 +1786,13 @@
       "dlss_fsr": "supported",
       "hdr": "unknown"
     },
-    "guidance": [
-      {
-        "id": "luma.psychonauts-2.launch_argument",
-        "kind": "launch_argument",
-        "fallback_text": "Add this launch argument manually.",
-        "code": "-dx11"
-      }
-    ],
     "wiki_note_reviews": [
       {
         "section": "unreal",
         "name": "Psychonauts 2",
         "fingerprint": "7d6a5a7f09e584f780c1eb0c93f52b741dc9905e41f9fcc4b05b5bc58986d89e",
         "disposition": "published",
-        "guidance_ids": ["luma.psychonauts-2.launch_argument"]
+        "launch_arguments": true
       }
     ],
     "game_target_ids": ["psychonauts-2"]
@@ -1874,21 +1825,13 @@
       "dlss_fsr": "supported",
       "hdr": "unknown"
     },
-    "guidance": [
-      {
-        "id": "luma.redout.launch_argument",
-        "kind": "launch_argument",
-        "fallback_text": "Add this launch argument manually.",
-        "code": "-DX11"
-      }
-    ],
     "wiki_note_reviews": [
       {
         "section": "unreal",
         "name": "Redout: Enhanced Edition",
         "fingerprint": "adbb2c501da1a1619a4f3eb8a3ad358374847965feb920079a6ed83b2343a9e1",
         "disposition": "published",
-        "guidance_ids": ["luma.redout.launch_argument"]
+        "launch_arguments": true
       }
     ],
     "game_target_ids": ["redout-enhanced-edition"]
@@ -1906,21 +1849,13 @@
       "dlss_fsr": "supported",
       "hdr": "unknown"
     },
-    "guidance": [
-      {
-        "id": "luma.redout-2.launch_argument",
-        "kind": "launch_argument",
-        "fallback_text": "Add this launch argument manually.",
-        "code": "-DX11"
-      }
-    ],
     "wiki_note_reviews": [
       {
         "section": "unreal",
         "name": "Redout 2",
         "fingerprint": "adbb2c501da1a1619a4f3eb8a3ad358374847965feb920079a6ed83b2343a9e1",
         "disposition": "published",
-        "guidance_ids": ["luma.redout-2.launch_argument"]
+        "launch_arguments": true
       }
     ],
     "game_target_ids": ["redout-2"]
@@ -2398,11 +2333,6 @@
     },
     "guidance": [
       {
-        "id": "luma.tekken-7.game_setting",
-        "kind": "game_setting",
-        "fallback_text": "Requires the -nod3d9ex launch argument."
-      },
-      {
         "id": "luma.tekken-7.engine_ini",
         "kind": "engine_ini",
         "fallback_text": "Apply the following settings manually in Engine.ini.",
@@ -2415,7 +2345,8 @@
         "name": "Tekken 7",
         "fingerprint": "d65a605fcea28027b2d054a366d18fe70b98d5b25df49a4653a6b37e42424ed1",
         "disposition": "published",
-        "guidance_ids": ["luma.tekken-7.game_setting", "luma.tekken-7.engine_ini"]
+        "guidance_ids": ["luma.tekken-7.engine_ini"],
+        "launch_arguments": true
       }
     ],
     "game_target_ids": ["tekken-7"]
@@ -2481,25 +2412,18 @@
     "arch": "X64",
     "status": "working",
     "profile": "unreal",
+    "launch_args": ["-dx11"],
     "features": {
       "dlss_fsr": "supported",
       "hdr": "supported"
     },
-    "guidance": [
-      {
-        "id": "luma.the-ascent.launch_argument",
-        "kind": "launch_argument",
-        "fallback_text": "Add this launch argument manually.",
-        "code": "-DX11"
-      }
-    ],
     "wiki_note_reviews": [
       {
         "section": "unreal",
         "name": "The Ascent",
         "fingerprint": "adbb2c501da1a1619a4f3eb8a3ad358374847965feb920079a6ed83b2343a9e1",
         "disposition": "published",
-        "guidance_ids": ["luma.the-ascent.launch_argument"]
+        "launch_arguments": true
       }
     ],
     "game_target_ids": ["the-ascent"]
@@ -2531,21 +2455,13 @@
       "dlss_fsr": "supported",
       "hdr": "unknown"
     },
-    "guidance": [
-      {
-        "id": "luma.the-dark-pictures-man-of-medan.launch_argument",
-        "kind": "launch_argument",
-        "fallback_text": "Add this launch argument manually.",
-        "code": "-dx11"
-      }
-    ],
     "wiki_note_reviews": [
       {
         "section": "unreal",
         "name": "The Dark Pictures Anthology: Man of Medan",
         "fingerprint": "5e01b586843107fd2d435059ca8bcac91527e5310eec67d04a7625db9b249769",
         "disposition": "published",
-        "guidance_ids": ["luma.the-dark-pictures-man-of-medan.launch_argument"]
+        "launch_arguments": true
       }
     ],
     "game_target_ids": ["the-dark-pictures-man-of-medan"]
@@ -2814,21 +2730,13 @@
       "dlss_fsr": "supported",
       "hdr": "unknown"
     },
-    "guidance": [
-      {
-        "id": "luma.witch-it.launch_argument",
-        "kind": "launch_argument",
-        "fallback_text": "Add this launch argument manually.",
-        "code": "-DX11"
-      }
-    ],
     "wiki_note_reviews": [
       {
         "section": "unreal",
         "name": "Witch It",
         "fingerprint": "f1e21926909386a6360f312d5dfe1f70626cd8e88c04111c9c1d4873e3979f20",
         "disposition": "published",
-        "guidance_ids": ["luma.witch-it.launch_argument"]
+        "launch_arguments": true
       }
     ],
     "game_target_ids": ["witch-it"]
@@ -2848,15 +2756,9 @@
     },
     "guidance": [
       {
-        "id": "luma.sherlock-holmes-chapter-one.launch_argument",
-        "kind": "launch_argument",
-        "fallback_text": "Add this launch argument manually.",
-        "code": "-dx11"
-      },
-      {
         "id": "luma.sherlock-holmes-chapter-one.warning",
         "kind": "warning",
-        "fallback_text": "The -dx11 launch argument causes poor CPU performance. DLAA with Auto Exposure enabled produces jagged edges on grass."
+        "fallback_text": "The required -dx11 launch argument may reduce CPU performance. With Auto Exposure enabled, DLAA produces jagged edges on grass."
       }
     ],
     "wiki_note_reviews": [
@@ -2865,10 +2767,8 @@
         "name": "Sherlock Holmes Chapter One",
         "fingerprint": "f3ae4274e2394529d98f121c663b5b65805d1223ca808af3883f4b3c2dd94920",
         "disposition": "published",
-        "guidance_ids": [
-          "luma.sherlock-holmes-chapter-one.launch_argument",
-          "luma.sherlock-holmes-chapter-one.warning"
-        ]
+        "guidance_ids": ["luma.sherlock-holmes-chapter-one.warning"],
+        "launch_arguments": true
       }
     ],
     "game_target_ids": ["sherlock-holmes-chapter-one"]
@@ -2881,27 +2781,19 @@
     "arch": "X64",
     "status": "construction",
     "profile": "unreal",
-    "launch_args": ["-dx11"],
+    "launch_args": ["-oss=Steam -dx11"],
     "features": {
       "dlss_fsr": "experimental",
       "hdr": "unknown"
     },
     "wiki_aliases": ["Song of Nunu"],
-    "guidance": [
-      {
-        "id": "luma.song-of-nunu.launch_argument",
-        "kind": "launch_argument",
-        "fallback_text": "Add this launch argument manually.",
-        "code": "-oss=Steam -dx11"
-      }
-    ],
     "wiki_note_reviews": [
       {
         "section": "unreal",
         "name": "Song of Nunu",
         "fingerprint": "4ba4354ab31bc4923a802cd27aebbab689699d04f46dbee122258b0cadb009b9",
         "disposition": "published",
-        "guidance_ids": ["luma.song-of-nunu.launch_argument"]
+        "launch_arguments": true
       }
     ],
     "game_target_ids": ["song-of-nunu"]
@@ -3685,25 +3577,18 @@
     "arch": "X64",
     "status": "working",
     "profile": "unreal",
+    "launch_args": ["-dx11"],
     "features": {
       "dlss_fsr": "unknown",
       "hdr": "supported"
     },
-    "guidance": [
-      {
-        "id": "luma.littlenightmaresenhancededition.launch_argument",
-        "kind": "launch_argument",
-        "fallback_text": "Add this launch argument manually.",
-        "code": "-DX11"
-      }
-    ],
     "wiki_note_reviews": [
       {
         "section": "unreal",
         "name": "Little Nightmares Enhanced Edition",
         "fingerprint": "1bf146330c49b0cfed754b3de0ce9ae3dc07f425f3bb411b3ae3a909fffc4227",
         "disposition": "published",
-        "guidance_ids": ["luma.littlenightmaresenhancededition.launch_argument"]
+        "launch_arguments": true
       }
     ],
     "game_target_ids": ["littlenightmaresenhancededition"]

@@ -475,6 +475,15 @@ test("v1 schema accepts builder output with managed_dependency", () => {
         addon_file: "Luma-Schema.addon",
         external_requirement: DGVOODOO_REQUIREMENT,
         launch_args: ["-dx11"],
+        wiki_note_reviews: [
+          {
+            section: "unreal",
+            name: "Schema managed",
+            fingerprint: "c".repeat(64),
+            disposition: "published",
+            launch_arguments: true,
+          },
+        ],
       }),
     ],
   });

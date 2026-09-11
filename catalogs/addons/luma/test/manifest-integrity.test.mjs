@@ -169,6 +169,30 @@ test("manifest integrity - committed Luma v1 document is well-formed and interna
   );
   assert.ok(sharingItsAsset.length > 1, "the generic asset should be shared across titles");
 
+  const declaredLaunchArguments = new Map([
+    ["abiotic-factor", ["-dx11"]],
+    ["dead-island-2", ["-dx11"]],
+    ["gylt", ["-dx11"]],
+    ["hellblade-senuas-sacrifice", ["-dx11"]],
+    ["life-is-strange-true-colors", ["-dx11"]],
+    ["psychonauts-2", ["-dx11"]],
+    ["redout", ["-dx11"]],
+    ["redout-2", ["-dx11"]],
+    ["the-ascent", ["-dx11"]],
+    ["the-dark-pictures-man-of-medan", ["-dx11"]],
+    ["witch-it", ["-dx11"]],
+    ["sherlock-holmes-chapter-one", ["-dx11"]],
+    ["song-of-nunu", ["-oss=Steam -dx11"]],
+    ["littlenightmaresenhancededition", ["-dx11"]],
+    ["tekken-7", ["-nod3d9ex"]],
+  ]);
+  const actualLaunchArguments = new Map(
+    manifest.games
+      .filter((game) => game.requirements?.launch_arguments?.length > 0)
+      .map((game) => [game.id, game.requirements.launch_arguments]),
+  );
+  assert.deepEqual(actualLaunchArguments, declaredLaunchArguments);
+
   const vanquish = manifest.games.find((t) => t.id === VANQUISH);
   assert.ok(vanquish, "Vanquish must be present");
   assert.equal(vanquish.package.release_asset, "Luma-Vanquish-x32.zip");
@@ -243,6 +267,10 @@ test("manifest integrity - committed Luma v1 document is well-formed and interna
     );
     payloadByAsset.set(title.package.release_asset, title.package.addon_file);
     assert.equal("wiki_note_reviews" in title, false, "review records are never published");
+    assert.ok(
+      (title.guidance ?? []).every((guidance) => guidance.kind !== "launch_argument"),
+      `${title.id} must not publish launch-argument guidance`,
+    );
     for (const rule of title.match) {
       const key = `${rule.kind}:${String(rule.value ?? "").toLowerCase()}`;
       const owner = seen.get(key);

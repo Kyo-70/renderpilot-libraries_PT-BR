@@ -104,6 +104,7 @@ const SCHEMAS = Object.freeze({
   gameMatchRegistry: "catalogs/games/match-registry.schema.json",
   renodxManifestV1: "catalogs/addons/renodx/manifest-v1.schema.json",
   lumaManifestV1: "catalogs/addons/luma/manifest-v1.schema.json",
+  lumaMessagesSource: "catalogs/addons/luma/messages-source.schema.json",
   reshadeManifestV1: "catalogs/addons/reshade/manifest-v1.schema.json",
 });
 
@@ -200,6 +201,11 @@ export const jsonDocuments = defineDocuments([
     publishedToR2: true,
   },
   {
+    file: "catalogs/addons/luma/messages.json",
+    schema: SCHEMAS.lumaMessagesSource,
+    publishedToR2: false,
+  },
+  {
     file: "addons/v1/reshade.json",
     schema: SCHEMAS.reshadeManifestV1,
     r2Key: "addons/v1/reshade.json",
@@ -263,6 +269,7 @@ export const addonCatalogs = Object.freeze({
     "luma",
     {
       curatedGames: "curated_games.json",
+      messages: "messages.json",
       matchRegistry: "../../games/match-registry.json",
       pending: "pending_match.json",
       unmatched: "unmatched.json",

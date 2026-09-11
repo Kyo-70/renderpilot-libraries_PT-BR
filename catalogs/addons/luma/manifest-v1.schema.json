@@ -31,6 +31,7 @@
       "properties": {
         "id": { "type": "string", "minLength": 1 },
         "kind": {
+          "description": "launch_argument is accepted for historical v1 input only; current manifests use requirements.launch_arguments.",
           "enum": [
             "game_setting",
             "engine_ini",

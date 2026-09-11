@@ -11,8 +11,18 @@ import { SCHEMA_VERSION } from "./v1.mjs";
 // ReShade host. Download URLs live in the standalone ReShade v1 catalogue.
 export const MIN_RESHADE_VERSION = "6.7.0";
 
+export const LUMA_LOCALES = Object.freeze([
+  "de",
+  "es",
+  "fr",
+  "ja",
+  "ru",
+  "zh-Hans",
+  "zh-Hant",
+]);
+
 /** Builds the public Luma v1 wire document from normalized authoring profiles. */
-export function buildManifest({ curatedGames, registry, generatedAt } = {}) {
+export function buildManifest({ curatedGames, messages, registry, generatedAt } = {}) {
   const profiles = normalizeCuratedGames(curatedGames, registry);
   const games = [];
   const pending = [];
@@ -51,6 +61,7 @@ export function buildManifest({ curatedGames, registry, generatedAt } = {}) {
   assertUniqueMatchRules(games);
   assertAssetPayloadIdentity(games);
   assertUniqueGuidanceIds(games);
+  validateLumaMessages(messages, games);
 
   return {
     manifest: {
@@ -139,4 +150,119 @@ function buildStats(games, pending) {
     engineProfiles: games.filter((game) => game.profile !== "game").length,
     blacklist: games.filter((game) => game.availability?.kind === "blocked").length,
   };
+}
+
+export const LUMA_MESSAGE_ID_PATTERN = /^[a-z0-9_.-]+$/;
+
+function validateLumaMessages(messages, games) {
+  if (!messages) {
+    throw new Error("Luma messages catalog is required to build the manifest");
+  }
+  if (messages?.schema_version !== 1 || !Array.isArray(messages.messages)) {
+    throw new Error("Luma messages catalog has invalid schema_version or messages array");
+  }
+
+  const messageMap = new Map();
+  for (const [index, msg] of messages.messages.entries()) {
+    if (
+      !msg.id ||
+      typeof msg.id !== "string" ||
+      !msg.id.trim() ||
+      !LUMA_MESSAGE_ID_PATTERN.test(msg.id)
+    ) {
+      throw new Error(
+        `Luma message at index ${index} has invalid id: ${JSON.stringify(msg?.id)}`,
+      );
+    }
+    if (messageMap.has(msg.id)) {
+      throw new Error(`Duplicate Luma message id: ${msg.id}`);
+    }
+    if (
+      !msg.fallback_text ||
+      typeof msg.fallback_text !== "string" ||
+      !msg.fallback_text.trim()
+    ) {
+      throw new Error(`Luma message ${msg.id} missing fallback_text`);
+    }
+    if (!msg.translations || typeof msg.translations !== "object") {
+      throw new Error(`Luma message ${msg.id} missing translations`);
+    }
+    const locales = Object.keys(msg.translations).sort();
+    if (JSON.stringify(locales) !== JSON.stringify([...LUMA_LOCALES].sort())) {
+      throw new Error(`Luma message ${msg.id} does not have exact locale coverage`);
+    }
+    for (const locale of LUMA_LOCALES) {
+      if (
+        typeof msg.translations[locale] !== "string" ||
+        !msg.translations[locale].trim()
+      ) {
+        throw new Error(`Luma message ${msg.id} translation for ${locale} is empty`);
+      }
+    }
+    messageMap.set(msg.id, msg);
+  }
+
+  const usedIds = new Set();
+  for (const game of games) {
+    for (const guidance of game.guidance ?? []) {
+      const msg = messageMap.get(guidance.id);
+      if (!msg) {
+        throw new Error(
+          `Luma guidance id "${guidance.id}" in game "${game.id}" is not in messages.json`,
+        );
+      }
+      if (msg.fallback_text !== guidance.fallback_text) {
+        throw new Error(
+          `Luma guidance id "${guidance.id}" fallback_text mismatch between curated_games and messages.json`,
+        );
+      }
+      if (msg.kind !== guidance.kind) {
+        throw new Error(
+          `Luma guidance id "${guidance.id}" kind mismatch between curated_games and messages.json: expected "${guidance.kind}", got "${msg.kind}"`,
+        );
+      }
+      const expectedContext = `guidance.${guidance.kind}`;
+      if (msg.context !== expectedContext) {
+        throw new Error(
+          `Luma guidance id "${guidance.id}" context mismatch: expected "${expectedContext}", got "${msg.context}"`,
+        );
+      }
+      usedIds.add(guidance.id);
+    }
+
+    if (game.availability?.message) {
+      const availMsg = game.availability.message;
+      const msg = messageMap.get(availMsg.id);
+      if (!msg) {
+        throw new Error(
+          `Luma availability message id "${availMsg.id}" in game "${game.id}" is not in messages.json`,
+        );
+      }
+      if (msg.fallback_text !== availMsg.fallback_text) {
+        throw new Error(
+          `Luma availability message id "${availMsg.id}" fallback_text mismatch between curated_games and messages.json`,
+        );
+      }
+      if (msg.kind !== game.availability.kind) {
+        throw new Error(
+          `Luma availability message id "${availMsg.id}" kind mismatch: expected "${game.availability.kind}", got "${msg.kind}"`,
+        );
+      }
+      const expectedContext = `availability.${game.availability.kind}`;
+      if (msg.context !== expectedContext) {
+        throw new Error(
+          `Luma availability message id "${availMsg.id}" context mismatch: expected "${expectedContext}", got "${msg.context}"`,
+        );
+      }
+      usedIds.add(availMsg.id);
+    }
+  }
+
+  for (const id of messageMap.keys()) {
+    if (!usedIds.has(id)) {
+      throw new Error(
+        `Luma message "${id}" in messages.json is not used by any game guidance or availability`,
+      );
+    }
+  }
 }

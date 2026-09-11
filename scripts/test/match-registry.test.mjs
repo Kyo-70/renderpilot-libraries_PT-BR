@@ -42,14 +42,21 @@ function appendConsumer(consumersByTarget, targetId, match) {
 }
 
 test("canonical game targets are the sole match source for every add-on", async () => {
-  const [registrySource, lumaCurated, renodxWiki, renodxCurated, renodxOverlay] =
-    await Promise.all([
-      readJson("catalogs", "games", "match-registry.json"),
-      readJson("catalogs", "addons", "luma", "curated_games.json"),
-      readJson("catalogs", "addons", "renodx", "wiki_games.json"),
-      readJson("catalogs", "addons", "renodx", "curated_games.json"),
-      readJson("catalogs", "addons", "renodx", "match_overlay.json"),
-    ]);
+  const [
+    registrySource,
+    lumaCurated,
+    lumaMessages,
+    renodxWiki,
+    renodxCurated,
+    renodxOverlay,
+  ] = await Promise.all([
+    readJson("catalogs", "games", "match-registry.json"),
+    readJson("catalogs", "addons", "luma", "curated_games.json"),
+    readJson("catalogs", "addons", "luma", "messages.json"),
+    readJson("catalogs", "addons", "renodx", "wiki_games.json"),
+    readJson("catalogs", "addons", "renodx", "curated_games.json"),
+    readJson("catalogs", "addons", "renodx", "match_overlay.json"),
+  ]);
   const registry = createMatchRegistry(registrySource);
   const targets = registry.targetsById;
   const allowedKinds = new Set([
@@ -68,6 +75,7 @@ test("canonical game targets are the sole match source for every add-on", async 
 
   const luma = buildLumaManifest({
     curatedGames: lumaCurated,
+    messages: lumaMessages,
     registry,
     generatedAt: "2026-09-10T00:00:00Z",
   }).manifest;

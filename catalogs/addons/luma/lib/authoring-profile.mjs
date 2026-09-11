@@ -33,12 +33,11 @@ const FEATURE_STATUSES = new Set(["supported", "unsupported", "experimental", "u
 const GUIDANCE_KINDS = new Set([
   "game_setting",
   "engine_ini",
-  "launch_argument",
   "warning",
   "compatibility",
   "external_tool",
 ]);
-const CODE_GUIDANCE_KINDS = new Set(["engine_ini", "launch_argument"]);
+const CODE_GUIDANCE_KINDS = new Set(["engine_ini"]);
 const GUIDANCE_ID_RE = /^[a-z0-9][a-z0-9._-]*$/u;
 const WIKI_REVIEW_SECTIONS = new Set(["completed", "unreal"]);
 const WIKI_REVIEW_DISPOSITIONS = new Set(["published", "omitted"]);
@@ -70,11 +69,17 @@ function normalizeCuratedGame(game, index, registry) {
     context,
   );
   const profile = normalizeProfile(game.profile, asset, arch, context);
+  const launchArgs = assertOptionalNonEmptyStringArray(
+    game.launch_args,
+    `${context}.launch_args`,
+  );
   const guidance = normalizeGuidance(game.guidance, `${context}.guidance`);
   const wikiNoteReviews = normalizeWikiNoteReviews(
     game.wiki_note_reviews,
     `${context}.wiki_note_reviews`,
+    launchArgs.length > 0,
   );
+  assertLaunchArgumentReviewProvenance(launchArgs, wikiNoteReviews, context);
   assertReviewGuidanceReferences(guidance, wikiNoteReviews, context);
 
   if (game.match_ignore !== undefined && typeof game.match_ignore !== "boolean") {
@@ -101,10 +106,7 @@ function normalizeCuratedGame(game, index, registry) {
       game.blacklist === undefined
         ? null
         : requiredNonEmptyString(game.blacklist, `${context}.blacklist`),
-    launch_args: assertOptionalNonEmptyStringArray(
-      game.launch_args,
-      `${context}.launch_args`,
-    ),
+    launch_args: launchArgs,
     external_requirement: normalizeExternalRequirement(
       game.external_requirement,
       `${context}.external_requirement`,
@@ -228,9 +230,7 @@ function normalizeGuidance(value, context) {
         throw new Error(`${itemContext}.code is required for ${kind} guidance`);
       }
     } else if (code !== undefined) {
-      throw new Error(
-        `${itemContext}.code is only valid for engine_ini or launch_argument guidance`,
-      );
+      throw new Error(`${itemContext}.code is only valid for engine_ini guidance`);
     }
 
     return code === undefined
@@ -239,7 +239,7 @@ function normalizeGuidance(value, context) {
   });
 }
 
-function normalizeWikiNoteReviews(value, context) {
+function normalizeWikiNoteReviews(value, context, hasLaunchArguments) {
   if (value === undefined) return [];
   if (!Array.isArray(value)) throw new Error(`${context} must be an array when present`);
 
@@ -275,12 +275,21 @@ function normalizeWikiNoteReviews(value, context) {
       item.guidance_ids,
       `${itemContext}.guidance_ids`,
     );
+    const publishesLaunchArguments = item.launch_arguments;
+    if (publishesLaunchArguments !== undefined && publishesLaunchArguments !== true) {
+      throw new Error(`${itemContext}.launch_arguments must be true when present`);
+    }
     const reason = item.reason;
 
     if (disposition === "published") {
-      if (guidanceIds.length === 0) {
+      if (guidanceIds.length === 0 && !publishesLaunchArguments) {
         throw new Error(
-          `${itemContext}.guidance_ids must be non-empty for published reviews`,
+          `${itemContext}.published review must carry guidance_ids or launch_arguments`,
+        );
+      }
+      if (publishesLaunchArguments && !hasLaunchArguments) {
+        throw new Error(
+          `${itemContext}.launch_arguments requires a non-empty game.launch_args`,
         );
       }
       if (reason !== undefined) {
@@ -289,6 +298,11 @@ function normalizeWikiNoteReviews(value, context) {
     } else {
       if (guidanceIds.length > 0) {
         throw new Error(`${itemContext}.guidance_ids is only valid for published reviews`);
+      }
+      if (publishesLaunchArguments) {
+        throw new Error(
+          `${itemContext}.launch_arguments is only valid for published reviews`,
+        );
       }
       if (typeof reason !== "string" || reason.trim() === "") {
         throw new Error(`${itemContext}.reason is required for omitted reviews`);
@@ -301,9 +315,25 @@ function normalizeWikiNoteReviews(value, context) {
       fingerprint,
       disposition,
       ...(guidanceIds.length > 0 ? { guidance_ids: guidanceIds } : {}),
+      ...(publishesLaunchArguments ? { launch_arguments: true } : {}),
       ...(reason === undefined ? {} : { reason }),
     };
   });
+}
+
+function assertLaunchArgumentReviewProvenance(launchArgs, reviews, context) {
+  if (launchArgs.length === 0) return;
+
+  if (
+    !reviews.some(
+      ({ disposition, launch_arguments: launchArguments }) =>
+        disposition === "published" && launchArguments,
+    )
+  ) {
+    throw new Error(
+      `${context}.launch_args requires a published wiki_note_reviews launch_arguments carrier`,
+    );
+  }
 }
 
 function normalizeAddonFile(addonFile, context) {

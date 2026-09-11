@@ -14,6 +14,7 @@ import { createMatchRegistry } from "../../../scripts/lib/match-registry.mjs";
 
 const FILES = Object.freeze({
   curatedGames: addonCatalogs.luma.sources.curatedGames,
+  messages: addonCatalogs.luma.sources.messages,
   matchRegistry: addonCatalogs.luma.sources.matchRegistry,
   outputs: {
     manifest: addonCatalogs.luma.outputs.manifest.file,
@@ -42,6 +43,7 @@ runGenerateManifestMain(() => ({
   },
   readInputs: ({ generatedAt }) => ({
     curatedGames: readJsonFile(FILES.curatedGames, "curated_games.json"),
+    messages: readJsonFile(FILES.messages, "messages.json"),
     registry: createMatchRegistry(readJsonFile(FILES.matchRegistry, "match-registry.json")),
     generatedAt,
   }),

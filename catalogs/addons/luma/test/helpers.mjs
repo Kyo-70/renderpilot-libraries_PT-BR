@@ -4,14 +4,55 @@ import path from "node:path";
 import Ajv2020 from "ajv/dist/2020.js";
 import addFormats from "ajv-formats";
 
-import { buildManifest as buildProductionManifest } from "../lib/build-manifest.mjs";
+import {
+  buildManifest as buildProductionManifest,
+  LUMA_LOCALES,
+} from "../lib/build-manifest.mjs";
 import { createMatchRegistry } from "../../../../scripts/lib/match-registry.mjs";
 
 const SCHEMA_PATH = path.join(import.meta.dirname, "..", "manifest-v1.schema.json");
 
+function synthesizeTestMessages(profiles) {
+  const messages = [];
+  const seen = new Set();
+
+  for (const profile of profiles) {
+    for (const guidance of profile.guidance ?? []) {
+      if (!seen.has(guidance.id)) {
+        seen.add(guidance.id);
+        messages.push({
+          id: guidance.id,
+          fallback_text: guidance.fallback_text,
+          kind: guidance.kind,
+          context: `guidance.${guidance.kind}`,
+          translations: Object.fromEntries(
+            LUMA_LOCALES.map((locale) => [locale, "test translation"]),
+          ),
+        });
+      }
+    }
+    if (profile.blacklist) {
+      if (!seen.has(profile.blacklist)) {
+        seen.add(profile.blacklist);
+        messages.push({
+          id: profile.blacklist,
+          fallback_text: "This Luma profile is unavailable.",
+          kind: "blocked",
+          context: "availability.blocked",
+          translations: Object.fromEntries(
+            LUMA_LOCALES.map((locale) => [locale, "test translation"]),
+          ),
+        });
+      }
+    }
+  }
+
+  return { schema_version: 1, messages };
+}
+
 // Unit fixtures name a target and provide its registry rules separately. The
 // production authoring object itself is always target-reference-only.
-export function buildLumaManifestForTest({ curatedGames, ...options }) {
+export function buildLumaManifestForTest({ curatedGames, messages, ...options }) {
   const targets = [];
   const profiles = curatedGames.map((profile, profileIndex) => {
     const { test_target_rules: rules, ...authoredProfile } = profile;
@@ -39,6 +80,7 @@ export function buildLumaManifestForTest({ curatedGames, ...options }) {
 
   return buildProductionManifest({
     ...options,
+    messages: messages ?? synthesizeTestMessages(profiles),
     curatedGames: profiles,
     registry: createMatchRegistry({
       targets: targets.sort((left, right) => left.id.localeCompare(right.id)),
