@@ -1,25 +1,29 @@
 # Add-on catalogs
 
-RenderPilot consumes versioned manifests for RenoDX, Luma Framework, and the shared ReShade host. This repository owns their producer contracts and reviewed source data; installation behavior remains in the main RenderPilot repository.
+RenderPilot consumes versioned manifests for RenoDX, Luma Framework, the shared ReShade host, and OptiScaler. This repository owns their producer contracts and reviewed source data; installation behavior remains in the main RenderPilot repository.
 
 ## Published contracts
 
-| R2 key                   | Consumer            | Contract   |
-| ------------------------ | ------------------- | ---------- |
-| `addons/v1/renodx.json`  | Current RenderPilot | RenoDX v1  |
-| `addons/v1/luma.json`    | Current RenderPilot | Luma v1    |
-| `addons/v1/reshade.json` | Current RenderPilot | ReShade v1 |
+| R2 key                                             | Consumer            | Contract                                     |
+| -------------------------------------------------- | ------------------- | -------------------------------------------- |
+| `addons/v1/renodx.json`                            | Current RenderPilot | RenoDX v1                                    |
+| `addons/v1/luma.json`                              | Current RenderPilot | Luma v1                                      |
+| `addons/v1/reshade.json`                           | Current RenderPilot | ReShade v1                                   |
+| `addons/v1/optiscaler.json`                        | Current RenderPilot | OptiScaler release v1                        |
+| `addons/v1/optiscaler-compatibility.json`          | Current RenderPilot | OptiScaler compatibility v1                  |
+| `addons/v1/optiscaler-compatibility-messages.json` | Current RenderPilot | OptiScaler compatibility message contract v1 |
 
 Legacy root keys such as `renodx_manifest.json` and `reshade_manifest.json` are not published by current tooling. `scripts/catalog.mjs` is the registry for current document paths, schemas, generated outputs, and R2 keys.
 
 ## Authoring sources
 
-| Path                       | Responsibility                                                                             |
-| -------------------------- | ------------------------------------------------------------------------------------------ |
-| `catalogs/games/`          | Canonical exact game/edition targets, their verified match facts, and provenance           |
-| `catalogs/addons/renodx/`  | Wiki snapshot, reviewed matching overlay, pending identities, schema, generator, and tests |
-| `catalogs/addons/luma/`    | Curated profiles, reviewed Wiki data, managed dependencies, schema, generator, and tests   |
-| `catalogs/addons/reshade/` | ReShade channel contract, schema, generator, and provider-local tests                      |
+| Path                          | Responsibility                                                                                          |
+| ----------------------------- | ------------------------------------------------------------------------------------------------------- |
+| `catalogs/games/`             | Canonical exact game/edition targets, their verified match facts, and provenance                        |
+| `catalogs/addons/renodx/`     | Wiki snapshot, reviewed matching overlay, pending identities, schema, generator, and tests              |
+| `catalogs/addons/luma/`       | Curated profiles, reviewed Wiki data, managed dependencies, schema, generator, and tests                |
+| `catalogs/addons/reshade/`    | ReShade channel contract, schema, generator, and provider-local tests                                   |
+| `catalogs/addons/optiscaler/` | Content-addressed release members, module graph, independent compatibility curation, schemas, and tests |
 
 Generated `unmatched.json` files are local review aids created by `match-pending`. They are gitignored, are never published, and do not act as sources of truth.
 
@@ -36,7 +40,7 @@ A public manifest can describe reviewed requirements or instructions. It does no
 
 ## Curation rules
 
-- `catalogs/games/match-registry.json` is the sole authoring source for exact game/edition match facts. Luma and RenoDX profiles refer to one or more `game_target_ids`. Generators project each target's complete canonical fact set.
+- `catalogs/games/match-registry.json` is the sole authoring source for exact game/edition match facts. Luma and RenoDX profiles refer to one or more `game_target_ids`; OptiScaler's per-target policy records refer to one `game_target_id`. Generators project each target's complete canonical fact set.
 - A target is an install-compatible game or edition, not a broad title. Split genuinely different editions into distinct targets rather than making an add-on choose individual rules.
 - Exact store identities are globally unique. A bare executable leaf is published only when it identifies one target globally.
 - Engine-wide RenoDX fallbacks belong in `engine_profiles`.
@@ -52,6 +56,7 @@ Detailed authoring rules live beside each source:
 - [RenoDX curation](../catalogs/addons/renodx/PUBLISHING.md)
 - [Luma curation](../catalogs/addons/luma/PUBLISHING.md)
 - [ReShade source catalogs](../catalogs/addons/reshade/PUBLISHING.md)
+- [OptiScaler curation](../catalogs/addons/optiscaler/PUBLISHING.md)
 
 ## Synchronization
 
@@ -61,14 +66,16 @@ Soft network skips and unclassified upstream failures do not become catalog-drif
 
 ReShade stable refresh rewrites only its reviewed source module and generated v1 manifest. Scheduled refresh workflows open a pull request when data changes; they do not push directly to `main` or publish JSON to R2.
 
+OptiScaler release authoring deduplicates members by SHA-256; generation expands those references into flat release records for the client. Compatibility is an independent advisory catalogue with its own upstream snapshot, review ledger, and localized message contract. Binaries remain on pinned official upstream assets. See the [OptiScaler curation](../catalogs/addons/optiscaler/PUBLISHING.md) for the review procedure.
+
 See [Operations and publishing](operations.md#refreshing-add-ons) for the exact commands and automation boundary.
 
 ## Sources of truth
 
 - [Catalog registry](../scripts/catalog.mjs)
-- [Canonical game targets](../catalogs/games/match-registry.json)
-- [Game match registry schema](../catalogs/games/match-registry.schema.json)
 - [RenoDX manifest schema](../catalogs/addons/renodx/manifest-v1.schema.json)
 - [Luma manifest schema](../catalogs/addons/luma/manifest-v1.schema.json)
 - [ReShade manifest schema](../catalogs/addons/reshade/manifest-v1.schema.json)
+- [OptiScaler source schema](../catalogs/addons/optiscaler/manifest-source.schema.json)
+- [OptiScaler manifest schema](../catalogs/addons/optiscaler/manifest-v1.schema.json)
 - [Wiki drift workflow](../.github/workflows/wiki-drift.yml)

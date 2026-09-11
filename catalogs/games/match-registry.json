@@ -47,6 +47,20 @@
       ]
     },
     {
+      "id": "1666-amsterdam",
+      "rules": [
+        {
+          "id": "steam-3949550",
+          "kind": "steam_appid",
+          "value": "3949550",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0002"
+          }
+        }
+      ]
+    },
+    {
       "id": "420blazeit2-game-of-the-year-dank-dreams-and-goated-memes-wow-11-like-and-subscribe-poggerz-edition",
       "rules": [
         {
@@ -70,6 +84,34 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#60-parsecs"
+          }
+        }
+      ]
+    },
+    {
+      "id": "63-days",
+      "rules": [
+        {
+          "id": "steam-2202120",
+          "kind": "steam_appid",
+          "value": "2202120",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0005"
+          }
+        }
+      ]
+    },
+    {
+      "id": "687-days-on-mars-demo",
+      "rules": [
+        {
+          "id": "steam-3850990",
+          "kind": "steam_appid",
+          "value": "3850990",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0006"
           }
         }
       ]
@@ -149,6 +191,20 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#a-plague-tale-requiem"
+          }
+        }
+      ]
+    },
+    {
+      "id": "a-quiet-place-the-road-ahead",
+      "rules": [
+        {
+          "id": "steam-2233120",
+          "kind": "steam_appid",
+          "value": "2233120",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0025"
           }
         }
       ]
@@ -255,6 +311,34 @@
           "provenance": {
             "source": "luma-curated-games",
             "locator": "catalogs/addons/luma/curated_games.json#ace-combat-7"
+          }
+        }
+      ]
+    },
+    {
+      "id": "achilles-legends-untold",
+      "rules": [
+        {
+          "id": "steam-1314000",
+          "kind": "steam_appid",
+          "value": "1314000",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0007"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ad-infinitum",
+      "rules": [
+        {
+          "id": "steam-1234430",
+          "kind": "steam_appid",
+          "value": "1234430",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0008"
           }
         }
       ]
@@ -432,6 +516,34 @@
       ]
     },
     {
+      "id": "airborne-empire",
+      "rules": [
+        {
+          "id": "steam-2438680",
+          "kind": "steam_appid",
+          "value": "2438680",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0010"
+          }
+        }
+      ]
+    },
+    {
+      "id": "airportsim",
+      "rules": [
+        {
+          "id": "steam-1715280",
+          "kind": "steam_appid",
+          "value": "1715280",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0011"
+          }
+        }
+      ]
+    },
+    {
       "id": "ak-xolotl-together",
       "rules": [
         {
@@ -455,6 +567,20 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#akiba-s-trip-hellbound-debriefed"
+          }
+        }
+      ]
+    },
+    {
+      "id": "akimbot",
+      "rules": [
+        {
+          "id": "steam-1843540",
+          "kind": "steam_appid",
+          "value": "1843540",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0012"
           }
         }
       ]
@@ -529,6 +655,20 @@
       ]
     },
     {
+      "id": "alien-agent-x",
+      "rules": [
+        {
+          "id": "steam-2257590",
+          "kind": "steam_appid",
+          "value": "2257590",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0016"
+          }
+        }
+      ]
+    },
+    {
       "id": "alien-isolation",
       "rules": [
         {
@@ -547,6 +687,20 @@
           "provenance": {
             "source": "steam-appinfo",
             "locator": "steam-executable-observation:214490"
+          }
+        }
+      ]
+    },
+    {
+      "id": "alien-rogue-incursion-evolved-edition",
+      "rules": [
+        {
+          "id": "steam-3655390",
+          "kind": "steam_appid",
+          "value": "3655390",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0015"
           }
         }
       ]
@@ -589,6 +743,20 @@
       ]
     },
     {
+      "id": "aliens-fireteam-elite-2",
+      "rules": [
+        {
+          "id": "steam-3448650",
+          "kind": "steam_appid",
+          "value": "3448650",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0017"
+          }
+        }
+      ]
+    },
+    {
       "id": "all-we-need",
       "rules": [
         {
@@ -603,6 +771,20 @@
       ]
     },
     {
+      "id": "alone-in-the-dark-2024",
+      "rules": [
+        {
+          "id": "steam-1310410",
+          "kind": "steam_appid",
+          "value": "1310410",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0018"
+          }
+        }
+      ]
+    },
+    {
       "id": "altheia-the-wrath-of-aferi",
       "rules": [
         {
@@ -612,6 +794,20 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#altheia-the-wrath-of-aferi"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ambulance-life-a-paramedic-simulator",
+      "rules": [
+        {
+          "id": "steam-1926520",
+          "kind": "steam_appid",
+          "value": "1926520",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0019"
           }
         }
       ]
@@ -733,6 +929,20 @@
       ]
     },
     {
+      "id": "anchor-quest-for-atlantis",
+      "rules": [
+        {
+          "id": "steam-3247570",
+          "kind": "steam_appid",
+          "value": "3247570",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0021"
+          }
+        }
+      ]
+    },
+    {
       "id": "anger-foot",
       "rules": [
         {
@@ -821,6 +1031,20 @@
       ]
     },
     {
+      "id": "apocalypse-2-0",
+      "rules": [
+        {
+          "id": "steam-1291680",
+          "kind": "steam_appid",
+          "value": "1291680",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0024"
+          }
+        }
+      ]
+    },
+    {
       "id": "aragami",
       "rules": [
         {
@@ -844,6 +1068,34 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#aragami-2"
+          }
+        }
+      ]
+    },
+    {
+      "id": "arcadegeddon",
+      "rules": [
+        {
+          "id": "steam-1515640",
+          "kind": "steam_appid",
+          "value": "1515640",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0026"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ark-survival-ascended",
+      "rules": [
+        {
+          "id": "steam-2399830",
+          "kind": "steam_appid",
+          "value": "2399830",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0027"
           }
         }
       ]
@@ -877,6 +1129,20 @@
       ]
     },
     {
+      "id": "armatus",
+      "rules": [
+        {
+          "id": "steam-3660710",
+          "kind": "steam_appid",
+          "value": "3660710",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0029"
+          }
+        }
+      ]
+    },
+    {
       "id": "armored-core-vi-fires-of-rubicon",
       "rules": [
         {
@@ -891,6 +1157,20 @@
       ]
     },
     {
+      "id": "arons-adventure",
+      "rules": [
+        {
+          "id": "steam-1013910",
+          "kind": "steam_appid",
+          "value": "1013910",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0030"
+          }
+        }
+      ]
+    },
+    {
       "id": "art-of-rally",
       "rules": [
         {
@@ -900,6 +1180,20 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#art-of-rally"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ascend-to-zero",
+      "rules": [
+        {
+          "id": "steam-2697940",
+          "kind": "steam_appid",
+          "value": "2697940",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0031"
           }
         }
       ]
@@ -923,6 +1217,34 @@
           "provenance": {
             "source": "luma-curated-games",
             "locator": "catalogs/addons/luma/curated_games.json#ashen"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ashgard-infinity-mask",
+      "rules": [
+        {
+          "id": "steam-3372950",
+          "kind": "steam_appid",
+          "value": "3372950",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0032"
+          }
+        }
+      ]
+    },
+    {
+      "id": "aska",
+      "rules": [
+        {
+          "id": "steam-1898300",
+          "kind": "steam_appid",
+          "value": "1898300",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0033"
           }
         }
       ]
@@ -1296,6 +1618,34 @@
       ]
     },
     {
+      "id": "assetto-corsa-competizione",
+      "rules": [
+        {
+          "id": "steam-805550",
+          "kind": "steam_appid",
+          "value": "805550",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0037"
+          }
+        }
+      ]
+    },
+    {
+      "id": "assetto-corsa-evo",
+      "rules": [
+        {
+          "id": "steam-3058630",
+          "kind": "steam_appid",
+          "value": "3058630",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0038"
+          }
+        }
+      ]
+    },
+    {
       "id": "assetto-corsa-rally",
       "rules": [
         {
@@ -1333,6 +1683,20 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#astrea-six-sided-oracles"
+          }
+        }
+      ]
+    },
+    {
+      "id": "astrobotanica",
+      "rules": [
+        {
+          "id": "steam-2720920",
+          "kind": "steam_appid",
+          "value": "2720920",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0041"
           }
         }
       ]
@@ -1583,6 +1947,34 @@
       ]
     },
     {
+      "id": "automate-it-factory-puzzle",
+      "rules": [
+        {
+          "id": "steam-2472770",
+          "kind": "steam_appid",
+          "value": "2472770",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0045"
+          }
+        }
+      ]
+    },
+    {
+      "id": "automation-the-car-company-tycoon-game",
+      "rules": [
+        {
+          "id": "steam-293760",
+          "kind": "steam_appid",
+          "value": "293760",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0046"
+          }
+        }
+      ]
+    },
+    {
       "id": "autonauts",
       "rules": [
         {
@@ -1713,6 +2105,20 @@
       ]
     },
     {
+      "id": "backrooms-lost-runners-demo",
+      "rules": [
+        {
+          "id": "steam-3971460",
+          "kind": "steam_appid",
+          "value": "3971460",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0049"
+          }
+        }
+      ]
+    },
+    {
       "id": "bad-north-jotunn-edition",
       "rules": [
         {
@@ -1750,6 +2156,34 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#ball-x-pit"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ballads-of-hongye",
+      "rules": [
+        {
+          "id": "steam-2656540",
+          "kind": "steam_appid",
+          "value": "2656540",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0051"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ballex-2-the-hanging-gardens",
+      "rules": [
+        {
+          "id": "steam-1383570",
+          "kind": "steam_appid",
+          "value": "1383570",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0052"
           }
         }
       ]
@@ -1834,6 +2268,20 @@
       ]
     },
     {
+      "id": "batora-lost-haven",
+      "rules": [
+        {
+          "id": "steam-1506440",
+          "kind": "steam_appid",
+          "value": "1506440",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0054"
+          }
+        }
+      ]
+    },
+    {
       "id": "battlestar-galactica-deadlock",
       "rules": [
         {
@@ -1857,6 +2305,48 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#battletech"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bears-in-space",
+      "rules": [
+        {
+          "id": "steam-1309620",
+          "kind": "steam_appid",
+          "value": "1309620",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0055"
+          }
+        }
+      ]
+    },
+    {
+      "id": "beast-false-prophet",
+      "rules": [
+        {
+          "id": "steam-1145630",
+          "kind": "steam_appid",
+          "value": "1145630",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0056"
+          }
+        }
+      ]
+    },
+    {
+      "id": "beast-of-reincarnation",
+      "rules": [
+        {
+          "id": "steam-2001760",
+          "kind": "steam_appid",
+          "value": "2001760",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0057"
           }
         }
       ]
@@ -1955,6 +2445,20 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#beholder-3"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bellwright",
+      "rules": [
+        {
+          "id": "steam-1812450",
+          "kind": "steam_appid",
+          "value": "1812450",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0058"
           }
         }
       ]
@@ -2113,6 +2617,20 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#beyond-galaxyland"
+          }
+        }
+      ]
+    },
+    {
+      "id": "beyond-hanwell",
+      "rules": [
+        {
+          "id": "steam-2565550",
+          "kind": "steam_appid",
+          "value": "2565550",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0059"
           }
         }
       ]
@@ -2280,6 +2798,20 @@
       ]
     },
     {
+      "id": "black-one-blood-brothers",
+      "rules": [
+        {
+          "id": "steam-1621560",
+          "kind": "steam_appid",
+          "value": "1621560",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0061"
+          }
+        }
+      ]
+    },
+    {
       "id": "blacktail",
       "rules": [
         {
@@ -2308,6 +2840,20 @@
       ]
     },
     {
+      "id": "blades-of-fire",
+      "rules": [
+        {
+          "id": "steam-2091020",
+          "kind": "steam_appid",
+          "value": "2091020",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0063"
+          }
+        }
+      ]
+    },
+    {
       "id": "blairwitch",
       "rules": [
         {
@@ -2331,6 +2877,62 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#blazblue-entropy-effect"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bleak-faith-forsaken",
+      "rules": [
+        {
+          "id": "steam-1173220",
+          "kind": "steam_appid",
+          "value": "1173220",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0064"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bleak-haven",
+      "rules": [
+        {
+          "id": "steam-3566840",
+          "kind": "steam_appid",
+          "value": "3566840",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0065"
+          }
+        }
+      ]
+    },
+    {
+      "id": "blind-fate-edo-no-yami",
+      "rules": [
+        {
+          "id": "steam-1294880",
+          "kind": "steam_appid",
+          "value": "1294880",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0066"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bloodhound",
+      "rules": [
+        {
+          "id": "steam-1926270",
+          "kind": "steam_appid",
+          "value": "1926270",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0067"
           }
         }
       ]
@@ -2387,6 +2989,20 @@
       ]
     },
     {
+      "id": "blue-protocol-star-resonance",
+      "rules": [
+        {
+          "id": "steam-3681810",
+          "kind": "steam_appid",
+          "value": "3681810",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0068"
+          }
+        }
+      ]
+    },
+    {
       "id": "blue-reflection-second-light",
       "rules": [
         {
@@ -2405,6 +3021,20 @@
           "provenance": {
             "source": "luma-curated-games",
             "locator": "catalogs/addons/luma/curated_games.json#blue-reflection-second-light"
+          }
+        }
+      ]
+    },
+    {
+      "id": "boba-cafe-simulator",
+      "rules": [
+        {
+          "id": "steam-3683770",
+          "kind": "steam_appid",
+          "value": "3683770",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0069"
           }
         }
       ]
@@ -2517,6 +3147,20 @@
       ]
     },
     {
+      "id": "bottle-pilgrim-redux",
+      "rules": [
+        {
+          "id": "steam-735350",
+          "kind": "steam_appid",
+          "value": "735350",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0071"
+          }
+        }
+      ]
+    },
+    {
       "id": "bounty-star",
       "rules": [
         {
@@ -2559,6 +3203,20 @@
       ]
     },
     {
+      "id": "brawlers-of-the-west",
+      "rules": [
+        {
+          "id": "steam-3268960",
+          "kind": "steam_appid",
+          "value": "3268960",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0072"
+          }
+        }
+      ]
+    },
+    {
       "id": "breachway",
       "rules": [
         {
@@ -2587,6 +3245,20 @@
       ]
     },
     {
+      "id": "break-arts-iii",
+      "rules": [
+        {
+          "id": "steam-2522430",
+          "kind": "steam_appid",
+          "value": "2522430",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0073"
+          }
+        }
+      ]
+    },
+    {
       "id": "breathedge",
       "rules": [
         {
@@ -2596,6 +3268,20 @@
           "provenance": {
             "source": "luma-curated-games",
             "locator": "catalogs/addons/luma/curated_games.json#breathedge"
+          }
+        }
+      ]
+    },
+    {
+      "id": "breathedge-2",
+      "rules": [
+        {
+          "id": "steam-2412960",
+          "kind": "steam_appid",
+          "value": "2412960",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0074"
           }
         }
       ]
@@ -2615,6 +3301,20 @@
       ]
     },
     {
+      "id": "bright-memory",
+      "rules": [
+        {
+          "id": "steam-955050",
+          "kind": "steam_appid",
+          "value": "955050",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0075"
+          }
+        }
+      ]
+    },
+    {
       "id": "bright-memory-infinite",
       "rules": [
         {
@@ -2624,6 +3324,34 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#bright-memory-infinite"
+          }
+        }
+      ]
+    },
+    {
+      "id": "broken-pieces",
+      "rules": [
+        {
+          "id": "steam-1293730",
+          "kind": "steam_appid",
+          "value": "1293730",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0077"
+          }
+        }
+      ]
+    },
+    {
+      "id": "brothers-a-tale-of-two-sons-remake",
+      "rules": [
+        {
+          "id": "steam-2153350",
+          "kind": "steam_appid",
+          "value": "2153350",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0078"
           }
         }
       ]
@@ -2661,6 +3389,20 @@
           "provenance": {
             "source": "steam-appinfo",
             "locator": "steam-executable-observation:501590"
+          }
+        }
+      ]
+    },
+    {
+      "id": "burning-sword-death",
+      "rules": [
+        {
+          "id": "steam-2561460",
+          "kind": "steam_appid",
+          "value": "2561460",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0079"
           }
         }
       ]
@@ -2777,6 +3519,76 @@
       ]
     },
     {
+      "id": "capes",
+      "rules": [
+        {
+          "id": "steam-2081080",
+          "kind": "steam_appid",
+          "value": "2081080",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0081"
+          }
+        }
+      ]
+    },
+    {
+      "id": "car-dealer-simulator",
+      "rules": [
+        {
+          "id": "steam-2404880",
+          "kind": "steam_appid",
+          "value": "2404880",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0082"
+          }
+        }
+      ]
+    },
+    {
+      "id": "car-mechanic-simulator-2026-single-player-demo",
+      "rules": [
+        {
+          "id": "steam-4307740",
+          "kind": "steam_appid",
+          "value": "4307740",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0085"
+          }
+        }
+      ]
+    },
+    {
+      "id": "caravan-sandwitch",
+      "rules": [
+        {
+          "id": "steam-1582650",
+          "kind": "steam_appid",
+          "value": "1582650",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0083"
+          }
+        }
+      ]
+    },
+    {
+      "id": "carmageddon-rogue-shift",
+      "rules": [
+        {
+          "id": "steam-1712100",
+          "kind": "steam_appid",
+          "value": "1712100",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0084"
+          }
+        }
+      ]
+    },
+    {
       "id": "castlevania-lords-of-shadow",
       "rules": [
         {
@@ -2809,6 +3621,20 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#cat-quest-iii"
+          }
+        }
+      ]
+    },
+    {
+      "id": "celestial-empire",
+      "rules": [
+        {
+          "id": "steam-1330430",
+          "kind": "steam_appid",
+          "value": "1330430",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0086"
           }
         }
       ]
@@ -2851,6 +3677,20 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#chernobylite"
+          }
+        }
+      ]
+    },
+    {
+      "id": "chernobylite-2-exclusion-zone",
+      "rules": [
+        {
+          "id": "steam-2075100",
+          "kind": "steam_appid",
+          "value": "2075100",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0088"
           }
         }
       ]
@@ -2939,6 +3779,34 @@
       ]
     },
     {
+      "id": "chionophile",
+      "rules": [
+        {
+          "id": "steam-1432750",
+          "kind": "steam_appid",
+          "value": "1432750",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0089"
+          }
+        }
+      ]
+    },
+    {
+      "id": "chip-n-clawz-vs-the-brainioids",
+      "rules": [
+        {
+          "id": "steam-1332430",
+          "kind": "steam_appid",
+          "value": "1332430",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0090"
+          }
+        }
+      ]
+    },
+    {
       "id": "choo-choo-charles",
       "rules": [
         {
@@ -2981,6 +3849,34 @@
       ]
     },
     {
+      "id": "chronicles-of-sagrea",
+      "rules": [
+        {
+          "id": "steam-2727670",
+          "kind": "steam_appid",
+          "value": "2727670",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0093"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cions-of-vega",
+      "rules": [
+        {
+          "id": "steam-1577240",
+          "kind": "steam_appid",
+          "value": "1577240",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0094"
+          }
+        }
+      ]
+    },
+    {
       "id": "circuit-superstars",
       "rules": [
         {
@@ -3018,6 +3914,20 @@
       ]
     },
     {
+      "id": "cities-skylines-ii",
+      "rules": [
+        {
+          "id": "steam-949230",
+          "kind": "steam_appid",
+          "value": "949230",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0095"
+          }
+        }
+      ]
+    },
+    {
       "id": "citizen-sleeper",
       "rules": [
         {
@@ -3050,6 +3960,20 @@
           "provenance": {
             "source": "steam-appinfo",
             "locator": "steam-executable-observation:2442460"
+          }
+        }
+      ]
+    },
+    {
+      "id": "city-of-springs",
+      "rules": [
+        {
+          "id": "steam-1752780",
+          "kind": "steam_appid",
+          "value": "1752780",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0096"
           }
         }
       ]
@@ -3221,6 +4145,20 @@
       ]
     },
     {
+      "id": "code-exit-demo",
+      "rules": [
+        {
+          "id": "steam-2804990",
+          "kind": "steam_appid",
+          "value": "2804990",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0099"
+          }
+        }
+      ]
+    },
+    {
       "id": "code-vein",
       "rules": [
         {
@@ -3281,13 +4219,44 @@
       ]
     },
     {
+      "id": "commandos-origins",
+      "rules": [
+        {
+          "id": "steam-1479730",
+          "kind": "steam_appid",
+          "value": "1479730",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0101"
+          }
+        }
+      ]
+    },
+    {
+      "id": "company-of-heroes-3",
+      "rules": [
+        {
+          "id": "steam-1677280",
+          "kind": "steam_appid",
+          "value": "1677280",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0102"
+          }
+        }
+      ]
+    },
+    {
       "id": "conan-exiles-enhanced",
       "rules": [
         {
           "id": "steam-440900",
           "kind": "steam_appid",
           "value": "440900",
-          "provenance": { "source": "optiscaler-reviewed-match", "locator": "main:0103" }
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0103"
+          }
         }
       ]
     },
@@ -3338,6 +4307,20 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#convergence-a-league-of-legends-story"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cooprooms-demo",
+      "rules": [
+        {
+          "id": "steam-3696100",
+          "kind": "steam_appid",
+          "value": "3696100",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0105"
           }
         }
       ]
@@ -3408,6 +4391,29 @@
       ]
     },
     {
+      "id": "corsair-cove",
+      "rules": [
+        {
+          "id": "steam-1368140",
+          "kind": "steam_appid",
+          "value": "1368140",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0106"
+          }
+        },
+        {
+          "id": "xbox-9phs0189k408",
+          "kind": "xbox_store_id",
+          "value": "9PHS0189K408",
+          "provenance": {
+            "source": "xbox-store",
+            "locator": "https://www.xbox.com/en-US/games/store/corsair-cove/9PHS0189K408"
+          }
+        }
+      ]
+    },
+    {
       "id": "crab-champions",
       "rules": [
         {
@@ -3473,6 +4479,34 @@
       ]
     },
     {
+      "id": "creatures-of-ava",
+      "rules": [
+        {
+          "id": "steam-2304440",
+          "kind": "steam_appid",
+          "value": "2304440",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0107"
+          }
+        }
+      ]
+    },
+    {
+      "id": "crime-boss-rockay-city",
+      "rules": [
+        {
+          "id": "steam-2933080",
+          "kind": "steam_appid",
+          "value": "2933080",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0108"
+          }
+        }
+      ]
+    },
+    {
       "id": "crimson-desert",
       "rules": [
         {
@@ -3496,6 +4530,34 @@
       ]
     },
     {
+      "id": "crimson-moon",
+      "rules": [
+        {
+          "id": "steam-4317690",
+          "kind": "steam_appid",
+          "value": "4317690",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0110"
+          }
+        }
+      ]
+    },
+    {
+      "id": "crimson-oath",
+      "rules": [
+        {
+          "id": "steam-3333250",
+          "kind": "steam_appid",
+          "value": "3333250",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0111"
+          }
+        }
+      ]
+    },
+    {
       "id": "crisis-core-ff7-reunion",
       "rules": [
         {
@@ -3505,6 +4567,20 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#crisis-core-ff7-reunion"
+          }
+        }
+      ]
+    },
+    {
+      "id": "crisol-theater-of-idols",
+      "rules": [
+        {
+          "id": "steam-1790930",
+          "kind": "steam_appid",
+          "value": "1790930",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0112"
           }
         }
       ]
@@ -3533,6 +4609,34 @@
       ]
     },
     {
+      "id": "crysis-2-remastered",
+      "rules": [
+        {
+          "id": "steam-2096600",
+          "kind": "steam_appid",
+          "value": "2096600",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0115"
+          }
+        }
+      ]
+    },
+    {
+      "id": "crysis-3-remastered",
+      "rules": [
+        {
+          "id": "steam-2096610",
+          "kind": "steam_appid",
+          "value": "2096610",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0116"
+          }
+        }
+      ]
+    },
+    {
       "id": "crysis-remastered",
       "rules": [
         {
@@ -3551,6 +4655,20 @@
           "provenance": {
             "source": "steam-appinfo",
             "locator": "steam-executable-observation:1715130"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cthulhu-the-cosmic-abyss",
+      "rules": [
+        {
+          "id": "steam-2760560",
+          "kind": "steam_appid",
+          "value": "2760560",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0117"
           }
         }
       ]
@@ -3598,6 +4716,34 @@
       ]
     },
     {
+      "id": "curse-of-the-abandoned-floor-demo",
+      "rules": [
+        {
+          "id": "steam-4825100",
+          "kind": "steam_appid",
+          "value": "4825100",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0119"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cursed-deal",
+      "rules": [
+        {
+          "id": "steam-703680",
+          "kind": "steam_appid",
+          "value": "703680",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0118"
+          }
+        }
+      ]
+    },
+    {
       "id": "cyberpunk-2077",
       "rules": [
         {
@@ -3635,6 +4781,20 @@
       ]
     },
     {
+      "id": "daemon-x-machina-titanic-scion",
+      "rules": [
+        {
+          "id": "steam-1342490",
+          "kind": "steam_appid",
+          "value": "1342490",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0121"
+          }
+        }
+      ]
+    },
+    {
       "id": "daemonxmachina",
       "rules": [
         {
@@ -3658,6 +4818,20 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#dahlia-view"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dakar-desert-rally",
+      "rules": [
+        {
+          "id": "steam-1839940",
+          "kind": "steam_appid",
+          "value": "1839940",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0122"
           }
         }
       ]
@@ -3815,6 +4989,20 @@
       ]
     },
     {
+      "id": "darkwatch",
+      "rules": [
+        {
+          "id": "steam-2746680",
+          "kind": "steam_appid",
+          "value": "2746680",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0123"
+          }
+        }
+      ]
+    },
+    {
       "id": "darkwood",
       "rules": [
         {
@@ -3829,6 +5017,20 @@
       ]
     },
     {
+      "id": "darwins-paradox",
+      "rules": [
+        {
+          "id": "steam-2989180",
+          "kind": "steam_appid",
+          "value": "2989180",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0124"
+          }
+        }
+      ]
+    },
+    {
       "id": "dave-the-diver",
       "rules": [
         {
@@ -3838,6 +5040,34 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#dave-the-diver"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dawn-break-demo",
+      "rules": [
+        {
+          "id": "steam-3729290",
+          "kind": "steam_appid",
+          "value": "3729290",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0125"
+          }
+        }
+      ]
+    },
+    {
+      "id": "daydream-forgotten-sorrow",
+      "rules": [
+        {
+          "id": "steam-1542110",
+          "kind": "steam_appid",
+          "value": "1542110",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0126"
           }
         }
       ]
@@ -3903,6 +5133,34 @@
           "provenance": {
             "source": "luma-curated-games",
             "locator": "catalogs/addons/luma/curated_games.json#daysgone"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dcs-world",
+      "rules": [
+        {
+          "id": "steam-223750",
+          "kind": "steam_appid",
+          "value": "223750",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0128"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ddod",
+      "rules": [
+        {
+          "id": "steam-2468200",
+          "kind": "steam_appid",
+          "value": "2468200",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0129"
           }
         }
       ]
@@ -4005,6 +5263,76 @@
       ]
     },
     {
+      "id": "dead-or-alive-6-last-round",
+      "rules": [
+        {
+          "id": "steam-4144680",
+          "kind": "steam_appid",
+          "value": "4144680",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0133"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dead-rising-deluxe-remaster",
+      "rules": [
+        {
+          "id": "steam-2527390",
+          "kind": "steam_appid",
+          "value": "2527390",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0134"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dead-signal",
+      "rules": [
+        {
+          "id": "steam-2599300",
+          "kind": "steam_appid",
+          "value": "2599300",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0135"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dead-space-2023",
+      "rules": [
+        {
+          "id": "steam-1693980",
+          "kind": "steam_appid",
+          "value": "1693980",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0136"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dead-take",
+      "rules": [
+        {
+          "id": "steam-3352690",
+          "kind": "steam_appid",
+          "value": "3352690",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0137"
+          }
+        }
+      ]
+    },
+    {
       "id": "deadcore-redux-demo",
       "rules": [
         {
@@ -4051,6 +5379,20 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#deadlink"
+          }
+        }
+      ]
+    },
+    {
+      "id": "deadzone-rogue",
+      "rules": [
+        {
+          "id": "steam-3228590",
+          "kind": "steam_appid",
+          "value": "3228590",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0138"
           }
         }
       ]
@@ -4125,6 +5467,34 @@
       ]
     },
     {
+      "id": "deathbound",
+      "rules": [
+        {
+          "id": "steam-1277130",
+          "kind": "steam_appid",
+          "value": "1277130",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0139"
+          }
+        }
+      ]
+    },
+    {
+      "id": "deathloop",
+      "rules": [
+        {
+          "id": "steam-1252330",
+          "kind": "steam_appid",
+          "value": "1252330",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0140"
+          }
+        }
+      ]
+    },
+    {
       "id": "deceiveinc",
       "rules": [
         {
@@ -4134,6 +5504,20 @@
           "provenance": {
             "source": "luma-curated-games",
             "locator": "catalogs/addons/luma/curated_games.json#deceiveinc"
+          }
+        }
+      ]
+    },
+    {
+      "id": "deconstruction-simulator",
+      "rules": [
+        {
+          "id": "steam-2487150",
+          "kind": "steam_appid",
+          "value": "2487150",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0143"
           }
         }
       ]
@@ -4159,7 +5543,10 @@
           "id": "steam-2605790",
           "kind": "steam_appid",
           "value": "2605790",
-          "provenance": { "source": "optiscaler-reviewed-match", "locator": "main:0145" }
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0145"
+          }
         }
       ]
     },
@@ -4173,6 +5560,20 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#deep-rock-survivor"
+          }
+        }
+      ]
+    },
+    {
+      "id": "deep-space-7",
+      "rules": [
+        {
+          "id": "steam-3037180",
+          "kind": "steam_appid",
+          "value": "3037180",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0146"
           }
         }
       ]
@@ -4192,6 +5593,34 @@
       ]
     },
     {
+      "id": "deliver-us-mars",
+      "rules": [
+        {
+          "id": "steam-1345890",
+          "kind": "steam_appid",
+          "value": "1345890",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0147"
+          }
+        }
+      ]
+    },
+    {
+      "id": "deliver-us-the-moon",
+      "rules": [
+        {
+          "id": "steam-428660",
+          "kind": "steam_appid",
+          "value": "428660",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0148"
+          }
+        }
+      ]
+    },
+    {
       "id": "demon-slayer-kny-hinokami-chronicles",
       "rules": [
         {
@@ -4201,6 +5630,34 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#demon-slayer-kny-hinokami-chronicles"
+          }
+        }
+      ]
+    },
+    {
+      "id": "demon-tides-demo",
+      "rules": [
+        {
+          "id": "steam-3477260",
+          "kind": "steam_appid",
+          "value": "3477260",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0150"
+          }
+        }
+      ]
+    },
+    {
+      "id": "demonologist",
+      "rules": [
+        {
+          "id": "steam-1929610",
+          "kind": "steam_appid",
+          "value": "1929610",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0149"
           }
         }
       ]
@@ -4229,6 +5686,20 @@
       ]
     },
     {
+      "id": "descenders-next",
+      "rules": [
+        {
+          "id": "steam-2375530",
+          "kind": "steam_appid",
+          "value": "2375530",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0152"
+          }
+        }
+      ]
+    },
+    {
       "id": "desolate",
       "rules": [
         {
@@ -4238,6 +5709,20 @@
           "provenance": {
             "source": "luma-curated-games",
             "locator": "catalogs/addons/luma/curated_games.json#desolate"
+          }
+        }
+      ]
+    },
+    {
+      "id": "desordre",
+      "rules": [
+        {
+          "id": "steam-2097490",
+          "kind": "steam_appid",
+          "value": "2097490",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0151"
           }
         }
       ]
@@ -4270,6 +5755,20 @@
           "provenance": {
             "source": "luma-curated-games",
             "locator": "catalogs/addons/luma/curated_games.json#destroy-all-humans"
+          }
+        }
+      ]
+    },
+    {
+      "id": "destroy-all-humans-2-reprobed",
+      "rules": [
+        {
+          "id": "steam-1266700",
+          "kind": "steam_appid",
+          "value": "1266700",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0153"
           }
         }
       ]
@@ -4381,6 +5880,34 @@
       ]
     },
     {
+      "id": "diablo-ii-resurrected",
+      "rules": [
+        {
+          "id": "steam-2536520",
+          "kind": "steam_appid",
+          "value": "2536520",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0155"
+          }
+        }
+      ]
+    },
+    {
+      "id": "diablo-iv",
+      "rules": [
+        {
+          "id": "steam-2344520",
+          "kind": "steam_appid",
+          "value": "2344520",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0156"
+          }
+        }
+      ]
+    },
+    {
       "id": "die-young",
       "rules": [
         {
@@ -4464,6 +5991,20 @@
       ]
     },
     {
+      "id": "dinoblade",
+      "rules": [
+        {
+          "id": "steam-3440070",
+          "kind": "steam_appid",
+          "value": "3440070",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0157"
+          }
+        }
+      ]
+    },
+    {
       "id": "diplomacy-is-not-an-option",
       "rules": [
         {
@@ -4473,6 +6014,34 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#diplomacy-is-not-an-option"
+          }
+        }
+      ]
+    },
+    {
+      "id": "directive-8020",
+      "rules": [
+        {
+          "id": "steam-2255370",
+          "kind": "steam_appid",
+          "value": "2255370",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0158"
+          }
+        }
+      ]
+    },
+    {
+      "id": "directorate-novitiate-demo",
+      "rules": [
+        {
+          "id": "steam-3724410",
+          "kind": "steam_appid",
+          "value": "3724410",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0159"
           }
         }
       ]
@@ -4621,6 +6190,34 @@
       ]
     },
     {
+      "id": "dolmen",
+      "rules": [
+        {
+          "id": "steam-831050",
+          "kind": "steam_appid",
+          "value": "831050",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0161"
+          }
+        }
+      ]
+    },
+    {
+      "id": "doom-eternal",
+      "rules": [
+        {
+          "id": "steam-782330",
+          "kind": "steam_appid",
+          "value": "782330",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0162"
+          }
+        }
+      ]
+    },
+    {
       "id": "doom-the-dark-ages",
       "rules": [
         {
@@ -4658,6 +6255,20 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#dragon-age-inquisition"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dragon-age-the-veilguard",
+      "rules": [
+        {
+          "id": "steam-1845910",
+          "kind": "steam_appid",
+          "value": "1845910",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0164"
           }
         }
       ]
@@ -4806,6 +6417,20 @@
       ]
     },
     {
+      "id": "dragonkin-the-banished",
+      "rules": [
+        {
+          "id": "steam-1863430",
+          "kind": "steam_appid",
+          "value": "1863430",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0166"
+          }
+        }
+      ]
+    },
+    {
       "id": "dragons-dogma-ii",
       "rules": [
         {
@@ -4824,6 +6449,20 @@
           "provenance": {
             "source": "steam-appinfo",
             "locator": "steam-executable-observation:2054970"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dragonsword-awakening",
+      "rules": [
+        {
+          "id": "steam-4570720",
+          "kind": "steam_appid",
+          "value": "4570720",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0167"
           }
         }
       ]
@@ -4857,6 +6496,34 @@
       ]
     },
     {
+      "id": "dream-cycle",
+      "rules": [
+        {
+          "id": "steam-1105590",
+          "kind": "steam_appid",
+          "value": "1105590",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0168"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dream-eaters-exe",
+      "rules": [
+        {
+          "id": "steam-3587020",
+          "kind": "steam_appid",
+          "value": "3587020",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0169"
+          }
+        }
+      ]
+    },
+    {
       "id": "dreamfall-chapters-the-final-cut",
       "rules": [
         {
@@ -4866,6 +6533,20 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#dreamfall-chapters-the-final-cut"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dreams-far-away",
+      "rules": [
+        {
+          "id": "steam-3844340",
+          "kind": "steam_appid",
+          "value": "3844340",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0170"
           }
         }
       ]
@@ -4955,6 +6636,20 @@
       ]
     },
     {
+      "id": "duskfade-demo",
+      "rules": [
+        {
+          "id": "steam-4023080",
+          "kind": "steam_appid",
+          "value": "4023080",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0171"
+          }
+        }
+      ]
+    },
+    {
       "id": "dustborn",
       "rules": [
         {
@@ -5038,6 +6733,20 @@
       ]
     },
     {
+      "id": "dynasty-warriors-origins",
+      "rules": [
+        {
+          "id": "steam-2384580",
+          "kind": "steam_appid",
+          "value": "2384580",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0174"
+          }
+        }
+      ]
+    },
+    {
       "id": "dyson-sphere-program",
       "rules": [
         {
@@ -5061,6 +6770,34 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#dystopika"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ea-sports-wrc",
+      "rules": [
+        {
+          "id": "steam-1849250",
+          "kind": "steam_appid",
+          "value": "1849250",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0175"
+          }
+        }
+      ]
+    },
+    {
+      "id": "eastern-era",
+      "rules": [
+        {
+          "id": "steam-3446240",
+          "kind": "steam_appid",
+          "value": "3446240",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0176"
           }
         }
       ]
@@ -5122,6 +6859,20 @@
       ]
     },
     {
+      "id": "echo-91",
+      "rules": [
+        {
+          "id": "steam-3906060",
+          "kind": "steam_appid",
+          "value": "3906060",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0177"
+          }
+        }
+      ]
+    },
+    {
       "id": "echo-point-nova",
       "rules": [
         {
@@ -5131,6 +6882,48 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#echo-point-nova"
+          }
+        }
+      ]
+    },
+    {
+      "id": "echoes-of-the-end",
+      "rules": [
+        {
+          "id": "steam-2821610",
+          "kind": "steam_appid",
+          "value": "2821610",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0178"
+          }
+        }
+      ]
+    },
+    {
+      "id": "echoes-of-yi-samsara",
+      "rules": [
+        {
+          "id": "steam-2776940",
+          "kind": "steam_appid",
+          "value": "2776940",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0179"
+          }
+        }
+      ]
+    },
+    {
+      "id": "edge-of-eternity",
+      "rules": [
+        {
+          "id": "steam-269190",
+          "kind": "steam_appid",
+          "value": "269190",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0181"
           }
         }
       ]
@@ -5234,6 +7027,48 @@
       ]
     },
     {
+      "id": "emissary-zero",
+      "rules": [
+        {
+          "id": "steam-3176060",
+          "kind": "steam_appid",
+          "value": "3176060",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0183"
+          }
+        }
+      ]
+    },
+    {
+      "id": "empire-of-the-ants",
+      "rules": [
+        {
+          "id": "steam-2287330",
+          "kind": "steam_appid",
+          "value": "2287330",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0184"
+          }
+        }
+      ]
+    },
+    {
+      "id": "empyreal",
+      "rules": [
+        {
+          "id": "steam-1377700",
+          "kind": "steam_appid",
+          "value": "1377700",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0185"
+          }
+        }
+      ]
+    },
+    {
       "id": "en-garde",
       "rules": [
         {
@@ -5327,6 +7162,20 @@
       ]
     },
     {
+      "id": "enshrouded",
+      "rules": [
+        {
+          "id": "steam-1203620",
+          "kind": "steam_appid",
+          "value": "1203620",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0186"
+          }
+        }
+      ]
+    },
+    {
       "id": "enter-the-gungeon",
       "rules": [
         {
@@ -5336,6 +7185,20 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#enter-the-gungeon"
+          }
+        }
+      ]
+    },
+    {
+      "id": "entity-the-black-day",
+      "rules": [
+        {
+          "id": "steam-2517220",
+          "kind": "steam_appid",
+          "value": "2517220",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0188"
           }
         }
       ]
@@ -5406,6 +7269,20 @@
       ]
     },
     {
+      "id": "ertugrul-of-ulukayin",
+      "rules": [
+        {
+          "id": "steam-2133520",
+          "kind": "steam_appid",
+          "value": "2133520",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0191"
+          }
+        }
+      ]
+    },
+    {
       "id": "escape-academy",
       "rules": [
         {
@@ -5434,6 +7311,34 @@
       ]
     },
     {
+      "id": "escape-from-naraka",
+      "rules": [
+        {
+          "id": "steam-1390670",
+          "kind": "steam_appid",
+          "value": "1390670",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0192"
+          }
+        }
+      ]
+    },
+    {
+      "id": "escape-simulator-2-demo",
+      "rules": [
+        {
+          "id": "steam-3499320",
+          "kind": "steam_appid",
+          "value": "3499320",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0194"
+          }
+        }
+      ]
+    },
+    {
       "id": "escape-the-backrooms",
       "rules": [
         {
@@ -5448,6 +7353,20 @@
       ]
     },
     {
+      "id": "eternal-strands",
+      "rules": [
+        {
+          "id": "steam-1491410",
+          "kind": "steam_appid",
+          "value": "1491410",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0195"
+          }
+        }
+      ]
+    },
+    {
       "id": "eternal-threads",
       "rules": [
         {
@@ -5457,6 +7376,20 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#eternal-threads"
+          }
+        }
+      ]
+    },
+    {
+      "id": "europa-universalis-v",
+      "rules": [
+        {
+          "id": "steam-3450310",
+          "kind": "steam_appid",
+          "value": "3450310",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0196"
           }
         }
       ]
@@ -5497,8 +7430,8 @@
           "kind": "steam_appid",
           "value": "2253100",
           "provenance": {
-            "source": "steam-store-search",
-            "locator": "pending:renodx:everwind"
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0198"
           }
         }
       ]
@@ -5513,6 +7446,20 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#evil-west"
+          }
+        }
+      ]
+    },
+    {
+      "id": "evotinction",
+      "rules": [
+        {
+          "id": "steam-2005090",
+          "kind": "steam_appid",
+          "value": "2005090",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0200"
           }
         }
       ]
@@ -5560,6 +7507,76 @@
       ]
     },
     {
+      "id": "f1-2020",
+      "rules": [
+        {
+          "id": "steam-1080110",
+          "kind": "steam_appid",
+          "value": "1080110",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0201"
+          }
+        }
+      ]
+    },
+    {
+      "id": "f1-22",
+      "rules": [
+        {
+          "id": "steam-1692250",
+          "kind": "steam_appid",
+          "value": "1692250",
+          "provenance": {
+            "source": "steam-store-appdetails",
+            "locator": "https://store.steampowered.com/api/appdetails?appids=1692250"
+          }
+        }
+      ]
+    },
+    {
+      "id": "f1-24",
+      "rules": [
+        {
+          "id": "steam-2488620",
+          "kind": "steam_appid",
+          "value": "2488620",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0203"
+          }
+        }
+      ]
+    },
+    {
+      "id": "f1-25",
+      "rules": [
+        {
+          "id": "steam-3059520",
+          "kind": "steam_appid",
+          "value": "3059520",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0204"
+          }
+        }
+      ]
+    },
+    {
+      "id": "f1-manager-2024",
+      "rules": [
+        {
+          "id": "steam-2591280",
+          "kind": "steam_appid",
+          "value": "2591280",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0205"
+          }
+        }
+      ]
+    },
+    {
       "id": "fabledom",
       "rules": [
         {
@@ -5569,6 +7586,20 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#fabledom"
+          }
+        }
+      ]
+    },
+    {
+      "id": "fairy-tail-2",
+      "rules": [
+        {
+          "id": "steam-3002850",
+          "kind": "steam_appid",
+          "value": "3002850",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0206"
           }
         }
       ]
@@ -5828,6 +7859,48 @@
       ]
     },
     {
+      "id": "faraday-protocol",
+      "rules": [
+        {
+          "id": "steam-1107750",
+          "kind": "steam_appid",
+          "value": "1107750",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0207"
+          }
+        }
+      ]
+    },
+    {
+      "id": "farming-simulator-22",
+      "rules": [
+        {
+          "id": "steam-1248130",
+          "kind": "steam_appid",
+          "value": "1248130",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0209"
+          }
+        }
+      ]
+    },
+    {
+      "id": "farming-simulator-25",
+      "rules": [
+        {
+          "id": "steam-2300320",
+          "kind": "steam_appid",
+          "value": "2300320",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0210"
+          }
+        }
+      ]
+    },
+    {
       "id": "fast-food-simulator",
       "rules": [
         {
@@ -5837,6 +7910,20 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#fast-food-simulator"
+          }
+        }
+      ]
+    },
+    {
+      "id": "fatal-frame-ii-crimson-butterfly-remake",
+      "rules": [
+        {
+          "id": "steam-3920610",
+          "kind": "steam_appid",
+          "value": "3920610",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0211"
           }
         }
       ]
@@ -5888,6 +7975,34 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#feed-the-deep"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ferocious",
+      "rules": [
+        {
+          "id": "steam-1645630",
+          "kind": "steam_appid",
+          "value": "1645630",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0212"
+          }
+        }
+      ]
+    },
+    {
+      "id": "fight-or-flight",
+      "rules": [
+        {
+          "id": "steam-775620",
+          "kind": "steam_appid",
+          "value": "775620",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0213"
           }
         }
       ]
@@ -6050,6 +8165,62 @@
       ]
     },
     {
+      "id": "final-fantasy-xiv-dawntrail",
+      "rules": [
+        {
+          "id": "steam-2649240",
+          "kind": "steam_appid",
+          "value": "2649240",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0216"
+          }
+        }
+      ]
+    },
+    {
+      "id": "final-fantasy-xvi",
+      "rules": [
+        {
+          "id": "steam-2515020",
+          "kind": "steam_appid",
+          "value": "2515020",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0217"
+          }
+        }
+      ]
+    },
+    {
+      "id": "finnish-cottage-simulator",
+      "rules": [
+        {
+          "id": "steam-1723780",
+          "kind": "steam_appid",
+          "value": "1723780",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0218"
+          }
+        }
+      ]
+    },
+    {
+      "id": "firefighting-simulator-ignite",
+      "rules": [
+        {
+          "id": "steam-1669480",
+          "kind": "steam_appid",
+          "value": "1669480",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0219"
+          }
+        }
+      ]
+    },
+    {
       "id": "firewatch",
       "rules": [
         {
@@ -6059,6 +8230,34 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#firewatch"
+          }
+        }
+      ]
+    },
+    {
+      "id": "firmament",
+      "rules": [
+        {
+          "id": "steam-754890",
+          "kind": "steam_appid",
+          "value": "754890",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0220"
+          }
+        }
+      ]
+    },
+    {
+      "id": "fishing-north-atlantic-edition",
+      "rules": [
+        {
+          "id": "steam-1264250",
+          "kind": "steam_appid",
+          "value": "1264250",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0222"
           }
         }
       ]
@@ -6078,6 +8277,34 @@
       ]
     },
     {
+      "id": "five-nights-at-freddys-security-breach",
+      "rules": [
+        {
+          "id": "steam-747660",
+          "kind": "steam_appid",
+          "value": "747660",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0233"
+          }
+        }
+      ]
+    },
+    {
+      "id": "fixforce",
+      "rules": [
+        {
+          "id": "steam-3933150",
+          "kind": "steam_appid",
+          "value": "3933150",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0223"
+          }
+        }
+      ]
+    },
+    {
       "id": "flashback-2",
       "rules": [
         {
@@ -6092,6 +8319,34 @@
       ]
     },
     {
+      "id": "flintlock-the-siege-of-dawn",
+      "rules": [
+        {
+          "id": "steam-1832040",
+          "kind": "steam_appid",
+          "value": "1832040",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0225"
+          }
+        }
+      ]
+    },
+    {
+      "id": "flipscapes",
+      "rules": [
+        {
+          "id": "steam-2176580",
+          "kind": "steam_appid",
+          "value": "2176580",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0224"
+          }
+        }
+      ]
+    },
+    {
       "id": "flyknight",
       "rules": [
         {
@@ -6101,6 +8356,20 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#flyknight"
+          }
+        }
+      ]
+    },
+    {
+      "id": "fobia-st-dinfna-hotel",
+      "rules": [
+        {
+          "id": "steam-1298140",
+          "kind": "steam_appid",
+          "value": "1298140",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0226"
           }
         }
       ]
@@ -6148,6 +8417,20 @@
       ]
     },
     {
+      "id": "forgive-me-father-2",
+      "rules": [
+        {
+          "id": "steam-2272250",
+          "kind": "steam_appid",
+          "value": "2272250",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0227"
+          }
+        }
+      ]
+    },
+    {
       "id": "forgotten-23",
       "rules": [
         {
@@ -6162,6 +8445,20 @@
       ]
     },
     {
+      "id": "forspoken",
+      "rules": [
+        {
+          "id": "steam-1680880",
+          "kind": "steam_appid",
+          "value": "1680880",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0228"
+          }
+        }
+      ]
+    },
+    {
       "id": "fort-solis",
       "rules": [
         {
@@ -6171,6 +8468,20 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#fort-solis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "forza-horizon-5",
+      "rules": [
+        {
+          "id": "steam-1551360",
+          "kind": "steam_appid",
+          "value": "1551360",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0230"
           }
         }
       ]
@@ -6217,6 +8528,20 @@
       ]
     },
     {
+      "id": "forza-motorsport",
+      "rules": [
+        {
+          "id": "steam-2440510",
+          "kind": "steam_appid",
+          "value": "2440510",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0232"
+          }
+        }
+      ]
+    },
+    {
       "id": "front-mission-2-remake",
       "rules": [
         {
@@ -6237,7 +8562,24 @@
           "id": "steam-1601580",
           "kind": "steam_appid",
           "value": "1601580",
-          "provenance": { "source": "optiscaler-reviewed-match", "locator": "main:0234" }
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0234"
+          }
+        }
+      ]
+    },
+    {
+      "id": "frozenheim",
+      "rules": [
+        {
+          "id": "steam-1134100",
+          "kind": "steam_appid",
+          "value": "1134100",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0235"
+          }
         }
       ]
     },
@@ -6251,6 +8593,34 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#fumes"
+          }
+        }
+      ]
+    },
+    {
+      "id": "funko-fusion",
+      "rules": [
+        {
+          "id": "steam-1843310",
+          "kind": "steam_appid",
+          "value": "1843310",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0236"
+          }
+        }
+      ]
+    },
+    {
+      "id": "gaming-cafe-simulator",
+      "rules": [
+        {
+          "id": "steam-2978540",
+          "kind": "steam_appid",
+          "value": "2978540",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0237"
           }
         }
       ]
@@ -6270,6 +8640,20 @@
       ]
     },
     {
+      "id": "gangs-of-sherwood",
+      "rules": [
+        {
+          "id": "steam-1351000",
+          "kind": "steam_appid",
+          "value": "1351000",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0238"
+          }
+        }
+      ]
+    },
+    {
       "id": "gatekeeper",
       "rules": [
         {
@@ -6279,6 +8663,20 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#gatekeeper"
+          }
+        }
+      ]
+    },
+    {
+      "id": "gears-of-war-reloaded",
+      "rules": [
+        {
+          "id": "steam-2523720",
+          "kind": "steam_appid",
+          "value": "2523720",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0239"
           }
         }
       ]
@@ -6318,7 +8716,10 @@
           "id": "steam-2215430",
           "kind": "steam_appid",
           "value": "2215430",
-          "provenance": { "source": "optiscaler-reviewed-match", "locator": "main:0241" }
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0241"
+          }
         }
       ]
     },
@@ -6341,6 +8742,20 @@
           "provenance": {
             "source": "steam-appinfo",
             "locator": "steam-executable-observation:460930"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ghostbusters-spirits-unleashed",
+      "rules": [
+        {
+          "id": "steam-2383990",
+          "kind": "steam_appid",
+          "value": "2383990",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0240"
           }
         }
       ]
@@ -6457,6 +8872,20 @@
       ]
     },
     {
+      "id": "glaciered-demo",
+      "rules": [
+        {
+          "id": "steam-2486780",
+          "kind": "steam_appid",
+          "value": "2486780",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0245"
+          }
+        }
+      ]
+    },
+    {
       "id": "go-mecha-ball",
       "rules": [
         {
@@ -6475,6 +8904,20 @@
           "provenance": {
             "source": "steam-appinfo",
             "locator": "steam-executable-observation:2008510"
+          }
+        }
+      ]
+    },
+    {
+      "id": "goals",
+      "rules": [
+        {
+          "id": "steam-2753000",
+          "kind": "steam_appid",
+          "value": "2753000",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0246"
           }
         }
       ]
@@ -6586,6 +9029,48 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#golf-with-your-friends"
+          }
+        }
+      ]
+    },
+    {
+      "id": "gord",
+      "rules": [
+        {
+          "id": "steam-1351210",
+          "kind": "steam_appid",
+          "value": "1351210",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0250"
+          }
+        }
+      ]
+    },
+    {
+      "id": "gori-cuddly-carnage",
+      "rules": [
+        {
+          "id": "steam-1299690",
+          "kind": "steam_appid",
+          "value": "1299690",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0251"
+          }
+        }
+      ]
+    },
+    {
+      "id": "gotham-knights",
+      "rules": [
+        {
+          "id": "steam-1496790",
+          "kind": "steam_appid",
+          "value": "1496790",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0249"
           }
         }
       ]
@@ -6758,6 +9243,34 @@
       ]
     },
     {
+      "id": "greedland",
+      "rules": [
+        {
+          "id": "steam-2218400",
+          "kind": "steam_appid",
+          "value": "2218400",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0258"
+          }
+        }
+      ]
+    },
+    {
+      "id": "grid-legends",
+      "rules": [
+        {
+          "id": "steam-1307710",
+          "kind": "steam_appid",
+          "value": "1307710",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0259"
+          }
+        }
+      ]
+    },
+    {
       "id": "grim-dawn",
       "rules": [
         {
@@ -6795,6 +9308,20 @@
       ]
     },
     {
+      "id": "gripper",
+      "rules": [
+        {
+          "id": "steam-1336380",
+          "kind": "steam_appid",
+          "value": "1336380",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0260"
+          }
+        }
+      ]
+    },
+    {
       "id": "grounded",
       "rules": [
         {
@@ -6827,6 +9354,20 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#grounded-2"
+          }
+        }
+      ]
+    },
+    {
+      "id": "guardians-of-the-galaxy",
+      "rules": [
+        {
+          "id": "steam-1088850",
+          "kind": "steam_appid",
+          "value": "1088850",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0262"
           }
         }
       ]
@@ -6878,6 +9419,20 @@
       ]
     },
     {
+      "id": "gun-jam",
+      "rules": [
+        {
+          "id": "steam-1308360",
+          "kind": "steam_appid",
+          "value": "1308360",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0264"
+          }
+        }
+      ]
+    },
+    {
       "id": "gunfire-reborn",
       "rules": [
         {
@@ -6887,6 +9442,20 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#gunfire-reborn"
+          }
+        }
+      ]
+    },
+    {
+      "id": "gungrave-gore",
+      "rules": [
+        {
+          "id": "steam-1630110",
+          "kind": "steam_appid",
+          "value": "1630110",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0263"
           }
         }
       ]
@@ -6970,6 +9539,34 @@
           "provenance": {
             "source": "steam-appinfo",
             "locator": "steam-executable-observation:1145350"
+          }
+        }
+      ]
+    },
+    {
+      "id": "half-sword",
+      "rules": [
+        {
+          "id": "steam-2397300",
+          "kind": "steam_appid",
+          "value": "2397300",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0266"
+          }
+        }
+      ]
+    },
+    {
+      "id": "halo-campaign-evolved",
+      "rules": [
+        {
+          "id": "steam-2806050",
+          "kind": "steam_appid",
+          "value": "2806050",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0267"
           }
         }
       ]
@@ -7174,6 +9771,20 @@
       ]
     },
     {
+      "id": "hell-pie",
+      "rules": [
+        {
+          "id": "steam-889910",
+          "kind": "steam_appid",
+          "value": "889910",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0272"
+          }
+        }
+      ]
+    },
+    {
       "id": "hellblade-ii-senua-s-saga",
       "rules": [
         {
@@ -7211,6 +9822,20 @@
       ]
     },
     {
+      "id": "hellbreak",
+      "rules": [
+        {
+          "id": "steam-3043760",
+          "kind": "steam_appid",
+          "value": "3043760",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0270"
+          }
+        }
+      ]
+    },
+    {
       "id": "helldivers-2",
       "rules": [
         {
@@ -7243,6 +9868,20 @@
           "provenance": {
             "source": "luma-curated-games",
             "locator": "catalogs/addons/luma/curated_games.json#hellletloose"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hello-neighbor-2",
+      "rules": [
+        {
+          "id": "steam-1321680",
+          "kind": "steam_appid",
+          "value": "1321680",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0273"
           }
         }
       ]
@@ -7304,6 +9943,48 @@
       ]
     },
     {
+      "id": "high-on-life",
+      "rules": [
+        {
+          "id": "steam-1583230",
+          "kind": "steam_appid",
+          "value": "1583230",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0275"
+          }
+        }
+      ]
+    },
+    {
+      "id": "high-on-life-2",
+      "rules": [
+        {
+          "id": "steam-2069250",
+          "kind": "steam_appid",
+          "value": "2069250",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0276"
+          }
+        }
+      ]
+    },
+    {
+      "id": "highrise-city",
+      "rules": [
+        {
+          "id": "steam-1489970",
+          "kind": "steam_appid",
+          "value": "1489970",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0277"
+          }
+        }
+      ]
+    },
+    {
       "id": "hitman-world-of-assassination",
       "rules": [
         {
@@ -7327,6 +10008,20 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#hogwarts-legacy"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hold-your-own",
+      "rules": [
+        {
+          "id": "steam-717790",
+          "kind": "steam_appid",
+          "value": "717790",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0280"
           }
         }
       ]
@@ -7406,6 +10101,20 @@
       ]
     },
     {
+      "id": "homeworld-3",
+      "rules": [
+        {
+          "id": "steam-1840080",
+          "kind": "steam_appid",
+          "value": "1840080",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0281"
+          }
+        }
+      ]
+    },
+    {
       "id": "hordelord",
       "rules": [
         {
@@ -7457,6 +10166,20 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#horizon-zero-dawn-remastered"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hot-wheels-unleashed",
+      "rules": [
+        {
+          "id": "steam-1271700",
+          "kind": "steam_appid",
+          "value": "1271700",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0285"
           }
         }
       ]
@@ -7566,7 +10289,10 @@
           "id": "steam-1106840",
           "kind": "steam_appid",
           "value": "1106840",
-          "provenance": { "source": "optiscaler-reviewed-match", "locator": "main:0287" }
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0287"
+          }
         }
       ]
     },
@@ -7599,6 +10325,34 @@
       ]
     },
     {
+      "id": "i-am-jesus-christ",
+      "rules": [
+        {
+          "id": "steam-1198970",
+          "kind": "steam_appid",
+          "value": "1198970",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0288"
+          }
+        }
+      ]
+    },
+    {
+      "id": "icarus",
+      "rules": [
+        {
+          "id": "steam-1149460",
+          "kind": "steam_appid",
+          "value": "1149460",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0289"
+          }
+        }
+      ]
+    },
+    {
       "id": "icey",
       "rules": [
         {
@@ -7608,6 +10362,20 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#icey"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ikonei-island-an-earthlock-adventure",
+      "rules": [
+        {
+          "id": "steam-1550730",
+          "kind": "steam_appid",
+          "value": "1550730",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0290"
           }
         }
       ]
@@ -7631,6 +10399,20 @@
           "provenance": {
             "source": "steam-appinfo",
             "locator": "steam-executable-observation:2221920"
+          }
+        }
+      ]
+    },
+    {
+      "id": "immortals-of-aveum",
+      "rules": [
+        {
+          "id": "steam-2009100",
+          "kind": "steam_appid",
+          "value": "2009100",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0291"
           }
         }
       ]
@@ -7715,6 +10497,34 @@
       ]
     },
     {
+      "id": "industria-2",
+      "rules": [
+        {
+          "id": "steam-2154070",
+          "kind": "steam_appid",
+          "value": "2154070",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0295"
+          }
+        }
+      ]
+    },
+    {
+      "id": "industry-giant-4",
+      "rules": [
+        {
+          "id": "steam-1129570",
+          "kind": "steam_appid",
+          "value": "1129570",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0296"
+          }
+        }
+      ]
+    },
+    {
       "id": "inertial-drift",
       "rules": [
         {
@@ -7743,6 +10553,20 @@
       ]
     },
     {
+      "id": "influx-redux",
+      "rules": [
+        {
+          "id": "steam-867150",
+          "kind": "steam_appid",
+          "value": "867150",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0298"
+          }
+        }
+      ]
+    },
+    {
       "id": "inside",
       "rules": [
         {
@@ -7761,6 +10585,20 @@
           "provenance": {
             "source": "luma-curated-games",
             "locator": "catalogs/addons/luma/curated_games.json#inside"
+          }
+        }
+      ]
+    },
+    {
+      "id": "into-the-dead-our-darkest-days",
+      "rules": [
+        {
+          "id": "steam-2239710",
+          "kind": "steam_appid",
+          "value": "2239710",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0299"
           }
         }
       ]
@@ -7831,6 +10669,20 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#islands-of-insight"
+          }
+        }
+      ]
+    },
+    {
+      "id": "it-reaches",
+      "rules": [
+        {
+          "id": "steam-4119360",
+          "kind": "steam_appid",
+          "value": "4119360",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0301"
           }
         }
       ]
@@ -7919,6 +10771,20 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#jaded"
+          }
+        }
+      ]
+    },
+    {
+      "id": "jagged-alliance-3",
+      "rules": [
+        {
+          "id": "steam-1084160",
+          "kind": "steam_appid",
+          "value": "1084160",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0302"
           }
         }
       ]
@@ -8021,6 +10887,62 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#journey-to-the-savage-planet"
+          }
+        }
+      ]
+    },
+    {
+      "id": "judgment",
+      "rules": [
+        {
+          "id": "steam-2058180",
+          "kind": "steam_appid",
+          "value": "2058180",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0305"
+          }
+        }
+      ]
+    },
+    {
+      "id": "jump-space",
+      "rules": [
+        {
+          "id": "steam-1757300",
+          "kind": "steam_appid",
+          "value": "1757300",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0306"
+          }
+        }
+      ]
+    },
+    {
+      "id": "jurassic-world-evolution-2",
+      "rules": [
+        {
+          "id": "steam-1244460",
+          "kind": "steam_appid",
+          "value": "1244460",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0307"
+          }
+        }
+      ]
+    },
+    {
+      "id": "jurassic-world-evolution-3",
+      "rules": [
+        {
+          "id": "steam-2958130",
+          "kind": "steam_appid",
+          "value": "2958130",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0308"
           }
         }
       ]
@@ -8197,6 +11119,20 @@
       ]
     },
     {
+      "id": "keeper",
+      "rules": [
+        {
+          "id": "steam-3043580",
+          "kind": "steam_appid",
+          "value": "3043580",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0311"
+          }
+        }
+      ]
+    },
+    {
       "id": "kena-bridge-of-spirits",
       "rules": [
         {
@@ -8262,6 +11198,20 @@
       ]
     },
     {
+      "id": "kiborg",
+      "rules": [
+        {
+          "id": "steam-2405060",
+          "kind": "steam_appid",
+          "value": "2405060",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0313"
+          }
+        }
+      ]
+    },
+    {
       "id": "kid-a-mnesia-exhibition",
       "rules": [
         {
@@ -8299,6 +11249,29 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#killer-frequency"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kiln",
+      "rules": [
+        {
+          "id": "steam-1165990",
+          "kind": "steam_appid",
+          "value": "1165990",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0314"
+          }
+        },
+        {
+          "id": "xbox-9mw53zkzh168",
+          "kind": "xbox_store_id",
+          "value": "9MW53ZKZH168",
+          "provenance": {
+            "source": "xbox-store",
+            "locator": "https://www.xbox.com/en-US/games/store/kiln/9MW53ZKZH168"
           }
         }
       ]
@@ -8494,6 +11467,20 @@
       ]
     },
     {
+      "id": "kunitsu-gami-path-of-the-goddess",
+      "rules": [
+        {
+          "id": "steam-2510710",
+          "kind": "steam_appid",
+          "value": "2510710",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0317"
+          }
+        }
+      ]
+    },
+    {
       "id": "la-noire",
       "rules": [
         {
@@ -8512,6 +11499,34 @@
           "provenance": {
             "source": "luma-curated-games",
             "locator": "catalogs/addons/luma/curated_games.json#la-noire"
+          }
+        }
+      ]
+    },
+    {
+      "id": "land-of-the-vikings",
+      "rules": [
+        {
+          "id": "steam-1981570",
+          "kind": "steam_appid",
+          "value": "1981570",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0318"
+          }
+        }
+      ]
+    },
+    {
+      "id": "lanesplit-demo",
+      "rules": [
+        {
+          "id": "steam-3775710",
+          "kind": "steam_appid",
+          "value": "3775710",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0319"
           }
         }
       ]
@@ -8568,6 +11583,20 @@
       ]
     },
     {
+      "id": "last-train-home",
+      "rules": [
+        {
+          "id": "steam-1469610",
+          "kind": "steam_appid",
+          "value": "1469610",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0321"
+          }
+        }
+      ]
+    },
+    {
       "id": "lay-of-the-land",
       "rules": [
         {
@@ -8600,6 +11629,20 @@
           "provenance": {
             "source": "luma-curated-games",
             "locator": "catalogs/addons/luma/curated_games.json#layers-of-fear-2"
+          }
+        }
+      ]
+    },
+    {
+      "id": "layers-of-fear-2023",
+      "rules": [
+        {
+          "id": "steam-1946700",
+          "kind": "steam_appid",
+          "value": "1946700",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0322"
           }
         }
       ]
@@ -8647,6 +11690,20 @@
       ]
     },
     {
+      "id": "lego-builders-journey",
+      "rules": [
+        {
+          "id": "steam-1544360",
+          "kind": "steam_appid",
+          "value": "1544360",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0324"
+          }
+        }
+      ]
+    },
+    {
       "id": "lego-city-undercover",
       "rules": [
         {
@@ -8688,6 +11745,20 @@
           "provenance": {
             "source": "steam-appinfo",
             "locator": "steam-executable-observation:2950340"
+          }
+        }
+      ]
+    },
+    {
+      "id": "lego-horizon-adventures",
+      "rules": [
+        {
+          "id": "steam-2428810",
+          "kind": "steam_appid",
+          "value": "2428810",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0326"
           }
         }
       ]
@@ -8818,6 +11889,20 @@
       ]
     },
     {
+      "id": "like-a-dragon-ishin",
+      "rules": [
+        {
+          "id": "steam-1805480",
+          "kind": "steam_appid",
+          "value": "1805480",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0330"
+          }
+        }
+      ]
+    },
+    {
       "id": "like-a-dragon-pirate-yakuza-in-hawaii",
       "rules": [
         {
@@ -8827,6 +11912,20 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#like-a-dragon-pirate-yakuza-in-hawaii"
+          }
+        }
+      ]
+    },
+    {
+      "id": "liminalcore",
+      "rules": [
+        {
+          "id": "steam-3107900",
+          "kind": "steam_appid",
+          "value": "3107900",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0333"
           }
         }
       ]
@@ -9008,6 +12107,20 @@
       ]
     },
     {
+      "id": "loopmancer",
+      "rules": [
+        {
+          "id": "steam-1650810",
+          "kind": "steam_appid",
+          "value": "1650810",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0335"
+          }
+        }
+      ]
+    },
+    {
       "id": "lords-of-the-fallen-2023",
       "rules": [
         {
@@ -9078,6 +12191,20 @@
       ]
     },
     {
+      "id": "lost-judgment",
+      "rules": [
+        {
+          "id": "steam-2058190",
+          "kind": "steam_appid",
+          "value": "2058190",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0336"
+          }
+        }
+      ]
+    },
+    {
       "id": "lost-planet",
       "rules": [
         {
@@ -9110,6 +12237,20 @@
       ]
     },
     {
+      "id": "lost-records-bloom-and-rage",
+      "rules": [
+        {
+          "id": "steam-1902960",
+          "kind": "steam_appid",
+          "value": "1902960",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0337"
+          }
+        }
+      ]
+    },
+    {
       "id": "lost-ruins",
       "rules": [
         {
@@ -9119,6 +12260,20 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#lost-ruins"
+          }
+        }
+      ]
+    },
+    {
+      "id": "lost-skies",
+      "rules": [
+        {
+          "id": "steam-1931180",
+          "kind": "steam_appid",
+          "value": "1931180",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0338"
           }
         }
       ]
@@ -9152,6 +12307,20 @@
       ]
     },
     {
+      "id": "lumina-veil",
+      "rules": [
+        {
+          "id": "steam-2840000",
+          "kind": "steam_appid",
+          "value": "2840000",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0341"
+          }
+        }
+      ]
+    },
+    {
       "id": "lumines-arise",
       "rules": [
         {
@@ -9161,6 +12330,20 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#lumines-arise"
+          }
+        }
+      ]
+    },
+    {
+      "id": "luna-abyss",
+      "rules": [
+        {
+          "id": "steam-1933000",
+          "kind": "steam_appid",
+          "value": "1933000",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0342"
           }
         }
       ]
@@ -9184,6 +12367,48 @@
           "provenance": {
             "source": "steam-appinfo",
             "locator": "steam-executable-observation:1745510"
+          }
+        }
+      ]
+    },
+    {
+      "id": "lunacy-saint-rhodes",
+      "rules": [
+        {
+          "id": "steam-874450",
+          "kind": "steam_appid",
+          "value": "874450",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0343"
+          }
+        }
+      ]
+    },
+    {
+      "id": "lunar-eclipse",
+      "rules": [
+        {
+          "id": "steam-2953480",
+          "kind": "steam_appid",
+          "value": "2953480",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0344"
+          }
+        }
+      ]
+    },
+    {
+      "id": "luto",
+      "rules": [
+        {
+          "id": "steam-1729740",
+          "kind": "steam_appid",
+          "value": "1729740",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0345"
           }
         }
       ]
@@ -9365,6 +12590,20 @@
       ]
     },
     {
+      "id": "mandragora-whispers-of-the-witch-tree",
+      "rules": [
+        {
+          "id": "steam-1721060",
+          "kind": "steam_appid",
+          "value": "1721060",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0347"
+          }
+        }
+      ]
+    },
+    {
       "id": "maneater",
       "rules": [
         {
@@ -9411,6 +12650,34 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#mars-attracts"
+          }
+        }
+      ]
+    },
+    {
+      "id": "martha-is-dead",
+      "rules": [
+        {
+          "id": "steam-515960",
+          "kind": "steam_appid",
+          "value": "515960",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0349"
+          }
+        }
+      ]
+    },
+    {
+      "id": "marvels-avengers",
+      "rules": [
+        {
+          "id": "steam-997070",
+          "kind": "steam_appid",
+          "value": "997070",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0350"
           }
         }
       ]
@@ -9541,6 +12808,34 @@
       ]
     },
     {
+      "id": "matcho-demo",
+      "rules": [
+        {
+          "id": "steam-4265610",
+          "kind": "steam_appid",
+          "value": "4265610",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0356"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mavrix-by-matt-jones",
+      "rules": [
+        {
+          "id": "steam-2926900",
+          "kind": "steam_appid",
+          "value": "2926900",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0357"
+          }
+        }
+      ]
+    },
+    {
       "id": "max-payne-3",
       "rules": [
         {
@@ -9578,6 +12873,20 @@
       ]
     },
     {
+      "id": "mechwarrior-5-mercenaries",
+      "rules": [
+        {
+          "id": "steam-784080",
+          "kind": "steam_appid",
+          "value": "784080",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0358"
+          }
+        }
+      ]
+    },
+    {
       "id": "medal-of-honor-airborne",
       "rules": [
         {
@@ -9601,6 +12910,20 @@
       ]
     },
     {
+      "id": "medieval-dynasty",
+      "rules": [
+        {
+          "id": "steam-1129580",
+          "kind": "steam_appid",
+          "value": "1129580",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0359"
+          }
+        }
+      ]
+    },
+    {
       "id": "megabonk",
       "rules": [
         {
@@ -9610,6 +12933,34 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#megabonk"
+          }
+        }
+      ]
+    },
+    {
+      "id": "memorys-reach-demo",
+      "rules": [
+        {
+          "id": "steam-2613980",
+          "kind": "steam_appid",
+          "value": "2613980",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0360"
+          }
+        }
+      ]
+    },
+    {
+      "id": "menace",
+      "rules": [
+        {
+          "id": "steam-2432860",
+          "kind": "steam_appid",
+          "value": "2432860",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0361"
           }
         }
       ]
@@ -9777,6 +13128,34 @@
       ]
     },
     {
+      "id": "microsoft-flight-simulator-2020",
+      "rules": [
+        {
+          "id": "steam-1250410",
+          "kind": "steam_appid",
+          "value": "1250410",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0365"
+          }
+        }
+      ]
+    },
+    {
+      "id": "microsoft-flight-simulator-2024",
+      "rules": [
+        {
+          "id": "steam-2537590",
+          "kind": "steam_appid",
+          "value": "2537590",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0366"
+          }
+        }
+      ]
+    },
+    {
       "id": "middle-earth-shadow-of-war",
       "rules": [
         {
@@ -9823,6 +13202,34 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#minds-beneath-us"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mindseye",
+      "rules": [
+        {
+          "id": "steam-3265250",
+          "kind": "steam_appid",
+          "value": "3265250",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0367"
+          }
+        }
+      ]
+    },
+    {
+      "id": "minos-demo",
+      "rules": [
+        {
+          "id": "steam-4024480",
+          "kind": "steam_appid",
+          "value": "4024480",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0369"
           }
         }
       ]
@@ -9911,6 +13318,20 @@
           "provenance": {
             "source": "steam-appinfo",
             "locator": "steam-executable-observation:1446780"
+          }
+        }
+      ]
+    },
+    {
+      "id": "monster-hunter-stories-3-twisted-reflection",
+      "rules": [
+        {
+          "id": "steam-2852190",
+          "kind": "steam_appid",
+          "value": "2852190",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0372"
           }
         }
       ]
@@ -10032,6 +13453,20 @@
       ]
     },
     {
+      "id": "morbid-metal",
+      "rules": [
+        {
+          "id": "steam-1866130",
+          "kind": "steam_appid",
+          "value": "1866130",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0374"
+          }
+        }
+      ]
+    },
+    {
       "id": "morbid-metal-demo",
       "rules": [
         {
@@ -10069,6 +13504,34 @@
       ]
     },
     {
+      "id": "moroi",
+      "rules": [
+        {
+          "id": "steam-2518410",
+          "kind": "steam_appid",
+          "value": "2518410",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0375"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mortal-kombat-1",
+      "rules": [
+        {
+          "id": "steam-1971870",
+          "kind": "steam_appid",
+          "value": "1971870",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0376"
+          }
+        }
+      ]
+    },
+    {
       "id": "mortal-kombat-11",
       "rules": [
         {
@@ -10087,6 +13550,20 @@
           "provenance": {
             "source": "luma-curated-games",
             "locator": "catalogs/addons/luma/curated_games.json#mortal-kombat-11"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mortal-shell",
+      "rules": [
+        {
+          "id": "steam-1110910",
+          "kind": "steam_appid",
+          "value": "1110910",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0377"
           }
         }
       ]
@@ -10157,6 +13634,34 @@
       ]
     },
     {
+      "id": "mount-and-blade-ii-bannerlord",
+      "rules": [
+        {
+          "id": "steam-261550",
+          "kind": "steam_appid",
+          "value": "261550",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0379"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mouse-pi-for-hire",
+      "rules": [
+        {
+          "id": "steam-2416450",
+          "kind": "steam_appid",
+          "value": "2416450",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0380"
+          }
+        }
+      ]
+    },
+    {
       "id": "mouthwashing",
       "rules": [
         {
@@ -10166,6 +13671,20 @@
           "provenance": {
             "source": "steam-store-search",
             "locator": "pending:renodx:mouthwashing"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mr-photographer-into-the-light",
+      "rules": [
+        {
+          "id": "steam-3368050",
+          "kind": "steam_appid",
+          "value": "3368050",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0381"
           }
         }
       ]
@@ -10250,6 +13769,20 @@
       ]
     },
     {
+      "id": "myst-2021",
+      "rules": [
+        {
+          "id": "steam-1255560",
+          "kind": "steam_appid",
+          "value": "1255560",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0382"
+          }
+        }
+      ]
+    },
+    {
       "id": "narutotoborutoshinobistriker",
       "rules": [
         {
@@ -10278,6 +13811,20 @@
       ]
     },
     {
+      "id": "necrophosis",
+      "rules": [
+        {
+          "id": "steam-2019760",
+          "kind": "steam_appid",
+          "value": "2019760",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0385"
+          }
+        }
+      ]
+    },
+    {
       "id": "necropolis-brutal-edition",
       "rules": [
         {
@@ -10301,6 +13848,20 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#need-for-speed"
+          }
+        }
+      ]
+    },
+    {
+      "id": "need-for-speed-unbound",
+      "rules": [
+        {
+          "id": "steam-1846380",
+          "kind": "steam_appid",
+          "value": "1846380",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0383"
           }
         }
       ]
@@ -10417,6 +13978,20 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#night-runners-prologue"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nightingale",
+      "rules": [
+        {
+          "id": "steam-1928980",
+          "kind": "steam_appid",
+          "value": "1928980",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0387"
           }
         }
       ]
@@ -10671,6 +14246,20 @@
       ]
     },
     {
+      "id": "no-rest-for-the-wicked",
+      "rules": [
+        {
+          "id": "steam-1371980",
+          "kind": "steam_appid",
+          "value": "1371980",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0394"
+          }
+        }
+      ]
+    },
+    {
       "id": "nobody-wants-to-die",
       "rules": [
         {
@@ -10708,6 +14297,20 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#node-the-last-favor-of-the-antarii"
+          }
+        }
+      ]
+    },
+    {
+      "id": "norse-oath-of-blood",
+      "rules": [
+        {
+          "id": "steam-3054690",
+          "kind": "steam_appid",
+          "value": "3054690",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0395"
           }
         }
       ]
@@ -10769,6 +14372,20 @@
       ]
     },
     {
+      "id": "observer-system-redux",
+      "rules": [
+        {
+          "id": "steam-1386900",
+          "kind": "steam_appid",
+          "value": "1386900",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0396"
+          }
+        }
+      ]
+    },
+    {
       "id": "octopath-traveler",
       "rules": [
         {
@@ -10797,6 +14414,34 @@
       ]
     },
     {
+      "id": "oddroom",
+      "rules": [
+        {
+          "id": "steam-2795230",
+          "kind": "steam_appid",
+          "value": "2795230",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0397"
+          }
+        }
+      ]
+    },
+    {
+      "id": "oddsparks-an-automation-adventure",
+      "rules": [
+        {
+          "id": "steam-1817800",
+          "kind": "steam_appid",
+          "value": "1817800",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0398"
+          }
+        }
+      ]
+    },
+    {
       "id": "oddworld-soulstorm-enhanced-edition",
       "rules": [
         {
@@ -10811,6 +14456,20 @@
       ]
     },
     {
+      "id": "of-ash-and-steel-demo",
+      "rules": [
+        {
+          "id": "steam-3708420",
+          "kind": "steam_appid",
+          "value": "3708420",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0399"
+          }
+        }
+      ]
+    },
+    {
       "id": "old-school-rally",
       "rules": [
         {
@@ -10820,6 +14479,20 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#old-school-rally"
+          }
+        }
+      ]
+    },
+    {
+      "id": "once-alive",
+      "rules": [
+        {
+          "id": "steam-2336440",
+          "kind": "steam_appid",
+          "value": "2336440",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0400"
           }
         }
       ]
@@ -10853,6 +14526,20 @@
       ]
     },
     {
+      "id": "one-seven-one",
+      "rules": [
+        {
+          "id": "steam-1269370",
+          "kind": "steam_appid",
+          "value": "1269370",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0003"
+          }
+        }
+      ]
+    },
+    {
       "id": "onimusha-way-of-the-sword",
       "rules": [
         {
@@ -10862,6 +14549,48 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#onimusha-way-of-the-sword"
+          }
+        }
+      ]
+    },
+    {
+      "id": "onimusha-way-of-the-sword-demo",
+      "rules": [
+        {
+          "id": "steam-3974650",
+          "kind": "steam_appid",
+          "value": "3974650",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0401"
+          }
+        }
+      ]
+    },
+    {
+      "id": "online-404",
+      "rules": [
+        {
+          "id": "steam-4094350",
+          "kind": "steam_appid",
+          "value": "4094350",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0402"
+          }
+        }
+      ]
+    },
+    {
+      "id": "only-climb-better-together",
+      "rules": [
+        {
+          "id": "steam-2500750",
+          "kind": "steam_appid",
+          "value": "2500750",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0403"
           }
         }
       ]
@@ -10899,6 +14628,20 @@
           "provenance": {
             "source": "steam-appinfo",
             "locator": "steam-executable-observation:1504500"
+          }
+        }
+      ]
+    },
+    {
+      "id": "orbit-industries",
+      "rules": [
+        {
+          "id": "steam-1668130",
+          "kind": "steam_appid",
+          "value": "1668130",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0404"
           }
         }
       ]
@@ -10978,6 +14721,34 @@
       ]
     },
     {
+      "id": "otherskin",
+      "rules": [
+        {
+          "id": "steam-1622630",
+          "kind": "steam_appid",
+          "value": "1622630",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0405"
+          }
+        }
+      ]
+    },
+    {
+      "id": "outcast-a-new-beginning",
+      "rules": [
+        {
+          "id": "steam-1013140",
+          "kind": "steam_appid",
+          "value": "1013140",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0406"
+          }
+        }
+      ]
+    },
+    {
       "id": "outer-wilds",
       "rules": [
         {
@@ -10996,6 +14767,20 @@
           "provenance": {
             "source": "steam-appinfo",
             "locator": "steam-executable-observation:753640"
+          }
+        }
+      ]
+    },
+    {
+      "id": "outpost-infinity-siege",
+      "rules": [
+        {
+          "id": "steam-1566690",
+          "kind": "steam_appid",
+          "value": "1566690",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0408"
           }
         }
       ]
@@ -11024,6 +14809,20 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#outward-definitive-edition"
+          }
+        }
+      ]
+    },
+    {
+      "id": "over-the-hill-demo",
+      "rules": [
+        {
+          "id": "steam-4703940",
+          "kind": "steam_appid",
+          "value": "4703940",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0409"
           }
         }
       ]
@@ -11113,6 +14912,20 @@
       ]
     },
     {
+      "id": "painkiller-demo",
+      "rules": [
+        {
+          "id": "steam-3210",
+          "kind": "steam_appid",
+          "value": "3210",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0411"
+          }
+        }
+      ]
+    },
+    {
       "id": "palworld",
       "rules": [
         {
@@ -11122,6 +14935,48 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#palworld"
+          }
+        }
+      ]
+    },
+    {
+      "id": "panicore",
+      "rules": [
+        {
+          "id": "steam-2695940",
+          "kind": "steam_appid",
+          "value": "2695940",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0413"
+          }
+        }
+      ]
+    },
+    {
+      "id": "paradise-killer",
+      "rules": [
+        {
+          "id": "steam-1160220",
+          "kind": "steam_appid",
+          "value": "1160220",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0414"
+          }
+        }
+      ]
+    },
+    {
+      "id": "paresis-ii-demo",
+      "rules": [
+        {
+          "id": "steam-4362740",
+          "kind": "steam_appid",
+          "value": "4362740",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0415"
           }
         }
       ]
@@ -11238,6 +15093,34 @@
       ]
     },
     {
+      "id": "pax-autocratica-prologue",
+      "rules": [
+        {
+          "id": "steam-4107120",
+          "kind": "steam_appid",
+          "value": "4107120",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0418"
+          }
+        }
+      ]
+    },
+    {
+      "id": "payday-3",
+      "rules": [
+        {
+          "id": "steam-1272080",
+          "kind": "steam_appid",
+          "value": "1272080",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0419"
+          }
+        }
+      ]
+    },
+    {
       "id": "peak",
       "rules": [
         {
@@ -11284,6 +15167,20 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#people-playground"
+          }
+        }
+      ]
+    },
+    {
+      "id": "perceptum-playtest",
+      "rules": [
+        {
+          "id": "steam-4124340",
+          "kind": "steam_appid",
+          "value": "4124340",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0421"
           }
         }
       ]
@@ -11419,6 +15316,20 @@
       ]
     },
     {
+      "id": "pizzapocalypse",
+      "rules": [
+        {
+          "id": "steam-3224960",
+          "kind": "steam_appid",
+          "value": "3224960",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0423"
+          }
+        }
+      ]
+    },
+    {
       "id": "plan-b-terraform",
       "rules": [
         {
@@ -11428,6 +15339,20 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#plan-b-terraform"
+          }
+        }
+      ]
+    },
+    {
+      "id": "planet-coaster-2",
+      "rules": [
+        {
+          "id": "steam-2688950",
+          "kind": "steam_appid",
+          "value": "2688950",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0424"
           }
         }
       ]
@@ -11470,6 +15395,20 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#playing-kafka"
+          }
+        }
+      ]
+    },
+    {
+      "id": "polaris-demo",
+      "rules": [
+        {
+          "id": "steam-3166290",
+          "kind": "steam_appid",
+          "value": "3166290",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0425"
           }
         }
       ]
@@ -11526,6 +15465,34 @@
           "provenance": {
             "source": "luma-curated-games",
             "locator": "catalogs/addons/luma/curated_games.json#poppyplaytime"
+          }
+        }
+      ]
+    },
+    {
+      "id": "portal-prelude-rtx",
+      "rules": [
+        {
+          "id": "steam-2410180",
+          "kind": "steam_appid",
+          "value": "2410180",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0427"
+          }
+        }
+      ]
+    },
+    {
+      "id": "postal-4-no-regerts",
+      "rules": [
+        {
+          "id": "steam-707030",
+          "kind": "steam_appid",
+          "value": "707030",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0428"
           }
         }
       ]
@@ -11656,6 +15623,48 @@
       ]
     },
     {
+      "id": "project-borealis-prologue",
+      "rules": [
+        {
+          "id": "steam-2215490",
+          "kind": "steam_appid",
+          "value": "2215490",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0431"
+          }
+        }
+      ]
+    },
+    {
+      "id": "project-songbird-teaser-faceless",
+      "rules": [
+        {
+          "id": "steam-3437660",
+          "kind": "steam_appid",
+          "value": "3437660",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0432"
+          }
+        }
+      ]
+    },
+    {
+      "id": "project-station-demo",
+      "rules": [
+        {
+          "id": "steam-4633360",
+          "kind": "steam_appid",
+          "value": "4633360",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0433"
+          }
+        }
+      ]
+    },
+    {
       "id": "project-wingman",
       "rules": [
         {
@@ -11674,6 +15683,62 @@
           "provenance": {
             "source": "luma-curated-games",
             "locator": "catalogs/addons/luma/curated_games.json#project-wingman"
+          }
+        }
+      ]
+    },
+    {
+      "id": "promise-mascot-agency",
+      "rules": [
+        {
+          "id": "steam-2585830",
+          "kind": "steam_appid",
+          "value": "2585830",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0434"
+          }
+        }
+      ]
+    },
+    {
+      "id": "protocol-terminate",
+      "rules": [
+        {
+          "id": "steam-3710560",
+          "kind": "steam_appid",
+          "value": "3710560",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0435"
+          }
+        }
+      ]
+    },
+    {
+      "id": "psalm-2",
+      "rules": [
+        {
+          "id": "steam-3916260",
+          "kind": "steam_appid",
+          "value": "3916260",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0436"
+          }
+        }
+      ]
+    },
+    {
+      "id": "psycho-fear",
+      "rules": [
+        {
+          "id": "steam-2208780",
+          "kind": "steam_appid",
+          "value": "2208780",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0437"
           }
         }
       ]
@@ -11716,6 +15781,20 @@
       ]
     },
     {
+      "id": "pumpkin-jack",
+      "rules": [
+        {
+          "id": "steam-1186640",
+          "kind": "steam_appid",
+          "value": "1186640",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0438"
+          }
+        }
+      ]
+    },
+    {
       "id": "quantum-break",
       "rules": [
         {
@@ -11745,7 +15824,24 @@
           "id": "steam-3419520",
           "kind": "steam_appid",
           "value": "3419520",
-          "provenance": { "source": "optiscaler-reviewed-match", "locator": "main:0440" }
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0440"
+          }
+        }
+      ]
+    },
+    {
+      "id": "qube-10th-anniversary",
+      "rules": [
+        {
+          "id": "steam-1564220",
+          "kind": "steam_appid",
+          "value": "1564220",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0441"
+          }
         }
       ]
     },
@@ -11838,6 +15934,48 @@
       ]
     },
     {
+      "id": "raji-an-ancient-epic",
+      "rules": [
+        {
+          "id": "steam-730390",
+          "kind": "steam_appid",
+          "value": "730390",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0442"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ranch-simulator",
+      "rules": [
+        {
+          "id": "steam-1119730",
+          "kind": "steam_appid",
+          "value": "1119730",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0443"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ratchet-clank-rift-apart",
+      "rules": [
+        {
+          "id": "steam-1895880",
+          "kind": "steam_appid",
+          "value": "1895880",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0444"
+          }
+        }
+      ]
+    },
+    {
       "id": "ready-or-not",
       "rules": [
         {
@@ -11847,6 +15985,20 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#ready-or-not"
+          }
+        }
+      ]
+    },
+    {
+      "id": "realmwalker",
+      "rules": [
+        {
+          "id": "steam-3301490",
+          "kind": "steam_appid",
+          "value": "3301490",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0446"
           }
         }
       ]
@@ -11949,6 +16101,20 @@
       ]
     },
     {
+      "id": "redfall",
+      "rules": [
+        {
+          "id": "steam-1294810",
+          "kind": "steam_appid",
+          "value": "1294810",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0450"
+          }
+        }
+      ]
+    },
+    {
       "id": "redout-2",
       "rules": [
         {
@@ -11990,6 +16156,20 @@
           "provenance": {
             "source": "luma-curated-games",
             "locator": "catalogs/addons/luma/curated_games.json#redout"
+          }
+        }
+      ]
+    },
+    {
+      "id": "redout-space-assault",
+      "rules": [
+        {
+          "id": "steam-886060",
+          "kind": "steam_appid",
+          "value": "886060",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0451"
           }
         }
       ]
@@ -12337,6 +16517,20 @@
       ]
     },
     {
+      "id": "ripout",
+      "rules": [
+        {
+          "id": "steam-1558830",
+          "kind": "steam_appid",
+          "value": "1558830",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0462"
+          }
+        }
+      ]
+    },
+    {
       "id": "rise-of-the-ronin",
       "rules": [
         {
@@ -12397,6 +16591,20 @@
       ]
     },
     {
+      "id": "riven",
+      "rules": [
+        {
+          "id": "steam-1712350",
+          "kind": "steam_appid",
+          "value": "1712350",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0465"
+          }
+        }
+      ]
+    },
+    {
       "id": "road-96-mile-0",
       "rules": [
         {
@@ -12425,6 +16633,20 @@
       ]
     },
     {
+      "id": "roadcraft",
+      "rules": [
+        {
+          "id": "steam-2104890",
+          "kind": "steam_appid",
+          "value": "2104890",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0466"
+          }
+        }
+      ]
+    },
+    {
       "id": "robocop-rogue-city",
       "rules": [
         {
@@ -12448,6 +16670,20 @@
       ]
     },
     {
+      "id": "robocop-rogue-city-unfinished-business",
+      "rules": [
+        {
+          "id": "steam-3527760",
+          "kind": "steam_appid",
+          "value": "3527760",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0468"
+          }
+        }
+      ]
+    },
+    {
       "id": "roboquest",
       "rules": [
         {
@@ -12462,6 +16698,34 @@
       ]
     },
     {
+      "id": "robots-at-midnight",
+      "rules": [
+        {
+          "id": "steam-2623040",
+          "kind": "steam_appid",
+          "value": "2623040",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0469"
+          }
+        }
+      ]
+    },
+    {
+      "id": "romancelvania",
+      "rules": [
+        {
+          "id": "steam-1192810",
+          "kind": "steam_appid",
+          "value": "1192810",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0470"
+          }
+        }
+      ]
+    },
+    {
       "id": "romancing-saga-2",
       "rules": [
         {
@@ -12471,6 +16735,20 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#romancing-saga-2"
+          }
+        }
+      ]
+    },
+    {
+      "id": "romeo-is-a-dead-man",
+      "rules": [
+        {
+          "id": "steam-3050900",
+          "kind": "steam_appid",
+          "value": "3050900",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0471"
           }
         }
       ]
@@ -12545,6 +16823,20 @@
           "provenance": {
             "source": "luma-curated-games",
             "locator": "catalogs/addons/luma/curated_games.json#ruiner"
+          }
+        }
+      ]
+    },
+    {
+      "id": "rune-factory-guardians-of-azuma",
+      "rules": [
+        {
+          "id": "steam-2864560",
+          "kind": "steam_appid",
+          "value": "2864560",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0474"
           }
         }
       ]
@@ -12629,6 +16921,34 @@
       ]
     },
     {
+      "id": "sagas-of-lumin",
+      "rules": [
+        {
+          "id": "steam-3130220",
+          "kind": "steam_appid",
+          "value": "3130220",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0479"
+          }
+        }
+      ]
+    },
+    {
+      "id": "saints-row-2022",
+      "rules": [
+        {
+          "id": "steam-742420",
+          "kind": "steam_appid",
+          "value": "742420",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0480"
+          }
+        }
+      ]
+    },
+    {
       "id": "saints-row-the-third-remastered",
       "rules": [
         {
@@ -12652,6 +16972,20 @@
       ]
     },
     {
+      "id": "samson",
+      "rules": [
+        {
+          "id": "steam-3634520",
+          "kind": "steam_appid",
+          "value": "3634520",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0481"
+          }
+        }
+      ]
+    },
+    {
       "id": "sand-land",
       "rules": [
         {
@@ -12661,6 +16995,20 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#sand-land"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sands-of-aura",
+      "rules": [
+        {
+          "id": "steam-1119840",
+          "kind": "steam_appid",
+          "value": "1119840",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0482"
           }
         }
       ]
@@ -12731,6 +17079,20 @@
       ]
     },
     {
+      "id": "scathe",
+      "rules": [
+        {
+          "id": "steam-1154830",
+          "kind": "steam_appid",
+          "value": "1154830",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0484"
+          }
+        }
+      ]
+    },
+    {
       "id": "schedule-i",
       "rules": [
         {
@@ -12768,6 +17130,20 @@
       ]
     },
     {
+      "id": "scp-secret-files",
+      "rules": [
+        {
+          "id": "steam-1718130",
+          "kind": "steam_appid",
+          "value": "1718130",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0486"
+          }
+        }
+      ]
+    },
+    {
       "id": "sea-of-solitude",
       "rules": [
         {
@@ -12800,6 +17176,20 @@
           "provenance": {
             "source": "steam-appinfo",
             "locator": "steam-executable-observation:1244090"
+          }
+        }
+      ]
+    },
+    {
+      "id": "season-a-letter-to-the-future",
+      "rules": [
+        {
+          "id": "steam-695330",
+          "kind": "steam_appid",
+          "value": "695330",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0487"
           }
         }
       ]
@@ -12860,6 +17250,20 @@
           "provenance": {
             "source": "luma-curated-games",
             "locator": "catalogs/addons/luma/curated_games.json#selfloss"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sengoku-dynasty",
+      "rules": [
+        {
+          "id": "steam-1702010",
+          "kind": "steam_appid",
+          "value": "1702010",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0489"
           }
         }
       ]
@@ -12967,6 +17371,34 @@
       ]
     },
     {
+      "id": "shadow-project-demo",
+      "rules": [
+        {
+          "id": "steam-3638110",
+          "kind": "steam_appid",
+          "value": "3638110",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0495"
+          }
+        }
+      ]
+    },
+    {
+      "id": "shadow-warrior-3",
+      "rules": [
+        {
+          "id": "steam-1036890",
+          "kind": "steam_appid",
+          "value": "1036890",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0496"
+          }
+        }
+      ]
+    },
+    {
       "id": "shadow-warrior-middot-shadow-warrior-2-sw1",
       "rules": [
         {
@@ -13069,6 +17501,20 @@
       ]
     },
     {
+      "id": "shatterline",
+      "rules": [
+        {
+          "id": "steam-2087030",
+          "kind": "steam_appid",
+          "value": "2087030",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0497"
+          }
+        }
+      ]
+    },
+    {
       "id": "shenmue-1-and-2",
       "rules": [
         {
@@ -13124,6 +17570,20 @@
           "provenance": {
             "source": "luma-curated-games",
             "locator": "catalogs/addons/luma/curated_games.json#sherlock-holmes-chapter-one"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sherlock-holmes-the-awakened",
+      "rules": [
+        {
+          "id": "steam-1949030",
+          "kind": "steam_appid",
+          "value": "1949030",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0498"
           }
         }
       ]
@@ -13203,6 +17663,20 @@
       ]
     },
     {
+      "id": "shrot-demo",
+      "rules": [
+        {
+          "id": "steam-4804160",
+          "kind": "steam_appid",
+          "value": "4804160",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0499"
+          }
+        }
+      ]
+    },
+    {
       "id": "sifu",
       "rules": [
         {
@@ -13263,6 +17737,20 @@
       ]
     },
     {
+      "id": "simulakros",
+      "rules": [
+        {
+          "id": "steam-2067160",
+          "kind": "steam_appid",
+          "value": "2067160",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0503"
+          }
+        }
+      ]
+    },
+    {
       "id": "six-days-in-fallujah",
       "rules": [
         {
@@ -13305,6 +17793,20 @@
       ]
     },
     {
+      "id": "slavicpunk-oldtimer",
+      "rules": [
+        {
+          "id": "steam-1820140",
+          "kind": "steam_appid",
+          "value": "1820140",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0504"
+          }
+        }
+      ]
+    },
+    {
       "id": "sledders",
       "rules": [
         {
@@ -13314,6 +17816,48 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#sledders"
+          }
+        }
+      ]
+    },
+    {
+      "id": "slender-the-arrival",
+      "rules": [
+        {
+          "id": "steam-252330",
+          "kind": "steam_appid",
+          "value": "252330",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0505"
+          }
+        }
+      ]
+    },
+    {
+      "id": "smalland-survive-the-wilds",
+      "rules": [
+        {
+          "id": "steam-768200",
+          "kind": "steam_appid",
+          "value": "768200",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0506"
+          }
+        }
+      ]
+    },
+    {
+      "id": "smile-protocol-demo",
+      "rules": [
+        {
+          "id": "steam-4793190",
+          "kind": "steam_appid",
+          "value": "4793190",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0508"
           }
         }
       ]
@@ -13444,6 +17988,20 @@
       ]
     },
     {
+      "id": "solasta-ii",
+      "rules": [
+        {
+          "id": "steam-2975950",
+          "kind": "steam_appid",
+          "value": "2975950",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0509"
+          }
+        }
+      ]
+    },
+    {
       "id": "song-of-nunu",
       "rules": [
         {
@@ -13569,6 +18127,34 @@
       ]
     },
     {
+      "id": "soulmask",
+      "rules": [
+        {
+          "id": "steam-2646460",
+          "kind": "steam_appid",
+          "value": "2646460",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0511"
+          }
+        }
+      ]
+    },
+    {
+      "id": "soulslinger-envoy-of-death",
+      "rules": [
+        {
+          "id": "steam-2429240",
+          "kind": "steam_appid",
+          "value": "2429240",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0512"
+          }
+        }
+      ]
+    },
+    {
       "id": "soulstice",
       "rules": [
         {
@@ -13620,6 +18206,20 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#space-crew"
+          }
+        }
+      ]
+    },
+    {
+      "id": "space-engineers-2",
+      "rules": [
+        {
+          "id": "steam-1133870",
+          "kind": "steam_appid",
+          "value": "1133870",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0515"
           }
         }
       ]
@@ -13736,6 +18336,34 @@
       ]
     },
     {
+      "id": "spirit-of-the-north-2",
+      "rules": [
+        {
+          "id": "steam-1778840",
+          "kind": "steam_appid",
+          "value": "1778840",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0516"
+          }
+        }
+      ]
+    },
+    {
+      "id": "spirit-x-strike",
+      "rules": [
+        {
+          "id": "steam-2538880",
+          "kind": "steam_appid",
+          "value": "2538880",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0517"
+          }
+        }
+      ]
+    },
+    {
       "id": "spiritfall",
       "rules": [
         {
@@ -13815,6 +18443,20 @@
       ]
     },
     {
+      "id": "spongebob-squarepants-titans-of-the-tide",
+      "rules": [
+        {
+          "id": "steam-2479650",
+          "kind": "steam_appid",
+          "value": "2479650",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0519"
+          }
+        }
+      ]
+    },
+    {
       "id": "spooky-s-jump-scare-mansion-hd-renovation",
       "rules": [
         {
@@ -13833,6 +18475,20 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#spooky-s-jump-scare-mansion-hd-renovation"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sprawl",
+      "rules": [
+        {
+          "id": "steam-1549690",
+          "kind": "steam_appid",
+          "value": "1549690",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0520"
           }
         }
       ]
@@ -13875,6 +18531,48 @@
       ]
     },
     {
+      "id": "stalker-call-of-prypiat-enhanced-edition",
+      "rules": [
+        {
+          "id": "steam-2427430",
+          "kind": "steam_appid",
+          "value": "2427430",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0521"
+          }
+        }
+      ]
+    },
+    {
+      "id": "stalker-clear-sky-enhanced-edition",
+      "rules": [
+        {
+          "id": "steam-2427420",
+          "kind": "steam_appid",
+          "value": "2427420",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0522"
+          }
+        }
+      ]
+    },
+    {
+      "id": "stalker-shadow-of-chornobyl-enhanced-edition",
+      "rules": [
+        {
+          "id": "steam-2427410",
+          "kind": "steam_appid",
+          "value": "2427410",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0523"
+          }
+        }
+      ]
+    },
+    {
       "id": "star-ocean-the-second-story-r",
       "rules": [
         {
@@ -13884,6 +18582,34 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#star-ocean-the-second-story-r"
+          }
+        }
+      ]
+    },
+    {
+      "id": "star-overdrive",
+      "rules": [
+        {
+          "id": "steam-2055590",
+          "kind": "steam_appid",
+          "value": "2055590",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0526"
+          }
+        }
+      ]
+    },
+    {
+      "id": "star-trek-voyager-across-the-unknown",
+      "rules": [
+        {
+          "id": "steam-2643390",
+          "kind": "steam_appid",
+          "value": "2643390",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0527"
           }
         }
       ]
@@ -13947,8 +18673,8 @@
           "kind": "steam_appid",
           "value": "2075800",
           "provenance": {
-            "source": "steam-store-search",
-            "locator": "pending:renodx:star-wars-zero-companytm"
+            "source": "renodx-match-overlay",
+            "locator": "catalogs/addons/renodx/match_overlay.json#star-wars-zero-companytm"
           }
         }
       ]
@@ -13995,6 +18721,20 @@
           "provenance": {
             "source": "luma-curated-games",
             "locator": "catalogs/addons/luma/curated_games.json#state-of-decay-2"
+          }
+        }
+      ]
+    },
+    {
+      "id": "stay-in-the-light",
+      "rules": [
+        {
+          "id": "steam-1296010",
+          "kind": "steam_appid",
+          "value": "1296010",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0530"
           }
         }
       ]
@@ -14134,6 +18874,48 @@
       ]
     },
     {
+      "id": "still-wakes-the-deep",
+      "rules": [
+        {
+          "id": "steam-1622910",
+          "kind": "steam_appid",
+          "value": "1622910",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0534"
+          }
+        }
+      ]
+    },
+    {
+      "id": "storage-hunter-simulator",
+      "rules": [
+        {
+          "id": "steam-1442430",
+          "kind": "steam_appid",
+          "value": "1442430",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0535"
+          }
+        }
+      ]
+    },
+    {
+      "id": "stranded-alien-dawn",
+      "rules": [
+        {
+          "id": "steam-1324130",
+          "kind": "steam_appid",
+          "value": "1324130",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0537"
+          }
+        }
+      ]
+    },
+    {
       "id": "stranger-of-paradise-final-fantasy-origin",
       "rules": [
         {
@@ -14180,6 +18962,20 @@
       ]
     },
     {
+      "id": "strayed-lights",
+      "rules": [
+        {
+          "id": "steam-2162020",
+          "kind": "steam_appid",
+          "value": "2162020",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0538"
+          }
+        }
+      ]
+    },
+    {
       "id": "street-fighter-6",
       "rules": [
         {
@@ -14217,6 +19013,34 @@
       ]
     },
     {
+      "id": "stygian-outer-gods",
+      "rules": [
+        {
+          "id": "steam-2581410",
+          "kind": "steam_appid",
+          "value": "2581410",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0540"
+          }
+        }
+      ]
+    },
+    {
+      "id": "styx-blades-of-greed",
+      "rules": [
+        {
+          "id": "steam-3290690",
+          "kind": "steam_appid",
+          "value": "3290690",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0540"
+          }
+        }
+      ]
+    },
+    {
       "id": "styx-shards-of-darkness",
       "rules": [
         {
@@ -14235,6 +19059,20 @@
           "provenance": {
             "source": "luma-curated-games",
             "locator": "catalogs/addons/luma/curated_games.json#styx-shards-of-darkness"
+          }
+        }
+      ]
+    },
+    {
+      "id": "subliminal",
+      "rules": [
+        {
+          "id": "steam-2300840",
+          "kind": "steam_appid",
+          "value": "2300840",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0541"
           }
         }
       ]
@@ -14342,6 +19180,34 @@
       ]
     },
     {
+      "id": "suicide-squad-kill-the-justice-league",
+      "rules": [
+        {
+          "id": "steam-315210",
+          "kind": "steam_appid",
+          "value": "315210",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0543"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sumerian-six",
+      "rules": [
+        {
+          "id": "steam-1429850",
+          "kind": "steam_appid",
+          "value": "1429850",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0544"
+          }
+        }
+      ]
+    },
+    {
       "id": "summoner-s-war-chronicles",
       "rules": [
         {
@@ -14421,6 +19287,20 @@
       ]
     },
     {
+      "id": "super-meat-boy-3d",
+      "rules": [
+        {
+          "id": "steam-3288210",
+          "kind": "steam_appid",
+          "value": "3288210",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0545"
+          }
+        }
+      ]
+    },
+    {
       "id": "superhot",
       "rules": [
         {
@@ -14481,6 +19361,34 @@
           "provenance": {
             "source": "luma-curated-games",
             "locator": "catalogs/addons/luma/curated_games.json#supraland"
+          }
+        }
+      ]
+    },
+    {
+      "id": "supraland-six-inches-under",
+      "rules": [
+        {
+          "id": "steam-1522870",
+          "kind": "steam_appid",
+          "value": "1522870",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0547"
+          }
+        }
+      ]
+    },
+    {
+      "id": "supraworld",
+      "rules": [
+        {
+          "id": "steam-1869290",
+          "kind": "steam_appid",
+          "value": "1869290",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0548"
           }
         }
       ]
@@ -14569,6 +19477,20 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#syberia-the-world-before"
+          }
+        }
+      ]
+    },
+    {
+      "id": "synthetik-2",
+      "rules": [
+        {
+          "id": "steam-1471410",
+          "kind": "steam_appid",
+          "value": "1471410",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0549"
           }
         }
       ]
@@ -14764,6 +19686,20 @@
       ]
     },
     {
+      "id": "tchia",
+      "rules": [
+        {
+          "id": "steam-1496590",
+          "kind": "steam_appid",
+          "value": "1496590",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0554"
+          }
+        }
+      ]
+    },
+    {
       "id": "teardown",
       "rules": [
         {
@@ -14782,6 +19718,20 @@
           "provenance": {
             "source": "steam-appinfo",
             "locator": "steam-executable-observation:1167630"
+          }
+        }
+      ]
+    },
+    {
+      "id": "technofumer",
+      "rules": [
+        {
+          "id": "steam-2498910",
+          "kind": "steam_appid",
+          "value": "2498910",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0555"
           }
         }
       ]
@@ -14870,6 +19820,20 @@
       ]
     },
     {
+      "id": "tempest-rising",
+      "rules": [
+        {
+          "id": "steam-1486920",
+          "kind": "steam_appid",
+          "value": "1486920",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0557"
+          }
+        }
+      ]
+    },
+    {
       "id": "terminator-resistance",
       "rules": [
         {
@@ -14921,6 +19885,48 @@
       ]
     },
     {
+      "id": "terratech-legion",
+      "rules": [
+        {
+          "id": "steam-3596700",
+          "kind": "steam_appid",
+          "value": "3596700",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0558"
+          }
+        }
+      ]
+    },
+    {
+      "id": "test-drive-unlimited-solar-crown",
+      "rules": [
+        {
+          "id": "steam-1249970",
+          "kind": "steam_appid",
+          "value": "1249970",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0559"
+          }
+        }
+      ]
+    },
+    {
+      "id": "testament-the-order-of-high-human",
+      "rules": [
+        {
+          "id": "steam-2176430",
+          "kind": "steam_appid",
+          "value": "2176430",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0560"
+          }
+        }
+      ]
+    },
+    {
       "id": "tetris-effect-connected",
       "rules": [
         {
@@ -14939,6 +19945,20 @@
           "provenance": {
             "source": "luma-curated-games",
             "locator": "catalogs/addons/luma/curated_games.json#tetris-effect-connected"
+          }
+        }
+      ]
+    },
+    {
+      "id": "the-alley-demo",
+      "rules": [
+        {
+          "id": "steam-4215750",
+          "kind": "steam_appid",
+          "value": "4215750",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0561"
           }
         }
       ]
@@ -15004,6 +20024,34 @@
       ]
     },
     {
+      "id": "the-axis-unseen",
+      "rules": [
+        {
+          "id": "steam-1807810",
+          "kind": "steam_appid",
+          "value": "1807810",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0564"
+          }
+        }
+      ]
+    },
+    {
+      "id": "the-black-ice",
+      "rules": [
+        {
+          "id": "steam-3254050",
+          "kind": "steam_appid",
+          "value": "3254050",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0565"
+          }
+        }
+      ]
+    },
+    {
       "id": "the-blood-of-dawnwalker",
       "rules": [
         {
@@ -15046,6 +20094,34 @@
       ]
     },
     {
+      "id": "the-casting-of-frank-stone",
+      "rules": [
+        {
+          "id": "steam-2223840",
+          "kind": "steam_appid",
+          "value": "2223840",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0568"
+          }
+        }
+      ]
+    },
+    {
+      "id": "the-chant",
+      "rules": [
+        {
+          "id": "steam-1577250",
+          "kind": "steam_appid",
+          "value": "1577250",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0569"
+          }
+        }
+      ]
+    },
+    {
       "id": "the-dark-pictures-man-of-medan",
       "rules": [
         {
@@ -15064,6 +20140,20 @@
           "provenance": {
             "source": "luma-curated-games",
             "locator": "catalogs/addons/luma/curated_games.json#the-dark-pictures-man-of-medan"
+          }
+        }
+      ]
+    },
+    {
+      "id": "the-diofield-chronicle",
+      "rules": [
+        {
+          "id": "steam-1399080",
+          "kind": "steam_appid",
+          "value": "1399080",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0570"
           }
         }
       ]
@@ -15101,6 +20191,20 @@
           "provenance": {
             "source": "steam-appinfo",
             "locator": "steam-executable-observation:2623190"
+          }
+        }
+      ]
+    },
+    {
+      "id": "the-elder-scrolls-v-skyrim-special-edition",
+      "rules": [
+        {
+          "id": "steam-489830",
+          "kind": "steam_appid",
+          "value": "489830",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0572"
           }
         }
       ]
@@ -15268,6 +20372,20 @@
       ]
     },
     {
+      "id": "the-hollow-complex-demo",
+      "rules": [
+        {
+          "id": "steam-4219940",
+          "kind": "steam_appid",
+          "value": "4219940",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0574"
+          }
+        }
+      ]
+    },
+    {
       "id": "the-hundred-line-last-defense-academy",
       "rules": [
         {
@@ -15342,6 +20460,20 @@
       ]
     },
     {
+      "id": "the-joy-of-creation",
+      "rules": [
+        {
+          "id": "steam-2948730",
+          "kind": "steam_appid",
+          "value": "2948730",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0576"
+          }
+        }
+      ]
+    },
+    {
       "id": "the-karters-2-turbo-charged",
       "rules": [
         {
@@ -15356,6 +20488,20 @@
       ]
     },
     {
+      "id": "the-killing-antidote",
+      "rules": [
+        {
+          "id": "steam-2254890",
+          "kind": "steam_appid",
+          "value": "2254890",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0577"
+          }
+        }
+      ]
+    },
+    {
       "id": "the-knightling",
       "rules": [
         {
@@ -15365,6 +20511,62 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#the-knightling"
+          }
+        }
+      ]
+    },
+    {
+      "id": "the-last-caretaker",
+      "rules": [
+        {
+          "id": "steam-1783560",
+          "kind": "steam_appid",
+          "value": "1783560",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0578"
+          }
+        }
+      ]
+    },
+    {
+      "id": "the-last-of-us-part-i",
+      "rules": [
+        {
+          "id": "steam-1888930",
+          "kind": "steam_appid",
+          "value": "1888930",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0579"
+          }
+        }
+      ]
+    },
+    {
+      "id": "the-last-of-us-part-ii-remastered",
+      "rules": [
+        {
+          "id": "steam-2531310",
+          "kind": "steam_appid",
+          "value": "2531310",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0580"
+          }
+        }
+      ]
+    },
+    {
+      "id": "the-last-oricru",
+      "rules": [
+        {
+          "id": "steam-1663640",
+          "kind": "steam_appid",
+          "value": "1663640",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0582"
           }
         }
       ]
@@ -15426,6 +20628,34 @@
       ]
     },
     {
+      "id": "the-lord-of-the-rings-gollum",
+      "rules": [
+        {
+          "id": "steam-1265780",
+          "kind": "steam_appid",
+          "value": "1265780",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0583"
+          }
+        }
+      ]
+    },
+    {
+      "id": "the-lord-of-the-rings-return-to-moria",
+      "rules": [
+        {
+          "id": "steam-2933130",
+          "kind": "steam_appid",
+          "value": "2933130",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0584"
+          }
+        }
+      ]
+    },
+    {
       "id": "the-lord-of-the-rings-war-in-the-north-legacy-edition",
       "rules": [
         {
@@ -15468,6 +20698,34 @@
       ]
     },
     {
+      "id": "the-mound-omen-of-cthulhu",
+      "rules": [
+        {
+          "id": "steam-2569760",
+          "kind": "steam_appid",
+          "value": "2569760",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0587"
+          }
+        }
+      ]
+    },
+    {
+      "id": "the-occultist",
+      "rules": [
+        {
+          "id": "steam-2092840",
+          "kind": "steam_appid",
+          "value": "2092840",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0588"
+          }
+        }
+      ]
+    },
+    {
       "id": "the-occupation",
       "rules": [
         {
@@ -15477,6 +20735,34 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#the-occupation"
+          }
+        }
+      ]
+    },
+    {
+      "id": "the-orville-interactive-fan-experience",
+      "rules": [
+        {
+          "id": "steam-1096200",
+          "kind": "steam_appid",
+          "value": "1096200",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0589"
+          }
+        }
+      ]
+    },
+    {
+      "id": "the-other-side",
+      "rules": [
+        {
+          "id": "steam-2764750",
+          "kind": "steam_appid",
+          "value": "2764750",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0591"
           }
         }
       ]
@@ -15547,6 +20833,20 @@
       ]
     },
     {
+      "id": "the-path-into-the-abyss",
+      "rules": [
+        {
+          "id": "steam-3000460",
+          "kind": "steam_appid",
+          "value": "3000460",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0593"
+          }
+        }
+      ]
+    },
+    {
       "id": "the-pathless",
       "rules": [
         {
@@ -15584,6 +20884,20 @@
       ]
     },
     {
+      "id": "the-persistence",
+      "rules": [
+        {
+          "id": "steam-1140100",
+          "kind": "steam_appid",
+          "value": "1140100",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0594"
+          }
+        }
+      ]
+    },
+    {
       "id": "the-precinct",
       "rules": [
         {
@@ -15612,6 +20926,20 @@
       ]
     },
     {
+      "id": "the-riftbreaker",
+      "rules": [
+        {
+          "id": "steam-780310",
+          "kind": "steam_appid",
+          "value": "780310",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0596"
+          }
+        }
+      ]
+    },
+    {
       "id": "the-rogue-prince-of-persia",
       "rules": [
         {
@@ -15621,6 +20949,34 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#the-rogue-prince-of-persia"
+          }
+        }
+      ]
+    },
+    {
+      "id": "the-rpg",
+      "rules": [
+        {
+          "id": "steam-2429270",
+          "kind": "steam_appid",
+          "value": "2429270",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0597"
+          }
+        }
+      ]
+    },
+    {
+      "id": "the-seven-deadly-sins-origin",
+      "rules": [
+        {
+          "id": "steam-3679080",
+          "kind": "steam_appid",
+          "value": "3679080",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0598"
           }
         }
       ]
@@ -15658,6 +21014,20 @@
       ]
     },
     {
+      "id": "the-sinking-city-2",
+      "rules": [
+        {
+          "id": "steam-2825860",
+          "kind": "steam_appid",
+          "value": "2825860",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0599"
+          }
+        }
+      ]
+    },
+    {
       "id": "the-smurfs-dreams",
       "rules": [
         {
@@ -15690,6 +21060,34 @@
           "provenance": {
             "source": "steam-appinfo",
             "locator": "steam-executable-observation:378540"
+          }
+        }
+      ]
+    },
+    {
+      "id": "the-talos-principle-2",
+      "rules": [
+        {
+          "id": "steam-835960",
+          "kind": "steam_appid",
+          "value": "835960",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0602"
+          }
+        }
+      ]
+    },
+    {
+      "id": "the-talos-principle-reawakened",
+      "rules": [
+        {
+          "id": "steam-2806640",
+          "kind": "steam_appid",
+          "value": "2806640",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0601"
           }
         }
       ]
@@ -15871,6 +21269,20 @@
       ]
     },
     {
+      "id": "thiefs-shelter",
+      "rules": [
+        {
+          "id": "steam-1430930",
+          "kind": "steam_appid",
+          "value": "1430930",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0605"
+          }
+        }
+      ]
+    },
+    {
       "id": "threshold",
       "rules": [
         {
@@ -15926,6 +21338,20 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#thymesia"
+          }
+        }
+      ]
+    },
+    {
+      "id": "time-breaker",
+      "rules": [
+        {
+          "id": "steam-1623440",
+          "kind": "steam_appid",
+          "value": "1623440",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0607"
           }
         }
       ]
@@ -16019,6 +21445,34 @@
       ]
     },
     {
+      "id": "titan-quest-ii",
+      "rules": [
+        {
+          "id": "steam-1154030",
+          "kind": "steam_appid",
+          "value": "1154030",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0610"
+          }
+        }
+      ]
+    },
+    {
+      "id": "titan-station",
+      "rules": [
+        {
+          "id": "steam-1881120",
+          "kind": "steam_appid",
+          "value": "1881120",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0609"
+          }
+        }
+      ]
+    },
+    {
       "id": "titanfall-2",
       "rules": [
         {
@@ -16042,6 +21496,20 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#tmodloader"
+          }
+        }
+      ]
+    },
+    {
+      "id": "togges",
+      "rules": [
+        {
+          "id": "steam-1550270",
+          "kind": "steam_appid",
+          "value": "1550270",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0611"
           }
         }
       ]
@@ -16079,6 +21547,20 @@
           "provenance": {
             "source": "steam-appinfo",
             "locator": "steam-executable-observation:203160"
+          }
+        }
+      ]
+    },
+    {
+      "id": "tony-hawks-pro-skater-3-4",
+      "rules": [
+        {
+          "id": "steam-2545710",
+          "kind": "steam_appid",
+          "value": "2545710",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0613"
           }
         }
       ]
@@ -16260,6 +21742,20 @@
           "provenance": {
             "source": "steam-appinfo",
             "locator": "steam-executable-observation:2225070"
+          }
+        }
+      ]
+    },
+    {
+      "id": "trail-out",
+      "rules": [
+        {
+          "id": "steam-1664220",
+          "kind": "steam_appid",
+          "value": "1664220",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0615"
           }
         }
       ]
@@ -16583,6 +22079,20 @@
       ]
     },
     {
+      "id": "troublemaker-2-beyond-dream",
+      "rules": [
+        {
+          "id": "steam-2479770",
+          "kind": "steam_appid",
+          "value": "2479770",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0619"
+          }
+        }
+      ]
+    },
+    {
       "id": "try-again",
       "rules": [
         {
@@ -16676,6 +22186,20 @@
       ]
     },
     {
+      "id": "turbo-sloths",
+      "rules": [
+        {
+          "id": "steam-1443630",
+          "kind": "steam_appid",
+          "value": "1443630",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0620"
+          }
+        }
+      ]
+    },
+    {
       "id": "twin-mirror",
       "rules": [
         {
@@ -16685,6 +22209,20 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#twin-mirror"
+          }
+        }
+      ]
+    },
+    {
+      "id": "twin-stones-the-journey-of-bukka",
+      "rules": [
+        {
+          "id": "steam-1662690",
+          "kind": "steam_appid",
+          "value": "1662690",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0621"
           }
         }
       ]
@@ -16727,6 +22265,20 @@
       ]
     },
     {
+      "id": "uboat",
+      "rules": [
+        {
+          "id": "steam-494840",
+          "kind": "steam_appid",
+          "value": "494840",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0622"
+          }
+        }
+      ]
+    },
+    {
       "id": "ultros",
       "rules": [
         {
@@ -16764,6 +22316,20 @@
       ]
     },
     {
+      "id": "undertaker",
+      "rules": [
+        {
+          "id": "steam-4030360",
+          "kind": "steam_appid",
+          "value": "4030360",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0624"
+          }
+        }
+      ]
+    },
+    {
       "id": "undying",
       "rules": [
         {
@@ -16773,6 +22339,34 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#undying"
+          }
+        }
+      ]
+    },
+    {
+      "id": "unholy",
+      "rules": [
+        {
+          "id": "steam-817020",
+          "kind": "steam_appid",
+          "value": "817020",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0625"
+          }
+        }
+      ]
+    },
+    {
+      "id": "unknown-9-awakening",
+      "rules": [
+        {
+          "id": "steam-1477940",
+          "kind": "steam_appid",
+          "value": "1477940",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0626"
           }
         }
       ]
@@ -16843,6 +22437,20 @@
       ]
     },
     {
+      "id": "valkyrie-elysium",
+      "rules": [
+        {
+          "id": "steam-1963210",
+          "kind": "steam_appid",
+          "value": "1963210",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0628"
+          }
+        }
+      ]
+    },
+    {
       "id": "valley",
       "rules": [
         {
@@ -16852,6 +22460,20 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#valley"
+          }
+        }
+      ]
+    },
+    {
+      "id": "valor-mortis-playtest",
+      "rules": [
+        {
+          "id": "steam-3949630",
+          "kind": "steam_appid",
+          "value": "3949630",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0629"
           }
         }
       ]
@@ -16917,6 +22539,34 @@
       ]
     },
     {
+      "id": "vein",
+      "rules": [
+        {
+          "id": "steam-1857950",
+          "kind": "steam_appid",
+          "value": "1857950",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0631"
+          }
+        }
+      ]
+    },
+    {
+      "id": "venus-vacation-prism-dead-or-alive-xtreme",
+      "rules": [
+        {
+          "id": "steam-3155730",
+          "kind": "steam_appid",
+          "value": "3155730",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0632"
+          }
+        }
+      ]
+    },
+    {
       "id": "vholume",
       "rules": [
         {
@@ -16959,6 +22609,34 @@
       ]
     },
     {
+      "id": "vindictus-defying-fate",
+      "rules": [
+        {
+          "id": "steam-2814860",
+          "kind": "steam_appid",
+          "value": "2814860",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0633"
+          }
+        }
+      ]
+    },
+    {
+      "id": "virtua-fighter-5-revo-world-stage",
+      "rules": [
+        {
+          "id": "steam-3112260",
+          "kind": "steam_appid",
+          "value": "3112260",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0634"
+          }
+        }
+      ]
+    },
+    {
       "id": "visions-of-mana",
       "rules": [
         {
@@ -16968,6 +22646,34 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#visions-of-mana"
+          }
+        }
+      ]
+    },
+    {
+      "id": "vladik-brutal",
+      "rules": [
+        {
+          "id": "steam-1316680",
+          "kind": "steam_appid",
+          "value": "1316680",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0636"
+          }
+        }
+      ]
+    },
+    {
+      "id": "void-breaker",
+      "rules": [
+        {
+          "id": "steam-2615540",
+          "kind": "steam_appid",
+          "value": "2615540",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0637"
           }
         }
       ]
@@ -16987,6 +22693,62 @@
       ]
     },
     {
+      "id": "voidtrain",
+      "rules": [
+        {
+          "id": "steam-1159690",
+          "kind": "steam_appid",
+          "value": "1159690",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0638"
+          }
+        }
+      ]
+    },
+    {
+      "id": "voin",
+      "rules": [
+        {
+          "id": "steam-2464530",
+          "kind": "steam_appid",
+          "value": "2464530",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0639"
+          }
+        }
+      ]
+    },
+    {
+      "id": "voodoo-fishin",
+      "rules": [
+        {
+          "id": "steam-3071240",
+          "kind": "steam_appid",
+          "value": "3071240",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0640"
+          }
+        }
+      ]
+    },
+    {
+      "id": "voyagers-of-nera",
+      "rules": [
+        {
+          "id": "steam-2686630",
+          "kind": "steam_appid",
+          "value": "2686630",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0641"
+          }
+        }
+      ]
+    },
+    {
       "id": "wanderstop",
       "rules": [
         {
@@ -16996,6 +22758,20 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#wanderstop"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wanted-dead",
+      "rules": [
+        {
+          "id": "steam-1981610",
+          "kind": "steam_appid",
+          "value": "1981610",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0642"
           }
         }
       ]
@@ -17233,6 +23009,20 @@
       ]
     },
     {
+      "id": "watch-dogs-legion",
+      "rules": [
+        {
+          "id": "steam-2239550",
+          "kind": "steam_appid",
+          "value": "2239550",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0645"
+          }
+        }
+      ]
+    },
+    {
       "id": "wavetale",
       "rules": [
         {
@@ -17242,6 +23032,34 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#wavetale"
+          }
+        }
+      ]
+    },
+    {
+      "id": "way-of-the-hunter",
+      "rules": [
+        {
+          "id": "steam-1288320",
+          "kind": "steam_appid",
+          "value": "1288320",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0646"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wayfinder",
+      "rules": [
+        {
+          "id": "steam-1171690",
+          "kind": "steam_appid",
+          "value": "1171690",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0647"
           }
         }
       ]
@@ -17275,6 +23093,20 @@
       ]
     },
     {
+      "id": "we-were-here-tomorrow-demo",
+      "rules": [
+        {
+          "id": "steam-4421200",
+          "kind": "steam_appid",
+          "value": "4421200",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0651"
+          }
+        }
+      ]
+    },
+    {
       "id": "weird-west",
       "rules": [
         {
@@ -17293,6 +23125,48 @@
           "provenance": {
             "source": "luma-curated-games",
             "locator": "catalogs/addons/luma/curated_games.json#weird-west"
+          }
+        }
+      ]
+    },
+    {
+      "id": "welcome-to-paradize",
+      "rules": [
+        {
+          "id": "steam-1519090",
+          "kind": "steam_appid",
+          "value": "1519090",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0648"
+          }
+        }
+      ]
+    },
+    {
+      "id": "welcome-to-the-game-iii",
+      "rules": [
+        {
+          "id": "steam-3869850",
+          "kind": "steam_appid",
+          "value": "3869850",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0649"
+          }
+        }
+      ]
+    },
+    {
+      "id": "werewolf-the-inner-beast",
+      "rules": [
+        {
+          "id": "steam-4235230",
+          "kind": "steam_appid",
+          "value": "4235230",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0650"
           }
         }
       ]
@@ -17335,6 +23209,34 @@
       ]
     },
     {
+      "id": "where-winds-meet",
+      "rules": [
+        {
+          "id": "steam-3564740",
+          "kind": "steam_appid",
+          "value": "3564740",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0652"
+          }
+        }
+      ]
+    },
+    {
+      "id": "whiskerwood",
+      "rules": [
+        {
+          "id": "steam-2489330",
+          "kind": "steam_appid",
+          "value": "2489330",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0653"
+          }
+        }
+      ]
+    },
+    {
       "id": "whisper-of-the-house",
       "rules": [
         {
@@ -17363,6 +23265,34 @@
       ]
     },
     {
+      "id": "wicked-island",
+      "rules": [
+        {
+          "id": "steam-1943730",
+          "kind": "steam_appid",
+          "value": "1943730",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0654"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wild-hearts",
+      "rules": [
+        {
+          "id": "steam-1938010",
+          "kind": "steam_appid",
+          "value": "1938010",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0655"
+          }
+        }
+      ]
+    },
+    {
       "id": "wildmender",
       "rules": [
         {
@@ -17372,6 +23302,20 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#wildmender"
+          }
+        }
+      ]
+    },
+    {
+      "id": "will-follow-the-light",
+      "rules": [
+        {
+          "id": "steam-3144860",
+          "kind": "steam_appid",
+          "value": "3144860",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0656"
           }
         }
       ]
@@ -17400,6 +23344,34 @@
           "provenance": {
             "source": "renodx-match-overlay",
             "locator": "catalogs/addons/renodx/match_overlay.json#windbound"
+          }
+        }
+      ]
+    },
+    {
+      "id": "windrose",
+      "rules": [
+        {
+          "id": "steam-3041230",
+          "kind": "steam_appid",
+          "value": "3041230",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0657"
+          }
+        }
+      ]
+    },
+    {
+      "id": "winemaker-simulator",
+      "rules": [
+        {
+          "id": "steam-3875670",
+          "kind": "steam_appid",
+          "value": "3875670",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0658"
           }
         }
       ]
@@ -17488,6 +23460,90 @@
           "provenance": {
             "source": "steam-appinfo",
             "locator": "steam-executable-observation:1448440"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wolfenstein-youngblood",
+      "rules": [
+        {
+          "id": "steam-1056960",
+          "kind": "steam_appid",
+          "value": "1056960",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0661"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wonder-ball",
+      "rules": [
+        {
+          "id": "steam-2640030",
+          "kind": "steam_appid",
+          "value": "2640030",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0663"
+          }
+        }
+      ]
+    },
+    {
+      "id": "world-war-z",
+      "rules": [
+        {
+          "id": "steam-699130",
+          "kind": "steam_appid",
+          "value": "699130",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0663"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wrc-generations",
+      "rules": [
+        {
+          "id": "steam-1953520",
+          "kind": "steam_appid",
+          "value": "1953520",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0664"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wreckfest-2",
+      "rules": [
+        {
+          "id": "steam-1203190",
+          "kind": "steam_appid",
+          "value": "1203190",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0665"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wrench",
+      "rules": [
+        {
+          "id": "steam-936720",
+          "kind": "steam_appid",
+          "value": "936720",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0666"
           }
         }
       ]
@@ -17585,6 +23641,20 @@
       ]
     },
     {
+      "id": "xuan-yuan-sword-vii",
+      "rules": [
+        {
+          "id": "steam-1249800",
+          "kind": "steam_appid",
+          "value": "1249800",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0669"
+          }
+        }
+      ]
+    },
+    {
       "id": "yakuza-0",
       "rules": [
         {
@@ -17617,6 +23687,20 @@
           "provenance": {
             "source": "steam-appinfo",
             "locator": "steam-executable-observation:834530"
+          }
+        }
+      ]
+    },
+    {
+      "id": "yet-another-zombie-survivors",
+      "rules": [
+        {
+          "id": "steam-2163330",
+          "kind": "steam_appid",
+          "value": "2163330",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0670"
           }
         }
       ]
@@ -17732,6 +23816,48 @@
           "provenance": {
             "source": "steam-appinfo",
             "locator": "steam-executable-observation:4162040"
+          }
+        }
+      ]
+    },
+    {
+      "id": "zombieville-usa-3d",
+      "rules": [
+        {
+          "id": "steam-1801520",
+          "kind": "steam_appid",
+          "value": "1801520",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0673"
+          }
+        }
+      ]
+    },
+    {
+      "id": "zoochosis",
+      "rules": [
+        {
+          "id": "steam-2458560",
+          "kind": "steam_appid",
+          "value": "2458560",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0674"
+          }
+        }
+      ]
+    },
+    {
+      "id": "zouhri-the-cursed-blood-demo",
+      "rules": [
+        {
+          "id": "steam-4254190",
+          "kind": "steam_appid",
+          "value": "4254190",
+          "provenance": {
+            "source": "optiscaler-reviewed-match",
+            "locator": "main:0675"
           }
         }
       ]

@@ -53,7 +53,7 @@ test("parseToolArg exposes only the pending workflows that own central targets",
     parseToolArg(["--target-id=pending=logical-game"]).targetIdsByGame,
     new Map([["pending", "logical-game"]]),
   );
-  assert.throws(() => parseToolArg(["--tool=unsupported"]), /Unknown --tool/);
+  assert.throws(() => parseToolArg(["--tool=optiscaler"]), /Unknown --tool/);
   assert.throws(() => parseToolArg(["--target-id=broken"]), /Invalid --target-id/);
   assert.throws(
     () => parseToolArg(["--target-id=pending=one", "--target-id=pending=two"]),

@@ -8,6 +8,7 @@ import Ajv2020 from "ajv/dist/2020.js";
 import { buildManifest as buildLumaManifest } from "../../catalogs/addons/luma/lib/build-manifest.mjs";
 import { buildManifest as buildRenodxManifest } from "../../catalogs/addons/renodx/lib/build-manifest.mjs";
 import { inheritedSplitOverlay } from "../../catalogs/addons/renodx/lib/overlay.mjs";
+import { buildCompatibilityCatalog } from "../../catalogs/addons/optiscaler/compatibility/lib/build-catalog.mjs";
 import { tierForMatchKind } from "../lib/build-manifest-shared.mjs";
 import { createMatchRegistry } from "../lib/match-registry.mjs";
 
@@ -23,6 +24,10 @@ function expectedMatch(target) {
     value: rule.value,
     tier: tierForMatchKind(rule.kind),
   }));
+}
+
+function expectedIdentities(target) {
+  return target.rules.map(({ kind, value }) => ({ kind, value }));
 }
 
 function outputId(profileId, targetIds, targetId) {
@@ -49,6 +54,11 @@ test("canonical game targets are the sole match source for every add-on", async 
     renodxWiki,
     renodxCurated,
     renodxOverlay,
+    optiscalerSnapshot,
+    optiscalerLedger,
+    optiscalerCurated,
+    optiscalerMessages,
+    optiscalerRelease,
   ] = await Promise.all([
     readJson("catalogs", "games", "match-registry.json"),
     readJson("catalogs", "addons", "luma", "curated_games.json"),
@@ -56,6 +66,11 @@ test("canonical game targets are the sole match source for every add-on", async 
     readJson("catalogs", "addons", "renodx", "wiki_games.json"),
     readJson("catalogs", "addons", "renodx", "curated_games.json"),
     readJson("catalogs", "addons", "renodx", "match_overlay.json"),
+    readJson("catalogs", "addons", "optiscaler", "compatibility", "upstream-snapshot.json"),
+    readJson("catalogs", "addons", "optiscaler", "compatibility", "review-ledger.json"),
+    readJson("catalogs", "addons", "optiscaler", "compatibility", "curated-games.json"),
+    readJson("catalogs", "addons", "optiscaler", "compatibility", "messages.json"),
+    readJson("catalogs", "addons", "optiscaler", "manifest-source.json"),
   ]);
   const registry = createMatchRegistry(registrySource);
   const targets = registry.targetsById;
@@ -120,6 +135,26 @@ test("canonical game targets are the sole match source for every add-on", async 
     for (const split of entry.split ?? []) {
       assertRenodxProfile(`${id}-${split.suffix}`, inheritedSplitOverlay(entry, split));
     }
+  }
+
+  const optiscaler = buildCompatibilityCatalog({
+    snapshot: optiscalerSnapshot,
+    ledger: optiscalerLedger,
+    curatedGames: optiscalerCurated,
+    messages: optiscalerMessages,
+    releaseSource: optiscalerRelease,
+    registry,
+  }).catalog;
+  const optiscalerById = new Map(optiscaler.entries.map((entry) => [entry.id, entry]));
+  for (const entry of optiscalerCurated.entries) {
+    const target = targets.get(entry.game_target_id);
+    const output = optiscalerById.get(entry.id);
+    assert.deepEqual(
+      output?.identities,
+      expectedIdentities(target),
+      `OptiScaler ${entry.id} must project its canonical target`,
+    );
+    appendConsumer(consumersByTarget, entry.game_target_id, output.identities);
   }
 
   for (const [targetId, matchSets] of consumersByTarget) {

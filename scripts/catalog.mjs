@@ -106,6 +106,20 @@ const SCHEMAS = Object.freeze({
   lumaManifestV1: "catalogs/addons/luma/manifest-v1.schema.json",
   lumaMessagesSource: "catalogs/addons/luma/messages-source.schema.json",
   reshadeManifestV1: "catalogs/addons/reshade/manifest-v1.schema.json",
+  optiscalerManifestSource: "catalogs/addons/optiscaler/manifest-source.schema.json",
+  optiscalerManifestV1: "catalogs/addons/optiscaler/manifest-v1.schema.json",
+  optiscalerCompatibilityAuthoring:
+    "catalogs/addons/optiscaler/compatibility/authoring.schema.json",
+  optiscalerCompatibilitySnapshot:
+    "catalogs/addons/optiscaler/compatibility/upstream-snapshot.schema.json",
+  optiscalerCompatibilityLedger:
+    "catalogs/addons/optiscaler/compatibility/review-ledger.schema.json",
+  optiscalerCompatibilityMessages:
+    "catalogs/addons/optiscaler/compatibility/messages-source.schema.json",
+  optiscalerCompatibilityV1:
+    "catalogs/addons/optiscaler/compatibility/runtime-v1.schema.json",
+  optiscalerCompatibilityMessagesV1:
+    "catalogs/addons/optiscaler/compatibility/messages-v1.schema.json",
 });
 
 const defineDocuments = (documents) =>
@@ -211,6 +225,49 @@ export const jsonDocuments = defineDocuments([
     r2Key: "addons/v1/reshade.json",
     publishedToR2: true,
   },
+  {
+    file: "catalogs/addons/optiscaler/manifest-source.json",
+    schema: SCHEMAS.optiscalerManifestSource,
+    publishedToR2: false,
+  },
+  {
+    file: "addons/v1/optiscaler.json",
+    schema: SCHEMAS.optiscalerManifestV1,
+    r2Key: "addons/v1/optiscaler.json",
+    publishedToR2: true,
+  },
+  {
+    file: "catalogs/addons/optiscaler/compatibility/upstream-snapshot.json",
+    schema: SCHEMAS.optiscalerCompatibilitySnapshot,
+    publishedToR2: false,
+  },
+  {
+    file: "catalogs/addons/optiscaler/compatibility/review-ledger.json",
+    schema: SCHEMAS.optiscalerCompatibilityLedger,
+    publishedToR2: false,
+  },
+  {
+    file: "catalogs/addons/optiscaler/compatibility/curated-games.json",
+    schema: SCHEMAS.optiscalerCompatibilityAuthoring,
+    publishedToR2: false,
+  },
+  {
+    file: "catalogs/addons/optiscaler/compatibility/messages.json",
+    schema: SCHEMAS.optiscalerCompatibilityMessages,
+    publishedToR2: false,
+  },
+  {
+    file: "addons/v1/optiscaler-compatibility.json",
+    schema: SCHEMAS.optiscalerCompatibilityV1,
+    r2Key: "addons/v1/optiscaler-compatibility.json",
+    publishedToR2: true,
+  },
+  {
+    file: "addons/v1/optiscaler-compatibility-messages.json",
+    schema: SCHEMAS.optiscalerCompatibilityMessagesV1,
+    r2Key: "addons/v1/optiscaler-compatibility-messages.json",
+    publishedToR2: true,
+  },
 ]);
 
 // file -> schema. Every JSON document in `jsonDocuments` is validated.
@@ -289,6 +346,22 @@ export const addonCatalogs = Object.freeze({
     { manifest: "addons/v1/renodx.json" },
   ),
   reshade: addonCatalog("reshade", {}, { manifest: "addons/v1/reshade.json" }),
+  optiscaler: addonCatalog(
+    "optiscaler",
+    {
+      manifestSource: "manifest-source.json",
+      compatibilitySnapshot: "compatibility/upstream-snapshot.json",
+      compatibilityLedger: "compatibility/review-ledger.json",
+      compatibilityCurated: "compatibility/curated-games.json",
+      compatibilityMessages: "compatibility/messages.json",
+      matchRegistry: "../../games/match-registry.json",
+    },
+    {
+      manifest: "addons/v1/optiscaler.json",
+      compatibility: "addons/v1/optiscaler-compatibility.json",
+      compatibilityMessages: "addons/v1/optiscaler-compatibility-messages.json",
+    },
+  ),
 });
 
 const DEFAULT_R2 = Object.freeze({

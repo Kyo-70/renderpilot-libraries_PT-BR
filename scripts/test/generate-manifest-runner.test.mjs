@@ -44,6 +44,31 @@ test("runGenerateManifest writes and checks a single generated manifest output",
   });
 });
 
+test("runGenerateManifest supports reviewed manifests without generated_at", async () => {
+  await withTempDir(async (repoRoot) => {
+    const files = {
+      outputs: {
+        manifest: path.join(repoRoot, "reviewed.json"),
+      },
+    };
+
+    const options = {
+      files,
+      repoRoot,
+      helpText: "help",
+      preserveGeneratedAt: false,
+      build: ({ source }) => ({ outputs: { manifest: source } }),
+      readInputs: ({ generatedAt }) => {
+        assert.equal(generatedAt, undefined);
+        return { source: { schema_version: 1, revision: "reviewed" } };
+      },
+    };
+
+    assert.equal(await runGenerateManifest(options), 0);
+    assert.equal(await runGenerateManifest({ ...options, argv: ["--check"] }), 0);
+  });
+});
+
 test("runGenerateManifest writes and checks manifest plus pending outputs", async () => {
   await withTempDir(async (repoRoot) => {
     const files = {

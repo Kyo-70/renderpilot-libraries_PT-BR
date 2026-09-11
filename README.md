@@ -33,7 +33,7 @@ Current RenderPilot builds consume the versioned `libraries/v1` and `addons/v1` 
 | Microsoft | DirectStorage, DXC, and D3D12 Agility SDK packages imported from NuGet                    |
 | Valve     | OpenVR runtime packages with export-surface metadata                                      |
 | Xiph      | Reproducible Windows builds of reviewed Ogg and Vorbis source pairs                       |
-| Add-ons   | RenoDX, Luma Framework, and ReShade source manifests                                      |
+| Add-ons   | RenoDX, Luma Framework, ReShade, and OptiScaler source manifests                          |
 | Settings  | NVIDIA DLSS preset and settings contracts                                                 |
 
 Every installable file and legal document is content-addressed. A published vendor snapshot is immutable; the index references it by object key, SHA-256, and size. RenderPilot therefore observes either the previous complete library catalog or the next complete catalog, never a partially published generation.
@@ -54,17 +54,17 @@ Refresh and publication commands can write reviewed catalog state or remote obje
 
 ## Repository map
 
-| Path                  | Responsibility                                                                  |
-| --------------------- | ------------------------------------------------------------------------------- |
-| `catalogs/libraries/` | Reviewed provider configuration, immutable locks, curated sources, and overlays |
-| `catalogs/addons/`    | RenoDX, Luma, and ReShade authoring data, generators, schemas, and tests        |
-| `libraries/v1/`       | Generated library index and local vendor snapshot projections                   |
-| `addons/v1/`          | Generated add-on manifests consumed by RenderPilot                              |
-| `cdn/`                | Local content-addressed DLL transports and legal documents                      |
-| Root JSON files       | DLSS preset and settings contracts                                              |
-| `schemas/`            | Public and authoring JSON Schemas                                               |
-| `scripts/`            | Validation, generation, import, inspection, refresh, and publication tooling    |
-| `.github/workflows/`  | Validation, scheduled refresh, withdrawal, and R2 publication automation        |
+| Path                  | Responsibility                                                                       |
+| --------------------- | ------------------------------------------------------------------------------------ |
+| `catalogs/libraries/` | Reviewed provider configuration, immutable locks, curated sources, and overlays      |
+| `catalogs/addons/`    | RenoDX, Luma, ReShade, and OptiScaler authoring data, generators, schemas, and tests |
+| `libraries/v1/`       | Generated library index and local vendor snapshot projections                        |
+| `addons/v1/`          | Generated add-on manifests consumed by RenderPilot                                   |
+| `cdn/`                | Local content-addressed DLL transports and legal documents                           |
+| Root JSON files       | DLSS preset and settings contracts                                                   |
+| `schemas/`            | Public and authoring JSON Schemas                                                    |
+| `scripts/`            | Validation, generation, import, inspection, refresh, and publication tooling         |
+| `.github/workflows/`  | Validation, scheduled refresh, withdrawal, and R2 publication automation             |
 
 ## Documentation and project
 

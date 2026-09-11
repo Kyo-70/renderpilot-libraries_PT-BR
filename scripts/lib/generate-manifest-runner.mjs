@@ -1,9 +1,10 @@
-// Shared CLI/IO runner for generated manifest scripts (RenoDX, Luma, and the
-// standalone ReShade host manifest). The scripts differ only in which inputs
-// they read, how they build their documents, how many generated files they
-// emit, and the shape of their summary output. Everything else — argument
-// parsing, the `--check` vs write flow, the `generated_at` round-trip for
-// reproducible checks, output formatting, and exit-code plumbing — lives here.
+// Shared CLI/IO runner for generated manifest scripts (RenoDX, Luma,
+// OptiScaler, and the standalone ReShade host manifest). The scripts differ
+// only in which inputs they read, how they build their documents, how many
+// generated files they emit, and the shape of their summary output. Everything
+// else — argument parsing, the `--check` vs write flow, the optional
+// `generated_at` round-trip for reproducible checks, output formatting, and
+// exit-code plumbing — lives here.
 //
 //   await runGenerateManifest({
 //     files: {
@@ -168,6 +169,8 @@ async function writeGeneratedOutput({ file, text }, repoRoot) {
  * @param {function} [opts.printSummary] — (stats, context) => void
  * @param {string}    opts.helpText
  * @param {string}    opts.repoRoot    — absolute repo root, for relative labels
+ * @param {boolean}  [opts.preserveGeneratedAt=true] — set false for reviewed
+ *   snapshots that intentionally have no generated_at field
  * @param {string[]} [opts.argv]       — defaults to `process.argv.slice(2)`
  * @returns {Promise<number>} exit code (0 ok, 1 failure)
  */
@@ -178,6 +181,7 @@ export async function runGenerateManifest({
   printSummary = () => {},
   helpText,
   repoRoot,
+  preserveGeneratedAt = true,
   argv = process.argv.slice(2),
 }) {
   let args;
@@ -198,7 +202,10 @@ export async function runGenerateManifest({
     return 0;
   }
 
-  const generatedAt = readGeneratedAtForRun(args.check, primaryManifestFile(files));
+  const manifestFile = primaryManifestFile(files);
+  const generatedAt = preserveGeneratedAt
+    ? readGeneratedAtForRun(args.check, manifestFile)
+    : undefined;
   const inputs = readInputs({ generatedAt });
 
   const result = build(inputs);

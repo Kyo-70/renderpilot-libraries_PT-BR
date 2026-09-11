@@ -40,6 +40,8 @@ pnpm run libraries:generate
 pnpm run generate:reshade
 pnpm run generate:renodx
 pnpm run generate:luma
+pnpm run generate:optiscaler
+pnpm run generate:optiscaler-compatibility
 ```
 
 Keeping refresh and generation separate makes lock changes reviewable before they affect public snapshots or the index.
