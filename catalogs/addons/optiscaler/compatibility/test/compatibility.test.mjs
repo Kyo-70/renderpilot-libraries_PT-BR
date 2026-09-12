@@ -671,7 +671,7 @@ test("reviewed game-setting literals and quality warnings preserve their exact m
     "optiscaler-gta-iii-definitive-city-glow",
   ];
   const cityGlowLiteralByLocale = {
-    de: "City Glow Effect",
+    de: "Stadtbeleuchtungseffekt",
     es: "City Glow Effect",
     fr: "City Glow Effect",
     ja: "City Glow Effect",
