@@ -394,8 +394,8 @@
   {
     "id": "persona-5-royal",
     "name": "Persona 5 Royal",
-    "asset": "Luma-Persona_5.zip",
-    "addon_file": "Luma-Persona 5.addon",
+    "asset": "Luma-Persona_5_Royal.zip",
+    "addon_file": "Luma-Persona 5 Royal.addon",
     "arch": "X64",
     "status": "working",
     "game_target_ids": ["persona-5-royal"]
@@ -3108,8 +3108,8 @@
   {
     "id": "metaphor-refantazio",
     "name": "Metaphor: ReFantazio",
-    "asset": "Luma-Metaphor.zip",
-    "addon_file": "Luma-Metaphor.addon",
+    "asset": "Luma-Metaphor_ReFantazio.zip",
+    "addon_file": "Luma-Metaphor ReFantazio.addon",
     "arch": "X64",
     "status": "working",
     "game_target_ids": ["metaphor-refantazio"]

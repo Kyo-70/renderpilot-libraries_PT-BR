@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-10T00:00:00Z",
+  "generated_at": "2026-09-12T00:00:00Z",
   "minimum_reshade_version": "6.7.0",
   "games": [
     {
@@ -672,8 +672,8 @@
         }
       ],
       "package": {
-        "release_asset": "Luma-Persona_5.zip",
-        "addon_file": "Luma-Persona 5.addon"
+        "release_asset": "Luma-Persona_5_Royal.zip",
+        "addon_file": "Luma-Persona 5 Royal.addon"
       },
       "profile": "game"
     },
@@ -4482,8 +4482,8 @@
         }
       ],
       "package": {
-        "release_asset": "Luma-Metaphor.zip",
-        "addon_file": "Luma-Metaphor.addon"
+        "release_asset": "Luma-Metaphor_ReFantazio.zip",
+        "addon_file": "Luma-Metaphor ReFantazio.addon"
       },
       "profile": "game"
     },
