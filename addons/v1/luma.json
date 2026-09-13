@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-12T00:00:00Z",
+  "generated_at": "2026-09-13T00:00:00Z",
   "minimum_reshade_version": "6.7.0",
   "games": [
     {
@@ -5745,6 +5745,36 @@
           "id": "luma.spongebob-squarepants-the-cosmic-shake.game_setting",
           "kind": "game_setting",
           "fallback_text": "In the game settings, use: AA \"Ultra\"."
+        }
+      ]
+    },
+    {
+      "id": "octopath-traveler",
+      "name": "Octopath Traveler",
+      "architecture": "X64",
+      "status": "working",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "921570",
+          "tier": 100
+        }
+      ],
+      "package": {
+        "release_asset": "Luma-Unreal_Engine.zip",
+        "addon_file": "Luma-Unreal Engine.addon"
+      },
+      "profile": "unreal",
+      "features": {
+        "dlss_fsr": "supported",
+        "hdr": "unknown"
+      },
+      "guidance": [
+        {
+          "id": "luma.octopath-traveler.engine_ini",
+          "kind": "engine_ini",
+          "fallback_text": "Apply the following settings manually in Engine.ini.",
+          "code": "[SystemSettings]\nr.DefaultFeature.AntiAliasing=2\nr.PostProcessAAQuality=4"
         }
       ]
     }

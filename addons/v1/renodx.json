@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-10T00:00:00Z",
+  "generated_at": "2026-09-13T00:00:00Z",
   "games": [
     {
       "id": "007-first-light",
@@ -2146,15 +2146,8 @@
         }
       ],
       "addon": {
-        "slug": "ghost-of-tsushima-director-s-cut"
-      },
-      "availability": {
-        "kind": "external",
-        "url": "https://www.nexusmods.com/ghostoftsushima/mods/886",
-        "message": {
-          "id": "renodx.external.nexus",
-          "fallback_text": "Get the add-on from Nexus Mods, then install the downloaded file."
-        }
+        "slug": "gotsushima",
+        "source": "https://hartapfel.github.io/renodx/renodx-gotsushima.addon64"
       }
     },
     {

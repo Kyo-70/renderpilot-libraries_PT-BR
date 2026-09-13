@@ -857,6 +857,21 @@
       }
     },
     {
+      "id": "luma.octopath-traveler.engine_ini",
+      "fallback_text": "Apply the following settings manually in Engine.ini.",
+      "kind": "engine_ini",
+      "context": "guidance.engine_ini",
+      "translations": {
+        "de": "Übernimm die folgenden Einstellungen manuell in Engine.ini.",
+        "es": "Aplica los siguientes ajustes manualmente en Engine.ini.",
+        "fr": "Appliquez manuellement les paramètres suivants dans Engine.ini.",
+        "ja": "次の設定を Engine.ini に手動で適用してください。",
+        "ru": "Вручную добавьте в Engine.ini следующие настройки.",
+        "zh-Hans": "请在 Engine.ini 中手动应用以下设置。",
+        "zh-Hant": "請在 Engine.ini 中手動套用以下設定。"
+      }
+    },
+    {
       "id": "luma.orcs-must-die-3.game_setting",
       "fallback_text": "In the game settings, use: AA quality \"High\".",
       "kind": "game_setting",

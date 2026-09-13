@@ -217,3 +217,24 @@ test("reconcileLumaStatuses rejects conflicting asset and name matches", () => {
   assert.equal(result.ambiguous.length, 1);
   assert.deepEqual(result.unmatched, ["Asset Match", "Name Match"]);
 });
+
+test("reconcileLumaStatuses ignores notes on uncurated completed mods without release asset", () => {
+  const result = reconcileLumaStatuses({
+    curatedGames: [
+      { id: "curated", name: "Curated Game", asset: "Luma-Curated.zip", status: "working" },
+    ],
+    wikiRows: [
+      {
+        name: "External Nexus Mod",
+        status: "working",
+        asset: null,
+        section: "completed",
+        note: "Requires external download",
+      },
+    ],
+  });
+
+  assert.equal(result.notInCurated.length, 1);
+  assert.deepEqual(result.reviewDrift, []);
+  assert.deepEqual(result.completenessIssues, []);
+});

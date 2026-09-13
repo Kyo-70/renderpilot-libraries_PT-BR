@@ -1041,11 +1041,8 @@
     "game_target_ids": ["ghost-of-a-tale"]
   },
   "ghost-of-tsushima-director-s-cut": {
-    "external": {
-      "url": "https://www.nexusmods.com/ghostoftsushima/mods/886",
-      "label_key": "renodx.external.nexus"
-    },
-    "game_target_ids": ["ghost-of-tsushima-directors-cut"]
+    "game_target_ids": ["ghost-of-tsushima-directors-cut"],
+    "download_url": "https://hartapfel.github.io/renodx/renodx-gotsushima.addon64"
   },
   "ghost-recon-wildlands": {
     "external": {

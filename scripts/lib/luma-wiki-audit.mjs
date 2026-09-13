@@ -19,7 +19,12 @@ export function auditLumaWiki({
   unmatched,
 }) {
   return {
-    reviewDrift: collectReviewDrift({ curatedGames, candidatesByGame, wikiRows }),
+    reviewDrift: collectReviewDrift({
+      curatedGames,
+      candidatesByGame,
+      wikiRows,
+      notInCurated,
+    }),
     completenessIssues: collectCompletenessIssues({
       curatedGames,
       notInCurated,
@@ -29,7 +34,12 @@ export function auditLumaWiki({
   };
 }
 
-function collectReviewDrift({ curatedGames, candidatesByGame, wikiRows }) {
+function collectReviewDrift({
+  curatedGames,
+  candidatesByGame,
+  wikiRows,
+  notInCurated = [],
+}) {
   const reviewsBySource = new Map();
   const reviewDrift = [];
 
@@ -60,6 +70,7 @@ function collectReviewDrift({ curatedGames, candidatesByGame, wikiRows }) {
   const activeSources = new Set();
   for (const row of wikiRows) {
     if (!row.note || !WIKI_NOTE_SECTIONS.has(row.section)) continue;
+    if (row.section === "completed" && !row.asset && notInCurated.includes(row)) continue;
     const key = reviewKey(row.section, row.name);
     activeSources.add(key);
     const entry = reviewsBySource.get(key);

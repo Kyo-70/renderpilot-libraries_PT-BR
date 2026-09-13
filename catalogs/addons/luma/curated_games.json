@@ -2918,7 +2918,7 @@
       {
         "section": "completed",
         "name": "Borderlands 2 and The Pre-Sequel",
-        "fingerprint": "40f9428228826691fffdfcd76f2e26cc98754e73212d84414d8059679e637b88",
+        "fingerprint": "a1af92993113ce7ab195bb0e77aac1e6e122bc53adcc066c9744c6688090df15",
         "disposition": "omitted",
         "reason": "RenderPilot installs and configures the managed dgVoodoo dependency."
       }
@@ -3080,7 +3080,7 @@
       {
         "section": "completed",
         "name": "Medal of Honor: Airborne",
-        "fingerprint": "40f9428228826691fffdfcd76f2e26cc98754e73212d84414d8059679e637b88",
+        "fingerprint": "a1af92993113ce7ab195bb0e77aac1e6e122bc53adcc066c9744c6688090df15",
         "disposition": "omitted",
         "reason": "RenderPilot installs and configures the managed dgVoodoo dependency."
       }
@@ -3982,7 +3982,7 @@
       {
         "section": "completed",
         "name": "The Witcher 2: Assassins of Kings Enhanced Edition",
-        "fingerprint": "68880afbf614d735fb73137039d790183d04be0bf1abd07297374537bd795996",
+        "fingerprint": "b838f95987150e86f2c75dcf4327a2bbdbed9d5bf4388f4744c6deed1db26350",
         "disposition": "omitted",
         "reason": "RenderPilot installs and configures the managed dgVoodoo dependency."
       }
@@ -4140,5 +4140,36 @@
       }
     ],
     "game_target_ids": ["spongebob-squarepants-the-cosmic-shake"]
+  },
+  {
+    "id": "octopath-traveler",
+    "name": "Octopath Traveler",
+    "asset": "Luma-Unreal_Engine.zip",
+    "addon_file": "Luma-Unreal Engine.addon",
+    "arch": "X64",
+    "status": "working",
+    "profile": "unreal",
+    "features": {
+      "dlss_fsr": "supported",
+      "hdr": "unknown"
+    },
+    "guidance": [
+      {
+        "id": "luma.octopath-traveler.engine_ini",
+        "kind": "engine_ini",
+        "fallback_text": "Apply the following settings manually in Engine.ini.",
+        "code": "[SystemSettings]\nr.DefaultFeature.AntiAliasing=2\nr.PostProcessAAQuality=4"
+      }
+    ],
+    "wiki_note_reviews": [
+      {
+        "section": "unreal",
+        "name": "Octopath Traveler",
+        "fingerprint": "955af56335fbc126b0cf742520a6f2d9519b1fb3a7270e4b10880357b01470e6",
+        "disposition": "published",
+        "guidance_ids": ["luma.octopath-traveler.engine_ini"]
+      }
+    ],
+    "game_target_ids": ["octopath-traveler"]
   }
 ]
