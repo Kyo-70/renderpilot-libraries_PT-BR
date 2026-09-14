@@ -48,9 +48,8 @@ jobs:
     if: inputs.operation == 'withdraw'
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       - uses: ./.github/actions/setup-library-tools
-      - run: pnpm install --frozen-lockfile
 
       - name: Verify dry-run and atomically rebuild v1
         shell: pwsh
@@ -108,9 +107,8 @@ jobs:
     if: inputs.operation == 'prune'
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       - uses: ./.github/actions/setup-library-tools
-      - run: pnpm install --frozen-lockfile
 
       - name: Print exact prune plan
         shell: pwsh

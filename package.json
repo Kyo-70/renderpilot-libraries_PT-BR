@@ -2,7 +2,7 @@
   "name": "renderpilot-libraries-tools",
   "version": "1.0.0",
   "private": true,
-  "packageManager": "pnpm@12.3.4",
+  "packageManager": "pnpm@12.4.1+sha512-LoHjmdc/6DkNqyXgaqeIq3pZCCSNL1o3D4K0gRR6ano2e/gEj5pv22Rg8hpm8FQt7bi5TKLIcjWWdBkgsWVtTA==",
   "type": "module",
   "description": "Validation and Cloudflare R2 publishing tooling for the RenderPilot libraries catalog.",
   "engines": {
@@ -92,7 +92,7 @@
     "publish:json:dry-run": "node scripts/libraries.mjs publish --json-only --dry-run"
   },
   "dependencies": {
-    "@aws-sdk/client-s3": "^3.1126.0",
+    "@aws-sdk/client-s3": "^3.1131.0",
     "ajv": "^8.20.0",
     "ajv-formats": "^3.0.1",
     "fast-xml-parser": "^5.11.1"

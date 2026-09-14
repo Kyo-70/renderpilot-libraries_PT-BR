@@ -118,7 +118,9 @@ test("all external GitHub Actions are pinned to full commit SHAs", async () => {
   for (const file of files) {
     const lines = (await readFile(file, "utf8")).split(/\r?\n/u);
     lines.forEach((line, index) => {
-      const match = /^\s*uses:\s+(?<action>[^./\s][^@\s]*)@(?<ref>[^\s#]+)/u.exec(line);
+      const match = /^\s*(?:-\s+)?uses:\s+(?<action>[^./\s][^@\s]*)@(?<ref>[^\s#]+)/u.exec(
+        line,
+      );
       if (match === null) {
         return;
       }
@@ -133,13 +135,16 @@ test("all external GitHub Actions are pinned to full commit SHAs", async () => {
   assert.deepEqual(violations, []);
 });
 
-test("pnpm setup reads its single version from package.json", async () => {
+test("pnpm setup reads its single version from package.json and pins Node.js runtime", async () => {
   const packageJson = JSON.parse(
     await readFile(path.join(REPOSITORY_ROOT, "package.json"), "utf8"),
   );
-  assert.equal(packageJson.packageManager, "pnpm@12.3.4");
+  assert.equal(
+    packageJson.packageManager,
+    "pnpm@12.4.1+sha512-LoHjmdc/6DkNqyXgaqeIq3pZCCSNL1o3D4K0gRR6ano2e/gEj5pv22Rg8hpm8FQt7bi5TKLIcjWWdBkgsWVtTA==",
+  );
 
-  const pnpmVersion = packageJson.packageManager.slice("pnpm@".length);
+  const pnpmVersion = packageJson.packageManager.slice("pnpm@".length).replace(/\+.*/u, "");
   const localBootstrap = `npm install --global pnpm@${pnpmVersion}`;
   for (const documentationPath of ["README.md", "docs/setup.md"]) {
     const documentation = await readFile(
@@ -152,32 +157,64 @@ test("pnpm setup reads its single version from package.json", async () => {
     );
   }
 
+  const nodeVersion = (
+    await readFile(path.join(REPOSITORY_ROOT, ".node-version"), "utf8")
+  ).trim();
+
   const files = await actionYamlFiles(path.join(REPOSITORY_ROOT, ".github"));
   const violations = [];
+  let pnpmSetupCount = 0;
 
   for (const file of files) {
     const lines = (await readFile(file, "utf8")).split(/\r?\n/u);
     lines.forEach((line, index) => {
-      if (!/^\s*-\s+uses:\s+pnpm\/action-setup@/u.test(line)) {
+      if (/^\s*(?:-\s+)?uses:\s+pnpm\/action-setup@/u.test(line)) {
+        violations.push(
+          `${path.relative(REPOSITORY_ROOT, file)}:${index + 1}: unexpected legacy pnpm/action-setup step`,
+        );
+      }
+
+      if (!/^\s*(?:-\s+)?uses:\s+pnpm\/setup@/u.test(line)) {
         return;
       }
 
-      const stepIndent = /^\s*/u.exec(line)[0].length;
+      pnpmSetupCount += 1;
+      let stepStartIndent = /^\s*/u.exec(line)[0].length;
+      if (!/^\s*-\s+/u.test(line)) {
+        for (let i = index - 1; i >= 0; i--) {
+          if (/^\s*-\s+/u.test(lines[i])) {
+            stepStartIndent = /^\s*/u.exec(lines[i])[0].length;
+            break;
+          }
+        }
+      }
+
       let end = index + 1;
       while (end < lines.length) {
         const candidate = lines[end];
-        if (candidate.trim() !== "" && /^\s*/u.exec(candidate)[0].length <= stepIndent) {
-          break;
+        if (candidate.trim() !== "") {
+          const candIndent = /^\s*/u.exec(candidate)[0].length;
+          if (candIndent <= stepStartIndent) {
+            break;
+          }
         }
         end += 1;
       }
 
       const step = lines.slice(index, end).join("\n");
       if (/^\s+version:\s+/mu.test(step)) {
-        violations.push(`${path.relative(REPOSITORY_ROOT, file)}:${index + 1}`);
+        violations.push(
+          `${path.relative(REPOSITORY_ROOT, file)}:${index + 1}: unexpected version override`,
+        );
+      }
+      if (!new RegExp(`^\\s+runtime:\\s+node@${nodeVersion}$`, "mu").test(step)) {
+        violations.push(
+          `${path.relative(REPOSITORY_ROOT, file)}:${index + 1}: runtime must be pinned to node@${nodeVersion}`,
+        );
       }
     });
   }
 
+  assert.ok(pnpmSetupCount > 0, "must find and check at least one pnpm/setup step");
   assert.deepEqual(violations, []);
 });

@@ -43,7 +43,7 @@ Every installable file and legal document is content-addressed. A published vend
 The repository pins the latest Node.js LTS release in [`.node-version`](.node-version) and pnpm in [`package.json`](package.json). Install the pinned pnpm version explicitly on a fresh machine. PowerShell 7 and Windows are additionally required for PE inspection, Authenticode verification, and reproducible Xiph builds.
 
 ```powershell
-npm install --global pnpm@12.3.4
+npm install --global pnpm@12.4.1
 pnpm install --frozen-lockfile
 pnpm run check
 ```

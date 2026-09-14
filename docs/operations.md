@@ -5,7 +5,7 @@ This guide covers local validation, upstream refresh, locked-asset recovery, and
 ## Requirements
 
 - Node.js 24.20.0 LTS, pinned in `.node-version`
-- pnpm 12.3.4, pinned in `package.json`
+- pnpm 12.4.1, pinned in `package.json`
 - PowerShell 7 and Windows for PE and Authenticode inspection
 - Reviewed Zstandard 1.5.7 runtime for DLL transport generation
 - R2 credentials only for explicit publication commands

@@ -20,11 +20,10 @@ jobs:
     name: Validate JSON against schemas
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           fetch-depth: 0
       - uses: ./.github/actions/setup-library-tools
-      - run: pnpm install --frozen-lockfile
       - run: pnpm run check
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -37,11 +36,13 @@ jobs:
     permissions:
       contents: read
     steps:
-      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           ref: ${{ github.sha }}
           persist-credentials: false
       - uses: ./.github/actions/setup-library-tools
+        with:
+          install: "false"
       - run: pnpm install --frozen-lockfile --ignore-scripts
       - run: pnpm run test:windows
 
@@ -54,9 +55,8 @@ jobs:
       group: libraries-production-r2
       cancel-in-progress: false
     steps:
-      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       - uses: ./.github/actions/setup-library-tools
-      - run: pnpm install --frozen-lockfile
       - name: Publish to R2 (JSON only)
         run: pnpm run publish:json
         env:
