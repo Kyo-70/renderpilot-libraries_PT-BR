@@ -16,6 +16,7 @@ export const LUMA_LOCALES = Object.freeze([
   "es",
   "fr",
   "ja",
+  "pt-BR",
   "ru",
   "zh-Hans",
   "zh-Hant",

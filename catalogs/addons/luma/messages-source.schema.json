@@ -32,12 +32,13 @@
           "translations": {
             "type": "object",
             "additionalProperties": false,
-            "required": ["de", "es", "fr", "ja", "ru", "zh-Hans", "zh-Hant"],
+            "required": ["de", "es", "fr", "ja", "pt-BR", "ru", "zh-Hans", "zh-Hant"],
             "properties": {
               "de": { "type": "string", "minLength": 1 },
               "es": { "type": "string", "minLength": 1 },
               "fr": { "type": "string", "minLength": 1 },
               "ja": { "type": "string", "minLength": 1 },
+              "pt-BR": { "type": "string", "minLength": 1 },
               "ru": { "type": "string", "minLength": 1 },
               "zh-Hans": { "type": "string", "minLength": 1 },
               "zh-Hant": { "type": "string", "minLength": 1 }

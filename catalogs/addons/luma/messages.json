@@ -11,6 +11,7 @@
         "es": "Aplica los siguientes ajustes manualmente en Engine.ini.",
         "fr": "Appliquez manuellement les paramètres suivants dans Engine.ini.",
         "ja": "次の設定を Engine.ini に手動で適用してください。",
+        "pt-BR": "Aplique manualmente as seguintes configurações no Engine.ini.",
         "ru": "Вручную добавьте в Engine.ini следующие настройки.",
         "zh-Hans": "请在 Engine.ini 中手动应用以下设置。",
         "zh-Hant": "請在 Engine.ini 中手動套用以下設定。"
@@ -26,6 +27,7 @@
         "es": "En los ajustes del juego, usa: AA «FXAA High».",
         "fr": "Dans les paramètres du jeu, utilisez : AA « FXAA High ».",
         "ja": "ゲーム設定: AA「FXAA High」を選択してください。",
+        "pt-BR": "Primeiro, selecione o AA “FXAA High” no jogo.",
         "ru": "В настройках игры выберите AA «FXAA High».",
         "zh-Hans": "在游戏设置中选择：AA “FXAA High”。",
         "zh-Hant": "在遊戲設定中選擇：AA 「FXAA High」。"
@@ -41,6 +43,7 @@
         "es": "Aplica los siguientes ajustes manualmente en Engine.ini.",
         "fr": "Appliquez manuellement les paramètres suivants dans Engine.ini.",
         "ja": "次の設定を Engine.ini に手動で適用してください。",
+        "pt-BR": "Aplique manualmente as seguintes configurações no Engine.ini.",
         "ru": "Вручную добавьте в Engine.ini следующие настройки.",
         "zh-Hans": "请在 Engine.ini 中手动应用以下设置。",
         "zh-Hant": "請在 Engine.ini 中手動套用以下設定。"
@@ -56,6 +59,7 @@
         "es": "Este perfil solo admite DLSS; HDR no es compatible actualmente.",
         "fr": "Ce profil prend en charge uniquement le DLSS ; le HDR n’est pas pris en charge actuellement.",
         "ja": "このプロファイルは DLSS のみをサポートしています（現在 HDR には非対応）。",
+        "pt-BR": "Este perfil oferece suporte apenas a DLSS; HDR não é compatível no momento.",
         "ru": "Этот профиль добавляет только поддержку DLSS; HDR сейчас не поддерживается.",
         "zh-Hans": "此配置文件仅支持 DLSS，目前不支持 HDR。",
         "zh-Hant": "此設定檔僅支援 DLSS，目前不支援 HDR。"
@@ -71,6 +75,7 @@
         "es": "En los ajustes del juego, selecciona AA «High» o «Max».",
         "fr": "Dans les paramètres du jeu, sélectionnez AA « High » ou « Max ».",
         "ja": "ゲーム設定で AA を「High」または「Max」にしてください。",
+        "pt-BR": "Nas configurações do jogo, defina o AA como “High” ou “Max”.",
         "ru": "В настройках игры выберите AA «High» или «Max».",
         "zh-Hans": "在游戏设置中选择 AA “High” 或 “Max”。",
         "zh-Hant": "在遊戲設定中選擇 AA 「High」 或 「Max」。"
@@ -86,6 +91,7 @@
         "es": "En los ajustes del juego, usa: TXAA y escala de resolución «Full».",
         "fr": "Dans les paramètres du jeu, utilisez : TXAA et échelle de résolution « Full ».",
         "ja": "ゲーム設定: TXAA および解像度スケーラビリティ「Full」を設定してください。",
+        "pt-BR": "Nas configurações do jogo, use TXAA e defina “Resolution Scalability” como “Full”.",
         "ru": "В настройках игры выберите TXAA и масштаб разрешения «Full».",
         "zh-Hans": "在游戏设置中选择：TXAA 以及分辨率缩放 “Full”。",
         "zh-Hant": "在遊戲設定中選擇：TXAA 以及解析度縮放 「Full」。"
@@ -101,6 +107,7 @@
         "es": "Pueden producirse parpadeos visuales.",
         "fr": "Des clignotements visuels peuvent survenir.",
         "ja": "画面のちらつきが発生する場合があります。",
+        "pt-BR": "Pode ocorrer cintilação visual.",
         "ru": "Возможно мерцание изображения.",
         "zh-Hans": "可能会出现画面闪烁。",
         "zh-Hant": "可能會出現畫面閃爍。"
@@ -116,6 +123,7 @@
         "es": "La calidad Epic puede llenar progresivamente la VRAM y provocar tirones. Evita alternar repetidamente entre High y Epic con Luma activo.",
         "fr": "La qualité Epic peut saturer progressivement la VRAM et provoquer des saccades. Évitez de basculer à répétition entre High et Epic lorsque Luma est actif.",
         "ja": "Epic 品質は VRAM を徐々に消費し、カクつきの原因になることがあります。Luma の動作中に High と Epic を何度も切り替えないでください。",
+        "pt-BR": "A qualidade Epic pode encher progressivamente a VRAM e causar travamentos. Evite alternar repetidamente entre High e Epic enquanto o Luma estiver ativo.",
         "ru": "Качество Epic может со временем заполнить видеопамять (VRAM) и вызвать микрофризы. Избегайте многократного переключения между High и Epic при активной Luma.",
         "zh-Hans": "Epic 画质会持续占用显存 (VRAM) 并导致卡顿。在 Luma 运行时，请避免在 High 和 Epic 之间频繁切换。",
         "zh-Hant": "Epic 畫質會持續佔用視訊記憶體 (VRAM) 並導致卡頓。在 Luma 運作時，請避免在 High 和 Epic 之間頻繁切換。"
@@ -131,6 +139,7 @@
         "es": "En los ajustes del juego, selecciona calidad general «Epic».",
         "fr": "Dans les paramètres du jeu, sélectionnez la qualité globale « Epic ».",
         "ja": "ゲーム設定で全体品質を「Epic」にしてください。",
+        "pt-BR": "Nas configurações do jogo, selecione a qualidade geral “Epic”.",
         "ru": "В настройках игры выберите общее качество «Epic».",
         "zh-Hans": "在游戏设置中将整体质量设为 “Epic”。",
         "zh-Hant": "在遊戲設定中將整體品質設為 「Epic」。"
@@ -146,6 +155,7 @@
         "es": "Aplica los siguientes ajustes manualmente en Engine.ini.",
         "fr": "Appliquez manuellement les paramètres suivants dans Engine.ini.",
         "ja": "次の設定を Engine.ini に手動で適用してください。",
+        "pt-BR": "Aplique manualmente as seguintes configurações no Engine.ini.",
         "ru": "Вручную добавьте в Engine.ini следующие настройки.",
         "zh-Hans": "请在 Engine.ini 中手动应用以下设置。",
         "zh-Hant": "請在 Engine.ini 中手動套用以下設定。"
@@ -161,6 +171,7 @@
         "es": "En los ajustes del juego, selecciona calidad de AA «Very High».",
         "fr": "Dans les paramètres du jeu, sélectionnez la qualité d’AA « Very High ».",
         "ja": "ゲーム設定で AA 品質を「Very High」にしてください。",
+        "pt-BR": "Nas configurações do jogo, selecione a qualidade de AA “Very High”.",
         "ru": "В настройках игры выберите качество AA «Very High».",
         "zh-Hans": "在游戏设置中将 AA 质量设为 “Very High”。",
         "zh-Hant": "在遊戲設定中將 AA 品質設為 「Very High」。"
@@ -176,6 +187,7 @@
         "es": "En los ajustes del juego, selecciona AA 4X.",
         "fr": "Dans les paramètres du jeu, sélectionnez AA 4X.",
         "ja": "ゲーム設定で AA を 4X にしてください。",
+        "pt-BR": "Nas configurações do jogo, selecione AA 4X.",
         "ru": "В настройках игры выберите AA 4X.",
         "zh-Hans": "在游戏设置中选择 AA 4X。",
         "zh-Hant": "在遊戲設定中選擇 AA 4X。"
@@ -191,6 +203,7 @@
         "es": "Evita el emparejamiento público oficial mientras Luma esté instalado. Podría ocasionar un bloqueo.",
         "fr": "Évitez le matchmaking public officiel lorsque Luma est installé. Cela pourrait entraîner un bannissement.",
         "ja": "Luma のインストール中は公式の公開マッチメイキングを利用しないでください。BAN される可能性があります。",
+        "pt-BR": "Evite o pareamento público oficial enquanto o Luma estiver instalado. Isso pode causar um banimento.",
         "ru": "Не используйте официальный публичный матчмейкинг, пока Luma установлена. Это может привести к бану.",
         "zh-Hans": "安装 Luma 期间请勿使用官方公开匹配，否则可能导致封禁。",
         "zh-Hant": "安裝 Luma 期間請勿使用官方公開配對，否則可能導致封鎖。"
@@ -206,6 +219,7 @@
         "es": "En los ajustes del juego, selecciona AA Highest.",
         "fr": "Dans les paramètres du jeu, sélectionnez AA Highest.",
         "ja": "ゲーム設定で AA を Highest にしてください。",
+        "pt-BR": "Nas configurações do jogo, selecione AA Highest.",
         "ru": "В настройках игры выберите AA Highest.",
         "zh-Hans": "在游戏设置中选择 AA Highest。",
         "zh-Hant": "在遊戲設定中選擇 AA Highest。"
@@ -221,6 +235,7 @@
         "es": "En los ajustes del juego, selecciona High Anti-aliasing Type.",
         "fr": "Dans les paramètres du jeu, sélectionnez High Anti-aliasing Type.",
         "ja": "ゲーム設定で High Anti-aliasing Type を選択してください。",
+        "pt-BR": "Nas configurações do jogo, selecione High Anti-aliasing Type.",
         "ru": "В настройках игры выберите High Anti-aliasing Type.",
         "zh-Hans": "在游戏设置中选择 High Anti-aliasing Type。",
         "zh-Hant": "在遊戲設定中選擇 High Anti-aliasing Type。"
@@ -236,6 +251,7 @@
         "es": "En los ajustes del juego, usa: calidad de suavizado al menos Medium (2x).",
         "fr": "Dans les paramètres du jeu, utilisez : qualité d’anticrénelage au moins Medium (2x).",
         "ja": "ゲーム設定: アンチエイリアス品質を少なくとも Medium (2x) に設定してください。",
+        "pt-BR": "Nas configurações do jogo, use qualidade de antisserrilhamento Medium (2x) ou superior.",
         "ru": "В настройках игры выберите качество сглаживания не ниже Medium (2x).",
         "zh-Hans": "在游戏设置中选择：至少 Medium (2x) 的抗锯齿质量。",
         "zh-Hant": "在遊戲設定中選擇：至少 Medium (2x) 的反鋸齒品質。"
@@ -251,6 +267,7 @@
         "es": "Aplica los siguientes ajustes manualmente en Engine.ini.",
         "fr": "Appliquez manuellement les paramètres suivants dans Engine.ini.",
         "ja": "次の設定を Engine.ini に手動で適用してください。",
+        "pt-BR": "Aplique manualmente as seguintes configurações no Engine.ini.",
         "ru": "Вручную добавьте в Engine.ini следующие настройки.",
         "zh-Hans": "请在 Engine.ini 中手动应用以下设置。",
         "zh-Hant": "請在 Engine.ini 中手動套用以下設定。"
@@ -266,6 +283,7 @@
         "es": "Cargar un nivel o cambiar los ajustes gráficos fuerza r.TemporalAASamples=1 y desactiva DLAA.",
         "fr": "Le chargement d’un niveau ou la modification des réglages graphiques force r.TemporalAASamples=1 et désactive DLAA.",
         "ja": "レベルのロードやグラフィック設定の変更により、強制的に r.TemporalAASamples=1 が設定され DLAA が無効化されます。",
+        "pt-BR": "Carregar uma fase ou alterar as configurações gráficas força r.TemporalAASamples=1 e desativa o DLAA.",
         "ru": "Загрузка уровня или изменение настроек графики принудительно задаёт r.TemporalAASamples=1 и отключает DLAA.",
         "zh-Hans": "加载关卡或更改图形设置会强制设为 r.TemporalAASamples=1 并禁用 DLAA。",
         "zh-Hant": "載入關卡或變更圖形設定會強制設為 r.TemporalAASamples=1 並停用 DLAA。"
@@ -281,6 +299,7 @@
         "es": "En los ajustes del juego, selecciona AA Epic.",
         "fr": "Dans les paramètres du jeu, sélectionnez AA Epic.",
         "ja": "ゲーム設定で AA を Epic にしてください。",
+        "pt-BR": "Nas configurações do jogo, selecione AA Epic.",
         "ru": "В настройках игры выберите AA Epic.",
         "zh-Hans": "在游戏设置中选择 AA Epic。",
         "zh-Hant": "在遊戲設定中選擇 AA Epic。"
@@ -296,6 +315,7 @@
         "es": "Luma funciona por sí solo, pero se bloquea si se combina con OptiScaler o UUU.",
         "fr": "Luma fonctionne seul, mais plante lorsqu’il est combiné avec OptiScaler ou UUU.",
         "ja": "Luma は単体では動作しますが、OptiScaler または UUU と併用するとクラッシュします。",
+        "pt-BR": "O Luma funciona sozinho, mas trava quando combinado com o OptiScaler ou o UUU.",
         "ru": "Luma работает автономно, но вылетает при совместном использовании с OptiScaler или UUU.",
         "zh-Hans": "Luma 可单独运行，但与 OptiScaler 或 UUU 配合使用时会发生崩溃。",
         "zh-Hant": "Luma 可單獨運作，但與 OptiScaler 或 UUU 配合使用時會發生當機。"
@@ -311,6 +331,7 @@
         "es": "En los ajustes del juego, selecciona «Ultra».",
         "fr": "Dans les paramètres du jeu, sélectionnez « Ultra ».",
         "ja": "ゲーム設定で「Ultra」を選択してください。",
+        "pt-BR": "Nas configurações do jogo, selecione “Ultra”.",
         "ru": "В настройках игры выберите «Ultra».",
         "zh-Hans": "在游戏设置中选择 “Ultra”。",
         "zh-Hant": "在遊戲設定中選擇 「Ultra」。"
@@ -326,6 +347,7 @@
         "es": "Bloqueado por Easy Anti-Cheat.",
         "fr": "Bloqué par Easy Anti-Cheat.",
         "ja": "Easy Anti-Cheat によりブロックされます。",
+        "pt-BR": "Bloqueado pelo Easy Anti-Cheat.",
         "ru": "Заблокировано системой Easy Anti-Cheat.",
         "zh-Hans": "被 Easy Anti-Cheat 拦截。",
         "zh-Hant": "被 Easy Anti-Cheat 攔截。"
@@ -341,6 +363,7 @@
         "es": "En los ajustes del juego, selecciona AA «Ultra».",
         "fr": "Dans les paramètres du jeu, sélectionnez AA « Ultra ».",
         "ja": "ゲーム設定で AA を「Ultra」にしてください。",
+        "pt-BR": "Nas configurações do jogo, selecione o AA “Ultra”.",
         "ru": "В настройках игры выберите AA «Ultra».",
         "zh-Hans": "在游戏设置中选择 AA “Ultra”。",
         "zh-Hant": "在遊戲設定中選擇 AA 「Ultra」。"
@@ -356,6 +379,7 @@
         "es": "Incompatible con Boris ENB (DX9). Funciona con la versión Director’s Cut y la original. El mod Gold Filter Restoration es redundante con Luma.",
         "fr": "Incompatible avec Boris ENB (DX9). Fonctionne avec la version Director’s Cut et l’édition originale. Le mod Gold Filter Restoration est superflu avec Luma.",
         "ja": "Boris ENB（DX9）とは互換性がありません。Director’s Cut およびオリジナル版と互換性があります。Luma 使用時は Gold Filter Restoration MOD は不要です。",
+        "pt-BR": "Não é compatível com Boris ENB (DX9). É compatível com a Director’s Cut e a edição original. O mod Gold Filter Restoration é redundante ao usar o Luma.",
         "ru": "Несовместимо с Boris ENB (DX9). Совместимо с Director’s Cut и оригинальным изданием. Мод Gold Filter Restoration при использовании Luma не требуется.",
         "zh-Hans": "与 Boris ENB (DX9) 不兼容。兼容导剪版 (Director’s Cut) 和原版。使用 Luma 时无需 Gold Filter Restoration 模组。",
         "zh-Hant": "與 Boris ENB (DX9) 不相容。相容導演剪輯版 (Director’s Cut) 和原版。使用 Luma 時無需 Gold Filter Restoration 模組。"
@@ -371,6 +395,7 @@
         "es": "Este perfil solo admite DLSS; HDR no es compatible actualmente.",
         "fr": "Ce profil prend en charge uniquement le DLSS ; le HDR n’est pas pris en charge actuellement.",
         "ja": "このプロファイルは DLSS のみをサポートしています（現在 HDR には非対応）。",
+        "pt-BR": "Este perfil oferece suporte apenas a DLSS; HDR não é compatível no momento.",
         "ru": "Этот профиль добавляет только поддержку DLSS; HDR сейчас не поддерживается.",
         "zh-Hans": "此配置文件仅支持 DLSS，目前不支持 HDR。",
         "zh-Hant": "此設定檔僅支援 DLSS，目前不支援 HDR。"
@@ -386,6 +411,7 @@
         "es": "En los ajustes del juego, selecciona TAA «High» o «Epic».",
         "fr": "Dans les paramètres du jeu, sélectionnez TAA « High » ou « Epic ».",
         "ja": "ゲーム設定で TAA を「High」または「Epic」にしてください。",
+        "pt-BR": "Nas configurações do jogo, selecione TAA “High” ou “Epic”.",
         "ru": "В настройках игры выберите TAA «High» или «Epic».",
         "zh-Hans": "在游戏设置中选择 TAA “High” 或 “Epic”。",
         "zh-Hant": "在遊戲設定中選擇 TAA 「High」 或 「Epic」。"
@@ -401,6 +427,7 @@
         "es": "Aplica los siguientes ajustes manualmente en Engine.ini.",
         "fr": "Appliquez manuellement les paramètres suivants dans Engine.ini.",
         "ja": "次の設定を Engine.ini に手動で適用してください。",
+        "pt-BR": "Aplique manualmente as seguintes configurações no Engine.ini.",
         "ru": "Вручную добавьте в Engine.ini следующие настройки.",
         "zh-Hans": "请在 Engine.ini 中手动应用以下设置。",
         "zh-Hant": "請在 Engine.ini 中手動套用以下設定。"
@@ -416,6 +443,7 @@
         "es": "El suavizado no funciona en la pantalla de selección de personajes.",
         "fr": "L’anticrénelage ne fonctionne pas sur l’écran de sélection des personnages.",
         "ja": "キャラクター選択画面ではアンチエイリアスが機能しません。",
+        "pt-BR": "O antisserrilhamento não funciona na tela de seleção de personagens.",
         "ru": "Сглаживание не работает на экране выбора персонажа.",
         "zh-Hans": "抗锯齿在角色选择界面无效。",
         "zh-Hant": "反鋸齒在角色選擇畫面無效。"
@@ -431,6 +459,7 @@
         "es": "En los ajustes del juego, usa: TAA. Usa BDZKFix para la versión Legacy o su fork actualizado para la versión HD.",
         "fr": "Dans les paramètres du jeu, utilisez : TAA. Utilisez BDZKFix pour la version Legacy ou son fork mis à jour pour la version HD.",
         "ja": "ゲーム設定: TAA を選択してください。Legacy 版では BDZKFix、HD 版ではその更新フォークを使用してください。",
+        "pt-BR": "Nas configurações do jogo, use TAA. Use o BDZKFix na versão Legacy ou o fork atualizado dele na versão HD.",
         "ru": "В настройках игры выберите TAA. Используйте BDZKFix для Legacy-версии либо его обновлённый форк для HD-версии.",
         "zh-Hans": "在游戏设置中选择：TAA。原版 (Legacy) 请使用 BDZKFix，HD 版请使用其更新分支。",
         "zh-Hant": "在遊戲設定中選擇：TAA。原版 (Legacy) 請使用 BDZKFix，HD 版請使用其更新分支。"
@@ -446,6 +475,7 @@
         "es": "Aplica los siguientes ajustes manualmente en Engine.ini.",
         "fr": "Appliquez manuellement les paramètres suivants dans Engine.ini.",
         "ja": "次の設定を Engine.ini に手動で適用してください。",
+        "pt-BR": "Aplique manualmente as seguintes configurações no Engine.ini.",
         "ru": "Вручную добавьте в Engine.ini следующие настройки.",
         "zh-Hans": "请在 Engine.ini 中手动应用以下设置。",
         "zh-Hant": "請在 Engine.ini 中手動套用以下設定。"
@@ -461,6 +491,7 @@
         "es": "Aplica los siguientes ajustes manualmente en Engine.ini.",
         "fr": "Appliquez manuellement les paramètres suivants dans Engine.ini.",
         "ja": "次の設定を Engine.ini に手動で適用してください。",
+        "pt-BR": "Aplique manualmente as seguintes configurações no Engine.ini.",
         "ru": "Вручную добавьте в Engine.ini следующие настройки.",
         "zh-Hans": "请在 Engine.ini 中手动应用以下设置。",
         "zh-Hant": "請在 Engine.ini 中手動套用以下設定。"
@@ -476,6 +507,7 @@
         "es": "DLAA deja de funcionar tras el primer nivel. Con Auto Exposure activado, las fuentes de luz parpadean; con Auto Exposure desactivado, la calidad del suavizado disminuye notablemente.",
         "fr": "DLAA cesse de fonctionner après le premier niveau. Avec Auto Exposure activé, les sources lumineuses clignotent ; avec Auto Exposure désactivé, la qualité d’anticrénelage se dégrade nettement.",
         "ja": "最初のレベルをクリアすると DLAA が機能しなくなります。Auto Exposure を有効にすると光源が点滅し、無効にするとアンチエイリアス品質が著しく低下します。",
+        "pt-BR": "O DLAA para de funcionar após a primeira fase. Com a Exposição automática ativada, as fontes de luz piscam; com ela desativada, a qualidade do antisserrilhamento piora significativamente.",
         "ru": "После первого уровня DLAA перестаёт работать. При включённом Auto Exposure источники света мерцают, а при отключённом качество сглаживания заметно ухудшается.",
         "zh-Hans": "第一关后 DLAA 将停止工作。启用 Auto Exposure 时光源会出现频闪；禁用 Auto Exposure 时抗锯齿质量会明显下降。",
         "zh-Hant": "第一關後 DLAA 將停止運作。啟用 Auto Exposure 時光源會出現頻閃；停用 Auto Exposure 時反鋸齒品質會明顯下降。"
@@ -491,6 +523,7 @@
         "es": "Actualmente este perfil solo admite DLSS y GTAO.",
         "fr": "Ce profil ne prend actuellement en charge que DLSS et GTAO.",
         "ja": "現在、このプロファイルがサポートするのは DLSS と GTAO のみです。",
+        "pt-BR": "Atualmente, este perfil oferece suporte apenas a DLSS e GTAO.",
         "ru": "Сейчас этот профиль поддерживает только DLSS и GTAO.",
         "zh-Hans": "此配置文件目前仅支持 DLSS 和 GTAO。",
         "zh-Hant": "此設定檔目前僅支援 DLSS 和 GTAO。"
@@ -506,6 +539,7 @@
         "es": "En los ajustes del juego, selecciona AA «High» o «Very High».",
         "fr": "Dans les paramètres du jeu, sélectionnez AA « High » ou « Very High ».",
         "ja": "ゲーム設定で AA を「High」または「Very High」にしてください。",
+        "pt-BR": "Nas configurações do jogo, selecione o AA “High” ou “Very High”.",
         "ru": "В настройках игры выберите AA «High» или «Very High».",
         "zh-Hans": "在游戏设置中选择 AA “High” 或 “Very High”。",
         "zh-Hant": "在遊戲設定中選擇 AA 「High」 或 「Very High」。"
@@ -521,6 +555,7 @@
         "es": "En los ajustes del juego, selecciona High AA.",
         "fr": "Dans les paramètres du jeu, sélectionnez High AA.",
         "ja": "ゲーム設定で High AA を選択してください。",
+        "pt-BR": "Nas configurações do jogo, selecione High AA.",
         "ru": "В настройках игры выберите High AA.",
         "zh-Hans": "在游戏设置中选择 High AA。",
         "zh-Hant": "在遊戲設定中選擇 High AA。"
@@ -536,6 +571,7 @@
         "es": "Este perfil solo admite DLSS; HDR no es compatible actualmente.",
         "fr": "Ce profil prend en charge uniquement le DLSS ; le HDR n’est pas pris en charge actuellement.",
         "ja": "このプロファイルは DLSS のみをサポートしています（現在 HDR には非対応）。",
+        "pt-BR": "Este perfil oferece suporte apenas a DLSS; HDR não é compatível no momento.",
         "ru": "Этот профиль добавляет только поддержку DLSS; HDR сейчас не поддерживается.",
         "zh-Hans": "此配置文件仅支持 DLSS，目前不支持 HDR。",
         "zh-Hant": "此設定檔僅支援 DLSS，目前不支援 HDR。"
@@ -551,6 +587,7 @@
         "es": "El suavizado no funciona en la pantalla de selección de personajes. En el juego: AA «Temporal Anti Aliasing». En Engine.ini en [SystemSettings], añade: r.DefaultFeature.AntiAliasing=2 y r.PostProcessAAQuality=4.",
         "fr": "L’anticrénelage ne fonctionne pas sur l’écran de sélection des personnages. En jeu : AA « Temporal Anti Aliasing ». Dans Engine.ini sous [SystemSettings], ajoutez : r.DefaultFeature.AntiAliasing=2 et r.PostProcessAAQuality=4.",
         "ja": "キャラクター選択画面ではアンチエイリアスが機能しません。ゲーム内設定: AA「Temporal Anti Aliasing」。Engine.ini の [SystemSettings] に追加: r.DefaultFeature.AntiAliasing=2 および r.PostProcessAAQuality=4。",
+        "pt-BR": "O antisserrilhamento não funciona na tela de seleção de personagens. No jogo, use AA “Temporal Anti Aliasing”. No Engine.ini, em [SystemSettings], adicione r.DefaultFeature.AntiAliasing=2 e r.PostProcessAAQuality=4.",
         "ru": "Сглаживание не работает на экране выбора персонажа. В игре: AA «Temporal Anti Aliasing». В Engine.ini в секции [SystemSettings] добавьте: r.DefaultFeature.AntiAliasing=2 и r.PostProcessAAQuality=4.",
         "zh-Hans": "抗锯齿在角色选择界面无效。游戏内设置：AA “Temporal Anti Aliasing”。在 Engine.ini 的 [SystemSettings] 下添加：r.DefaultFeature.AntiAliasing=2 与 r.PostProcessAAQuality=4。",
         "zh-Hant": "反鋸齒在角色選擇畫面無效。遊戲內設定：AA 「Temporal Anti Aliasing」。在 Engine.ini 的 [SystemSettings] 下新增：r.DefaultFeature.AntiAliasing=2 與 r.PostProcessAAQuality=4。"
@@ -566,6 +603,7 @@
         "es": "Si surgen problemas de visualización, evita la pantalla completa exclusiva. Pulsa Alt+Enter para cambiar de modo.",
         "fr": "En cas de problème d’affichage, évitez le plein écran exclusif. Appuyez sur Alt+Entrée pour changer de mode.",
         "ja": "表示に問題が生じる場合は排他的フルスクリーンを避けてください。Alt+Enter で表示モードを切り替えられます。",
+        "pt-BR": "Se ocorrerem problemas de exibição, evite o modo Exclusive Fullscreen. Pressione Alt+Enter para alternar os modos.",
         "ru": "При проблемах с отображением избегайте эксклюзивного полноэкранного режима. Чтобы переключить режим, нажмите Alt+Enter.",
         "zh-Hans": "若出现显示异常，请避免使用独占全屏。按 Alt+Enter 可切换窗口模式。",
         "zh-Hant": "若出現顯示異常，請避免使用獨佔全螢幕。按 Alt+Enter 可切換視窗模式。"
@@ -581,6 +619,7 @@
         "es": "La compatibilidad con pantalla ultraancha puede funcionar solo en Steam.",
         "fr": "La prise en charge du format ultra-large peut ne fonctionner que sur Steam.",
         "ja": "ウルトラワイド対応は Steam でのみ動作する可能性があります。",
+        "pt-BR": "O suporte a ultrawide pode funcionar somente na versão Steam.",
         "ru": "Ультраширокий режим может работать только при запуске через Steam.",
         "zh-Hans": "超宽屏支持可能仅在 Steam 上有效。",
         "zh-Hant": "超寬螢幕支援可能僅在 Steam 上有效。"
@@ -596,6 +635,7 @@
         "es": "Bloqueado por Easy Anti-Cheat.",
         "fr": "Bloqué par Easy Anti-Cheat.",
         "ja": "Easy Anti-Cheat によりブロックされます。",
+        "pt-BR": "Bloqueado pelo Easy Anti-Cheat.",
         "ru": "Заблокировано системой Easy Anti-Cheat.",
         "zh-Hans": "被 Easy Anti-Cheat 拦截。",
         "zh-Hant": "被 Easy Anti-Cheat 攔截。"
@@ -611,6 +651,7 @@
         "es": "No es compatible con la versión de Xbox Store.",
         "fr": "Incompatible avec la version Xbox Store.",
         "ja": "Xbox Store 版とは互換性がありません。",
+        "pt-BR": "Não é compatível com a versão da Xbox Store.",
         "ru": "Несовместимо с версией из Xbox Store.",
         "zh-Hans": "与 Xbox Store 版本不兼容。",
         "zh-Hant": "與 Xbox Store 版本不相容。"
@@ -626,6 +667,7 @@
         "es": "Solo funciona durante la secuencia de la pantalla de título.",
         "fr": "Fonctionne uniquement pendant la séquence de l’écran titre.",
         "ja": "タイトル画面のシーケンス中のみ動作します。",
+        "pt-BR": "Funciona somente durante a sequência da tela de título.",
         "ru": "Работает только во время вступительной заставки на титульном экране.",
         "zh-Hans": "仅在标题画面过场期间有效。",
         "zh-Hant": "僅在標題畫面過場期間有效。"
@@ -641,6 +683,7 @@
         "es": "Aplica los siguientes ajustes manualmente en Engine.ini.",
         "fr": "Appliquez manuellement les paramètres suivants dans Engine.ini.",
         "ja": "次の設定を Engine.ini に手動で適用してください。",
+        "pt-BR": "Aplique manualmente as seguintes configurações no Engine.ini.",
         "ru": "Вручную добавьте в Engine.ini следующие настройки.",
         "zh-Hans": "请在 Engine.ini 中手动应用以下设置。",
         "zh-Hant": "請在 Engine.ini 中手動套用以下設定。"
@@ -656,6 +699,7 @@
         "es": "En los ajustes del juego, selecciona AA «High».",
         "fr": "Dans les paramètres du jeu, sélectionnez AA « High ».",
         "ja": "ゲーム設定で AA を「High」にしてください。",
+        "pt-BR": "Nas configurações do jogo, selecione o AA “High”.",
         "ru": "В настройках игры выберите AA «High».",
         "zh-Hans": "在游戏设置中选择 AA “High”。",
         "zh-Hant": "在遊戲設定中選擇 AA 「High」。"
@@ -671,6 +715,7 @@
         "es": "Aplica los siguientes ajustes manualmente en Engine.ini.",
         "fr": "Appliquez manuellement les paramètres suivants dans Engine.ini.",
         "ja": "次の設定を Engine.ini に手動で適用してください。",
+        "pt-BR": "Aplique manualmente as seguintes configurações no Engine.ini.",
         "ru": "Вручную добавьте в Engine.ini следующие настройки.",
         "zh-Hans": "请在 Engine.ini 中手动应用以下设置。",
         "zh-Hant": "請在 Engine.ini 中手動套用以下設定。"
@@ -686,6 +731,7 @@
         "es": "En los ajustes del juego, usa: «TXAA».",
         "fr": "Dans les paramètres du jeu, utilisez : « TXAA ».",
         "ja": "ゲーム設定:「TXAA」を選択してください。",
+        "pt-BR": "Primeiro, selecione “TXAA” no jogo.",
         "ru": "В настройках игры выберите «TXAA».",
         "zh-Hans": "在游戏设置中选择：“TXAA”。",
         "zh-Hant": "在遊戲設定中選擇：「TXAA」。"
@@ -701,6 +747,7 @@
         "es": "No es compatible con la versión de Xbox Store.",
         "fr": "Incompatible avec la version Xbox Store.",
         "ja": "Xbox Store 版とは互換性がありません。",
+        "pt-BR": "Não é compatível com a versão da Xbox Store.",
         "ru": "Несовместимо с версией из Xbox Store.",
         "zh-Hans": "与 Xbox Store 版本不兼容。",
         "zh-Hant": "與 Xbox Store 版本不相容。"
@@ -716,6 +763,7 @@
         "es": "No se ejecuta en modo DirectX 11.",
         "fr": "Ne se lance pas en mode DirectX 11.",
         "ja": "DirectX 11 モードでは起動しません。",
+        "pt-BR": "Não inicia no modo DirectX 11.",
         "ru": "Не запускается в режиме DirectX 11.",
         "zh-Hans": "无法在 DirectX 11 模式下启动。",
         "zh-Hant": "無法在 DirectX 11 模式下啟動。"
@@ -731,6 +779,7 @@
         "es": "Solo están disponibles los modos DLAA / FSR 3 Native AA; esto no es superresolución DLSS ni FSR.",
         "fr": "Seuls les modes DLAA / FSR 3 Native AA sont disponibles ; il ne s’agit pas de super-résolution DLSS ou FSR.",
         "ja": "利用できるのは DLAA / FSR 3 Native AA モードのみで、DLSS または FSR の超解像ではありません。",
+        "pt-BR": "Somente os modos DLAA/FSR 3 Native AA estão disponíveis; eles não são Super-resolução DLSS nem FSR.",
         "ru": "Доступны только режимы сглаживания DLAA / FSR 3 Native AA; суперразрешение DLSS или FSR не поддерживается.",
         "zh-Hans": "仅提供 DLAA / FSR 3 原生抗锯齿 (Native AA) 模式；这不是 DLSS 或 FSR 超分辨率。",
         "zh-Hant": "僅提供 DLAA / FSR 3 原生反鋸齒 (Native AA) 模式；這不是 DLSS 或 FSR 超解析度。"
@@ -746,6 +795,7 @@
         "es": "En los ajustes del juego, usa: calidad de AA «High» y escala de resolución al máximo.",
         "fr": "Dans les paramètres du jeu, utilisez : qualité d’AA « High » et curseur de résolution au maximum.",
         "ja": "ゲーム設定: AA 品質「High」および最大解像度スライダーを設定してください。",
+        "pt-BR": "Nas configurações do jogo, use a qualidade de AA “High” e coloque a escala de resolução no máximo.",
         "ru": "В настройках игры выберите качество AA «High» и установите ползунок разрешения на максимум.",
         "zh-Hans": "在游戏设置中选择：AA 质量 “High” 并将分辨率滑块拉至最大。",
         "zh-Hant": "在遊戲設定中選擇：AA 品質 「High」 並將解析度滑桿拉至最大。"
@@ -761,6 +811,7 @@
         "es": "Requiere modo ventana o sin bordes, configurado mediante mods o desactivando la pantalla completa en la configuración del juego.",
         "fr": "Nécessite le mode fenêtré ou sans bordures, configuré via des mods ou en désactivant le plein écran dans la configuration du jeu.",
         "ja": "ウィンドウまたはボーダーレスモードが必要です。MOD を使用するか、ゲーム設定ファイルでフルスクリーンを無効化してください。",
+        "pt-BR": "Exige o modo janela ou janela sem bordas, configurado por mods ou pela desativação da tela cheia no arquivo de configuração do jogo.",
         "ru": "Требуется оконный или безрамочный режим: через моды либо отключением полноэкранного режима в конфиге игры.",
         "zh-Hans": "需要窗口化或无边框模式，可通过模组或在游戏配置文件中关闭全屏进行设置。",
         "zh-Hant": "需要視窗化或無邊框模式，可透過模組或在遊戲設定檔中關閉全螢幕進行設定。"
@@ -776,6 +827,7 @@
         "es": "Usa el modo ventana sin bordes.",
         "fr": "Utilisez le mode fenêtré sans bordures.",
         "ja": "ボーダーレスウィンドウモードを使用してください。",
+        "pt-BR": "Use o modo janela sem bordas.",
         "ru": "Используйте безрамочный оконный режим.",
         "zh-Hans": "请使用无边框窗口模式。",
         "zh-Hant": "請使用無邊框視窗模式。"
@@ -791,6 +843,7 @@
         "es": "Este perfil solo admite DLSS; HDR no es compatible actualmente.",
         "fr": "Ce profil prend en charge uniquement le DLSS ; le HDR n’est pas pris en charge actuellement.",
         "ja": "このプロファイルは DLSS のみをサポートしています（現在 HDR には非対応）。",
+        "pt-BR": "Este perfil oferece suporte apenas a DLSS; HDR não é compatível no momento.",
         "ru": "Этот профиль добавляет только поддержку DLSS; HDR сейчас не поддерживается.",
         "zh-Hans": "此配置文件仅支持 DLSS，目前不支持 HDR。",
         "zh-Hant": "此設定檔僅支援 DLSS，目前不支援 HDR。"
@@ -806,6 +859,7 @@
         "es": "Aplica los siguientes ajustes manualmente en Engine.ini.",
         "fr": "Appliquez manuellement les paramètres suivants dans Engine.ini.",
         "ja": "次の設定を Engine.ini に手動で適用してください。",
+        "pt-BR": "Aplique manualmente as seguintes configurações no Engine.ini.",
         "ru": "Вручную добавьте в Engine.ini следующие настройки.",
         "zh-Hans": "请在 Engine.ini 中手动应用以下设置。",
         "zh-Hant": "請在 Engine.ini 中手動套用以下設定。"
@@ -821,6 +875,7 @@
         "es": "En los ajustes del juego, usa: AA «High». Para mayor claridad de movimiento, se recomienda r.motionblur.amount=0 en Engine.ini.",
         "fr": "Dans les paramètres du jeu, utilisez : AA « High ». Pour une meilleure netteté des mouvements, définissez r.motionblur.amount=0 dans Engine.ini.",
         "ja": "ゲーム設定: AA「High」。動きの鮮明さを向上させるには、Engine.ini で r.motionblur.amount=0 を設定することを推奨します。",
+        "pt-BR": "Nas configurações do jogo, use AA “High”. Para melhorar a nitidez em movimento, defina r.motionblur.amount=0 no Engine.ini.",
         "ru": "В настройках игры выберите AA «High». Для лучшей чёткости в движении задайте r.motionblur.amount=0 в Engine.ini.",
         "zh-Hans": "在游戏设置中选择：AA “High”。为了获得更清晰的动态画面，建议在 Engine.ini 中设置 r.motionblur.amount=0。",
         "zh-Hant": "在遊戲設定中選擇：AA 「High」。為了獲得更清晰的動態畫面，建議在 Engine.ini 中設定 r.motionblur.amount=0。"
@@ -836,6 +891,7 @@
         "es": "Bloqueado por Easy Anti-Cheat.",
         "fr": "Bloqué par Easy Anti-Cheat.",
         "ja": "Easy Anti-Cheat によりブロックされます。",
+        "pt-BR": "Bloqueado pelo Easy Anti-Cheat.",
         "ru": "Заблокировано системой Easy Anti-Cheat.",
         "zh-Hans": "被 Easy Anti-Cheat 拦截。",
         "zh-Hant": "被 Easy Anti-Cheat 攔截。"
@@ -851,6 +907,7 @@
         "es": "Aplica los siguientes ajustes manualmente en Engine.ini.",
         "fr": "Appliquez manuellement les paramètres suivants dans Engine.ini.",
         "ja": "次の設定を Engine.ini に手動で適用してください。",
+        "pt-BR": "Aplique manualmente as seguintes configurações no Engine.ini.",
         "ru": "Вручную добавьте в Engine.ini следующие настройки.",
         "zh-Hans": "请在 Engine.ini 中手动应用以下设置。",
         "zh-Hant": "請在 Engine.ini 中手動套用以下設定。"
@@ -866,6 +923,7 @@
         "es": "Aplica los siguientes ajustes manualmente en Engine.ini.",
         "fr": "Appliquez manuellement les paramètres suivants dans Engine.ini.",
         "ja": "次の設定を Engine.ini に手動で適用してください。",
+        "pt-BR": "Aplique manualmente as seguintes configurações no Engine.ini.",
         "ru": "Вручную добавьте в Engine.ini следующие настройки.",
         "zh-Hans": "请在 Engine.ini 中手动应用以下设置。",
         "zh-Hant": "請在 Engine.ini 中手動套用以下設定。"
@@ -881,6 +939,7 @@
         "es": "En los ajustes del juego, selecciona calidad de AA «High».",
         "fr": "Dans les paramètres du jeu, sélectionnez la qualité d’AA « High ».",
         "ja": "ゲーム設定で AA 品質を「High」にしてください。",
+        "pt-BR": "Nas configurações do jogo, selecione a qualidade de AA “High”.",
         "ru": "В настройках игры выберите качество AA «High».",
         "zh-Hans": "在游戏设置中将 AA 质量设为 “High”。",
         "zh-Hant": "在遊戲設定中將 AA 品質設為 「High」。"
@@ -896,6 +955,7 @@
         "es": "No se ejecuta en modo DirectX 11.",
         "fr": "Ne se lance pas en mode DirectX 11.",
         "ja": "DirectX 11 モードでは起動しません。",
+        "pt-BR": "Não inicia no modo DirectX 11.",
         "ru": "Не запускается в режиме DirectX 11.",
         "zh-Hans": "无法在 DirectX 11 模式下启动。",
         "zh-Hant": "無法在 DirectX 11 模式下啟動。"
@@ -911,6 +971,7 @@
         "es": "Bloqueado por Easy Anti-Cheat.",
         "fr": "Bloqué par Easy Anti-Cheat.",
         "ja": "Easy Anti-Cheat によりブロックされます。",
+        "pt-BR": "Bloqueado pelo Easy Anti-Cheat.",
         "ru": "Заблокировано системой Easy Anti-Cheat.",
         "zh-Hans": "被 Easy Anti-Cheat 拦截。",
         "zh-Hant": "被 Easy Anti-Cheat 攔截。"
@@ -926,6 +987,7 @@
         "es": "Mantén los archivos de datos adicionales de Luma para Prey junto con el complemento.",
         "fr": "Conservez les fichiers de données Luma supplémentaires pour Prey avec le module complémentaire.",
         "ja": "Prey 用の追加 Luma データファイルは、アドオンと同じ場所に置いてください。",
+        "pt-BR": "Mantenha os arquivos de dados adicionais do Luma para Prey junto ao complemento.",
         "ru": "Дополнительные файлы данных Luma для Prey должны оставаться рядом с аддоном.",
         "zh-Hans": "请将 Prey 的附加 Luma 数据文件与插件放置在同一目录下。",
         "zh-Hant": "請將 Prey 的附加 Luma 資料檔案與外掛程式放置在同一目錄下。"
@@ -941,6 +1003,7 @@
         "es": "Aplica los siguientes ajustes manualmente en Engine.ini.",
         "fr": "Appliquez manuellement les paramètres suivants dans Engine.ini.",
         "ja": "次の設定を Engine.ini に手動で適用してください。",
+        "pt-BR": "Aplique manualmente as seguintes configurações no Engine.ini.",
         "ru": "Вручную добавьте в Engine.ini следующие настройки.",
         "zh-Hans": "请在 Engine.ini 中手动应用以下设置。",
         "zh-Hant": "請在 Engine.ini 中手動套用以下設定。"
@@ -956,6 +1019,7 @@
         "es": "En los ajustes del juego, usa: AA «FXAA».",
         "fr": "Dans les paramètres du jeu, utilisez : AA « FXAA ».",
         "ja": "ゲーム設定: AA「FXAA」を選択してください。",
+        "pt-BR": "Primeiro, selecione o AA “FXAA” no jogo.",
         "ru": "В настройках игры выберите AA «FXAA».",
         "zh-Hans": "在游戏设置中选择：AA “FXAA”。",
         "zh-Hant": "在遊戲設定中選擇：AA 「FXAA」。"
@@ -971,6 +1035,7 @@
         "es": "En los ajustes del juego, selecciona AA «Ultra».",
         "fr": "Dans les paramètres du jeu, sélectionnez AA « Ultra ».",
         "ja": "ゲーム設定で AA を「Ultra」にしてください。",
+        "pt-BR": "Nas configurações do jogo, selecione o AA “Ultra”.",
         "ru": "В настройках игры выберите AA «Ultra».",
         "zh-Hans": "在游戏设置中选择 AA “Ultra”。",
         "zh-Hant": "在遊戲設定中選擇 AA 「Ultra」。"
@@ -986,6 +1051,7 @@
         "es": "Aplica los siguientes ajustes manualmente en Engine.ini.",
         "fr": "Appliquez manuellement les paramètres suivants dans Engine.ini.",
         "ja": "次の設定を Engine.ini に手動で適用してください。",
+        "pt-BR": "Aplique manualmente as seguintes configurações no Engine.ini.",
         "ru": "Вручную добавьте в Engine.ini следующие настройки.",
         "zh-Hans": "请在 Engine.ini 中手动应用以下设置。",
         "zh-Hant": "請在 Engine.ini 中手動套用以下設定。"
@@ -1001,6 +1067,7 @@
         "es": "En los ajustes del juego, selecciona TAA y calidad «3».",
         "fr": "Dans les paramètres du jeu, sélectionnez TAA et la qualité « 3 ».",
         "ja": "ゲーム設定で TAA と品質「3」を選択してください。",
+        "pt-BR": "Nas configurações do jogo, use TAA e qualidade “3”.",
         "ru": "В настройках игры выберите TAA и качество «3».",
         "zh-Hans": "在游戏设置中选择 TAA，并将质量设为 “3”。",
         "zh-Hant": "在遊戲設定中選擇 TAA，並將品質設為 「3」。"
@@ -1016,6 +1083,7 @@
         "es": "En los ajustes del juego, selecciona AA «TXAA».",
         "fr": "Dans les paramètres du jeu, sélectionnez AA « TXAA ».",
         "ja": "ゲーム設定で AA を「TXAA」にしてください。",
+        "pt-BR": "Nas configurações do jogo, selecione o AA “TXAA”.",
         "ru": "В настройках игры выберите AA «TXAA».",
         "zh-Hans": "在游戏设置中选择 AA “TXAA”。",
         "zh-Hant": "在遊戲設定中選擇 AA 「TXAA」。"
@@ -1031,6 +1099,7 @@
         "es": "Tiene compatibilidad nativa con FSR 2.1; se puede añadir DLSS u otros escaladores mediante OptiScaler.",
         "fr": "Prend en charge FSR 2.1 nativement ; DLSS ou d’autres upscalers peuvent être ajoutés via OptiScaler.",
         "ja": "FSR 2.1 をネイティブサポートしています。DLSS やその他のアップスケーラーは OptiScaler 経由で追加できます。",
+        "pt-BR": "O jogo oferece suporte nativo ao FSR 2.1; DLSS ou outros escalonadores podem ser adicionados pelo OptiScaler.",
         "ru": "В игре есть нативная поддержка FSR 2.1; DLSS или другие апскейлеры можно добавить через OptiScaler.",
         "zh-Hans": "原生支持 FSR 2.1；可通过 OptiScaler 添加 DLSS 或其他缩放器。",
         "zh-Hant": "原生支援 FSR 2.1；可透過 OptiScaler 新增 DLSS 或其他縮放器。"
@@ -1046,6 +1115,7 @@
         "es": "El argumento de inicio obligatorio -dx11 puede reducir el rendimiento de la CPU. Con Auto Exposure activado, DLAA produce bordes dentados en la hierba.",
         "fr": "L’argument de lancement requis -dx11 peut réduire les performances du processeur. Avec Auto Exposure activé, DLAA produit des bords crénelés sur l’herbe.",
         "ja": "必要な起動引数 -dx11 により、CPU 性能が低下する場合があります。Auto Exposure を有効にした DLAA では、草の縁にジャギーが生じます。",
+        "pt-BR": "O argumento de inicialização obrigatório -dx11 pode reduzir o desempenho da CPU. Com a Exposição automática ativada, o DLAA produz bordas serrilhadas na grama.",
         "ru": "Требуемый аргумент запуска -dx11 может снизить производительность процессора. При включённом Auto Exposure режим DLAA даёт зубчатые края на траве.",
         "zh-Hans": "所需的启动参数 -dx11 可能会降低 CPU 性能。启用 Auto Exposure 时，DLAA 会使草地边缘出现锯齿。",
         "zh-Hant": "所需的啟動參數 -dx11 可能會降低 CPU 效能。啟用 Auto Exposure 時，DLAA 會讓草地邊緣出現鋸齒。"
@@ -1061,6 +1131,7 @@
         "es": "Requiere Lyall’s Fix para forzar TAA.",
         "fr": "Nécessite Lyall’s Fix pour forcer le TAA.",
         "ja": "TAA を強制するには Lyall’s Fix が必要です。",
+        "pt-BR": "Exige o Lyall’s Fix para forçar o TAA.",
         "ru": "Для принудительного включения TAA требуется Lyall’s Fix.",
         "zh-Hans": "需要 Lyall’s Fix 强制开启 TAA。",
         "zh-Hant": "需要 Lyall’s Fix 強制開啟 TAA。"
@@ -1076,6 +1147,7 @@
         "es": "Aplica los siguientes ajustes manualmente en Engine.ini.",
         "fr": "Appliquez manuellement les paramètres suivants dans Engine.ini.",
         "ja": "次の設定を Engine.ini に手動で適用してください。",
+        "pt-BR": "Aplique manualmente as seguintes configurações no Engine.ini.",
         "ru": "Вручную добавьте в Engine.ini следующие настройки.",
         "zh-Hans": "请在 Engine.ini 中手动应用以下设置。",
         "zh-Hant": "請在 Engine.ini 中手動套用以下設定。"
@@ -1091,6 +1163,7 @@
         "es": "En los ajustes del juego, selecciona calidad gráfica «Ultra».",
         "fr": "Dans les paramètres du jeu, sélectionnez la qualité graphique « Ultra ».",
         "ja": "ゲーム設定でグラフィック品質を「Ultra」にしてください。",
+        "pt-BR": "Nas configurações do jogo, selecione a qualidade gráfica “Ultra”.",
         "ru": "В настройках игры выберите качество графики «Ultra».",
         "zh-Hans": "在游戏设置中将图形质量设为 “Ultra”。",
         "zh-Hant": "在遊戲設定中將圖形品質設為 「Ultra」。"
@@ -1106,6 +1179,7 @@
         "es": "En los ajustes del juego, selecciona AA «Ultra».",
         "fr": "Dans les paramètres du jeu, sélectionnez AA « Ultra ».",
         "ja": "ゲーム設定で AA を「Ultra」にしてください。",
+        "pt-BR": "Nas configurações do jogo, selecione o AA “Ultra”.",
         "ru": "В настройках игры выберите AA «Ultra».",
         "zh-Hans": "在游戏设置中选择 AA “Ultra”。",
         "zh-Hant": "在遊戲設定中選擇 AA 「Ultra」。"
@@ -1121,6 +1195,7 @@
         "es": "En los ajustes del juego, selecciona High TAA.",
         "fr": "Dans les paramètres du jeu, sélectionnez High TAA.",
         "ja": "ゲーム設定で High TAA を選択してください。",
+        "pt-BR": "Nas configurações do jogo, selecione High TAA.",
         "ru": "В настройках игры выберите High TAA.",
         "zh-Hans": "在游戏设置中选择 High TAA。",
         "zh-Hant": "在遊戲設定中選擇 High TAA。"
@@ -1136,6 +1211,7 @@
         "es": "Aplica los siguientes ajustes manualmente en Engine.ini.",
         "fr": "Appliquez manuellement les paramètres suivants dans Engine.ini.",
         "ja": "次の設定を Engine.ini に手動で適用してください。",
+        "pt-BR": "Aplique manualmente as seguintes configurações no Engine.ini.",
         "ru": "Вручную добавьте в Engine.ini следующие настройки.",
         "zh-Hans": "请在 Engine.ini 中手动应用以下设置。",
         "zh-Hant": "請在 Engine.ini 中手動套用以下設定。"
@@ -1151,6 +1227,7 @@
         "es": "En los ajustes del juego, selecciona AA «High».",
         "fr": "Dans les paramètres du jeu, sélectionnez AA « High ».",
         "ja": "ゲーム設定で AA を「High」にしてください。",
+        "pt-BR": "Nas configurações do jogo, selecione o AA “High”.",
         "ru": "В настройках игры выберите AA «High».",
         "zh-Hans": "在游戏设置中选择 AA “High”。",
         "zh-Hant": "在遊戲設定中選擇 AA 「High」。"
@@ -1166,6 +1243,7 @@
         "es": "En los ajustes del juego, selecciona AA «Temporal Anti Aliasing».",
         "fr": "Dans les paramètres du jeu, sélectionnez AA « Temporal Anti Aliasing ».",
         "ja": "ゲーム設定で AA を「Temporal Anti Aliasing」にしてください。",
+        "pt-BR": "Nas configurações do jogo, selecione o AA “Temporal Anti Aliasing”.",
         "ru": "В настройках игры выберите AA «Temporal Anti Aliasing».",
         "zh-Hans": "在游戏设置中选择 AA “Temporal Anti Aliasing”。",
         "zh-Hant": "在遊戲設定中選擇 AA 「Temporal Anti Aliasing」。"
@@ -1181,6 +1259,7 @@
         "es": "Requiere Arise-SDK con UseUE4TAA=true.",
         "fr": "Nécessite Arise-SDK avec UseUE4TAA=true.",
         "ja": "UseUE4TAA=true を設定した Arise-SDK が必要です。",
+        "pt-BR": "Exige o Arise-SDK com UseUE4TAA=true.",
         "ru": "Требуется Arise-SDK с параметром UseUE4TAA=true.",
         "zh-Hans": "需要 Arise-SDK 并设置 UseUE4TAA=true。",
         "zh-Hant": "需要 Arise-SDK 並設定 UseUE4TAA=true。"
@@ -1196,6 +1275,7 @@
         "es": "Aplica los siguientes ajustes manualmente en Engine.ini.",
         "fr": "Appliquez manuellement les paramètres suivants dans Engine.ini.",
         "ja": "次の設定を Engine.ini に手動で適用してください。",
+        "pt-BR": "Aplique manualmente as seguintes configurações no Engine.ini.",
         "ru": "Вручную добавьте в Engine.ini следующие настройки.",
         "zh-Hans": "请在 Engine.ini 中手动应用以下设置。",
         "zh-Hant": "請在 Engine.ini 中手動套用以下設定。"
@@ -1211,6 +1291,7 @@
         "es": "Aplica los siguientes ajustes manualmente en Engine.ini.",
         "fr": "Appliquez manuellement les paramètres suivants dans Engine.ini.",
         "ja": "次の設定を Engine.ini に手動で適用してください。",
+        "pt-BR": "Aplique manualmente as seguintes configurações no Engine.ini.",
         "ru": "Вручную добавьте в Engine.ini следующие настройки.",
         "zh-Hans": "请在 Engine.ini 中手动应用以下设置。",
         "zh-Hant": "請在 Engine.ini 中手動套用以下設定。"
@@ -1226,6 +1307,7 @@
         "es": "En los ajustes del juego, usa: AA «FXAA:6» y escala de renderizado al 100%.",
         "fr": "Dans les paramètres du jeu, utilisez : AA « FXAA:6 » et échelle de rendu à 100 %.",
         "ja": "ゲーム設定: AA「FXAA:6」およびレンダリングスケール 100% を選択してください。",
+        "pt-BR": "Primeiro, selecione o AA “FXAA:6” e a escala de renderização em 100% no jogo.",
         "ru": "В настройках игры выберите AA «FXAA:6» и масштаб рендеринга 100%.",
         "zh-Hans": "在游戏设置中选择：AA “FXAA:6” 且渲染比例为 100%。",
         "zh-Hant": "在遊戲設定中選擇：AA 「FXAA:6」 且渲染比例為 100%。"
@@ -1241,6 +1323,7 @@
         "es": "Compatible con la versión original; la compatibilidad con la edición Remastered no está confirmada.",
         "fr": "Compatible avec la version originale ; compatibilité non confirmée avec l’édition Remastered.",
         "ja": "オリジナル版と互換性があります。Remastered 版との互換性は未確認です。",
+        "pt-BR": "Compatível com a versão original; a compatibilidade com a edição Remastered não foi confirmada.",
         "ru": "Совместимо с оригинальным релизом; совместимость с изданием Remastered не подтверждена.",
         "zh-Hans": "兼容原版；重制版 (Remastered) 的兼容性尚未确认。",
         "zh-Hant": "相容原版；重製版 (Remastered) 的相容性尚未確認。"
@@ -1256,6 +1339,7 @@
         "es": "No se ejecuta en modo DirectX 11.",
         "fr": "Ne se lance pas en mode DirectX 11.",
         "ja": "DirectX 11 モードでは起動しません。",
+        "pt-BR": "Não inicia no modo DirectX 11.",
         "ru": "Не запускается в режиме DirectX 11.",
         "zh-Hans": "无法在 DirectX 11 模式下启动。",
         "zh-Hant": "無法在 DirectX 11 模式下啟動。"
@@ -1271,6 +1355,7 @@
         "es": "Aplica los siguientes ajustes manualmente en Engine.ini.",
         "fr": "Appliquez manuellement les paramètres suivants dans Engine.ini.",
         "ja": "次の設定を Engine.ini に手動で適用してください。",
+        "pt-BR": "Aplique manualmente as seguintes configurações no Engine.ini.",
         "ru": "Вручную добавьте в Engine.ini следующие настройки.",
         "zh-Hans": "请在 Engine.ini 中手动应用以下设置。",
         "zh-Hant": "請在 Engine.ini 中手動套用以下設定。"
@@ -1286,6 +1371,7 @@
         "es": "En los ajustes del juego, selecciona AA TXAA 6X.",
         "fr": "Dans les paramètres du jeu, sélectionnez AA TXAA 6X.",
         "ja": "ゲーム設定で AA を TXAA 6X にしてください。",
+        "pt-BR": "Nas configurações do jogo, selecione AA TXAA 6X.",
         "ru": "В настройках игры выберите AA TXAA 6X.",
         "zh-Hans": "在游戏设置中选择 AA TXAA 6X。",
         "zh-Hant": "在遊戲設定中選擇 AA TXAA 6X。"
@@ -1301,6 +1387,7 @@
         "es": "Aplica los siguientes ajustes manualmente en Engine.ini.",
         "fr": "Appliquez manuellement les paramètres suivants dans Engine.ini.",
         "ja": "次の設定を Engine.ini に手動で適用してください。",
+        "pt-BR": "Aplique manualmente as seguintes configurações no Engine.ini.",
         "ru": "Вручную добавьте в Engine.ini следующие настройки.",
         "zh-Hans": "请在 Engine.ini 中手动应用以下设置。",
         "zh-Hant": "請在 Engine.ini 中手動套用以下設定。"
@@ -1316,6 +1403,7 @@
         "es": "DLAA funciona sin cambios adicionales, pero es posible que el juego no se cierre por completo al salir. OptiScaler puede solucionar este problema.",
         "fr": "DLAA fonctionne sans modifications supplémentaires, mais le jeu peut ne pas se fermer complètement après l’avoir quitté. OptiScaler peut résoudre ce problème.",
         "ja": "DLAA は追加の変更なしで動作しますが、終了後にゲームが完全に閉じないことがあります。OptiScaler で解決できる場合があります。",
+        "pt-BR": "O DLAA funciona sem alterações adicionais, mas o jogo pode não fechar completamente ao sair. O OptiScaler pode resolver isso.",
         "ru": "DLAA работает без дополнительных изменений, но игра может не завершаться полностью после выхода. OptiScaler может устранить эту проблему.",
         "zh-Hans": "DLAA 无需额外修改即可运行，但退出后游戏可能无法完全关闭。OptiScaler 可以解决此问题。",
         "zh-Hant": "DLAA 無需額外修改即可運作，但結束後遊戲可能無法完全關閉。OptiScaler 可以解決此問題。"
@@ -1331,6 +1419,7 @@
         "es": "Aplica los siguientes ajustes manualmente en Engine.ini.",
         "fr": "Appliquez manuellement les paramètres suivants dans Engine.ini.",
         "ja": "次の設定を Engine.ini に手動で適用してください。",
+        "pt-BR": "Aplique manualmente as seguintes configurações no Engine.ini.",
         "ru": "Вручную добавьте в Engine.ini следующие настройки.",
         "zh-Hans": "请在 Engine.ini 中手动应用以下设置。",
         "zh-Hant": "請在 Engine.ini 中手動套用以下設定。"
@@ -1346,6 +1435,7 @@
         "es": "El juego es inestable en resolución 4K. Ajusta Effects en Low antes de aplicar los cambios manuales en Engine.ini.",
         "fr": "Le jeu est instable en résolution 4K. Réglez Effects sur Low avant d’appliquer les paramètres manuels dans Engine.ini.",
         "ja": "ゲームは 4K 解像度で動作が不安定になります。手動で Engine.ini の設定を適用する前に Effects を Low に設定してください。",
+        "pt-BR": "O jogo fica instável em resolução 4K. Defina Effects como Low antes de aplicar manualmente as configurações no Engine.ini.",
         "ru": "Игра работает нестабильно в разрешении 4K. Перед внесением настроек в Engine.ini установите Effects на Low.",
         "zh-Hans": "该游戏在 4K 分辨率下运行不稳定。在手动应用 Engine.ini 设置前，请将 Effects 设为 Low。",
         "zh-Hant": "該遊戲在 4K 解析度下運作不穩定。在手動套用 Engine.ini 設定前，請將 Effects 設為 Low。"
