@@ -676,6 +676,7 @@ test("reviewed game-setting literals and quality warnings preserve their exact m
     es: "City Glow Effect",
     fr: "City Glow Effect",
     ja: "City Glow Effect",
+    "pt-BR": "City Glow Effect",
     ru: "Эффект свечения города",
     "zh-Hans": "City Glow Effect",
     "zh-Hant": "City Glow Effect",

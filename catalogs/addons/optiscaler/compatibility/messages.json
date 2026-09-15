@@ -235,7 +235,7 @@
         "es": "La entrada XeSS puede mostrar artefactos de bloques negros en cinemáticas y algunos niveles.",
         "fr": "L’entrée XeSS peut afficher des artefacts en blocs noirs dans les cinématiques et certains niveaux.",
         "ja": "XeSS 入力では、カットシーンや一部のレベルで黒いブロック状のアーティファクトが表示される場合があります。",
-        "pt-BR": "A entrada XeSS pode apresentar blocos pretos em cenas e em algumas fases.",
+        "pt-BR": "A entrada XeSS pode apresentar artefatos em blocos pretos nas cinemáticas e em algumas fases.",
         "ru": "В режиме XeSS в роликах и на некоторых уровнях могут появляться чёрные блочные артефакты.",
         "zh-Hans": "XeSS 输入模式可能会在过场动画和部分关卡中出现黑色块状伪影。",
         "zh-Hant": "XeSS 輸入模式可能會在過場動畫和部分關卡中出現黑色塊狀偽影。"
@@ -539,7 +539,7 @@
         "es": "Completa la compilación de sombreadores antes de seleccionar FSR 4 para evitar un cierre inesperado.",
         "fr": "Terminez la compilation des shaders avant de sélectionner FSR 4 afin d’éviter un plantage.",
         "ja": "クラッシュを避けるため、FSR 4 を選択する前にシェーダーのコンパイルを完了してください。",
-        "pt-BR": "Conclua a compilação dos shaders antes de selecionar o FSR 4 para evitar uma falha.",
+        "pt-BR": "Conclua a compilação dos shaders antes de selecionar o FSR 4 para evitar que o jogo trave.",
         "ru": "Завершите компиляцию шейдеров перед выбором FSR 4, чтобы избежать сбоя.",
         "zh-Hans": "请在选择 FSR 4 前完成着色器编译，以避免崩溃。",
         "zh-Hant": "請在選擇 FSR 4 前完成著色器編譯，以避免當機。"
@@ -2155,7 +2155,7 @@
         "es": "Usa entradas DLSS; XeSS puede causar graves defectos visuales.",
         "fr": "Utilisez les entrées DLSS ; XeSS peut provoquer de graves artefacts visuels.",
         "ja": "DLSS 入力を使用してください。XeSS は重大な表示崩れを引き起こすことがあります。",
-        "pt-BR": "Use entradas DLSS; o XeSS pode causar corrupção visual intensa.",
+        "pt-BR": "Use entradas DLSS; o XeSS pode causar graves artefatos visuais.",
         "ru": "Используйте режим DLSS: при выборе XeSS возможны сильные визуальные искажения.",
         "zh-Hans": "请使用 DLSS 输入；XeSS 可能造成严重的画面异常。",
         "zh-Hant": "請使用 DLSS 輸入；XeSS 可能造成嚴重的畫面異常。"
@@ -2251,7 +2251,7 @@
         "es": "No selecciones una entrada FSR 2; puede provocar un cierre inesperado. DirectX 11 ofrece menor rendimiento y un parpadeo intenso.",
         "fr": "Ne sélectionnez pas d’entrée FSR 2 : elle peut faire planter le jeu. DirectX 11 offre des performances plus faibles et un scintillement important.",
         "ja": "FSR 2 入力は選択しないでください。クラッシュすることがあります。DirectX 11 ではパフォーマンスが低下し、強いちらつきが発生します。",
-        "pt-BR": "Não selecione uma entrada FSR 2; ela pode causar uma falha. O DirectX 11 apresenta desempenho inferior e cintilação intensa.",
+        "pt-BR": "Não selecione uma entrada FSR 2; ela pode fazer o jogo travar. O DirectX 11 apresenta desempenho inferior e cintilação intensa.",
         "ru": "Не выбирайте режим FSR 2: он может вызвать сбой. В DirectX 11 ниже производительность и заметно сильное мерцание.",
         "zh-Hans": "不要选择 FSR 2 输入；它可能导致崩溃。DirectX 11 的性能较低，且会严重闪烁。",
         "zh-Hant": "不要選擇 FSR 2 輸入；它可能導致當機。DirectX 11 的效能較低，且會嚴重閃爍。"
@@ -2347,7 +2347,7 @@
         "es": "Este juego requiere REFramework (pd-upscaler branch) y UpscalerBasePlugin de PureDark versión 1.1.2.",
         "fr": "Ce jeu nécessite REFramework (pd-upscaler branch) et UpscalerBasePlugin de PureDark version 1.1.2.",
         "ja": "このゲームを動作させるには REFramework（pd-upscaler branch）と PureDark の UpscalerBasePlugin バージョン 1.1.2 が必要です。",
-        "pt-BR": "O REFramework (ramificação pd-upscaler) e o UpscalerBasePlugin 1.1.2 de PureDark são necessários para que este jogo funcione.",
+        "pt-BR": "O REFramework (branch pd-upscaler) e o UpscalerBasePlugin versão 1.1.2 de PureDark são necessários para que este jogo funcione.",
         "ru": "Для работы требуются REFramework (ветка pd-upscaler) и UpscalerBasePlugin PureDark версии 1.1.2.",
         "zh-Hans": "此游戏需要 REFramework（pd-upscaler 分支）和 PureDark 的 UpscalerBasePlugin 1.1.2 版才能运行。",
         "zh-Hant": "此遊戲需要 REFramework（pd-upscaler 分支）和 PureDark 的 UpscalerBasePlugin 1.1.2 版才能運作。"
@@ -2363,7 +2363,7 @@
         "es": "Este juego requiere REFramework (pd-upscaler branch) y UpscalerBasePlugin de PureDark versión 1.1.2.",
         "fr": "Ce jeu nécessite REFramework (pd-upscaler branch) et UpscalerBasePlugin de PureDark version 1.1.2.",
         "ja": "このゲームを動作させるには REFramework（pd-upscaler branch）と PureDark の UpscalerBasePlugin バージョン 1.1.2 が必要です。",
-        "pt-BR": "O REFramework (ramificação pd-upscaler) e o UpscalerBasePlugin 1.1.2 de PureDark são necessários para que este jogo funcione.",
+        "pt-BR": "O REFramework (branch pd-upscaler) e o UpscalerBasePlugin versão 1.1.2 de PureDark são necessários para que este jogo funcione.",
         "ru": "Для работы требуются REFramework (ветка pd-upscaler) и UpscalerBasePlugin PureDark версии 1.1.2.",
         "zh-Hans": "此游戏需要 REFramework（pd-upscaler 分支）和 PureDark 的 UpscalerBasePlugin 1.1.2 版才能运行。",
         "zh-Hant": "此遊戲需要 REFramework（pd-upscaler 分支）和 PureDark 的 UpscalerBasePlugin 1.1.2 版才能運作。"
@@ -2379,7 +2379,7 @@
         "es": "Este juego requiere REFramework (pd-upscaler branch) y UpscalerBasePlugin de PureDark versión 1.1.2.",
         "fr": "Ce jeu nécessite REFramework (pd-upscaler branch) et UpscalerBasePlugin de PureDark version 1.1.2.",
         "ja": "このゲームを動作させるには REFramework（pd-upscaler branch）と PureDark の UpscalerBasePlugin バージョン 1.1.2 が必要です。",
-        "pt-BR": "O REFramework (ramificação pd-upscaler) e o UpscalerBasePlugin 1.1.2 de PureDark são necessários para que este jogo funcione.",
+        "pt-BR": "O REFramework (branch pd-upscaler) e o UpscalerBasePlugin versão 1.1.2 de PureDark são necessários para que este jogo funcione.",
         "ru": "Для работы требуются REFramework (ветка pd-upscaler) и UpscalerBasePlugin PureDark версии 1.1.2.",
         "zh-Hans": "此游戏需要 REFramework（pd-upscaler 分支）和 PureDark 的 UpscalerBasePlugin 1.1.2 版才能运行。",
         "zh-Hant": "此遊戲需要 REFramework（pd-upscaler 分支）和 PureDark 的 UpscalerBasePlugin 1.1.2 版才能運作。"
@@ -2395,7 +2395,7 @@
         "es": "Este juego requiere REFramework (pd-upscaler branch) y UpscalerBasePlugin de PureDark versión 1.1.2.",
         "fr": "Ce jeu nécessite REFramework (pd-upscaler branch) et UpscalerBasePlugin de PureDark version 1.1.2.",
         "ja": "このゲームを動作させるには REFramework（pd-upscaler branch）と PureDark の UpscalerBasePlugin バージョン 1.1.2 が必要です。",
-        "pt-BR": "O REFramework (ramificação pd-upscaler) e o UpscalerBasePlugin 1.1.2 de PureDark são necessários para que este jogo funcione.",
+        "pt-BR": "O REFramework (branch pd-upscaler) e o UpscalerBasePlugin versão 1.1.2 de PureDark são necessários para que este jogo funcione.",
         "ru": "Для работы требуются REFramework (ветка pd-upscaler) и UpscalerBasePlugin PureDark версии 1.1.2.",
         "zh-Hans": "此游戏需要 REFramework（pd-upscaler 分支）和 PureDark 的 UpscalerBasePlugin 1.1.2 版才能运行。",
         "zh-Hant": "此遊戲需要 REFramework（pd-upscaler 分支）和 PureDark 的 UpscalerBasePlugin 1.1.2 版才能運作。"
