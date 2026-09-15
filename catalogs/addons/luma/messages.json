@@ -459,7 +459,7 @@
         "es": "En los ajustes del juego, usa: TAA. Usa BDZKFix para la versión Legacy o su fork actualizado para la versión HD.",
         "fr": "Dans les paramètres du jeu, utilisez : TAA. Utilisez BDZKFix pour la version Legacy ou son fork mis à jour pour la version HD.",
         "ja": "ゲーム設定: TAA を選択してください。Legacy 版では BDZKFix、HD 版ではその更新フォークを使用してください。",
-        "pt-BR": "Nas configurações do jogo, use TAA. Use o BDZKFix na versão Legacy ou o fork atualizado dele na versão HD.",
+        "pt-BR": "Ative o TAA nas configurações do jogo. Para a versão Legacy, utilize o BDZKFix; para a versão HD, utilize o fork atualizado.",
         "ru": "В настройках игры выберите TAA. Используйте BDZKFix для Legacy-версии либо его обновлённый форк для HD-версии.",
         "zh-Hans": "在游戏设置中选择：TAA。原版 (Legacy) 请使用 BDZKFix，HD 版请使用其更新分支。",
         "zh-Hant": "在遊戲設定中選擇：TAA。原版 (Legacy) 請使用 BDZKFix，HD 版請使用其更新分支。"
@@ -875,7 +875,7 @@
         "es": "En los ajustes del juego, usa: AA «High». Para mayor claridad de movimiento, se recomienda r.motionblur.amount=0 en Engine.ini.",
         "fr": "Dans les paramètres du jeu, utilisez : AA « High ». Pour une meilleure netteté des mouvements, définissez r.motionblur.amount=0 dans Engine.ini.",
         "ja": "ゲーム設定: AA「High」。動きの鮮明さを向上させるには、Engine.ini で r.motionblur.amount=0 を設定することを推奨します。",
-        "pt-BR": "Nas configurações do jogo, use AA “High”. Para melhorar a nitidez em movimento, defina r.motionblur.amount=0 no Engine.ini.",
+        "pt-BR": "Nas configurações do jogo, selecione AA “High”. Para melhorar a nitidez em movimento, defina r.motionblur.amount=0 no Engine.ini.",
         "ru": "В настройках игры выберите AA «High». Для лучшей чёткости в движении задайте r.motionblur.amount=0 в Engine.ini.",
         "zh-Hans": "在游戏设置中选择：AA “High”。为了获得更清晰的动态画面，建议在 Engine.ini 中设置 r.motionblur.amount=0。",
         "zh-Hant": "在遊戲設定中選擇：AA 「High」。為了獲得更清晰的動態畫面，建議在 Engine.ini 中設定 r.motionblur.amount=0。"
