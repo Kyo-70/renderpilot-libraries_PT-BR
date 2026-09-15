@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-13T00:00:00Z",
+  "generated_at": "2026-09-15T00:00:00Z",
   "games": [
     {
       "id": "007-first-light",
@@ -262,93 +262,6 @@
       ],
       "addon": {
         "slug": "asscreed1"
-      }
-    },
-    {
-      "id": "assassins-creed-brotherhood",
-      "name": "Assassin’s Creed® Ezio Trilogy (dgVoodoo)",
-      "architecture": "X64",
-      "status": "construction",
-      "match": [
-        {
-          "kind": "steam_appid",
-          "value": "48190",
-          "tier": 100
-        },
-        {
-          "kind": "exe_name",
-          "value": "ACBSP.exe",
-          "tier": 70
-        }
-      ],
-      "addon": {
-        "slug": "assassin-s-creed-ezio-trilogy-dgvoodoo"
-      },
-      "availability": {
-        "kind": "external",
-        "url": "https://www.nexusmods.com/assassinscreedii/mods/250",
-        "message": {
-          "id": "renodx.external.nexus",
-          "fallback_text": "Get the add-on from Nexus Mods, then install the downloaded file."
-        }
-      }
-    },
-    {
-      "id": "assassins-creed-ii",
-      "name": "Assassin’s Creed® Ezio Trilogy (dgVoodoo)",
-      "architecture": "X64",
-      "status": "construction",
-      "match": [
-        {
-          "kind": "steam_appid",
-          "value": "33230",
-          "tier": 100
-        },
-        {
-          "kind": "exe_name",
-          "value": "AssassinsCreedIIGame.exe",
-          "tier": 70
-        }
-      ],
-      "addon": {
-        "slug": "assassin-s-creed-ezio-trilogy-dgvoodoo"
-      },
-      "availability": {
-        "kind": "external",
-        "url": "https://www.nexusmods.com/assassinscreedii/mods/250",
-        "message": {
-          "id": "renodx.external.nexus",
-          "fallback_text": "Get the add-on from Nexus Mods, then install the downloaded file."
-        }
-      }
-    },
-    {
-      "id": "assassins-creed-revelations",
-      "name": "Assassin’s Creed® Ezio Trilogy (dgVoodoo)",
-      "architecture": "X64",
-      "status": "construction",
-      "match": [
-        {
-          "kind": "steam_appid",
-          "value": "201870",
-          "tier": 100
-        },
-        {
-          "kind": "exe_name",
-          "value": "ACRSP.exe",
-          "tier": 70
-        }
-      ],
-      "addon": {
-        "slug": "assassin-s-creed-ezio-trilogy-dgvoodoo"
-      },
-      "availability": {
-        "kind": "external",
-        "url": "https://www.nexusmods.com/assassinscreedii/mods/250",
-        "message": {
-          "id": "renodx.external.nexus",
-          "fallback_text": "Get the add-on from Nexus Mods, then install the downloaded file."
-        }
       }
     },
     {
@@ -4651,7 +4564,8 @@
         }
       ],
       "addon": {
-        "slug": "stalker2"
+        "slug": "ue-extended",
+        "source": "https://github.com/marat569/renodx/releases/download/snapshot/renodx-ue-extended.addon64"
       }
     },
     {
@@ -5700,7 +5614,8 @@
         }
       ],
       "addon": {
-        "slug": "unrealengine"
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
       }
     },
     {
@@ -5918,7 +5833,8 @@
         }
       ],
       "addon": {
-        "slug": "unrealengine"
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
       }
     },
     {
@@ -5942,7 +5858,7 @@
       "id": "deep-rock-galactic-rogue-core",
       "name": "Deep Rock Galactic: Rogue Core",
       "architecture": "X64",
-      "status": "construction",
+      "status": "working",
       "match": [
         {
           "kind": "steam_appid",
@@ -6467,7 +6383,7 @@
       "id": "motor-town-behind-the-wheel",
       "name": "Motor Town: Behind The Wheel",
       "architecture": "X64",
-      "status": "construction",
+      "status": "working",
       "match": [
         {
           "kind": "steam_appid",
@@ -6534,7 +6450,7 @@
       "id": "persona-3-reload",
       "name": "Persona 3 Reload",
       "architecture": "X64",
-      "status": "construction",
+      "status": "working",
       "match": [
         {
           "kind": "steam_appid",
@@ -6641,7 +6557,7 @@
       "id": "sifu",
       "name": "Sifu",
       "architecture": "X64",
-      "status": "construction",
+      "status": "working",
       "match": [
         {
           "kind": "steam_appid",
@@ -6748,7 +6664,7 @@
       "id": "the-blood-of-dawnwalker",
       "name": "The Blood of Dawnwalker",
       "architecture": "X64",
-      "status": "construction",
+      "status": "working",
       "match": [
         {
           "kind": "steam_appid",
@@ -6796,7 +6712,8 @@
         }
       ],
       "addon": {
-        "slug": "unrealengine"
+        "slug": "ue-extended",
+        "source": "https://marat569.github.io/renodx/renodx-ue-extended.addon64"
       }
     },
     {
@@ -16145,122 +16062,6 @@
       ],
       "addon": {
         "slug": "unityengine"
-      }
-    },
-    {
-      "id": "control-hdr-ultrawide-dlss-rt-patch",
-      "name": "CONTROL - HDR Ultrawide DLSS RT Patch",
-      "architecture": "X64",
-      "status": "working",
-      "match": [
-        {
-          "kind": "steam_appid",
-          "value": "870780",
-          "tier": 100
-        },
-        {
-          "kind": "exe_name",
-          "value": "Control.exe",
-          "tier": 70
-        }
-      ],
-      "addon": {
-        "slug": "control-hdr-ultrawide-dlss-rt-patch"
-      },
-      "availability": {
-        "kind": "external",
-        "url": "https://www.nexusmods.com/control/mods/90",
-        "message": {
-          "id": "renodx.external.nexus",
-          "fallback_text": "Get the add-on from Nexus Mods, then install the downloaded file."
-        }
-      }
-    },
-    {
-      "id": "dark-souls-2-ds2lightingengine-sotfs",
-      "name": "Dark Souls 2 - DS2LightingEngine SotFS",
-      "architecture": "X64",
-      "status": "construction",
-      "match": [
-        {
-          "kind": "steam_appid",
-          "value": "335300",
-          "tier": 100
-        },
-        {
-          "kind": "exe_name",
-          "value": "DarkSoulsII.exe",
-          "tier": 70
-        }
-      ],
-      "addon": {
-        "slug": "dark-souls-2-ds2lightingengine-sotfs"
-      },
-      "availability": {
-        "kind": "external",
-        "url": "https://www.nexusmods.com/darksouls2/mods/1146",
-        "message": {
-          "id": "renodx.external.nexus",
-          "fallback_text": "Get the add-on from Nexus Mods, then install the downloaded file."
-        }
-      }
-    },
-    {
-      "id": "dark-souls-3-ds3lightingengine-light",
-      "name": "Dark Souls 3 - DS3LightingEngine (light)",
-      "architecture": "X64",
-      "status": "construction",
-      "match": [
-        {
-          "kind": "steam_appid",
-          "value": "374320",
-          "tier": 100
-        },
-        {
-          "kind": "exe_name",
-          "value": "DarkSoulsIII.exe",
-          "tier": 70
-        }
-      ],
-      "addon": {
-        "slug": "dark-souls-3-ds3lightingengine-light"
-      },
-      "availability": {
-        "kind": "external",
-        "url": "https://discord.gg/BCxEWGKJcD",
-        "message": {
-          "id": "renodx.external.discord",
-          "fallback_text": "Get the add-on from Discord, then install the downloaded file."
-        }
-      }
-    },
-    {
-      "id": "prey-remastered-luma",
-      "name": "Prey Remastered - Luma",
-      "architecture": "X64",
-      "status": "working",
-      "match": [
-        {
-          "kind": "steam_appid",
-          "value": "480490",
-          "tier": 100
-        },
-        {
-          "kind": "exe_name",
-          "value": "Prey.exe",
-          "tier": 70
-        }
-      ],
-      "addon": {
-        "slug": "prey-remastered-luma"
-      },
-      "availability": {
-        "kind": "external",
-        "url": "https://www.nexusmods.com/prey2017/mods/149",
-        "message": {
-          "id": "renodx.external.nexus",
-          "fallback_text": "Get the add-on from Nexus Mods, then install the downloaded file."
-        }
       }
     },
     {

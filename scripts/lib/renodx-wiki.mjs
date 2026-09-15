@@ -94,7 +94,8 @@ export function parseRenodxWikiRows(markdown) {
   let sawModsTable = false;
 
   for (const table of extractMarkdownTables(markdown)) {
-    if (table.isDeprecated) continue;
+    // Related Mods and Deprecated are not active RenoDX entries.
+    if (table.isExcluded || table.isDeprecated) continue;
     const columnsMapping = getModsTableHeaderColumns(table.headers);
     if (!columnsMapping) continue;
 

@@ -91,11 +91,11 @@
     "id": "assassin-s-creed-director-s-cut-edition"
   },
   {
-    "name": "Assassin’s Creed® Ezio Trilogy (dgVoodoo)",
-    "slug": "assassin-s-creed-ezio-trilogy-dgvoodoo",
+    "name": "Assassin’s Creed® II (dgVoodoo)",
+    "slug": "assassin-s-creed-ii-dgvoodoo",
     "arch": "X64",
-    "status": "construction",
-    "id": "assassin-s-creed-ezio-trilogy-dgvoodoo"
+    "status": "working",
+    "id": "assassin-s-creed-ii-dgvoodoo"
   },
   {
     "name": "Assassin’s Creed® III Original",
@@ -1534,7 +1534,7 @@
   },
   {
     "name": "S.T.A.L.K.E.R. 2: Heart of Chornobyl",
-    "slug": "stalker2",
+    "slug": "ue-extended",
     "arch": "X64",
     "status": "working",
     "id": "s-t-a-l-k-e-r-2-heart-of-chornobyl"
@@ -1919,7 +1919,7 @@
   },
   {
     "name": "ABZÛ",
-    "slug": "unrealengine",
+    "slug": "ue-extended",
     "arch": "X64",
     "status": "working",
     "id": "abzu"
@@ -2003,7 +2003,7 @@
   },
   {
     "name": "Dead as Disco",
-    "slug": "unrealengine",
+    "slug": "ue-extended",
     "arch": "X64",
     "status": "working",
     "id": "dead-as-disco"
@@ -2019,7 +2019,7 @@
     "name": "Deep Rock Galactic: Rogue Core",
     "slug": "ue-extended",
     "arch": "X64",
-    "status": "construction",
+    "status": "working",
     "id": "deep-rock-galactic-rogue-core"
   },
   {
@@ -2222,7 +2222,7 @@
     "name": "Motor Town: Behind The Wheel",
     "slug": "ue-extended",
     "arch": "X64",
-    "status": "construction",
+    "status": "working",
     "id": "motor-town-behind-the-wheel"
   },
   {
@@ -2250,7 +2250,7 @@
     "name": "Persona 3 Reload",
     "slug": "ue-extended",
     "arch": "X64",
-    "status": "construction",
+    "status": "working",
     "id": "persona-3-reload"
   },
   {
@@ -2292,7 +2292,7 @@
     "name": "Sifu",
     "slug": "ue-extended",
     "arch": "X64",
-    "status": "construction",
+    "status": "working",
     "id": "sifu"
   },
   {
@@ -2334,7 +2334,7 @@
     "name": "The Blood of Dawnwalker",
     "slug": "ue-extended",
     "arch": "X64",
-    "status": "construction",
+    "status": "working",
     "id": "the-blood-of-dawnwalker"
   },
   {
@@ -2346,7 +2346,7 @@
   },
   {
     "name": "Tokyo Xtreme Racer",
-    "slug": "unrealengine",
+    "slug": "ue-extended",
     "arch": "X64",
     "status": "working",
     "id": "tokyo-xtreme-racer"
@@ -6340,61 +6340,5 @@
     "arch": "X64",
     "status": "construction",
     "id": "yooka-replaylee"
-  },
-  {
-    "name": "CONTROL - HDR Ultrawide DLSS RT Patch",
-    "slug": "control-hdr-ultrawide-dlss-rt-patch",
-    "arch": "X64",
-    "status": "working",
-    "id": "control-hdr-ultrawide-dlss-rt-patch"
-  },
-  {
-    "name": "Dark Souls 2 - DS2LightingEngine SotFS",
-    "slug": "dark-souls-2-ds2lightingengine-sotfs",
-    "arch": "X64",
-    "status": "construction",
-    "id": "dark-souls-2-ds2lightingengine-sotfs"
-  },
-  {
-    "name": "Dark Souls 3 - DS3LightingEngine (light)",
-    "slug": "dark-souls-3-ds3lightingengine-light",
-    "arch": "X64",
-    "status": "construction",
-    "id": "dark-souls-3-ds3lightingengine-light"
-  },
-  {
-    "name": "SekiroRendererUpdate",
-    "slug": "sekirorendererupdate",
-    "arch": "X64",
-    "status": "construction",
-    "id": "sekirorendererupdate"
-  },
-  {
-    "name": "Kingdom Come: Deliverance - Luma Native HDR (Steam ONLY)",
-    "slug": "kingdom-come-deliverance-luma-native-hdr-steam-only",
-    "arch": "X64",
-    "status": "construction",
-    "id": "kingdom-come-deliverance-luma-native-hdr-steam-only"
-  },
-  {
-    "name": "Prey Remastered - Luma",
-    "slug": "prey-remastered-luma",
-    "arch": "X64",
-    "status": "working",
-    "id": "prey-remastered-luma"
-  },
-  {
-    "name": "Luma Framework",
-    "slug": "luma-framework",
-    "arch": "X64",
-    "status": "working",
-    "id": "luma-framework"
-  },
-  {
-    "name": "Starfield Luma - Native HDR and more",
-    "slug": "starfield-luma-native-hdr-and-more",
-    "arch": "X64",
-    "status": "working",
-    "id": "starfield-luma-native-hdr-and-more"
   }
 ]

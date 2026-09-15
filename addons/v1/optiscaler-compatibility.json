@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "revision": "2026-09-10.16",
+  "revision": "2026-09-15.1",
   "upstream": {
     "source": "optiscaler-wiki-compatibility-list",
-    "snapshot_revision": "2026-09-10",
-    "snapshot_sha256": "8904a69f5b20c8cddcac409d20032cd992c88282d02e361abc3a87affdca3cd1"
+    "snapshot_revision": "2026-09-13",
+    "snapshot_sha256": "6c85b16c01b75acdc41d321abe58edf817a26772d0eb7fefab3547f8ad8917b2"
   },
   "entries": [
     {
@@ -10347,6 +10347,29 @@
       ]
     },
     {
+      "id": "octopath-traveler",
+      "status": "working",
+      "identities": [
+        {
+          "kind": "steam_appid",
+          "value": "921570"
+        }
+      ],
+      "declared_inputs": ["dlss2_plus"],
+      "guidance": [],
+      "variants": [
+        {
+          "proxy": {
+            "kind": "automatic"
+          },
+          "ini_overrides": [],
+          "restricted_modules": [],
+          "optipatcher": "unspecified",
+          "prerequisite": "luma"
+        }
+      ]
+    },
+    {
       "id": "oddroom",
       "status": "working",
       "identities": [
@@ -15883,7 +15906,7 @@
           "value": "835960"
         }
       ],
-      "declared_inputs": ["fsr2_plus", "xess"],
+      "declared_inputs": ["dlss2_plus", "fsr2_plus", "xess"],
       "guidance": [],
       "variants": [
         {

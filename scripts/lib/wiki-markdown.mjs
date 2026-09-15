@@ -45,6 +45,7 @@ export function extractMarkdownTables(markdown) {
   let currentTable = null;
   let engineContext = null;
   let isDeprecated = false;
+  let isExcluded = false;
 
   for (const line of String(markdown).split(/\r?\n/)) {
     const trimmed = line.trim();
@@ -53,6 +54,7 @@ export function extractMarkdownTables(markdown) {
     if (headingMatch) {
       const heading = headingMatch[1].trim().toLowerCase();
       isDeprecated = heading.includes("deprecated");
+      isExcluded = isDeprecated || heading.includes("related mods");
       if (heading.includes("ue extended") || heading.includes("ue-extended")) {
         engineContext = "ue-extended";
       } else if (heading.includes("unity")) {
@@ -84,6 +86,7 @@ export function extractMarkdownTables(markdown) {
         rows: [],
         engineContext,
         isDeprecated,
+        isExcluded,
       };
       tables.push(currentTable);
     } else {

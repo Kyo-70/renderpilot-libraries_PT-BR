@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "snapshot_sha256": "8904a69f5b20c8cddcac409d20032cd992c88282d02e361abc3a87affdca3cd1",
+  "snapshot_sha256": "6c85b16c01b75acdc41d321abe58edf817a26772d0eb7fefab3547f8ad8917b2",
   "rows": [
     {
       "source_key": "main:0001",
@@ -7899,12 +7899,20 @@
     },
     {
       "source_key": "main:0603",
-      "row_fingerprint": "eca156fc9e127e03c8e1ef686602c82c360bf15f0510d5dab0299263351f9769",
+      "row_fingerprint": "c4c05a415bbb97e9bb3e54dc3219f08b0a91108343ff95fab262a486751728b5",
       "disposition": {
         "kind": "published",
         "entry_id": "the-talos-principle-2"
       },
-      "notes": []
+      "notes": [
+        {
+          "fingerprint": "bdb61da50bb237075a9169a3ed76b8c1dccd636bf9bb23093ab740a0d88d5796",
+          "disposition": {
+            "kind": "typed_policy",
+            "reason": "The OptiPatcher recommendation is represented by the variant; the spoofing implementation detail is not published."
+          }
+        }
+      ]
     },
     {
       "source_key": "main:0604",
@@ -8970,7 +8978,24 @@
     },
     {
       "source_key": "luma_unreal:0011",
-      "row_fingerprint": "305e19689f249acb91e2d044c1619080133dfc9421a610b8bcc177dc5c71fdb5",
+      "row_fingerprint": "1ab6eeb981ebe1ab2d9c66411cb2368bd2a32ff74eb0aa9c8f258bc29ee3ce54",
+      "disposition": {
+        "kind": "published",
+        "entry_id": "octopath-traveler"
+      },
+      "notes": [
+        {
+          "fingerprint": "b046b99a3f895cfcffa162c49a41ff0d1041ae3743e9cc458f5cad14564ca6d1",
+          "disposition": {
+            "kind": "omitted",
+            "reason": "The note requires external Engine.ini setup; no complete, safe policy is encoded by this catalog."
+          }
+        }
+      ]
+    },
+    {
+      "source_key": "luma_unreal:0012",
+      "row_fingerprint": "6defe8a33308ce780ee35af4dbee56f45d93a757d44b81b4006703f0afbe67b9",
       "disposition": {
         "kind": "published",
         "entry_id": "psychonauts-2"
@@ -8986,8 +9011,8 @@
       ]
     },
     {
-      "source_key": "luma_unreal:0012",
-      "row_fingerprint": "412fa85009c40ef9ec26245ec6a80a3fde8b406141fba81f15e0b9271cb1ef8c",
+      "source_key": "luma_unreal:0013",
+      "row_fingerprint": "bc49f981d1d6c20f0cb192e7fc6fe53a7a64f5eb29c6476bf1c286a5ae0b30f8",
       "disposition": {
         "kind": "published",
         "entry_id": "redeemer-enhanced-edition"
@@ -8995,8 +9020,8 @@
       "notes": []
     },
     {
-      "source_key": "luma_unreal:0013",
-      "row_fingerprint": "95ee66de289959dc194a20f0e3f11f7c3cf74c0f8485ab7365de1ebe41f8e2dd",
+      "source_key": "luma_unreal:0014",
+      "row_fingerprint": "3940b60bf0fc6736ba50a5abb5622376a2ae5cae7d8938a5dc0c19e73ba17765",
       "disposition": {
         "kind": "published",
         "entry_id": "redout-enhanced-edition"
@@ -9012,8 +9037,8 @@
       ]
     },
     {
-      "source_key": "luma_unreal:0014",
-      "row_fingerprint": "9c395b52a847b68a95733088d3229306c2b6e69a8dc74673acb68a0a40b568f1",
+      "source_key": "luma_unreal:0015",
+      "row_fingerprint": "6e20fe1ac8062733d6a1f18763b3f3c8097d1f0e5c94ba7e0c106e8c7cf05142",
       "disposition": {
         "kind": "published",
         "entry_id": "remnant-from-the-ashes"
@@ -9029,8 +9054,8 @@
       ]
     },
     {
-      "source_key": "luma_unreal:0015",
-      "row_fingerprint": "acc40af52c747115f38a2c75d69c921a7bbbca153e9824e708f1377ea28201fa",
+      "source_key": "luma_unreal:0016",
+      "row_fingerprint": "ed31ddb8ec8a35f48cab8685f2dd7ee0ff2629a0e49ae5562a5a2256f5858b89",
       "disposition": {
         "kind": "published",
         "entry_id": "roboquest"
@@ -9046,8 +9071,8 @@
       ]
     },
     {
-      "source_key": "luma_unreal:0016",
-      "row_fingerprint": "29ed3be6277f425b2189589847a7a52fa80c2a5c643563dc95bdf57695ce6655",
+      "source_key": "luma_unreal:0017",
+      "row_fingerprint": "a03622222b32a4e58fd6fd72cc0367c1563fbc7c8803241d8568bfc4639f64c4",
       "disposition": {
         "kind": "published",
         "entry_id": "ruiner"
@@ -9055,8 +9080,8 @@
       "notes": []
     },
     {
-      "source_key": "luma_unreal:0017",
-      "row_fingerprint": "9e0b5cf293f4e5cfdcaca44668fb956b7d81645573149814deb9bad7dcaac590",
+      "source_key": "luma_unreal:0018",
+      "row_fingerprint": "5e5ebd03f871098efe072ab7271e7d26fda04e4f3c52e0e0cceff5659e3af353",
       "disposition": {
         "kind": "published",
         "entry_id": "spyro-reignited-trilogy"
@@ -9072,8 +9097,8 @@
       ]
     },
     {
-      "source_key": "luma_unreal:0018",
-      "row_fingerprint": "a8b4c1204762c2199d96408bb9277678cbe10ef2287e00e377713c47c83be09b",
+      "source_key": "luma_unreal:0019",
+      "row_fingerprint": "3445040f1985e3e145306ae7c961f51685dc4e9617aa23f5ee8f7cb515138639",
       "disposition": {
         "kind": "published",
         "entry_id": "star-wars-jedi-fallen-order"
@@ -9081,8 +9106,8 @@
       "notes": []
     },
     {
-      "source_key": "luma_unreal:0019",
-      "row_fingerprint": "e0370ef339f6647b002d1bef6a64054c35501482aaf138ceb93dce82fd7311a2",
+      "source_key": "luma_unreal:0020",
+      "row_fingerprint": "149b7165fc7d6aa35425ea9a75c0076be466f7285964cef7c40783c0a2ec392b",
       "disposition": {
         "kind": "published",
         "entry_id": "stray"
@@ -9090,8 +9115,8 @@
       "notes": []
     },
     {
-      "source_key": "luma_unreal:0020",
-      "row_fingerprint": "a23b796862ec6df91cb871ebd31b73655a2f939f9fd709a3e68069b1b0fd2aca",
+      "source_key": "luma_unreal:0021",
+      "row_fingerprint": "89045054c7ef6e4b4dc3dd1b57f4240b79570f6cca20d1a97869116e4a51dc84",
       "disposition": {
         "kind": "published",
         "entry_id": "styx-shards-of-darkness"
@@ -9107,8 +9132,8 @@
       ]
     },
     {
-      "source_key": "luma_unreal:0021",
-      "row_fingerprint": "26a9aa18cc0a812989a70ccb7c8311288aa17576a694826f85da018b433b39d7",
+      "source_key": "luma_unreal:0022",
+      "row_fingerprint": "b40b3fba2be7010ca554daa613e4042222387fd0ef8c1588c4e15eefc860d46a",
       "disposition": {
         "kind": "published",
         "entry_id": "terminator-resistance"
@@ -9116,8 +9141,8 @@
       "notes": []
     },
     {
-      "source_key": "luma_unreal:0022",
-      "row_fingerprint": "2ea87054194b74f05372e5ccab05b16a9f0d804938720ba3fa23631b93318728",
+      "source_key": "luma_unreal:0023",
+      "row_fingerprint": "ebc2dfef852b5533b3a0a30d5254822f67bff5c07f8d72d6e7cbf535def12b43",
       "disposition": {
         "kind": "published",
         "entry_id": "trek-to-yomi"
@@ -9125,8 +9150,8 @@
       "notes": []
     },
     {
-      "source_key": "luma_unreal:0023",
-      "row_fingerprint": "df773f23eece76af6fae48356d7792ba6d974b91028ad2fb5925283de533913a",
+      "source_key": "luma_unreal:0024",
+      "row_fingerprint": "a6c465412d158de0f98172cfe2ca0ba54ffc3b39fb6f6334ab2725771c96c0a5",
       "disposition": {
         "kind": "published",
         "entry_id": "vampyr"

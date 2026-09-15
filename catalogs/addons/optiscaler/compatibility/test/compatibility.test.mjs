@@ -13,11 +13,11 @@ import {
 import { createMatchRegistry } from "../../../../../scripts/lib/match-registry.mjs";
 
 const ROOT = path.resolve(import.meta.dirname, "../../../../..");
-const EXPECTED_PUBLISHED_ENTRY_COUNT = 685;
+const EXPECTED_PUBLISHED_ENTRY_COUNT = 686;
 const CURRENT_WIKI_SNAPSHOT = {
-  revision: "2026-09-10",
-  sha256: "8904a69f5b20c8cddcac409d20032cd992c88282d02e361abc3a87affdca3cd1",
-  rows: 699,
+  revision: "2026-09-13",
+  sha256: "6c85b16c01b75acdc41d321abe58edf817a26772d0eb7fefab3547f8ad8917b2",
+  rows: 700,
 };
 const SHIFTED_MAIN_SOURCE_KEYS = Array.from(
   { length: 146 },

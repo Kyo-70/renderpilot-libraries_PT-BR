@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "source": "optiscaler-wiki-compatibility-list",
-  "snapshot_revision": "2026-09-10",
-  "snapshot_sha256": "8904a69f5b20c8cddcac409d20032cd992c88282d02e361abc3a87affdca3cd1",
+  "snapshot_revision": "2026-09-13",
+  "snapshot_sha256": "6c85b16c01b75acdc41d321abe58edf817a26772d0eb7fefab3547f8ad8917b2",
   "rows": [
     {
       "source_key": "main:0001",
@@ -6371,10 +6371,11 @@
       "section": "main",
       "title": "The Talos Principle 2",
       "status": "working",
-      "declared_inputs": ["fsr2_plus", "xess"],
+      "declared_inputs": ["dlss2_plus", "fsr2_plus", "xess"],
       "optipatcher_supported": true,
-      "note": null,
-      "row_fingerprint": "eca156fc9e127e03c8e1ef686602c82c360bf15f0510d5dab0299263351f9769"
+      "note": "Use OptiPatcher for unlocking DLSS inputs, to avoid the spoofing artifacts",
+      "row_fingerprint": "c4c05a415bbb97e9bb3e54dc3219f08b0a91108343ff95fab262a486751728b5",
+      "note_fingerprint": "bdb61da50bb237075a9169a3ed76b8c1dccd636bf9bb23093ab740a0d88d5796"
     },
     {
       "source_key": "main:0604",
@@ -7248,138 +7249,149 @@
     {
       "source_key": "luma_unreal:0011",
       "section": "luma_unreal",
+      "title": "OCTOPATH TRAVELER",
+      "status": "working",
+      "declared_inputs": ["dlss2_plus"],
+      "optipatcher_supported": false,
+      "note": "Requires extra Engine.ini commands, check Luma UE table, Engine.ini located in %USERPROFILE%DocumentsMy GamesOctopathTravelerConfigWindowsNoEditor",
+      "row_fingerprint": "1ab6eeb981ebe1ab2d9c66411cb2368bd2a32ff74eb0aa9c8f258bc29ee3ce54",
+      "note_fingerprint": "b046b99a3f895cfcffa162c49a41ff0d1041ae3743e9cc458f5cad14564ca6d1"
+    },
+    {
+      "source_key": "luma_unreal:0012",
+      "section": "luma_unreal",
       "title": "Psychonauts 2",
       "status": "working",
       "declared_inputs": ["dlss2_plus"],
       "optipatcher_supported": false,
       "note": "Requires -dx11 launch argument",
-      "row_fingerprint": "305e19689f249acb91e2d044c1619080133dfc9421a610b8bcc177dc5c71fdb5",
+      "row_fingerprint": "6defe8a33308ce780ee35af4dbee56f45d93a757d44b81b4006703f0afbe67b9",
       "note_fingerprint": "52f8c45b90d398d6f3df05af7a722130cdbbb5645fb41bf60addcf22adb872da"
     },
     {
-      "source_key": "luma_unreal:0012",
+      "source_key": "luma_unreal:0013",
       "section": "luma_unreal",
       "title": "Redeemer Enhanced Edition",
       "status": "working",
       "declared_inputs": ["dlss2_plus"],
       "optipatcher_supported": false,
       "note": null,
-      "row_fingerprint": "412fa85009c40ef9ec26245ec6a80a3fde8b406141fba81f15e0b9271cb1ef8c"
+      "row_fingerprint": "bc49f981d1d6c20f0cb192e7fc6fe53a7a64f5eb29c6476bf1c286a5ae0b30f8"
     },
     {
-      "source_key": "luma_unreal:0013",
+      "source_key": "luma_unreal:0014",
       "section": "luma_unreal",
       "title": "Redout Enhanced Edition",
       "status": "working",
       "declared_inputs": ["dlss2_plus"],
       "optipatcher_supported": false,
       "note": "Requires -dx11 launch argument",
-      "row_fingerprint": "95ee66de289959dc194a20f0e3f11f7c3cf74c0f8485ab7365de1ebe41f8e2dd",
+      "row_fingerprint": "3940b60bf0fc6736ba50a5abb5622376a2ae5cae7d8938a5dc0c19e73ba17765",
       "note_fingerprint": "52f8c45b90d398d6f3df05af7a722130cdbbb5645fb41bf60addcf22adb872da"
     },
     {
-      "source_key": "luma_unreal:0014",
+      "source_key": "luma_unreal:0015",
       "section": "luma_unreal",
       "title": "Remnant: From the Ashes",
       "status": "working",
       "declared_inputs": ["dlss2_plus"],
       "optipatcher_supported": false,
       "note": "Requires extra Engine.ini commands, check Luma UE table",
-      "row_fingerprint": "9c395b52a847b68a95733088d3229306c2b6e69a8dc74673acb68a0a40b568f1",
+      "row_fingerprint": "6e20fe1ac8062733d6a1f18763b3f3c8097d1f0e5c94ba7e0c106e8c7cf05142",
       "note_fingerprint": "e81046f356a68c443ad984e30e9d5111cbadc52619b6a82e207530026d1d30f7"
     },
     {
-      "source_key": "luma_unreal:0015",
+      "source_key": "luma_unreal:0016",
       "section": "luma_unreal",
       "title": "Roboquest",
       "status": "working",
       "declared_inputs": ["dlss2_plus"],
       "optipatcher_supported": false,
       "note": "Requires In-game: TAA, Quality \"3\"",
-      "row_fingerprint": "acc40af52c747115f38a2c75d69c921a7bbbca153e9824e708f1377ea28201fa",
+      "row_fingerprint": "ed31ddb8ec8a35f48cab8685f2dd7ee0ff2629a0e49ae5562a5a2256f5858b89",
       "note_fingerprint": "358c446e91796cfaf67ea79faf0d0cac1fce8ae89fb302e874502ad6fee3b364"
     },
     {
-      "source_key": "luma_unreal:0016",
+      "source_key": "luma_unreal:0017",
       "section": "luma_unreal",
       "title": "RUINER",
       "status": "working",
       "declared_inputs": ["dlss2_plus"],
       "optipatcher_supported": false,
       "note": null,
-      "row_fingerprint": "29ed3be6277f425b2189589847a7a52fa80c2a5c643563dc95bdf57695ce6655"
+      "row_fingerprint": "a03622222b32a4e58fd6fd72cc0367c1563fbc7c8803241d8568bfc4639f64c4"
     },
     {
-      "source_key": "luma_unreal:0017",
+      "source_key": "luma_unreal:0018",
       "section": "luma_unreal",
       "title": "Spyro Reignited Trilogy",
       "status": "working",
       "declared_inputs": ["dlss2_plus"],
       "optipatcher_supported": false,
       "note": "In-game: High TAA",
-      "row_fingerprint": "9e0b5cf293f4e5cfdcaca44668fb956b7d81645573149814deb9bad7dcaac590",
+      "row_fingerprint": "5e5ebd03f871098efe072ab7271e7d26fda04e4f3c52e0e0cceff5659e3af353",
       "note_fingerprint": "12b1d4e74b8deadd05ca4a22963682fdf541857e4bd8c95a4e79cb9930eb90ec"
     },
     {
-      "source_key": "luma_unreal:0018",
+      "source_key": "luma_unreal:0019",
       "section": "luma_unreal",
       "title": "STAR WARS Jedi: Fallen Order",
       "status": "working",
       "declared_inputs": ["dlss2_plus"],
       "optipatcher_supported": false,
       "note": null,
-      "row_fingerprint": "a8b4c1204762c2199d96408bb9277678cbe10ef2287e00e377713c47c83be09b"
+      "row_fingerprint": "3445040f1985e3e145306ae7c961f51685dc4e9617aa23f5ee8f7cb515138639"
     },
     {
-      "source_key": "luma_unreal:0019",
+      "source_key": "luma_unreal:0020",
       "section": "luma_unreal",
       "title": "Stray",
       "status": "working",
       "declared_inputs": ["dlss2_plus"],
       "optipatcher_supported": false,
       "note": null,
-      "row_fingerprint": "e0370ef339f6647b002d1bef6a64054c35501482aaf138ceb93dce82fd7311a2"
+      "row_fingerprint": "149b7165fc7d6aa35425ea9a75c0076be466f7285964cef7c40783c0a2ec392b"
     },
     {
-      "source_key": "luma_unreal:0020",
+      "source_key": "luma_unreal:0021",
       "section": "luma_unreal",
       "title": "Styx: Shards of Darkness",
       "status": "working",
       "declared_inputs": ["dlss2_plus"],
       "optipatcher_supported": false,
       "note": "Requires extra Engine.ini commands, check Luma UE table",
-      "row_fingerprint": "a23b796862ec6df91cb871ebd31b73655a2f939f9fd709a3e68069b1b0fd2aca",
+      "row_fingerprint": "89045054c7ef6e4b4dc3dd1b57f4240b79570f6cca20d1a97869116e4a51dc84",
       "note_fingerprint": "e81046f356a68c443ad984e30e9d5111cbadc52619b6a82e207530026d1d30f7"
     },
     {
-      "source_key": "luma_unreal:0021",
+      "source_key": "luma_unreal:0022",
       "section": "luma_unreal",
       "title": "Terminator: Resistance",
       "status": "working",
       "declared_inputs": ["dlss2_plus"],
       "optipatcher_supported": false,
       "note": null,
-      "row_fingerprint": "26a9aa18cc0a812989a70ccb7c8311288aa17576a694826f85da018b433b39d7"
+      "row_fingerprint": "b40b3fba2be7010ca554daa613e4042222387fd0ef8c1588c4e15eefc860d46a"
     },
     {
-      "source_key": "luma_unreal:0022",
+      "source_key": "luma_unreal:0023",
       "section": "luma_unreal",
       "title": "Trek to Yomi",
       "status": "working",
       "declared_inputs": ["dlss2_plus"],
       "optipatcher_supported": false,
       "note": null,
-      "row_fingerprint": "2ea87054194b74f05372e5ccab05b16a9f0d804938720ba3fa23631b93318728"
+      "row_fingerprint": "ebc2dfef852b5533b3a0a30d5254822f67bff5c07f8d72d6e7cbf535def12b43"
     },
     {
-      "source_key": "luma_unreal:0023",
+      "source_key": "luma_unreal:0024",
       "section": "luma_unreal",
       "title": "Vampyr",
       "status": "working",
       "declared_inputs": ["dlss2_plus"],
       "optipatcher_supported": false,
       "note": "In-game: AA TXAA 6X, check PCGW entry to remove 62fps cap",
-      "row_fingerprint": "df773f23eece76af6fae48356d7792ba6d974b91028ad2fb5925283de533913a",
+      "row_fingerprint": "a6c465412d158de0f98172cfe2ca0ba54ffc3b39fb6f6334ab2725771c96c0a5",
       "note_fingerprint": "390085a38f3b6499364fae0b1cca2a3e1c3be0fa91fe660113ea451511b7a4ad"
     }
   ]

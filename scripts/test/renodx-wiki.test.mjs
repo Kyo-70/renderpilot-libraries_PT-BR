@@ -49,6 +49,42 @@ Some text.
   assert.deepEqual(tables[2].headers, ["name", "maintainer"]);
 });
 
+test("marks Deprecated and Related Mods tables as excluded", () => {
+  const tables = extractMarkdownTables(`
+### Related Mods
+| Name | Maintainer |
+| --- | --- |
+| Third-party HDR tool | Someone |
+
+### Deprecated mods
+| Name | Maintainer |
+| --- | --- |
+| Old title | Someone |
+
+### Unity Engine
+| Name | Status | Notes |
+| --- | --- | --- |
+| Active title | ✅ | Reviewed note |
+`);
+
+  assert.equal(tables[0].isExcluded, true);
+  assert.equal(tables[1].isExcluded, true);
+  assert.equal(tables[2].isExcluded, false);
+  assert.equal(
+    parseRenodxWikiRows(`
+### Related Mods
+| Name | Maintainer |
+| --- | --- |
+| Third-party HDR tool | Someone |
+### Unity Engine
+| Name | Status | Notes |
+| --- | --- | --- |
+| Active title | ✅ | Reviewed note |
+`).length,
+    1,
+  );
+});
+
 test("parseWikiRow parses Unity game without custom link", () => {
   const columnsMapping = { nameIndex: 0, statusIndex: 1, linksIndex: -1, notesIndex: 2 };
   const row = parseWikiRow(

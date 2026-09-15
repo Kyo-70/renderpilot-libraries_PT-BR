@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "revision": "2026-09-10.16",
+  "revision": "2026-09-15.1",
   "source": "optiscaler-wiki-compatibility-list",
-  "snapshot_sha256": "8904a69f5b20c8cddcac409d20032cd992c88282d02e361abc3a87affdca3cd1",
+  "snapshot_sha256": "6c85b16c01b75acdc41d321abe58edf817a26772d0eb7fefab3547f8ad8917b2",
   "entries": [
     {
       "id": "baldurs-gate-3",
@@ -1868,7 +1868,7 @@
     },
     {
       "id": "psychonauts-2",
-      "source_ref": "luma_unreal:0011",
+      "source_ref": "luma_unreal:0012",
       "status": "working",
       "declared_inputs": ["dlss2_plus"],
       "guidance": [],
@@ -1891,7 +1891,7 @@
     },
     {
       "id": "redeemer-enhanced-edition",
-      "source_ref": "luma_unreal:0012",
+      "source_ref": "luma_unreal:0013",
       "status": "working",
       "declared_inputs": ["dlss2_plus"],
       "guidance": [],
@@ -1910,7 +1910,7 @@
     },
     {
       "id": "redout-enhanced-edition",
-      "source_ref": "luma_unreal:0013",
+      "source_ref": "luma_unreal:0014",
       "status": "working",
       "declared_inputs": ["dlss2_plus"],
       "guidance": [],
@@ -1933,7 +1933,7 @@
     },
     {
       "id": "remnant-from-the-ashes",
-      "source_ref": "luma_unreal:0014",
+      "source_ref": "luma_unreal:0015",
       "status": "working",
       "declared_inputs": ["dlss2_plus"],
       "guidance": [],
@@ -1952,7 +1952,7 @@
     },
     {
       "id": "spyro-reignited-trilogy",
-      "source_ref": "luma_unreal:0017",
+      "source_ref": "luma_unreal:0018",
       "status": "working",
       "declared_inputs": ["dlss2_plus"],
       "guidance": [
@@ -1976,7 +1976,7 @@
     },
     {
       "id": "star-wars-jedi-fallen-order",
-      "source_ref": "luma_unreal:0018",
+      "source_ref": "luma_unreal:0019",
       "status": "working",
       "declared_inputs": ["dlss2_plus"],
       "guidance": [],
@@ -1995,7 +1995,7 @@
     },
     {
       "id": "stray",
-      "source_ref": "luma_unreal:0019",
+      "source_ref": "luma_unreal:0020",
       "status": "working",
       "declared_inputs": ["dlss2_plus"],
       "guidance": [],
@@ -2014,7 +2014,7 @@
     },
     {
       "id": "styx-shards-of-darkness",
-      "source_ref": "luma_unreal:0020",
+      "source_ref": "luma_unreal:0021",
       "status": "working",
       "declared_inputs": ["dlss2_plus"],
       "guidance": [],
@@ -2033,7 +2033,7 @@
     },
     {
       "id": "trek-to-yomi",
-      "source_ref": "luma_unreal:0022",
+      "source_ref": "luma_unreal:0023",
       "status": "working",
       "declared_inputs": ["dlss2_plus"],
       "guidance": [],
@@ -2052,7 +2052,7 @@
     },
     {
       "id": "vampyr",
-      "source_ref": "luma_unreal:0023",
+      "source_ref": "luma_unreal:0024",
       "status": "working",
       "declared_inputs": ["dlss2_plus"],
       "guidance": [
@@ -4159,8 +4159,27 @@
       "game_target_id": "mothergunship"
     },
     {
+      "id": "octopath-traveler",
+      "source_ref": "luma_unreal:0011",
+      "status": "working",
+      "declared_inputs": ["dlss2_plus"],
+      "guidance": [],
+      "variants": [
+        {
+          "proxy": {
+            "kind": "automatic"
+          },
+          "ini_overrides": [],
+          "restricted_modules": [],
+          "optipatcher": "unspecified",
+          "prerequisite": "luma"
+        }
+      ],
+      "game_target_id": "octopath-traveler"
+    },
+    {
       "id": "roboquest",
-      "source_ref": "luma_unreal:0015",
+      "source_ref": "luma_unreal:0016",
       "status": "working",
       "declared_inputs": ["dlss2_plus"],
       "guidance": [
@@ -4184,7 +4203,7 @@
     },
     {
       "id": "ruiner",
-      "source_ref": "luma_unreal:0016",
+      "source_ref": "luma_unreal:0017",
       "status": "working",
       "declared_inputs": ["dlss2_plus"],
       "guidance": [],
@@ -4203,7 +4222,7 @@
     },
     {
       "id": "terminator-resistance",
-      "source_ref": "luma_unreal:0021",
+      "source_ref": "luma_unreal:0022",
       "status": "working",
       "declared_inputs": ["dlss2_plus"],
       "guidance": [],
@@ -10151,7 +10170,7 @@
       "id": "the-talos-principle-2",
       "source_ref": "main:0603",
       "status": "working",
-      "declared_inputs": ["fsr2_plus", "xess"],
+      "declared_inputs": ["dlss2_plus", "fsr2_plus", "xess"],
       "guidance": [],
       "variants": [
         {

@@ -154,16 +154,11 @@
   "assassin-s-creed-director-s-cut-edition": {
     "game_target_ids": ["assassin-s-creed-director-s-cut-edition"]
   },
-  "assassin-s-creed-ezio-trilogy-dgvoodoo": {
+  "assassin-s-creed-ii-dgvoodoo": {
     "external": {
       "url": "https://www.nexusmods.com/assassinscreedii/mods/250",
       "label_key": "renodx.external.nexus"
-    },
-    "game_target_ids": [
-      "assassins-creed-brotherhood",
-      "assassins-creed-ii",
-      "assassins-creed-revelations"
-    ]
+    }
   },
   "assassin-s-creed-iii-original": {
     "external": {
@@ -536,13 +531,6 @@
   "content-warning": {
     "game_target_ids": ["content-warning"]
   },
-  "control-hdr-ultrawide-dlss-rt-patch": {
-    "external": {
-      "url": "https://www.nexusmods.com/control/mods/90",
-      "label_key": "renodx.external.nexus"
-    },
-    "game_target_ids": ["control-ultimate-edition"]
-  },
   "convergence-a-league-of-legends-story": {
     "game_target_ids": ["convergence-a-league-of-legends-story"]
   },
@@ -600,20 +588,6 @@
   },
   "dahlia-view": {
     "game_target_ids": ["dahlia-view"]
-  },
-  "dark-souls-2-ds2lightingengine-sotfs": {
-    "external": {
-      "url": "https://www.nexusmods.com/darksouls2/mods/1146",
-      "label_key": "renodx.external.nexus"
-    },
-    "game_target_ids": ["dark-souls-2-ds2lightingengine-sotfs"]
-  },
-  "dark-souls-3-ds3lightingengine-light": {
-    "external": {
-      "url": "https://discord.gg/BCxEWGKJcD",
-      "label_key": "renodx.external.discord"
-    },
-    "game_target_ids": ["dark-souls-3-ds3lightingengine-light"]
   },
   "dark-souls-remastered": {
     "game_target_ids": ["dark-souls-remastered"]
@@ -1371,9 +1345,6 @@
   "kingdom-come-deliverance-ii": {
     "game_target_ids": ["kingdom-come-deliverance-ii"]
   },
-  "kingdom-come-deliverance-luma-native-hdr-steam-only": {
-    "ignore": true
-  },
   "kingdom-hearts-iii": {
     "game_target_ids": ["kingdom-hearts-iii"]
   },
@@ -1505,9 +1476,6 @@
   },
   "lost-words-beyond-the-page": {
     "game_target_ids": ["lost-words-beyond-the-page"]
-  },
-  "luma-framework": {
-    "ignore": true
   },
   "lumines-arise": {
     "game_target_ids": ["lumines-arise"]
@@ -1910,13 +1878,6 @@
   "pragmata": {
     "game_target_ids": ["pragmata"]
   },
-  "prey-remastered-luma": {
-    "external": {
-      "url": "https://www.nexusmods.com/prey2017/mods/149",
-      "label_key": "renodx.external.nexus"
-    },
-    "game_target_ids": ["prey-2017"]
-  },
   "prince-of-persia-the-lost-crown": {
     "game_target_ids": ["prince-of-persia-the-lost-crown"]
   },
@@ -2055,8 +2016,8 @@
     "game_target_ids": ["rv-there-yet"]
   },
   "s-t-a-l-k-e-r-2-heart-of-chornobyl": {
-    "slug": "stalker2",
-    "game_target_ids": ["s-t-a-l-k-e-r-2-heart-of-chornobyl"]
+    "game_target_ids": ["s-t-a-l-k-e-r-2-heart-of-chornobyl"],
+    "download_url": "https://github.com/marat569/renodx/releases/download/snapshot/renodx-ue-extended.addon64"
   },
   "sackboy-a-big-adventure": {
     "game_target_ids": ["sackboy-a-big-adventure"]
@@ -2093,9 +2054,6 @@
   },
   "sekiro-shadows-die-twice": {
     "game_target_ids": ["sekiro-shadows-die-twice"]
-  },
-  "sekirorendererupdate": {
-    "ignore": true
   },
   "sektori": {
     "game_target_ids": ["sektori"]
@@ -2279,13 +2237,6 @@
   },
   "starfield": {
     "game_target_ids": ["starfield"]
-  },
-  "starfield-luma-native-hdr-and-more": {
-    "ignore": true,
-    "external": {
-      "url": "https://www.nexusmods.com/starfield/mods/4821",
-      "label_key": "renodx.external.nexus"
-    }
   },
   "steamworld-build": {
     "game_target_ids": ["steamworld-build"]
