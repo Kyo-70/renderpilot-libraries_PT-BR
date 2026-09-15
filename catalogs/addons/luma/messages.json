@@ -27,7 +27,7 @@
         "es": "En los ajustes del juego, usa: AA «FXAA High».",
         "fr": "Dans les paramètres du jeu, utilisez : AA « FXAA High ».",
         "ja": "ゲーム設定: AA「FXAA High」を選択してください。",
-        "pt-BR": "Primeiro, selecione o AA “FXAA High” no jogo.",
+        "pt-BR": "Nas configurações do jogo, selecione o AA “FXAA High”.",
         "ru": "В настройках игры выберите AA «FXAA High».",
         "zh-Hans": "在游戏设置中选择：AA “FXAA High”。",
         "zh-Hant": "在遊戲設定中選擇：AA 「FXAA High」。"
@@ -731,7 +731,7 @@
         "es": "En los ajustes del juego, usa: «TXAA».",
         "fr": "Dans les paramètres du jeu, utilisez : « TXAA ».",
         "ja": "ゲーム設定:「TXAA」を選択してください。",
-        "pt-BR": "Primeiro, selecione “TXAA” no jogo.",
+        "pt-BR": "Nas configurações do jogo, selecione “TXAA”.",
         "ru": "В настройках игры выберите «TXAA».",
         "zh-Hans": "在游戏设置中选择：“TXAA”。",
         "zh-Hant": "在遊戲設定中選擇：「TXAA」。"
@@ -779,7 +779,7 @@
         "es": "Solo están disponibles los modos DLAA / FSR 3 Native AA; esto no es superresolución DLSS ni FSR.",
         "fr": "Seuls les modes DLAA / FSR 3 Native AA sont disponibles ; il ne s’agit pas de super-résolution DLSS ou FSR.",
         "ja": "利用できるのは DLAA / FSR 3 Native AA モードのみで、DLSS または FSR の超解像ではありません。",
-        "pt-BR": "Somente os modos DLAA/FSR 3 Native AA estão disponíveis; eles não são Super-resolução DLSS nem FSR.",
+        "pt-BR": "Somente os modos DLAA / FSR 3 Native AA estão disponíveis; isso não é super-resolução DLSS nem FSR.",
         "ru": "Доступны только режимы сглаживания DLAA / FSR 3 Native AA; суперразрешение DLSS или FSR не поддерживается.",
         "zh-Hans": "仅提供 DLAA / FSR 3 原生抗锯齿 (Native AA) 模式；这不是 DLSS 或 FSR 超分辨率。",
         "zh-Hant": "僅提供 DLAA / FSR 3 原生反鋸齒 (Native AA) 模式；這不是 DLSS 或 FSR 超解析度。"
@@ -1019,7 +1019,7 @@
         "es": "En los ajustes del juego, usa: AA «FXAA».",
         "fr": "Dans les paramètres du jeu, utilisez : AA « FXAA ».",
         "ja": "ゲーム設定: AA「FXAA」を選択してください。",
-        "pt-BR": "Primeiro, selecione o AA “FXAA” no jogo.",
+        "pt-BR": "Nas configurações do jogo, selecione o AA “FXAA”.",
         "ru": "В настройках игры выберите AA «FXAA».",
         "zh-Hans": "在游戏设置中选择：AA “FXAA”。",
         "zh-Hant": "在遊戲設定中選擇：AA 「FXAA」。"
@@ -1307,7 +1307,7 @@
         "es": "En los ajustes del juego, usa: AA «FXAA:6» y escala de renderizado al 100%.",
         "fr": "Dans les paramètres du jeu, utilisez : AA « FXAA:6 » et échelle de rendu à 100 %.",
         "ja": "ゲーム設定: AA「FXAA:6」およびレンダリングスケール 100% を選択してください。",
-        "pt-BR": "Primeiro, selecione o AA “FXAA:6” e a escala de renderização em 100% no jogo.",
+        "pt-BR": "Nas configurações do jogo, selecione o AA “FXAA:6” e a escala de renderização em 100%.",
         "ru": "В настройках игры выберите AA «FXAA:6» и масштаб рендеринга 100%.",
         "zh-Hans": "在游戏设置中选择：AA “FXAA:6” 且渲染比例为 100%。",
         "zh-Hant": "在遊戲設定中選擇：AA 「FXAA:6」 且渲染比例為 100%。"
