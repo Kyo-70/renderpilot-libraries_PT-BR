@@ -634,6 +634,7 @@ test("frame-generation guidance uses the localized term in every published local
     es: /generación de fotogramas/iu,
     fr: /génération d’images/iu,
     ja: /フレーム生成/u,
+    "pt-BR": /geração de quadros/iu,
     ru: /генерац(?:ия|ии|ию) кадров/iu,
     "zh-Hans": /帧生成/u,
     "zh-Hant": /畫格生成/u,
