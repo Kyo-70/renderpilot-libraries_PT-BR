@@ -162,13 +162,11 @@ async function main() {
   console.log(`Checking root payload identity for ${payloads.length} Luma asset(s)...`);
 
   const results = [];
-  let networkFailure = null;
   await forEachConcurrent(payloads, CONCURRENCY, async (payload) => {
     try {
       results.push(await checkPayload(payload));
     } catch (error) {
       if (error instanceof AssetUnavailableError) {
-        networkFailure ??= error;
         results.push({
           asset: payload.asset,
           ok: false,
@@ -181,19 +179,24 @@ async function main() {
     }
   });
 
-  if (networkFailure && results.every((result) => result.networkIssue)) {
-    console.warn(
-      `SKIP Luma payload-layout check — could not reach GitHub: ${errorMessage(networkFailure)}`,
+  const layoutFailures = results.filter((result) => !result.ok && !result.networkIssue);
+  const networkFailures = results.filter((result) => !result.ok && result.networkIssue);
+
+  if (layoutFailures.length > 0) {
+    printIssues(
+      `\nFAIL: ${layoutFailures.length} Luma payload layout check(s) failed:`,
+      layoutFailures.map((failure) => `${failure.asset}: ${failure.reason}`),
     );
-    return;
   }
 
-  const failures = results.filter((result) => !result.ok);
-  if (failures.length > 0) {
+  if (networkFailures.length > 0) {
     printIssues(
-      `\nFAIL ${failures.length} Luma payload layout check(s):`,
-      failures.map((failure) => `${failure.asset}: ${failure.reason}`),
+      `\nERROR: unable to verify ${networkFailures.length} Luma payload(s) (GitHub request failed):`,
+      networkFailures.map((failure) => `${failure.asset}: ${failure.reason}`),
     );
+  }
+
+  if (layoutFailures.length > 0 || networkFailures.length > 0) {
     process.exitCode = 1;
     return;
   }

@@ -16,9 +16,8 @@
 // tag information at all) and separately confirm the asset ultimately
 // resolves (200).
 //
-// Missing/renamed assets or a tag format drift are hard failures.
-// Network/GitHub availability problems are soft warnings so offline or
-// rate-limited runs do not block CI (mirrors check-renodx-slugs.mjs).
+// Missing/renamed assets, tag format drift, or network verification failures
+// fail closed (exit 1).
 //
 //   node scripts/check-luma-assets.mjs
 
@@ -123,14 +122,12 @@ async function main() {
   );
 
   const results = [];
-  let networkFailure = null;
 
   await forEachConcurrent(assets, CONCURRENCY, async (asset) => {
     try {
       results.push(await checkAsset(asset));
     } catch (error) {
       if (error instanceof AssetUnavailableError) {
-        networkFailure ??= error;
         results.push({ asset, ok: false, reason: error.message, networkIssue: true });
         return;
       }
@@ -139,20 +136,24 @@ async function main() {
     }
   });
 
-  if (networkFailure && results.every((result) => result.networkIssue)) {
-    console.warn(
-      `SKIP asset-availability check — could not reach GitHub: ${errorMessage(networkFailure)}`,
+  const missingAssets = results.filter((result) => !result.ok && !result.networkIssue);
+  const networkFailures = results.filter((result) => !result.ok && result.networkIssue);
+
+  if (missingAssets.length > 0) {
+    printIssues(
+      `\nFAIL: ${missingAssets.length} expected Luma asset(s) are missing upstream:`,
+      missingAssets.map((f) => `${f.asset}: ${f.reason}`),
     );
-    return;
   }
 
-  const failures = results.filter((result) => !result.ok);
-
-  if (failures.length > 0) {
+  if (networkFailures.length > 0) {
     printIssues(
-      `\nFAIL ${failures.length} asset(s) failed to resolve upstream:`,
-      failures.map((f) => `${f.asset}: ${f.reason}`),
+      `\nERROR: unable to verify ${networkFailures.length} Luma asset(s) (GitHub request failed):`,
+      networkFailures.map((f) => `${f.asset}: ${f.reason}`),
     );
+  }
+
+  if (missingAssets.length > 0 || networkFailures.length > 0) {
     process.exitCode = 1;
     return;
   }

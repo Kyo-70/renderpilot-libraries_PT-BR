@@ -33,6 +33,10 @@ jobs:
         run: pnpm run check:luma-assets
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Luma payload layout
+        run: pnpm run check:luma-payload-layout
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: RenoDX snapshot slugs
         run: pnpm run check:slugs
         env:

@@ -9,7 +9,7 @@
     "node": ">=24.20.0"
   },
   "scripts": {
-    "check": "pnpm run format:check && pnpm run docs:check && pnpm run validate && pnpm run validate:microsoft && pnpm run validate:github && pnpm run validate:xiph && pnpm run check:all-generated && pnpm run test:addons && pnpm run test:scripts && pnpm run sync:renodx-wiki:check && pnpm run sync:luma-wiki:check && pnpm run sync:optiscaler-wiki:check && pnpm run check:slugs && pnpm run check:luma-assets && pnpm run check:luma-payload-layout",
+    "check": "pnpm run format:check && pnpm run docs:check && pnpm run validate && pnpm run validate:microsoft && pnpm run validate:github && pnpm run validate:xiph && pnpm run check:all-generated && pnpm run test:addons && pnpm run test:scripts && pnpm run sync:renodx-wiki:check && pnpm run sync:luma-wiki:check && pnpm run sync:optiscaler-wiki:check && pnpm run check:slugs",
     "check:offline": "pnpm run format:check && pnpm run docs:check && pnpm run validate && pnpm run validate:microsoft && pnpm run validate:github && pnpm run validate:xiph && pnpm run check:all-generated && pnpm run test:addons && pnpm run test:scripts",
     "docs:check": "markdownlint-cli2 --config .markdownlint-cli2.jsonc README.md CONTRIBUTING.md \"docs/**/*.md\" \"catalogs/addons/*/PUBLISHING.md\" && node --test scripts/check-docs.test.mjs && node scripts/check-docs.mjs",
     "validate": "node scripts/validate.mjs",
