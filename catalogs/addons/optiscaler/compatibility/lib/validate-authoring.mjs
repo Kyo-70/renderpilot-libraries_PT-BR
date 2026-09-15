@@ -45,7 +45,16 @@ const PROXY_SLOTS = new Set([
   "winhttp.dll",
 ]);
 const LAUNCH_ARGUMENT_RE = /^-[A-Za-z0-9][A-Za-z0-9._=-]*$/u;
-const LOCALES = Object.freeze(["de", "es", "fr", "ja", "ru", "zh-Hans", "zh-Hant"]);
+const LOCALES = Object.freeze([
+  "de",
+  "es",
+  "fr",
+  "ja",
+  "pt-BR",
+  "ru",
+  "zh-Hans",
+  "zh-Hant",
+]);
 
 function assertArray(value, context) {
   if (!Array.isArray(value)) throw new Error(`${context} must be an array`);

@@ -77,7 +77,7 @@ authoring owns only OptiScaler policy. Never infer a target from titles,
 engines, generic rules, or fuzzy matching. A bare executable leaf is allowed
 only when it is globally unambiguous. Technical wiki statements become typed
 variants and are never copied into user guidance. Guidance and its `de`, `es`, `fr`,
-`ja`, `ru`, `zh-Hans`, and `zh-Hant` translations have one editable source in
+`ja`, `pt-BR`, `ru`, `zh-Hans`, and `zh-Hant` translations have one editable source in
 `compatibility/messages.json`. Consumer repositories derive their checked-in
 localization snapshots deterministically from this source; those snapshots are
 not independently authored translations.
