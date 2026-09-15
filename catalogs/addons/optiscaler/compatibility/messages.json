@@ -11,6 +11,7 @@
         "es": "Si la opción DLSS no está disponible después de cambiar la configuración de OptiScaler, reinicia el juego.",
         "fr": "Si l’option DLSS est indisponible après avoir modifié les paramètres d’OptiScaler, redémarrez le jeu.",
         "ja": "OptiScaler の設定を変更した後に DLSS オプションが利用できない場合は、ゲームを再起動してください。",
+        "pt-BR": "Se o DLSS não estiver disponível após alterar as configurações do OptiScaler, reinicie o jogo.",
         "ru": "Если после изменения настроек OptiScaler параметр DLSS недоступен, перезапустите игру.",
         "zh-Hans": "如果更改 OptiScaler 设置后 DLSS 选项不可用，请重启游戏。",
         "zh-Hant": "如果變更 OptiScaler 設定後 DLSS 選項無法使用，請重新啟動遊戲。"
@@ -26,6 +27,7 @@
         "es": "Puedes usar FSR 4 como entrada de OptiScaler independientemente de tu GPU.",
         "fr": "Vous pouvez utiliser FSR 4 comme entrée pour OptiScaler, quelle que soit votre carte graphique.",
         "ja": "使用する GPU に関係なく、FSR 4 を OptiScaler の入力として使用できます。",
+        "pt-BR": "Você pode usar o FSR 4 como entrada do OptiScaler independentemente da sua GPU.",
         "ru": "Режим FSR 4 можно использовать с OptiScaler на любой видеокарте.",
         "zh-Hans": "无论使用何种 GPU，都可将 FSR 4 用作 OptiScaler 的输入模式。",
         "zh-Hant": "無論使用何種 GPU，都可將 FSR 4 用作 OptiScaler 的輸入模式。"
@@ -41,6 +43,7 @@
         "es": "Reduce el ajuste de nitidez del juego si la imagen parece demasiado nítida.",
         "fr": "Réduisez le réglage de netteté du jeu si l’image paraît trop accentuée.",
         "ja": "画像が過度にシャープに見える場合は、ゲーム内のシャープネス設定を下げてください。",
+        "pt-BR": "Reduza a nitidez nas configurações do jogo se a imagem parecer excessivamente nítida.",
         "ru": "Уменьшите внутриигровую резкость, если изображение выглядит слишком резким.",
         "zh-Hans": "如果画面显得过度锐化，请降低游戏内的锐化设置。",
         "zh-Hant": "如果畫面顯得過度銳化，請降低遊戲內的銳化設定。"
@@ -56,6 +59,7 @@
         "es": "Usa el modo ventana sin bordes para acceder al overlay de forma fiable.",
         "fr": "Utilisez le mode fenêtré sans bordure pour un accès fiable à la surcouche.",
         "ja": "オーバーレイを安定して利用するには、ボーダーレスウィンドウモードを使用してください。",
+        "pt-BR": "Use o modo janela sem bordas para acessar a sobreposição de forma confiável.",
         "ru": "Для стабильной работы оверлея используйте безрамочный оконный режим.",
         "zh-Hans": "请使用无边框窗口模式，以稳定访问叠加层。",
         "zh-Hant": "請使用無邊框視窗模式，以穩定使用覆蓋層。"
@@ -71,6 +75,7 @@
         "es": "Desactiva la superposición en el juego de Ubisoft Connect y el HDR mientras usas OptiScaler para evitar un ghosting intenso.",
         "fr": "Désactivez la surcouche en jeu d’Ubisoft Connect et le HDR pendant l’utilisation d’OptiScaler afin d’éviter un ghosting prononcé.",
         "ja": "強いゴーストを避けるため、OptiScaler の使用中は Ubisoft Connect のゲーム内オーバーレイと HDR を無効にしてください。",
+        "pt-BR": "Desative a sobreposição no jogo do Ubisoft Connect e o HDR enquanto usar o OptiScaler para evitar um efeito fantasma intenso.",
         "ru": "Во время использования OptiScaler отключите внутриигровой оверлей Ubisoft Connect и HDR, чтобы избежать сильного гостинга (шлейфов).",
         "zh-Hans": "使用 OptiScaler 时，请关闭 Ubisoft Connect 游戏内覆盖层和 HDR，以避免严重的重影。",
         "zh-Hant": "使用 OptiScaler 時，請關閉 Ubisoft Connect 遊戲內覆蓋層和 HDR，以避免嚴重的殘影。"
@@ -86,6 +91,7 @@
         "es": "Cambia una vez el ajuste de calidad de FSR dentro del juego para que OptiScaler pueda detectar la entrada FSR 2.",
         "fr": "Modifiez une fois le réglage de qualité FSR dans le jeu afin qu’OptiScaler puisse détecter l’entrée FSR 2.",
         "ja": "OptiScaler が FSR 2 入力を検出できるように、ゲーム内の FSR 品質設定を一度変更してください。",
+        "pt-BR": "Altere uma vez a qualidade do FSR nas configurações do jogo para que o OptiScaler detecte a entrada FSR 2.",
         "ru": "Один раз измените внутриигровую настройку качества FSR, чтобы OptiScaler смог перехватить режим FSR 2.",
         "zh-Hans": "请在游戏内更改一次 FSR 质量设置，以便 OptiScaler 检测到 FSR 2 输入。",
         "zh-Hant": "請在遊戲內變更一次 FSR 品質設定，讓 OptiScaler 能偵測到 FSR 2 輸入。"
@@ -101,6 +107,7 @@
         "es": "Desactiva Frame Smoothing en los ajustes del juego para eliminar el límite de fotogramas.",
         "fr": "Désactivez Frame Smoothing dans les paramètres du jeu pour supprimer la limite de fréquence d’images.",
         "ja": "フレームレート上限を解除するには、ゲーム設定で Frame Smoothing を無効にしてください。",
+        "pt-BR": "Desative Frame Smoothing nas configurações do jogo para remover o limite da taxa de quadros.",
         "ru": "Отключите Frame Smoothing в настройках игры, чтобы снять ограничение частоты кадров.",
         "zh-Hans": "请在游戏设置中关闭 Frame Smoothing，以解除帧率上限。",
         "zh-Hant": "請在遊戲設定中關閉 Frame Smoothing，以解除幀率上限。"
@@ -116,6 +123,7 @@
         "es": "Configura la calidad de antialiasing en al menos Media (2×) dentro de los ajustes del juego.",
         "fr": "Réglez la qualité de l’anticrénelage au minimum sur Moyen (2×) dans les paramètres du jeu.",
         "ja": "ゲーム設定でアンチエイリアス品質を少なくとも「中（2×）」に設定してください。",
+        "pt-BR": "Defina a qualidade do antisserrilhamento como Medium (2×) ou superior nas configurações do jogo.",
         "ru": "Установите качество сглаживания в настройках игры как минимум на среднее (2×).",
         "zh-Hans": "请在游戏设置中将抗锯齿质量设为至少“中等（2×）”。",
         "zh-Hant": "請在遊戲設定中將反鋸齒品質設為至少「中等（2×）」。"
@@ -131,6 +139,7 @@
         "es": "Configura la calidad de antialiasing en Épica dentro de los ajustes del juego.",
         "fr": "Réglez la qualité de l’anticrénelage sur Épique dans les paramètres du jeu.",
         "ja": "ゲーム設定でアンチエイリアス品質を「エピック」に設定してください。",
+        "pt-BR": "Defina a qualidade do antisserrilhamento como Epic nas configurações do jogo.",
         "ru": "Установите качество сглаживания в настройках игры на «Эпическое».",
         "zh-Hans": "请在游戏设置中将抗锯齿质量设为“史诗”。",
         "zh-Hant": "請在遊戲設定中將反鋸齒品質設為「史詩」。"
@@ -146,6 +155,7 @@
         "es": "Configura el antialiasing en TAA Alto dentro de los ajustes del juego.",
         "fr": "Réglez l’anticrénelage sur TAA élevé dans les paramètres du jeu.",
         "ja": "ゲーム設定でアンチエイリアスを「高 TAA」に設定してください。",
+        "pt-BR": "Defina o antisserrilhamento como High TAA nas configurações do jogo.",
         "ru": "Установите сглаживание в настройках игры на «Высокий TAA».",
         "zh-Hans": "请在游戏设置中将抗锯齿设为“高 TAA”。",
         "zh-Hant": "請在遊戲設定中將反鋸齒設為「高 TAA」。"
@@ -161,6 +171,7 @@
         "es": "Selecciona el antialiasing TXAA 6× dentro de los ajustes del juego.",
         "fr": "Sélectionnez l’anticrénelage TXAA 6× dans les paramètres du jeu.",
         "ja": "ゲーム設定でアンチエイリアス「TXAA 6×」を選択してください。",
+        "pt-BR": "Selecione o antisserrilhamento TXAA 6× nas configurações do jogo.",
         "ru": "Выберите в настройках игры сглаживание TXAA 6×.",
         "zh-Hans": "请在游戏设置中选择 TXAA 6× 抗锯齿。",
         "zh-Hant": "請在遊戲設定中選擇 TXAA 6× 反鋸齒。"
@@ -176,6 +187,7 @@
         "es": "DirectX 11 puede ofrecer menos rendimiento y producir un parpadeo intenso.",
         "fr": "DirectX 11 peut offrir des performances plus faibles et provoquer un scintillement important.",
         "ja": "DirectX 11 ではパフォーマンスが低下し、強いちらつきが発生することがあります。",
+        "pt-BR": "O DirectX 11 pode apresentar desempenho inferior e cintilação intensa.",
         "ru": "В DirectX 11 возможны снижение производительности и сильное мерцание.",
         "zh-Hans": "DirectX 11 可能导致性能较低和严重闪烁。",
         "zh-Hant": "DirectX 11 可能導致效能較低和嚴重閃爍。"
@@ -191,6 +203,7 @@
         "es": "Para mejorar el rendimiento, usa preferentemente el modo FSR o XeSS, o bien OptiPatcher.",
         "fr": "Pour de meilleures performances, privilégiez le mode FSR ou XeSS, ou utilisez OptiPatcher.",
         "ja": "パフォーマンスを向上させるには、FSR または XeSS モード、あるいは OptiPatcher を使用してください。",
+        "pt-BR": "Para obter melhor desempenho, prefira o modo FSR ou XeSS, ou use o OptiPatcher.",
         "ru": "Для лучшей производительности выберите режим FSR или XeSS либо используйте OptiPatcher.",
         "zh-Hans": "为获得更好的性能，请优先使用 FSR 或 XeSS 模式，或使用 OptiPatcher。",
         "zh-Hant": "為獲得更佳效能，請優先使用 FSR 或 XeSS 模式，或使用 OptiPatcher。"
@@ -206,6 +219,7 @@
         "es": "Usa el control de escala de resolución del juego para ajustar la resolución de entrada de OptiScaler.",
         "fr": "Utilisez le réglage d’échelle de résolution du jeu pour ajuster la résolution d’entrée d’OptiScaler.",
         "ja": "ゲームの解像度スケール設定で、OptiScaler の入力解像度を調整してください。",
+        "pt-BR": "Use o controle de escala de resolução do jogo para ajustar a resolução de entrada do OptiScaler.",
         "ru": "Используйте настройку масштаба разрешения в игре, чтобы изменить входное разрешение OptiScaler.",
         "zh-Hans": "请使用游戏的分辨率缩放控制项调整 OptiScaler 的输入分辨率。",
         "zh-Hant": "請使用遊戲的解析度縮放控制項調整 OptiScaler 的輸入解析度。"
@@ -221,6 +235,7 @@
         "es": "La entrada XeSS puede mostrar artefactos de bloques negros en cinemáticas y algunos niveles.",
         "fr": "L’entrée XeSS peut afficher des artefacts en blocs noirs dans les cinématiques et certains niveaux.",
         "ja": "XeSS 入力では、カットシーンや一部のレベルで黒いブロック状のアーティファクトが表示される場合があります。",
+        "pt-BR": "A entrada XeSS pode apresentar blocos pretos em cenas e em algumas fases.",
         "ru": "В режиме XeSS в роликах и на некоторых уровнях могут появляться чёрные блочные артефакты.",
         "zh-Hans": "XeSS 输入模式可能会在过场动画和部分关卡中出现黑色块状伪影。",
         "zh-Hant": "XeSS 輸入模式可能會在過場動畫和部分關卡中出現黑色塊狀偽影。"
@@ -236,6 +251,7 @@
         "es": "Al abrir o cerrar el inventario pueden surgir problemas al usar OptiScaler.",
         "fr": "L’ouverture ou la fermeture de l’inventaire peut poser des problèmes lors de l’utilisation d’OptiScaler.",
         "ja": "OptiScaler の使用中にインベントリを開閉すると問題が発生する場合があります。",
+        "pt-BR": "Abrir ou fechar o inventário pode causar problemas durante o uso do OptiScaler.",
         "ru": "Открытие или закрытие инвентаря при использовании OptiScaler может вызывать проблемы.",
         "zh-Hans": "使用 OptiScaler 时，打开或关闭物品栏可能会出现问题。",
         "zh-Hant": "使用 OptiScaler 時，開啟或關閉物品欄可能會出現問題。"
@@ -251,6 +267,7 @@
         "es": "Al usar FSR 4, selecciona el espacio de color de entrada Non-Linear sRGB para evitar el ghosting.",
         "fr": "Avec FSR 4, sélectionnez l’espace colorimétrique d’entrée Non-Linear sRGB afin d’éviter le ghosting.",
         "ja": "FSR 4 使用時は、ゴーストを防ぐため入力カラースペースに Non-Linear sRGB を選択してください。",
+        "pt-BR": "Ao usar o FSR 4, selecione o espaço de cores de entrada Non-Linear sRGB para evitar efeito fantasma.",
         "ru": "При использовании FSR 4 выберите входное цветовое пространство Non-Linear sRGB, чтобы избежать шлейфов.",
         "zh-Hans": "使用 FSR 4 时，请选择 Non-Linear sRGB 输入色彩空间以避免出现拖影。",
         "zh-Hant": "使用 FSR 4 時，請選擇 Non-Linear sRGB 輸入色彩空間以避免出現殘影。"
@@ -266,6 +283,7 @@
         "es": "Con FSR 4, selecciona Entrada Non-Linear PQ si encuentras problemas poco frecuentes con el cielo.",
         "fr": "Avec FSR 4, sélectionnez l’entrée Non-Linear PQ si vous rencontrez de rares problèmes de ciel.",
         "ja": "FSR 4 でまれに空の表示に問題が出る場合は、Non-Linear PQ Input を選択してください。",
+        "pt-BR": "Com o FSR 4, selecione Non-Linear PQ Input caso ocorram problemas raros no céu.",
         "ru": "Если при FSR 4 возникают редкие проблемы с небом, выберите входное цветовое пространство Non-Linear PQ.",
         "zh-Hans": "使用 FSR 4 时，如果偶尔出现天空显示异常，请选择 Non-Linear PQ 输入。",
         "zh-Hant": "使用 FSR 4 時，如果偶爾出現天空顯示異常，請選擇 Non-Linear PQ 輸入。"
@@ -281,6 +299,7 @@
         "es": "Con FSR 4, el cabello de algunos personajes y el segundo piso de DESCENT INTO SUBCONSCIOUS pueden mostrar artefactos visuales graves.",
         "fr": "Avec FSR 4, les cheveux de certains personnages et le deuxième étage de DESCENT INTO SUBCONSCIOUS peuvent afficher d’importants artefacts visuels.",
         "ja": "FSR 4 使用時は、一部キャラクターの髪や DESCENT INTO SUBCONSCIOUS の二階で深刻な表示アーティファクトが発生する場合があります。",
+        "pt-BR": "Ao usar o FSR 4, o cabelo de alguns personagens e o segundo andar de DESCENT INTO SUBCONSCIOUS podem apresentar artefatos visuais intensos.",
         "ru": "При использовании FSR 4 на волосах некоторых персонажей и на втором этаже DESCENT INTO SUBCONSCIOUS могут появляться серьёзные визуальные артефакты.",
         "zh-Hans": "使用 FSR 4 时，部分角色的头发和 DESCENT INTO SUBCONSCIOUS 的二层可能出现严重的视觉伪影。",
         "zh-Hant": "使用 FSR 4 時，部分角色的頭髮和 DESCENT INTO SUBCONSCIOUS 的二樓可能出現嚴重的視覺偽影。"
@@ -296,6 +315,7 @@
         "es": "Usa la entrada DLSS: OptiScaler no detecta el ajuste FSR 3 del juego.",
         "fr": "Utilisez l’entrée DLSS : OptiScaler ne détecte pas le réglage FSR 3 du jeu.",
         "ja": "DLSS 入力を使用してください。OptiScaler はゲーム内の FSR 3 設定を検出しません。",
+        "pt-BR": "Use a entrada DLSS: o OptiScaler não detecta a configuração FSR 3 do jogo.",
         "ru": "Используйте режим DLSS: OptiScaler не обнаруживает внутриигровую настройку FSR 3.",
         "zh-Hans": "请使用 DLSS 输入模式：OptiScaler 无法检测游戏内的 FSR 3 设置。",
         "zh-Hant": "請使用 DLSS 輸入模式：OptiScaler 無法偵測遊戲內的 FSR 3 設定。"
@@ -311,6 +331,7 @@
         "es": "Ejecuta el juego en modo DirectX 12.",
         "fr": "Lancez le jeu en mode DirectX 12.",
         "ja": "ゲームを DirectX 12 モードで起動してください。",
+        "pt-BR": "Execute o jogo no modo DirectX 12.",
         "ru": "Запускайте игру в режиме DirectX 12.",
         "zh-Hans": "请以 DirectX 12 模式运行游戏。",
         "zh-Hant": "請以 DirectX 12 模式執行遊戲。"
@@ -326,6 +347,7 @@
         "es": "Usa el modo DirectX 11 predeterminado. Forzar DirectX 12 con -dx12 hace que el juego se cierre al iniciarse.",
         "fr": "Utilisez le mode DirectX 11 par défaut. Forcer DirectX 12 avec -dx12 fait planter le jeu au démarrage.",
         "ja": "既定の DirectX 11 モードを使用してください。-dx12 で DirectX 12 を強制すると、起動時にクラッシュします。",
+        "pt-BR": "Use o modo DirectX 11 padrão. Forçar o DirectX 12 com -dx12 faz o jogo travar na inicialização.",
         "ru": "Используйте режим DirectX 11 по умолчанию. Принудительный запуск DirectX 12 через -dx12 вызывает сбой при запуске.",
         "zh-Hans": "请使用默认的 DirectX 11 模式。使用 -dx12 强制 DirectX 12 会在启动时崩溃。",
         "zh-Hant": "請使用預設的 DirectX 11 模式。使用 -dx12 強制 DirectX 12 會在啟動時當機。"
@@ -341,6 +363,7 @@
         "es": "Establece la escala de resolución del juego por debajo del 100 % para que OptiScaler pueda detectar la entrada FSR 2.",
         "fr": "Réglez l’échelle de résolution du jeu sous 100 % afin qu’OptiScaler puisse détecter l’entrée FSR 2.",
         "ja": "OptiScaler が FSR 2 入力を検出できるよう、ゲーム内の解像度スケールを 100% 未満に設定してください。",
+        "pt-BR": "Defina a escala de resolução do jogo abaixo de 100% para que o OptiScaler detecte a entrada FSR 2.",
         "ru": "Установите внутриигровой масштаб разрешения ниже 100 %, чтобы OptiScaler смог перехватить режим FSR 2.",
         "zh-Hans": "请将游戏内的分辨率缩放设为低于 100%，以便 OptiScaler 检测 FSR 2 输入模式。",
         "zh-Hant": "請將遊戲內的解析度縮放設為低於 100%，以便 OptiScaler 偵測 FSR 2 輸入模式。"
@@ -356,6 +379,7 @@
         "es": "Al iniciarse, el juego puede restablecer el preajuste seleccionado a Performance. Comprueba el preajuste en la superposición de OptiScaler. Si ocurre, selecciona otro preajuste y luego vuelve a seleccionar el deseado.",
         "fr": "Au lancement, le jeu peut réinitialiser le préréglage sélectionné sur Performance. Vérifiez le préréglage dans la surimpression OptiScaler. Si cela se produit, choisissez un autre préréglage, puis sélectionnez à nouveau celui voulu.",
         "ja": "起動時に、ゲームが選択したプリセットを Performance にリセットすることがあります。OptiScaler オーバーレイでプリセットを確認してください。そうなった場合は、別のプリセットを選び、続けて希望するプリセットをもう一度選択してください。",
+        "pt-BR": "Ao iniciar, o jogo pode redefinir a predefinição selecionada para Performance. Verifique a predefinição na sobreposição do OptiScaler. Se isso ocorrer, selecione outra predefinição e depois selecione novamente a desejada.",
         "ru": "При запуске игра может сбросить выбранный пресет на Performance. Проверьте пресет в оверлее OptiScaler. Если это произошло, выберите другой пресет, затем снова нужный.",
         "zh-Hans": "启动时，游戏可能会将所选预设重置为 Performance。请在 OptiScaler 叠加层中检查预设。如果发生这种情况，请先选择其他预设，然后再次选择所需预设。",
         "zh-Hant": "啟動時，遊戲可能會將所選預設重設為 Performance。請在 OptiScaler 疊加層中檢查預設。如果發生這種情況，請先選擇其他預設，然後再次選擇所需預設。"
@@ -371,6 +395,7 @@
         "es": "Al usar FSR 4, selecciona el espacio de color de entrada Non-Linear sRGB para corregir el parpadeo en algunas escenas.",
         "fr": "Avec FSR 4, sélectionnez l’espace colorimétrique d’entrée Non-Linear sRGB pour corriger le scintillement dans certaines scènes.",
         "ja": "FSR 4 使用時は、一部のシーンのちらつきを直すため入力カラースペースに Non-Linear sRGB を選択してください。",
+        "pt-BR": "Ao usar o FSR 4, selecione o espaço de cores de entrada Non-Linear sRGB para corrigir a cintilação em algumas cenas.",
         "ru": "При использовании FSR 4 выберите входное цветовое пространство Non-Linear sRGB, чтобы устранить мерцание в некоторых сценах.",
         "zh-Hans": "使用 FSR 4 时，请选择 Non-Linear sRGB 输入色彩空间以修复部分场景中的闪烁。",
         "zh-Hant": "使用 FSR 4 時，請選擇 Non-Linear sRGB 輸入色彩空間以修正部分場景中的閃爍。"
@@ -386,6 +411,7 @@
         "es": "Al usar FSR 4 mediante DLSS o XeSS, selecciona el espacio de color de entrada Non-Linear para evitar pantallas negras y parpadeos.",
         "fr": "Avec FSR 4 via DLSS ou XeSS, sélectionnez l'espace colorimétrique d'entrée Non-Linear pour éviter les écrans noirs et le scintillement.",
         "ja": "FSR 4 を DLSS または XeSS 経由で使用する場合は、黒画面やちらつきを避けるため、入力カラースペースに Non-Linear を選択してください。",
+        "pt-BR": "Ao usar o FSR 4 por meio do DLSS ou XeSS, selecione o espaço de cores de entrada Non-Linear para evitar telas pretas e cintilação.",
         "ru": "При использовании FSR 4 через DLSS или XeSS выберите входное цветовое пространство Non-Linear, чтобы избежать чёрных экранов и мерцания.",
         "zh-Hans": "通过 DLSS 或 XeSS 使用 FSR 4 时，请选择 Non-Linear 输入色彩空间，以避免黑屏和闪烁。",
         "zh-Hant": "透過 DLSS 或 XeSS 使用 FSR 4 時，請選擇 Non-Linear 輸入色彩空間，以避免黑畫面和閃爍。"
@@ -401,6 +427,7 @@
         "es": "Activa tanto TAA como DLSS en los ajustes del juego.",
         "fr": "Activez à la fois TAA et DLSS dans les paramètres du jeu.",
         "ja": "ゲーム設定で TAA と DLSS の両方を有効にしてください。",
+        "pt-BR": "Ative o TAA e o DLSS nas configurações do jogo.",
         "ru": "Включите в настройках игры TAA и DLSS.",
         "zh-Hans": "请在游戏设置中同时启用 TAA 和 DLSS。",
         "zh-Hant": "請在遊戲設定中同時啟用 TAA 和 DLSS。"
@@ -416,6 +443,7 @@
         "es": "Desactiva Display Res.MV en los ajustes del juego para corregir el parpadeo.",
         "fr": "Désactivez Display Res.MV dans les paramètres du jeu pour corriger le scintillement.",
         "ja": "ちらつきを直すため、ゲーム設定で Display Res.MV を無効にしてください。",
+        "pt-BR": "Desative Display Res.MV nas configurações do jogo para corrigir a cintilação.",
         "ru": "Отключите Display Res.MV в настройках игры, чтобы устранить мерцание.",
         "zh-Hans": "请在游戏设置中关闭 Display Res.MV，以修复闪烁。",
         "zh-Hant": "請在遊戲設定中關閉 Display Res.MV，以修正閃爍。"
@@ -431,6 +459,7 @@
         "es": "Al usar FSR 4 con entrada DLSS, activa AutoExposure.",
         "fr": "Avec FSR 4 et l’entrée DLSS, activez AutoExposure.",
         "ja": "FSR 4 を DLSS 入力で使用する場合は、AutoExposure を有効にしてください。",
+        "pt-BR": "Ao usar o FSR 4 com a entrada DLSS, ative AutoExposure.",
         "ru": "При использовании FSR 4 в режиме DLSS включите AutoExposure.",
         "zh-Hans": "使用 FSR 4 和 DLSS 输入模式时，请启用 AutoExposure。",
         "zh-Hant": "使用 FSR 4 和 DLSS 輸入模式時，請啟用 AutoExposure。"
@@ -446,6 +475,7 @@
         "es": "Cambia una vez el ajuste de FSR dentro del juego para que OptiScaler pueda detectar la entrada FSR.",
         "fr": "Modifiez une fois le réglage FSR dans le jeu afin qu’OptiScaler puisse détecter l’entrée FSR.",
         "ja": "OptiScaler が FSR 入力を検出できるように、ゲーム内の FSR 設定を一度変更してください。",
+        "pt-BR": "Altere uma vez a configuração FSR do jogo para que o OptiScaler detecte a entrada FSR.",
         "ru": "Один раз измените внутриигровую настройку FSR, чтобы OptiScaler смог перехватить режим FSR.",
         "zh-Hans": "请在游戏内更改一次 FSR 设置，以便 OptiScaler 检测 FSR 输入模式。",
         "zh-Hant": "請在遊戲內變更一次 FSR 設定，以便 OptiScaler 偵測 FSR 輸入模式。"
@@ -461,6 +491,7 @@
         "es": "Ejecuta el juego en modo DirectX 12.",
         "fr": "Lancez le jeu en mode DirectX 12.",
         "ja": "ゲームを DirectX 12 モードで起動してください。",
+        "pt-BR": "Execute o jogo no modo DirectX 12.",
         "ru": "Запускайте игру в режиме DirectX 12.",
         "zh-Hans": "请以 DirectX 12 模式运行游戏。",
         "zh-Hant": "請以 DirectX 12 模式執行遊戲。"
@@ -476,6 +507,7 @@
         "es": "Usa el teclado para navegar por el overlay de OptiScaler; el ratón no está disponible.",
         "fr": "Utilisez le clavier pour naviguer dans la surcouche d’OptiScaler ; la souris n’est pas disponible.",
         "ja": "OptiScaler のオーバーレイはキーボードで操作してください。マウス入力は利用できません。",
+        "pt-BR": "Use o teclado para navegar pela sobreposição do OptiScaler; a entrada pelo mouse não está disponível.",
         "ru": "Используйте клавиатуру для навигации по оверлею OptiScaler: мышь недоступна.",
         "zh-Hans": "请使用键盘操作 OptiScaler 叠加层；鼠标输入不可用。",
         "zh-Hant": "請使用鍵盤操作 OptiScaler 覆蓋層；滑鼠輸入無法使用。"
@@ -491,6 +523,7 @@
         "es": "En los ajustes del juego, cambia el modo DLSS y aplica el cambio.",
         "fr": "Dans les paramètres du jeu, modifiez le mode DLSS et appliquez la modification.",
         "ja": "ゲーム設定で DLSS モードを変更し、変更を適用してください。",
+        "pt-BR": "Nas configurações do jogo, altere o modo DLSS e aplique a mudança.",
         "ru": "В настройках игры измените режим DLSS и примените изменения.",
         "zh-Hans": "请在游戏设置中更改 DLSS 模式并应用更改。",
         "zh-Hant": "請在遊戲設定中變更 DLSS 模式並套用變更。"
@@ -506,6 +539,7 @@
         "es": "Completa la compilación de sombreadores antes de seleccionar FSR 4 para evitar un cierre inesperado.",
         "fr": "Terminez la compilation des shaders avant de sélectionner FSR 4 afin d’éviter un plantage.",
         "ja": "クラッシュを避けるため、FSR 4 を選択する前にシェーダーのコンパイルを完了してください。",
+        "pt-BR": "Conclua a compilação dos shaders antes de selecionar o FSR 4 para evitar uma falha.",
         "ru": "Завершите компиляцию шейдеров перед выбором FSR 4, чтобы избежать сбоя.",
         "zh-Hans": "请在选择 FSR 4 前完成着色器编译，以避免崩溃。",
         "zh-Hant": "請在選擇 FSR 4 前完成著色器編譯，以避免當機。"
@@ -521,6 +555,7 @@
         "es": "Para usar una entrada DLSS, activa el trazado de rayos y la suplantación de NVIDIA.",
         "fr": "Pour utiliser une entrée DLSS, activez le lancer de rayons et l’usurpation NVIDIA.",
         "ja": "DLSS 入力を使用するには、レイトレーシングと NVIDIA スプーフィングを有効にしてください。",
+        "pt-BR": "Para usar uma entrada DLSS, ative o ray tracing e a simulação de uma GPU NVIDIA.",
         "ru": "Чтобы использовать режим DLSS, включите трассировку лучей и спуфинг NVIDIA.",
         "zh-Hans": "要使用 DLSS 输入，请启用光线追踪和 NVIDIA 伪装。",
         "zh-Hant": "要使用 DLSS 輸入，請啟用光線追蹤和 NVIDIA 偽裝。"
@@ -536,6 +571,7 @@
         "es": "Al usar FSR 4, selecciona el espacio de color de entrada Non-Linear sRGB para corregir el parpadeo de la pantalla.",
         "fr": "Avec FSR 4, sélectionnez l’espace colorimétrique d’entrée Non-Linear sRGB pour corriger le scintillement de l’écran.",
         "ja": "FSR 4 使用時は、画面のちらつきを直すため入力カラースペースに Non-Linear sRGB を選択してください。",
+        "pt-BR": "Ao usar o FSR 4, selecione o espaço de cores de entrada Non-Linear sRGB para corrigir a cintilação da tela.",
         "ru": "При использовании FSR 4 выберите входное цветовое пространство Non-Linear sRGB, чтобы устранить мерцание экрана.",
         "zh-Hans": "使用 FSR 4 时，请选择 Non-Linear sRGB 输入色彩空间以修复屏幕闪烁。",
         "zh-Hant": "使用 FSR 4 時，請選擇 Non-Linear sRGB 輸入色彩空間以修正螢幕閃爍。"
@@ -551,6 +587,7 @@
         "es": "Si las superficies presentan destellos, ajusta Cinematic Reflections a Ultra o a un nivel inferior.",
         "fr": "Si des surfaces scintillent, réglez Cinematic Reflections sur Ultra ou moins.",
         "ja": "表面にちらつきが出る場合は、Cinematic Reflections を Ultra 以下に設定してください。",
+        "pt-BR": "Se as superfícies apresentarem brilhos, defina Cinematic Reflections como Ultra ou inferior.",
         "ru": "Если на поверхностях появляются искры, установите Cinematic Reflections на Ultra или ниже.",
         "zh-Hans": "如果表面出现闪烁，请将 Cinematic Reflections 设为 Ultra 或更低。",
         "zh-Hant": "如果表面出現閃爍，請將 Cinematic Reflections 設為 Ultra 或更低。"
@@ -566,6 +603,7 @@
         "es": "DirectX 11 puede presentar parpadeo.",
         "fr": "DirectX 11 peut produire un scintillement.",
         "ja": "DirectX 11 ではちらつきが発生することがあります。",
+        "pt-BR": "O DirectX 11 pode apresentar cintilação.",
         "ru": "В DirectX 11 возможно мерцание.",
         "zh-Hans": "DirectX 11 可能出现闪烁。",
         "zh-Hant": "DirectX 11 可能出現閃爍。"
@@ -581,6 +619,7 @@
         "es": "Al usar FSR 4, selecciona el espacio de color de entrada Non-Linear sRGB para corregir el parpadeo en las cinemáticas.",
         "fr": "Avec FSR 4, sélectionnez l’espace colorimétrique d’entrée Non-Linear sRGB pour corriger le scintillement dans les cinématiques.",
         "ja": "FSR 4 使用時は、カットシーンのちらつきを直すため入力カラースペースに Non-Linear sRGB を選択してください。",
+        "pt-BR": "Ao usar o FSR 4, selecione o espaço de cores de entrada Non-Linear sRGB para corrigir a cintilação nas cenas.",
         "ru": "При использовании FSR 4 выберите входное цветовое пространство Non-Linear sRGB, чтобы устранить мерцание в роликах.",
         "zh-Hans": "使用 FSR 4 时，请选择 Non-Linear sRGB 输入色彩空间以修复过场动画中的闪烁。",
         "zh-Hant": "使用 FSR 4 時，請選擇 Non-Linear sRGB 輸入色彩空間以修正過場動畫中的閃爍。"
@@ -596,6 +635,7 @@
         "es": "DirectX 11 puede presentar parpadeo.",
         "fr": "DirectX 11 peut produire un scintillement.",
         "ja": "DirectX 11 ではちらつきが発生することがあります。",
+        "pt-BR": "O DirectX 11 pode apresentar cintilação.",
         "ru": "В DirectX 11 возможно мерцание.",
         "zh-Hans": "DirectX 11 可能出现闪烁。",
         "zh-Hant": "DirectX 11 可能出現閃爍。"
@@ -611,6 +651,7 @@
         "es": "Al usar FSR 4 con entrada XeSS, selecciona el espacio de color de entrada Non-Linear.",
         "fr": "Avec FSR 4 et l'entrée XeSS, sélectionnez l'espace colorimétrique d'entrée Non-Linear.",
         "ja": "FSR 4 を XeSS 入力で使用する場合は、入力カラースペースに Non-Linear を選択してください。",
+        "pt-BR": "Ao usar o FSR 4 com a entrada XeSS, selecione o espaço de cores de entrada Non-Linear.",
         "ru": "При использовании FSR 4 в режиме XeSS выберите нелинейное входное цветовое пространство.",
         "zh-Hans": "使用 FSR 4 和 XeSS 输入模式时，请选择 Non-Linear 输入色彩空间。",
         "zh-Hant": "使用 FSR 4 和 XeSS 輸入模式時，請選擇 Non-Linear 輸入色彩空間。"
@@ -626,6 +667,7 @@
         "es": "Si el preajuste de escalado cambia tras reiniciar, selecciónalo mediante «Upscale Ratio Override» en OptiScaler.",
         "fr": "Si le préréglage de mise à l’échelle change après un redémarrage, sélectionnez-le avec « Upscale Ratio Override » dans OptiScaler.",
         "ja": "再起動後にアップスケーリングのプリセットが変わる場合は、OptiScaler の「Upscale Ratio Override」で選択してください。",
+        "pt-BR": "Se a predefinição de escalonamento mudar após reiniciar, escolha-a com Upscale Ratio Override do OptiScaler.",
         "ru": "Если после перезапуска меняется пресет масштабирования, выберите его через Upscale Ratio Override в меню OptiScaler.",
         "zh-Hans": "如果重启后超分预设发生变化，请使用 OptiScaler 中的“Upscale Ratio Override”进行选择。",
         "zh-Hant": "如果重新啟動後超解析預設發生變化，請使用 OptiScaler 中的「Upscale Ratio Override」進行選擇。"
@@ -641,6 +683,7 @@
         "es": "Al usar FSR 4, selecciona el espacio de color de entrada Non-Linear sRGB para corregir el parpadeo de la pantalla.",
         "fr": "Avec FSR 4, sélectionnez l’espace colorimétrique d’entrée Non-Linear sRGB pour corriger le scintillement de l’écran.",
         "ja": "FSR 4 使用時は、画面のちらつきを直すため入力カラースペースに Non-Linear sRGB を選択してください。",
+        "pt-BR": "Ao usar o FSR 4, selecione o espaço de cores de entrada Non-Linear sRGB para corrigir a cintilação da tela.",
         "ru": "При использовании FSR 4 выберите входное цветовое пространство Non-Linear sRGB, чтобы устранить мерцание экрана.",
         "zh-Hans": "使用 FSR 4 时，请选择 Non-Linear sRGB 输入色彩空间以修复屏幕闪烁。",
         "zh-Hant": "使用 FSR 4 時，請選擇 Non-Linear sRGB 輸入色彩空間以修正螢幕閃爍。"
@@ -656,6 +699,7 @@
         "es": "Desactiva el desenfoque de movimiento. Con FSR 4, selecciona Entrada Non-Linear PQ para evitar el parpadeo.",
         "fr": "Désactivez le flou de mouvement. Avec FSR 4, sélectionnez l’entrée Non-Linear PQ pour éviter le scintillement.",
         "ja": "モーションブラーを無効にしてください。FSR 4 では、ちらつきを防ぐため Non-Linear PQ Input を選択してください。",
+        "pt-BR": "Desative o desfoque de movimento. Com o FSR 4, selecione Non-Linear PQ Input para evitar cintilação.",
         "ru": "Отключите размытие в движении. При FSR 4 выберите входное цветовое пространство Non-Linear PQ, чтобы избежать мерцания.",
         "zh-Hans": "请关闭动态模糊。使用 FSR 4 时，选择 Non-Linear PQ 输入以避免闪烁。",
         "zh-Hant": "請關閉動態模糊。使用 FSR 4 時，選擇 Non-Linear PQ 輸入以避免閃爍。"
@@ -671,6 +715,7 @@
         "es": "Usa el control deslizante «3D Resolution» del juego para cambiar el preajuste de escalado.",
         "fr": "Utilisez le curseur « 3D Resolution » du jeu pour changer le préréglage de mise à l’échelle.",
         "ja": "アップスケーリングのプリセットを変更するには、ゲーム内の「3D Resolution」スライダーを使用してください。",
+        "pt-BR": "Use o controle 3D Resolution do jogo para alterar a predefinição de escalonamento.",
         "ru": "Используйте внутриигровой ползунок «3D Resolution», чтобы изменить пресет масштабирования.",
         "zh-Hans": "请使用游戏内的“3D Resolution”滑块更改超分预设。",
         "zh-Hant": "請使用遊戲內的「3D Resolution」滑桿變更超解析預設。"
@@ -682,11 +727,12 @@
       "guidance_kind": "compatibility",
       "context": "compatibility",
       "translations": {
-        "ru": "Если в режиме DLSS возникают графические проблемы, включите в меню OptiScaler параметр Restore Compute Root Signature.",
         "de": "Wenn im DLSS-Modus Grafikprobleme auftreten, aktiviere in OptiScaler die Option „Restore Compute Root Signature“.",
         "es": "Si el modo DLSS presenta problemas gráficos, activa «Restore Compute Root Signature» en OptiScaler.",
         "fr": "Si le mode DLSS présente des problèmes graphiques, activez « Restore Compute Root Signature » dans OptiScaler.",
         "ja": "DLSS モードで表示の問題が出る場合は、OptiScaler で「Restore Compute Root Signature」を有効にしてください。",
+        "pt-BR": "Se a entrada DLSS apresentar problemas gráficos, ative Restore Compute Root Signature no OptiScaler.",
+        "ru": "Если в режиме DLSS возникают графические проблемы, включите в меню OptiScaler параметр Restore Compute Root Signature.",
         "zh-Hans": "如果 DLSS 模式出现图形问题，请在 OptiScaler 中启用“Restore Compute Root Signature”。",
         "zh-Hant": "如果 DLSS 模式出現圖形問題，請在 OptiScaler 中啟用「Restore Compute Root Signature」。"
       }
@@ -701,6 +747,7 @@
         "es": "Desactiva el desenfoque de movimiento en los ajustes del juego para reducir el ghosting alrededor de la cabeza de Isaac.",
         "fr": "Désactivez le flou de mouvement dans les paramètres du jeu pour réduire le ghosting autour de la tête d’Isaac.",
         "ja": "Isaac の頭部周辺のゴーストを減らすため、ゲーム設定でモーションブラーを無効にしてください。",
+        "pt-BR": "Desative o desfoque de movimento nas configurações do jogo para reduzir o efeito fantasma ao redor da cabeça de Isaac.",
         "ru": "Отключите размытие в движении в настройках игры, чтобы уменьшить шлейфы вокруг головы Айзека.",
         "zh-Hans": "请在游戏设置中关闭动态模糊，以减少 Isaac 头部周围的拖影。",
         "zh-Hant": "請在遊戲設定中關閉動態模糊，以減少 Isaac 頭部周圍的殘影。"
@@ -716,6 +763,7 @@
         "es": "Al usar FSR 4, selecciona el espacio de color de entrada Non-Linear sRGB para corregir gráficos parpadeantes.",
         "fr": "Avec FSR 4, sélectionnez l’espace colorimétrique d’entrée Non-Linear sRGB pour corriger les graphismes clignotants.",
         "ja": "FSR 4 使用時は、ちらつく表示を直すため入力カラースペースに Non-Linear sRGB を選択してください。",
+        "pt-BR": "Ao usar o FSR 4, selecione o espaço de cores de entrada Non-Linear sRGB para corrigir os gráficos que piscam.",
         "ru": "При использовании FSR 4 выберите входное цветовое пространство Non-Linear sRGB, чтобы устранить мерцание графики.",
         "zh-Hans": "使用 FSR 4 时，请选择 Non-Linear sRGB 输入色彩空间以修复图形闪烁。",
         "zh-Hant": "使用 FSR 4 時，請選擇 Non-Linear sRGB 輸入色彩空間以修正圖形閃爍。"
@@ -731,6 +779,7 @@
         "es": "Si la generación de fotogramas deja de funcionar, vuelve a activar DLSS-FG en las opciones del juego.",
         "fr": "Si la génération d’images cesse de fonctionner, réactivez DLSS-FG dans les options du jeu.",
         "ja": "フレーム生成が動作しなくなった場合は、ゲームオプションで DLSS-FG を再度有効にしてください。",
+        "pt-BR": "Se a geração de quadros parar de funcionar, reative o DLSS-FG nas configurações do jogo.",
         "ru": "Если генерация кадров перестала работать, снова включите DLSS-FG в настройках игры.",
         "zh-Hans": "如果帧生成停止工作，请在游戏选项中重新启用 DLSS-FG。",
         "zh-Hant": "如果畫格生成停止運作，請在遊戲選項中重新啟用 DLSS-FG。"
@@ -746,6 +795,7 @@
         "es": "Usa la entrada XeSS para evitar el parpadeo.",
         "fr": "Utilisez l’entrée XeSS pour éviter le scintillement.",
         "ja": "ちらつきを避けるため、XeSS 入力を使用してください。",
+        "pt-BR": "Use a entrada XeSS para evitar cintilação.",
         "ru": "Используйте режим XeSS, чтобы избежать мерцания.",
         "zh-Hans": "请使用 XeSS 输入模式以避免闪烁。",
         "zh-Hant": "請使用 XeSS 輸入模式以避免閃爍。"
@@ -761,6 +811,7 @@
         "es": "Al usar FSR 4, selecciona el espacio de color de entrada Non-Linear sRGB para corregir gráficos parpadeantes.",
         "fr": "Avec FSR 4, sélectionnez l’espace colorimétrique d’entrée Non-Linear sRGB pour corriger les graphismes clignotants.",
         "ja": "FSR 4 使用時は、ちらつく表示を直すため入力カラースペースに Non-Linear sRGB を選択してください。",
+        "pt-BR": "Ao usar o FSR 4, selecione o espaço de cores de entrada Non-Linear sRGB para corrigir os gráficos que piscam.",
         "ru": "При использовании FSR 4 выберите входное цветовое пространство Non-Linear sRGB, чтобы устранить мерцание графики.",
         "zh-Hans": "使用 FSR 4 时，请选择 Non-Linear sRGB 输入色彩空间以修复图形闪烁。",
         "zh-Hant": "使用 FSR 4 時，請選擇 Non-Linear sRGB 輸入色彩空間以修正圖形閃爍。"
@@ -776,6 +827,7 @@
         "es": "Ejecuta el juego en modo DirectX 12.",
         "fr": "Lancez le jeu en mode DirectX 12.",
         "ja": "ゲームを DirectX 12 モードで起動してください。",
+        "pt-BR": "Execute o jogo no modo DirectX 12.",
         "ru": "Запускайте игру в режиме DirectX 12.",
         "zh-Hans": "请以 DirectX 12 模式运行游戏。",
         "zh-Hant": "請以 DirectX 12 模式執行遊戲。"
@@ -791,6 +843,7 @@
         "es": "Ejecuta el juego en modo DirectX 12.",
         "fr": "Lancez le jeu en mode DirectX 12.",
         "ja": "ゲームを DirectX 12 モードで起動してください。",
+        "pt-BR": "Execute o jogo no modo DirectX 12.",
         "ru": "Запускайте игру в режиме DirectX 12.",
         "zh-Hans": "请以 DirectX 12 模式运行游戏。",
         "zh-Hant": "請以 DirectX 12 模式執行遊戲。"
@@ -806,6 +859,7 @@
         "es": "Ejecuta el juego en modo DirectX 12.",
         "fr": "Lancez le jeu en mode DirectX 12.",
         "ja": "ゲームを DirectX 12 モードで起動してください。",
+        "pt-BR": "Execute o jogo no modo DirectX 12.",
         "ru": "Запускайте игру в режиме DirectX 12.",
         "zh-Hans": "请以 DirectX 12 模式运行游戏。",
         "zh-Hant": "請以 DirectX 12 模式執行遊戲。"
@@ -821,6 +875,7 @@
         "es": "Ejecuta el juego en modo DirectX 12.",
         "fr": "Lancez le jeu en mode DirectX 12.",
         "ja": "ゲームを DirectX 12 モードで起動してください。",
+        "pt-BR": "Execute o jogo no modo DirectX 12.",
         "ru": "Запускайте игру в режиме DirectX 12.",
         "zh-Hans": "请以 DirectX 12 模式运行游戏。",
         "zh-Hant": "請以 DirectX 12 模式執行遊戲。"
@@ -836,6 +891,7 @@
         "es": "Al usar FSR 4 con entrada DLSS, selecciona el espacio de color de entrada Non-Linear.",
         "fr": "Avec FSR 4 et l'entrée DLSS, sélectionnez l'espace colorimétrique d'entrée Non-Linear.",
         "ja": "FSR 4 を DLSS 入力で使用する場合は、入力カラースペースに Non-Linear を選択してください。",
+        "pt-BR": "Ao usar o FSR 4 com a entrada DLSS, selecione o espaço de cores de entrada Non-Linear.",
         "ru": "При использовании FSR 4 в режиме DLSS выберите входное цветовое пространство Non-Linear.",
         "zh-Hans": "使用 FSR 4 和 DLSS 输入模式时，请选择 Non-Linear 输入色彩空间。",
         "zh-Hant": "使用 FSR 4 和 DLSS 輸入模式時，請選擇 Non-Linear 輸入色彩空間。"
@@ -851,6 +907,7 @@
         "es": "Al usar FSR 4, selecciona el espacio de color de entrada Non-Linear sRGB para corregir el parpadeo de la pantalla.",
         "fr": "Avec FSR 4, sélectionnez l’espace colorimétrique d’entrée Non-Linear sRGB pour corriger le scintillement de l’écran.",
         "ja": "FSR 4 使用時は、画面のちらつきを直すため入力カラースペースに Non-Linear sRGB を選択してください。",
+        "pt-BR": "Ao usar o FSR 4, selecione o espaço de cores de entrada Non-Linear sRGB para corrigir a cintilação da tela.",
         "ru": "При использовании FSR 4 выберите входное цветовое пространство Non-Linear sRGB, чтобы устранить мерцание экрана.",
         "zh-Hans": "使用 FSR 4 时，请选择 Non-Linear sRGB 输入色彩空间以修复屏幕闪烁。",
         "zh-Hant": "使用 FSR 4 時，請選擇 Non-Linear sRGB 輸入色彩空間以修正螢幕閃爍。"
@@ -866,6 +923,7 @@
         "es": "Selecciona DLSS en el ajuste Dynamic Resolution. Usa Scale Override de OptiScaler para elegir otro preajuste de escalado.",
         "fr": "Sélectionnez DLSS dans le réglage Dynamic Resolution. Utilisez Scale Override d’OptiScaler pour choisir un autre préréglage de mise à l’échelle.",
         "ja": "Dynamic Resolution 設定で DLSS を選択してください。別のアップスケーリングのプリセットを選ぶには、OptiScaler の Scale Override を使用します。",
+        "pt-BR": "Selecione DLSS na configuração Dynamic Resolution. Use a substituição de escala do OptiScaler para escolher outra predefinição de escalonamento.",
         "ru": "Выберите DLSS в настройке Dynamic Resolution. Используйте Scale Override в OptiScaler, чтобы выбрать другой пресет масштабирования.",
         "zh-Hans": "请在 Dynamic Resolution 设置中选择 DLSS。使用 OptiScaler 的 Scale Override 可选择其他超分预设。",
         "zh-Hant": "請在 Dynamic Resolution 設定中選擇 DLSS。使用 OptiScaler 的 Scale Override 可選擇其他超解析預設。"
@@ -881,6 +939,7 @@
         "es": "Si la calidad de imagen es baja con FSR 4, prueba a seleccionar el espacio de color de entrada Non-Linear PQ.",
         "fr": "Si la qualité d'image est mauvaise avec FSR 4, essayez de sélectionner l'espace colorimétrique d'entrée Non-Linear PQ.",
         "ja": "FSR 4 で画質が悪い場合は、入力カラースペースに Non-Linear PQ を選択してみてください。",
+        "pt-BR": "Se a qualidade da imagem estiver ruim com o FSR 4, tente selecionar o espaço de cores de entrada Non-Linear PQ.",
         "ru": "Если качество изображения с FSR 4 низкое, попробуйте выбрать входное цветовое пространство Non-Linear PQ.",
         "zh-Hans": "如果使用 FSR 4 时图像质量不佳，请尝试选择 Non-Linear PQ 输入色彩空间。",
         "zh-Hant": "如果使用 FSR 4 時影像品質不佳，請嘗試選擇 Non-Linear PQ 輸入色彩空間。"
@@ -896,6 +955,7 @@
         "es": "Al usar FSR 4, selecciona el espacio de color de entrada Non-Linear sRGB para corregir gráficos parpadeantes.",
         "fr": "Avec FSR 4, sélectionnez l’espace colorimétrique d’entrée Non-Linear sRGB pour corriger les graphismes clignotants.",
         "ja": "FSR 4 使用時は、ちらつく表示を直すため入力カラースペースに Non-Linear sRGB を選択してください。",
+        "pt-BR": "Ao usar o FSR 4, selecione o espaço de cores de entrada Non-Linear sRGB para corrigir os gráficos que piscam.",
         "ru": "При использовании FSR 4 выберите входное цветовое пространство Non-Linear sRGB, чтобы устранить мерцание графики.",
         "zh-Hans": "使用 FSR 4 时，请选择 Non-Linear sRGB 输入色彩空间以修复图形闪烁。",
         "zh-Hant": "使用 FSR 4 時，請選擇 Non-Linear sRGB 輸入色彩空間以修正圖形閃爍。"
@@ -911,6 +971,7 @@
         "es": "La entrada de generación de fotogramas FSR 3.1 no es compatible. Usa DLSSG mediante la entrada Streamline o la generación de fotogramas nativa XeFG/FSR.",
         "fr": "L’entrée de génération d’images FSR 3.1 n’est pas prise en charge. Utilisez DLSSG via l’entrée Streamline ou la génération d’images native XeFG/FSR.",
         "ja": "FSR 3.1 のフレーム生成入力はサポートされていません。Streamline 入力の DLSSG、またはネイティブの XeFG/FSR フレーム生成を使用してください。",
+        "pt-BR": "A entrada de geração de quadros do FSR 3.1 não é compatível. Use DLSSG por meio da entrada Streamline ou a geração de quadros nativa XeFG/FSR.",
         "ru": "Генерация кадров FSR 3.1 не поддерживается. Используйте DLSSG через режим Streamline или нативную генерацию кадров XeFG/FSR.",
         "zh-Hans": "不支持 FSR 3.1 帧生成输入模式。请通过 Streamline 输入模式使用 DLSSG，或使用原生 XeFG/FSR 帧生成。",
         "zh-Hant": "不支援 FSR 3.1 畫格生成輸入模式。請透過 Streamline 輸入模式使用 DLSSG，或使用原生 XeFG/FSR 畫格生成。"
@@ -926,6 +987,7 @@
         "es": "Cambia el ajuste de FSR dentro del juego para que OptiScaler pueda detectar la entrada FSR 3.1. Si usas entrada DLSS, reinicia el juego tras seleccionar DLSS.",
         "fr": "Modifiez le réglage FSR dans le jeu afin qu’OptiScaler puisse détecter l’entrée FSR 3.1. Avec l’entrée DLSS, redémarrez le jeu après avoir sélectionné DLSS.",
         "ja": "OptiScaler が FSR 3.1 入力を検出できるように、ゲーム内の FSR 設定を変更してください。DLSS 入力を使用する場合は、DLSS を選択した後にゲームを再起動してください。",
+        "pt-BR": "Altere a configuração FSR do jogo para que o OptiScaler detecte a entrada FSR 3.1. Se usar a entrada DLSS, reinicie o jogo após selecionar DLSS.",
         "ru": "Измените внутриигровую настройку FSR, чтобы OptiScaler перехватил режим FSR 3.1. При выборе режима DLSS перезапустите игру после изменения настройки.",
         "zh-Hans": "请更改游戏内的 FSR 设置，以便 OptiScaler 检测 FSR 3.1 输入模式。使用 DLSS 输入模式时，请在选择 DLSS 后重启游戏。",
         "zh-Hant": "請變更遊戲內的 FSR 設定，以便 OptiScaler 偵測 FSR 3.1 輸入模式。使用 DLSS 輸入模式時，請在選擇 DLSS 後重新啟動遊戲。"
@@ -941,6 +1003,7 @@
         "es": "Establece el antialiasing en TAA y la calidad en 3 en los ajustes del juego.",
         "fr": "Réglez l’anticrénelage sur TAA et la qualité sur 3 dans les paramètres du jeu.",
         "ja": "ゲーム設定でアンチエイリアスを TAA、品質を 3 に設定してください。",
+        "pt-BR": "Defina o antisserrilhamento como TAA e a qualidade como 3 nas configurações do jogo.",
         "ru": "Установите сглаживание TAA и качество 3 в настройках игры.",
         "zh-Hans": "请在游戏设置中将抗锯齿设为 TAA，并将质量设为 3。",
         "zh-Hant": "請在遊戲設定中將反鋸齒設為 TAA，並將品質設為 3。"
@@ -956,6 +1019,7 @@
         "es": "Con FSR 4, selecciona Entrada Non-Linear sRGB si la pantalla parpadea.",
         "fr": "Avec FSR 4, sélectionnez l’entrée Non-Linear sRGB si l’écran scintille.",
         "ja": "FSR 4 で画面がちらつく場合は、Non-Linear sRGB Input を選択してください。",
+        "pt-BR": "Com o FSR 4, selecione Non-Linear sRGB Input se a tela apresentar cintilação.",
         "ru": "Если при FSR 4 экран мерцает, выберите входное цветовое пространство Non-Linear sRGB.",
         "zh-Hans": "使用 FSR 4 时，如果屏幕闪烁，请选择 Non-Linear sRGB 输入。",
         "zh-Hant": "使用 FSR 4 時，如果螢幕閃爍，請選擇 Non-Linear sRGB 輸入。"
@@ -971,6 +1035,7 @@
         "es": "DLSS está activado de forma predeterminada y no puede desactivarse en los ajustes del juego.",
         "fr": "DLSS est activé par défaut et ne peut pas être désactivé dans les paramètres du jeu.",
         "ja": "DLSS は初期設定で有効になっており、ゲーム設定では無効にできません。",
+        "pt-BR": "O DLSS é ativado por padrão e não pode ser desativado nas configurações do jogo.",
         "ru": "DLSS включён по умолчанию и не может быть отключён в настройках игры.",
         "zh-Hans": "DLSS 默认已启用，且无法在游戏设置中关闭。",
         "zh-Hant": "DLSS 預設已啟用，且無法在遊戲設定中關閉。"
@@ -986,6 +1051,7 @@
         "es": "Para mejorar la calidad de imagen con FSR 4, selecciona el espacio de color de entrada Non-Linear sRGB.",
         "fr": "Pour une meilleure qualité d'image avec FSR 4, sélectionnez l'espace colorimétrique d'entrée Non-Linear sRGB.",
         "ja": "FSR 4 で画質を改善するには、入力カラースペースに Non-Linear sRGB を選択してください。",
+        "pt-BR": "Para o FSR 4, selecione o espaço de cores de entrada Non-Linear sRGB para obter melhor qualidade de imagem.",
         "ru": "Для лучшего качества изображения с FSR 4 выберите входное цветовое пространство Non-Linear sRGB.",
         "zh-Hans": "使用 FSR 4 时，请选择 Non-Linear sRGB 输入色彩空间以获得更好的图像质量。",
         "zh-Hant": "使用 FSR 4 時，請選擇 Non-Linear sRGB 輸入色彩空間以獲得更好的影像品質。"
@@ -1001,6 +1067,7 @@
         "es": "Usa el modo DX12 del juego.",
         "fr": "Utilisez le mode DX12 du jeu.",
         "ja": "ゲームの DX12 モードを使用してください。",
+        "pt-BR": "Use o modo DX12 do jogo.",
         "ru": "Используйте режим DX12 в игре.",
         "zh-Hans": "请使用游戏的 DX12 模式。",
         "zh-Hant": "請使用遊戲的 DX12 模式。"
@@ -1016,6 +1083,7 @@
         "es": "Usa la entrada FSR. Si FSR 4 parpadea con el preajuste Balanced, selecciona el espacio de color de entrada Non-Linear sRGB.",
         "fr": "Utilisez l'entrée FSR. Si FSR 4 scintille avec le préréglage Balanced, sélectionnez l'espace colorimétrique d'entrée Non-Linear sRGB.",
         "ja": "FSR 入力を使用してください。FSR 4 で Balanced プリセット時にちらつく場合は、入力カラースペースに Non-Linear sRGB を選択してください。",
+        "pt-BR": "Use a entrada FSR. Se o FSR 4 apresentar cintilação na predefinição Balanced, selecione o espaço de cores de entrada Non-Linear sRGB.",
         "ru": "Используйте режим FSR. Если FSR 4 мерцает с пресетом Balanced, выберите входное цветовое пространство Non-Linear sRGB.",
         "zh-Hans": "请使用 FSR 输入模式。若 FSR 4 在 Balanced 预设下闪烁，请选择 Non-Linear sRGB 输入色彩空间。",
         "zh-Hant": "請使用 FSR 輸入模式。若 FSR 4 在 Balanced 預設下閃爍，請選擇 Non-Linear sRGB 輸入色彩空間。"
@@ -1031,6 +1099,7 @@
         "es": "Desactiva la opción «City Glow Effect» en los ajustes del juego.",
         "fr": "Désactivez l’option « City Glow Effect » dans les paramètres du jeu.",
         "ja": "ゲーム設定で「City Glow Effect」を無効にしてください。",
+        "pt-BR": "Desative City Glow Effect nas configurações do jogo.",
         "ru": "Отключите параметр «Эффект свечения города» в настройках игры.",
         "zh-Hans": "请在游戏设置中关闭“City Glow Effect”选项。",
         "zh-Hant": "請在遊戲設定中關閉「City Glow Effect」選項。"
@@ -1046,6 +1115,7 @@
         "es": "Desactiva la opción «City Glow Effect» en los ajustes del juego.",
         "fr": "Désactivez l’option « City Glow Effect » dans les paramètres du jeu.",
         "ja": "ゲーム設定で「City Glow Effect」を無効にしてください。",
+        "pt-BR": "Desative City Glow Effect nas configurações do jogo.",
         "ru": "Отключите параметр «Эффект свечения города» в настройках игры.",
         "zh-Hans": "请在游戏设置中关闭“City Glow Effect”选项。",
         "zh-Hant": "請在遊戲設定中關閉「City Glow Effect」選項。"
@@ -1061,6 +1131,7 @@
         "es": "Desactiva la opción «City Glow Effect» en los ajustes del juego.",
         "fr": "Désactivez l’option « City Glow Effect » dans les paramètres du jeu.",
         "ja": "ゲーム設定で「City Glow Effect」を無効にしてください。",
+        "pt-BR": "Desative City Glow Effect nas configurações do jogo.",
         "ru": "Отключите параметр «Эффект свечения города» в настройках игры.",
         "zh-Hans": "请在游戏设置中关闭“City Glow Effect”选项。",
         "zh-Hant": "請在遊戲設定中關閉「City Glow Effect」選項。"
@@ -1076,6 +1147,7 @@
         "es": "Después de seleccionar la entrada DLSS, reinicia el juego para que OptiScaler pueda detectarla. La entrada FSR 3 no requiere reiniciar.",
         "fr": "Après avoir sélectionné l'entrée DLSS, redémarrez le jeu afin qu'OptiScaler puisse la détecter. L'entrée FSR 3 ne nécessite pas de redémarrage.",
         "ja": "DLSS 入力を選択した後、OptiScaler が検出できるようゲームを再起動してください。FSR 3 入力では再起動は不要です。",
+        "pt-BR": "Após selecionar a entrada DLSS, reinicie o jogo para que o OptiScaler possa detectar essa entrada. A entrada FSR 3 não exige reinicialização.",
         "ru": "После выбора режима DLSS перезапустите игру, чтобы OptiScaler смог обнаружить этот режим. Для режима FSR 3 перезапуск не требуется.",
         "zh-Hans": "选择 DLSS 输入模式后，请重启游戏，以便 OptiScaler 检测到它。FSR 3 输入模式无需重启。",
         "zh-Hant": "選擇 DLSS 輸入模式後，請重啟遊戲，以便 OptiScaler 偵測到它。FSR 3 輸入模式無需重啟。"
@@ -1091,6 +1163,7 @@
         "es": "Si la imagen se ve borrosa, prueba a desactivar TAA.",
         "fr": "Si l’image paraît floue, essayez de désactiver le TAA.",
         "ja": "映像がぼやけて見える場合は、TAA を無効にしてみてください。",
+        "pt-BR": "Se a imagem parecer desfocada, tente desativar o TAA.",
         "ru": "Если изображение выглядит размытым, попробуйте отключить TAA.",
         "zh-Hans": "如果图像看起来模糊，请尝试关闭 TAA。",
         "zh-Hant": "如果影像看起來模糊，請嘗試關閉 TAA。"
@@ -1106,6 +1179,7 @@
         "es": "La entrada DLSS está disponible en el menú de OptiScaler aunque no se muestre una opción DLSS en los ajustes del juego.",
         "fr": "L’entrée DLSS est disponible dans le menu d’OptiScaler, même si aucune option DLSS n’est affichée dans les paramètres du jeu.",
         "ja": "ゲーム設定に DLSS オプションが表示されなくても、OptiScaler メニューでは DLSS 入力を使用できます。",
+        "pt-BR": "A entrada DLSS está disponível no menu do OptiScaler mesmo que nenhuma opção DLSS apareça nas configurações do jogo.",
         "ru": "Режим DLSS доступен в меню OptiScaler, хотя в настройках игры нет опции DLSS.",
         "zh-Hans": "即使游戏设置中未显示 DLSS 选项，OptiScaler 菜单中仍可使用 DLSS 输入模式。",
         "zh-Hant": "即使遊戲設定中未顯示 DLSS 選項，OptiScaler 選單中仍可使用 DLSS 輸入模式。"
@@ -1121,6 +1195,7 @@
         "es": "Usa el modo DX12 del juego.",
         "fr": "Utilisez le mode DX12 du jeu.",
         "ja": "ゲームの DX12 モードを使用してください。",
+        "pt-BR": "Use o modo DX12 do jogo.",
         "ru": "Используйте режим DX12 в игре.",
         "zh-Hans": "请使用游戏的 DX12 模式。",
         "zh-Hant": "請使用遊戲的 DX12 模式。"
@@ -1136,6 +1211,7 @@
         "es": "DLSS está activado de forma predeterminada.",
         "fr": "DLSS est activé par défaut.",
         "ja": "DLSS は初期設定で有効になっています。",
+        "pt-BR": "O DLSS é ativado por padrão.",
         "ru": "DLSS включён по умолчанию.",
         "zh-Hans": "DLSS 默认已启用。",
         "zh-Hant": "DLSS 預設已啟用。"
@@ -1151,6 +1227,7 @@
         "es": "Mantén DLSS en Calidad; cambiarlo puede bloquear el juego. Cambia en su lugar la proporción de escalado en OptiScaler.",
         "fr": "Laissez DLSS sur Qualité ; le modifier peut faire planter le jeu. Modifiez plutôt le ratio de mise à l’échelle dans OptiScaler.",
         "ja": "DLSS は Quality のままにしてください。変更するとゲームがクラッシュすることがあるため、代わりに OptiScaler でスケール比を変更してください。",
+        "pt-BR": "Mantenha o DLSS em Quality; mudar essa configuração pode fazer o jogo travar. Em vez disso, altere a proporção de escala no OptiScaler.",
         "ru": "Оставьте DLSS в режиме Quality: его изменение может привести к сбою игры. Вместо этого измените коэффициент масштабирования в OptiScaler.",
         "zh-Hans": "请将 DLSS 保持为 Quality；更改可能导致游戏崩溃。请改为在 OptiScaler 中调整超分比例。",
         "zh-Hant": "請將 DLSS 保持為 Quality；變更可能導致遊戲當機。請改為在 OptiScaler 中調整超解析比例。"
@@ -1166,6 +1243,7 @@
         "es": "Después de cargar un nivel nuevo, vuelve a seleccionar el reescalador deseado si se restableció.",
         "fr": "Après le chargement d’un nouveau niveau, sélectionnez à nouveau la mise à l’échelle souhaitée si elle a été réinitialisée.",
         "ja": "新しいレベルを読み込んだ後、アップスケーラーがリセットされていたら、希望するものを再選択してください。",
+        "pt-BR": "Após carregar uma nova fase, selecione novamente o escalonador desejado caso ele tenha sido redefinido.",
         "ru": "После загрузки нового уровня повторно выберите нужный апскейлер, если он был сброшен.",
         "zh-Hans": "加载新关卡后，如果超分选项被重置，请重新选择所需的超分器。",
         "zh-Hant": "載入新關卡後，如果超解析選項被重設，請重新選擇所需的超解析器。"
@@ -1181,6 +1259,7 @@
         "es": "FSR 3 Quality puede causar luces parpadeantes en el agua. Usa Balanced o Performance, o selecciona DLSS.",
         "fr": "FSR 3 Quality peut provoquer des lumières clignotantes sur l’eau. Utilisez Balanced ou Performance, ou sélectionnez DLSS.",
         "ja": "FSR 3 Quality では水面の光がちらつくことがあります。Balanced か Performance を使うか、DLSS を選択してください。",
+        "pt-BR": "O FSR 3 Quality pode causar luzes piscando na água. Use Balanced ou Performance, ou selecione DLSS.",
         "ru": "FSR 3 Quality может вызывать мерцание света на воде. Используйте Balanced или Performance либо выберите DLSS.",
         "zh-Hans": "FSR 3 Quality 可能导致水面光线闪烁。请使用 Balanced 或 Performance，或选择 DLSS。",
         "zh-Hant": "FSR 3 Quality 可能導致水面光線閃爍。請使用 Balanced 或 Performance，或選擇 DLSS。"
@@ -1196,6 +1275,7 @@
         "es": "Usa la entrada DLSS; las entradas FSR 2.1 y XeSS no están disponibles.",
         "fr": "Utilisez l’entrée DLSS ; les entrées FSR 2.1 et XeSS ne sont pas disponibles.",
         "ja": "DLSS 入力を使用してください。FSR 2.1 と XeSS の入力は利用できません。",
+        "pt-BR": "Use a entrada DLSS; as entradas FSR 2.1 e XeSS não estão disponíveis.",
         "ru": "Используйте режим DLSS; режимы FSR 2.1 и XeSS недоступны.",
         "zh-Hans": "请使用 DLSS 输入模式；FSR 2.1 和 XeSS 输入模式不可用。",
         "zh-Hant": "請使用 DLSS 輸入模式；FSR 2.1 和 XeSS 輸入模式無法使用。"
@@ -1211,6 +1291,7 @@
         "es": "Al usar FSR 4, selecciona el espacio de color de entrada Non-Linear sRGB para corregir el parpadeo.",
         "fr": "Avec FSR 4, sélectionnez l'espace colorimétrique d'entrée Non-Linear sRGB pour corriger le scintillement.",
         "ja": "FSR 4 使用時は、ちらつきを直すため入力カラースペースに Non-Linear sRGB を選択してください。",
+        "pt-BR": "Ao usar o FSR 4, selecione o espaço de cores de entrada Non-Linear sRGB para corrigir a cintilação.",
         "ru": "При использовании FSR 4 выберите входное цветовое пространство Non-Linear sRGB, чтобы устранить мерцание.",
         "zh-Hans": "使用 FSR 4 时，请选择 Non-Linear sRGB 输入色彩空间以修复闪烁。",
         "zh-Hant": "使用 FSR 4 時，請選擇 Non-Linear sRGB 輸入色彩空間以修正閃爍。"
@@ -1226,6 +1307,7 @@
         "es": "Usa el control deslizante Temporal Upscaling dentro del juego para elegir el preajuste de escalado.",
         "fr": "Utilisez le curseur Temporal Upscaling dans le jeu pour choisir le préréglage de mise à l’échelle.",
         "ja": "ゲーム内の Temporal Upscaling スライダーでアップスケーリングのプリセットを選択してください。",
+        "pt-BR": "Use o controle Temporal Upscaling do jogo para escolher a predefinição de escalonamento.",
         "ru": "Используйте внутриигровой ползунок Temporal Upscaling, чтобы выбрать пресет масштабирования.",
         "zh-Hans": "请使用游戏内的 Temporal Upscaling 滑块选择超分预设。",
         "zh-Hant": "請使用遊戲內的 Temporal Upscaling 滑桿選擇超解析預設。"
@@ -1237,11 +1319,12 @@
       "guidance_kind": "game_setting",
       "context": "game_setting",
       "translations": {
-        "ru": "Чтобы устранить графические искажения, в меню OptiScaler включите Restore Compute Root Signature (путь: Advanced Settings > Root Signatures).",
         "de": "Aktiviere in OptiScaler „Restore Compute Root Signature“ unter „Advanced Settings > Root Signatures“, um Grafikfehler zu beheben.",
         "es": "Para corregir errores gráficos, activa «Restore Compute Root Signature» en «Advanced Settings > Root Signatures» en OptiScaler.",
         "fr": "Pour corriger les artefacts graphiques, activez « Restore Compute Root Signature » dans « Advanced Settings > Root Signatures » dans OptiScaler.",
         "ja": "表示の乱れを直すには、OptiScaler の「Advanced Settings > Root Signatures」で「Restore Compute Root Signature」を有効にしてください。",
+        "pt-BR": "Para corrigir gráficos corrompidos, ative Restore Compute Root Signature em Advanced Settings > Root Signatures.",
+        "ru": "Чтобы устранить графические искажения, в меню OptiScaler включите Restore Compute Root Signature (путь: Advanced Settings > Root Signatures).",
         "zh-Hans": "若要修复图形损坏，请在 OptiScaler 的“Advanced Settings > Root Signatures”中启用“Restore Compute Root Signature”。",
         "zh-Hant": "若要修正圖形損壞，請在 OptiScaler 的「Advanced Settings > Root Signatures」中啟用「Restore Compute Root Signature」。"
       }
@@ -1256,6 +1339,7 @@
         "es": "Usa Model 5 para reducir el parpadeo en los árboles.",
         "fr": "Utilisez Model 5 pour réduire le scintillement des arbres.",
         "ja": "木のちらつきを抑えるには Model 5 を使用してください。",
+        "pt-BR": "Use Model 5 para reduzir a cintilação nas árvores.",
         "ru": "Используйте Model 5, чтобы уменьшить мерцание деревьев.",
         "zh-Hans": "请使用 Model 5 减少树木闪烁。",
         "zh-Hant": "請使用 Model 5 減少樹木閃爍。"
@@ -1271,6 +1355,7 @@
         "es": "Desactiva XeFG en los ajustes del juego para evitar un error de inicio.",
         "fr": "Désactivez XeFG dans les paramètres du jeu pour éviter un échec au démarrage.",
         "ja": "起動エラーを避けるため、ゲーム設定で XeFG を無効にしてください。",
+        "pt-BR": "Desative o XeFG nas configurações do jogo para evitar uma falha na inicialização.",
         "ru": "Отключите XeFG в настройках игры, чтобы избежать сбоя при запуске.",
         "zh-Hans": "请在游戏设置中禁用 XeFG，以避免启动失败。",
         "zh-Hant": "請在遊戲設定中停用 XeFG，以避免啟動失敗。"
@@ -1286,6 +1371,7 @@
         "es": "Activa la corrección de bloqueo para la entrada FSR 3.1 antes de usar la entrada FSR.",
         "fr": "Activez le correctif de plantage pour l’entrée FSR 3.1 avant d’utiliser l’entrée FSR.",
         "ja": "FSR 入力を使用する前に、FSR 3.1 入力のクラッシュ修正を有効にしてください。",
+        "pt-BR": "Ative a correção de falha da entrada FSR 3.1 antes de usar a entrada FSR.",
         "ru": "Перед использованием режима FSR включите исправление сбоев FSR 3.1 в OptiScaler.",
         "zh-Hans": "使用 FSR 输入模式前，请启用 FSR 3.1 输入模式崩溃修复。",
         "zh-Hant": "使用 FSR 輸入模式前，請啟用 FSR 3.1 輸入模式當機修正。"
@@ -1301,6 +1387,7 @@
         "es": "Selecciona XeSS en los ajustes del juego; la entrada DLSS no está disponible.",
         "fr": "Sélectionnez XeSS dans les paramètres du jeu ; l’entrée DLSS n’est pas disponible.",
         "ja": "ゲーム設定で XeSS を選択してください。DLSS 入力は利用できません。",
+        "pt-BR": "Selecione XeSS nas configurações do jogo; a entrada DLSS não está disponível.",
         "ru": "Выберите XeSS в настройках игры; режим DLSS недоступен.",
         "zh-Hans": "请在游戏设置中选择 XeSS；DLSS 输入模式不可用。",
         "zh-Hant": "請在遊戲設定中選擇 XeSS；DLSS 輸入模式無法使用。"
@@ -1316,6 +1403,7 @@
         "es": "Usa la entrada DLSS; la entrada FSR 3 no está disponible.",
         "fr": "Utilisez l’entrée DLSS ; l’entrée FSR 3 n’est pas disponible.",
         "ja": "DLSS 入力を使用してください。FSR 3 入力は利用できません。",
+        "pt-BR": "Use a entrada DLSS; a entrada FSR 3 não está disponível.",
         "ru": "Используйте режим DLSS; режим FSR 3 недоступен.",
         "zh-Hans": "请使用 DLSS 输入模式；FSR 3 输入模式不可用。",
         "zh-Hant": "請使用 DLSS 輸入模式；FSR 3 輸入模式無法使用。"
@@ -1331,6 +1419,7 @@
         "es": "La generación de fotogramas FSR puede bloquear el juego al iniciarse. Usa XeFG en su lugar.",
         "fr": "La génération d’images FSR peut faire planter le jeu au démarrage. Utilisez plutôt XeFG.",
         "ja": "FSR フレーム生成は起動時にゲームをクラッシュさせることがあります。代わりに XeFG を使用してください。",
+        "pt-BR": "A geração de quadros do FSR pode fazer o jogo travar na inicialização. Use XeFG em seu lugar.",
         "ru": "Генерация кадров FSR может привести к сбою игры при запуске. Используйте вместо неё XeFG.",
         "zh-Hans": "FSR 帧生成可能导致游戏启动时崩溃。请改用 XeFG。",
         "zh-Hant": "FSR 畫格生成可能導致遊戲啟動時當機。請改用 XeFG。"
@@ -1346,6 +1435,7 @@
         "es": "No uses la generación de fotogramas FSR. Con FSR 4 mediante entrada DLSS, selecciona el espacio de color de entrada Non-Linear.",
         "fr": "N’utilisez pas la génération d’images FSR. Avec FSR 4 via l’entrée DLSS, sélectionnez l’espace colorimétrique d’entrée Non-Linear.",
         "ja": "FSR フレーム生成を使用しないでください。DLSS 入力経由で FSR 4 を使用する場合は、入力カラースペースに Non-Linear を選択してください。",
+        "pt-BR": "Não use a geração de quadros do FSR. Com o FSR 4 por meio da entrada DLSS, selecione o espaço de cores de entrada Non-Linear.",
         "ru": "Не используйте генерацию кадров FSR. При использовании FSR 4 в режиме DLSS выберите входное цветовое пространство Non-Linear.",
         "zh-Hans": "请勿使用 FSR 帧生成。通过 DLSS 输入模式使用 FSR 4 时，请选择 Non-Linear 输入色彩空间。",
         "zh-Hant": "請勿使用 FSR 畫格生成。透過 DLSS 輸入模式使用 FSR 4 時，請選擇 Non-Linear 輸入色彩空間。"
@@ -1361,6 +1451,7 @@
         "es": "Si las ventanas en ángulo se ven pixeladas con FSR 4, prueba el espacio de color de entrada Non-Linear PQ.",
         "fr": "Si les fenêtres inclinées paraissent pixellisées avec FSR 4, essayez l'espace colorimétrique d'entrée Non-Linear PQ.",
         "ja": "FSR 4 で斜めの窓が粗く見える場合は、入力カラースペースに Non-Linear PQ を試してください。",
+        "pt-BR": "Se janelas inclinadas parecerem pixelizadas com o FSR 4, tente usar o espaço de cores de entrada Non-Linear PQ.",
         "ru": "Если наклонные окна выглядят пикселизированными с FSR 4, попробуйте входное цветовое пространство Non-Linear PQ.",
         "zh-Hans": "如果使用 FSR 4 时倾斜的窗户看起来像素化，请尝试 Non-Linear PQ 输入色彩空间。",
         "zh-Hant": "如果使用 FSR 4 時傾斜的窗戶看起來像素化，請嘗試 Non-Linear PQ 輸入色彩空間。"
@@ -1376,6 +1467,7 @@
         "es": "DLSS Quality usa una resolución interna del 75 % y Balanced del 67 %, lo que es más alto de lo esperado.",
         "fr": "DLSS Quality utilise une résolution interne de 75 % et Balanced de 67 %, ce qui est plus élevé que prévu.",
         "ja": "DLSS Quality は内部解像度が 75 %、Balanced は 67 % で、想定より高くなります。",
+        "pt-BR": "O DLSS Quality usa uma resolução interna de 75% e o Balanced usa 67%, valores maiores que o esperado.",
         "ru": "DLSS Quality использует внутреннее разрешение 75 %, а Balanced — 67 %, что выше ожидаемого.",
         "zh-Hans": "DLSS Quality 使用 75% 的内部渲染分辨率，Balanced 使用 67%，高于预期。",
         "zh-Hant": "DLSS Quality 使用 75% 的內部渲染解析度，Balanced 使用 67%，高於預期。"
@@ -1391,6 +1483,7 @@
         "es": "Después de seleccionar DLSS por primera vez en los ajustes del juego, reinicia el juego si no se detecta.",
         "fr": "Après avoir sélectionné DLSS pour la première fois dans les paramètres du jeu, redémarrez le jeu s’il n’est pas détecté.",
         "ja": "ゲーム設定で初めて DLSS を選択した後、検出されない場合はゲームを再起動してください。",
+        "pt-BR": "Após selecionar DLSS nas configurações do jogo pela primeira vez, reinicie o jogo caso ele não seja detectado.",
         "ru": "После первого выбора DLSS в настройках игры перезапустите её, если масштабирование не определилось.",
         "zh-Hans": "首次在游戏设置中选择 DLSS 后，如果未检测到，请重启游戏。",
         "zh-Hant": "首次在遊戲設定中選擇 DLSS 後，如果未偵測到，請重新啟動遊戲。"
@@ -1406,6 +1499,7 @@
         "es": "La entrada XeSS no está disponible en el modo DirectX 11.",
         "fr": "L’entrée XeSS n’est pas disponible en mode DirectX 11.",
         "ja": "DirectX 11 モードでは XeSS 入力を使用できません。",
+        "pt-BR": "A entrada XeSS não está disponível no modo DirectX 11.",
         "ru": "В DirectX 11 режим XeSS недоступен.",
         "zh-Hans": "DirectX 11 模式下无法使用 XeSS 输入。",
         "zh-Hant": "DirectX 11 模式下無法使用 XeSS 輸入。"
@@ -1421,6 +1515,7 @@
         "es": "Si la entrada DLSS no funciona, inicia el juego con -dx12.",
         "fr": "Si l’entrée DLSS ne fonctionne pas, lancez le jeu avec -dx12.",
         "ja": "DLSS 入力が動作しない場合は、-dx12 を付けてゲームを起動してください。",
+        "pt-BR": "Se a entrada DLSS não funcionar, inicie o jogo com -dx12.",
         "ru": "Если режим DLSS не работает, запустите игру с параметром -dx12.",
         "zh-Hans": "如果 DLSS 输入无法工作，请使用 -dx12 启动游戏。",
         "zh-Hant": "如果 DLSS 輸入無法運作，請使用 -dx12 啟動遊戲。"
@@ -1436,6 +1531,7 @@
         "es": "Al usar FSR 4, selecciona el espacio de color de entrada Non-Linear sRGB para corregir el parpadeo.",
         "fr": "Avec FSR 4, sélectionnez l'espace colorimétrique d'entrée Non-Linear sRGB pour corriger le scintillement.",
         "ja": "FSR 4 使用時は、ちらつきを直すため入力カラースペースに Non-Linear sRGB を選択してください。",
+        "pt-BR": "Ao usar o FSR 4, selecione o espaço de cores de entrada Non-Linear sRGB para corrigir a cintilação.",
         "ru": "При использовании FSR 4 выберите входное цветовое пространство Non-Linear sRGB, чтобы устранить мерцание.",
         "zh-Hans": "使用 FSR 4 时，请选择 Non-Linear sRGB 输入色彩空间以修复闪烁。",
         "zh-Hant": "使用 FSR 4 時，請選擇 Non-Linear sRGB 輸入色彩空間以修正閃爍。"
@@ -1451,6 +1547,7 @@
         "es": "Al usar FSR 4, selecciona el espacio de color de entrada Non-Linear sRGB para corregir el parpadeo.",
         "fr": "Lors de l’utilisation de FSR 4, sélectionnez l’espace colorimétrique d’entrée Non-Linear sRGB pour corriger le scintillement.",
         "ja": "FSR 4 を使用する場合は、ちらつきを修正するために Non-Linear sRGB 入力色空間を選択してください。",
+        "pt-BR": "Ao usar o FSR 4, selecione o espaço de cores de entrada Non-Linear sRGB para corrigir a cintilação.",
         "ru": "При использовании FSR 4 выберите входное цветовое пространство Non-Linear sRGB, чтобы устранить мерцание.",
         "zh-Hans": "使用 FSR 4 时，选择 Non-Linear sRGB 输入色彩空间以修复闪烁。",
         "zh-Hant": "使用 FSR 4 時，選擇 Non-Linear sRGB 輸入色彩空間以修復閃爍。"
@@ -1466,6 +1563,7 @@
         "es": "Ejecuta el juego en modo DirectX 12.",
         "fr": "Exécutez le jeu en mode DirectX 12.",
         "ja": "ゲームを DirectX 12 モードで実行してください。",
+        "pt-BR": "Execute o jogo no modo DirectX 12.",
         "ru": "Запускайте игру в режиме DirectX 12.",
         "zh-Hans": "请以 DirectX 12 模式运行游戏。",
         "zh-Hant": "請以 DirectX 12 模式執行遊戲。"
@@ -1481,6 +1579,7 @@
         "es": "Usa el modo DX12 del juego.",
         "fr": "Utilisez le mode DX12 du jeu.",
         "ja": "ゲームの DX12 モードを使用してください。",
+        "pt-BR": "Use o modo DX12 do jogo.",
         "ru": "Используйте режим DX12 в игре.",
         "zh-Hans": "使用游戏的 DX12 模式。",
         "zh-Hant": "使用遊戲的 DX12 模式。"
@@ -1496,6 +1595,7 @@
         "es": "Ejecuta el juego en modo DX12; las entradas de FSR2 provocan un cierre inesperado en DX11.",
         "fr": "Exécutez le jeu en mode DX12 ; les entrées FSR2 provoquent un plantage sous DX11.",
         "ja": "ゲームを DX12 モードで実行してください。FSR2 入力は DX11 でクラッシュを引き起こします。",
+        "pt-BR": "Execute o jogo no modo DX12; as entradas FSR2 fazem o jogo travar no DX11.",
         "ru": "Запустите игру в режиме DX12: режим FSR 2 вызывает сбой в DX11.",
         "zh-Hans": "在 DX12 模式下运行游戏；FSR2 输入会在 DX11 下导致崩溃。",
         "zh-Hant": "在 DX12 模式下執行遊戲；FSR2 輸入會在 DX11 下導致崩潰。"
@@ -1511,6 +1611,7 @@
         "es": "Activa TAA y DLSS en los ajustes del juego.",
         "fr": "Activez à la fois TAA et DLSS dans les paramètres du jeu.",
         "ja": "ゲーム設定で TAA と DLSS の両方を有効にしてください。",
+        "pt-BR": "Ative o TAA e o DLSS nas configurações do jogo.",
         "ru": "Включите TAA и DLSS в настройках игры.",
         "zh-Hans": "在游戏设置中同时启用 TAA 和 DLSS。",
         "zh-Hant": "在遊戲設定中同時啟用 TAA 和 DLSS。"
@@ -1526,6 +1627,7 @@
         "es": "Usa entradas de OptiFG; las entradas de DLSSG no son compatibles.",
         "fr": "Utilisez les entrées OptiFG ; les entrées DLSSG ne sont pas prises en charge.",
         "ja": "OptiFG 入力を使用してください。DLSSG 入力はサポートされていません。",
+        "pt-BR": "Use entradas OptiFG; entradas DLSSG não são compatíveis.",
         "ru": "Используйте генерацию кадров OptiFG; режим DLSSG не поддерживается.",
         "zh-Hans": "使用 OptiFG 输入；不支持 DLSSG 输入。",
         "zh-Hant": "使用 OptiFG 輸入；不支援 DLSSG 輸入。"
@@ -1541,6 +1643,7 @@
         "es": "Usa el modo DX12 del juego.",
         "fr": "Utilisez le mode DX12 du jeu.",
         "ja": "ゲームの DX12 モードを使用してください。",
+        "pt-BR": "Use o modo DX12 do jogo.",
         "ru": "Используйте режим DX12 в игре.",
         "zh-Hans": "使用游戏的 DX12 模式。",
         "zh-Hant": "使用遊戲的 DX12 模式。"
@@ -1556,6 +1659,7 @@
         "es": "La generación de fotogramas de FSR no está disponible en este juego.",
         "fr": "La génération d’images FSR n’est pas disponible dans ce jeu.",
         "ja": "このゲームでは FSR フレーム生成は利用できません。",
+        "pt-BR": "A geração de quadros do FSR não está disponível neste jogo.",
         "ru": "В этой игре недоступна генерация кадров FSR.",
         "zh-Hans": "此游戏不支持 FSR 帧生成。",
         "zh-Hant": "此遊戲不支援 FSR 畫格生成。"
@@ -1571,6 +1675,7 @@
         "es": "Usa DLSS, ya que las entradas de FSR no están disponibles.",
         "fr": "Utilisez DLSS, car les entrées FSR ne sont pas disponibles.",
         "ja": "FSR 入力は利用できないため、DLSS を使用してください。",
+        "pt-BR": "Use DLSS, pois as entradas FSR não estão disponíveis.",
         "ru": "Используйте режим DLSS: режим FSR недоступен.",
         "zh-Hans": "FSR 输入不可用，请使用 DLSS。",
         "zh-Hant": "FSR 輸入無法使用，請使用 DLSS。"
@@ -1586,6 +1691,7 @@
         "es": "Evita las entradas de FSR 3, ya que pueden provocar el cierre del juego.",
         "fr": "Évitez les entrées FSR 3, car elles peuvent faire planter le jeu.",
         "ja": "FSR 3 入力はゲームをクラッシュさせる可能性があるため、使用しないでください。",
+        "pt-BR": "Evite entradas FSR 3, pois elas podem fazer o jogo travar.",
         "ru": "Не используйте режим FSR 3: он может привести к сбою игры.",
         "zh-Hans": "请避免使用 FSR 3 输入，它可能导致游戏崩溃。",
         "zh-Hant": "請避免使用 FSR 3 輸入，它可能導致遊戲當機。"
@@ -1601,6 +1707,7 @@
         "es": "Usa DLSS, ya que las entradas de FSR 3 no están disponibles.",
         "fr": "Utilisez DLSS, car les entrées FSR 3 ne sont pas disponibles.",
         "ja": "FSR 3 入力は利用できないため、DLSS を使用してください。",
+        "pt-BR": "Use DLSS, pois as entradas FSR 3 não estão disponíveis.",
         "ru": "Используйте режим DLSS: режим FSR 3 недоступен.",
         "zh-Hans": "FSR 3 输入不可用，请使用 DLSS。",
         "zh-Hant": "FSR 3 輸入無法使用，請使用 DLSS。"
@@ -1616,6 +1723,7 @@
         "es": "Las entradas de DLSS y de generación de fotogramas DLSS no están disponibles. La generación de fotogramas FSR 3.1 puede provocar bloqueos con OptiScaler 0.9.1.",
         "fr": "Les entrées DLSS et de génération d’images DLSS ne sont pas disponibles. La génération d’images FSR 3.1 peut faire planter le jeu avec OptiScaler 0.9.1.",
         "ja": "DLSS と DLSS フレーム生成の入力は利用できません。FSR 3.1 フレーム生成は OptiScaler 0.9.1 でゲームをクラッシュさせることがあります。",
+        "pt-BR": "As entradas DLSS e DLSS Frame Generation não estão disponíveis. O FSR 3.1 Frame Generation pode fazer o jogo travar com o OptiScaler 0.9.1.",
         "ru": "Режим DLSS и генерация кадров DLSS недоступны. Генерация кадров FSR 3.1 может приводить к сбою с OptiScaler 0.9.1.",
         "zh-Hans": "DLSS 和 DLSS 帧生成输入不可用。FSR 3.1 帧生成与 OptiScaler 0.9.1 一起使用时可能导致游戏崩溃。",
         "zh-Hant": "DLSS 和 DLSS 畫格生成輸入無法使用。FSR 3.1 畫格生成搭配 OptiScaler 0.9.1 使用時可能導致遊戲當機。"
@@ -1631,6 +1739,7 @@
         "es": "Activa la resolución dinámica en los ajustes del juego para usar DLSS. Las entradas de FSR no están disponibles.",
         "fr": "Activez la résolution dynamique dans les paramètres du jeu pour utiliser DLSS. Les entrées FSR ne sont pas disponibles.",
         "ja": "DLSS を使用するには、ゲーム設定で動的解像度を有効にしてください。FSR 入力は利用できません。",
+        "pt-BR": "Ative a resolução dinâmica nas configurações do jogo para usar DLSS. As entradas FSR não estão disponíveis.",
         "ru": "Чтобы использовать DLSS, включите динамическое разрешение в настройках игры. Режим FSR недоступен.",
         "zh-Hans": "要使用 DLSS，请在游戏设置中启用动态分辨率。FSR 输入不可用。",
         "zh-Hant": "要使用 DLSS，請在遊戲設定中啟用動態解析度。FSR 輸入無法使用。"
@@ -1646,6 +1755,7 @@
         "es": "La entrada FSR 3 y la salida de generación de fotogramas XeSS no están disponibles. No actives Allow Async con la generación de fotogramas FSR; puede hacer que el juego se cierre inesperadamente.",
         "fr": "L’entrée FSR 3 et la sortie de génération d’images XeSS ne sont pas disponibles. N’activez pas Allow Async avec la génération d’images FSR : le jeu peut planter.",
         "ja": "FSR 3 入力と XeSS フレーム生成出力は使用できません。FSR フレーム生成と Allow Async を有効にしないでください。ゲームがクラッシュすることがあります。",
+        "pt-BR": "A entrada FSR 3 e a saída XeSS Frame Generation não estão disponíveis. Não ative Allow Async com FSR Frame Generation; isso pode fazer o jogo travar.",
         "ru": "Режим FSR 3 и режим генерации кадров XeSS недоступны. Не включайте Allow Async вместе с генерацией кадров FSR: игра может завершиться сбоем.",
         "zh-Hans": "FSR 3 输入和 XeSS 帧生成输出不可用。不要将 Allow Async 与 FSR 帧生成一起启用；游戏可能崩溃。",
         "zh-Hant": "FSR 3 輸入和 XeSS 畫格生成輸出無法使用。不要將 Allow Async 與 FSR 畫格生成一起啟用；遊戲可能當機。"
@@ -1661,6 +1771,7 @@
         "es": "Usa DLSS, ya que las entradas de FSR no están disponibles. No fuerces DirectX 12.",
         "fr": "Utilisez DLSS, car les entrées FSR ne sont pas disponibles. Ne forcez pas DirectX 12.",
         "ja": "FSR 入力は利用できないため、DLSS を使用してください。DirectX 12 を強制しないでください。",
+        "pt-BR": "Use DLSS, pois as entradas FSR não estão disponíveis. Não force o DirectX 12.",
         "ru": "Используйте режим DLSS: FSR недоступен. Не включайте DirectX 12 принудительно.",
         "zh-Hans": "FSR 输入不可用，请使用 DLSS。请勿强制使用 DirectX 12。",
         "zh-Hant": "FSR 輸入無法使用，請使用 DLSS。請勿強制使用 DirectX 12。"
@@ -1676,6 +1787,7 @@
         "es": "Para FSR 4, selecciona Non-Linear sRGB Input para evitar el parpadeo de la pantalla.",
         "fr": "Pour FSR 4, sélectionnez Non-Linear sRGB Input pour éviter le scintillement de l’écran.",
         "ja": "FSR 4 では、画面のちらつきを防ぐため Non-Linear sRGB Input を選択してください。",
+        "pt-BR": "Para o FSR 4, selecione Non-Linear sRGB Input para evitar a cintilação da tela.",
         "ru": "Для FSR 4 выберите входное цветовое пространство Non-Linear sRGB, чтобы устранить мерцание экрана.",
         "zh-Hans": "使用 FSR 4 时，请选择 Non-Linear sRGB Input，以避免屏幕闪烁。",
         "zh-Hant": "使用 FSR 4 時，請選擇 Non-Linear sRGB Input，以避免螢幕閃爍。"
@@ -1691,6 +1803,7 @@
         "es": "Para FSR 4, selecciona el espacio de color no lineal para evitar artefactos en el cielo.",
         "fr": "Pour FSR 4, sélectionnez l’espace colorimétrique non linéaire pour éviter les artefacts dans le ciel.",
         "ja": "FSR 4 では、空の描画異常を防ぐため非線形カラースペースを選択してください。",
+        "pt-BR": "Para o FSR 4, selecione o espaço de cores Non-Linear para evitar artefatos no céu.",
         "ru": "Для FSR 4 выберите входное цветовое пространство Non-Linear, чтобы избежать артефактов на небе.",
         "zh-Hans": "使用 FSR 4 时，请选择非线性色彩空间，以避免天空出现伪影。",
         "zh-Hant": "使用 FSR 4 時，請選擇非線性色彩空間，以避免天空出現偽影。"
@@ -1706,6 +1819,7 @@
         "es": "Usa DLSS, ya que no se detecta la entrada de FSR.",
         "fr": "Utilisez DLSS, car l’entrée FSR n’est pas détectée.",
         "ja": "FSR 入力が検出されないため、DLSS を使用してください。",
+        "pt-BR": "Use DLSS, pois a entrada FSR não é detectada.",
         "ru": "Используйте режим DLSS: FSR не обнаруживается OptiScaler.",
         "zh-Hans": "未检测到 FSR 输入，请使用 DLSS。",
         "zh-Hant": "未偵測到 FSR 輸入，請使用 DLSS。"
@@ -1721,6 +1835,7 @@
         "es": "Activa TAA y DLSS en los ajustes del juego.",
         "fr": "Activez TAA et DLSS dans les paramètres du jeu.",
         "ja": "ゲーム設定で TAA と DLSS を有効にしてください。",
+        "pt-BR": "Ative o TAA e o DLSS nas configurações do jogo.",
         "ru": "Включите TAA и DLSS в настройках игры.",
         "zh-Hans": "请在游戏设置中启用 TAA 和 DLSS。",
         "zh-Hant": "請在遊戲設定中啟用 TAA 和 DLSS。"
@@ -1736,6 +1851,7 @@
         "es": "Desactiva NVIDIA Reflex en los ajustes del juego para reducir los tirones.",
         "fr": "Désactivez NVIDIA Reflex dans les paramètres du jeu pour réduire les saccades.",
         "ja": "カクつきを減らすため、ゲーム設定で NVIDIA Reflex を無効にしてください。",
+        "pt-BR": "Desative NVIDIA Reflex nas configurações do jogo para reduzir as travadas.",
         "ru": "Отключите NVIDIA Reflex в настройках игры, чтобы уменьшить подёргивания.",
         "zh-Hans": "请在游戏设置中禁用 NVIDIA Reflex，以减少卡顿。",
         "zh-Hant": "請在遊戲設定中停用 NVIDIA Reflex，以減少卡頓。"
@@ -1751,6 +1867,7 @@
         "es": "Si FSR 4 parpadea, prueba el espacio de color de entrada «Non-Linear sRGB Input».",
         "fr": "Si FSR 4 scintille, essayez l’espace colorimétrique d’entrée « Non-Linear sRGB Input ».",
         "ja": "FSR 4 でちらつきが発生する場合は、入力カラースペースで「Non-Linear sRGB Input」を試してください。",
+        "pt-BR": "Se o FSR 4 apresentar cintilação, tente usar o espaço de cores de entrada Non-Linear sRGB.",
         "ru": "Если при FSR 4 появляется мерцание, выберите входное цветовое пространство Non-Linear sRGB.",
         "zh-Hans": "如果 FSR 4 出现闪烁，请尝试“Non-Linear sRGB Input”输入色彩空间。",
         "zh-Hant": "如果 FSR 4 出現閃爍，請嘗試「Non-Linear sRGB Input」輸入色彩空間。"
@@ -1766,6 +1883,7 @@
         "es": "Con FSR 4, DLSS Balanced puede parpadear. Prueba otro preajuste o modo de entrada; «Non-Linear sRGB Input» puede ayudar, pero aumentar las imágenes fantasma.",
         "fr": "Avec FSR 4, DLSS Balanced peut scintiller. Essayez un autre préréglage ou mode d’entrée ; « Non-Linear sRGB Input » peut aider, mais accroître le ghosting.",
         "ja": "FSR 4 では DLSS Balanced がちらつく場合があります。別のプリセットまたは入力を試してください。「Non-Linear sRGB Input」は有効な場合がありますが、ゴーストが増えることがあります。",
+        "pt-BR": "Com o FSR 4, o DLSS Balanced pode apresentar cintilação. Tente outra predefinição ou entrada; Non-Linear sRGB Input pode ajudar, mas também pode aumentar o efeito fantasma.",
         "ru": "При FSR 4 режим DLSS Balanced может мерцать. Попробуйте другой пресет или режим. Входное цветовое пространство Non-Linear sRGB может помочь, но способно усилить гостинг.",
         "zh-Hans": "使用 FSR 4 时，DLSS Balanced 可能闪烁。请尝试其他预设或输入模式；“Non-Linear sRGB Input”可能有帮助，但会增加重影。",
         "zh-Hant": "使用 FSR 4 時，DLSS Balanced 可能閃爍。請嘗試其他預設或輸入模式；「Non-Linear sRGB Input」可能有幫助，但會增加殘影。"
@@ -1781,6 +1899,7 @@
         "es": "DirectX 11 ofrece menor rendimiento.",
         "fr": "DirectX 11 offre des performances plus faibles.",
         "ja": "DirectX 11 ではパフォーマンスが低下します。",
+        "pt-BR": "O DirectX 11 apresenta desempenho inferior.",
         "ru": "В DirectX 11 производительность ниже.",
         "zh-Hans": "DirectX 11 的性能较低。",
         "zh-Hant": "DirectX 11 的效能較低。"
@@ -1796,6 +1915,7 @@
         "es": "En los ajustes del juego, selecciona TSR o TAA para el antialiasing.",
         "fr": "Dans les paramètres du jeu, sélectionnez TSR ou TAA pour l’anticrénelage.",
         "ja": "ゲーム設定で、アンチエイリアスに TSR または TAA を選択してください。",
+        "pt-BR": "Nas configurações do jogo, selecione TSR ou TAA para o antisserrilhamento.",
         "ru": "В настройках игры выберите TSR или TAA для сглаживания.",
         "zh-Hans": "请在游戏设置中将抗锯齿设为 TSR 或 TAA。",
         "zh-Hant": "請在遊戲設定中將反鋸齒設為 TSR 或 TAA。"
@@ -1811,6 +1931,7 @@
         "es": "Usa DX12. Para FSR 4 puede ser necesario «Non-Linear sRGB Input» y aumentar las imágenes fantasma.",
         "fr": "Utilisez DX12. Avec FSR 4, « Non-Linear sRGB Input » peut être nécessaire et augmenter le ghosting.",
         "ja": "DX12 を使用してください。FSR 4 では「Non-Linear sRGB Input」が必要になる場合があり、ゴーストが増えることがあります。",
+        "pt-BR": "Use o DX12. Com o FSR 4, pode ser necessário usar Non-Linear sRGB Input, o que pode aumentar o efeito fantasma.",
         "ru": "Используйте режим DX12. Для FSR 4 может потребоваться входное цветовое пространство Non-Linear sRGB; это может усилить гостинг.",
         "zh-Hans": "请使用 DX12。使用 FSR 4 时可能需要“Non-Linear sRGB Input”，但会增加重影。",
         "zh-Hant": "請使用 DX12。使用 FSR 4 時可能需要「Non-Linear sRGB Input」，但會增加殘影。"
@@ -1826,6 +1947,7 @@
         "es": "El modo FSR puede hacer que el juego se cierre inesperadamente.",
         "fr": "Le mode FSR peut faire planter le jeu.",
         "ja": "FSR モードはゲームをクラッシュさせることがあります。",
+        "pt-BR": "O modo FSR pode fazer o jogo travar.",
         "ru": "Режим FSR может вызвать сбой игры.",
         "zh-Hans": "FSR 模式可能导致游戏崩溃。",
         "zh-Hant": "FSR 模式可能導致遊戲當機。"
@@ -1841,6 +1963,7 @@
         "es": "DirectX 11 ofrece menor rendimiento y un parpadeo intenso.",
         "fr": "DirectX 11 offre des performances plus faibles et un scintillement important.",
         "ja": "DirectX 11 ではパフォーマンスが低下し、強いちらつきが発生します。",
+        "pt-BR": "O DirectX 11 apresenta desempenho inferior e cintilação intensa.",
         "ru": "В DirectX 11 ниже производительность и заметно сильное мерцание.",
         "zh-Hans": "DirectX 11 的性能较低，且会严重闪烁。",
         "zh-Hant": "DirectX 11 的效能較低，且會嚴重閃爍。"
@@ -1856,6 +1979,7 @@
         "es": "En DX11, la calidad de imagen de los escaladores puede ser peor que la nativa.",
         "fr": "Sous DX11, la qualité d’image des upscalers peut être inférieure à la qualité native.",
         "ja": "DX11 では、アップスケーラーの画質がネイティブより低下する場合があります。",
+        "pt-BR": "No DX11, a qualidade da imagem escalonada pode ser pior que a nativa.",
         "ru": "В режиме DX11 качество изображения при масштабировании может быть хуже нативного.",
         "zh-Hans": "在 DX11 下，超分辨率的画质可能低于原生渲染。",
         "zh-Hant": "在 DX11 下，超解析度的畫質可能低於原生渲染。"
@@ -1871,6 +1995,7 @@
         "es": "La generación de fotogramas FSR provoca un cierre inesperado. Usa XeFG en su lugar.",
         "fr": "La génération d’images FSR provoque un plantage. Utilisez XeFG à la place.",
         "ja": "FSR フレーム生成はクラッシュを引き起こします。代わりに XeFG を使用してください。",
+        "pt-BR": "A geração de quadros do FSR faz o jogo travar. Use XeFG em seu lugar.",
         "ru": "Генерация кадров FSR вызывает сбой. Используйте XeFG вместо неё.",
         "zh-Hans": "FSR 帧生成会导致游戏崩溃。请改用 XeFG。",
         "zh-Hant": "FSR 畫格生成會導致遊戲當機。請改用 XeFG。"
@@ -1886,6 +2011,7 @@
         "es": "Para FSR 4, selecciona «Non-Linear sRGB Input» para evitar el parpadeo de la pantalla.",
         "fr": "Pour FSR 4, sélectionnez « Non-Linear sRGB Input » afin d’éviter le scintillement de l’écran.",
         "ja": "FSR 4 では、画面のちらつきを防ぐため「Non-Linear sRGB Input」を選択してください。",
+        "pt-BR": "Para o FSR 4, selecione Non-Linear sRGB Input para evitar a cintilação da tela.",
         "ru": "Для FSR 4 выберите входное цветовое пространство Non-Linear sRGB, чтобы устранить мерцание экрана.",
         "zh-Hans": "使用 FSR 4 时，请选择“Non-Linear sRGB Input”以避免屏幕闪烁。",
         "zh-Hant": "使用 FSR 4 時，請選擇「Non-Linear sRGB Input」以避免螢幕閃爍。"
@@ -1901,6 +2027,7 @@
         "es": "Usa entradas DLSS, porque las entradas FSR 3.1 podrían no escalar correctamente.",
         "fr": "Utilisez les entrées DLSS, car les entrées FSR 3.1 peuvent ne pas effectuer correctement la mise à l’échelle.",
         "ja": "FSR 3.1 入力は正常にアップスケールされないことがあるため、DLSS 入力を使用してください。",
+        "pt-BR": "Use entradas DLSS, pois as entradas FSR 3.1 podem não escalonar a imagem corretamente.",
         "ru": "Используйте режим DLSS: масштабирование через FSR 3.1 может работать некорректно.",
         "zh-Hans": "请使用 DLSS 输入；FSR 3.1 输入可能无法正确进行超分辨率处理。",
         "zh-Hant": "請使用 DLSS 輸入；FSR 3.1 輸入可能無法正確進行超解析度處理。"
@@ -1916,6 +2043,7 @@
         "es": "Usa entradas DLSS, porque las entradas FSR 3.1 podrían no escalar correctamente.",
         "fr": "Utilisez les entrées DLSS, car les entrées FSR 3.1 peuvent ne pas effectuer correctement la mise à l’échelle.",
         "ja": "FSR 3.1 入力は正常にアップスケールされないことがあるため、DLSS 入力を使用してください。",
+        "pt-BR": "Use entradas DLSS, pois as entradas FSR 3.1 podem não escalonar a imagem corretamente.",
         "ru": "Используйте режим DLSS: масштабирование через FSR 3.1 может работать некорректно.",
         "zh-Hans": "请使用 DLSS 输入；FSR 3.1 输入可能无法正确进行超分辨率处理。",
         "zh-Hant": "請使用 DLSS 輸入；FSR 3.1 輸入可能無法正確進行超解析度處理。"
@@ -1931,6 +2059,7 @@
         "es": "Usa entradas DLSS, porque las entradas FSR 3.1 podrían no escalar correctamente.",
         "fr": "Utilisez les entrées DLSS, car les entrées FSR 3.1 peuvent ne pas effectuer correctement la mise à l’échelle.",
         "ja": "FSR 3.1 入力は正常にアップスケールされないことがあるため、DLSS 入力を使用してください。",
+        "pt-BR": "Use entradas DLSS, pois as entradas FSR 3.1 podem não escalonar a imagem corretamente.",
         "ru": "Используйте режим DLSS: масштабирование через FSR 3.1 может работать некорректно.",
         "zh-Hans": "请使用 DLSS 输入；FSR 3.1 输入可能无法正确进行超分辨率处理。",
         "zh-Hant": "請使用 DLSS 輸入；FSR 3.1 輸入可能無法正確進行超解析度處理。"
@@ -1946,6 +2075,7 @@
         "es": "Usa entradas DLSS o XeSS; la calidad de imagen de la entrada FSR 3.1 es baja.",
         "fr": "Utilisez les entrées DLSS ou XeSS ; la qualité d’image de l’entrée FSR 3.1 est faible.",
         "ja": "DLSS または XeSS 入力を使用してください。FSR 3.1 入力の画質は低いです。",
+        "pt-BR": "Use entradas DLSS ou XeSS; a entrada FSR 3.1 apresenta baixa qualidade de imagem.",
         "ru": "Используйте режим DLSS или XeSS: при выборе FSR 3.1 качество изображения низкое.",
         "zh-Hans": "请使用 DLSS 或 XeSS 输入；FSR 3.1 输入的画质较差。",
         "zh-Hant": "請使用 DLSS 或 XeSS 輸入；FSR 3.1 輸入的畫質較差。"
@@ -1961,6 +2091,7 @@
         "es": "Es posible que las entradas FSR 2 no funcionen.",
         "fr": "Les entrées FSR 2 peuvent ne pas fonctionner.",
         "ja": "FSR 2 入力は動作しないことがあります。",
+        "pt-BR": "As entradas FSR 2 podem não funcionar.",
         "ru": "Режим FSR 2 может не работать.",
         "zh-Hans": "FSR 2 输入可能无法工作。",
         "zh-Hant": "FSR 2 輸入可能無法運作。"
@@ -1976,6 +2107,7 @@
         "es": "Para FSR 4, selecciona «Non-Linear sRGB Input» para evitar parpadeos con la entrada DLSS.",
         "fr": "Pour FSR 4, sélectionnez « Non-Linear sRGB Input » afin d’éviter le scintillement avec l’entrée DLSS.",
         "ja": "FSR 4 では、DLSS 入力のちらつきを防ぐため「Non-Linear sRGB Input」を選択してください。",
+        "pt-BR": "Para o FSR 4, selecione Non-Linear sRGB Input para evitar cintilação ao usar a entrada DLSS.",
         "ru": "Для FSR 4 выберите входное цветовое пространство Non-Linear sRGB, чтобы устранить мерцание при использовании режима DLSS.",
         "zh-Hans": "使用 FSR 4 时，请选择“Non-Linear sRGB Input”以避免 DLSS 输入闪烁。",
         "zh-Hant": "使用 FSR 4 時，請選擇「Non-Linear sRGB Input」以避免 DLSS 輸入閃爍。"
@@ -1991,6 +2123,7 @@
         "es": "Para FSR 4, selecciona «Non-Linear sRGB Input» para evitar el parpadeo de la pantalla.",
         "fr": "Pour FSR 4, sélectionnez « Non-Linear sRGB Input » afin d’éviter le scintillement de l’écran.",
         "ja": "FSR 4 では、画面のちらつきを防ぐため「Non-Linear sRGB Input」を選択してください。",
+        "pt-BR": "Para o FSR 4, selecione Non-Linear sRGB Input para evitar que a tela pisque.",
         "ru": "Для FSR 4 выберите входное цветовое пространство Non-Linear sRGB, чтобы устранить мерцание экрана.",
         "zh-Hans": "使用 FSR 4 时，请选择“Non-Linear sRGB Input”以避免屏幕闪烁。",
         "zh-Hant": "使用 FSR 4 時，請選擇「Non-Linear sRGB Input」以避免螢幕閃爍。"
@@ -2006,6 +2139,7 @@
         "es": "Mantén el modo DirectX 11 predeterminado. Forzar DirectX 12 con -dx12 puede provocar cierres inesperados aleatorios en zonas concretas.",
         "fr": "Conservez le mode DirectX 11 par défaut. Forcer DirectX 12 avec -dx12 peut provoquer des plantages aléatoires dans certaines zones.",
         "ja": "既定の DirectX 11 モードを使用してください。-dx12 で DirectX 12 を強制すると、特定の場所でランダムにクラッシュすることがあります。",
+        "pt-BR": "Mantenha o modo DirectX 11 padrão. Forçar o DirectX 12 com -dx12 pode causar travamentos aleatórios em áreas específicas.",
         "ru": "Оставьте режим DirectX 11 по умолчанию. Принудительное включение DirectX 12 через -dx12 может вызывать случайные сбои в отдельных местах.",
         "zh-Hans": "请保留默认的 DirectX 11 模式。使用 -dx12 强制 DirectX 12 可能在特定区域随机崩溃。",
         "zh-Hant": "請保留預設的 DirectX 11 模式。使用 -dx12 強制 DirectX 12 可能在特定區域隨機當機。"
@@ -2021,6 +2155,7 @@
         "es": "Usa entradas DLSS; XeSS puede causar graves defectos visuales.",
         "fr": "Utilisez les entrées DLSS ; XeSS peut provoquer de graves artefacts visuels.",
         "ja": "DLSS 入力を使用してください。XeSS は重大な表示崩れを引き起こすことがあります。",
+        "pt-BR": "Use entradas DLSS; o XeSS pode causar corrupção visual intensa.",
         "ru": "Используйте режим DLSS: при выборе XeSS возможны сильные визуальные искажения.",
         "zh-Hans": "请使用 DLSS 输入；XeSS 可能造成严重的画面异常。",
         "zh-Hant": "請使用 DLSS 輸入；XeSS 可能造成嚴重的畫面異常。"
@@ -2036,6 +2171,7 @@
         "es": "Para FSR 4, selecciona «Non-Linear sRGB Input» si la pantalla parpadea.",
         "fr": "Pour FSR 4, sélectionnez « Non-Linear sRGB Input » si l’écran clignote.",
         "ja": "FSR 4 で画面がちらつく場合は、「Non-Linear sRGB Input」を選択してください。",
+        "pt-BR": "Para o FSR 4, selecione Non-Linear sRGB Input se a tela piscar.",
         "ru": "Для FSR 4 выберите входное цветовое пространство Non-Linear sRGB, если мерцает экран.",
         "zh-Hans": "若使用 FSR 4 时屏幕闪烁，请选择“Non-Linear sRGB Input”。",
         "zh-Hant": "若使用 FSR 4 時螢幕閃爍，請選擇「Non-Linear sRGB Input」。"
@@ -2051,6 +2187,7 @@
         "es": "Las entradas FSR 3.1 no están disponibles. Para FSR 4, selecciona el espacio de color no lineal para evitar pantallas negras y artefactos de DLSS.",
         "fr": "Les entrées FSR 3.1 ne sont pas disponibles. Pour FSR 4, sélectionnez l’espace colorimétrique non linéaire afin d’éviter les écrans noirs et les artefacts DLSS.",
         "ja": "FSR 3.1 入力は利用できません。FSR 4 では、黒い画面と DLSS のアーティファクトを避けるため非線形カラースペースを選択してください。",
+        "pt-BR": "As entradas FSR 3.1 não estão disponíveis. Para o FSR 4, selecione o espaço de cores Non-Linear para evitar telas pretas e artefatos do DLSS.",
         "ru": "Режим FSR 3.1 недоступен. Для FSR 4 выберите входное цветовое пространство Non-Linear, чтобы избежать чёрного экрана и артефактов DLSS.",
         "zh-Hans": "FSR 3.1 输入不可用。使用 FSR 4 时，请选择非线性色彩空间以避免黑屏和 DLSS 伪影。",
         "zh-Hant": "FSR 3.1 輸入無法使用。使用 FSR 4 時，請選擇非線性色彩空間以避免黑畫面和 DLSS 偽影。"
@@ -2066,6 +2203,7 @@
         "es": "Activa la generación de fotogramas después de cada inicio del juego para que OptiScaler pueda enganchar la entrada.",
         "fr": "Activez la génération d’images après chaque lancement du jeu afin qu’OptiScaler puisse intercepter l’entrée.",
         "ja": "OptiScaler が入力をフックできるよう、ゲームを起動するたびにフレーム生成を有効にしてください。",
+        "pt-BR": "Ative a geração de quadros após cada inicialização do jogo para que o OptiScaler possa capturar a entrada.",
         "ru": "Включайте генерацию кадров после каждого запуска игры, чтобы OptiScaler мог её перехватить.",
         "zh-Hans": "请在每次启动游戏后启用帧生成，以便 OptiScaler 挂接输入。",
         "zh-Hant": "請在每次啟動遊戲後啟用畫格生成，讓 OptiScaler 掛接輸入。"
@@ -2081,6 +2219,7 @@
         "es": "Usa la entrada DLSS; FSR 2 puede producir parpadeos.",
         "fr": "Utilisez l’entrée DLSS ; FSR 2 peut scintiller.",
         "ja": "DLSS 入力を使用してください。FSR 2 ではちらつきが発生することがあります。",
+        "pt-BR": "Use a entrada DLSS; o FSR 2 pode apresentar cintilação.",
         "ru": "Используйте режим DLSS: FSR 2 может мерцать.",
         "zh-Hans": "请使用 DLSS 输入；FSR 2 可能出现闪烁。",
         "zh-Hant": "請使用 DLSS 輸入；FSR 2 可能出現閃爍。"
@@ -2096,6 +2235,7 @@
         "es": "Las entradas FSR 3 no están disponibles.",
         "fr": "Les entrées FSR 3 ne sont pas disponibles.",
         "ja": "FSR 3 入力は利用できません。",
+        "pt-BR": "As entradas FSR 3 não estão disponíveis.",
         "ru": "Режим FSR 3 недоступен.",
         "zh-Hans": "FSR 3 输入不可用。",
         "zh-Hant": "FSR 3 輸入無法使用。"
@@ -2111,6 +2251,7 @@
         "es": "No selecciones una entrada FSR 2; puede provocar un cierre inesperado. DirectX 11 ofrece menor rendimiento y un parpadeo intenso.",
         "fr": "Ne sélectionnez pas d’entrée FSR 2 : elle peut faire planter le jeu. DirectX 11 offre des performances plus faibles et un scintillement important.",
         "ja": "FSR 2 入力は選択しないでください。クラッシュすることがあります。DirectX 11 ではパフォーマンスが低下し、強いちらつきが発生します。",
+        "pt-BR": "Não selecione uma entrada FSR 2; ela pode causar uma falha. O DirectX 11 apresenta desempenho inferior e cintilação intensa.",
         "ru": "Не выбирайте режим FSR 2: он может вызвать сбой. В DirectX 11 ниже производительность и заметно сильное мерцание.",
         "zh-Hans": "不要选择 FSR 2 输入；它可能导致崩溃。DirectX 11 的性能较低，且会严重闪烁。",
         "zh-Hant": "不要選擇 FSR 2 輸入；它可能導致當機。DirectX 11 的效能較低，且會嚴重閃爍。"
@@ -2126,6 +2267,7 @@
         "es": "Antes de la instalación, edita %APPDATA%\\Trine5\\options.txt. Para activar DLSS, usa setOption(rendererModule, 'DlssMode', x) con x de 0–4.",
         "fr": "Avant l’installation, modifiez %APPDATA%\\Trine5\\options.txt. Pour activer DLSS, utilisez setOption(rendererModule, 'DlssMode', x) avec x de 0–4.",
         "ja": "インストール前に %APPDATA%\\Trine5\\options.txt を編集してください。DLSS を有効にするには、x を 0–4 にして setOption(rendererModule, 'DlssMode', x) を使用します。",
+        "pt-BR": "Antes da instalação, edite %APPDATA%\\Trine5\\options.txt. Para ativar o DLSS, use setOption(rendererModule, 'DlssMode', x), com x entre 0 e 4.",
         "ru": "Перед установкой откройте %APPDATA%\\Trine5\\options.txt. Чтобы включить DLSS, используйте setOption(rendererModule, 'DlssMode', x), где x — от 0 до 4.",
         "zh-Hans": "安装前，请编辑 %APPDATA%\\Trine5\\options.txt。要启用 DLSS，请使用 setOption(rendererModule, 'DlssMode', x)，其中 x 为 0–4。",
         "zh-Hant": "安裝前，請編輯 %APPDATA%\\Trine5\\options.txt。要啟用 DLSS，請使用 setOption(rendererModule, 'DlssMode', x)，其中 x 為 0–4。"
@@ -2141,6 +2283,7 @@
         "es": "El modo FSR 3 no está disponible.",
         "fr": "Le mode FSR 3 n’est pas disponible.",
         "ja": "FSR 3 モードは利用できません。",
+        "pt-BR": "O modo FSR 3 não está disponível.",
         "ru": "Режим FSR 3 недоступен.",
         "zh-Hans": "FSR 3 模式不可用。",
         "zh-Hant": "FSR 3 模式無法使用。"
@@ -2156,6 +2299,7 @@
         "es": "Después de cada inicio, selecciona TSR y luego DLSS de nuevo en los ajustes gráficos del juego.",
         "fr": "Après chaque lancement, sélectionnez TSR, puis sélectionnez à nouveau DLSS dans les paramètres graphiques du jeu.",
         "ja": "ゲームを起動するたびに、グラフィック設定でTSRを選択してから、もう一度DLSSを選択してください。",
+        "pt-BR": "Após cada inicialização, selecione TSR e depois selecione DLSS novamente nas configurações gráficas do jogo.",
         "ru": "После каждого запуска игры выберите TSR, затем снова выберите DLSS в настройках графики.",
         "zh-Hans": "每次启动游戏后，请在图形设置中先选择 TSR，再重新选择 DLSS。",
         "zh-Hant": "每次啟動遊戲後，請在圖形設定中先選擇 TSR，再重新選擇 DLSS。"
@@ -2171,6 +2315,7 @@
         "es": "Las opciones de generación de fotogramas y baja latencia dependen del fabricante de la GPU.",
         "fr": "Les options de génération d’images et de faible latence dépendent du fabricant du GPU.",
         "ja": "フレーム生成と低遅延のオプションは GPU ベンダーにより異なります。",
+        "pt-BR": "As opções Frame Generation e Low Latency dependem do fabricante da GPU.",
         "ru": "Параметры генерации кадров и низкой задержки зависят от производителя видеокарты.",
         "zh-Hans": "帧生成和低延迟选项取决于 GPU 厂商。",
         "zh-Hant": "畫格生成和低延遲選項取決於 GPU 廠商。"
@@ -2186,6 +2331,7 @@
         "es": "Este juego requiere REFramework.",
         "fr": "REFramework est requis pour que ce jeu fonctionne.",
         "ja": "このゲームを動作させるには REFramework が必要です。",
+        "pt-BR": "O REFramework é necessário para que este jogo funcione.",
         "ru": "Для работы требуется REFramework.",
         "zh-Hans": "此游戏需要 REFramework 才能运行。",
         "zh-Hant": "此遊戲需要 REFramework 才能運作。"
@@ -2201,6 +2347,7 @@
         "es": "Este juego requiere REFramework (pd-upscaler branch) y UpscalerBasePlugin de PureDark versión 1.1.2.",
         "fr": "Ce jeu nécessite REFramework (pd-upscaler branch) et UpscalerBasePlugin de PureDark version 1.1.2.",
         "ja": "このゲームを動作させるには REFramework（pd-upscaler branch）と PureDark の UpscalerBasePlugin バージョン 1.1.2 が必要です。",
+        "pt-BR": "O REFramework (ramificação pd-upscaler) e o UpscalerBasePlugin 1.1.2 de PureDark são necessários para que este jogo funcione.",
         "ru": "Для работы требуются REFramework (ветка pd-upscaler) и UpscalerBasePlugin PureDark версии 1.1.2.",
         "zh-Hans": "此游戏需要 REFramework（pd-upscaler 分支）和 PureDark 的 UpscalerBasePlugin 1.1.2 版才能运行。",
         "zh-Hant": "此遊戲需要 REFramework（pd-upscaler 分支）和 PureDark 的 UpscalerBasePlugin 1.1.2 版才能運作。"
@@ -2216,6 +2363,7 @@
         "es": "Este juego requiere REFramework (pd-upscaler branch) y UpscalerBasePlugin de PureDark versión 1.1.2.",
         "fr": "Ce jeu nécessite REFramework (pd-upscaler branch) et UpscalerBasePlugin de PureDark version 1.1.2.",
         "ja": "このゲームを動作させるには REFramework（pd-upscaler branch）と PureDark の UpscalerBasePlugin バージョン 1.1.2 が必要です。",
+        "pt-BR": "O REFramework (ramificação pd-upscaler) e o UpscalerBasePlugin 1.1.2 de PureDark são necessários para que este jogo funcione.",
         "ru": "Для работы требуются REFramework (ветка pd-upscaler) и UpscalerBasePlugin PureDark версии 1.1.2.",
         "zh-Hans": "此游戏需要 REFramework（pd-upscaler 分支）和 PureDark 的 UpscalerBasePlugin 1.1.2 版才能运行。",
         "zh-Hant": "此遊戲需要 REFramework（pd-upscaler 分支）和 PureDark 的 UpscalerBasePlugin 1.1.2 版才能運作。"
@@ -2231,6 +2379,7 @@
         "es": "Este juego requiere REFramework (pd-upscaler branch) y UpscalerBasePlugin de PureDark versión 1.1.2.",
         "fr": "Ce jeu nécessite REFramework (pd-upscaler branch) et UpscalerBasePlugin de PureDark version 1.1.2.",
         "ja": "このゲームを動作させるには REFramework（pd-upscaler branch）と PureDark の UpscalerBasePlugin バージョン 1.1.2 が必要です。",
+        "pt-BR": "O REFramework (ramificação pd-upscaler) e o UpscalerBasePlugin 1.1.2 de PureDark são necessários para que este jogo funcione.",
         "ru": "Для работы требуются REFramework (ветка pd-upscaler) и UpscalerBasePlugin PureDark версии 1.1.2.",
         "zh-Hans": "此游戏需要 REFramework（pd-upscaler 分支）和 PureDark 的 UpscalerBasePlugin 1.1.2 版才能运行。",
         "zh-Hant": "此遊戲需要 REFramework（pd-upscaler 分支）和 PureDark 的 UpscalerBasePlugin 1.1.2 版才能運作。"
@@ -2246,6 +2395,7 @@
         "es": "Este juego requiere REFramework (pd-upscaler branch) y UpscalerBasePlugin de PureDark versión 1.1.2.",
         "fr": "Ce jeu nécessite REFramework (pd-upscaler branch) et UpscalerBasePlugin de PureDark version 1.1.2.",
         "ja": "このゲームを動作させるには REFramework（pd-upscaler branch）と PureDark の UpscalerBasePlugin バージョン 1.1.2 が必要です。",
+        "pt-BR": "O REFramework (ramificação pd-upscaler) e o UpscalerBasePlugin 1.1.2 de PureDark são necessários para que este jogo funcione.",
         "ru": "Для работы требуются REFramework (ветка pd-upscaler) и UpscalerBasePlugin PureDark версии 1.1.2.",
         "zh-Hans": "此游戏需要 REFramework（pd-upscaler 分支）和 PureDark 的 UpscalerBasePlugin 1.1.2 版才能运行。",
         "zh-Hant": "此遊戲需要 REFramework（pd-upscaler 分支）和 PureDark 的 UpscalerBasePlugin 1.1.2 版才能運作。"
@@ -2261,6 +2411,7 @@
         "es": "Este juego requiere REFramework.",
         "fr": "REFramework est requis pour que ce jeu fonctionne.",
         "ja": "このゲームを動作させるには REFramework が必要です。",
+        "pt-BR": "O REFramework é necessário para que este jogo funcione.",
         "ru": "Для работы требуется REFramework.",
         "zh-Hans": "此游戏需要 REFramework 才能运行。",
         "zh-Hant": "此遊戲需要 REFramework 才能運作。"
