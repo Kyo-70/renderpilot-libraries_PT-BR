@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "revision": "2026-09-15.1",
+  "revision": "2026-09-16.1",
   "upstream": {
     "source": "optiscaler-wiki-compatibility-list",
-    "snapshot_revision": "2026-09-13",
-    "snapshot_sha256": "6c85b16c01b75acdc41d321abe58edf817a26772d0eb7fefab3547f8ad8917b2"
+    "snapshot_revision": "2026-09-16",
+    "snapshot_sha256": "a89d83543eec78dc06461e53c9b2f32575eb4245dbdfa4096743cd875f30658e"
   },
   "entries": [
     {
@@ -20,7 +20,7 @@
           "value": "007FirstLight.exe"
         }
       ],
-      "declared_inputs": ["dlss2_plus"],
+      "declared_inputs": ["dlss2_plus", "fsr2_plus"],
       "guidance": [],
       "variants": [
         {
@@ -827,6 +827,33 @@
         }
       ],
       "declared_inputs": ["dlss2_plus", "fsr2_plus", "xess"],
+      "guidance": [],
+      "variants": [
+        {
+          "proxy": {
+            "kind": "automatic"
+          },
+          "ini_overrides": [],
+          "restricted_modules": [],
+          "optipatcher": "unspecified",
+          "prerequisite": "none"
+        }
+      ]
+    },
+    {
+      "id": "assassins-creed-origins",
+      "status": "working",
+      "identities": [
+        {
+          "kind": "steam_appid",
+          "value": "582160"
+        },
+        {
+          "kind": "exe_name",
+          "value": "ACOrigins.exe"
+        }
+      ],
+      "declared_inputs": ["dlss2_plus"],
       "guidance": [],
       "variants": [
         {
@@ -5372,6 +5399,33 @@
       ]
     },
     {
+      "id": "far-cry-5",
+      "status": "working",
+      "identities": [
+        {
+          "kind": "steam_appid",
+          "value": "552520"
+        },
+        {
+          "kind": "exe_name",
+          "value": "FarCry5.exe"
+        }
+      ],
+      "declared_inputs": ["dlss2_plus"],
+      "guidance": [],
+      "variants": [
+        {
+          "proxy": {
+            "kind": "automatic"
+          },
+          "ini_overrides": [],
+          "restricted_modules": [],
+          "optipatcher": "unspecified",
+          "prerequisite": "luma"
+        }
+      ]
+    },
+    {
       "id": "far-far-west",
       "status": "working",
       "identities": [
@@ -6242,6 +6296,33 @@
         }
       ],
       "declared_inputs": ["dlss2_plus", "fsr2_plus", "xess"],
+      "guidance": [],
+      "variants": [
+        {
+          "proxy": {
+            "kind": "automatic"
+          },
+          "ini_overrides": [],
+          "restricted_modules": [],
+          "optipatcher": "unspecified",
+          "prerequisite": "none"
+        }
+      ]
+    },
+    {
+      "id": "ghost-recon-wildlands",
+      "status": "working",
+      "identities": [
+        {
+          "kind": "steam_appid",
+          "value": "460930"
+        },
+        {
+          "kind": "exe_name",
+          "value": "GRW.exe"
+        }
+      ],
+      "declared_inputs": ["dlss2_plus"],
       "guidance": [],
       "variants": [
         {

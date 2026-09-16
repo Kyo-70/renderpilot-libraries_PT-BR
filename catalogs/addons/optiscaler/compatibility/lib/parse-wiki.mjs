@@ -93,7 +93,7 @@ function rowFromCells({ cells, section, ordinal, columns }) {
   };
 }
 
-/** Parses only the two documented compatibility tables, never their prose. */
+/** Parses only documented compatibility tables, never their prose. */
 export function parseOptiScalerWiki(markdown) {
   const rows = [];
   const seenTitles = new Map();
@@ -105,7 +105,13 @@ export function parseOptiScalerWiki(markdown) {
     const line = rawLine.trim();
     const heading = line.match(/^#{1,6}\s+(.*)$/u)?.[1]?.toLowerCase();
     if (heading) {
-      section = heading.includes("luma unreal") ? "luma_unreal" : "main";
+      if (heading.includes("luma unreal")) {
+        section = "luma_unreal";
+      } else if (heading.includes("upscaler mods")) {
+        section = "upscaler_mods";
+      } else {
+        section = "main";
+      }
       columns = null;
       ordinal = 0;
       continue;

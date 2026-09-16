@@ -13,20 +13,20 @@ import {
 import { createMatchRegistry } from "../../../../../scripts/lib/match-registry.mjs";
 
 const ROOT = path.resolve(import.meta.dirname, "../../../../..");
-const EXPECTED_PUBLISHED_ENTRY_COUNT = 686;
+const EXPECTED_PUBLISHED_ENTRY_COUNT = 689;
 const CURRENT_WIKI_SNAPSHOT = {
-  revision: "2026-09-13",
-  sha256: "6c85b16c01b75acdc41d321abe58edf817a26772d0eb7fefab3547f8ad8917b2",
-  rows: 700,
+  revision: "2026-09-16",
+  sha256: "a89d83543eec78dc06461e53c9b2f32575eb4245dbdfa4096743cd875f30658e",
+  rows: 703,
 };
 const SHIFTED_MAIN_SOURCE_KEYS = Array.from(
   { length: 146 },
-  (_, index) => `main:${String(531 + index).padStart(4, "0")}`,
+  (_, index) => `main:${String(517 + index).padStart(4, "0")}`,
 );
 const EXPECTED_REFRAMEWORK_FAMILY = [
   {
     id: "onimusha-way-of-the-sword",
-    sourceKey: "main:0401",
+    sourceKey: "main:0396",
     inputs: ["dlss2_plus", "fsr2_plus"],
     steamAppId: "2638890",
     messageId: "optiscaler-onimusha-way-of-the-sword-reframework",
@@ -34,7 +34,7 @@ const EXPECTED_REFRAMEWORK_FAMILY = [
   },
   {
     id: "resident-evil-2-remake",
-    sourceKey: "main:0454",
+    sourceKey: "upscaler_mods:0011",
     inputs: ["dlss2_plus", "xess"],
     steamAppId: "883710",
     messageId: "optiscaler-resident-evil-2-remake-reframework-upscalerbase-plugin",
@@ -43,7 +43,7 @@ const EXPECTED_REFRAMEWORK_FAMILY = [
   },
   {
     id: "resident-evil-3-remake",
-    sourceKey: "main:0455",
+    sourceKey: "upscaler_mods:0012",
     inputs: ["dlss2_plus", "xess"],
     steamAppId: "952060",
     messageId: "optiscaler-resident-evil-3-remake-reframework-upscalerbase-plugin",
@@ -52,7 +52,7 @@ const EXPECTED_REFRAMEWORK_FAMILY = [
   },
   {
     id: "resident-evil-4-remake",
-    sourceKey: "main:0456",
+    sourceKey: "upscaler_mods:0013",
     inputs: ["dlss2_plus", "xess"],
     steamAppId: "2050650",
     messageId: "optiscaler-resident-evil-4-remake-reframework-upscalerbase-plugin",
@@ -61,7 +61,7 @@ const EXPECTED_REFRAMEWORK_FAMILY = [
   },
   {
     id: "resident-evil-7",
-    sourceKey: "main:0457",
+    sourceKey: "upscaler_mods:0014",
     inputs: ["dlss2_plus", "xess"],
     steamAppId: "418370",
     messageId: "optiscaler-resident-evil-7-reframework-upscalerbase-plugin",
@@ -70,7 +70,7 @@ const EXPECTED_REFRAMEWORK_FAMILY = [
   },
   {
     id: "resident-evil-requiem",
-    sourceKey: "main:0459",
+    sourceKey: "main:0446",
     inputs: ["dlss2_plus", "fsr2_plus"],
     steamAppId: "3764200",
     messageId: "optiscaler-resident-evil-requiem-reframework",
@@ -82,20 +82,20 @@ const EXPECTED_PENDING_IDENTITY_REASONS = {
   "main:0013":
     "The Epic launcher AppName is not verified; CatalogItemId alone is not a reachable runtime identity.",
   "main:0014": "No verified exact Epic Games Store identity is available.",
-  "main:0193": "This is a mod distribution, not a game runtime target identity.",
-  "main:0320":
+  "main:0190": "This is a mod distribution, not a game runtime target identity.",
+  "main:0316":
     "Multiple distinct official Steam apps and demos share this title, so no exact identity can be selected.",
-  "main:0368": "The UWP/Windows edition has no supported exact identity binding.",
-  "main:0370": "No supported exact runtime or store identity is available.",
-  "main:0420":
+  "main:0363": "The UWP/Windows edition has no supported exact identity binding.",
+  "main:0365": "No supported exact runtime or store identity is available.",
+  "main:0415":
     "An Epic-only candidate exists, but no verified exact Epic Games Store identity is available.",
-  "main:0472":
+  "main:0459":
     "Store results are different products and do not establish an exact title binding.",
-  "main:0477": "The upstream source deliberately provides no bindable identity.",
-  "main:0493": "No exact verifiable store identity is available.",
-  "main:0554":
+  "main:0464": "The upstream source deliberately provides no bindable identity.",
+  "main:0479": "No exact verifiable store identity is available.",
+  "main:0540":
     "An Epic candidate exists, but no verified exact Epic Games Store identity is available.",
-  "main:0596":
+  "main:0582":
     "The prior Steam AppID 3763780 is no longer a current app; other Rift results are distinct games.",
 };
 const EXPECTED_REAUDITED_BINDINGS = {
@@ -104,52 +104,52 @@ const EXPECTED_REAUDITED_BINDINGS = {
     targetId: "armatus",
     identity: { kind: "steam_appid", value: "3660710" },
   },
-  "main:0155": {
+  "main:0154": {
     entryId: "diablo-ii-resurrected",
     targetId: "diablo-ii-resurrected",
     identity: { kind: "steam_appid", value: "2536520" },
   },
-  "main:0198": {
+  "main:0195": {
     entryId: "everwind-demo",
     targetId: "everwind",
     identity: { kind: "steam_appid", value: "2253100" },
   },
-  "main:0395": {
+  "main:0390": {
     entryId: "norse-oath-of-blood-demo",
     targetId: "norse-oath-of-blood",
     identity: { kind: "steam_appid", value: "3054690" },
   },
-  "main:0402": {
+  "main:0397": {
     entryId: "online-404-demo",
     targetId: "online-404",
     identity: { kind: "steam_appid", value: "4094350" },
   },
-  "main:0435": {
+  "main:0428": {
     entryId: "protocol-terminate-demo",
     targetId: "protocol-terminate",
     identity: { kind: "steam_appid", value: "3710560" },
   },
-  "main:0540": {
+  "main:0526": {
     entryId: "stygian-outer-gods",
     targetId: "stygian-outer-gods",
     identity: { kind: "steam_appid", value: "2581410" },
   },
-  "main:0582": {
+  "main:0568": {
     entryId: "the-last-oricru",
     targetId: "the-last-oricru",
     identity: { kind: "steam_appid", value: "1663640" },
   },
-  "main:0591": {
+  "main:0577": {
     entryId: "the-other-side",
     targetId: "the-other-side",
     identity: { kind: "steam_appid", value: "2764750" },
   },
-  "main:0624": {
+  "main:0610": {
     entryId: "undertaker",
     targetId: "undertaker",
     identity: { kind: "steam_appid", value: "4030360" },
   },
-  "main:0663": {
+  "main:0649": {
     entryId: "wonder-ball",
     targetId: "wonder-ball",
     identity: { kind: "steam_appid", value: "2640030" },
@@ -376,22 +376,30 @@ async function fixture() {
   };
 }
 
-test("wiki parser preserves main and Luma rows and fingerprints duplicate upstream rows", () => {
+test("wiki parser preserves main, upscaler mods, and Luma rows and fingerprints duplicate upstream rows", () => {
   const markdown = `## Main
 | Game | Compatibility | Upscaler <br>Inputs | OptiPatcher <br>Support | Notes | Images |
 | --- | --- | --- | --- | --- | --- |
 | [Example](example) | ✅ | DLSS, FSR2 | ✨ | Use \`dxgi.dll\` | |
 | Example | ✅ | DLSS | | | |
+## Upscaler mods support
+| Game | Compatibility | Upscaler <br>Inputs | Notes | Images |
+| --- | --- | --- | --- | --- |
+| [Modded Game](modded) | ✅ | DLSS | Requires mod | |
 ## Luma Unreal Engine
 | Game | Compatibility | Upscaler <br>Inputs | Notes | Images |
 | --- | --- | --- | --- | --- |
 | [UE Example](ue) | ✅ | DLSS | Install Luma first | |`;
   const rows = parseOptiScalerWiki(markdown);
-  assert.equal(rows.length, 3);
+  assert.equal(rows.length, 4);
   assert.deepEqual(rows[0].declared_inputs, ["dlss2_plus", "fsr2_plus"]);
   assert.equal(rows[1].duplicate_of, "main:0001");
-  assert.equal(rows[2].section, "luma_unreal");
+  assert.equal(rows[2].section, "upscaler_mods");
+  assert.equal(rows[2].source_key, "upscaler_mods:0001");
+  assert.equal(rows[3].section, "luma_unreal");
+  assert.equal(rows[3].source_key, "luma_unreal:0001");
   assert.ok(rows[0].note_fingerprint);
+  assert.ok(rows[2].note_fingerprint);
 });
 
 test("runtime projection is title-free and has an exact message-contract bijection", async () => {
@@ -739,7 +747,7 @@ test("every OptiScaler entry preserves its authored default proxy policy", async
 test("Guardians of the Galaxy projects its exact source-bound Spoofing override", async () => {
   const inputs = await fixture();
   const authored = inputs.curatedGames.entries.find(
-    (entry) => entry.source_ref === "main:0262",
+    (entry) => entry.source_ref === "main:0258",
   );
   assert.ok(authored, "Guardians source entry must remain authored");
   assert.deepEqual(authored.declared_inputs, ["dlss2_plus"]);
@@ -851,20 +859,20 @@ test("current Wiki refresh preserves the verified ordinal rekey and exact Zero C
   assert.equal(inputs.ledger.snapshot_sha256, CURRENT_WIKI_SNAPSHOT.sha256);
   assert.equal(inputs.curatedGames.snapshot_sha256, CURRENT_WIKI_SNAPSHOT.sha256);
 
-  const onimusha = snapshotBySource.get("main:0401");
+  const onimusha = snapshotBySource.get("main:0396");
   assert.equal(onimusha?.title, "Onimusha: Way of the Sword");
-  assert.deepEqual(ledgerBySource.get("main:0401")?.disposition, {
+  assert.deepEqual(ledgerBySource.get("main:0396")?.disposition, {
     kind: "published",
     entry_id: "onimusha-way-of-the-sword",
   });
-  assert.deepEqual(ledgerBySource.get("main:0401")?.notes?.[0]?.disposition, {
+  assert.deepEqual(ledgerBySource.get("main:0396")?.notes?.[0]?.disposition, {
     kind: "guidance",
     message_ids: ["optiscaler-onimusha-way-of-the-sword-reframework"],
   });
   assert.equal(entriesById.has("onimusha-way-of-the-sword-demo"), false);
   assert.deepEqual(entriesById.get("onimusha-way-of-the-sword"), {
     id: "onimusha-way-of-the-sword",
-    source_ref: "main:0401",
+    source_ref: "main:0396",
     status: "working",
     declared_inputs: ["dlss2_plus", "fsr2_plus"],
     guidance: [
@@ -912,12 +920,12 @@ test("current Wiki refresh preserves the verified ordinal rekey and exact Zero C
       `${sourceKey} must retain its exact post-rekey source binding`,
     );
   }
-  assert.equal(snapshotBySource.get("main:0676")?.title, "Zouhri: The Cursed Blood Demo");
+  assert.equal(snapshotBySource.get("main:0662")?.title, "Zouhri: The Cursed Blood Demo");
 
   const zero = entriesById.get("star-wars-zero-company");
   assert.deepEqual(zero, {
     id: "star-wars-zero-company",
-    source_ref: "main:0530",
+    source_ref: "main:0516",
     status: "working",
     declared_inputs: ["dlss2_plus", "fsr2_plus", "xess"],
     guidance: [
@@ -937,11 +945,11 @@ test("current Wiki refresh preserves the verified ordinal rekey and exact Zero C
     ],
     game_target_id: "star-wars-zero-company",
   });
-  assert.deepEqual(ledgerBySource.get("main:0530")?.disposition, {
+  assert.deepEqual(ledgerBySource.get("main:0516")?.disposition, {
     kind: "published",
     entry_id: "star-wars-zero-company",
   });
-  assert.deepEqual(ledgerBySource.get("main:0530")?.notes?.[0]?.disposition, {
+  assert.deepEqual(ledgerBySource.get("main:0516")?.notes?.[0]?.disposition, {
     kind: "guidance",
     message_ids: ["optiscaler-star-wars-zero-company-vendor-options"],
   });
@@ -1110,14 +1118,14 @@ test("re-audited identities are explicit source-to-target bindings", async () =>
     assert.deepEqual(runtimeById.get(expected.entryId)?.identities, [expected.identity]);
   }
 
-  const online = entriesBySource.get("main:0402");
+  const online = entriesBySource.get("main:0397");
   assert.deepEqual(online?.guidance, [
     {
       kind: "game_setting",
       message_id: "optiscaler-online-404-reselect-upscaler",
     },
   ]);
-  assert.deepEqual(ledgerBySource.get("main:0402")?.notes[0]?.disposition, {
+  assert.deepEqual(ledgerBySource.get("main:0397")?.notes[0]?.disposition, {
     kind: "guidance",
     message_ids: ["optiscaler-online-404-reselect-upscaler"],
   });
