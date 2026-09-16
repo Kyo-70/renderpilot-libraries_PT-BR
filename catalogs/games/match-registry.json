@@ -1405,7 +1405,7 @@
           "value": "48190",
           "provenance": {
             "source": "renodx-match-overlay",
-            "locator": "catalogs/addons/renodx/match_overlay.json#assassin-s-creed-ezio-trilogy-dgvoodoo"
+            "locator": "catalogs/addons/renodx/match_overlay.json#assassin-s-creed-brotherhood"
           }
         },
         {
@@ -1428,7 +1428,7 @@
           "value": "33230",
           "provenance": {
             "source": "renodx-match-overlay",
-            "locator": "catalogs/addons/renodx/match_overlay.json#assassin-s-creed-ezio-trilogy-dgvoodoo"
+            "locator": "catalogs/addons/renodx/match_overlay.json#assassin-s-creed-ii"
           }
         },
         {
@@ -1543,7 +1543,7 @@
           "value": "201870",
           "provenance": {
             "source": "renodx-match-overlay",
-            "locator": "catalogs/addons/renodx/match_overlay.json#assassin-s-creed-ezio-trilogy-dgvoodoo"
+            "locator": "catalogs/addons/renodx/match_overlay.json#assassin-s-creed-revelations"
           }
         },
         {

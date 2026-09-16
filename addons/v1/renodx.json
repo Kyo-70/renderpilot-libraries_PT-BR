@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-15T00:00:00Z",
+  "generated_at": "2026-09-16T00:00:00Z",
   "games": [
     {
       "id": "007-first-light",
@@ -262,6 +262,72 @@
       ],
       "addon": {
         "slug": "asscreed1"
+      }
+    },
+    {
+      "id": "assassin-s-creed-ii",
+      "name": "Assassin’s Creed® II",
+      "architecture": "X86",
+      "status": "working",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "33230",
+          "tier": 100
+        },
+        {
+          "kind": "exe_name",
+          "value": "AssassinsCreedIIGame.exe",
+          "tier": 70
+        }
+      ],
+      "addon": {
+        "slug": "asscreedeziotrilogy",
+        "source": "https://github.com/hartapfel/renodx/releases/download/asscreedeziotrilogy-snapshot/renodx-asscreedeziotrilogy.addon32"
+      }
+    },
+    {
+      "id": "assassin-s-creed-brotherhood",
+      "name": "Assassin’s Creed® Brotherhood",
+      "architecture": "X86",
+      "status": "working",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "48190",
+          "tier": 100
+        },
+        {
+          "kind": "exe_name",
+          "value": "ACBSP.exe",
+          "tier": 70
+        }
+      ],
+      "addon": {
+        "slug": "asscreedeziotrilogy",
+        "source": "https://github.com/hartapfel/renodx/releases/download/asscreedeziotrilogy-snapshot/renodx-asscreedeziotrilogy.addon32"
+      }
+    },
+    {
+      "id": "assassin-s-creed-revelations",
+      "name": "Assassin’s Creed® Revelations",
+      "architecture": "X86",
+      "status": "working",
+      "match": [
+        {
+          "kind": "steam_appid",
+          "value": "201870",
+          "tier": 100
+        },
+        {
+          "kind": "exe_name",
+          "value": "ACRSP.exe",
+          "tier": 70
+        }
+      ],
+      "addon": {
+        "slug": "asscreedeziotrilogy",
+        "source": "https://github.com/hartapfel/renodx/releases/download/asscreedeziotrilogy-snapshot/renodx-asscreedeziotrilogy.addon32"
       }
     },
     {

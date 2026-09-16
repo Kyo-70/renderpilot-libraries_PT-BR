@@ -151,14 +151,16 @@
     "slug": "asscreedblackflagresynced",
     "game_target_ids": ["assassins-creed-black-flag-resynced"]
   },
+  "assassin-s-creed-brotherhood": {
+    "download_url": "https://github.com/hartapfel/renodx/releases/download/asscreedeziotrilogy-snapshot/renodx-asscreedeziotrilogy.addon32",
+    "game_target_ids": ["assassins-creed-brotherhood"]
+  },
   "assassin-s-creed-director-s-cut-edition": {
     "game_target_ids": ["assassin-s-creed-director-s-cut-edition"]
   },
-  "assassin-s-creed-ii-dgvoodoo": {
-    "external": {
-      "url": "https://www.nexusmods.com/assassinscreedii/mods/250",
-      "label_key": "renodx.external.nexus"
-    }
+  "assassin-s-creed-ii": {
+    "download_url": "https://github.com/hartapfel/renodx/releases/download/asscreedeziotrilogy-snapshot/renodx-asscreedeziotrilogy.addon32",
+    "game_target_ids": ["assassins-creed-ii"]
   },
   "assassin-s-creed-iii-original": {
     "external": {
@@ -173,6 +175,10 @@
       "label_key": "renodx.external.nexus"
     },
     "game_target_ids": ["assassin-s-creed-iii-remastered"]
+  },
+  "assassin-s-creed-revelations": {
+    "download_url": "https://github.com/hartapfel/renodx/releases/download/asscreedeziotrilogy-snapshot/renodx-asscreedeziotrilogy.addon32",
+    "game_target_ids": ["assassins-creed-revelations"]
   },
   "assassin-s-creed-syndicate": {
     "external": {

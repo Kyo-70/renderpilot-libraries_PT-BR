@@ -91,11 +91,25 @@
     "id": "assassin-s-creed-director-s-cut-edition"
   },
   {
-    "name": "Assassin’s Creed® II (dgVoodoo)",
-    "slug": "assassin-s-creed-ii-dgvoodoo",
-    "arch": "X64",
+    "name": "Assassin’s Creed® II",
+    "slug": "asscreedeziotrilogy",
+    "arch": "X86",
     "status": "working",
-    "id": "assassin-s-creed-ii-dgvoodoo"
+    "id": "assassin-s-creed-ii"
+  },
+  {
+    "name": "Assassin’s Creed® Brotherhood",
+    "slug": "asscreedeziotrilogy",
+    "arch": "X86",
+    "status": "working",
+    "id": "assassin-s-creed-brotherhood"
+  },
+  {
+    "name": "Assassin’s Creed® Revelations",
+    "slug": "asscreedeziotrilogy",
+    "arch": "X86",
+    "status": "working",
+    "id": "assassin-s-creed-revelations"
   },
   {
     "name": "Assassin’s Creed® III Original",
