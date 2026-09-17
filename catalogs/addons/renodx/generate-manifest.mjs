@@ -6,6 +6,7 @@
 // document is written under addons/v1/.
 
 import { buildManifest } from "./lib/build-manifest.mjs";
+import { buildV2Artifacts } from "./lib/build-v2.mjs";
 import { readJsonFile } from "../../../scripts/lib/json.mjs";
 import { runGenerateManifestMain } from "../../../scripts/lib/generate-manifest-runner.mjs";
 import { addonCatalogs, repoRoot } from "../../../scripts/catalog.mjs";
@@ -13,11 +14,15 @@ import { createMatchRegistry } from "../../../scripts/lib/match-registry.mjs";
 
 const FILES = Object.freeze({
   wiki: addonCatalogs.renodx.sources.wiki,
+  wikiMessages: addonCatalogs.renodx.sources.wikiMessages,
+  wikiSource: addonCatalogs.renodx.sources.wikiSource,
   curatedGames: addonCatalogs.renodx.sources.curatedGames,
+  messages: addonCatalogs.renodx.sources.messages,
   overlay: addonCatalogs.renodx.sources.overlay,
   matchRegistry: addonCatalogs.renodx.sources.matchRegistry,
   outputs: {
     manifest: addonCatalogs.renodx.outputs.manifest.file,
+    manifestV2: addonCatalogs.renodx.outputs.manifestV2.file,
     pending: addonCatalogs.renodx.sources.pending,
   },
 });
@@ -36,9 +41,17 @@ runGenerateManifestMain(() => ({
   helpText: HELP_TEXT,
   build: (inputs) => {
     const result = buildManifest(inputs);
+    const v2 = buildV2Artifacts(result.manifest, {
+      generatedAt: result.manifest.generated_at,
+      wikiGames: inputs.wiki,
+      wikiMessages: inputs.wikiMessages,
+      wikiSource: inputs.wikiSource,
+      messages: inputs.messages,
+    });
     return {
       outputs: {
         manifest: result.manifest,
+        manifestV2: v2.manifest,
         pending: result.pending,
       },
       stats: result.stats,
@@ -46,7 +59,10 @@ runGenerateManifestMain(() => ({
   },
   readInputs: ({ generatedAt }) => ({
     wiki: readJsonFile(FILES.wiki, "wiki_games.json"),
+    wikiMessages: readJsonFile(FILES.wikiMessages, "wiki_messages.json"),
+    wikiSource: readJsonFile(FILES.wikiSource, "wiki_source.json"),
     curatedGames: readJsonFile(FILES.curatedGames, "curated_games.json"),
+    messages: readJsonFile(FILES.messages, "messages.json"),
     overlay: readJsonFile(FILES.overlay, "match_overlay.json"),
     registry: createMatchRegistry(readJsonFile(FILES.matchRegistry, "match-registry.json")),
     generatedAt,

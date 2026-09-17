@@ -41,7 +41,7 @@ function getCellValue(columns, index) {
   return index >= 0 && index < columns.length ? (columns[index] ?? "") : "";
 }
 
-export function parseWikiRow(columns, columnsMapping, engineContext) {
+export function parseWikiRow(columns, columnsMapping, engineContext, section) {
   if (columns.length < 2) return null;
 
   const name = extractMarkdownLinkLabel(getCellValue(columns, columnsMapping.nameIndex));
@@ -50,6 +50,7 @@ export function parseWikiRow(columns, columnsMapping, engineContext) {
   const linksColumn = getCellValue(columns, columnsMapping.linksIndex);
   const notesColumn = getCellValue(columns, columnsMapping.notesIndex);
   const statusColumn = getCellValue(columns, columnsMapping.statusIndex);
+  const statusNote = statusColumn.match(/#\s*["“]([^"”]+)["”]/)?.[1] ?? null;
   const addonMatch = linksColumn.match(ADDON_URL_RE);
   const addonUrl = addonMatch?.[1] ?? null;
 
@@ -61,8 +62,9 @@ export function parseWikiRow(columns, columnsMapping, engineContext) {
   if (!addonUrl && engineContext === "unreal") addonSlug = "unrealengine";
   if (!addonUrl && engineContext === "ue-extended") addonSlug = "ue-extended";
 
-  return {
+  const row = {
     name,
+    section,
     status: parseStatus(statusColumn),
     addonUrl,
     arch,
@@ -70,6 +72,14 @@ export function parseWikiRow(columns, columnsMapping, engineContext) {
     nexusUrl: extractUrl(linksColumn, NEXUS_URL_RE),
     discordUrl: extractUrl(linksColumn, DISCORD_URL_RE),
   };
+  const notes = [statusNote, notesColumn]
+    .filter(Boolean)
+    .join(" ")
+    .replace(/<br\s*\/?>/gi, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+  if (notes) row.notes = notes;
+  return row;
 }
 
 // ── RenoDX catalogue and overlay reconciliation ────────────────────────────
@@ -92,17 +102,30 @@ export function slugify(name) {
 export function parseRenodxWikiRows(markdown) {
   const rows = [];
   let sawModsTable = false;
+  const sourceKeyCounts = new Map();
 
   for (const table of extractMarkdownTables(markdown)) {
-    // Related Mods and Deprecated are not active RenoDX entries.
+    // Related Mods and Deprecated are intentionally outside RenoDX's active
+    // catalogue. They must never produce runtime rows or drift obligations.
     if (table.isExcluded || table.isDeprecated) continue;
     const columnsMapping = getModsTableHeaderColumns(table.headers);
     if (!columnsMapping) continue;
 
     sawModsTable = true;
     for (const cells of table.rows) {
-      const row = parseWikiRow(cells, columnsMapping, table.engineContext);
-      if (row) rows.push(row);
+      const row = parseWikiRow(
+        cells,
+        columnsMapping,
+        table.engineContext,
+        table.engineContext ?? "main",
+      );
+      if (row) {
+        const baseSourceKey = `${row.section}:${slugify(row.name)}`;
+        const occurrence = (sourceKeyCounts.get(baseSourceKey) ?? 0) + 1;
+        sourceKeyCounts.set(baseSourceKey, occurrence);
+        row.sourceKey = occurrence === 1 ? baseSourceKey : `${baseSourceKey}:${occurrence}`;
+        rows.push(row);
+      }
     }
   }
 
@@ -328,10 +351,21 @@ export function reconcileRenodxWiki({ rows, existingWiki, overlay, officialAsset
   const seenIds = new Set();
   const gameIndexById = new Map();
   const warnings = [];
+  const messages = [];
   const stats = { official: 0, download_url: 0, external: 0, unchanged: 0 };
 
   for (const row of rows) {
     const id = resolveId(row.name, lookups);
+    if (row.notes) {
+      messages.push({
+        source_key: row.sourceKey,
+        game_id: id,
+        title: row.name,
+        section: row.section,
+        profile_source: row.addonSlug ?? "game",
+        note: row.notes,
+      });
+    }
     if (seenIds.has(id)) {
       const existingIndex = gameIndexById.get(id);
       if (existingIndex !== undefined) {
@@ -339,13 +373,27 @@ export function reconcileRenodxWiki({ rows, existingWiki, overlay, officialAsset
         const ueReplace = shouldReplaceExistingUeGeneric(existing, row);
         if (ueReplace !== null) {
           if (ueReplace) {
-            wikiGames[existingIndex] = {
+            const replacement = {
               name: row.name,
               slug: row.addonSlug,
               arch: row.arch,
               status: row.status,
               id,
             };
+            if (row.notes) replacement.notes = row.notes;
+            if (row.notes) replacement.source_key = row.sourceKey;
+            if (row.section && row.section !== "main") replacement.section = row.section;
+            wikiGames[existingIndex] = replacement;
+          }
+          continue;
+        }
+        if (existing.slug === row.addonSlug && row.notes) {
+          if (!existing.source_key) {
+            existing.source_key = row.sourceKey;
+            existing.notes = row.notes;
+          } else {
+            existing.additional_source_keys ??= [];
+            existing.additional_source_keys.push(row.sourceKey);
           }
           continue;
         }
@@ -373,13 +421,17 @@ export function reconcileRenodxWiki({ rows, existingWiki, overlay, officialAsset
       officialAssets,
     });
 
-    wikiGames.push({
+    const snapshotGame = {
       name: row.name,
       slug: resolved.slug,
       arch: resolved.arch,
       status: row.status,
       id,
-    });
+    };
+    if (row.notes) snapshotGame.notes = row.notes;
+    if (row.notes) snapshotGame.source_key = row.sourceKey;
+    if (row.section && row.section !== "main") snapshotGame.section = row.section;
+    wikiGames.push(snapshotGame);
     const availability = applyOverlayAvailability({
       overlay: nextOverlay,
       id,
@@ -391,5 +443,5 @@ export function reconcileRenodxWiki({ rows, existingWiki, overlay, officialAsset
     stats[availability] += 1;
   }
 
-  return { wikiGames, overlay: nextOverlay, stats, warnings };
+  return { wikiGames, messages, overlay: nextOverlay, stats, warnings };
 }

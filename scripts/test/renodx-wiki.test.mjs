@@ -12,6 +12,7 @@ import {
   slugify,
 } from "../lib/renodx-wiki.mjs";
 import { createMatchRegistry } from "../lib/match-registry.mjs";
+import { deepFreeze } from "../lib/common.mjs";
 
 test("extractMarkdownTables captures tables and their preceding context", () => {
   const markdown = `
@@ -98,6 +99,17 @@ test("parseWikiRow parses Unity game without custom link", () => {
   assert.equal(row.status, "working");
   assert.equal(row.addonSlug, "unityengine");
   assert.equal(row.arch, "X64");
+  assert.equal(row.notes, "Works");
+});
+
+test("parseWikiRow retains a status-cell hover note for manual disposition", () => {
+  const columnsMapping = { nameIndex: 0, statusIndex: 1, linksIndex: -1, notesIndex: 2 };
+  const row = parseWikiRow(
+    ["Game", `:white_check_mark:](# \"Check the mod thread for notes.\")`, ""],
+    columnsMapping,
+    null,
+  );
+  assert.equal(row.notes, "Check the mod thread for notes.");
 });
 
 test("parseWikiRow parses Unreal game without custom link", () => {
@@ -315,12 +327,14 @@ test("parseRenodxWikiRows preserves the existing Mods-table parser contract", ()
   assert.deepEqual(rows, [
     {
       name: "Game",
+      section: "unity",
       status: "working",
       addonUrl: null,
       arch: "X64",
       addonSlug: "unityengine",
       nexusUrl: null,
       discordUrl: null,
+      sourceKey: "unity:game",
     },
   ]);
 });
@@ -827,4 +841,238 @@ test("shouldReplaceExistingUeGeneric satisfies complete priority matrix across o
     ),
     null,
   );
+});
+
+test("parseRenodxWikiRows disambiguates duplicate titles with occurrence suffix", () => {
+  const markdown = `
+### Unity
+| Name | Status |
+|:---|:---|
+| Clone Game | :white_check_mark: |
+| Clone Game | :construction: |
+| Clone Game | :question: |
+`;
+
+  const rows = parseRenodxWikiRows(markdown);
+  assert.equal(rows.length, 3);
+  assert.equal(rows[0].sourceKey, "unity:clone-game");
+  assert.equal(rows[1].sourceKey, "unity:clone-game:2");
+  assert.equal(rows[2].sourceKey, "unity:clone-game:3");
+});
+
+test("reconcileRenodxWiki creates messages and handles duplicate notes cleanly", () => {
+  const rows = [
+    {
+      name: "Duplicate Game",
+      section: "ue-extended",
+      status: "working",
+      addonUrl: null,
+      arch: "X64",
+      addonSlug: "ue-extended",
+      nexusUrl: null,
+      discordUrl: null,
+      sourceKey: "ue-extended:duplicate-game",
+    },
+    {
+      name: "Duplicate Game",
+      section: "ue-extended",
+      status: "working",
+      addonUrl: null,
+      arch: "X64",
+      addonSlug: "ue-extended",
+      nexusUrl: null,
+      discordUrl: null,
+      sourceKey: "ue-extended:duplicate-game:2",
+      notes: "Second row note",
+    },
+  ];
+
+  const result = reconcileRenodxWiki({
+    rows,
+    existingWiki: [],
+    overlay: {},
+    officialAssets: new Set(),
+  });
+
+  assert.equal(result.wikiGames.length, 1);
+  assert.equal(result.wikiGames[0].notes, "Second row note");
+  assert.equal(result.wikiGames[0].source_key, "ue-extended:duplicate-game:2");
+  assert.equal(result.messages.length, 1);
+  assert.deepEqual(result.messages[0], {
+    source_key: "ue-extended:duplicate-game:2",
+    game_id: "duplicate-game",
+    title: "Duplicate Game",
+    section: "ue-extended",
+    profile_source: "ue-extended",
+    note: "Second row note",
+  });
+});
+
+test("reconcileRenodxWiki accumulates additional_source_keys when both duplicate rows have notes", () => {
+  const rows = [
+    {
+      name: "Multi Note Game",
+      section: "main",
+      status: "working",
+      addonUrl: null,
+      arch: "X64",
+      addonSlug: "game",
+      nexusUrl: null,
+      discordUrl: null,
+      sourceKey: "main:multi-note-game",
+      notes: "First note",
+    },
+    {
+      name: "Multi Note Game",
+      section: "main",
+      status: "working",
+      addonUrl: null,
+      arch: "X64",
+      addonSlug: "game",
+      nexusUrl: null,
+      discordUrl: null,
+      sourceKey: "main:multi-note-game:2",
+      notes: "Second note",
+    },
+  ];
+
+  const result = reconcileRenodxWiki({
+    rows,
+    existingWiki: [],
+    overlay: {},
+    officialAssets: new Set(),
+  });
+
+  assert.equal(result.wikiGames.length, 1);
+  assert.equal(result.wikiGames[0].notes, "First note");
+  assert.equal(result.wikiGames[0].source_key, "main:multi-note-game");
+  assert.deepEqual(result.wikiGames[0].additional_source_keys, ["main:multi-note-game:2"]);
+  assert.equal(result.messages.length, 2);
+});
+
+test("reconcileRenodxWiki enforces referential immutability and never mutates inputs", () => {
+  const rows = deepFreeze([
+    {
+      name: "Frozen Game",
+      section: "ue-extended",
+      status: "working",
+      addonUrl: null,
+      arch: "X64",
+      addonSlug: "ue-extended",
+      nexusUrl: null,
+      discordUrl: null,
+      sourceKey: "ue-extended:frozen-game",
+      notes: "Frozen note",
+    },
+    {
+      name: "Frozen Game",
+      section: "ue-extended",
+      status: "working",
+      addonUrl: null,
+      arch: "X64",
+      addonSlug: "ue-extended",
+      nexusUrl: null,
+      discordUrl: null,
+      sourceKey: "ue-extended:frozen-game:2",
+      notes: "Additional frozen note",
+    },
+  ]);
+
+  const existingWiki = deepFreeze([
+    {
+      id: "frozen-game",
+      name: "Frozen Game",
+      slug: "ue-extended",
+      arch: "X64",
+      status: "working",
+    },
+  ]);
+
+  const overlay = deepFreeze({
+    "frozen-game": {
+      download_url: "https://example.com/mod.addon64",
+      external: "nexus",
+    },
+  });
+
+  const officialAssets = deepFreeze(new Set(["renodx-frozen-game.addon64"]));
+
+  // If reconcileRenodxWiki mutates any of the inputs, Object.freeze will throw a TypeError in strict mode.
+  const result = reconcileRenodxWiki({
+    rows,
+    existingWiki,
+    overlay,
+    officialAssets,
+  });
+
+  assert.ok(result);
+  assert.equal(result.wikiGames.length, 1);
+  assert.equal(result.wikiGames[0].id, "frozen-game");
+  assert.notEqual(result.overlay, overlay);
+  assert.notEqual(result.overlay["frozen-game"], overlay["frozen-game"]);
+});
+
+test("reconcileRenodxWiki preserves every active note in messages across duplicates and is idempotent", () => {
+  const rows = [
+    {
+      name: "S.T.A.L.K.E.R. 2: Heart of Chornobyl",
+      section: "main",
+      status: "working",
+      addonUrl: null,
+      arch: "X64",
+      addonSlug: "ue-extended",
+      nexusUrl: null,
+      discordUrl: null,
+      sourceKey: "main:s-t-a-l-k-e-r-2-heart-of-chornobyl",
+      notes: "Set gamma to 50%",
+    },
+    {
+      name: "S.T.A.L.K.E.R. 2: Heart of Chornobyl",
+      section: "ue-extended",
+      status: "working",
+      addonUrl: null,
+      arch: "X64",
+      addonSlug: "ue-extended",
+      nexusUrl: null,
+      discordUrl: null,
+      sourceKey: "ue-extended:s-t-a-l-k-e-r-2-heart-of-chornobyl",
+      notes: "Native HDR",
+    },
+  ];
+
+  const firstPass = reconcileRenodxWiki({
+    rows,
+    existingWiki: [],
+    overlay: {},
+    officialAssets: new Set(),
+  });
+
+  // Both notes must be in messages for complete audit/ledger coverage
+  assert.equal(firstPass.messages.length, 2);
+  assert.equal(firstPass.messages[0].source_key, "main:s-t-a-l-k-e-r-2-heart-of-chornobyl");
+  assert.equal(
+    firstPass.messages[1].source_key,
+    "ue-extended:s-t-a-l-k-e-r-2-heart-of-chornobyl",
+  );
+  assert.equal(firstPass.wikiGames.length, 1);
+  assert.equal(
+    firstPass.wikiGames[0].source_key,
+    "main:s-t-a-l-k-e-r-2-heart-of-chornobyl",
+  );
+  assert.deepEqual(firstPass.wikiGames[0].additional_source_keys, [
+    "ue-extended:s-t-a-l-k-e-r-2-heart-of-chornobyl",
+  ]);
+
+  // Idempotence: running second pass with first pass output as existingWiki
+  const secondPass = reconcileRenodxWiki({
+    rows,
+    existingWiki: firstPass.wikiGames,
+    overlay: firstPass.overlay,
+    officialAssets: new Set(),
+  });
+
+  assert.deepEqual(secondPass.wikiGames, firstPass.wikiGames);
+  assert.deepEqual(secondPass.messages, firstPass.messages);
+  assert.deepEqual(secondPass.overlay, firstPass.overlay);
+  assert.deepEqual(secondPass.stats, firstPass.stats);
 });

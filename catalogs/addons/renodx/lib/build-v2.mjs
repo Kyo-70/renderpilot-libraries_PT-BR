@@ -1,0 +1,439 @@
+import { requiredNonEmptyString } from "../../../../scripts/lib/common.mjs";
+import {
+  PAGE_GUIDANCE,
+  decisionForWikiGame,
+  guidanceForWikiGame,
+  verifyCurationLedger,
+} from "./curation.mjs";
+import {
+  UE_HDR_ENGINE_INI_RECIPE,
+  UE_LUT_ENGINE_INI_RECIPE,
+  normalizeEngineIniRecipe,
+  renderEngineIniRecipe,
+} from "./engine-ini.mjs";
+import { RESOLVED_TITLE_GUIDANCE } from "./reviewed-guidance.mjs";
+
+const UE_HDR_CODE = renderEngineIniRecipe(UE_HDR_ENGINE_INI_RECIPE);
+const UE_LUT_CODE = renderEngineIniRecipe(UE_LUT_ENGINE_INI_RECIPE);
+
+const UE_HDR = Object.freeze({
+  id: "renodx.ue_extended.hdr_engine_ini",
+  kind: "engine_ini",
+  message_id: "renodx.ue_extended.hdr_engine_ini",
+  fallback_text: "For the UE5 HDR path, add these settings to Engine.ini.",
+  engine_ini: UE_HDR_ENGINE_INI_RECIPE,
+  code: UE_HDR_CODE,
+  condition: { engine: "unreal", unreal_major: 5 },
+});
+
+const UE_LUT = Object.freeze({
+  id: "renodx.ue_extended.lut_update",
+  kind: "engine_ini",
+  message_id: "renodx.ue_extended.lut_update",
+  fallback_text: "For UE5.3 and newer, add this setting to enable real-time sliders.",
+  engine_ini: UE_LUT_ENGINE_INI_RECIPE,
+  code: UE_LUT_CODE,
+  condition: { engine: "unreal", unreal_major: 5, unreal_minor_min: 3 },
+});
+
+const UE_COMMON = Object.freeze([
+  {
+    id: "renodx.ue_extended.native_hdr",
+    kind: "game_setting",
+    message_id: "renodx.ue_extended.native_hdr",
+    fallback_text: "Use Native HDR.",
+  },
+  UE_HDR,
+  UE_LUT,
+  {
+    id: "renodx.ue_extended.ue4_engine_ini_warning",
+    kind: "warning",
+    message_id: "renodx.ue_extended.ue4_engine_ini_warning",
+    fallback_text:
+      "General Engine.ini HDR tweaks are not recommended for Unreal Engine 4 games.",
+    condition: { engine: "unreal", unreal_major: 4 },
+  },
+]);
+
+const LEGACY_COMMON = Object.freeze([
+  {
+    id: "renodx.unreal_legacy.advanced_restart",
+    kind: "warning",
+    message_id: "renodx.unreal_legacy.advanced_restart",
+    fallback_text:
+      "Switch RenoDX from Simple to Advanced, then restart the game to unlock all sliders.",
+  },
+  {
+    id: "renodx.unreal_legacy.slider_refresh",
+    kind: "compatibility",
+    message_id: "renodx.unreal_legacy.slider_refresh",
+    fallback_text:
+      "In many Unreal games, slider changes appear only after changing scenes or returning from the menu.",
+  },
+]);
+
+const UNITY_COMMON = Object.freeze([
+  {
+    id: "renodx.unity.advanced_restart",
+    kind: "warning",
+    message_id: "renodx.unity.advanced_restart",
+    fallback_text:
+      "Switch RenoDX from Simple to Advanced, then restart the game to unlock all sliders.",
+  },
+  {
+    id: "renodx.unity.reset_display_controls",
+    kind: "game_setting",
+    message_id: "renodx.unity.reset_display_controls",
+    fallback_text:
+      "Keep the game's brightness, contrast, and gamma controls at their default values unless a title note says otherwise.",
+  },
+  {
+    id: "renodx.unity.windowed",
+    kind: "compatibility",
+    message_id: "renodx.unity.windowed",
+    fallback_text: "Avoid Exclusive Fullscreen; use Borderless or Windowed mode.",
+  },
+]);
+
+const PROFILE_DEFS = Object.freeze([
+  {
+    id: "ue_extended",
+    engine: "unreal",
+    generic_fallback: true,
+    status: "unknown",
+    message: {
+      id: "renodx.generic.ue_extended",
+      fallback_text: "Uses the shared Unreal Engine Extended profile.",
+    },
+    guidance: UE_COMMON,
+  },
+  {
+    id: "unreal_legacy",
+    engine: "unreal",
+    generic_fallback: false,
+    status: "unknown",
+    message: {
+      id: "renodx.generic.unreal_legacy",
+      fallback_text: "Uses a title-specific legacy Unreal Engine profile.",
+    },
+    guidance: LEGACY_COMMON,
+  },
+  {
+    id: "unity",
+    engine: "unity",
+    generic_fallback: true,
+    status: "unknown",
+    message: {
+      id: "renodx.generic.unity",
+      fallback_text: "Uses the shared Unity engine profile.",
+    },
+    guidance: UNITY_COMMON,
+  },
+]);
+
+const GAME_OVERRIDES = Object.freeze({
+  // Wukong remains the exact title routed through UE Extended. Its upstream
+  // note explicitly replaces the shared Engine.ini recipe and LUT setting.
+  "black-myth-wukong": [
+    {
+      id: "renodx.black_myth_wukong.hdr",
+      kind: "engine_ini",
+      message_id: "renodx.black_myth_wukong.hdr",
+      fallback_text: "In Engine.ini, add this setting for the UE Extended HDR path.",
+      code: "r.HDR.EnableHDROutput=1",
+    },
+  ],
+});
+
+function clone(value) {
+  return JSON.parse(JSON.stringify(value));
+}
+
+function profileForGame(game) {
+  if (game.slug === "ue-extended") return "ue_extended";
+  if (game.slug === "unrealengine") return "unreal_legacy";
+  if (game.slug === "unityengine") return "unity";
+  return null;
+}
+
+export function normalizeGuidance(items, context) {
+  if (!Array.isArray(items)) throw new Error(`${context}.guidance must be an array`);
+
+  const normalized = items.map((item, index) => {
+    if (!item || typeof item !== "object" || Array.isArray(item)) {
+      throw new Error(`${context}.guidance[${index}] must be an object`);
+    }
+    const { text, ...result } = item;
+    if (
+      text !== undefined &&
+      result.fallback_text !== undefined &&
+      text !== result.fallback_text
+    ) {
+      throw new Error(
+        `${context}.guidance[${index}] text and fallback_text must match (${JSON.stringify(text)} !== ${JSON.stringify(result.fallback_text)})`,
+      );
+    }
+    if (result.fallback_text === undefined && typeof text === "string") {
+      result.fallback_text = text;
+    }
+
+    if (result.id === undefined && result.message_id !== undefined) {
+      result.id = result.message_id;
+    }
+    if (result.message_id === undefined && result.id !== undefined) {
+      result.message_id = result.id;
+    }
+    if (result.id !== result.message_id) {
+      throw new Error(
+        `${context}.guidance[${index}] id and message_id must match (${JSON.stringify(result.id)} !== ${JSON.stringify(result.message_id)})`,
+      );
+    }
+
+    requiredNonEmptyString(result.id, `${context}.guidance[${index}].id`);
+    requiredNonEmptyString(result.kind, `${context}.guidance[${index}].kind`);
+    requiredNonEmptyString(result.message_id, `${context}.guidance[${index}].message_id`);
+    requiredNonEmptyString(
+      result.fallback_text,
+      `${context}.guidance[${index}].fallback_text`,
+    );
+    if (result.code !== undefined)
+      requiredNonEmptyString(result.code, `${context}.guidance[${index}].code`);
+    if (result.kind === "engine_ini" && result.code === undefined) {
+      throw new Error(`${context}.guidance[${index}].code is required`);
+    }
+    if (result.engine_ini !== undefined) {
+      if (result.kind !== "engine_ini") {
+        throw new Error(
+          `${context}.guidance[${index}].engine_ini is only valid for engine_ini guidance`,
+        );
+      }
+      const recipe = normalizeEngineIniRecipe(
+        result.engine_ini,
+        `${context}.guidance[${index}].engine_ini`,
+      );
+      const canonicalCode = renderEngineIniRecipe(recipe);
+      if (result.code !== undefined && result.code !== canonicalCode) {
+        throw new Error(
+          `${context}.guidance[${index}] code does not match engine_ini recipe`,
+        );
+      }
+      result.engine_ini = recipe;
+      result.code = canonicalCode;
+    }
+    if (result.settings !== undefined && !Array.isArray(result.settings)) {
+      throw new Error(`${context}.guidance[${index}].settings must be an array`);
+    }
+    if (Array.isArray(result.settings)) {
+      for (const [settingIndex, setting] of result.settings.entries()) {
+        if (!setting || typeof setting !== "object" || Array.isArray(setting)) {
+          throw new Error(
+            `${context}.guidance[${index}].settings[${settingIndex}] must be an object`,
+          );
+        }
+        requiredNonEmptyString(
+          setting.name,
+          `${context}.guidance[${index}].settings[${settingIndex}].name`,
+        );
+        requiredNonEmptyString(
+          setting.value,
+          `${context}.guidance[${index}].settings[${settingIndex}].value`,
+        );
+      }
+    }
+    return result;
+  });
+
+  // Settings with identical text within the same scope must be unified into a single block.
+  const seenTypedSettings = new Map();
+  for (const [index, item] of normalized.entries()) {
+    if (item.settings && (item.kind === "game_setting" || item.kind === "addon_setting")) {
+      const text = item.fallback_text;
+      const key = `${item.kind}:${text}`;
+      const firstIndex = seenTypedSettings.get(key);
+      if (firstIndex !== undefined) {
+        throw new Error(
+          `${context}.guidance[${index}] duplicates ${context}.guidance[${firstIndex}] "${item.kind}" guidance with identical text: ${JSON.stringify(text)}. Unify settings into a single guidance block instead of duplicating guidance items.`,
+        );
+      }
+      seenTypedSettings.set(key, index);
+    }
+  }
+
+  return normalized;
+}
+
+function materializeGuidance(
+  game,
+  wikiMessages,
+  decision = decisionForWikiGame(game, wikiMessages),
+) {
+  const profile = profileForGame(game);
+  const resolvedTitleGuidance = RESOLVED_TITLE_GUIDANCE[game.id] ?? [];
+  // Wukong is an explicit suppression rule: do not compose UE's broad HDR/LUT
+  // recipes with this one-line title-specific Engine.ini exception.
+  if (game.id === "black-myth-wukong") return clone(GAME_OVERRIDES[game.id]);
+  const curated = guidanceForWikiGame(game, wikiMessages);
+  const common =
+    profile === "ue_extended"
+      ? UE_COMMON
+      : profile === "unreal_legacy"
+        ? LEGACY_COMMON
+        : profile === "unity"
+          ? UNITY_COMMON
+          : [];
+  if (decision && curated.length) {
+    return clone([
+      ...(decision.inherit_common ? common : []),
+      ...curated,
+      ...resolvedTitleGuidance,
+    ]);
+  }
+  if (resolvedTitleGuidance.length) return clone([...common, ...resolvedTitleGuidance]);
+  if (Object.hasOwn(GAME_OVERRIDES, game.id)) return clone(GAME_OVERRIDES[game.id]);
+  if (profile === "ue_extended") return clone(UE_COMMON);
+  if (profile === "unreal_legacy") return clone(LEGACY_COMMON);
+  if (profile === "unity") return clone(UNITY_COMMON);
+  return [];
+}
+
+/** Builds the v2 document from an already-normalized v1 document. */
+export function buildV2Manifest(
+  v1Manifest,
+  { generatedAt = v1Manifest.generated_at, wikiGames = [], wikiMessages = [] } = {},
+) {
+  if (!v1Manifest || v1Manifest.schema_version !== 1) {
+    throw new Error("buildV2Manifest expects a schema-v1 manifest");
+  }
+  const games = v1Manifest.games.map((game) => {
+    const wikiGame = wikiGames.find((candidate) => candidate.id === game.id);
+    const sourceGame = wikiGame ? { ...game, ...wikiGame } : game;
+    const profileId = profileForGame(sourceGame);
+    const decision = decisionForWikiGame(sourceGame, wikiMessages);
+    const guidance = normalizeGuidance(
+      materializeGuidance(sourceGame, wikiMessages, decision),
+      `game "${game.id}"`,
+    );
+    const result = {
+      id: game.id,
+      name: game.name,
+      architecture: game.architecture,
+      status: game.status,
+      match: game.match,
+      addon: game.addon,
+    };
+    for (const field of ["availability", "constraints", "proxy_dll"]) {
+      if (game[field] !== undefined) result[field] = game[field];
+    }
+    if (guidance.length) result.guidance = guidance;
+    if (profileId) result.profile_id = profileId;
+    if (game.id === "black-myth-wukong") result.inherit_page_guidance = false;
+    const processingPath = decision?.processing_path;
+    if (profileId === "ue_extended" && processingPath)
+      result.processing_path = processingPath;
+    if (decision?.launch) result.requirements = { launch: clone(decision.launch) };
+    return result;
+  });
+
+  return {
+    schema_version: 2,
+    generated_at: generatedAt,
+    games,
+    page_guidance: normalizeGuidance(PAGE_GUIDANCE, "page guidance"),
+    engine_profiles: PROFILE_DEFS.map((profile) => ({
+      id: profile.id,
+      engine: profile.engine,
+      generic_fallback: profile.generic_fallback,
+      status: profile.status,
+      addon:
+        profile.id === "ue_extended"
+          ? {
+              slug: "ue-extended",
+              sources: {
+                x64: "https://marat569.github.io/renodx/renodx-ue-extended.addon64",
+                x86: "https://marat569.github.io/renodx/renodx-ue-extended.addon32",
+              },
+            }
+          : profile.id === "unity"
+            ? {
+                slug: "unityengine",
+                sources: {
+                  x64: "https://github.com/NotVoosh/renodx-unity/releases/download/snapshot/renodx-unityengine.addon64",
+                  x86: "https://github.com/NotVoosh/renodx-unity/releases/download/snapshot/renodx-unityengine.addon32",
+                },
+              }
+            : { slug: "unrealengine" },
+      message: profile.message,
+      guidance: normalizeGuidance(profile.guidance, `profile "${profile.id}"`),
+      processing_path: profile.id === "ue_extended" ? "native" : "unmanaged",
+    })),
+  };
+}
+
+/** Validates that every guidance item in the v2 manifest matches messages.json. */
+export function verifyMessagesCatalog(manifest, messagesCatalog) {
+  if (!messagesCatalog || !Array.isArray(messagesCatalog.messages)) {
+    throw new Error(
+      "RenoDX messages catalog is required and must contain a messages array",
+    );
+  }
+  const messageMap = new Map(messagesCatalog.messages.map((m) => [m.id, m]));
+
+  function check(item, context) {
+    if (!item) return;
+    const id = item.message_id ?? item.id ?? item.message?.id;
+    if (!id) {
+      throw new Error(`RenoDX guidance in ${context} is missing a message id`);
+    }
+    const fallback = item.fallback_text ?? item.message?.fallback_text;
+    if (!fallback) {
+      throw new Error(`RenoDX guidance "${id}" in ${context} is missing fallback_text`);
+    }
+    const kind = item.kind ?? "compatibility";
+
+    const catalogEntry = messageMap.get(id);
+    if (!catalogEntry) {
+      throw new Error(
+        `RenoDX guidance id "${id}" in ${context} is missing from messages.json`,
+      );
+    }
+    if (catalogEntry.fallback_text !== fallback) {
+      throw new Error(
+        `RenoDX guidance id "${id}" fallback_text mismatch between manifest and messages.json`,
+      );
+    }
+    if (catalogEntry.kind !== kind) {
+      throw new Error(
+        `RenoDX guidance id "${id}" kind mismatch: expected "${kind}", got "${catalogEntry.kind}"`,
+      );
+    }
+  }
+
+  manifest.page_guidance?.forEach((g) => check(g, "page_guidance"));
+  manifest.engine_profiles?.forEach((p) => {
+    check(p.message, `engine_profiles[${p.id}].message`);
+    p.guidance?.forEach((g) => check(g, `engine_profiles[${p.id}].guidance`));
+  });
+  manifest.games?.forEach((game) => {
+    check(game.availability?.message, `game "${game.id}".availability`);
+    game.guidance?.forEach((g) => check(g, `game "${game.id}".guidance`));
+  });
+}
+
+/** Returns the public v2 manifest and the authoring-only review ledger. */
+export function buildV2Artifacts(
+  v1Manifest,
+  {
+    generatedAt = v1Manifest.generated_at,
+    wikiGames = [],
+    wikiMessages = [],
+    wikiSource = null,
+    messages,
+  } = {},
+) {
+  verifyCurationLedger(wikiMessages, wikiSource);
+  const manifest = buildV2Manifest(v1Manifest, { generatedAt, wikiGames, wikiMessages });
+  verifyMessagesCatalog(manifest, messages);
+  return { manifest };
+}
+
+export const V2_GUIDANCE = Object.freeze({ UE_HDR_CODE, UE_LUT_CODE });

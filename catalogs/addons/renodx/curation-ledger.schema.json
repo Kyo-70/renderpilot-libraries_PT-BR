@@ -1,0 +1,114 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://renderpilot.app/schema/catalogs/addons/renodx/curation-ledger.json",
+  "title": "RenoDX guidance curation ledger",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["policy_version", "source", "entries"],
+  "properties": {
+    "policy_version": { "type": "string", "minLength": 1 },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "wiki",
+        "wiki_content_sha256",
+        "ignored_sections",
+        "active_message_fingerprint",
+        "page_reviews",
+        "page_guidance"
+      ],
+      "properties": {
+        "wiki": { "type": "string", "format": "uri", "pattern": "^https://" },
+        "wiki_content_sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+        "ignored_sections": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "active_message_fingerprint": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+        "page_reviews": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["id", "disposition", "reason"],
+            "properties": {
+              "id": { "type": "string", "minLength": 1 },
+              "disposition": { "enum": ["curated_manual", "omitted"] },
+              "reason": { "type": ["string", "null"] },
+              "guidance_ids": {
+                "type": "array",
+                "items": { "type": "string", "minLength": 1 }
+              }
+            }
+          }
+        },
+        "page_guidance": { "type": "array", "items": { "$ref": "#/$defs/guidance" } }
+      }
+    },
+    "entries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "source_key",
+          "game_id",
+          "title",
+          "section",
+          "profile_source",
+          "note_sha256",
+          "disposition"
+        ],
+        "properties": {
+          "source_key": { "type": "string", "minLength": 1 },
+          "game_id": { "type": "string", "minLength": 1 },
+          "title": { "type": "string", "minLength": 1 },
+          "section": { "enum": ["main", "ue-extended", "unreal", "unity"] },
+          "profile_source": { "type": "string", "minLength": 1 },
+          "note_sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+          "disposition": {
+            "enum": ["curated_manual", "curated_template", "pending", "omitted"]
+          },
+          "reason": { "type": ["string", "null"] },
+          "guidance_ids": { "type": "array", "items": { "type": "string", "minLength": 1 } }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "guidance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "kind", "message_id", "fallback_text"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "kind": {
+          "enum": [
+            "game_setting",
+            "addon_setting",
+            "engine_ini",
+            "warning",
+            "compatibility",
+            "external_tool"
+          ]
+        },
+        "message_id": { "type": "string", "minLength": 1 },
+        "fallback_text": { "type": "string", "minLength": 1 },
+        "code": { "type": "string", "minLength": 1 },
+        "settings": { "type": "array", "items": { "$ref": "#/$defs/setting" } },
+        "url": { "type": "string", "format": "uri", "pattern": "^https://" },
+        "condition": { "type": "object", "additionalProperties": false }
+      }
+    },
+    "setting": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "value"],
+      "properties": {
+        "name": { "type": "string", "minLength": 1 },
+        "value": { "type": "string", "minLength": 1 }
+      }
+    }
+  }
+}

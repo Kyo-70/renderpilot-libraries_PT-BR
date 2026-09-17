@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://renderpilot.app/schema/catalogs/addons/renodx/wiki-messages.json",
+  "title": "RenoDX active wiki message snapshot",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["source_key", "game_id", "title", "section", "profile_source", "note"],
+    "properties": {
+      "source_key": { "type": "string", "minLength": 1 },
+      "game_id": { "type": "string", "minLength": 1 },
+      "title": { "type": "string", "minLength": 1 },
+      "section": { "enum": ["main", "ue-extended", "unreal", "unity"] },
+      "profile_source": { "type": "string", "minLength": 1 },
+      "note": { "type": "string", "minLength": 1 }
+    }
+  }
+}

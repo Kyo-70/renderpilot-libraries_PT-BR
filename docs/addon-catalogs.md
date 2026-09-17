@@ -7,6 +7,7 @@ RenderPilot consumes versioned manifests for RenoDX, Luma Framework, the shared 
 | R2 key                                             | Consumer            | Contract                                     |
 | -------------------------------------------------- | ------------------- | -------------------------------------------- |
 | `addons/v1/renodx.json`                            | Current RenderPilot | RenoDX v1                                    |
+| `addons/v2/renodx.json`                            | Current RenderPilot | RenoDX structured guidance v2                |
 | `addons/v1/luma.json`                              | Current RenderPilot | Luma v1                                      |
 | `addons/v1/reshade.json`                           | Current RenderPilot | ReShade v1                                   |
 | `addons/v1/optiscaler.json`                        | Current RenderPilot | OptiScaler release v1                        |
@@ -44,6 +45,12 @@ A public manifest can describe reviewed requirements or instructions. It does no
 - A target is an install-compatible game or edition, not a broad title. Split genuinely different editions into distinct targets rather than making an add-on choose individual rules.
 - Exact store identities are globally unique. A bare executable leaf is published only when it identifies one target globally.
 - Engine-wide RenoDX fallbacks belong in `engine_profiles`.
+- RenoDX v2 treats UE Extended and Unity as generic engine profiles. Legacy Unreal
+  remains exact-title-only; confirmed UE3 does not fall through to UE Extended.
+- RenoDX active Wiki messages require manual ledger decisions. Deprecated and
+  Related Mods are excluded rather than converted to runtime blocks.
+- RenoDX `Engine.ini` guidance stores exact copyable code separately from concise
+  prose; launch arguments and setting/value pairs remain structured.
 - Luma game-specific payloads omit `profile`; engine profiles explicitly use `"unreal"` or `"unity"`.
 - Public Luma v1 restricts the profile enum to `"game" | "unreal" | "unity"`.
 - Luma feature status is required only for Unreal profiles and is never inferred from free-form Wiki text.
@@ -74,6 +81,7 @@ See [Operations and publishing](operations.md#refreshing-add-ons) for the exact 
 
 - [Catalog registry](../scripts/catalog.mjs)
 - [RenoDX manifest schema](../catalogs/addons/renodx/manifest-v1.schema.json)
+- [RenoDX v2 manifest schema](../catalogs/addons/renodx/manifest-v2.schema.json)
 - [Luma manifest schema](../catalogs/addons/luma/manifest-v1.schema.json)
 - [ReShade manifest schema](../catalogs/addons/reshade/manifest-v1.schema.json)
 - [OptiScaler source schema](../catalogs/addons/optiscaler/manifest-source.schema.json)

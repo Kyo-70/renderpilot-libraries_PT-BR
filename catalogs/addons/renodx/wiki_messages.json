@@ -1,0 +1,3946 @@
+[
+  {
+    "source_key": "main:alice-madness-returns",
+    "game_id": "alice-madness-returns",
+    "title": "Alice: Madness Returns",
+    "section": "main",
+    "profile_source": "alicemadnessreturns",
+    "note": "Check the mod's thread or the nexus page for Notes."
+  },
+  {
+    "source_key": "main:assassin-s-creed-iv-black-flagtm",
+    "game_id": "assassins-creed-iv-black-flag",
+    "title": "Assassin’s Creed® IV Black Flag™",
+    "section": "main",
+    "profile_source": "asscreedblackflag",
+    "note": "Playable, but some unresolved graphical bugs."
+  },
+  {
+    "source_key": "main:atelier-yumia-the-alchemist-of-memories-the-envisioned-land",
+    "game_id": "atelier-yumia-the-alchemist-of-memories-the-envisioned-land",
+    "title": "Atelier Yumia: The Alchemist of Memories & the Envisioned Land",
+    "section": "main",
+    "profile_source": "yumia1",
+    "note": "Fully playable, just needs playtesting/feedback"
+  },
+  {
+    "source_key": "main:atlas-fallen-dx12",
+    "game_id": "atlas-fallen",
+    "title": "Atlas Fallen (DX12)",
+    "section": "main",
+    "profile_source": "atlasfallen",
+    "note": "Install ReShade in 'Atlas Fallenbin'. FSR2 causes crashes."
+  },
+  {
+    "source_key": "main:borderlands-2-the-pre-sequel",
+    "game_id": "borderlands-2-the-pre-sequel",
+    "title": "Borderlands 2 & The Pre-Sequel",
+    "section": "main",
+    "profile_source": "borderlands2",
+    "note": "Check the mod's thread or the nexus page for Notes."
+  },
+  {
+    "source_key": "main:child-of-light",
+    "game_id": "child-of-light",
+    "title": "Child of Light",
+    "section": "main",
+    "profile_source": "childoflight",
+    "note": "Check the mod's thread or the nexus page for Notes."
+  },
+  {
+    "source_key": "main:clive-barker-s-jericho",
+    "game_id": "clive-barker-s-jericho",
+    "title": "Clive Barker's Jericho",
+    "section": "main",
+    "profile_source": "clivebarkersjericho",
+    "note": "ACES output is broken, need to be removed in next update"
+  },
+  {
+    "source_key": "main:crimson-desert",
+    "game_id": "crimson-desert",
+    "title": "Crimson Desert",
+    "section": "main",
+    "profile_source": "game",
+    "note": "Game gets updated regularly breaking the mod. Accurate status info in discord."
+  },
+  {
+    "source_key": "main:days-gone",
+    "game_id": "days-gone",
+    "title": "Days Gone",
+    "section": "main",
+    "profile_source": "daysgone",
+    "note": "Functional, better than native, but could use some improvement."
+  },
+  {
+    "source_key": "main:dead-island-riptide-definitive-edition",
+    "game_id": "dead-island-definitive-edition",
+    "title": "Dead Island (& Riptide) Definitive Edition",
+    "section": "main",
+    "profile_source": "deadislandde",
+    "note": "Currently broken"
+  },
+  {
+    "source_key": "main:dragon-s-dogma-2",
+    "game_id": "dragon-s-dogma-2",
+    "title": "Dragon's Dogma 2",
+    "section": "main",
+    "profile_source": "dragonsdogma2",
+    "note": "Delete shader.cache2 from the game directory when installing this mod, otherwise you'll get shader stutter."
+  },
+  {
+    "source_key": "main:forza-horizon-6",
+    "game_id": "forza-horizon-6",
+    "title": "Forza Horizon 6",
+    "section": "main",
+    "profile_source": "forzahorizon6",
+    "note": "Arguably not an HDR fix. Vanilla HDR is competent and received a separate grade from SDR."
+  },
+  {
+    "source_key": "main:journey",
+    "game_id": "journey",
+    "title": "Journey",
+    "section": "main",
+    "profile_source": "journey",
+    "note": "Check the mod's thread or the nexus page for Notes."
+  },
+  {
+    "source_key": "main:ninja-gaiden-4",
+    "game_id": "ninja-gaiden-4",
+    "title": "Ninja Gaiden 4",
+    "section": "main",
+    "profile_source": "ninjagaiden4",
+    "note": "Requires Lyall's NinjaGaidenMCFix."
+  },
+  {
+    "source_key": "main:ninja-gaiden-sigma",
+    "game_id": "ninja-gaiden-sigma",
+    "title": "Ninja Gaiden Sigma",
+    "section": "main",
+    "profile_source": "ngsigma",
+    "note": "Requires Lyall's NinjaGaidenMCFix."
+  },
+  {
+    "source_key": "main:ninja-gaiden-sigma-2",
+    "game_id": "ninja-gaiden-sigma-2",
+    "title": "Ninja Gaiden Sigma 2",
+    "section": "main",
+    "profile_source": "ngsigma2",
+    "note": "Requires Lyall's NinjaGaidenMCFix."
+  },
+  {
+    "source_key": "main:opus-echo-of-starsong-full-bloom-edition",
+    "game_id": "opus-echo-of-starsong-full-bloom-edition",
+    "title": "OPUS: Echo of Starsong - Full Bloom Edition",
+    "section": "main",
+    "profile_source": "opus-eos",
+    "note": "Steam overlay must be disabled. Disable any other overlays if you run into issues."
+  },
+  {
+    "source_key": "main:remember-me",
+    "game_id": "remember-me",
+    "title": "Remember Me",
+    "section": "main",
+    "profile_source": "rememberme",
+    "note": "Check the mod's thread or the nexus page for Notes."
+  },
+  {
+    "source_key": "main:raidou-remastered-the-mystery-of-the-soulless-army",
+    "game_id": "raidou-remastered-the-mystery-of-the-soulless-army",
+    "title": "RAIDOU Remastered: The Mystery of the Soulless Army",
+    "section": "main",
+    "profile_source": "raidou",
+    "note": "Needs playtesting, might be missing shaders for later zones"
+  },
+  {
+    "source_key": "main:sonic-unleashed-recompiled",
+    "game_id": "sonic-unleashed-recompiled",
+    "title": "Sonic Unleashed Recompiled",
+    "section": "main",
+    "profile_source": "sonicunleashedrecomp",
+    "note": "Motion blur needs to be disabled. Currently doesn't work with RTX 50 GPUs."
+  },
+  {
+    "source_key": "main:spec-ops-the-line",
+    "game_id": "spec-ops-the-line",
+    "title": "Spec Ops: The Line",
+    "section": "main",
+    "profile_source": "specopstheline",
+    "note": "Check the mod's thread or the nexus page for Notes."
+  },
+  {
+    "source_key": "main:s-t-a-l-k-e-r-2-heart-of-chornobyl",
+    "game_id": "s-t-a-l-k-e-r-2-heart-of-chornobyl",
+    "title": "S.T.A.L.K.E.R. 2: Heart of Chornobyl",
+    "section": "main",
+    "profile_source": "ue-extended",
+    "note": "UE-Extended mod. Set gamma/contrast/brightness ingame settings to 50%!"
+  },
+  {
+    "source_key": "main:steelrising",
+    "game_id": "steelrising",
+    "title": "Steelrising",
+    "section": "main",
+    "profile_source": "steelrising",
+    "note": "Currently broken"
+  },
+  {
+    "source_key": "main:the-evil-within-2",
+    "game_id": "the-evil-within-2",
+    "title": "The Evil Within 2",
+    "section": "main",
+    "profile_source": "tew2",
+    "note": "Fully playable, just needs playtesting/feedback"
+  },
+  {
+    "source_key": "main:tomb-raider-2013-definitive-edition",
+    "game_id": "tomb-raider-2013-definitive-edition",
+    "title": "Tomb Raider (2013) - Definitive Edition",
+    "section": "main",
+    "profile_source": "tombraider2013de",
+    "note": "Breaks the lighting in some parts of the game, like the Chasm Monastery"
+  },
+  {
+    "source_key": "main:trackmania",
+    "game_id": "trackmania",
+    "title": "Trackmania",
+    "section": "main",
+    "profile_source": "trackmania",
+    "note": "Mod has great HDR, but breaks some customization menus."
+  },
+  {
+    "source_key": "main:yakuza-kiwami-1",
+    "game_id": "yakuza-kiwami-1",
+    "title": "Yakuza Kiwami 1",
+    "section": "main",
+    "profile_source": "yakuza0",
+    "note": "Mod primarily made for Y0."
+  },
+  {
+    "source_key": "ue-extended:abiotic-factor",
+    "game_id": "abiotic-factor",
+    "title": "Abiotic Factor",
+    "section": "ue-extended",
+    "profile_source": "ue-extended",
+    "note": "Engine.ini"
+  },
+  {
+    "source_key": "ue-extended:abzu",
+    "game_id": "abzu",
+    "title": "ABZÛ",
+    "section": "ue-extended",
+    "profile_source": "ue-extended",
+    "note": "Upgrade Path: On `B8G8R8A8_TYPELESS` `Output Size` for 100% render resolution or `Output Ratio` for other percentages."
+  },
+  {
+    "source_key": "ue-extended:assetto-corsa-rally",
+    "game_id": "assetto-corsa-rally",
+    "title": "Assetto Corsa Rally",
+    "section": "ue-extended",
+    "profile_source": "ue-extended",
+    "note": "Native HDR"
+  },
+  {
+    "source_key": "ue-extended:astroneer",
+    "game_id": "astroneer",
+    "title": "Astroneer",
+    "section": "ue-extended",
+    "profile_source": "ue-extended",
+    "note": "Upgrade Path: On. Grading and flickering issues."
+  },
+  {
+    "source_key": "ue-extended:a-way-out",
+    "game_id": "a-way-out",
+    "title": "A Way Out",
+    "section": "ue-extended",
+    "profile_source": "ue-extended",
+    "note": "Upgrade Path: On. Lacks testing."
+  },
+  {
+    "source_key": "ue-extended:black-myth-wukong",
+    "game_id": "black-myth-wukong",
+    "title": "Black Myth: Wukong",
+    "section": "ue-extended",
+    "profile_source": "ue-extended",
+    "note": "Engine.ini, Only add `r.HDR.EnableHDROutput=1` to Engine.ini."
+  },
+  {
+    "source_key": "ue-extended:borderlands-4",
+    "game_id": "borderlands-4",
+    "title": "Borderlands 4",
+    "section": "ue-extended",
+    "profile_source": "ue-extended",
+    "note": "Native HDR"
+  },
+  {
+    "source_key": "ue-extended:bodycam",
+    "game_id": "bodycam",
+    "title": "Bodycam",
+    "section": "ue-extended",
+    "profile_source": "ue-extended",
+    "note": "Engine.ini"
+  },
+  {
+    "source_key": "ue-extended:chained-together",
+    "game_id": "chained-together",
+    "title": "Chained Together",
+    "section": "ue-extended",
+    "profile_source": "ue-extended",
+    "note": "Engine.ini, Slider do not change in real-time."
+  },
+  {
+    "source_key": "ue-extended:choo-choo-charles",
+    "game_id": "choo-choo-charles",
+    "title": "Choo-Choo Charles",
+    "section": "ue-extended",
+    "profile_source": "ue-extended",
+    "note": "Engine.ini"
+  },
+  {
+    "source_key": "ue-extended:chromatic-conundrum",
+    "game_id": "chromatic-conundrum",
+    "title": "Chromatic Conundrum",
+    "section": "ue-extended",
+    "profile_source": "ue-extended",
+    "note": "Upgrade Path: Off. Broken rendering when enabled."
+  },
+  {
+    "source_key": "ue-extended:conan-exiles-enhanced",
+    "game_id": "conan-exiles-enhanced",
+    "title": "Conan Exiles Enhanced",
+    "section": "ue-extended",
+    "profile_source": "ue-extended",
+    "note": "Engine.ini"
+  },
+  {
+    "source_key": "ue-extended:crab-champions",
+    "game_id": "crab-champions",
+    "title": "Crab Champions",
+    "section": "ue-extended",
+    "profile_source": "ue-extended",
+    "note": "Engine.ini"
+  },
+  {
+    "source_key": "ue-extended:days-gone",
+    "game_id": "days-gone",
+    "title": "Days Gone",
+    "section": "ue-extended",
+    "profile_source": "ue-extended",
+    "note": "Native HDR. Lacks testing."
+  },
+  {
+    "source_key": "ue-extended:dead-as-disco",
+    "game_id": "dead-as-disco",
+    "title": "Dead as Disco",
+    "section": "ue-extended",
+    "profile_source": "ue-extended",
+    "note": "Native HDR"
+  },
+  {
+    "source_key": "ue-extended:deep-rock-galactic",
+    "game_id": "deep-rock-galactic",
+    "title": "Deep Rock Galactic",
+    "section": "ue-extended",
+    "profile_source": "ue-extended",
+    "note": "Native HDR"
+  },
+  {
+    "source_key": "ue-extended:deep-rock-galactic-rogue-core",
+    "game_id": "deep-rock-galactic-rogue-core",
+    "title": "Deep Rock Galactic: Rogue Core",
+    "section": "ue-extended",
+    "profile_source": "ue-extended",
+    "note": "Upgrade Path: On, `R10G10B10A2_UNORM` `Output Size`. Native HDR is broken."
+  },
+  {
+    "source_key": "ue-extended:escape-the-backrooms",
+    "game_id": "escape-the-backrooms",
+    "title": "Escape the Backrooms",
+    "section": "ue-extended",
+    "profile_source": "ue-extended",
+    "note": "Upgrade Path: On, `B8G8R8A8_TYPELESS` `Output Size`. Lacks testing."
+  },
+  {
+    "source_key": "ue-extended:everwind",
+    "game_id": "everwind",
+    "title": "Everwind",
+    "section": "ue-extended",
+    "profile_source": "ue-extended",
+    "note": "Engine.ini"
+  },
+  {
+    "source_key": "ue-extended:far-far-west",
+    "game_id": "far-far-west",
+    "title": "Far Far West",
+    "section": "ue-extended",
+    "profile_source": "ue-extended",
+    "note": "Native HDR"
+  },
+  {
+    "source_key": "ue-extended:flyknight",
+    "game_id": "flyknight",
+    "title": "FlyKnight",
+    "section": "ue-extended",
+    "profile_source": "ue-extended",
+    "note": "Upgrade Path: On. Multiple in-game filters change HDR presentation, Lacks testing."
+  },
+  {
+    "source_key": "ue-extended:frostpunk-2",
+    "game_id": "frostpunk-2",
+    "title": "Frostpunk 2",
+    "section": "ue-extended",
+    "profile_source": "ue-extended",
+    "note": "Upgrade Path: On. UI slider controls paper white."
+  },
+  {
+    "source_key": "ue-extended:goat-simulator-3",
+    "game_id": "goat-simulator-3",
+    "title": "Goat Simulator 3",
+    "section": "ue-extended",
+    "profile_source": "ue-extended",
+    "note": "Upgrade Path: On"
+  },
+  {
+    "source_key": "ue-extended:ghostrunner",
+    "game_id": "ghostrunner",
+    "title": "Ghostrunner",
+    "section": "ue-extended",
+    "profile_source": "ue-extended",
+    "note": "Upgrade Path: On"
+  },
+  {
+    "source_key": "ue-extended:ghostrunner-2",
+    "game_id": "ghostrunner-2",
+    "title": "Ghostrunner 2",
+    "section": "ue-extended",
+    "profile_source": "ue-extended",
+    "note": "Upgrade Path: On. Tonemapping issues, Lacks testing."
+  },
+  {
+    "source_key": "ue-extended:ghostwire-tokyo",
+    "game_id": "ghostwire-tokyo",
+    "title": "Ghostwire Tokyo",
+    "section": "ue-extended",
+    "profile_source": "ue-extended",
+    "note": "Native HDR"
+  },
+  {
+    "source_key": "ue-extended:gothic-1-remake",
+    "game_id": "gothic-1-remake",
+    "title": "Gothic 1 Remake",
+    "section": "ue-extended",
+    "profile_source": "ue-extended",
+    "note": "Native HDR. Tonemapping issues."
+  },
+  {
+    "source_key": "ue-extended:grand-theft-auto-the-trilogy-the-definitive-edition-iii-vice-city-san-andreas",
+    "game_id": "grand-theft-auto-the-trilogy-the-definitive-edition-iii-vice-city-san-andreas",
+    "title": "Grand Theft Auto: The Trilogy – The Definitive Edition (III, Vice City, San Andreas)",
+    "section": "ue-extended",
+    "profile_source": "ue-extended",
+    "note": "Upgrade Path: On"
+  },
+  {
+    "source_key": "ue-extended:grounded-2",
+    "game_id": "grounded-2",
+    "title": "Grounded 2",
+    "section": "ue-extended",
+    "profile_source": "ue-extended",
+    "note": "Engine.ini"
+  },
+  {
+    "source_key": "ue-extended:hellblade-ii-senua-s-saga",
+    "game_id": "hellblade-ii-senua-s-saga",
+    "title": "Hellblade II: Senua’s Saga",
+    "section": "ue-extended",
+    "profile_source": "ue-extended",
+    "note": "Native HDR, Slider do not change in real-time. Lacks testing."
+  },
+  {
+    "source_key": "ue-extended:hi-fi-rush",
+    "game_id": "hi-fi-rush",
+    "title": "Hi-Fi Rush",
+    "section": "ue-extended",
+    "profile_source": "ue-extended",
+    "note": "Upgrade Path: On as Engine.ini edits overexposed the shading. Gameplay and highlights are clamped to UI brightness. `Upgrade Copy Destinations` `Off` `R8G8R8A8_TYPELESS` `Any Size`"
+  },
+  {
+    "source_key": "ue-extended:hydroneer",
+    "game_id": "hydroneer",
+    "title": "Hydroneer",
+    "section": "ue-extended",
+    "profile_source": "ue-extended",
+    "note": "Upgrade Path: On"
+  },
+  {
+    "source_key": "ue-extended:the-idolm-ster-starlit-season",
+    "game_id": "the-idolm-ster-starlit-season",
+    "title": "The iDOLM@STER: Starlit Season",
+    "section": "ue-extended",
+    "profile_source": "ue-extended",
+    "note": "Upgrade Path: On as Engine.ini edits overexposed the shading. DX11; refused to boot up DX12 as Low Level Fatal Error Line: 266 Camped to UI brightness has issues with Commu's blue lighting, as well for the stage lighting on the top. Small cameras with multiple idols during certain Commus does not highlight the HDR. `Upgrade Copy Destinations` `Off` `B8G8R8A8_TYPELESS` `Any Size`"
+  },
+  {
+    "source_key": "ue-extended:inzoi",
+    "game_id": "inzoi",
+    "title": "inZOI",
+    "section": "ue-extended",
+    "profile_source": "ue-extended",
+    "note": "Engine.ini"
+  },
+  {
+    "source_key": "ue-extended:it-takes-two",
+    "game_id": "it-takes-two",
+    "title": "It Takes Two",
+    "section": "ue-extended",
+    "profile_source": "ue-extended",
+    "note": "Upgrade Path: On"
+  },
+  {
+    "source_key": "ue-extended:jusant",
+    "game_id": "jusant",
+    "title": "Jusant",
+    "section": "ue-extended",
+    "profile_source": "ue-extended",
+    "note": "Native HDR"
+  },
+  {
+    "source_key": "ue-extended:lego-batmantm-legacy-of-the-dark-knight",
+    "game_id": "lego-batmantm-legacy-of-the-dark-knight",
+    "title": "LEGO® Batman™: Legacy of the Dark Knight",
+    "section": "ue-extended",
+    "profile_source": "ue-extended",
+    "note": "Native HDR, Sliders do not change in real-time, Lacks testing."
+  },
+  {
+    "source_key": "ue-extended:lies-of-p",
+    "game_id": "lies-of-p",
+    "title": "Lies of P",
+    "section": "ue-extended",
+    "profile_source": "ue-extended",
+    "note": "Native HDR, Sliders do not change in real-time, Lacks testing."
+  },
+  {
+    "source_key": "ue-extended:little-nightmares",
+    "game_id": "little-nightmares",
+    "title": "Little Nightmares",
+    "section": "ue-extended",
+    "profile_source": "ue-extended",
+    "note": "Upgrade Path: On"
+  },
+  {
+    "source_key": "ue-extended:little-nightmares-enhanced",
+    "game_id": "little-nightmares-enhanced-edition",
+    "title": "Little Nightmares Enhanced",
+    "section": "ue-extended",
+    "profile_source": "ue-extended",
+    "note": "Upgrade Path: On"
+  },
+  {
+    "source_key": "ue-extended:little-nightmares-ii",
+    "game_id": "little-nightmares-ii",
+    "title": "Little Nightmares II",
+    "section": "ue-extended",
+    "profile_source": "ue-extended",
+    "note": "Upgrade Path: On. Grading issues."
+  },
+  {
+    "source_key": "ue-extended:little-nightmares-ii-enhanced",
+    "game_id": "little-nightmares-ii-enhanced",
+    "title": "Little Nightmares II Enhanced",
+    "section": "ue-extended",
+    "profile_source": "ue-extended",
+    "note": "Upgrade Path: On. Grading issues."
+  },
+  {
+    "source_key": "ue-extended:lords-of-the-fallen",
+    "game_id": "lords-of-the-fallen",
+    "title": "Lords of the Fallen",
+    "section": "ue-extended",
+    "profile_source": "ue-extended",
+    "note": "Native HDR. Tonemapping issues."
+  },
+  {
+    "source_key": "ue-extended:mafia-the-old-country",
+    "game_id": "mafia-the-old-country",
+    "title": "Mafia: The Old Country",
+    "section": "ue-extended",
+    "profile_source": "ue-extended",
+    "note": "Native HDR"
+  },
+  {
+    "source_key": "ue-extended:meccha-chameleon",
+    "game_id": "meccha-chameleon",
+    "title": "MECCHA CHAMELEON",
+    "section": "ue-extended",
+    "profile_source": "ue-extended",
+    "note": "Engine.ini"
+  },
+  {
+    "source_key": "ue-extended:mortal-shell-ii",
+    "game_id": "mortal-shell-ii",
+    "title": "Mortal Shell II",
+    "section": "ue-extended",
+    "profile_source": "ue-extended",
+    "note": "Engine.ini"
+  },
+  {
+    "source_key": "ue-extended:motor-town-behind-the-wheel",
+    "game_id": "motor-town-behind-the-wheel",
+    "title": "Motor Town: Behind The Wheel",
+    "section": "ue-extended",
+    "profile_source": "ue-extended",
+    "note": "Upgrade Path: On. Sliders do not change in real-time."
+  },
+  {
+    "source_key": "ue-extended:nobody-wants-to-die",
+    "game_id": "nobody-wants-to-die",
+    "title": "Nobody Wants to Die",
+    "section": "ue-extended",
+    "profile_source": "ue-extended",
+    "note": "Engine.ini"
+  },
+  {
+    "source_key": "ue-extended:pacific-drive",
+    "game_id": "pacific-drive",
+    "title": "Pacific Drive",
+    "section": "ue-extended",
+    "profile_source": "ue-extended",
+    "note": "Upgrade Path: On, `B8G8R8A8_TYPELESS` `Output Size`."
+  },
+  {
+    "source_key": "ue-extended:palworld",
+    "game_id": "palworld",
+    "title": "Palworld",
+    "section": "ue-extended",
+    "profile_source": "ue-extended",
+    "note": "Upgrade Path: On. Lacks testing."
+  },
+  {
+    "source_key": "ue-extended:persona-3-reload",
+    "game_id": "persona-3-reload",
+    "title": "Persona 3 Reload",
+    "section": "ue-extended",
+    "profile_source": "ue-extended",
+    "note": "Upgrade Path: On"
+  },
+  {
+    "source_key": "ue-extended:quarantine-zone-the-last-check",
+    "game_id": "quarantine-zone-the-last-check",
+    "title": "Quarantine Zone: The Last Check",
+    "section": "ue-extended",
+    "profile_source": "ue-extended",
+    "note": "Engine.ini"
+  },
+  {
+    "source_key": "ue-extended:ready-or-not",
+    "game_id": "ready-or-not",
+    "title": "Ready or Not",
+    "section": "ue-extended",
+    "profile_source": "ue-extended",
+    "note": "Engine.ini, Sliders do not change in real-time, Lacks testing."
+  },
+  {
+    "source_key": "ue-extended:rv-there-yet",
+    "game_id": "rv-there-yet",
+    "title": "RV There Yet",
+    "section": "ue-extended",
+    "profile_source": "ue-extended",
+    "note": "Engine.ini"
+  },
+  {
+    "source_key": "ue-extended:satisfactory",
+    "game_id": "satisfactory",
+    "title": "Satisfactory",
+    "section": "ue-extended",
+    "profile_source": "ue-extended",
+    "note": "Engine.ini"
+  },
+  {
+    "source_key": "ue-extended:scorn",
+    "game_id": "scorn",
+    "title": "Scorn",
+    "section": "ue-extended",
+    "profile_source": "ue-extended",
+    "note": "Upgrade Path: On"
+  },
+  {
+    "source_key": "ue-extended:sifu",
+    "game_id": "sifu",
+    "title": "Sifu",
+    "section": "ue-extended",
+    "profile_source": "ue-extended",
+    "note": "Upgrade Path: On. Limited brightness."
+  },
+  {
+    "source_key": "ue-extended:solarpunk",
+    "game_id": "solarpunk",
+    "title": "Solarpunk",
+    "section": "ue-extended",
+    "profile_source": "ue-extended",
+    "note": "Engine.ini"
+  },
+  {
+    "source_key": "ue-extended:s-t-a-l-k-e-r-2-heart-of-chornobyl",
+    "game_id": "s-t-a-l-k-e-r-2-heart-of-chornobyl",
+    "title": "S.T.A.L.K.E.R. 2: Heart of Chornobyl",
+    "section": "ue-extended",
+    "profile_source": "ue-extended",
+    "note": "Native HDR"
+  },
+  {
+    "source_key": "ue-extended:star-wars-zero-companytm",
+    "game_id": "star-wars-zero-companytm",
+    "title": "STAR WARS Zero Company™",
+    "section": "ue-extended",
+    "profile_source": "ue-extended",
+    "note": "Native HDR"
+  },
+  {
+    "source_key": "ue-extended:stray",
+    "game_id": "stray",
+    "title": "Stray",
+    "section": "ue-extended",
+    "profile_source": "ue-extended",
+    "note": "Upgrade Path: On"
+  },
+  {
+    "source_key": "ue-extended:subnautica-2",
+    "game_id": "subnautica-2",
+    "title": "Subnautica 2",
+    "section": "ue-extended",
+    "profile_source": "ue-extended",
+    "note": "Engine.ini"
+  },
+  {
+    "source_key": "ue-extended:the-alters",
+    "game_id": "the-alters",
+    "title": "The Alters",
+    "section": "ue-extended",
+    "profile_source": "ue-extended",
+    "note": "Upgrade Path: On"
+  },
+  {
+    "source_key": "ue-extended:the-first-berserker-khazan",
+    "game_id": "the-first-berserker-khazan",
+    "title": "The First Berserker: Khazan",
+    "section": "ue-extended",
+    "profile_source": "ue-extended",
+    "note": "Upgrade Path: On. Tonemapping issues, Lacks testing."
+  },
+  {
+    "source_key": "ue-extended:the-blood-of-dawnwalker",
+    "game_id": "the-blood-of-dawnwalker",
+    "title": "The Blood of Dawnwalker",
+    "section": "ue-extended",
+    "profile_source": "ue-extended",
+    "note": "Engine.ini"
+  },
+  {
+    "source_key": "ue-extended:the-enjenir-the-engineering-physics-building-simulator",
+    "game_id": "the-enjenir",
+    "title": "The Enjenir: The Engineering Physics Building Simulator",
+    "section": "ue-extended",
+    "profile_source": "ue-extended",
+    "note": "Engine.ini"
+  },
+  {
+    "source_key": "ue-extended:tokyo-xtreme-racer",
+    "game_id": "tokyo-xtreme-racer",
+    "title": "Tokyo Xtreme Racer",
+    "section": "ue-extended",
+    "profile_source": "ue-extended",
+    "note": "Native HDR"
+  },
+  {
+    "source_key": "ue-extended:until-dawn",
+    "game_id": "until-dawn",
+    "title": "Until Dawn",
+    "section": "ue-extended",
+    "profile_source": "ue-extended",
+    "note": "Native HDR"
+  },
+  {
+    "source_key": "ue-extended:vholume",
+    "game_id": "vholume",
+    "title": "VHOLUME",
+    "section": "ue-extended",
+    "profile_source": "ue-extended",
+    "note": "Upgrade Path: On"
+  },
+  {
+    "source_key": "ue-extended:what-remains-of-edith-finch",
+    "game_id": "what-remains-of-edith-finch",
+    "title": "What Remains of Edith Finch",
+    "section": "ue-extended",
+    "profile_source": "ue-extended",
+    "note": "Upgrade Path: On <details><summary>High DPI scaling users</summary>The game may be clamped for you, even if DPI is overridden to the application. Set system wide DPI scaling to 100% and launch the game once. After that you can bring DPI scaling back. </details>"
+  },
+  {
+    "source_key": "unreal:abiotic-factor",
+    "game_id": "abiotic-factor",
+    "title": "Abiotic Factor",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "DX11 Works out of the box but has buggy UI elements. Color grading requires reloading to be applied."
+  },
+  {
+    "source_key": "unreal:abzu",
+    "game_id": "abzu",
+    "title": "ABZÛ",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`B8G8R8A8_TYPELESS` `Output Size` for render resolution at 100%. `B8G8R8A8_TYPELESS` `Output Ratio` for any other value."
+  },
+  {
+    "source_key": "unreal:age-of-darkness-final-stand",
+    "game_id": "age-of-darkness-final-stand",
+    "title": "Age of Darkness: Final Stand",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`R8G8B8A8_TYPELESS` `Output Ratio`"
+  },
+  {
+    "source_key": "unreal:aliens-dark-descent",
+    "game_id": "aliens-dark-descent",
+    "title": "Aliens: Dark Descent",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`B8G8R8A8_TYPELESS` `Any Size`"
+  },
+  {
+    "source_key": "unreal:aphelion",
+    "game_id": "aphelion",
+    "title": "Aphelion",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`Upgrade Copy Destinations` `On` `R10G10B10A2_UNORM` `Output Size`"
+  },
+  {
+    "source_key": "unreal:the-ascent",
+    "game_id": "the-ascent",
+    "title": "The Ascent",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`B8G8R8A8_TYPELESS` `Output Size`"
+  },
+  {
+    "source_key": "unreal:the-alters",
+    "game_id": "the-alters",
+    "title": "The Alters",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`R10G10B10A2_UNORM` `Output Size` if black screen occurs while using Frame Generation."
+  },
+  {
+    "source_key": "unreal:ashen",
+    "game_id": "ashen",
+    "title": "Ashen",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`B8G8R8A8_TYPELESS` `Output Size`</details>"
+  },
+  {
+    "source_key": "unreal:asterigos-curse-of-the-stars",
+    "game_id": "asterigos-curse-of-the-stars",
+    "title": "Asterigos: Curse of the Stars",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`B8G8R8A8_TYPELESS` `Output Size`"
+  },
+  {
+    "source_key": "unreal:astroneer",
+    "game_id": "astroneer",
+    "title": "Astroneer",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "Loading, backpack, mission log text glitches `B8G8R8A8_TYPELESS` `Output Size`"
+  },
+  {
+    "source_key": "unreal:atomic-heart",
+    "game_id": "atomic-heart",
+    "title": "Atomic Heart",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`B8G8R8A8_TYPELESS` `Output Size` `R10G10B10A2_UNORM` `Output Size`"
+  },
+  {
+    "source_key": "unreal:the-awesome-adventures-of-captain-spirit",
+    "game_id": "the-awesome-adventures-of-captain-spirit",
+    "title": "The Awesome Adventures of Captain Spirit",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`B8G8R8A8_TYPELESS` `Output Size`"
+  },
+  {
+    "source_key": "unreal:banishers-ghosts-of-new-eden",
+    "game_id": "banishers-ghosts-of-new-eden",
+    "title": "Banishers: Ghosts of New Eden",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`Upgrade Copy Destinations` `On` `R10G10B10A2_UNORM` `Output Size`"
+  },
+  {
+    "source_key": "unreal:bloodstained-ritual-of-the-night",
+    "game_id": "bloodstained-ritual-of-the-night",
+    "title": "Bloodstained: Ritual of the Night",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`B8G8R8A8_TYPELESS` `Output Size`"
+  },
+  {
+    "source_key": "unreal:borderlands-3",
+    "game_id": "borderlands-3",
+    "title": "Borderlands 3",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`Upgrade Copy Destinations` `On` `R8G8B8A8_TYPELESS` `Output Ratio` `B8G8R8A8_TYPELESS` `Output Ratio` (optional) `R11G11B10_FLOAT` `Output Ratio` (optional)"
+  },
+  {
+    "source_key": "unreal:bramble-the-mountain-king",
+    "game_id": "bramble-the-mountain-king",
+    "title": "Bramble: The Mountain King",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`B8G8R8A8_TYPELESS` `Output Size`"
+  },
+  {
+    "source_key": "unreal:bright-memory-infinite",
+    "game_id": "bright-memory-infinite",
+    "title": "Bright Memory: Infinite",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "DX12 `B8G8R8A8_TYPELESS` `Output Size` `R10G10B10A2_UNORM` `Output Size`"
+  },
+  {
+    "source_key": "unreal:the-cabin-factory",
+    "game_id": "the-cabin-factory",
+    "title": "The Cabin Factory",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "Works out of the box; grading does not."
+  },
+  {
+    "source_key": "unreal:call-of-the-sea",
+    "game_id": "call-of-the-sea",
+    "title": "Call of the Sea",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`B8G8R8A8_TYPELESS` `Output Size`"
+  },
+  {
+    "source_key": "unreal:cepheus-protocol",
+    "game_id": "cepheus-protocol",
+    "title": "Cepheus Protocol",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`R10G10B10A2_UNORM` `Any Size` if using resolution scale / screen percentage other than 100."
+  },
+  {
+    "source_key": "unreal:chernobylite",
+    "game_id": "chernobylite",
+    "title": "Chernobylite",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "DX12 The game has an absurd sharpening filter that can be disabled by changing DLSS quality levels, but fix must be reapplied each play session. `B8G8R8A8_TYPELESS` `Output Size` `R10G10B10A2_UNORM` `Output Size`</details>"
+  },
+  {
+    "source_key": "unreal:choo-choo-charles",
+    "game_id": "choo-choo-charles",
+    "title": "Choo-Choo Charles",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "Needs manual change to Windowed Fullscreen. Cutscenes cause issues with brightness. `B8G8R8A8_TYPELESS` `Output Size`"
+  },
+  {
+    "source_key": "unreal:chorus",
+    "game_id": "chorus",
+    "title": "Chorus",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`B8G8R8A8_TYPELESS` `Output Size`"
+  },
+  {
+    "source_key": "unreal:clash-artifacts-of-chaos",
+    "game_id": "clash-artifacts-of-chaos",
+    "title": "Clash: Artifacts of Chaos",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`B8G8R8A8_TYPELESS` `Output Size`"
+  },
+  {
+    "source_key": "unreal:colony-ship-a-post-earth-role-playing-game",
+    "game_id": "colony-ship-a-post-earth-role-playing-game",
+    "title": "Colony Ship: A Post-Earth Role Playing Game",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "Some menus and loading screen need fixes"
+  },
+  {
+    "source_key": "unreal:crisis-core-ff7-reunion",
+    "game_id": "crisis-core-ff7-reunion",
+    "title": "Crisis Core: FF7 Reunion",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`B8G8R8A8_TYPELESS` `Output Size` (auto-upgraded)"
+  },
+  {
+    "source_key": "unreal:cronos-the-new-dawn",
+    "game_id": "cronos-the-new-dawn",
+    "title": "Cronos: The New Dawn",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "Disable in-game HDR. Consult [RenoDX Discord](https://discord.com/invite/renodx) for good slider settings. `B8G8R8A8_TYPELESS` `Output Size` `R10G10B10A2_UNORM` `Output Size`"
+  },
+  {
+    "source_key": "unreal:daemon-x-machina",
+    "game_id": "daemon-x-machina",
+    "title": "DAEMON X MACHINA",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`B8G8R8A8_TYPELESS` `Output Size`"
+  },
+  {
+    "source_key": "unreal:dahlia-view",
+    "game_id": "dahlia-view",
+    "title": "Dahlia View",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "Disable in-game HDR (which is broken in DX12). `B8G8R8A8_TYPELESS` `Output Size`"
+  },
+  {
+    "source_key": "unreal:darksiders-3",
+    "game_id": "darksiders-3",
+    "title": "Darksiders 3",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "Non-boss enemy health bars do not update."
+  },
+  {
+    "source_key": "unreal:darksiders-genesis",
+    "game_id": "darksiders-genesis",
+    "title": "Darksiders Genesis",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "Some text turns into blocks (only observed in loading screens). `B8G8R8A8_TYPELESS` `Output Size`"
+  },
+  {
+    "source_key": "unreal:daymare-1994-sandcastle",
+    "game_id": "daymare-1994-sandcastle",
+    "title": "Daymare: 1994 Sandcastle",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`B8G8R8A8_TYPELESS` `Output Size`"
+  },
+  {
+    "source_key": "unreal:dead-as-disco",
+    "game_id": "dead-as-disco",
+    "title": "Dead as Disco",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "Tested on demo version. `R10G10B10A2_UNORM` `Output Size`"
+  },
+  {
+    "source_key": "unreal:deadlink",
+    "game_id": "deadlink",
+    "title": "Deadlink",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "DX12 `R8G8B8A8_TYPELESS` `Any Size`"
+  },
+  {
+    "source_key": "unreal:deep-rock-galactic",
+    "game_id": "deep-rock-galactic",
+    "title": "Deep Rock Galactic",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "Disable in-game HDR. `R10G10B10A2_UNORM` `Output Size`"
+  },
+  {
+    "source_key": "unreal:demon-slayer-kny-hinokami-chronicles",
+    "game_id": "demon-slayer-kny-hinokami-chronicles",
+    "title": "Demon Slayer: KNY - Hinokami Chronicles",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`B8G8R8A8_TYPELESS` `Output Size`"
+  },
+  {
+    "source_key": "unreal:dnf-duel",
+    "game_id": "dnf-duel",
+    "title": "DNF Duel",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`B8G8R8A8_TYPELESS` `Output Size`"
+  },
+  {
+    "source_key": "unreal:dragon-ball-z-kakarot",
+    "game_id": "dragon-ball-z-kakarot",
+    "title": "Dragon Ball Z: Kakarot",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "Colors are a bit off. `B8G8R8A8_TYPELESS` `Output Size` `B8G8R8A8_TYPELESS` `Output Ratio` if using resolution scale other than 100%"
+  },
+  {
+    "source_key": "unreal:dragon-quest-iii-hd-2d-remake",
+    "game_id": "dragon-quest-iii-hd-2d-remake",
+    "title": "Dragon Quest III HD-2D Remake",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`B8G8R8A8_TYPELESS` `Output Size`"
+  },
+  {
+    "source_key": "unreal:echo-point-nova",
+    "game_id": "echo-point-nova",
+    "title": "Echo Point Nova",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`B8G8R8A8_TYPELESS` `Output Size`"
+  },
+  {
+    "source_key": "unreal:en-garde",
+    "game_id": "en-garde",
+    "title": "En Garde!",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "Use DX11; DX12 crashes."
+  },
+  {
+    "source_key": "unreal:enotria-the-last-song",
+    "game_id": "enotria-the-last-song",
+    "title": "Enotria: The Last Song",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "Sliders only apply on scene change or exiting back out to the main menu."
+  },
+  {
+    "source_key": "unreal:escape-from-ever-after",
+    "game_id": "escape-from-ever-after",
+    "title": "Escape from Ever After",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`B8G8R8A8_TYPELESS` `Output Size`"
+  },
+  {
+    "source_key": "unreal:everspace",
+    "game_id": "everspace",
+    "title": "EVERSPACE",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "Use 64-bit executable (RSG-Win64-Shipping.exe); only tested on GOG. `R8G8R8A8_TYPELESS` `Output Size` `B8G8R8A8_TYPELESS` `Output Size`"
+  },
+  {
+    "source_key": "unreal:everspace-2",
+    "game_id": "everspace-2",
+    "title": "EVERSPACE 2",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "DX12 `R10G10B10A2_UNORM` `Output Size`"
+  },
+  {
+    "source_key": "unreal:evil-west",
+    "game_id": "evil-west",
+    "title": "Evil West",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`B8G8R8A8_TYPELESS` `Output Size`"
+  },
+  {
+    "source_key": "unreal:flyknight",
+    "game_id": "flyknight",
+    "title": "FlyKnight",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`B8G8R8A8_TYPELESS` `Output Size`"
+  },
+  {
+    "source_key": "unreal:forgive-me-father",
+    "game_id": "forgive-me-father",
+    "title": "Forgive Me Father",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "Some text turns into blocks. `B8G8R8A8_TYPELESS` `Output Size`"
+  },
+  {
+    "source_key": "unreal:the-forgotten-city",
+    "game_id": "the-forgotten-city",
+    "title": "The Forgotten City",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`B8G8R8A8_TYPELESS` `Output Size`"
+  },
+  {
+    "source_key": "unreal:fort-solis",
+    "game_id": "fort-solis",
+    "title": "Fort Solis",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`R10G10B10A2_UNORM` `Output Size`"
+  },
+  {
+    "source_key": "unreal:ghostrunner",
+    "game_id": "ghostrunner",
+    "title": "Ghostrunner",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "DX12 crashes; use DX11 `B8G8R8A8_TYPELESS` `Output Size`"
+  },
+  {
+    "source_key": "unreal:ghostrunner-2",
+    "game_id": "ghostrunner-2",
+    "title": "Ghostrunner 2",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "Limited to BT.709 `B8G8R8A8_TYPELESS` `Output Size`"
+  },
+  {
+    "source_key": "unreal:gothic-1-remake",
+    "game_id": "gothic-1-remake",
+    "title": "Gothic 1 Remake",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`R10G10B10A2_UNORM` `Output Size`"
+  },
+  {
+    "source_key": "unreal:granblue-fantasy-versus",
+    "game_id": "granblue-fantasy-versus",
+    "title": "Granblue Fantasy: Versus",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "Character and map highlights are clamped to UI brightness. `B8G8R8A8_TYPELESS` `Output Size`"
+  },
+  {
+    "source_key": "unreal:grounded",
+    "game_id": "grounded",
+    "title": "Grounded",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`B8G8R8A8_TYPELESS` `Output Size` `R10G10B10A2_UNORM` `Output Size`"
+  },
+  {
+    "source_key": "unreal:guilty-gear-strive",
+    "game_id": "guilty-gear-strive",
+    "title": "Guilty Gear Strive",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "Health bars do not update, making the mod impractical for usage outside of training mode. Some corruption appears in character selection. Tension meter is bright. `B8G8R8A8_TYPELESS` `Output Size`"
+  },
+  {
+    "source_key": "unreal:hell-is-us",
+    "game_id": "hell-is-us",
+    "title": "Hell is Us",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "Disable in-game HDR. Tested on demo version. `R10G10B10A2_UNORM` `Output Size`"
+  },
+  {
+    "source_key": "unreal:hogwarts-legacy",
+    "game_id": "hogwarts-legacy",
+    "title": "Hogwarts Legacy",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "Download the build from RenoDX's Unreal Engine channel linked [here](https://discord.com/channels/1408098019194310818/1411800884303626311/1456454195732549887)."
+  },
+  {
+    "source_key": "unreal:hyper-light-breaker",
+    "game_id": "hyper-light-breaker",
+    "title": "Hyper Light Breaker",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`B8G8R8A8_TYPELESS` `Output Size`"
+  },
+  {
+    "source_key": "unreal:indika",
+    "game_id": "indika",
+    "title": "Indika",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`B8G8R8A8_TYPELESS` `Output Size`"
+  },
+  {
+    "source_key": "unreal:industria",
+    "game_id": "industria",
+    "title": "INDUSTRIA",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "DX12 `B8G8R8A8_TYPELESS` `Output Size`"
+  },
+  {
+    "source_key": "unreal:infinity-nikki",
+    "game_id": "infinity-nikki",
+    "title": "Infinity Nikki",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`R10G10B10A2_UNORM` `Output Size`"
+  },
+  {
+    "source_key": "unreal:inzoi",
+    "game_id": "inzoi",
+    "title": "InZOI",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`R10G10B10A2_UNORM` `Output Size`"
+  },
+  {
+    "source_key": "unreal:the-invincible",
+    "game_id": "the-invincible",
+    "title": "The Invincible",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`B8G8R8A8_TYPELESS` `Output Size`"
+  },
+  {
+    "source_key": "unreal:islands-of-insight",
+    "game_id": "islands-of-insight",
+    "title": "Islands of Insight",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "Limited to BT.709. `B8G8R8A8_TYPELESS` `Output Size`"
+  },
+  {
+    "source_key": "unreal:it-takes-two",
+    "game_id": "it-takes-two",
+    "title": "It Takes Two",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "Completed one playthrough, yet to encounter any bugs. Works out of the box. Underwater sections stay SDR. Some space travel scenes have broken colors. Some fades to white look weird."
+  },
+  {
+    "source_key": "unreal:jdm-japanese-drift-master",
+    "game_id": "jdm-japanese-drift-master",
+    "title": "JDM: Japanese Drift Master",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "Sliders require a scene change to apply. `R10G10B10A2_UNORM` `Output Size`"
+  },
+  {
+    "source_key": "unreal:journey-to-the-savage-planet",
+    "game_id": "journey-to-the-savage-planet",
+    "title": "Journey to the Savage Planet",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`B8G8R8A8_TYPELESS` `Output Size`"
+  },
+  {
+    "source_key": "unreal:jusant",
+    "game_id": "jusant",
+    "title": "Jusant",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`R10G10B10A2_UNORM` `Output Size`"
+  },
+  {
+    "source_key": "unreal:just-die-already",
+    "game_id": "just-die-already",
+    "title": "Just Die Already",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`B8G8R8A8_TYPELESS` `Output Size`"
+  },
+  {
+    "source_key": "unreal:kena-bridge-of-spirits",
+    "game_id": "kena-bridge-of-spirits",
+    "title": "Kena: Bridge of Spirits",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "Cutscenes brightness are limited to UI brightness."
+  },
+  {
+    "source_key": "unreal:kingdom-hearts-iii",
+    "game_id": "kingdom-hearts-iii",
+    "title": "Kingdom Hearts III",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "Has issues with texture flickering. `B8G8R8A8_TYPELESS` `Output Size`"
+  },
+  {
+    "source_key": "unreal:kitten-burst",
+    "game_id": "kitten-burst",
+    "title": "Kitten Burst",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`B8G8R8A8_TYPELESS` `Output Size`"
+  },
+  {
+    "source_key": "unreal:lay-of-the-land",
+    "game_id": "lay-of-the-land",
+    "title": "Lay of the Land",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`B8G8R8A8_TYPELESS` `Output Size` `B8G8R8A8_UNORM` `Output Size`"
+  },
+  {
+    "source_key": "unreal:lego-2k-drive",
+    "game_id": "lego-2k-drive",
+    "title": "LEGO 2K Drive",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "Works out of the box, although there might be some clamping on certain headlights on vehicles."
+  },
+  {
+    "source_key": "unreal:lies-of-p",
+    "game_id": "lies-of-p",
+    "title": "Lies of P",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "Disable in-game HDR. `B8G8R8A8_TYPELESS` `Output Size`"
+  },
+  {
+    "source_key": "unreal:life-is-strange-true-colors",
+    "game_id": "life-is-strange-true-colors",
+    "title": "Life is Strange: True Colors",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`B8G8R8A8_TYPELESS` `Output Size`"
+  },
+  {
+    "source_key": "unreal:lightyear-frontier",
+    "game_id": "lightyear-frontier",
+    "title": "Lightyear Frontier",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`B8G8R8A8_TYPLESS` `Output Ratio`"
+  },
+  {
+    "source_key": "unreal:little-nightmares",
+    "game_id": "little-nightmares",
+    "title": "Little Nightmares",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "Works out of the box. Disable Saturation Correction to retain color grading."
+  },
+  {
+    "source_key": "unreal:little-nightmares-enhanced-edition",
+    "game_id": "little-nightmares-enhanced-edition",
+    "title": "Little Nightmares (Enhanced Edition)",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "Works out of the box. Disable Saturation Correction to retain color grading."
+  },
+  {
+    "source_key": "unreal:little-nightmares-ii",
+    "game_id": "little-nightmares-ii",
+    "title": "Little Nightmares II",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "Works out of the box. May require gamut clamping."
+  },
+  {
+    "source_key": "unreal:little-nightmares-iii",
+    "game_id": "little-nightmares-iii",
+    "title": "Little Nightmares III",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`B8G8R8A8_TYPELESS` and `R10G10B10A2_UNORM` `Output Size`"
+  },
+  {
+    "source_key": "unreal:lords-of-the-fallen-2023",
+    "game_id": "lords-of-the-fallen-2023",
+    "title": "Lords of the Fallen (2023)",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "Disable in-game HDR and Easy Anti-Cheat. `R10G10B10A2_UNORM` `Output Size`"
+  },
+  {
+    "source_key": "unreal:lost-soul-aside",
+    "game_id": "lost-soul-aside",
+    "title": "Lost Soul Aside",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "Disable in-game HDR. `B8G8R8A8_TYPELESS` `Output Size`"
+  },
+  {
+    "source_key": "unreal:mafia-the-old-country",
+    "game_id": "mafia-the-old-country",
+    "title": "Mafia: The Old Country",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "Disable in-game HDR. `R10G10B10A2_UNORM` `Output Size`"
+  },
+  {
+    "source_key": "unreal:marvel-s-midnight-suns",
+    "game_id": "marvel-s-midnight-suns",
+    "title": "Marvel's Midnight Suns",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "Disable in-game HDR. `R10G10B10A2_UNORM` `Output Size`"
+  },
+  {
+    "source_key": "unreal:master-detective-archives-rain-code-plus",
+    "game_id": "master-detective-archives-rain-code-plus",
+    "title": "Master Detective Archives: RAIN CODE Plus",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`B8G8R8A8_TYPELESS` `Output Ratio` (auto-upgraded)"
+  },
+  {
+    "source_key": "unreal:the-medium",
+    "game_id": "the-medium",
+    "title": "The Medium",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "Disable in-game HDR. Spirit world scene highlights are clamped to UI brightness. `R10G10B10A2_UNORM` `Any Size`"
+  },
+  {
+    "source_key": "unreal:metal-eden",
+    "game_id": "metal-eden",
+    "title": "METAL EDEN",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "Main menu and respawn screen may show some corruption. Tested on demo version. `R10G10B10A2_UNORM` `Output Size`"
+  },
+  {
+    "source_key": "unreal:metro-gravity",
+    "game_id": "metro-gravity",
+    "title": "Metro Gravity",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "SDR Grading Bypass color grading preset recommended. `R10G10B10A2_UNORM` `Any Size`"
+  },
+  {
+    "source_key": "unreal:miasma-chronicles",
+    "game_id": "miasma-chronicles",
+    "title": "Miasma Chronicles",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`R8G8B8A8_TYPELESS` `Output Size`"
+  },
+  {
+    "source_key": "unreal:the-midnight-walk",
+    "game_id": "the-midnight-walk",
+    "title": "The Midnight Walk",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`R10G10B10A2_UNORM` `Output Size`"
+  },
+  {
+    "source_key": "unreal:motorslice",
+    "game_id": "motorslice",
+    "title": "MotorSlice",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`R10G10B10A2_UNORM` `Output Size`"
+  },
+  {
+    "source_key": "unreal:murky-divers",
+    "game_id": "murky-divers",
+    "title": "Murky Divers",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "May require gamut clamping. `R10G10B10A2_UNORM` `Any Size`"
+  },
+  {
+    "source_key": "unreal:necromunda-hired-gun",
+    "game_id": "necromunda-hired-gun",
+    "title": "Necromunda: Hired Gun",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`B8G8R8A8_TYPELESS` `Output Size`"
+  },
+  {
+    "source_key": "unreal:neverness-to-everness",
+    "game_id": "neverness-to-everness",
+    "title": "Neverness to Everness",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "Check detail instructions [`here`](https://github.com/clshortfuse/renodx/discussions/557)"
+  },
+  {
+    "source_key": "unreal:ninja-gaiden-2-black",
+    "game_id": "ninja-gaiden-2-black",
+    "title": "NINJA GAIDEN 2 Black",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "Disable in-game HDR. Sliders don't update in real time."
+  },
+  {
+    "source_key": "unreal:nobody-wants-to-die",
+    "game_id": "nobody-wants-to-die",
+    "title": "Nobody Wants to Die",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "Sliders only apply on scene change or exiting back out to the main menu. `R10G10B10A2_UNORM` `Output Size`"
+  },
+  {
+    "source_key": "unreal:the-occupation",
+    "game_id": "the-occupation",
+    "title": "The Occupation",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`B8G8R8A8_TYPELESS` `Output Size`"
+  },
+  {
+    "source_key": "unreal:octopath-traveler",
+    "game_id": "octopath-traveler",
+    "title": "Octopath Traveler",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`B8G8R8A8_TYPELESS` `Output Size`"
+  },
+  {
+    "source_key": "unreal:octopath-traveler-ii",
+    "game_id": "octopath-traveler-ii",
+    "title": "Octopath Traveler II",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`B8G8R8A8_TYPELESS` `Output Size`"
+  },
+  {
+    "source_key": "unreal:outriders",
+    "game_id": "outriders",
+    "title": "Outriders",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`B8G8R8A8_TYPELESS` `Output Size` `R8G8B8A8_UNORM` `Output Size`"
+  },
+  {
+    "source_key": "unreal:the-outer-worlds",
+    "game_id": "the-outer-worlds",
+    "title": "The Outer Worlds",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`B8G8R8A8_TYPELESS` `Any Size`"
+  },
+  {
+    "source_key": "unreal:the-outer-worlds-spacer-s-choice-edition",
+    "game_id": "the-outer-worlds-spacer-s-choice-edition",
+    "title": "The Outer Worlds: Spacer's Choice Edition",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`B8G8R8A8_TYPELESS` `Any Size` (optional to prevent HDR from disabling in certain instances, but breaks FMVs)."
+  },
+  {
+    "source_key": "unreal:the-outer-worlds-2",
+    "game_id": "the-outer-worlds-2",
+    "title": "The Outer Worlds 2",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "Disable in-game HDR. NaNs may appear during FMVs. `R10G10B10A2_UNORM` `Output Size`"
+  },
+  {
+    "source_key": "unreal:the-outlast-trials",
+    "game_id": "the-outlast-trials",
+    "title": "The Outlast Trials",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`R8G8B8A8_TYPELESS` `Output Size`"
+  },
+  {
+    "source_key": "unreal:pacific-drive",
+    "game_id": "pacific-drive",
+    "title": "Pacific Drive",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`B8G8R8A8_TYPELESS` `Output Size`"
+  },
+  {
+    "source_key": "unreal:palworld",
+    "game_id": "palworld",
+    "title": "Palworld",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "DLSS needs to be disabled or it will clamp to SDR `R8G8B8A8_TYPELESS` `Output Size` `R10G10B10A2_UNORM` `Output Size`"
+  },
+  {
+    "source_key": "unreal:persona-3-reload",
+    "game_id": "persona-3-reload",
+    "title": "Persona 3 Reload",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "Map background is bright when animating in. `B8G8R8A8_TYPELESS` `Output Size`"
+  },
+  {
+    "source_key": "unreal:police-simulator-patrol-officer",
+    "game_id": "police-simulator-patrol-officer",
+    "title": "Police Simulator: Patrol Officer",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "Disable in-game HDR. `B8G8R8A8_TYPELESS` `Output Size`"
+  },
+  {
+    "source_key": "unreal:psychonauts-2",
+    "game_id": "psychonauts-2",
+    "title": "Psychonauts 2",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`R8G8B8A8_TYPELESS` `Output Size` (auto-upgraded) `R10G10B10A2_UNORM` `Output Size` (auto-upgraded) `Force Borderless` `Disabled`"
+  },
+  {
+    "source_key": "unreal:ready-or-not",
+    "game_id": "ready-or-not",
+    "title": "Ready or Not",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`R10G10B10A2_UNORM` `Output Size` Sliders only apply on scene change or exiting to the main menu."
+  },
+  {
+    "source_key": "unreal:reanimal",
+    "game_id": "reanimal",
+    "title": "REANIMAL",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "The game has a custom and proper HDR implementation already."
+  },
+  {
+    "source_key": "unreal:redout-2",
+    "game_id": "redout-2",
+    "title": "Redout 2",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "Game may crash. `B8G8R8A8_TYPELESS` `Output Size`"
+  },
+  {
+    "source_key": "unreal:remnant-2",
+    "game_id": "remnant-2",
+    "title": "Remnant 2",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`R10G10B10A2_UNORM` `Output Size`"
+  },
+  {
+    "source_key": "unreal:returnal",
+    "game_id": "returnal",
+    "title": "Returnal",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "Disable in-game HDR (must be redone every startup). `B8G8R8A8_TYPELESS` `Output Size`"
+  },
+  {
+    "source_key": "unreal:runescape-dragonwilds",
+    "game_id": "runescape-dragonwilds",
+    "title": "RuneScape: Dragonwilds",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "If the game is unstable, switch to DX11 mode in the game's settings. Sliders only apply on scene change or exiting back out to the main menu."
+  },
+  {
+    "source_key": "unreal:rv-there-yet",
+    "game_id": "rv-there-yet",
+    "title": "RV There Yet?",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`R10G10B10A2_UNORM` `Output Size`"
+  },
+  {
+    "source_key": "unreal:sackboy-a-big-adventure",
+    "game_id": "sackboy-a-big-adventure",
+    "title": "Sackboy: A Big Adventure",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`B8G8R8A8_TYPELESS` `Output Size` (use `Output Ratio` if render resolution is not 100%.) `R10G10B10A2_UNORM` `Output Size`"
+  },
+  {
+    "source_key": "unreal:satisfactory",
+    "game_id": "satisfactory",
+    "title": "Satisfactory",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "DLAA does not work; use DLSS at 99% scaling or lower instead. `R10G10B10A2_UNORM` `Output Size`"
+  },
+  {
+    "source_key": "unreal:scarlet-nexus",
+    "game_id": "scarlet-nexus",
+    "title": "Scarlet Nexus",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "Visual Novel scenes are broken. `B8G8R8A8_TYPELESS` `Output Size`"
+  },
+  {
+    "source_key": "unreal:scorn",
+    "game_id": "scorn",
+    "title": "Scorn",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "SDR Grading Bypass color grading preset recommended. `B8G8R8A8_TYPELESS` `Output Size`"
+  },
+  {
+    "source_key": "unreal:severed-steel",
+    "game_id": "severed-steel",
+    "title": "Severed Steel",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`B8G8R8A8_TYPELESS` `Output Size`"
+  },
+  {
+    "source_key": "unreal:sifu",
+    "game_id": "sifu",
+    "title": "Sifu",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "Very few things get brighter than SDR besides specular highlights, fires, and the sun; may require a bespoke mod. `B8G8R8A8_TYPELESS` `Output Size`"
+  },
+  {
+    "source_key": "unreal:six-days-in-fallujah",
+    "game_id": "six-days-in-fallujah",
+    "title": "Six Days in Fallujah",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "The sun has a weird black texture around it, and smoke particles might be a bit darker. `B8G8R8A8_TYPELESS` `Output Size` `R10G10B10A2_UNORM` `Output Size`"
+  },
+  {
+    "source_key": "unreal:the-smurfs-dreams",
+    "game_id": "the-smurfs-dreams",
+    "title": "The Smurfs - Dreams",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "UI brightness slider affects FMVs. `B8G8R8A8_TYPELESS` `Output Size` `R10G10B10A2_UNORM` `Output Size`"
+  },
+  {
+    "source_key": "unreal:solar-ash",
+    "game_id": "solar-ash",
+    "title": "Solar Ash",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`B8G8R8A8_TYPELESS` `Output Size`"
+  },
+  {
+    "source_key": "unreal:sonic-racing-crossworlds",
+    "game_id": "sonic-racing-crossworlds",
+    "title": "Sonic Racing: CrossWorlds",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "Sliders apply when restarting the track. Bright elements are clamped to UI brightness. Water Palace's sky is very bright and not affected by the sliders. `R10G10B10A2_UNORM` `Output Size`"
+  },
+  {
+    "source_key": "unreal:soulstice",
+    "game_id": "soulstice",
+    "title": "Soulstice",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`B8G8R8A8_TYPELESS` `Output Size`"
+  },
+  {
+    "source_key": "unreal:south-of-midnight",
+    "game_id": "south-of-midnight",
+    "title": "South of Midnight",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`B8G8R8A8_TYPELESS` `Output Ratio`"
+  },
+  {
+    "source_key": "unreal:split-fiction",
+    "game_id": "split-fiction",
+    "title": "Split Fiction",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "Disable in-game HDR. Sliders may only apply on scene change."
+  },
+  {
+    "source_key": "unreal:spongebob-squarepants-battle-for-bikini-bottom-rehydrated",
+    "game_id": "spongebob-squarepants-battle-for-bikini-bottom-rehydrated",
+    "title": "SpongeBob SquarePants: Battle for Bikini Bottom - Rehydrated",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`B8G8R8A8_TYPELESS` `Output Size`"
+  },
+  {
+    "source_key": "unreal:squirrel-with-a-gun",
+    "game_id": "squirrel-with-a-gun",
+    "title": "Squirrel with a Gun",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`Swap Chain Format` `scRGB`"
+  },
+  {
+    "source_key": "unreal:stellar-blade",
+    "game_id": "stellar-blade",
+    "title": "Stellar Blade",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "Disable in-game HDR. Ultrawide users should set aspect ratio to \"auto\" in-game to prevent issues with the NIKKE minigames."
+  },
+  {
+    "source_key": "unreal:stray",
+    "game_id": "stray",
+    "title": "Stray",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`B8G8R8A8_TYPELESS` `Output Size`"
+  },
+  {
+    "source_key": "unreal:styx-shards-of-darkness",
+    "game_id": "styx-shards-of-darkness",
+    "title": "Styx: Shards of Darkness",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`B8G8R8A8_TYPELESS` `Output Size`"
+  },
+  {
+    "source_key": "unreal:sword-and-fairy-7",
+    "game_id": "sword-and-fairy-7",
+    "title": "Sword and Fairy 7",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`B8G8R8A8_TYPELESS` `Output Size`"
+  },
+  {
+    "source_key": "unreal:system-shock-remake",
+    "game_id": "system-shock-remake",
+    "title": "System Shock Remake",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`B8G8R8A8_TYPELESS` `Output Size`"
+  },
+  {
+    "source_key": "unreal:tales-of-arise",
+    "game_id": "tales-of-arise",
+    "title": "Tales of Arise",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "The bloom occasionally freaks out. SMAA and SMAA + TAA are not supported. Use TAA or disable AA."
+  },
+  {
+    "source_key": "unreal:tales-of-kenzera-zau",
+    "game_id": "tales-of-kenzera-zau",
+    "title": "Tales of Kenzera: ZAU",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "Update libxess.dll to prevent crashes when using XeSS upscaling. `B8G8R8A8_TYPELESS` `Output Size`"
+  },
+  {
+    "source_key": "unreal:tekken-7",
+    "game_id": "tekken-7",
+    "title": "Tekken 7",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "Some stages are clamped to UI brightness. `B8G8R8A8_TYPELESS` `Output Size`"
+  },
+  {
+    "source_key": "unreal:terminator-resistance",
+    "game_id": "terminator-resistance",
+    "title": "Terminator: Resistance",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`B8G8R8A8_TYPELESS` `Output Size`"
+  },
+  {
+    "source_key": "unreal:the-thaumaturge",
+    "game_id": "the-thaumaturge",
+    "title": "The Thaumaturge",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "Some scenes are clamped. `R10G10B10A2_UNORM` `Output Size`"
+  },
+  {
+    "source_key": "unreal:threshold",
+    "game_id": "threshold",
+    "title": "THRESHOLD",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`B8G8R8A8_TYPELESS` `Any Size`"
+  },
+  {
+    "source_key": "unreal:thymesia",
+    "game_id": "thymesia",
+    "title": "Thymesia",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`B8G8R8A8_TYPELESS` `Output Size`"
+  },
+  {
+    "source_key": "unreal:tiny-tina-s-wonderlands",
+    "game_id": "tiny-tina-s-wonderlands",
+    "title": "Tiny Tina's Wonderlands",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "Disable in-game FidelityFX Sharpening. `Upgrade Copy Destinations` `On` `R8G8B8A8_TYPELESS` `Output Ratio`"
+  },
+  {
+    "source_key": "unreal:tokyo-xtreme-racer",
+    "game_id": "tokyo-xtreme-racer",
+    "title": "Tokyo Xtreme Racer",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "DX11 `R10G10B10A2_UNORM` `Output Size`"
+  },
+  {
+    "source_key": "unreal:trek-to-yomi",
+    "game_id": "trek-to-yomi",
+    "title": "Trek to Yomi",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`B8G8R8A8_TYPELESS` `Output Size`"
+  },
+  {
+    "source_key": "unreal:vampire-the-masquerade-bloodlines-2",
+    "game_id": "vampire-the-masquerade-bloodlines-2",
+    "title": "Vampire: The Masquerade - Bloodlines 2",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`R10G10B10A2_UNORM` `Output Size` Cutscenes are clamped."
+  },
+  {
+    "source_key": "unreal:vampyr",
+    "game_id": "vampyr",
+    "title": "Vampyr",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`B8G8R8A8_TYPELESS` `Output Size`"
+  },
+  {
+    "source_key": "unreal:warhammer-40-000-boltgun",
+    "game_id": "warhammer-40-000-boltgun",
+    "title": "Warhammer 40,000: Boltgun",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`B8G8R8A8_TYPELESS` `Output Size`"
+  },
+  {
+    "source_key": "unreal:we-happy-few",
+    "game_id": "we-happy-few",
+    "title": "We Happy Few",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`B8G8R8A8_TYPELESS` `Output Size`"
+  },
+  {
+    "source_key": "unreal:weird-west",
+    "game_id": "weird-west",
+    "title": "Weird West",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`B8G8R8A8_TYPELESS` `Output Size`"
+  },
+  {
+    "source_key": "unreal:witchfire",
+    "game_id": "witchfire",
+    "title": "Witchfire",
+    "section": "unreal",
+    "profile_source": "unrealengine",
+    "note": "`R10G10B10A2_UNORM` `Output Size`"
+  },
+  {
+    "source_key": "unity:60-parsecs",
+    "game_id": "60-parsecs",
+    "title": "60 Parsecs!",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Tonemap/color grading not in real time"
+  },
+  {
+    "source_key": "unity:7-days-to-die",
+    "game_id": "7-days-to-die",
+    "title": "7 Days to Die",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "If using basic upscaler (Dynamic Resolution or Scale), Enable Swapchain Proxy."
+  },
+  {
+    "source_key": "unity:aer-memories-of-old",
+    "game_id": "aer-memories-of-old",
+    "title": "AER Memories of Old",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "32-bit."
+  },
+  {
+    "source_key": "unity:aeterna-noctis",
+    "game_id": "aeterna-noctis",
+    "title": "Aeterna Noctis",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R8G8B8A8_TYPELESS to Output ratio or Any size"
+  },
+  {
+    "source_key": "unity:afterparty",
+    "game_id": "afterparty",
+    "title": "Afterparty",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Enable Swapchain Proxy"
+  },
+  {
+    "source_key": "unity:agatha-christie-death-on-the-nile",
+    "game_id": "agatha-christie-death-on-the-nile",
+    "title": "Agatha Christie - Death on the Nile",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT"
+  },
+  {
+    "source_key": "unity:agent-a-a-puzzle-in-disguise",
+    "game_id": "agent-a-a-puzzle-in-disguise",
+    "title": "Agent A: A puzzle in disguise",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Swapchain Encoding: Gamma"
+  },
+  {
+    "source_key": "unity:akiba-s-trip-hellbound-debriefed",
+    "game_id": "akiba-s-trip-hellbound-debriefed",
+    "title": "AKIBA'S TRIP: Hellbound & Debriefed",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Enable Swapchain Proxy"
+  },
+  {
+    "source_key": "unity:all-we-need",
+    "game_id": "all-we-need",
+    "title": "All We Need",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT"
+  },
+  {
+    "source_key": "unity:altheia-the-wrath-of-aferi",
+    "game_id": "altheia-the-wrath-of-aferi",
+    "title": "Altheia: The Wrath of Aferi",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT"
+  },
+  {
+    "source_key": "unity:american-fugitive",
+    "game_id": "american-fugitive",
+    "title": "American Fugitive",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Enable Swapchain Proxy. Game's Graphics Quality setting to Medium or above."
+  },
+  {
+    "source_key": "unity:amerzone-the-explorer-s-legacy-2025",
+    "game_id": "amerzone-the-explorer-s-legacy-2025",
+    "title": "Amerzone - The Explorer's Legacy (2025)",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT"
+  },
+  {
+    "source_key": "unity:among-the-sleep-enhanced-edition",
+    "game_id": "among-the-sleep-enhanced-edition",
+    "title": "Among the Sleep - Enhanced Edition",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "32-bit."
+  },
+  {
+    "source_key": "unity:anodyne-2-return-to-dust",
+    "game_id": "anodyne-2-return-to-dust",
+    "title": "Anodyne 2: Return to Dust",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "32-bit. Enable Swapchain Proxy, Encoding: Gamma. Both compatibility offsets +1"
+  },
+  {
+    "source_key": "unity:aragami",
+    "game_id": "aragami",
+    "title": "Aragami",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Tonemap/CG not in real time (restart level to reload)"
+  },
+  {
+    "source_key": "unity:aragami-2",
+    "game_id": "aragami-2",
+    "title": "Aragami 2",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT."
+  },
+  {
+    "source_key": "unity:arkham-horror-mother-s-embrace",
+    "game_id": "arkham-horror-mother-s-embrace",
+    "title": "Arkham Horror: Mother's Embrace",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT. Enable Swapchain Proxy."
+  },
+  {
+    "source_key": "unity:assault-android-cactus",
+    "game_id": "assault-android-cactus",
+    "title": "Assault Android Cactus+",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "32-bit. Enable Swapchain Proxy"
+  },
+  {
+    "source_key": "unity:atlyss",
+    "game_id": "atlyss",
+    "title": "ATLYSS",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Swapchain Encoding: Gamma"
+  },
+  {
+    "source_key": "unity:atomic-owl",
+    "game_id": "atomic-owl",
+    "title": "Atomic Owl",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT."
+  },
+  {
+    "source_key": "unity:autonauts",
+    "game_id": "autonauts",
+    "title": "Autonauts",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Enable Swapchain Proxy."
+  },
+  {
+    "source_key": "unity:autonauts-vs-piratebots",
+    "game_id": "autonauts-vs-piratebots",
+    "title": "Autonauts vs Piratebots",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Enable Swapchain Proxy."
+  },
+  {
+    "source_key": "unity:bad-north-jotunn-edition",
+    "game_id": "bad-north-jotunn-edition",
+    "title": "Bad North: Jotunn Edition",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "32-bit."
+  },
+  {
+    "source_key": "unity:ball-x-pit",
+    "game_id": "ball-x-pit",
+    "title": "Ball x Pit",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Swapchain Encoding: Gamma"
+  },
+  {
+    "source_key": "unity:batbarian-testament-of-the-primordials",
+    "game_id": "batbarian-testament-of-the-primordials",
+    "title": "Batbarian: Testament of the Primordials",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Increase R8G8B8A8_TYPELESS Upgrade to Any Size. Enable Swapchain Proxy."
+  },
+  {
+    "source_key": "unity:battlestar-galactica-deadlock",
+    "game_id": "battlestar-galactica-deadlock",
+    "title": "Battlestar Galactica Deadlock",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Enable Swapchain Proxy"
+  },
+  {
+    "source_key": "unity:before-your-eyes",
+    "game_id": "before-your-eyes",
+    "title": "Before Your Eyes",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Enable Swapchain Proxy."
+  },
+  {
+    "source_key": "unity:beholder",
+    "game_id": "beholder",
+    "title": "Beholder",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "32-bit. Increase R8G8B8A8_TYPELESS Upgrade to Any Size. Enable Swapchain Proxy, Swapchain Encoding: Gamma"
+  },
+  {
+    "source_key": "unity:beholder-2",
+    "game_id": "beholder-2",
+    "title": "Beholder 2",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "32-bit. Enable Swapchain Proxy."
+  },
+  {
+    "source_key": "unity:ben-10-power-trip",
+    "game_id": "ben-10-power-trip",
+    "title": "Ben 10: Power Trip",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Enable Swapchain Proxy."
+  },
+  {
+    "source_key": "unity:bendy-and-the-ink-machine",
+    "game_id": "bendy-and-the-ink-machine",
+    "title": "Bendy and the Ink Machine",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Enable Swapchain Proxy. Tonemap/color grading not in real time"
+  },
+  {
+    "source_key": "unity:bendy-secrets-of-the-machine",
+    "game_id": "bendy-secrets-of-the-machine",
+    "title": "Bendy: Secrets of the Machine",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT"
+  },
+  {
+    "source_key": "unity:besiege",
+    "game_id": "besiege",
+    "title": "Besiege",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Enable Swapchain Proxy. Swapchain Encoding: Gamma"
+  },
+  {
+    "source_key": "unity:beyond-galaxyland",
+    "game_id": "beyond-galaxyland",
+    "title": "Beyond Galaxyland",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Swapchain Encoding: Gamma"
+  },
+  {
+    "source_key": "unity:bionic-bay",
+    "game_id": "bionic-bay",
+    "title": "Bionic Bay",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Not entirely playable yet"
+  },
+  {
+    "source_key": "unity:biped",
+    "game_id": "biped",
+    "title": "Biped",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Tonemap/color grading not in real time (Load Save Point to refresh)"
+  },
+  {
+    "source_key": "unity:blackwind",
+    "game_id": "blackwind",
+    "title": "Blackwind",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "32-bit."
+  },
+  {
+    "source_key": "unity:blazblue-entropy-effect",
+    "game_id": "blazblue-entropy-effect",
+    "title": "BlazBlue Entropy Effect",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT"
+  },
+  {
+    "source_key": "unity:bloody-hell",
+    "game_id": "bloody-hell",
+    "title": "Bloody Hell",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT. Both compatibility offsets +1"
+  },
+  {
+    "source_key": "unity:bo-path-of-the-teal-lotus",
+    "game_id": "b-path-of-the-teal-lotus",
+    "title": "Bō: Path of the Teal Lotus",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT"
+  },
+  {
+    "source_key": "unity:bounty-star",
+    "game_id": "bounty-star",
+    "title": "Bounty Star",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT"
+  },
+  {
+    "source_key": "unity:breachway",
+    "game_id": "breachway",
+    "title": "Breachway",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT"
+  },
+  {
+    "source_key": "unity:bubsy-4d",
+    "game_id": "bubsy-4d",
+    "title": "Bubsy 4D",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT"
+  },
+  {
+    "source_key": "unity:cakey-s-twisted-bakery",
+    "game_id": "cakey-s-twisted-bakery",
+    "title": "Cakey's Twisted Bakery",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT"
+  },
+  {
+    "source_key": "unity:cat-quest-iii",
+    "game_id": "cat-quest-iii",
+    "title": "Cat Quest III",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "32-bit. Swapchain encoding: gamma"
+  },
+  {
+    "source_key": "unity:children-of-the-sun",
+    "game_id": "children-of-the-sun",
+    "title": "Children of the Sun",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT"
+  },
+  {
+    "source_key": "unity:children-of-morta",
+    "game_id": "children-of-morta",
+    "title": "Children of Morta",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Enable Swapchain Proxy"
+  },
+  {
+    "source_key": "unity:circuit-superstars",
+    "game_id": "circuit-superstars",
+    "title": "Circuit Superstars",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT"
+  },
+  {
+    "source_key": "unity:cloudpunk",
+    "game_id": "cloudpunk",
+    "title": "Cloudpunk",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Enable Swapchain Proxy"
+  },
+  {
+    "source_key": "unity:cloverpit",
+    "game_id": "cloverpit",
+    "title": "Cloverpit",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Use DX11 (Second launch option)"
+  },
+  {
+    "source_key": "unity:copycat",
+    "game_id": "copycat",
+    "title": "Copycat",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R10G10B10A2_TYPELESS"
+  },
+  {
+    "source_key": "unity:coridden",
+    "game_id": "coridden",
+    "title": "Coridden",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT"
+  },
+  {
+    "source_key": "unity:creature-kitchen",
+    "game_id": "creature-kitchen",
+    "title": "Creature Kitchen",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade `R8G8B8A8_TYPELESS` to `Any Size`"
+  },
+  {
+    "source_key": "unity:ctrl-alt-ego",
+    "game_id": "ctrl-alt-ego",
+    "title": "Ctrl Alt Ego",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Enable Swapchain Proxy"
+  },
+  {
+    "source_key": "unity:cuphead",
+    "game_id": "cuphead",
+    "title": "Cuphead",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Enable Swapchain Proxy"
+  },
+  {
+    "source_key": "unity:dave-the-diver",
+    "game_id": "dave-the-diver",
+    "title": "DAVE THE DIVER",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT"
+  },
+  {
+    "source_key": "unity:deadcore-redux-demo",
+    "game_id": "deadcore-redux-demo",
+    "title": "DeadCore Redux Demo",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT. Tonemap/color grading not in real time"
+  },
+  {
+    "source_key": "unity:deep-rock-survivor",
+    "game_id": "deep-rock-survivor",
+    "title": "Deep Rock Survivor",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT"
+  },
+  {
+    "source_key": "unity:digimon-world-next-order",
+    "game_id": "digimon-world-next-order",
+    "title": "Digimon World: Next Order",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Swapchain Encoding: Gamma."
+  },
+  {
+    "source_key": "unity:dino-topia",
+    "game_id": "dino-topia",
+    "title": "Dino Topia",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT"
+  },
+  {
+    "source_key": "unity:dracomaton",
+    "game_id": "dracomaton",
+    "title": "DRACOMATON",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT"
+  },
+  {
+    "source_key": "unity:dragon-quest-builders",
+    "game_id": "dragon-quest-builders",
+    "title": "DRAGON QUEST BUILDERS",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Enable Bloom in-game (can be disabled in addon)"
+  },
+  {
+    "source_key": "unity:dread-delusion",
+    "game_id": "dread-delusion",
+    "title": "Dread Delusion",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "32-bit"
+  },
+  {
+    "source_key": "unity:dreamfall-chapters-the-final-cut",
+    "game_id": "dreamfall-chapters-the-final-cut",
+    "title": "Dreamfall Chapters - The Final Cut",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Enable Swapchain Proxy. Game save preview pictures are broken."
+  },
+  {
+    "source_key": "unity:dredge",
+    "game_id": "dredge",
+    "title": "DREDGE",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "32-bit"
+  },
+  {
+    "source_key": "unity:dread-templar",
+    "game_id": "dread-templar",
+    "title": "Dread Templar",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Works out of the box. Crashes when any settings are applied/saved but settings are saved anyways."
+  },
+  {
+    "source_key": "unity:dungeons-2",
+    "game_id": "dungeons-2",
+    "title": "Dungeons 2",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Scaling AND Tonemap offset = 1. Main Menu will be black, but everything is fine once loaded in game."
+  },
+  {
+    "source_key": "unity:dungeons-3",
+    "game_id": "dungeons-3",
+    "title": "Dungeons 3",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Swampchain proxy on."
+  },
+  {
+    "source_key": "unity:dungeons-4",
+    "game_id": "dungeons-4",
+    "title": "Dungeons 4",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Change game's Brightness (Gamma) setting to refresh LUT"
+  },
+  {
+    "source_key": "unity:dystopika",
+    "game_id": "dystopika",
+    "title": "Dystopika",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R10G10B10A2_TYPELESS & R11G11B10_FLOAT"
+  },
+  {
+    "source_key": "unity:eastern-exorcist",
+    "game_id": "eastern-exorcist",
+    "title": "Eastern Exorcist",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Both compatibility offsets +1"
+  },
+  {
+    "source_key": "unity:eastshade",
+    "game_id": "eastshade",
+    "title": "Eastshade",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Click Game Brightness setting and save to refresh LUT"
+  },
+  {
+    "source_key": "unity:egging-on",
+    "game_id": "egging-on",
+    "title": "Egging On",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R10G10B10A2_TYPELESS"
+  },
+  {
+    "source_key": "unity:eiyuden-chronicle-hundred-heroes",
+    "game_id": "eiyuden-chronicle-hundred-heroes",
+    "title": "Eiyuden Chronicle: Hundred Heroes",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT"
+  },
+  {
+    "source_key": "unity:eiyuden-chronicle-rising",
+    "game_id": "eiyuden-chronicle-rising",
+    "title": "Eiyuden Chronicle: Rising",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT"
+  },
+  {
+    "source_key": "unity:el-paso-elsewhere",
+    "game_id": "el-paso-elsewhere",
+    "title": "El Paso, Elsewhere",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT"
+  },
+  {
+    "source_key": "unity:end-transmission",
+    "game_id": "end-transmission",
+    "title": "End Transmission?",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R10G10B10A2_TYPELESS & R11G11B10_FLOAT"
+  },
+  {
+    "source_key": "unity:encased",
+    "game_id": "encased",
+    "title": "Encased",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT"
+  },
+  {
+    "source_key": "unity:enigma-of-fear",
+    "game_id": "enigma-of-fear",
+    "title": "Enigma of Fear",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT"
+  },
+  {
+    "source_key": "unity:enter-the-gungeon",
+    "game_id": "enter-the-gungeon",
+    "title": "Enter The Gungeon",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Enable Swapchain Proxy."
+  },
+  {
+    "source_key": "unity:ereban-shadow-legacy",
+    "game_id": "ereban-shadow-legacy",
+    "title": "Ereban - Shadow Legacy",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT"
+  },
+  {
+    "source_key": "unity:epistory-typing-chronicles",
+    "game_id": "epistory-typing-chronicles",
+    "title": "Epistory - Typing Chronicles",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Enable Swapchain Proxy, Encoding: Gamma"
+  },
+  {
+    "source_key": "unity:exit-the-gungeon",
+    "game_id": "exit-the-gungeon",
+    "title": "Exit The Gungeon",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Enable Swapchain Proxy."
+  },
+  {
+    "source_key": "unity:drova-forsaken-kin",
+    "game_id": "drova-forsaken-kin",
+    "title": "Drova Forsaken Kin",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Use fullscreen windowed borderless. Swapchain encoding set to gamma."
+  },
+  {
+    "source_key": "unity:fabledom",
+    "game_id": "fabledom",
+    "title": "Fabledom",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT. (If game's Anti-aliasing is enabled, Compatibility Blit Copy: Scaling only)"
+  },
+  {
+    "source_key": "unity:fallen-aces",
+    "game_id": "fallen-aces",
+    "title": "Fallen Aces",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Both compatibilty offsets +1"
+  },
+  {
+    "source_key": "unity:fantasy-general-ii",
+    "game_id": "fantasy-general-ii",
+    "title": "Fantasy General II",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Enable Swapchain Proxy"
+  },
+  {
+    "source_key": "unity:far-lone-sails",
+    "game_id": "far-lone-sails",
+    "title": "FAR: Lone Sails",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Enable Swapchain Proxy"
+  },
+  {
+    "source_key": "unity:fe",
+    "game_id": "fe",
+    "title": "Fe",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Enable Swapchain Proxy."
+  },
+  {
+    "source_key": "unity:firewatch",
+    "game_id": "firewatch",
+    "title": "Firewatch",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Enable Swapchain Proxy"
+  },
+  {
+    "source_key": "unity:five-nights-at-freddy-s-into-the-pit",
+    "game_id": "five-nights-at-freddy-s-into-the-pit",
+    "title": "Five Nights at Freddy's: Into the Pit",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT"
+  },
+  {
+    "source_key": "unity:flashback-2",
+    "game_id": "flashback-2",
+    "title": "Flashback 2",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT"
+  },
+  {
+    "source_key": "unity:for-the-king",
+    "game_id": "for-the-king",
+    "title": "For The King",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Enable Swapchain Proxy"
+  },
+  {
+    "source_key": "unity:for-the-king-ii",
+    "game_id": "for-the-king-ii",
+    "title": "For The King II",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Tonemap/color grading not in real time"
+  },
+  {
+    "source_key": "unity:forgotten-23",
+    "game_id": "forgotten-23",
+    "title": "Forgotten 23",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT"
+  },
+  {
+    "source_key": "unity:front-mission-2-remake",
+    "game_id": "front-mission-2-remake",
+    "title": "FRONT MISSION 2: Remake",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R10G10B10A2_TYPELESS"
+  },
+  {
+    "source_key": "unity:gatekeeper",
+    "game_id": "gatekeeper",
+    "title": "Gatekeeper",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT"
+  },
+  {
+    "source_key": "unity:ghost-of-a-tale",
+    "game_id": "ghost-of-a-tale",
+    "title": "Ghost of a Tale",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Enable Swapchain Proxy. Enable Bloom in-game (can be disabled in addon)"
+  },
+  {
+    "source_key": "unity:giggleland-terry-s-vegetable-patch",
+    "game_id": "giggleland-terry-s-vegetable-patch",
+    "title": "Giggleland: Terry’s Vegetable Patch",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT"
+  },
+  {
+    "source_key": "unity:golf-with-your-friends",
+    "game_id": "golf-with-your-friends",
+    "title": "Golf With Your Friends",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade ??????????????"
+  },
+  {
+    "source_key": "unity:great-god-grove",
+    "game_id": "great-god-grove",
+    "title": "Great God Grove",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT to Output Ratio"
+  },
+  {
+    "source_key": "unity:gunfire-reborn",
+    "game_id": "gunfire-reborn",
+    "title": "Gunfire Reborn",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade ??????????????"
+  },
+  {
+    "source_key": "unity:halve-demo",
+    "game_id": "halve-demo",
+    "title": "Halve Demo",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT"
+  },
+  {
+    "source_key": "unity:hardspace-shipbreaker",
+    "game_id": "hardspace-shipbreaker",
+    "title": "Hardspace: Shipbreaker",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT"
+  },
+  {
+    "source_key": "unity:have-a-nice-death",
+    "game_id": "have-a-nice-death",
+    "title": "Have a Nice Death",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "32-bit. Upgrade R11G11B10_FLOAT"
+  },
+  {
+    "source_key": "unity:heart-of-the-machine",
+    "game_id": "heart-of-the-machine",
+    "title": "Heart of the Machine",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Compatibility Scaling Offset +1"
+  },
+  {
+    "source_key": "unity:herdling",
+    "game_id": "herdling",
+    "title": "Herdling",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Disable games's native HDR from game's config file."
+  },
+  {
+    "source_key": "unity:hollow-cocoon",
+    "game_id": "hollow-cocoon",
+    "title": "Hollow Cocoon",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT. Game's Rendering Quality setting should be 100%"
+  },
+  {
+    "source_key": "unity:hordelord",
+    "game_id": "hordelord",
+    "title": "Hordelord",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT"
+  },
+  {
+    "source_key": "unity:house-flipper-2",
+    "game_id": "house-flipper-2",
+    "title": "House Flipper 2",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT. Tonemap/color grading not in real time (change game Saturation setting to refresh)"
+  },
+  {
+    "source_key": "unity:human-fall-flat",
+    "game_id": "human-fall-flat",
+    "title": "Human Fall Flat",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "32-bit. Enable Swapchain Proxy. Both compatibilty offsets +1"
+  },
+  {
+    "source_key": "unity:hunter-hunter-nen-impact",
+    "game_id": "hunter-hunter-nen-impact",
+    "title": "HUNTER×HUNTER NEN×IMPACT",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT"
+  },
+  {
+    "source_key": "unity:icey",
+    "game_id": "icey",
+    "title": "ICEY",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Enable Swapchain Proxy, Encoding: Gamma"
+  },
+  {
+    "source_key": "unity:incision",
+    "game_id": "incision",
+    "title": "INCISION",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Enable Swapchain Proxy"
+  },
+  {
+    "source_key": "unity:in-sound-mind",
+    "game_id": "in-sound-mind",
+    "title": "In Sound Mind",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT"
+  },
+  {
+    "source_key": "unity:jotunnslayer-hordes-of-hel",
+    "game_id": "jotunnslayer-hordes-of-hel",
+    "title": "Jotunnslayer: Hordes of Hel",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT. Tonemap/color grading not in real time"
+  },
+  {
+    "source_key": "unity:katamari-damacy-reroll",
+    "game_id": "katamari-damacy-reroll",
+    "title": "Katamari Damacy REROLL",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Enable Swapchain Proxy"
+  },
+  {
+    "source_key": "unity:kaze-and-the-wild-masks",
+    "game_id": "kaze-and-the-wild-masks",
+    "title": "Kaze and the Wild Masks",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R8G8B8A8_TYPELESS to Any size"
+  },
+  {
+    "source_key": "unity:keep-talking-and-nobody-explodes",
+    "game_id": "keep-talking-and-nobody-explodes",
+    "title": "Keep Talking and Nobody Explodes",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Enable Swapchain Proxy"
+  },
+  {
+    "source_key": "unity:kerbal-space-program",
+    "game_id": "kerbal-space-program",
+    "title": "Kerbal Space Program",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Swapchain encoding: Gamma"
+  },
+  {
+    "source_key": "unity:keywe",
+    "game_id": "keywe",
+    "title": "KeyWe",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Tonemap/color grading not in real time"
+  },
+  {
+    "source_key": "unity:killer-frequency",
+    "game_id": "killer-frequency",
+    "title": "Killer Frequency",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT"
+  },
+  {
+    "source_key": "unity:kill-knight",
+    "game_id": "kill-knight",
+    "title": "KILL KNIGHT",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT"
+  },
+  {
+    "source_key": "unity:kona",
+    "game_id": "kona",
+    "title": "Kona",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Enable Swapchain Proxy"
+  },
+  {
+    "source_key": "unity:lego-bricktales",
+    "game_id": "lego-bricktales",
+    "title": "LEGO® Bricktales",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade ??????????????"
+  },
+  {
+    "source_key": "unity:lego-voyagers",
+    "game_id": "lego-voyagers",
+    "title": "LEGO® Voyagers",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Enable Swapchain Proxy"
+  },
+  {
+    "source_key": "unity:little-kitty-big-city",
+    "game_id": "little-kitty-big-city",
+    "title": "Little Kitty, Big City",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT"
+  },
+  {
+    "source_key": "unity:little-noah-scion-of-paradise",
+    "game_id": "little-noah-scion-of-paradise",
+    "title": "Little Noah: Scion of Paradise",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT"
+  },
+  {
+    "source_key": "unity:little-witch-in-the-woods",
+    "game_id": "little-witch-in-the-woods",
+    "title": "Little Witch in the Woods",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT"
+  },
+  {
+    "source_key": "unity:lost-in-random",
+    "game_id": "lost-in-random",
+    "title": "Lost In Random",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT"
+  },
+  {
+    "source_key": "unity:lost-in-vivo",
+    "game_id": "lost-in-vivo",
+    "title": "Lost In Vivo",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Enable Swapchain Proxy"
+  },
+  {
+    "source_key": "unity:lumines-arise",
+    "game_id": "lumines-arise",
+    "title": "Lumines Arise",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT by Output Ratio"
+  },
+  {
+    "source_key": "unity:lysfanga-the-time-shift-warrior",
+    "game_id": "lysfanga-the-time-shift-warrior",
+    "title": "Lysfanga: The Time Shift Warrior",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT. Compatibilty Scaling offset +1."
+  },
+  {
+    "source_key": "unity:mages-of-mystralia",
+    "game_id": "mages-of-mystralia",
+    "title": "Mages of Mystralia",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Enable Swapchain Proxy"
+  },
+  {
+    "source_key": "unity:mai-child-of-ages",
+    "game_id": "mai-child-of-ages",
+    "title": "Mai: Child of Ages",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT"
+  },
+  {
+    "source_key": "unity:maid-of-sker",
+    "game_id": "maid-of-sker",
+    "title": "Maid of Sker",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT"
+  },
+  {
+    "source_key": "unity:metal-hellsinger",
+    "game_id": "metal-hellsinger",
+    "title": "Metal: Hellsinger",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT"
+  },
+  {
+    "source_key": "unity:monster-train",
+    "game_id": "monster-train",
+    "title": "Monster Train",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade ??????????????"
+  },
+  {
+    "source_key": "unity:monument-valley",
+    "game_id": "monument-valley",
+    "title": "Monument Valley",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Swapchain encoding: Gamma"
+  },
+  {
+    "source_key": "unity:monument-valley-2",
+    "game_id": "monument-valley-2",
+    "title": "Monument Valley 2",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Swapchain encoding: Gamma"
+  },
+  {
+    "source_key": "unity:moonlighter",
+    "game_id": "moonlighter",
+    "title": "Moonlighter",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "swapchain (enable proxy ?)"
+  },
+  {
+    "source_key": "unity:morbid-metal-demo",
+    "game_id": "morbid-metal-demo",
+    "title": "Morbid Metal (demo)",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade ??????????????"
+  },
+  {
+    "source_key": "unity:mouthwashing",
+    "game_id": "mouthwashing",
+    "title": "Mouthwashing",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Use borderless. Both compatibilty offsets +1. Upgrade R8G8B8A8_TYPELESS to Output Ratio."
+  },
+  {
+    "source_key": "unity:my-friendly-neighborhood",
+    "game_id": "my-friendly-neighborhood",
+    "title": "My Friendly Neighborhood",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT"
+  },
+  {
+    "source_key": "unity:my-friend-pedro",
+    "game_id": "my-friend-pedro",
+    "title": "My Friend Pedro",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Enable Swapchain Proxy. Tonemap/CG not in real time (restart level to reload)"
+  },
+  {
+    "source_key": "unity:necropolis-brutal-edition",
+    "game_id": "necropolis-brutal-edition",
+    "title": "NECROPOLIS: BRUTAL EDITION",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "32-bit. ReShade can be [asi-loaded](https://github.com/ThirteenAG/Ultimate-ASI-Loader/releases)"
+  },
+  {
+    "source_key": "unity:neon-abyss",
+    "game_id": "neon-abyss",
+    "title": "Neon Abyss",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade Upgrade_R16G16B16A16_TYPELESS. Enable Swapchain Proxy"
+  },
+  {
+    "source_key": "unity:neoverse",
+    "game_id": "neoverse",
+    "title": "NEOVERSE",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT"
+  },
+  {
+    "source_key": "unity:new-super-lucky-s-tale",
+    "game_id": "new-super-lucky-s-tale",
+    "title": "New Super Lucky's Tale",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Enable Swapchain Proxy, Encoding: Gamma"
+  },
+  {
+    "source_key": "unity:nocturnal",
+    "game_id": "nocturnal",
+    "title": "Nocturnal",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R10G10B10A2_TYPELESS"
+  },
+  {
+    "source_key": "unity:node-the-last-favor-of-the-antarii",
+    "game_id": "node-the-last-favor-of-the-antarii",
+    "title": "NODE: The Last Favor of the Antarii",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT"
+  },
+  {
+    "source_key": "unity:nottolot",
+    "game_id": "nottolot",
+    "title": "NOTTOLOT",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT. Both compatibilty offsets +1."
+  },
+  {
+    "source_key": "unity:nova-lands",
+    "game_id": "nova-lands",
+    "title": "Nova Lands",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "swapchain (enable proxy ?)"
+  },
+  {
+    "source_key": "unity:observation",
+    "game_id": "observation",
+    "title": "Observation",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Enable Swapchain Proxy."
+  },
+  {
+    "source_key": "unity:oddworld-soulstorm-enhanced-edition",
+    "game_id": "oddworld-soulstorm-enhanced-edition",
+    "title": "Oddworld: Soulstorm Enhanced Edition",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R10G10B10A2_TYPELESS. Tonemap/CG not in real time (restart checkpoint/level to reload)"
+  },
+  {
+    "source_key": "unity:operation-wolf-returns-first-mission",
+    "game_id": "operation-wolf-returns-first-mission",
+    "title": "Operation Wolf Returns: First Mission",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT"
+  },
+  {
+    "source_key": "unity:order-13",
+    "game_id": "order-13",
+    "title": "ORDER 13",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT. Tonemap/color grading not in real time (change Brightness in game settings to reload)"
+  },
+  {
+    "source_key": "unity:outer-wilds",
+    "game_id": "outer-wilds",
+    "title": "Outer Wilds",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Tonemap/color grading not in real time"
+  },
+  {
+    "source_key": "unity:overcooked",
+    "game_id": "overcooked",
+    "title": "Overcooked",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "32-bit. Enable Swapchain Proxy, Encoding: Gamma"
+  },
+  {
+    "source_key": "unity:overcooked-2",
+    "game_id": "overcooked-2",
+    "title": "Overcooked! 2",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Enable Swapchain Proxy"
+  },
+  {
+    "source_key": "unity:overcooked-all-you-can-eat",
+    "game_id": "overcooked-all-you-can-eat",
+    "title": "Overcooked! All You Can Eat",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "64-bit. Enable Swapchain Proxy, Encoding: Gamma. R8G8B8A8_TYPELESS Upgrade to Output ratio or Any Size"
+  },
+  {
+    "source_key": "unity:oxenfree",
+    "game_id": "oxenfree",
+    "title": "Oxenfree",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Swapchain Encoding: Gamma"
+  },
+  {
+    "source_key": "unity:oxenfree-ii-lost-signals",
+    "game_id": "oxenfree-ii-lost-signals",
+    "title": "OXENFREE II: Lost Signals",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT"
+  },
+  {
+    "source_key": "unity:party-club",
+    "game_id": "party-club",
+    "title": "Party Club",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R10G10B10A2_TYPELESS & R11G11B10_FLOAT"
+  },
+  {
+    "source_key": "unity:phasmophobia",
+    "game_id": "phasmophobia",
+    "title": "Phasmophobia",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade ??????????????"
+  },
+  {
+    "source_key": "unity:peak",
+    "game_id": "peak",
+    "title": "PEAK",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Use DX11"
+  },
+  {
+    "source_key": "unity:playing-kafka",
+    "game_id": "playing-kafka",
+    "title": "Playing Kafka",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Enable Swapchain Proxy"
+  },
+  {
+    "source_key": "unity:pillars-of-eternity",
+    "game_id": "pillars-of-eternity",
+    "title": "Pillars of Eternity",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Enable Swapchain Proxy. Set swapchain encoding to Gamma. Set scaling and tonemap offset to 1."
+  },
+  {
+    "source_key": "unity:pillars-of-eternity-ii-deadfire",
+    "game_id": "pillars-of-eternity-ii-deadfire",
+    "title": "Pillars of Eternity II: Deadfire",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Enable Swapchain Proxy."
+  },
+  {
+    "source_key": "unity:praey-for-the-gods",
+    "game_id": "praey-for-the-gods",
+    "title": "Praey for the Gods",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Enable Swapchain Proxy."
+  },
+  {
+    "source_key": "unity:prince-of-persia-the-lost-crown",
+    "game_id": "prince-of-persia-the-lost-crown",
+    "title": "Prince of Persia: The Lost Crown",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Color grading unaffected (other than Peak and UI Brightness). Use the Luma Framework mod below"
+  },
+  {
+    "source_key": "unity:quern-undying-thoughts",
+    "game_id": "quern-undying-thoughts",
+    "title": "Quern - Undying Thoughts",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Enable Swapchain Proxy, Encoding: Gamma"
+  },
+  {
+    "source_key": "unity:reka",
+    "game_id": "reka",
+    "title": "REKA",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT"
+  },
+  {
+    "source_key": "unity:r-e-p-o",
+    "game_id": "r-e-p-o",
+    "title": "R.E.P.O.",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade `R8G8B8A8_TYPELESS` to `Any Size`"
+  },
+  {
+    "source_key": "unity:reveil",
+    "game_id": "reveil",
+    "title": "REVEIL",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT"
+  },
+  {
+    "source_key": "unity:road-96-mile-0",
+    "game_id": "road-96-mile-0",
+    "title": "Road 96: Mile 0",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT"
+  },
+  {
+    "source_key": "unity:road-redemption",
+    "game_id": "road-redemption",
+    "title": "Road Redemption",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Tonemap/color grading not in real time"
+  },
+  {
+    "source_key": "unity:ruined-king-a-league-of-legends-storytm",
+    "game_id": "ruined-king-a-league-of-legends-story",
+    "title": "Ruined King: A League of Legends Story™",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Pause menu background is broken"
+  },
+  {
+    "source_key": "unity:satellite-reign",
+    "game_id": "satellite-reign",
+    "title": "Satellite Reign",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "32-bit."
+  },
+  {
+    "source_key": "unity:sektori",
+    "game_id": "sektori",
+    "title": "Sektori",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "32-bit. Upgrade R11G11B10_FLOAT"
+  },
+  {
+    "source_key": "unity:shadow-labyrinth",
+    "game_id": "shadow-labyrinth",
+    "title": "Shadow Labyrinth",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT"
+  },
+  {
+    "source_key": "unity:shadow-of-the-road-demo",
+    "game_id": "shadow-of-the-road-demo",
+    "title": "Shadow of the Road (demo)",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT"
+  },
+  {
+    "source_key": "unity:shadows-awakening",
+    "game_id": "shadows-awakening",
+    "title": "Shadows: Awakening",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Tonemap/color grading not in real time"
+  },
+  {
+    "source_key": "unity:shadows-of-doubt",
+    "game_id": "shadows-of-doubt",
+    "title": "Shadows of Doubt",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT"
+  },
+  {
+    "source_key": "unity:shape-of-dreams",
+    "game_id": "shape-of-dreams",
+    "title": "Shape of Dreams",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT. Both compatibility offsets +1"
+  },
+  {
+    "source_key": "unity:shift-87",
+    "game_id": "shift-87",
+    "title": "Shift 87",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT"
+  },
+  {
+    "source_key": "unity:skate-story",
+    "game_id": "skate-story",
+    "title": "Skate Story",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT. Disable in-game HDR"
+  },
+  {
+    "source_key": "unity:sker-ritual",
+    "game_id": "sker-ritual",
+    "title": "Sker Ritual",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT. Open game graphic settings and hit Apply to refresh Tonemap/Color grading."
+  },
+  {
+    "source_key": "unity:spellforce-conquest-of-eo",
+    "game_id": "spellforce-conquest-of-eo",
+    "title": "Spellforce Conquest of Eo",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "swapchain (enable proxy ?)"
+  },
+  {
+    "source_key": "unity:songs-of-silence",
+    "game_id": "songs-of-silence",
+    "title": "Songs Of Silence",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R10G10B10A2_TYPELESS & R11G11B10_FLOAT. Compatibility Scaling offset +2."
+  },
+  {
+    "source_key": "unity:soulstone-survivors",
+    "game_id": "soulstone-survivors",
+    "title": "Soulstone Survivors",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT"
+  },
+  {
+    "source_key": "unity:spacebase-startopia",
+    "game_id": "spacebase-startopia",
+    "title": "Spacebase Startopia",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT"
+  },
+  {
+    "source_key": "unity:space-crew",
+    "game_id": "space-crew",
+    "title": "Space Crew",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Enable Swapchain Proxy"
+  },
+  {
+    "source_key": "unity:spiritfall",
+    "game_id": "spiritfall",
+    "title": "Spiritfall",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT. Enable Swapchain Proxy"
+  },
+  {
+    "source_key": "unity:spooky-s-jump-scare-mansion-hd-renovation",
+    "game_id": "spooky-s-jump-scare-mansion-hd-renovation",
+    "title": "Spooky's Jump Scare Mansion: HD Renovation",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Swapchain Encoding: Gamma. Both Compatibility Offsets +1."
+  },
+  {
+    "source_key": "unity:stick-fight-the-game",
+    "game_id": "stick-fight-the-game",
+    "title": "Stick Fight: The Game",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "32-bit. Enable Swapchain Proxy."
+  },
+  {
+    "source_key": "unity:streets-of-rogue",
+    "game_id": "streets-of-rogue",
+    "title": "Streets of Rogue",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Enable Swapchain Proxy"
+  },
+  {
+    "source_key": "unity:summoner-s-war-chronicles",
+    "game_id": "summoner-s-war-chronicles",
+    "title": "Summoner's War: Chronicles",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Enable Bloom in game settings."
+  },
+  {
+    "source_key": "unity:sunless-skies-sovereign-edition",
+    "game_id": "sunless-skies-sovereign-edition",
+    "title": "Sunless Skies: Sovereign Edition",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "32-bit"
+  },
+  {
+    "source_key": "unity:super-crazy-rhythm-castle",
+    "game_id": "super-crazy-rhythm-castle",
+    "title": "SUPER CRAZY RHYTHM CASTLE",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT"
+  },
+  {
+    "source_key": "unity:superhot",
+    "game_id": "superhot",
+    "title": "SUPERHOT",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "64 bit, Swapchain Encoding: Gamma."
+  },
+  {
+    "source_key": "unity:superhot-mind-control-delete",
+    "game_id": "superhot-mind-control-delete",
+    "title": "SUPERHOT: MIND CONTROL DELETE",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "32 bit, Enable Swapchain Proxy, Swapchain Encoding: Gamma."
+  },
+  {
+    "source_key": "unity:sworn",
+    "game_id": "sworn",
+    "title": "SWORN",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT"
+  },
+  {
+    "source_key": "unity:syberia-remastered",
+    "game_id": "syberia-remastered",
+    "title": "Syberia - Remastered",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT"
+  },
+  {
+    "source_key": "unity:syberia-the-world-before",
+    "game_id": "syberia-the-world-before",
+    "title": "Syberia - The World Before",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT"
+  },
+  {
+    "source_key": "unity:tainted-grail-conquest",
+    "game_id": "tainted-grail-conquest",
+    "title": "Tainted Grail: Conquest",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT"
+  },
+  {
+    "source_key": "unity:tales-of-berseria-remastered",
+    "game_id": "tales-of-berseria-remastered",
+    "title": "Tales of Berseria Remastered",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "64-bit. Enable Swapchain Proxy, Encoding: Gamma. Upgrade R8G8B8A8_TYPELESS. FMV anime cutscenes also affected"
+  },
+  {
+    "source_key": "unity:tales-of-xillia-remastered",
+    "game_id": "tales-of-xillia-remastered",
+    "title": "Tales of Xillia Remastered",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "64-bit. Enable Swapchain Proxy, Encoding: Gamma. Upgrade R8G8B8A8_TYPELESS"
+  },
+  {
+    "source_key": "unity:tales-of-the-shire-a-the-lord-of-the-ringstm-game",
+    "game_id": "tales-of-the-shire-a-the-lord-of-the-rings-game",
+    "title": "Tales of the Shire: A The Lord of The Rings™ Game",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "64-bit. Enable Swapchain Proxy, Encoding: Gamma. Upgrade R8G8B8A8_TYPELESS"
+  },
+  {
+    "source_key": "unity:teenage-mutant-ninja-turtles-mutants-unleashed",
+    "game_id": "teenage-mutant-ninja-turtles-mutants-unleashed",
+    "title": "Teenage Mutant Ninja Turtles: Mutants Unleashed",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT"
+  },
+  {
+    "source_key": "unity:terratech",
+    "game_id": "terratech",
+    "title": "TerraTech",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Enable Swapchain Proxy, Encoding: Gamma"
+  },
+  {
+    "source_key": "unity:the-first-tree",
+    "game_id": "the-first-tree",
+    "title": "The First Tree",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "32-bit. Enable Swapchain Proxy."
+  },
+  {
+    "source_key": "unity:the-karters-2-turbo-charged",
+    "game_id": "the-karters-2-turbo-charged",
+    "title": "The Karters 2: Turbo Charged",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT"
+  },
+  {
+    "source_key": "unity:the-knightling",
+    "game_id": "the-knightling",
+    "title": "The Knightling",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT"
+  },
+  {
+    "source_key": "unity:the-pedestrian",
+    "game_id": "the-pedestrian",
+    "title": "The Pedestrian",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Enable Swapchain Proxy"
+  },
+  {
+    "source_key": "unity:the-rogue-prince-of-persia",
+    "game_id": "the-rogue-prince-of-persia",
+    "title": "The Rogue Prince of Persia",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT"
+  },
+  {
+    "source_key": "unity:the-upturned",
+    "game_id": "the-upturned",
+    "title": "The Upturned",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT. Compatibility Scaling offset +1"
+  },
+  {
+    "source_key": "unity:tin-can",
+    "game_id": "tin-can",
+    "title": "Tin Can",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT"
+  },
+  {
+    "source_key": "unity:tinykin",
+    "game_id": "tinykin",
+    "title": "Tinykin",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT"
+  },
+  {
+    "source_key": "unity:touhou-dystopian",
+    "game_id": "touhou-dystopian",
+    "title": "东方异域见闻 ~ Touhou Dystopian",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT"
+  },
+  {
+    "source_key": "unity:towa-and-the-guardians-of-the-sacred-tree",
+    "game_id": "towa-and-the-guardians-of-the-sacred-tree",
+    "title": "Towa and the Guardians of the Sacred Tree",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R10G10B10A2_TYPELESS & R11G11B10_FLOAT"
+  },
+  {
+    "source_key": "unity:towaga-among-shadows",
+    "game_id": "towaga-among-shadows",
+    "title": "Towaga: Among Shadows",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "32-bit. Enable Swapchain Proxy. Enable Post-processing in game settings."
+  },
+  {
+    "source_key": "unity:trailmakers",
+    "game_id": "trailmakers",
+    "title": "Trailmakers",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Enable Post Processing (any quality) and Internal HDR in game settings"
+  },
+  {
+    "source_key": "unity:turbo-golf-racing",
+    "game_id": "turbo-golf-racing",
+    "title": "Turbo Golf Racing",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Enable Post-Processing in game's graphics settings."
+  },
+  {
+    "source_key": "unity:two-point-hospital",
+    "game_id": "two-point-hospital",
+    "title": "Two Point Hospital",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Enable Swapchain Proxy"
+  },
+  {
+    "source_key": "unity:ultros",
+    "game_id": "ultros",
+    "title": "Ultros",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Enable Color Grading in game settings."
+  },
+  {
+    "source_key": "unity:undying",
+    "game_id": "undying",
+    "title": "UNDYING",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT (>= Output_Ratio) if using FSR1"
+  },
+  {
+    "source_key": "unity:unruly-heroes",
+    "game_id": "unruly-heroes",
+    "title": "Unruly Heroes",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Enable Swapchain Proxy"
+  },
+  {
+    "source_key": "unity:valley",
+    "game_id": "valley",
+    "title": "Valley",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Enable Swapchain Proxy"
+  },
+  {
+    "source_key": "unity:viewfinder",
+    "game_id": "viewfinder",
+    "title": "Viewfinder",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT. Enable Post-processing in game settings."
+  },
+  {
+    "source_key": "unity:void-crew",
+    "game_id": "void-crew",
+    "title": "Void Crew",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT. DLSS clamps colors to bt709"
+  },
+  {
+    "source_key": "unity:v-rising",
+    "game_id": "v-rising",
+    "title": "V Rising",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Toggle Pause or Options menu in solo to refresh LUT. In multi stay under the sun or in Graphic settings Calibrate Brightness > Confirm (leave 50 default value)"
+  },
+  {
+    "source_key": "unity:vigil-the-longest-night",
+    "game_id": "vigil-the-longest-night",
+    "title": "Vigil: The Longest Night",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "32-bit."
+  },
+  {
+    "source_key": "unity:warhammer-40-000-shootas-blood-teef",
+    "game_id": "warhammer-40-000-shootas-blood-teef",
+    "title": "Warhammer 40,000: Shootas, Blood & Teef",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "32-bit."
+  },
+  {
+    "source_key": "unity:wasteland-2-directors-cut",
+    "game_id": "wasteland-2-directors-cut",
+    "title": "Wasteland 2 Directors Cut",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Enable Swapchain Proxy."
+  },
+  {
+    "source_key": "unity:wasteland-3",
+    "game_id": "wasteland-3",
+    "title": "Wasteland 3",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT. Enable Swapchain Proxy. Compatibility Scaling offset +1"
+  },
+  {
+    "source_key": "unity:wavetale",
+    "game_id": "wavetale",
+    "title": "Wavetale",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT"
+  },
+  {
+    "source_key": "unity:we-were-here-expeditions-the-friendship",
+    "game_id": "we-were-here-expeditions-the-friendship",
+    "title": "We Were Here Expeditions: The FriendShip",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT"
+  },
+  {
+    "source_key": "unity:windblown",
+    "game_id": "windblown",
+    "title": "Windblown",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R10G10B10A2_TYPELESS & R11G11B10_FLOAT if using FSR1"
+  },
+  {
+    "source_key": "unity:witchspring-r-the-story-of-pieberry",
+    "game_id": "witchspring-r-the-story-of-pieberry",
+    "title": "WitchSpring R - The Story of Pieberry",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT"
+  },
+  {
+    "source_key": "unity:wizard-with-a-gun",
+    "game_id": "wizard-with-a-gun",
+    "title": "Wizard with a Gun",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Enable Swapchain Proxy. Recommend raising highlights quite a bit as highlights are quite dim otherwise."
+  },
+  {
+    "source_key": "unity:yooka-replaylee",
+    "game_id": "yooka-replaylee",
+    "title": "Yooka-Replaylee",
+    "section": "unity",
+    "profile_source": "unityengine",
+    "note": "Upgrade R11G11B10_FLOAT"
+  }
+]

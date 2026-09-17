@@ -4,6 +4,7 @@
 // markers in match_overlay.json. The tool-specific transformation is pure in
 // lib/renodx-wiki.mjs; this file owns only IO and the command contract.
 
+import { createHash } from "node:crypto";
 import { readFile } from "node:fs/promises";
 import { addonCatalogs } from "./catalog.mjs";
 import { assertPlainObject, errorMessage } from "./lib/common.mjs";
@@ -47,12 +48,22 @@ async function fetchSnapshotAssets() {
 async function main(args) {
   const wikiPath = addonCatalogs.renodx.sources.wiki;
   const overlayPath = addonCatalogs.renodx.sources.overlay;
+  const messagesPath = addonCatalogs.renodx.sources.wikiMessages;
+  const sourcePath = addonCatalogs.renodx.sources.wikiSource;
   const existingWiki = await readJsonOrDefault(wikiPath, []);
+  const existingMessages = await readJsonOrDefault(messagesPath, []);
+  const existingSource = await readJsonOrDefault(sourcePath, null);
   if (!Array.isArray(existingWiki)) throw new Error(`${wikiPath} must be a JSON array.`);
   const overlay = assertPlainObject(await readJsonOrDefault(overlayPath, {}), overlayPath);
 
   console.log("Fetching RenoDX wiki...");
-  const rows = parseRenodxWikiRows(await fetchWikiMarkdown(WIKI_URL));
+  const markdown = await fetchWikiMarkdown(WIKI_URL);
+  const source = {
+    schema_version: 1,
+    url: WIKI_URL,
+    content_sha256: createHash("sha256").update(markdown, "utf8").digest("hex"),
+  };
+  const rows = parseRenodxWikiRows(markdown);
   console.log("Fetching official snapshot assets...");
   const officialAssets = await fetchSnapshotAssets();
   if (officialAssets.size === 0) {
@@ -62,7 +73,10 @@ async function main(args) {
   const result = reconcileRenodxWiki({ rows, existingWiki, overlay, officialAssets });
   for (const warning of result.warnings) console.warn(warning);
   const changed =
-    jsonChanged(existingWiki, result.wikiGames) || jsonChanged(overlay, result.overlay);
+    jsonChanged(existingWiki, result.wikiGames) ||
+    jsonChanged(existingMessages, result.messages) ||
+    jsonChanged(existingSource, source) ||
+    jsonChanged(overlay, result.overlay);
 
   if (args.check) {
     if (changed) {
@@ -75,6 +89,8 @@ async function main(args) {
   }
 
   await writeFormattedJsonFile(wikiPath, result.wikiGames);
+  await writeFormattedJsonFile(messagesPath, result.messages);
+  await writeFormattedJsonFile(sourcePath, source);
   await writeFormattedJsonFile(overlayPath, result.overlay);
   console.log(
     [

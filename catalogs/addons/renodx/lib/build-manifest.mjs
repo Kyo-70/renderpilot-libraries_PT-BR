@@ -43,6 +43,17 @@ export const GENERICS = deepFreeze([
 ]);
 
 /**
+ * The v2 profile id is deliberately separate from the engine family.  UE
+ * Extended is still an Unreal profile; it is not a third engine kind.
+ */
+export const PROFILE_IDS = Object.freeze({
+  unity: "unity",
+  unreal: "unreal_legacy",
+  ueExtended: "ue_extended",
+  game: "game",
+});
+
+/**
  * Builds the RenoDX v1 public document from wiki + overlay inputs.
  */
 export function buildManifest({

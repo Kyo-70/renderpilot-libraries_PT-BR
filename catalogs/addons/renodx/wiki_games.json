@@ -32,7 +32,9 @@
     "slug": "alicemadnessreturns",
     "arch": "X64",
     "status": "working",
-    "id": "alice-madness-returns"
+    "id": "alice-madness-returns",
+    "notes": "Check the mod's thread or the nexus page for Notes.",
+    "source_key": "main:alice-madness-returns"
   },
   {
     "name": "Alien: Isolation",
@@ -130,7 +132,9 @@
     "slug": "asscreedblackflag",
     "arch": "X86",
     "status": "construction",
-    "id": "assassins-creed-iv-black-flag"
+    "id": "assassins-creed-iv-black-flag",
+    "notes": "Playable, but some unresolved graphical bugs.",
+    "source_key": "main:assassin-s-creed-iv-black-flagtm"
   },
   {
     "name": "Assassin’s Creed®: Black Flag Resynced",
@@ -228,14 +232,18 @@
     "slug": "yumia1",
     "arch": "X64",
     "status": "construction",
-    "id": "atelier-yumia-the-alchemist-of-memories-the-envisioned-land"
+    "id": "atelier-yumia-the-alchemist-of-memories-the-envisioned-land",
+    "notes": "Fully playable, just needs playtesting/feedback",
+    "source_key": "main:atelier-yumia-the-alchemist-of-memories-the-envisioned-land"
   },
   {
     "name": "Atlas Fallen (DX12)",
     "slug": "atlasfallen",
     "arch": "X64",
     "status": "working",
-    "id": "atlas-fallen"
+    "id": "atlas-fallen",
+    "notes": "Install ReShade in 'Atlas Fallenbin'. FSR2 causes crashes.",
+    "source_key": "main:atlas-fallen-dx12"
   },
   {
     "name": "Avatar: Frontiers of Pandora™",
@@ -305,7 +313,9 @@
     "slug": "borderlands2",
     "arch": "X64",
     "status": "working",
-    "id": "borderlands-2-the-pre-sequel"
+    "id": "borderlands-2-the-pre-sequel",
+    "notes": "Check the mod's thread or the nexus page for Notes.",
+    "source_key": "main:borderlands-2-the-pre-sequel"
   },
   {
     "name": "Bulletstorm: Full Clip Edition",
@@ -333,7 +343,9 @@
     "slug": "childoflight",
     "arch": "X64",
     "status": "working",
-    "id": "child-of-light"
+    "id": "child-of-light",
+    "notes": "Check the mod's thread or the nexus page for Notes.",
+    "source_key": "main:child-of-light"
   },
   {
     "name": "Citizen Sleeper 2",
@@ -354,7 +366,9 @@
     "slug": "clivebarkersjericho",
     "arch": "X86",
     "status": "construction",
-    "id": "clive-barker-s-jericho"
+    "id": "clive-barker-s-jericho",
+    "notes": "ACES output is broken, need to be removed in next update",
+    "source_key": "main:clive-barker-s-jericho"
   },
   {
     "name": "CODE VEIN II",
@@ -368,7 +382,9 @@
     "slug": "crimsondesert",
     "arch": "X64",
     "status": "construction",
-    "id": "crimson-desert"
+    "id": "crimson-desert",
+    "notes": "Game gets updated regularly breaking the mod. Accurate status info in discord.",
+    "source_key": "main:crimson-desert"
   },
   {
     "name": "Cronos: The New Dawn",
@@ -417,14 +433,18 @@
     "slug": "daysgone",
     "arch": "X64",
     "status": "construction",
-    "id": "days-gone"
+    "id": "days-gone",
+    "notes": "Functional, better than native, but could use some improvement.",
+    "source_key": "main:days-gone"
   },
   {
     "name": "Dead Island (& Riptide) Definitive Edition",
     "slug": "deadislandde",
     "arch": "X64",
     "status": "construction",
-    "id": "dead-island-definitive-edition"
+    "id": "dead-island-definitive-edition",
+    "notes": "Currently broken",
+    "source_key": "main:dead-island-riptide-definitive-edition"
   },
   {
     "name": "Dead Island 2",
@@ -508,7 +528,9 @@
     "slug": "dragonsdogma2",
     "arch": "X64",
     "status": "working",
-    "id": "dragon-s-dogma-2"
+    "id": "dragon-s-dogma-2",
+    "notes": "Delete shader.cache2 from the game directory when installing this mod, otherwise you'll get shader stutter.",
+    "source_key": "main:dragon-s-dogma-2"
   },
   {
     "name": "Dragon Quest XI (Original & DE)",
@@ -669,7 +691,9 @@
     "slug": "forzahorizon6",
     "arch": "X64",
     "status": "working",
-    "id": "forza-horizon-6"
+    "id": "forza-horizon-6",
+    "notes": "Arguably not an HDR fix. Vanilla HDR is competent and received a separate grade from SDR.",
+    "source_key": "main:forza-horizon-6"
   },
   {
     "name": "GIRLS' FRONTLINE 2: EXILIUM",
@@ -879,7 +903,9 @@
     "slug": "journey",
     "arch": "X64",
     "status": "working",
-    "id": "journey"
+    "id": "journey",
+    "notes": "Check the mod's thread or the nexus page for Notes.",
+    "source_key": "main:journey"
   },
   {
     "name": "Just Cause 4",
@@ -1180,21 +1206,27 @@
     "slug": "ninjagaiden4",
     "arch": "X64",
     "status": "working",
-    "id": "ninja-gaiden-4"
+    "id": "ninja-gaiden-4",
+    "notes": "Requires Lyall's NinjaGaidenMCFix.",
+    "source_key": "main:ninja-gaiden-4"
   },
   {
     "name": "Ninja Gaiden Sigma",
     "slug": "ngsigma",
     "arch": "X64",
     "status": "working",
-    "id": "ninja-gaiden-sigma"
+    "id": "ninja-gaiden-sigma",
+    "notes": "Requires Lyall's NinjaGaidenMCFix.",
+    "source_key": "main:ninja-gaiden-sigma"
   },
   {
     "name": "Ninja Gaiden Sigma 2",
     "slug": "ngsigma2",
     "arch": "X64",
     "status": "construction",
-    "id": "ninja-gaiden-sigma-2"
+    "id": "ninja-gaiden-sigma-2",
+    "notes": "Requires Lyall's NinjaGaidenMCFix.",
+    "source_key": "main:ninja-gaiden-sigma-2"
   },
   {
     "name": "Nioh 2",
@@ -1229,7 +1261,9 @@
     "slug": "opus-eos",
     "arch": "X64",
     "status": "working",
-    "id": "opus-echo-of-starsong-full-bloom-edition"
+    "id": "opus-echo-of-starsong-full-bloom-edition",
+    "notes": "Steam overlay must be disabled. Disable any other overlays if you run into issues.",
+    "source_key": "main:opus-echo-of-starsong-full-bloom-edition"
   },
   {
     "name": "Ori and the Will of the Wisps",
@@ -1320,7 +1354,9 @@
     "slug": "rememberme",
     "arch": "X64",
     "status": "working",
-    "id": "remember-me"
+    "id": "remember-me",
+    "notes": "Check the mod's thread or the nexus page for Notes.",
+    "source_key": "main:remember-me"
   },
   {
     "name": "Resident Evil 2 Remake",
@@ -1397,7 +1433,9 @@
     "slug": "raidou",
     "arch": "X64",
     "status": "construction",
-    "id": "raidou-remastered-the-mystery-of-the-soulless-army"
+    "id": "raidou-remastered-the-mystery-of-the-soulless-army",
+    "notes": "Needs playtesting, might be missing shaders for later zones",
+    "source_key": "main:raidou-remastered-the-mystery-of-the-soulless-army"
   },
   {
     "name": "RoboCop: Rogue City",
@@ -1495,7 +1533,9 @@
     "slug": "sonicunleashedrecomp",
     "arch": "X64",
     "status": "construction",
-    "id": "sonic-unleashed-recompiled"
+    "id": "sonic-unleashed-recompiled",
+    "notes": "Motion blur needs to be disabled. Currently doesn't work with RTX 50 GPUs.",
+    "source_key": "main:sonic-unleashed-recompiled"
   },
   {
     "name": "Sons of The Forest",
@@ -1509,7 +1549,9 @@
     "slug": "specopstheline",
     "arch": "X64",
     "status": "working",
-    "id": "spec-ops-the-line"
+    "id": "spec-ops-the-line",
+    "notes": "Check the mod's thread or the nexus page for Notes.",
+    "source_key": "main:spec-ops-the-line"
   },
   {
     "name": "Splatoon",
@@ -1551,14 +1593,19 @@
     "slug": "ue-extended",
     "arch": "X64",
     "status": "working",
-    "id": "s-t-a-l-k-e-r-2-heart-of-chornobyl"
+    "id": "s-t-a-l-k-e-r-2-heart-of-chornobyl",
+    "notes": "UE-Extended mod. Set gamma/contrast/brightness ingame settings to 50%!",
+    "source_key": "main:s-t-a-l-k-e-r-2-heart-of-chornobyl",
+    "additional_source_keys": ["ue-extended:s-t-a-l-k-e-r-2-heart-of-chornobyl"]
   },
   {
     "name": "Steelrising",
     "slug": "steelrising",
     "arch": "X64",
     "status": "construction",
-    "id": "steelrising"
+    "id": "steelrising",
+    "notes": "Currently broken",
+    "source_key": "main:steelrising"
   },
   {
     "name": "Steel Seed",
@@ -1677,7 +1724,9 @@
     "slug": "tew2",
     "arch": "X64",
     "status": "construction",
-    "id": "the-evil-within-2"
+    "id": "the-evil-within-2",
+    "notes": "Fully playable, just needs playtesting/feedback",
+    "source_key": "main:the-evil-within-2"
   },
   {
     "name": "The Elder Scrolls IV: Oblivion Remastered",
@@ -1768,7 +1817,9 @@
     "slug": "tombraider2013de",
     "arch": "X64",
     "status": "construction",
-    "id": "tomb-raider-2013-definitive-edition"
+    "id": "tomb-raider-2013-definitive-edition",
+    "notes": "Breaks the lighting in some parts of the game, like the Chasm Monastery",
+    "source_key": "main:tomb-raider-2013-definitive-edition"
   },
   {
     "name": "Total War: Three Kingdoms",
@@ -1789,7 +1840,9 @@
     "slug": "trackmania",
     "arch": "X64",
     "status": "construction",
-    "id": "trackmania"
+    "id": "trackmania",
+    "notes": "Mod has great HDR, but breaks some customization menus.",
+    "source_key": "main:trackmania"
   },
   {
     "name": "Trine 2: Complete Story",
@@ -1880,7 +1933,9 @@
     "slug": "yakuza0",
     "arch": "X64",
     "status": "construction",
-    "id": "yakuza-kiwami-1"
+    "id": "yakuza-kiwami-1",
+    "notes": "Mod primarily made for Y0.",
+    "source_key": "main:yakuza-kiwami-1"
   },
   {
     "name": "YS IX: Monstrum Nox",
@@ -1929,4430 +1984,5919 @@
     "slug": "ue-extended",
     "arch": "X64",
     "status": "working",
-    "id": "abiotic-factor"
+    "id": "abiotic-factor",
+    "notes": "Engine.ini",
+    "source_key": "ue-extended:abiotic-factor",
+    "section": "ue-extended"
   },
   {
     "name": "ABZÛ",
     "slug": "ue-extended",
     "arch": "X64",
     "status": "working",
-    "id": "abzu"
+    "id": "abzu",
+    "notes": "Upgrade Path: On `B8G8R8A8_TYPELESS` `Output Size` for 100% render resolution or `Output Ratio` for other percentages.",
+    "source_key": "ue-extended:abzu",
+    "section": "ue-extended"
   },
   {
     "name": "Assetto Corsa Rally",
     "slug": "ue-extended",
     "arch": "X64",
     "status": "working",
-    "id": "assetto-corsa-rally"
+    "id": "assetto-corsa-rally",
+    "notes": "Native HDR",
+    "source_key": "ue-extended:assetto-corsa-rally",
+    "section": "ue-extended"
   },
   {
     "name": "Astroneer",
     "slug": "ue-extended",
     "arch": "X64",
     "status": "construction",
-    "id": "astroneer"
+    "id": "astroneer",
+    "notes": "Upgrade Path: On. Grading and flickering issues.",
+    "source_key": "ue-extended:astroneer",
+    "section": "ue-extended"
   },
   {
     "name": "A Way Out",
     "slug": "ue-extended",
     "arch": "X64",
     "status": "construction",
-    "id": "a-way-out"
+    "id": "a-way-out",
+    "notes": "Upgrade Path: On. Lacks testing.",
+    "source_key": "ue-extended:a-way-out",
+    "section": "ue-extended"
   },
   {
     "name": "Black Myth: Wukong",
     "slug": "ue-extended",
     "arch": "X64",
     "status": "working",
-    "id": "black-myth-wukong"
+    "id": "black-myth-wukong",
+    "notes": "Engine.ini, Only add `r.HDR.EnableHDROutput=1` to Engine.ini.",
+    "source_key": "ue-extended:black-myth-wukong",
+    "section": "ue-extended"
   },
   {
     "name": "Borderlands 4",
     "slug": "ue-extended",
     "arch": "X64",
     "status": "working",
-    "id": "borderlands-4"
+    "id": "borderlands-4",
+    "notes": "Native HDR",
+    "source_key": "ue-extended:borderlands-4",
+    "section": "ue-extended"
   },
   {
     "name": "Bodycam",
     "slug": "ue-extended",
     "arch": "X64",
     "status": "working",
-    "id": "bodycam"
+    "id": "bodycam",
+    "notes": "Engine.ini",
+    "source_key": "ue-extended:bodycam",
+    "section": "ue-extended"
   },
   {
     "name": "Chained Together",
     "slug": "ue-extended",
     "arch": "X64",
     "status": "working",
-    "id": "chained-together"
+    "id": "chained-together",
+    "notes": "Engine.ini, Slider do not change in real-time.",
+    "source_key": "ue-extended:chained-together",
+    "section": "ue-extended"
   },
   {
     "name": "Choo-Choo Charles",
     "slug": "ue-extended",
     "arch": "X64",
     "status": "working",
-    "id": "choo-choo-charles"
+    "id": "choo-choo-charles",
+    "notes": "Engine.ini",
+    "source_key": "ue-extended:choo-choo-charles",
+    "section": "ue-extended"
   },
   {
     "name": "Chromatic Conundrum",
     "slug": "ue-extended",
     "arch": "X64",
     "status": "working",
-    "id": "chromatic-conundrum"
+    "id": "chromatic-conundrum",
+    "notes": "Upgrade Path: Off. Broken rendering when enabled.",
+    "source_key": "ue-extended:chromatic-conundrum",
+    "section": "ue-extended"
   },
   {
     "name": "Conan Exiles Enhanced",
     "slug": "ue-extended",
     "arch": "X64",
     "status": "working",
-    "id": "conan-exiles-enhanced"
+    "id": "conan-exiles-enhanced",
+    "notes": "Engine.ini",
+    "source_key": "ue-extended:conan-exiles-enhanced",
+    "section": "ue-extended"
   },
   {
     "name": "Crab Champions",
     "slug": "ue-extended",
     "arch": "X64",
     "status": "working",
-    "id": "crab-champions"
+    "id": "crab-champions",
+    "notes": "Engine.ini",
+    "source_key": "ue-extended:crab-champions",
+    "section": "ue-extended"
   },
   {
     "name": "Dead as Disco",
     "slug": "ue-extended",
     "arch": "X64",
     "status": "working",
-    "id": "dead-as-disco"
+    "id": "dead-as-disco",
+    "notes": "Native HDR",
+    "source_key": "ue-extended:dead-as-disco",
+    "section": "ue-extended"
   },
   {
     "name": "Deep Rock Galactic",
     "slug": "ue-extended",
     "arch": "X64",
     "status": "working",
-    "id": "deep-rock-galactic"
+    "id": "deep-rock-galactic",
+    "notes": "Native HDR",
+    "source_key": "ue-extended:deep-rock-galactic",
+    "section": "ue-extended"
   },
   {
     "name": "Deep Rock Galactic: Rogue Core",
     "slug": "ue-extended",
     "arch": "X64",
     "status": "working",
-    "id": "deep-rock-galactic-rogue-core"
+    "id": "deep-rock-galactic-rogue-core",
+    "notes": "Upgrade Path: On, `R10G10B10A2_UNORM` `Output Size`. Native HDR is broken.",
+    "source_key": "ue-extended:deep-rock-galactic-rogue-core",
+    "section": "ue-extended"
   },
   {
     "name": "Escape the Backrooms",
     "slug": "ue-extended",
     "arch": "X64",
     "status": "construction",
-    "id": "escape-the-backrooms"
+    "id": "escape-the-backrooms",
+    "notes": "Upgrade Path: On, `B8G8R8A8_TYPELESS` `Output Size`. Lacks testing.",
+    "source_key": "ue-extended:escape-the-backrooms",
+    "section": "ue-extended"
   },
   {
     "name": "Everwind",
     "slug": "ue-extended",
     "arch": "X64",
     "status": "working",
-    "id": "everwind"
+    "id": "everwind",
+    "notes": "Engine.ini",
+    "source_key": "ue-extended:everwind",
+    "section": "ue-extended"
   },
   {
     "name": "Far Far West",
     "slug": "ue-extended",
     "arch": "X64",
     "status": "working",
-    "id": "far-far-west"
+    "id": "far-far-west",
+    "notes": "Native HDR",
+    "source_key": "ue-extended:far-far-west",
+    "section": "ue-extended"
   },
   {
     "name": "FlyKnight",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "flyknight"
+    "id": "flyknight",
+    "notes": "`B8G8R8A8_TYPELESS` `Output Size`",
+    "source_key": "unreal:flyknight",
+    "section": "unreal"
   },
   {
     "name": "Frostpunk 2",
     "slug": "ue-extended",
     "arch": "X64",
     "status": "construction",
-    "id": "frostpunk-2"
+    "id": "frostpunk-2",
+    "notes": "Upgrade Path: On. UI slider controls paper white.",
+    "source_key": "ue-extended:frostpunk-2",
+    "section": "ue-extended"
   },
   {
     "name": "Goat Simulator 3",
     "slug": "ue-extended",
     "arch": "X64",
     "status": "working",
-    "id": "goat-simulator-3"
+    "id": "goat-simulator-3",
+    "notes": "Upgrade Path: On",
+    "source_key": "ue-extended:goat-simulator-3",
+    "section": "ue-extended"
   },
   {
     "name": "Ghostrunner",
     "slug": "ue-extended",
     "arch": "X64",
     "status": "working",
-    "id": "ghostrunner"
+    "id": "ghostrunner",
+    "notes": "Upgrade Path: On",
+    "source_key": "ue-extended:ghostrunner",
+    "section": "ue-extended"
   },
   {
     "name": "Ghostrunner 2",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "ghostrunner-2"
+    "id": "ghostrunner-2",
+    "notes": "Limited to BT.709 `B8G8R8A8_TYPELESS` `Output Size`",
+    "source_key": "unreal:ghostrunner-2",
+    "section": "unreal"
   },
   {
     "name": "Gothic 1 Remake",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "gothic-1-remake"
+    "id": "gothic-1-remake",
+    "notes": "`R10G10B10A2_UNORM` `Output Size`",
+    "source_key": "unreal:gothic-1-remake",
+    "section": "unreal"
   },
   {
     "name": "Grand Theft Auto: The Trilogy – The Definitive Edition (III, Vice City, San Andreas)",
     "slug": "ue-extended",
     "arch": "X64",
     "status": "working",
-    "id": "grand-theft-auto-the-trilogy-the-definitive-edition-iii-vice-city-san-andreas"
+    "id": "grand-theft-auto-the-trilogy-the-definitive-edition-iii-vice-city-san-andreas",
+    "notes": "Upgrade Path: On",
+    "source_key": "ue-extended:grand-theft-auto-the-trilogy-the-definitive-edition-iii-vice-city-san-andreas",
+    "section": "ue-extended"
   },
   {
     "name": "Grounded 2",
     "slug": "ue-extended",
     "arch": "X64",
     "status": "working",
-    "id": "grounded-2"
+    "id": "grounded-2",
+    "notes": "Engine.ini",
+    "source_key": "ue-extended:grounded-2",
+    "section": "ue-extended"
   },
   {
     "name": "Hellblade II: Senua’s Saga",
     "slug": "ue-extended",
     "arch": "X64",
     "status": "construction",
-    "id": "hellblade-ii-senua-s-saga"
+    "id": "hellblade-ii-senua-s-saga",
+    "notes": "Native HDR, Slider do not change in real-time. Lacks testing.",
+    "source_key": "ue-extended:hellblade-ii-senua-s-saga",
+    "section": "ue-extended"
   },
   {
     "name": "Hi-Fi Rush",
     "slug": "ue-extended",
     "arch": "X64",
     "status": "construction",
-    "id": "hi-fi-rush"
+    "id": "hi-fi-rush",
+    "notes": "Upgrade Path: On as Engine.ini edits overexposed the shading. Gameplay and highlights are clamped to UI brightness. `Upgrade Copy Destinations` `Off` `R8G8R8A8_TYPELESS` `Any Size`",
+    "source_key": "ue-extended:hi-fi-rush",
+    "section": "ue-extended"
   },
   {
     "name": "Hydroneer",
     "slug": "ue-extended",
     "arch": "X64",
     "status": "working",
-    "id": "hydroneer"
+    "id": "hydroneer",
+    "notes": "Upgrade Path: On",
+    "source_key": "ue-extended:hydroneer",
+    "section": "ue-extended"
   },
   {
     "name": "The iDOLM@STER: Starlit Season",
     "slug": "ue-extended",
     "arch": "X64",
     "status": "construction",
-    "id": "the-idolm-ster-starlit-season"
+    "id": "the-idolm-ster-starlit-season",
+    "notes": "Upgrade Path: On as Engine.ini edits overexposed the shading. DX11; refused to boot up DX12 as Low Level Fatal Error Line: 266 Camped to UI brightness has issues with Commu's blue lighting, as well for the stage lighting on the top. Small cameras with multiple idols during certain Commus does not highlight the HDR. `Upgrade Copy Destinations` `Off` `B8G8R8A8_TYPELESS` `Any Size`",
+    "source_key": "ue-extended:the-idolm-ster-starlit-season",
+    "section": "ue-extended"
   },
   {
     "name": "inZOI",
     "slug": "ue-extended",
     "arch": "X64",
     "status": "working",
-    "id": "inzoi"
+    "id": "inzoi",
+    "notes": "Engine.ini",
+    "source_key": "ue-extended:inzoi",
+    "section": "ue-extended"
   },
   {
     "name": "It Takes Two",
     "slug": "ue-extended",
     "arch": "X64",
     "status": "working",
-    "id": "it-takes-two"
+    "id": "it-takes-two",
+    "notes": "Upgrade Path: On",
+    "source_key": "ue-extended:it-takes-two",
+    "section": "ue-extended"
   },
   {
     "name": "Jusant",
     "slug": "ue-extended",
     "arch": "X64",
     "status": "working",
-    "id": "jusant"
+    "id": "jusant",
+    "notes": "Native HDR",
+    "source_key": "ue-extended:jusant",
+    "section": "ue-extended"
   },
   {
     "name": "LEGO® Batman™: Legacy of the Dark Knight",
     "slug": "ue-extended",
     "arch": "X64",
     "status": "construction",
-    "id": "lego-batmantm-legacy-of-the-dark-knight"
+    "id": "lego-batmantm-legacy-of-the-dark-knight",
+    "notes": "Native HDR, Sliders do not change in real-time, Lacks testing.",
+    "source_key": "ue-extended:lego-batmantm-legacy-of-the-dark-knight",
+    "section": "ue-extended"
   },
   {
     "name": "Lies of P",
     "slug": "ue-extended",
     "arch": "X64",
     "status": "construction",
-    "id": "lies-of-p"
+    "id": "lies-of-p",
+    "notes": "Native HDR, Sliders do not change in real-time, Lacks testing.",
+    "source_key": "ue-extended:lies-of-p",
+    "section": "ue-extended"
   },
   {
     "name": "Little Nightmares",
     "slug": "ue-extended",
     "arch": "X64",
     "status": "working",
-    "id": "little-nightmares"
+    "id": "little-nightmares",
+    "notes": "Upgrade Path: On",
+    "source_key": "ue-extended:little-nightmares",
+    "section": "ue-extended"
   },
   {
     "name": "Little Nightmares Enhanced",
     "slug": "ue-extended",
     "arch": "X64",
     "status": "working",
-    "id": "little-nightmares-enhanced-edition"
+    "id": "little-nightmares-enhanced-edition",
+    "notes": "Upgrade Path: On",
+    "source_key": "ue-extended:little-nightmares-enhanced",
+    "section": "ue-extended"
   },
   {
     "name": "Little Nightmares II",
     "slug": "ue-extended",
     "arch": "X64",
     "status": "construction",
-    "id": "little-nightmares-ii"
+    "id": "little-nightmares-ii",
+    "notes": "Upgrade Path: On. Grading issues.",
+    "source_key": "ue-extended:little-nightmares-ii",
+    "section": "ue-extended"
   },
   {
     "name": "Little Nightmares II Enhanced",
     "slug": "ue-extended",
     "arch": "X64",
     "status": "construction",
-    "id": "little-nightmares-ii-enhanced"
+    "id": "little-nightmares-ii-enhanced",
+    "notes": "Upgrade Path: On. Grading issues.",
+    "source_key": "ue-extended:little-nightmares-ii-enhanced",
+    "section": "ue-extended"
   },
   {
     "name": "Lords of the Fallen",
     "slug": "ue-extended",
     "arch": "X64",
     "status": "construction",
-    "id": "lords-of-the-fallen"
+    "id": "lords-of-the-fallen",
+    "notes": "Native HDR. Tonemapping issues.",
+    "source_key": "ue-extended:lords-of-the-fallen",
+    "section": "ue-extended"
   },
   {
     "name": "Mafia: The Old Country",
     "slug": "ue-extended",
     "arch": "X64",
     "status": "working",
-    "id": "mafia-the-old-country"
+    "id": "mafia-the-old-country",
+    "notes": "Native HDR",
+    "source_key": "ue-extended:mafia-the-old-country",
+    "section": "ue-extended"
   },
   {
     "name": "MECCHA CHAMELEON",
     "slug": "ue-extended",
     "arch": "X64",
     "status": "working",
-    "id": "meccha-chameleon"
+    "id": "meccha-chameleon",
+    "notes": "Engine.ini",
+    "source_key": "ue-extended:meccha-chameleon",
+    "section": "ue-extended"
   },
   {
     "name": "Mortal Shell II",
     "slug": "ue-extended",
     "arch": "X64",
     "status": "working",
-    "id": "mortal-shell-ii"
+    "id": "mortal-shell-ii",
+    "notes": "Engine.ini",
+    "source_key": "ue-extended:mortal-shell-ii",
+    "section": "ue-extended"
   },
   {
     "name": "Motor Town: Behind The Wheel",
     "slug": "ue-extended",
     "arch": "X64",
     "status": "working",
-    "id": "motor-town-behind-the-wheel"
+    "id": "motor-town-behind-the-wheel",
+    "notes": "Upgrade Path: On. Sliders do not change in real-time.",
+    "source_key": "ue-extended:motor-town-behind-the-wheel",
+    "section": "ue-extended"
   },
   {
     "name": "Nobody Wants to Die",
     "slug": "ue-extended",
     "arch": "X64",
     "status": "working",
-    "id": "nobody-wants-to-die"
+    "id": "nobody-wants-to-die",
+    "notes": "Engine.ini",
+    "source_key": "ue-extended:nobody-wants-to-die",
+    "section": "ue-extended"
   },
   {
     "name": "Pacific Drive",
     "slug": "ue-extended",
     "arch": "X64",
     "status": "working",
-    "id": "pacific-drive"
+    "id": "pacific-drive",
+    "notes": "Upgrade Path: On, `B8G8R8A8_TYPELESS` `Output Size`.",
+    "source_key": "ue-extended:pacific-drive",
+    "section": "ue-extended"
   },
   {
     "name": "Palworld",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "palworld"
+    "id": "palworld",
+    "notes": "DLSS needs to be disabled or it will clamp to SDR `R8G8B8A8_TYPELESS` `Output Size` `R10G10B10A2_UNORM` `Output Size`",
+    "source_key": "unreal:palworld",
+    "section": "unreal"
   },
   {
     "name": "Persona 3 Reload",
     "slug": "ue-extended",
     "arch": "X64",
     "status": "working",
-    "id": "persona-3-reload"
+    "id": "persona-3-reload",
+    "notes": "Upgrade Path: On",
+    "source_key": "ue-extended:persona-3-reload",
+    "section": "ue-extended"
   },
   {
     "name": "Quarantine Zone: The Last Check",
     "slug": "ue-extended",
     "arch": "X64",
     "status": "working",
-    "id": "quarantine-zone-the-last-check"
+    "id": "quarantine-zone-the-last-check",
+    "notes": "Engine.ini",
+    "source_key": "ue-extended:quarantine-zone-the-last-check",
+    "section": "ue-extended"
   },
   {
     "name": "Ready or Not",
     "slug": "ue-extended",
     "arch": "X64",
     "status": "construction",
-    "id": "ready-or-not"
+    "id": "ready-or-not",
+    "notes": "Engine.ini, Sliders do not change in real-time, Lacks testing.",
+    "source_key": "ue-extended:ready-or-not",
+    "section": "ue-extended"
   },
   {
     "name": "RV There Yet",
     "slug": "ue-extended",
     "arch": "X64",
     "status": "working",
-    "id": "rv-there-yet"
+    "id": "rv-there-yet",
+    "notes": "Engine.ini",
+    "source_key": "ue-extended:rv-there-yet",
+    "section": "ue-extended"
   },
   {
     "name": "Satisfactory",
     "slug": "ue-extended",
     "arch": "X64",
     "status": "working",
-    "id": "satisfactory"
+    "id": "satisfactory",
+    "notes": "Engine.ini",
+    "source_key": "ue-extended:satisfactory",
+    "section": "ue-extended"
   },
   {
     "name": "Scorn",
     "slug": "ue-extended",
     "arch": "X64",
     "status": "working",
-    "id": "scorn"
+    "id": "scorn",
+    "notes": "Upgrade Path: On",
+    "source_key": "ue-extended:scorn",
+    "section": "ue-extended"
   },
   {
     "name": "Sifu",
     "slug": "ue-extended",
     "arch": "X64",
     "status": "working",
-    "id": "sifu"
+    "id": "sifu",
+    "notes": "Upgrade Path: On. Limited brightness.",
+    "source_key": "ue-extended:sifu",
+    "section": "ue-extended"
   },
   {
     "name": "Solarpunk",
     "slug": "ue-extended",
     "arch": "X64",
     "status": "working",
-    "id": "solarpunk"
+    "id": "solarpunk",
+    "notes": "Engine.ini",
+    "source_key": "ue-extended:solarpunk",
+    "section": "ue-extended"
   },
   {
     "name": "STAR WARS Zero Company™",
     "slug": "ue-extended",
     "arch": "X64",
     "status": "working",
-    "id": "star-wars-zero-companytm"
+    "id": "star-wars-zero-companytm",
+    "notes": "Native HDR",
+    "source_key": "ue-extended:star-wars-zero-companytm",
+    "section": "ue-extended"
   },
   {
     "name": "Stray",
     "slug": "ue-extended",
     "arch": "X64",
     "status": "working",
-    "id": "stray"
+    "id": "stray",
+    "notes": "Upgrade Path: On",
+    "source_key": "ue-extended:stray",
+    "section": "ue-extended"
   },
   {
     "name": "Subnautica 2",
     "slug": "ue-extended",
     "arch": "X64",
     "status": "working",
-    "id": "subnautica-2"
+    "id": "subnautica-2",
+    "notes": "Engine.ini",
+    "source_key": "ue-extended:subnautica-2",
+    "section": "ue-extended"
   },
   {
     "name": "The Alters",
     "slug": "ue-extended",
     "arch": "X64",
     "status": "working",
-    "id": "the-alters"
+    "id": "the-alters",
+    "notes": "Upgrade Path: On",
+    "source_key": "ue-extended:the-alters",
+    "section": "ue-extended"
   },
   {
     "name": "The Blood of Dawnwalker",
     "slug": "ue-extended",
     "arch": "X64",
     "status": "working",
-    "id": "the-blood-of-dawnwalker"
+    "id": "the-blood-of-dawnwalker",
+    "notes": "Engine.ini",
+    "source_key": "ue-extended:the-blood-of-dawnwalker",
+    "section": "ue-extended"
   },
   {
     "name": "The Enjenir: The Engineering Physics Building Simulator",
     "slug": "ue-extended",
     "arch": "X64",
     "status": "working",
-    "id": "the-enjenir"
+    "id": "the-enjenir",
+    "notes": "Engine.ini",
+    "source_key": "ue-extended:the-enjenir-the-engineering-physics-building-simulator",
+    "section": "ue-extended"
   },
   {
     "name": "Tokyo Xtreme Racer",
     "slug": "ue-extended",
     "arch": "X64",
     "status": "working",
-    "id": "tokyo-xtreme-racer"
+    "id": "tokyo-xtreme-racer",
+    "notes": "Native HDR",
+    "source_key": "ue-extended:tokyo-xtreme-racer",
+    "section": "ue-extended"
   },
   {
     "name": "Until Dawn",
     "slug": "ue-extended",
     "arch": "X64",
     "status": "working",
-    "id": "until-dawn"
+    "id": "until-dawn",
+    "notes": "Native HDR",
+    "source_key": "ue-extended:until-dawn",
+    "section": "ue-extended"
   },
   {
     "name": "VHOLUME",
     "slug": "ue-extended",
     "arch": "X64",
     "status": "working",
-    "id": "vholume"
+    "id": "vholume",
+    "notes": "Upgrade Path: On",
+    "source_key": "ue-extended:vholume",
+    "section": "ue-extended"
   },
   {
     "name": "What Remains of Edith Finch",
     "slug": "ue-extended",
     "arch": "X64",
     "status": "working",
-    "id": "what-remains-of-edith-finch"
+    "id": "what-remains-of-edith-finch",
+    "notes": "Upgrade Path: On <details><summary>High DPI scaling users</summary>The game may be clamped for you, even if DPI is overridden to the application. Set system wide DPI scaling to 100% and launch the game once. After that you can bring DPI scaling back. </details>",
+    "source_key": "ue-extended:what-remains-of-edith-finch",
+    "section": "ue-extended"
   },
   {
     "name": "Adorable Adventures",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "adorable-adventures"
+    "id": "adorable-adventures",
+    "section": "unreal"
   },
   {
     "name": "Age of Darkness: Final Stand",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "age-of-darkness-final-stand"
+    "id": "age-of-darkness-final-stand",
+    "notes": "`R8G8B8A8_TYPELESS` `Output Ratio`",
+    "source_key": "unreal:age-of-darkness-final-stand",
+    "section": "unreal"
   },
   {
     "name": "Aliens: Dark Descent",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "aliens-dark-descent"
+    "id": "aliens-dark-descent",
+    "notes": "`B8G8R8A8_TYPELESS` `Any Size`",
+    "source_key": "unreal:aliens-dark-descent",
+    "section": "unreal"
   },
   {
     "name": "Amid Evil",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "amid-evil"
+    "id": "amid-evil",
+    "section": "unreal"
   },
   {
     "name": "Aphelion",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "construction",
-    "id": "aphelion"
+    "id": "aphelion",
+    "notes": "`Upgrade Copy Destinations` `On` `R10G10B10A2_UNORM` `Output Size`",
+    "source_key": "unreal:aphelion",
+    "section": "unreal"
   },
   {
     "name": "The Ascent",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "the-ascent"
+    "id": "the-ascent",
+    "notes": "`B8G8R8A8_TYPELESS` `Output Size`",
+    "source_key": "unreal:the-ascent",
+    "section": "unreal"
   },
   {
     "name": "Ashen",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "ashen"
+    "id": "ashen",
+    "notes": "`B8G8R8A8_TYPELESS` `Output Size`</details>",
+    "source_key": "unreal:ashen",
+    "section": "unreal"
   },
   {
     "name": "Asterigos: Curse of the Stars",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "asterigos-curse-of-the-stars"
+    "id": "asterigos-curse-of-the-stars",
+    "notes": "`B8G8R8A8_TYPELESS` `Output Size`",
+    "source_key": "unreal:asterigos-curse-of-the-stars",
+    "section": "unreal"
   },
   {
     "name": "Atomic Heart",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "atomic-heart"
+    "id": "atomic-heart",
+    "notes": "`B8G8R8A8_TYPELESS` `Output Size` `R10G10B10A2_UNORM` `Output Size`",
+    "source_key": "unreal:atomic-heart",
+    "section": "unreal"
   },
   {
     "name": "The Awesome Adventures of Captain Spirit",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "the-awesome-adventures-of-captain-spirit"
+    "id": "the-awesome-adventures-of-captain-spirit",
+    "notes": "`B8G8R8A8_TYPELESS` `Output Size`",
+    "source_key": "unreal:the-awesome-adventures-of-captain-spirit",
+    "section": "unreal"
   },
   {
     "name": "Banishers: Ghosts of New Eden",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "construction",
-    "id": "banishers-ghosts-of-new-eden"
+    "id": "banishers-ghosts-of-new-eden",
+    "notes": "`Upgrade Copy Destinations` `On` `R10G10B10A2_UNORM` `Output Size`",
+    "source_key": "unreal:banishers-ghosts-of-new-eden",
+    "section": "unreal"
   },
   {
     "name": "BIOMUTANT",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "construction",
-    "id": "biomutant"
+    "id": "biomutant",
+    "section": "unreal"
   },
   {
     "name": "BLACKTAIL",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "blacktail"
+    "id": "blacktail",
+    "section": "unreal"
   },
   {
     "name": "Bloodstained: Ritual of the Night",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "bloodstained-ritual-of-the-night"
+    "id": "bloodstained-ritual-of-the-night",
+    "notes": "`B8G8R8A8_TYPELESS` `Output Size`",
+    "source_key": "unreal:bloodstained-ritual-of-the-night",
+    "section": "unreal"
   },
   {
     "name": "Borderlands 3",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "borderlands-3"
+    "id": "borderlands-3",
+    "notes": "`Upgrade Copy Destinations` `On` `R8G8B8A8_TYPELESS` `Output Ratio` `B8G8R8A8_TYPELESS` `Output Ratio` (optional) `R11G11B10_FLOAT` `Output Ratio` (optional)",
+    "source_key": "unreal:borderlands-3",
+    "section": "unreal"
   },
   {
     "name": "Bramble: The Mountain King",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "bramble-the-mountain-king"
+    "id": "bramble-the-mountain-king",
+    "notes": "`B8G8R8A8_TYPELESS` `Output Size`",
+    "source_key": "unreal:bramble-the-mountain-king",
+    "section": "unreal"
   },
   {
     "name": "Brick Rigs",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "brick-rigs"
+    "id": "brick-rigs",
+    "section": "unreal"
   },
   {
     "name": "Bright Memory: Infinite",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "construction",
-    "id": "bright-memory-infinite"
+    "id": "bright-memory-infinite",
+    "notes": "DX12 `B8G8R8A8_TYPELESS` `Output Size` `R10G10B10A2_UNORM` `Output Size`",
+    "source_key": "unreal:bright-memory-infinite",
+    "section": "unreal"
   },
   {
     "name": "The Cabin Factory",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "construction",
-    "id": "the-cabin-factory"
+    "id": "the-cabin-factory",
+    "notes": "Works out of the box; grading does not.",
+    "source_key": "unreal:the-cabin-factory",
+    "section": "unreal"
   },
   {
     "name": "Call of the Sea",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "call-of-the-sea"
+    "id": "call-of-the-sea",
+    "notes": "`B8G8R8A8_TYPELESS` `Output Size`",
+    "source_key": "unreal:call-of-the-sea",
+    "section": "unreal"
   },
   {
     "name": "Cepheus Protocol",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "construction",
-    "id": "cepheus-protocol"
+    "id": "cepheus-protocol",
+    "notes": "`R10G10B10A2_UNORM` `Any Size` if using resolution scale / screen percentage other than 100.",
+    "source_key": "unreal:cepheus-protocol",
+    "section": "unreal"
   },
   {
     "name": "Chernobylite",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "construction",
-    "id": "chernobylite"
+    "id": "chernobylite",
+    "notes": "DX12 The game has an absurd sharpening filter that can be disabled by changing DLSS quality levels, but fix must be reapplied each play session. `B8G8R8A8_TYPELESS` `Output Size` `R10G10B10A2_UNORM` `Output Size`</details>",
+    "source_key": "unreal:chernobylite",
+    "section": "unreal"
   },
   {
     "name": "Chorus",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "chorus"
+    "id": "chorus",
+    "notes": "`B8G8R8A8_TYPELESS` `Output Size`",
+    "source_key": "unreal:chorus",
+    "section": "unreal"
   },
   {
     "name": "Clash: Artifacts of Chaos",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "clash-artifacts-of-chaos"
+    "id": "clash-artifacts-of-chaos",
+    "notes": "`B8G8R8A8_TYPELESS` `Output Size`",
+    "source_key": "unreal:clash-artifacts-of-chaos",
+    "section": "unreal"
   },
   {
     "name": "Code Vein",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "code-vein"
+    "id": "code-vein",
+    "section": "unreal"
   },
   {
     "name": "Colony Ship: A Post-Earth Role Playing Game",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "construction",
-    "id": "colony-ship-a-post-earth-role-playing-game"
+    "id": "colony-ship-a-post-earth-role-playing-game",
+    "notes": "Some menus and loading screen need fixes",
+    "source_key": "unreal:colony-ship-a-post-earth-role-playing-game",
+    "section": "unreal"
   },
   {
     "name": "Crash Bandicoot 4: It's About Time",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "crash-bandicoot-4-it-s-about-time"
+    "id": "crash-bandicoot-4-it-s-about-time",
+    "section": "unreal"
   },
   {
     "name": "Crisis Core: FF7 Reunion",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "crisis-core-ff7-reunion"
+    "id": "crisis-core-ff7-reunion",
+    "notes": "`B8G8R8A8_TYPELESS` `Output Size` (auto-upgraded)",
+    "source_key": "unreal:crisis-core-ff7-reunion",
+    "section": "unreal"
   },
   {
     "name": "DAEMON X MACHINA",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "daemon-x-machina"
+    "id": "daemon-x-machina",
+    "notes": "`B8G8R8A8_TYPELESS` `Output Size`",
+    "source_key": "unreal:daemon-x-machina",
+    "section": "unreal"
   },
   {
     "name": "Dahlia View",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "dahlia-view"
+    "id": "dahlia-view",
+    "notes": "Disable in-game HDR (which is broken in DX12). `B8G8R8A8_TYPELESS` `Output Size`",
+    "source_key": "unreal:dahlia-view",
+    "section": "unreal"
   },
   {
     "name": "Darksiders 3",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "darksiders-3"
+    "id": "darksiders-3",
+    "notes": "Non-boss enemy health bars do not update.",
+    "source_key": "unreal:darksiders-3",
+    "section": "unreal"
   },
   {
     "name": "Darksiders Genesis",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "construction",
-    "id": "darksiders-genesis"
+    "id": "darksiders-genesis",
+    "notes": "Some text turns into blocks (only observed in loading screens). `B8G8R8A8_TYPELESS` `Output Size`",
+    "source_key": "unreal:darksiders-genesis",
+    "section": "unreal"
   },
   {
     "name": "Daymare: 1998",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "daymare-1998"
+    "id": "daymare-1998",
+    "section": "unreal"
   },
   {
     "name": "Daymare: 1994 Sandcastle",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "daymare-1994-sandcastle"
+    "id": "daymare-1994-sandcastle",
+    "notes": "`B8G8R8A8_TYPELESS` `Output Size`",
+    "source_key": "unreal:daymare-1994-sandcastle",
+    "section": "unreal"
   },
   {
     "name": "DEADLINE DELIVERY",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "deadline-delivery"
+    "id": "deadline-delivery",
+    "section": "unreal"
   },
   {
     "name": "Deadlink",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "deadlink"
+    "id": "deadlink",
+    "notes": "DX12 `R8G8B8A8_TYPELESS` `Any Size`",
+    "source_key": "unreal:deadlink",
+    "section": "unreal"
   },
   {
     "name": "Demon Slayer: KNY - Hinokami Chronicles",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "demon-slayer-kny-hinokami-chronicles"
+    "id": "demon-slayer-kny-hinokami-chronicles",
+    "notes": "`B8G8R8A8_TYPELESS` `Output Size`",
+    "source_key": "unreal:demon-slayer-kny-hinokami-chronicles",
+    "section": "unreal"
   },
   {
     "name": "Disney Epic Mickey: Rebrushed",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "disney-epic-mickey-rebrushed"
+    "id": "disney-epic-mickey-rebrushed",
+    "section": "unreal"
   },
   {
     "name": "DNF Duel",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "dnf-duel"
+    "id": "dnf-duel",
+    "notes": "`B8G8R8A8_TYPELESS` `Output Size`",
+    "source_key": "unreal:dnf-duel",
+    "section": "unreal"
   },
   {
     "name": "Dragon Ball Z: Kakarot",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "construction",
-    "id": "dragon-ball-z-kakarot"
+    "id": "dragon-ball-z-kakarot",
+    "notes": "Colors are a bit off. `B8G8R8A8_TYPELESS` `Output Size` `B8G8R8A8_TYPELESS` `Output Ratio` if using resolution scale other than 100%",
+    "source_key": "unreal:dragon-ball-z-kakarot",
+    "section": "unreal"
   },
   {
     "name": "Dragon Quest III HD-2D Remake",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "dragon-quest-iii-hd-2d-remake"
+    "id": "dragon-quest-iii-hd-2d-remake",
+    "notes": "`B8G8R8A8_TYPELESS` `Output Size`",
+    "source_key": "unreal:dragon-quest-iii-hd-2d-remake",
+    "section": "unreal"
   },
   {
     "name": "Echo Point Nova",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "echo-point-nova"
+    "id": "echo-point-nova",
+    "notes": "`B8G8R8A8_TYPELESS` `Output Size`",
+    "source_key": "unreal:echo-point-nova",
+    "section": "unreal"
   },
   {
     "name": "En Garde!",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "en-garde"
+    "id": "en-garde",
+    "notes": "Use DX11; DX12 crashes.",
+    "source_key": "unreal:en-garde",
+    "section": "unreal"
   },
   {
     "name": "Enotria: The Last Song",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "construction",
-    "id": "enotria-the-last-song"
+    "id": "enotria-the-last-song",
+    "notes": "Sliders only apply on scene change or exiting back out to the main menu.",
+    "source_key": "unreal:enotria-the-last-song",
+    "section": "unreal"
   },
   {
     "name": "Escape from Ever After",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "escape-from-ever-after"
+    "id": "escape-from-ever-after",
+    "notes": "`B8G8R8A8_TYPELESS` `Output Size`",
+    "source_key": "unreal:escape-from-ever-after",
+    "section": "unreal"
   },
   {
     "name": "The Eternal Cylinder",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "the-eternal-cylinder"
+    "id": "the-eternal-cylinder",
+    "section": "unreal"
   },
   {
     "name": "EVERSPACE",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "everspace"
+    "id": "everspace",
+    "notes": "Use 64-bit executable (RSG-Win64-Shipping.exe); only tested on GOG. `R8G8R8A8_TYPELESS` `Output Size` `B8G8R8A8_TYPELESS` `Output Size`",
+    "source_key": "unreal:everspace",
+    "section": "unreal"
   },
   {
     "name": "EVERSPACE 2",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "everspace-2"
+    "id": "everspace-2",
+    "notes": "DX12 `R10G10B10A2_UNORM` `Output Size`",
+    "source_key": "unreal:everspace-2",
+    "section": "unreal"
   },
   {
     "name": "Evil West",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "evil-west"
+    "id": "evil-west",
+    "notes": "`B8G8R8A8_TYPELESS` `Output Size`",
+    "source_key": "unreal:evil-west",
+    "section": "unreal"
   },
   {
     "name": "The Expanse: A Telltale Series",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "the-expanse-a-telltale-series"
+    "id": "the-expanse-a-telltale-series",
+    "section": "unreal"
   },
   {
     "name": "Fast Food Simulator",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "fast-food-simulator"
+    "id": "fast-food-simulator",
+    "section": "unreal"
   },
   {
     "name": "F.I.S.T.: Forged In Shadow Torch",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "f-i-s-t-forged-in-shadow-torch"
+    "id": "f-i-s-t-forged-in-shadow-torch",
+    "section": "unreal"
   },
   {
     "name": "Forgive Me Father",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "construction",
-    "id": "forgive-me-father"
+    "id": "forgive-me-father",
+    "notes": "Some text turns into blocks. `B8G8R8A8_TYPELESS` `Output Size`",
+    "source_key": "unreal:forgive-me-father",
+    "section": "unreal"
   },
   {
     "name": "The Forgotten City",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "the-forgotten-city"
+    "id": "the-forgotten-city",
+    "notes": "`B8G8R8A8_TYPELESS` `Output Size`",
+    "source_key": "unreal:the-forgotten-city",
+    "section": "unreal"
   },
   {
     "name": "Fort Solis",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "fort-solis"
+    "id": "fort-solis",
+    "notes": "`R10G10B10A2_UNORM` `Output Size`",
+    "source_key": "unreal:fort-solis",
+    "section": "unreal"
   },
   {
     "name": "Granblue Fantasy: Versus",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "construction",
-    "id": "granblue-fantasy-versus"
+    "id": "granblue-fantasy-versus",
+    "notes": "Character and map highlights are clamped to UI brightness. `B8G8R8A8_TYPELESS` `Output Size`",
+    "source_key": "unreal:granblue-fantasy-versus",
+    "section": "unreal"
   },
   {
     "name": "Grounded",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "grounded"
+    "id": "grounded",
+    "notes": "`B8G8R8A8_TYPELESS` `Output Size` `R10G10B10A2_UNORM` `Output Size`",
+    "source_key": "unreal:grounded",
+    "section": "unreal"
   },
   {
     "name": "Guilty Gear Strive",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "construction",
-    "id": "guilty-gear-strive"
+    "id": "guilty-gear-strive",
+    "notes": "Health bars do not update, making the mod impractical for usage outside of training mode. Some corruption appears in character selection. Tension meter is bright. `B8G8R8A8_TYPELESS` `Output Size`",
+    "source_key": "unreal:guilty-gear-strive",
+    "section": "unreal"
   },
   {
     "name": "The Gunk",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "the-gunk"
+    "id": "the-gunk",
+    "section": "unreal"
   },
   {
     "name": "Hell is Us",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "hell-is-us"
+    "id": "hell-is-us",
+    "notes": "Disable in-game HDR. Tested on demo version. `R10G10B10A2_UNORM` `Output Size`",
+    "source_key": "unreal:hell-is-us",
+    "section": "unreal"
   },
   {
     "name": "Hogwarts Legacy",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "hogwarts-legacy"
+    "id": "hogwarts-legacy",
+    "notes": "Download the build from RenoDX's Unreal Engine channel linked [here](https://discord.com/channels/1408098019194310818/1411800884303626311/1456454195732549887).",
+    "source_key": "unreal:hogwarts-legacy",
+    "section": "unreal"
   },
   {
     "name": "Hyper Light Breaker",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "hyper-light-breaker"
+    "id": "hyper-light-breaker",
+    "notes": "`B8G8R8A8_TYPELESS` `Output Size`",
+    "source_key": "unreal:hyper-light-breaker",
+    "section": "unreal"
   },
   {
     "name": "Indika",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "indika"
+    "id": "indika",
+    "notes": "`B8G8R8A8_TYPELESS` `Output Size`",
+    "source_key": "unreal:indika",
+    "section": "unreal"
   },
   {
     "name": "INDUSTRIA",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "industria"
+    "id": "industria",
+    "notes": "DX12 `B8G8R8A8_TYPELESS` `Output Size`",
+    "source_key": "unreal:industria",
+    "section": "unreal"
   },
   {
     "name": "Infinity Nikki",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "infinity-nikki"
+    "id": "infinity-nikki",
+    "notes": "`R10G10B10A2_UNORM` `Output Size`",
+    "source_key": "unreal:infinity-nikki",
+    "section": "unreal"
   },
   {
     "name": "The Invincible",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "the-invincible"
+    "id": "the-invincible",
+    "notes": "`B8G8R8A8_TYPELESS` `Output Size`",
+    "source_key": "unreal:the-invincible",
+    "section": "unreal"
   },
   {
     "name": "Islands of Insight",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "islands-of-insight"
+    "id": "islands-of-insight",
+    "notes": "Limited to BT.709. `B8G8R8A8_TYPELESS` `Output Size`",
+    "source_key": "unreal:islands-of-insight",
+    "section": "unreal"
   },
   {
     "name": "JDM: Japanese Drift Master",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "jdm-japanese-drift-master"
+    "id": "jdm-japanese-drift-master",
+    "notes": "Sliders require a scene change to apply. `R10G10B10A2_UNORM` `Output Size`",
+    "source_key": "unreal:jdm-japanese-drift-master",
+    "section": "unreal"
   },
   {
     "name": "Journey to the Savage Planet",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "journey-to-the-savage-planet"
+    "id": "journey-to-the-savage-planet",
+    "notes": "`B8G8R8A8_TYPELESS` `Output Size`",
+    "source_key": "unreal:journey-to-the-savage-planet",
+    "section": "unreal"
   },
   {
     "name": "Just Die Already",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "just-die-already"
+    "id": "just-die-already",
+    "notes": "`B8G8R8A8_TYPELESS` `Output Size`",
+    "source_key": "unreal:just-die-already",
+    "section": "unreal"
   },
   {
     "name": "Kena: Bridge of Spirits",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "kena-bridge-of-spirits"
+    "id": "kena-bridge-of-spirits",
+    "notes": "Cutscenes brightness are limited to UI brightness.",
+    "source_key": "unreal:kena-bridge-of-spirits",
+    "section": "unreal"
   },
   {
     "name": "Kingdom Hearts III",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "construction",
-    "id": "kingdom-hearts-iii"
+    "id": "kingdom-hearts-iii",
+    "notes": "Has issues with texture flickering. `B8G8R8A8_TYPELESS` `Output Size`",
+    "source_key": "unreal:kingdom-hearts-iii",
+    "section": "unreal"
   },
   {
     "name": "Kitten Burst",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "kitten-burst"
+    "id": "kitten-burst",
+    "notes": "`B8G8R8A8_TYPELESS` `Output Size`",
+    "source_key": "unreal:kitten-burst",
+    "section": "unreal"
   },
   {
     "name": "KLETKA",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "kletka"
+    "id": "kletka",
+    "section": "unreal"
   },
   {
     "name": "Lay of the Land",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "lay-of-the-land"
+    "id": "lay-of-the-land",
+    "notes": "`B8G8R8A8_TYPELESS` `Output Size` `B8G8R8A8_UNORM` `Output Size`",
+    "source_key": "unreal:lay-of-the-land",
+    "section": "unreal"
   },
   {
     "name": "LEGO 2K Drive",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "lego-2k-drive"
+    "id": "lego-2k-drive",
+    "notes": "Works out of the box, although there might be some clamping on certain headlights on vehicles.",
+    "source_key": "unreal:lego-2k-drive",
+    "section": "unreal"
   },
   {
     "name": "Life is Strange: True Colors",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "life-is-strange-true-colors"
+    "id": "life-is-strange-true-colors",
+    "notes": "`B8G8R8A8_TYPELESS` `Output Size`",
+    "source_key": "unreal:life-is-strange-true-colors",
+    "section": "unreal"
   },
   {
     "name": "Lightyear Frontier",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "lightyear-frontier"
+    "id": "lightyear-frontier",
+    "notes": "`B8G8R8A8_TYPLESS` `Output Ratio`",
+    "source_key": "unreal:lightyear-frontier",
+    "section": "unreal"
   },
   {
     "name": "Little Nightmares III",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "construction",
-    "id": "little-nightmares-iii"
+    "id": "little-nightmares-iii",
+    "notes": "`B8G8R8A8_TYPELESS` and `R10G10B10A2_UNORM` `Output Size`",
+    "source_key": "unreal:little-nightmares-iii",
+    "section": "unreal"
   },
   {
     "name": "Lords of the Fallen (2023)",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "lords-of-the-fallen-2023"
+    "id": "lords-of-the-fallen-2023",
+    "notes": "Disable in-game HDR and Easy Anti-Cheat. `R10G10B10A2_UNORM` `Output Size`",
+    "source_key": "unreal:lords-of-the-fallen-2023",
+    "section": "unreal"
   },
   {
     "name": "Lost Soul Aside",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "lost-soul-aside"
+    "id": "lost-soul-aside",
+    "notes": "Disable in-game HDR. `B8G8R8A8_TYPELESS` `Output Size`",
+    "source_key": "unreal:lost-soul-aside",
+    "section": "unreal"
   },
   {
     "name": "Marvel's Midnight Suns",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "marvel-s-midnight-suns"
+    "id": "marvel-s-midnight-suns",
+    "notes": "Disable in-game HDR. `R10G10B10A2_UNORM` `Output Size`",
+    "source_key": "unreal:marvel-s-midnight-suns",
+    "section": "unreal"
   },
   {
     "name": "Master Detective Archives: RAIN CODE Plus",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "master-detective-archives-rain-code-plus"
+    "id": "master-detective-archives-rain-code-plus",
+    "notes": "`B8G8R8A8_TYPELESS` `Output Ratio` (auto-upgraded)",
+    "source_key": "unreal:master-detective-archives-rain-code-plus",
+    "section": "unreal"
   },
   {
     "name": "The Medium",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "construction",
-    "id": "the-medium"
+    "id": "the-medium",
+    "notes": "Disable in-game HDR. Spirit world scene highlights are clamped to UI brightness. `R10G10B10A2_UNORM` `Any Size`",
+    "source_key": "unreal:the-medium",
+    "section": "unreal"
   },
   {
     "name": "Manor Lords",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "manor-lords"
+    "id": "manor-lords",
+    "section": "unreal"
   },
   {
     "name": "METAL EDEN",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "construction",
-    "id": "metal-eden"
+    "id": "metal-eden",
+    "notes": "Main menu and respawn screen may show some corruption. Tested on demo version. `R10G10B10A2_UNORM` `Output Size`",
+    "source_key": "unreal:metal-eden",
+    "section": "unreal"
   },
   {
     "name": "Metro Gravity",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "metro-gravity"
+    "id": "metro-gravity",
+    "notes": "SDR Grading Bypass color grading preset recommended. `R10G10B10A2_UNORM` `Any Size`",
+    "source_key": "unreal:metro-gravity",
+    "section": "unreal"
   },
   {
     "name": "Miasma Chronicles",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "miasma-chronicles"
+    "id": "miasma-chronicles",
+    "notes": "`R8G8B8A8_TYPELESS` `Output Size`",
+    "source_key": "unreal:miasma-chronicles",
+    "section": "unreal"
   },
   {
     "name": "The Midnight Walk",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "the-midnight-walk"
+    "id": "the-midnight-walk",
+    "notes": "`R10G10B10A2_UNORM` `Output Size`",
+    "source_key": "unreal:the-midnight-walk",
+    "section": "unreal"
   },
   {
     "name": "MotorSlice",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "motorslice"
+    "id": "motorslice",
+    "notes": "`R10G10B10A2_UNORM` `Output Size`",
+    "source_key": "unreal:motorslice",
+    "section": "unreal"
   },
   {
     "name": "Murky Divers",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "construction",
-    "id": "murky-divers"
+    "id": "murky-divers",
+    "notes": "May require gamut clamping. `R10G10B10A2_UNORM` `Any Size`",
+    "source_key": "unreal:murky-divers",
+    "section": "unreal"
   },
   {
     "name": "Necromunda: Hired Gun",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "necromunda-hired-gun"
+    "id": "necromunda-hired-gun",
+    "notes": "`B8G8R8A8_TYPELESS` `Output Size`",
+    "source_key": "unreal:necromunda-hired-gun",
+    "section": "unreal"
   },
   {
     "name": "Neverness to Everness",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "construction",
-    "id": "neverness-to-everness"
+    "id": "neverness-to-everness",
+    "notes": "Check detail instructions [`here`](https://github.com/clshortfuse/renodx/discussions/557)",
+    "source_key": "unreal:neverness-to-everness",
+    "section": "unreal"
   },
   {
     "name": "NINJA GAIDEN 2 Black",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "ninja-gaiden-2-black"
+    "id": "ninja-gaiden-2-black",
+    "notes": "Disable in-game HDR. Sliders don't update in real time.",
+    "source_key": "unreal:ninja-gaiden-2-black",
+    "section": "unreal"
   },
   {
     "name": "The Occupation",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "the-occupation"
+    "id": "the-occupation",
+    "notes": "`B8G8R8A8_TYPELESS` `Output Size`",
+    "source_key": "unreal:the-occupation",
+    "section": "unreal"
   },
   {
     "name": "Octopath Traveler",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "octopath-traveler"
+    "id": "octopath-traveler",
+    "notes": "`B8G8R8A8_TYPELESS` `Output Size`",
+    "source_key": "unreal:octopath-traveler",
+    "section": "unreal"
   },
   {
     "name": "Octopath Traveler II",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "octopath-traveler-ii"
+    "id": "octopath-traveler-ii",
+    "notes": "`B8G8R8A8_TYPELESS` `Output Size`",
+    "source_key": "unreal:octopath-traveler-ii",
+    "section": "unreal"
   },
   {
     "name": "Outriders",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "outriders"
+    "id": "outriders",
+    "notes": "`B8G8R8A8_TYPELESS` `Output Size` `R8G8B8A8_UNORM` `Output Size`",
+    "source_key": "unreal:outriders",
+    "section": "unreal"
   },
   {
     "name": "The Outer Worlds",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "the-outer-worlds"
+    "id": "the-outer-worlds",
+    "notes": "`B8G8R8A8_TYPELESS` `Any Size`",
+    "source_key": "unreal:the-outer-worlds",
+    "section": "unreal"
   },
   {
     "name": "The Outer Worlds: Spacer's Choice Edition",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "the-outer-worlds-spacer-s-choice-edition"
+    "id": "the-outer-worlds-spacer-s-choice-edition",
+    "notes": "`B8G8R8A8_TYPELESS` `Any Size` (optional to prevent HDR from disabling in certain instances, but breaks FMVs).",
+    "source_key": "unreal:the-outer-worlds-spacer-s-choice-edition",
+    "section": "unreal"
   },
   {
     "name": "The Outlast Trials",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "the-outlast-trials"
+    "id": "the-outlast-trials",
+    "notes": "`R8G8B8A8_TYPELESS` `Output Size`",
+    "source_key": "unreal:the-outlast-trials",
+    "section": "unreal"
   },
   {
     "name": "Police Simulator: Patrol Officer",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "police-simulator-patrol-officer"
+    "id": "police-simulator-patrol-officer",
+    "notes": "Disable in-game HDR. `B8G8R8A8_TYPELESS` `Output Size`",
+    "source_key": "unreal:police-simulator-patrol-officer",
+    "section": "unreal"
   },
   {
     "name": "Psychonauts 2",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "psychonauts-2"
+    "id": "psychonauts-2",
+    "notes": "`R8G8B8A8_TYPELESS` `Output Size` (auto-upgraded) `R10G10B10A2_UNORM` `Output Size` (auto-upgraded) `Force Borderless` `Disabled`",
+    "source_key": "unreal:psychonauts-2",
+    "section": "unreal"
   },
   {
     "name": "The Quarry",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "construction",
-    "id": "the-quarry"
+    "id": "the-quarry",
+    "section": "unreal"
   },
   {
     "name": "REANIMAL",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "unknown",
-    "id": "reanimal"
+    "id": "reanimal",
+    "notes": "The game has a custom and proper HDR implementation already.",
+    "source_key": "unreal:reanimal",
+    "section": "unreal"
   },
   {
     "name": "Redout 2",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "construction",
-    "id": "redout-2"
+    "id": "redout-2",
+    "notes": "Game may crash. `B8G8R8A8_TYPELESS` `Output Size`",
+    "source_key": "unreal:redout-2",
+    "section": "unreal"
   },
   {
     "name": "Remnant: From the Ashes",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "remnant-from-the-ashes"
+    "id": "remnant-from-the-ashes",
+    "section": "unreal"
   },
   {
     "name": "Remnant 2",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "remnant-2"
+    "id": "remnant-2",
+    "notes": "`R10G10B10A2_UNORM` `Output Size`",
+    "source_key": "unreal:remnant-2",
+    "section": "unreal"
   },
   {
     "name": "Returnal",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "construction",
-    "id": "returnal"
+    "id": "returnal",
+    "notes": "Disable in-game HDR (must be redone every startup). `B8G8R8A8_TYPELESS` `Output Size`",
+    "source_key": "unreal:returnal",
+    "section": "unreal"
   },
   {
     "name": "Roboquest",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "roboquest"
+    "id": "roboquest",
+    "section": "unreal"
   },
   {
     "name": "Romancing Saga 2",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "romancing-saga-2"
+    "id": "romancing-saga-2",
+    "section": "unreal"
   },
   {
     "name": "RuneScape: Dragonwilds",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "construction",
-    "id": "runescape-dragonwilds"
+    "id": "runescape-dragonwilds",
+    "notes": "If the game is unstable, switch to DX11 mode in the game's settings. Sliders only apply on scene change or exiting back out to the main menu.",
+    "source_key": "unreal:runescape-dragonwilds",
+    "section": "unreal"
   },
   {
     "name": "Sackboy: A Big Adventure",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "sackboy-a-big-adventure"
+    "id": "sackboy-a-big-adventure",
+    "notes": "`B8G8R8A8_TYPELESS` `Output Size` (use `Output Ratio` if render resolution is not 100%.) `R10G10B10A2_UNORM` `Output Size`",
+    "source_key": "unreal:sackboy-a-big-adventure",
+    "section": "unreal"
   },
   {
     "name": "Sand Land",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "sand-land"
+    "id": "sand-land",
+    "section": "unreal"
   },
   {
     "name": "Scarlet Nexus",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "construction",
-    "id": "scarlet-nexus"
+    "id": "scarlet-nexus",
+    "notes": "Visual Novel scenes are broken. `B8G8R8A8_TYPELESS` `Output Size`",
+    "source_key": "unreal:scarlet-nexus",
+    "section": "unreal"
   },
   {
     "name": "Session: Skate Sim",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "session-skate-sim"
+    "id": "session-skate-sim",
+    "section": "unreal"
   },
   {
     "name": "Severed Steel",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "severed-steel"
+    "id": "severed-steel",
+    "notes": "`B8G8R8A8_TYPELESS` `Output Size`",
+    "source_key": "unreal:severed-steel",
+    "section": "unreal"
   },
   {
     "name": "Six Days in Fallujah",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "six-days-in-fallujah"
+    "id": "six-days-in-fallujah",
+    "notes": "The sun has a weird black texture around it, and smoke particles might be a bit darker. `B8G8R8A8_TYPELESS` `Output Size` `R10G10B10A2_UNORM` `Output Size`",
+    "source_key": "unreal:six-days-in-fallujah",
+    "section": "unreal"
   },
   {
     "name": "The Smurfs - Dreams",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "the-smurfs-dreams"
+    "id": "the-smurfs-dreams",
+    "notes": "UI brightness slider affects FMVs. `B8G8R8A8_TYPELESS` `Output Size` `R10G10B10A2_UNORM` `Output Size`",
+    "source_key": "unreal:the-smurfs-dreams",
+    "section": "unreal"
   },
   {
     "name": "Solar Ash",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "solar-ash"
+    "id": "solar-ash",
+    "notes": "`B8G8R8A8_TYPELESS` `Output Size`",
+    "source_key": "unreal:solar-ash",
+    "section": "unreal"
   },
   {
     "name": "Sonic Racing: CrossWorlds",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "construction",
-    "id": "sonic-racing-crossworlds"
+    "id": "sonic-racing-crossworlds",
+    "notes": "Sliders apply when restarting the track. Bright elements are clamped to UI brightness. Water Palace's sky is very bright and not affected by the sliders. `R10G10B10A2_UNORM` `Output Size`",
+    "source_key": "unreal:sonic-racing-crossworlds",
+    "section": "unreal"
   },
   {
     "name": "Soulstice",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "soulstice"
+    "id": "soulstice",
+    "notes": "`B8G8R8A8_TYPELESS` `Output Size`",
+    "source_key": "unreal:soulstice",
+    "section": "unreal"
   },
   {
     "name": "South of Midnight",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "south-of-midnight"
+    "id": "south-of-midnight",
+    "notes": "`B8G8R8A8_TYPELESS` `Output Ratio`",
+    "source_key": "unreal:south-of-midnight",
+    "section": "unreal"
   },
   {
     "name": "Split Fiction",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "construction",
-    "id": "split-fiction"
+    "id": "split-fiction",
+    "notes": "Disable in-game HDR. Sliders may only apply on scene change.",
+    "source_key": "unreal:split-fiction",
+    "section": "unreal"
   },
   {
     "name": "SpongeBob SquarePants: Battle for Bikini Bottom - Rehydrated",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "construction",
-    "id": "spongebob-squarepants-battle-for-bikini-bottom-rehydrated"
+    "id": "spongebob-squarepants-battle-for-bikini-bottom-rehydrated",
+    "notes": "`B8G8R8A8_TYPELESS` `Output Size`",
+    "source_key": "unreal:spongebob-squarepants-battle-for-bikini-bottom-rehydrated",
+    "section": "unreal"
   },
   {
     "name": "Spyro Reignited Trilogy",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "construction",
-    "id": "spyro-reignited-trilogy"
+    "id": "spyro-reignited-trilogy",
+    "section": "unreal"
   },
   {
     "name": "Squirrel with a Gun",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "squirrel-with-a-gun"
+    "id": "squirrel-with-a-gun",
+    "notes": "`Swap Chain Format` `scRGB`",
+    "source_key": "unreal:squirrel-with-a-gun",
+    "section": "unreal"
   },
   {
     "name": "Stellar Blade",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "stellar-blade"
+    "id": "stellar-blade",
+    "notes": "Disable in-game HDR. Ultrawide users should set aspect ratio to \"auto\" in-game to prevent issues with the NIKKE minigames.",
+    "source_key": "unreal:stellar-blade",
+    "section": "unreal"
   },
   {
     "name": "Styx: Shards of Darkness",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "construction",
-    "id": "styx-shards-of-darkness"
+    "id": "styx-shards-of-darkness",
+    "notes": "`B8G8R8A8_TYPELESS` `Output Size`",
+    "source_key": "unreal:styx-shards-of-darkness",
+    "section": "unreal"
   },
   {
     "name": "Supraland",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "supraland"
+    "id": "supraland",
+    "section": "unreal"
   },
   {
     "name": "Sword and Fairy 7",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "sword-and-fairy-7"
+    "id": "sword-and-fairy-7",
+    "notes": "`B8G8R8A8_TYPELESS` `Output Size`",
+    "source_key": "unreal:sword-and-fairy-7",
+    "section": "unreal"
   },
   {
     "name": "System Shock Remake",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "system-shock-remake"
+    "id": "system-shock-remake",
+    "notes": "`B8G8R8A8_TYPELESS` `Output Size`",
+    "source_key": "unreal:system-shock-remake",
+    "section": "unreal"
   },
   {
     "name": "Tales of Arise",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "construction",
-    "id": "tales-of-arise"
+    "id": "tales-of-arise",
+    "notes": "The bloom occasionally freaks out. SMAA and SMAA + TAA are not supported. Use TAA or disable AA.",
+    "source_key": "unreal:tales-of-arise",
+    "section": "unreal"
   },
   {
     "name": "Tales of Kenzera: ZAU",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "construction",
-    "id": "tales-of-kenzera-zau"
+    "id": "tales-of-kenzera-zau",
+    "notes": "Update libxess.dll to prevent crashes when using XeSS upscaling. `B8G8R8A8_TYPELESS` `Output Size`",
+    "source_key": "unreal:tales-of-kenzera-zau",
+    "section": "unreal"
   },
   {
     "name": "Tekken 7",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "construction",
-    "id": "tekken-7"
+    "id": "tekken-7",
+    "notes": "Some stages are clamped to UI brightness. `B8G8R8A8_TYPELESS` `Output Size`",
+    "source_key": "unreal:tekken-7",
+    "section": "unreal"
   },
   {
     "name": "Tell Me Why",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "tell-me-why"
+    "id": "tell-me-why",
+    "section": "unreal"
   },
   {
     "name": "Terminator: Resistance",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "terminator-resistance"
+    "id": "terminator-resistance",
+    "notes": "`B8G8R8A8_TYPELESS` `Output Size`",
+    "source_key": "unreal:terminator-resistance",
+    "section": "unreal"
   },
   {
     "name": "The Thaumaturge",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "construction",
-    "id": "the-thaumaturge"
+    "id": "the-thaumaturge",
+    "notes": "Some scenes are clamped. `R10G10B10A2_UNORM` `Output Size`",
+    "source_key": "unreal:the-thaumaturge",
+    "section": "unreal"
   },
   {
     "name": "THRESHOLD",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "threshold"
+    "id": "threshold",
+    "notes": "`B8G8R8A8_TYPELESS` `Any Size`",
+    "source_key": "unreal:threshold",
+    "section": "unreal"
   },
   {
     "name": "Thymesia",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "thymesia"
+    "id": "thymesia",
+    "notes": "`B8G8R8A8_TYPELESS` `Output Size`",
+    "source_key": "unreal:thymesia",
+    "section": "unreal"
   },
   {
     "name": "Tiny Tina's Wonderlands",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "tiny-tina-s-wonderlands"
+    "id": "tiny-tina-s-wonderlands",
+    "notes": "Disable in-game FidelityFX Sharpening. `Upgrade Copy Destinations` `On` `R8G8B8A8_TYPELESS` `Output Ratio`",
+    "source_key": "unreal:tiny-tina-s-wonderlands",
+    "section": "unreal"
   },
   {
     "name": "Tormented Souls 2",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "tormented-souls-2"
+    "id": "tormented-souls-2",
+    "section": "unreal"
   },
   {
     "name": "Trek to Yomi",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "trek-to-yomi"
+    "id": "trek-to-yomi",
+    "notes": "`B8G8R8A8_TYPELESS` `Output Size`",
+    "source_key": "unreal:trek-to-yomi",
+    "section": "unreal"
   },
   {
     "name": "Trepang2",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "trepang2"
+    "id": "trepang2",
+    "section": "unreal"
   },
   {
     "name": "The Turing Test",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "the-turing-test"
+    "id": "the-turing-test",
+    "section": "unreal"
   },
   {
     "name": "Twin Mirror",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "twin-mirror"
+    "id": "twin-mirror",
+    "section": "unreal"
   },
   {
     "name": "Vampire: The Masquerade - Bloodlines 2",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "construction",
-    "id": "vampire-the-masquerade-bloodlines-2"
+    "id": "vampire-the-masquerade-bloodlines-2",
+    "notes": "`R10G10B10A2_UNORM` `Output Size` Cutscenes are clamped.",
+    "source_key": "unreal:vampire-the-masquerade-bloodlines-2",
+    "section": "unreal"
   },
   {
     "name": "Vampyr",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "vampyr"
+    "id": "vampyr",
+    "notes": "`B8G8R8A8_TYPELESS` `Output Size`",
+    "source_key": "unreal:vampyr",
+    "section": "unreal"
   },
   {
     "name": "Visions of Mana",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "visions-of-mana"
+    "id": "visions-of-mana",
+    "section": "unreal"
   },
   {
     "name": "Wanderstop",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "wanderstop"
+    "id": "wanderstop",
+    "section": "unreal"
   },
   {
     "name": "Warhammer 40,000: Boltgun",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "warhammer-40-000-boltgun"
+    "id": "warhammer-40-000-boltgun",
+    "notes": "`B8G8R8A8_TYPELESS` `Output Size`",
+    "source_key": "unreal:warhammer-40-000-boltgun",
+    "section": "unreal"
   },
   {
     "name": "We Happy Few",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "we-happy-few"
+    "id": "we-happy-few",
+    "notes": "`B8G8R8A8_TYPELESS` `Output Size`",
+    "source_key": "unreal:we-happy-few",
+    "section": "unreal"
   },
   {
     "name": "Weird West",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "weird-west"
+    "id": "weird-west",
+    "notes": "`B8G8R8A8_TYPELESS` `Output Size`",
+    "source_key": "unreal:weird-west",
+    "section": "unreal"
   },
   {
     "name": "Witchfire",
     "slug": "unrealengine",
     "arch": "X64",
     "status": "working",
-    "id": "witchfire"
+    "id": "witchfire",
+    "notes": "`R10G10B10A2_UNORM` `Output Size`",
+    "source_key": "unreal:witchfire",
+    "section": "unreal"
   },
   {
     "name": "420BLAZEIT2: GAME OF THE YEAR -=Dank Dreams and Goated Memes=- [#wow/11 Like and Subscribe] Poggerz Edition",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "420blazeit2-game-of-the-year-dank-dreams-and-goated-memes-wow-11-like-and-subscribe-poggerz-edition"
+    "id": "420blazeit2-game-of-the-year-dank-dreams-and-goated-memes-wow-11-like-and-subscribe-poggerz-edition",
+    "section": "unity"
   },
   {
     "name": "60 Parsecs!",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "60-parsecs"
+    "id": "60-parsecs",
+    "notes": "Tonemap/color grading not in real time",
+    "source_key": "unity:60-parsecs",
+    "section": "unity"
   },
   {
     "name": "7 Days to Die",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "7-days-to-die"
+    "id": "7-days-to-die",
+    "notes": "If using basic upscaler (Dynamic Resolution or Scale), Enable Swapchain Proxy.",
+    "source_key": "unity:7-days-to-die",
+    "section": "unity"
   },
   {
     "name": "9 Years of Shadows",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "9-years-of-shadows"
+    "id": "9-years-of-shadows",
+    "section": "unity"
   },
   {
     "name": "A Difficult Game About Climbing",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "a-difficult-game-about-climbing"
+    "id": "a-difficult-game-about-climbing",
+    "section": "unity"
   },
   {
     "name": "AER Memories of Old",
     "slug": "unityengine",
     "arch": "X86",
     "status": "working",
-    "id": "aer-memories-of-old"
+    "id": "aer-memories-of-old",
+    "notes": "32-bit.",
+    "source_key": "unity:aer-memories-of-old",
+    "section": "unity"
   },
   {
     "name": "Aeterna Noctis",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "aeterna-noctis"
+    "id": "aeterna-noctis",
+    "notes": "Upgrade R8G8B8A8_TYPELESS to Output ratio or Any size",
+    "source_key": "unity:aeterna-noctis",
+    "section": "unity"
   },
   {
     "name": "Afterparty",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "afterparty"
+    "id": "afterparty",
+    "notes": "Enable Swapchain Proxy",
+    "source_key": "unity:afterparty",
+    "section": "unity"
   },
   {
     "name": "Agatha Christie - Death on the Nile",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "agatha-christie-death-on-the-nile"
+    "id": "agatha-christie-death-on-the-nile",
+    "notes": "Upgrade R11G11B10_FLOAT",
+    "source_key": "unity:agatha-christie-death-on-the-nile",
+    "section": "unity"
   },
   {
     "name": "Agent A: A puzzle in disguise",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "agent-a-a-puzzle-in-disguise"
+    "id": "agent-a-a-puzzle-in-disguise",
+    "notes": "Swapchain Encoding: Gamma",
+    "source_key": "unity:agent-a-a-puzzle-in-disguise",
+    "section": "unity"
   },
   {
     "name": "AI LIMIT",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "ai-limit"
+    "id": "ai-limit",
+    "section": "unity"
   },
   {
     "name": "AKIBA'S TRIP: Hellbound & Debriefed",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "akiba-s-trip-hellbound-debriefed"
+    "id": "akiba-s-trip-hellbound-debriefed",
+    "notes": "Enable Swapchain Proxy",
+    "source_key": "unity:akiba-s-trip-hellbound-debriefed",
+    "section": "unity"
   },
   {
     "name": "AK-Xolotl Together",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "ak-xolotl-together"
+    "id": "ak-xolotl-together",
+    "section": "unity"
   },
   {
     "name": "All We Need",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "all-we-need"
+    "id": "all-we-need",
+    "notes": "Upgrade R11G11B10_FLOAT",
+    "source_key": "unity:all-we-need",
+    "section": "unity"
   },
   {
     "name": "Altheia: The Wrath of Aferi",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "altheia-the-wrath-of-aferi"
+    "id": "altheia-the-wrath-of-aferi",
+    "notes": "Upgrade R11G11B10_FLOAT",
+    "source_key": "unity:altheia-the-wrath-of-aferi",
+    "section": "unity"
   },
   {
     "name": "American Fugitive",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "american-fugitive"
+    "id": "american-fugitive",
+    "notes": "Enable Swapchain Proxy. Game's Graphics Quality setting to Medium or above.",
+    "source_key": "unity:american-fugitive",
+    "section": "unity"
   },
   {
     "name": "Amerzone - The Explorer's Legacy (2025)",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "amerzone-the-explorer-s-legacy-2025"
+    "id": "amerzone-the-explorer-s-legacy-2025",
+    "notes": "Upgrade R11G11B10_FLOAT",
+    "source_key": "unity:amerzone-the-explorer-s-legacy-2025",
+    "section": "unity"
   },
   {
     "name": "Among the Sleep - Enhanced Edition",
     "slug": "unityengine",
     "arch": "X86",
     "status": "working",
-    "id": "among-the-sleep-enhanced-edition"
+    "id": "among-the-sleep-enhanced-edition",
+    "notes": "32-bit.",
+    "source_key": "unity:among-the-sleep-enhanced-edition",
+    "section": "unity"
   },
   {
     "name": "An Airport for Aliens Currently Run by Dogs",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "an-airport-for-aliens-currently-run-by-dogs"
+    "id": "an-airport-for-aliens-currently-run-by-dogs",
+    "section": "unity"
   },
   {
     "name": "Anger Foot",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "anger-foot"
+    "id": "anger-foot",
+    "section": "unity"
   },
   {
     "name": "Anodyne 2: Return to Dust",
     "slug": "unityengine",
     "arch": "X86",
     "status": "working",
-    "id": "anodyne-2-return-to-dust"
+    "id": "anodyne-2-return-to-dust",
+    "notes": "32-bit. Enable Swapchain Proxy, Encoding: Gamma. Both compatibility offsets +1",
+    "source_key": "unity:anodyne-2-return-to-dust",
+    "section": "unity"
   },
   {
     "name": "Another Crab's Treasure",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "another-crab-s-treasure"
+    "id": "another-crab-s-treasure",
+    "section": "unity"
   },
   {
     "name": "Aragami",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "aragami"
+    "id": "aragami",
+    "notes": "Tonemap/CG not in real time (restart level to reload)",
+    "source_key": "unity:aragami",
+    "section": "unity"
   },
   {
     "name": "Aragami 2",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "aragami-2"
+    "id": "aragami-2",
+    "notes": "Upgrade R11G11B10_FLOAT.",
+    "source_key": "unity:aragami-2",
+    "section": "unity"
   },
   {
     "name": "Arkham Horror: Mother's Embrace",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "arkham-horror-mother-s-embrace"
+    "id": "arkham-horror-mother-s-embrace",
+    "notes": "Upgrade R11G11B10_FLOAT. Enable Swapchain Proxy.",
+    "source_key": "unity:arkham-horror-mother-s-embrace",
+    "section": "unity"
   },
   {
     "name": "art of rally",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "art-of-rally"
+    "id": "art-of-rally",
+    "section": "unity"
   },
   {
     "name": "Assault Android Cactus+",
     "slug": "unityengine",
     "arch": "X86",
     "status": "working",
-    "id": "assault-android-cactus"
+    "id": "assault-android-cactus",
+    "notes": "32-bit. Enable Swapchain Proxy",
+    "source_key": "unity:assault-android-cactus",
+    "section": "unity"
   },
   {
     "name": "Astrea: Six-Sided Oracles",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "astrea-six-sided-oracles"
+    "id": "astrea-six-sided-oracles",
+    "section": "unity"
   },
   {
     "name": "Atelier Resleriana: The Red Alchemist & the White Guardian",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "atelier-resleriana-the-red-alchemist-the-white-guardian"
+    "id": "atelier-resleriana-the-red-alchemist-the-white-guardian",
+    "section": "unity"
   },
   {
     "name": "ATLYSS",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "atlyss"
+    "id": "atlyss",
+    "notes": "Swapchain Encoding: Gamma",
+    "source_key": "unity:atlyss",
+    "section": "unity"
   },
   {
     "name": "Atomic Owl",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "atomic-owl"
+    "id": "atomic-owl",
+    "notes": "Upgrade R11G11B10_FLOAT.",
+    "source_key": "unity:atomic-owl",
+    "section": "unity"
   },
   {
     "name": "Au Revoir",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "au-revoir"
+    "id": "au-revoir",
+    "section": "unity"
   },
   {
     "name": "Autonauts",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "autonauts"
+    "id": "autonauts",
+    "notes": "Enable Swapchain Proxy.",
+    "source_key": "unity:autonauts",
+    "section": "unity"
   },
   {
     "name": "Autonauts vs Piratebots",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "autonauts-vs-piratebots"
+    "id": "autonauts-vs-piratebots",
+    "notes": "Enable Swapchain Proxy.",
+    "source_key": "unity:autonauts-vs-piratebots",
+    "section": "unity"
   },
   {
     "name": "AWAKEN - Astral Blade",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "awaken-astral-blade"
+    "id": "awaken-astral-blade",
+    "section": "unity"
   },
   {
     "name": "Baby Steps",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "baby-steps"
+    "id": "baby-steps",
+    "section": "unity"
   },
   {
     "name": "Bad North: Jotunn Edition",
     "slug": "unityengine",
     "arch": "X86",
     "status": "construction",
-    "id": "bad-north-jotunn-edition"
+    "id": "bad-north-jotunn-edition",
+    "notes": "32-bit.",
+    "source_key": "unity:bad-north-jotunn-edition",
+    "section": "unity"
   },
   {
     "name": "Ball x Pit",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "ball-x-pit"
+    "id": "ball-x-pit",
+    "notes": "Swapchain Encoding: Gamma",
+    "source_key": "unity:ball-x-pit",
+    "section": "unity"
   },
   {
     "name": "Bandle Tale: A League of Legends Story",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "bandle-tale-a-league-of-legends-story"
+    "id": "bandle-tale-a-league-of-legends-story",
+    "section": "unity"
   },
   {
     "name": "Batbarian: Testament of the Primordials",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "batbarian-testament-of-the-primordials"
+    "id": "batbarian-testament-of-the-primordials",
+    "notes": "Increase R8G8B8A8_TYPELESS Upgrade to Any Size. Enable Swapchain Proxy.",
+    "source_key": "unity:batbarian-testament-of-the-primordials",
+    "section": "unity"
   },
   {
     "name": "Battlestar Galactica Deadlock",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "battlestar-galactica-deadlock"
+    "id": "battlestar-galactica-deadlock",
+    "notes": "Enable Swapchain Proxy",
+    "source_key": "unity:battlestar-galactica-deadlock",
+    "section": "unity"
   },
   {
     "name": "BATTLETECH",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "battletech"
+    "id": "battletech",
+    "section": "unity"
   },
   {
     "name": "Becalm",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "becalm"
+    "id": "becalm",
+    "section": "unity"
   },
   {
     "name": "Becastled",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "becastled"
+    "id": "becastled",
+    "section": "unity"
   },
   {
     "name": "Before We Leave",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "before-we-leave"
+    "id": "before-we-leave",
+    "section": "unity"
   },
   {
     "name": "Before Your Eyes",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "before-your-eyes"
+    "id": "before-your-eyes",
+    "notes": "Enable Swapchain Proxy.",
+    "source_key": "unity:before-your-eyes",
+    "section": "unity"
   },
   {
     "name": "Beholder",
     "slug": "unityengine",
     "arch": "X86",
     "status": "working",
-    "id": "beholder"
+    "id": "beholder",
+    "notes": "32-bit. Increase R8G8B8A8_TYPELESS Upgrade to Any Size. Enable Swapchain Proxy, Swapchain Encoding: Gamma",
+    "source_key": "unity:beholder",
+    "section": "unity"
   },
   {
     "name": "Beholder 2",
     "slug": "unityengine",
     "arch": "X86",
     "status": "working",
-    "id": "beholder-2"
+    "id": "beholder-2",
+    "notes": "32-bit. Enable Swapchain Proxy.",
+    "source_key": "unity:beholder-2",
+    "section": "unity"
   },
   {
     "name": "Beholder 3",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "beholder-3"
+    "id": "beholder-3",
+    "section": "unity"
   },
   {
     "name": "Ben 10: Power Trip",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "ben-10-power-trip"
+    "id": "ben-10-power-trip",
+    "notes": "Enable Swapchain Proxy.",
+    "source_key": "unity:ben-10-power-trip",
+    "section": "unity"
   },
   {
     "name": "Bendy and the Dark Revival",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "bendy-and-the-dark-revival"
+    "id": "bendy-and-the-dark-revival",
+    "section": "unity"
   },
   {
     "name": "Bendy and the Ink Machine",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "bendy-and-the-ink-machine"
+    "id": "bendy-and-the-ink-machine",
+    "notes": "Enable Swapchain Proxy. Tonemap/color grading not in real time",
+    "source_key": "unity:bendy-and-the-ink-machine",
+    "section": "unity"
   },
   {
     "name": "Bendy: Lone Wolf",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "bendy-lone-wolf"
+    "id": "bendy-lone-wolf",
+    "section": "unity"
   },
   {
     "name": "Bendy: Secrets of the Machine",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "bendy-secrets-of-the-machine"
+    "id": "bendy-secrets-of-the-machine",
+    "notes": "Upgrade R11G11B10_FLOAT",
+    "source_key": "unity:bendy-secrets-of-the-machine",
+    "section": "unity"
   },
   {
     "name": "Besiege",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "besiege"
+    "id": "besiege",
+    "notes": "Enable Swapchain Proxy. Swapchain Encoding: Gamma",
+    "source_key": "unity:besiege",
+    "section": "unity"
   },
   {
     "name": "BETON BRUTAL",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "beton-brutal"
+    "id": "beton-brutal",
+    "section": "unity"
   },
   {
     "name": "Beyond Galaxyland",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "beyond-galaxyland"
+    "id": "beyond-galaxyland",
+    "notes": "Swapchain Encoding: Gamma",
+    "source_key": "unity:beyond-galaxyland",
+    "section": "unity"
   },
   {
     "name": "Big Walk",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "big-walk"
+    "id": "big-walk",
+    "section": "unity"
   },
   {
     "name": "Bionic Bay",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "bionic-bay"
+    "id": "bionic-bay",
+    "notes": "Not entirely playable yet",
+    "source_key": "unity:bionic-bay",
+    "section": "unity"
   },
   {
     "name": "Biped",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "biped"
+    "id": "biped",
+    "notes": "Tonemap/color grading not in real time (Load Save Point to refresh)",
+    "source_key": "unity:biped",
+    "section": "unity"
   },
   {
     "name": "Blackwind",
     "slug": "unityengine",
     "arch": "X86",
     "status": "construction",
-    "id": "blackwind"
+    "id": "blackwind",
+    "notes": "32-bit.",
+    "source_key": "unity:blackwind",
+    "section": "unity"
   },
   {
     "name": "BlazBlue Entropy Effect",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "blazblue-entropy-effect"
+    "id": "blazblue-entropy-effect",
+    "notes": "Upgrade R11G11B10_FLOAT",
+    "source_key": "unity:blazblue-entropy-effect",
+    "section": "unity"
   },
   {
     "name": "Bloody Hell",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "bloody-hell"
+    "id": "bloody-hell",
+    "notes": "Upgrade R11G11B10_FLOAT. Both compatibility offsets +1",
+    "source_key": "unity:bloody-hell",
+    "section": "unity"
   },
   {
     "name": "Blue Prince",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "blue-prince"
+    "id": "blue-prince",
+    "section": "unity"
   },
   {
     "name": "Bō: Path of the Teal Lotus",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "b-path-of-the-teal-lotus"
+    "id": "b-path-of-the-teal-lotus",
+    "notes": "Upgrade R11G11B10_FLOAT",
+    "source_key": "unity:bo-path-of-the-teal-lotus",
+    "section": "unity"
   },
   {
     "name": "BOOMEROAD",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "boomeroad"
+    "id": "boomeroad",
+    "section": "unity"
   },
   {
     "name": "Bounty Star",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "bounty-star"
+    "id": "bounty-star",
+    "notes": "Upgrade R11G11B10_FLOAT",
+    "source_key": "unity:bounty-star",
+    "section": "unity"
   },
   {
     "name": "Boxes: Lost Fragments",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "boxes-lost-fragments"
+    "id": "boxes-lost-fragments",
+    "section": "unity"
   },
   {
     "name": "Breachway",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "breachway"
+    "id": "breachway",
+    "notes": "Upgrade R11G11B10_FLOAT",
+    "source_key": "unity:breachway",
+    "section": "unity"
   },
   {
     "name": "Bread & Fred",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "bread-fred"
+    "id": "bread-fred",
+    "section": "unity"
   },
   {
     "name": "Bubsy 4D",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "bubsy-4d"
+    "id": "bubsy-4d",
+    "notes": "Upgrade R11G11B10_FLOAT",
+    "source_key": "unity:bubsy-4d",
+    "section": "unity"
   },
   {
     "name": "Cairn",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "cairn"
+    "id": "cairn",
+    "section": "unity"
   },
   {
     "name": "Cakey's Twisted Bakery",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "cakey-s-twisted-bakery"
+    "id": "cakey-s-twisted-bakery",
+    "notes": "Upgrade R11G11B10_FLOAT",
+    "source_key": "unity:cakey-s-twisted-bakery",
+    "section": "unity"
   },
   {
     "name": "Cat Quest III",
     "slug": "unityengine",
     "arch": "X86",
     "status": "construction",
-    "id": "cat-quest-iii"
+    "id": "cat-quest-iii",
+    "notes": "32-bit. Swapchain encoding: gamma",
+    "source_key": "unity:cat-quest-iii",
+    "section": "unity"
   },
   {
     "name": "Children of the Sun",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "children-of-the-sun"
+    "id": "children-of-the-sun",
+    "notes": "Upgrade R11G11B10_FLOAT",
+    "source_key": "unity:children-of-the-sun",
+    "section": "unity"
   },
   {
     "name": "Children of Morta",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "children-of-morta"
+    "id": "children-of-morta",
+    "notes": "Enable Swapchain Proxy",
+    "source_key": "unity:children-of-morta",
+    "section": "unity"
   },
   {
     "name": "Circuit Superstars",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "circuit-superstars"
+    "id": "circuit-superstars",
+    "notes": "Upgrade R11G11B10_FLOAT",
+    "source_key": "unity:circuit-superstars",
+    "section": "unity"
   },
   {
     "name": "Citizen Sleeper",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "citizen-sleeper"
+    "id": "citizen-sleeper",
+    "section": "unity"
   },
   {
     "name": "Cloudpunk",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "cloudpunk"
+    "id": "cloudpunk",
+    "notes": "Enable Swapchain Proxy",
+    "source_key": "unity:cloudpunk",
+    "section": "unity"
   },
   {
     "name": "Cloverpit",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "cloverpit"
+    "id": "cloverpit",
+    "notes": "Use DX11 (Second launch option)",
+    "source_key": "unity:cloverpit",
+    "section": "unity"
   },
   {
     "name": "Content Warning",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "content-warning"
+    "id": "content-warning",
+    "section": "unity"
   },
   {
     "name": "CONVERGENCE: A League of Legends Story™",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "convergence-a-league-of-legends-story"
+    "id": "convergence-a-league-of-legends-story",
+    "section": "unity"
   },
   {
     "name": "Copycat",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "copycat"
+    "id": "copycat",
+    "notes": "Upgrade R10G10B10A2_TYPELESS",
+    "source_key": "unity:copycat",
+    "section": "unity"
   },
   {
     "name": "Core Keeper",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "core-keeper"
+    "id": "core-keeper",
+    "section": "unity"
   },
   {
     "name": "Coridden",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "coridden"
+    "id": "coridden",
+    "notes": "Upgrade R11G11B10_FLOAT",
+    "source_key": "unity:coridden",
+    "section": "unity"
   },
   {
     "name": "Crab Game",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "crab-game"
+    "id": "crab-game",
+    "section": "unity"
   },
   {
     "name": "Creature Kitchen",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "creature-kitchen"
+    "id": "creature-kitchen",
+    "notes": "Upgrade `R8G8B8A8_TYPELESS` to `Any Size`",
+    "source_key": "unity:creature-kitchen",
+    "section": "unity"
   },
   {
     "name": "Ctrl Alt Ego",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "ctrl-alt-ego"
+    "id": "ctrl-alt-ego",
+    "notes": "Enable Swapchain Proxy",
+    "source_key": "unity:ctrl-alt-ego",
+    "section": "unity"
   },
   {
     "name": "Cult of the Lamb",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "cult-of-the-lamb"
+    "id": "cult-of-the-lamb",
+    "section": "unity"
   },
   {
     "name": "Cuphead",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "cuphead"
+    "id": "cuphead",
+    "notes": "Enable Swapchain Proxy",
+    "source_key": "unity:cuphead",
+    "section": "unity"
   },
   {
     "name": "Darkwood",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "darkwood"
+    "id": "darkwood",
+    "section": "unity"
   },
   {
     "name": "DAVE THE DIVER",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "dave-the-diver"
+    "id": "dave-the-diver",
+    "notes": "Upgrade R11G11B10_FLOAT",
+    "source_key": "unity:dave-the-diver",
+    "section": "unity"
   },
   {
     "name": "DeadCore Redux Demo",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "deadcore-redux-demo"
+    "id": "deadcore-redux-demo",
+    "notes": "Upgrade R11G11B10_FLOAT. Tonemap/color grading not in real time",
+    "source_key": "unity:deadcore-redux-demo",
+    "section": "unity"
   },
   {
     "name": "DEAD LETTER DEPT.",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "dead-letter-dept"
+    "id": "dead-letter-dept",
+    "section": "unity"
   },
   {
     "name": "Death's Door",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "death-s-door"
+    "id": "death-s-door",
+    "section": "unity"
   },
   {
     "name": "Deliver At All Costs",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "deliver-at-all-costs"
+    "id": "deliver-at-all-costs",
+    "section": "unity"
   },
   {
     "name": "Deep Rock Survivor",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "deep-rock-survivor"
+    "id": "deep-rock-survivor",
+    "notes": "Upgrade R11G11B10_FLOAT",
+    "source_key": "unity:deep-rock-survivor",
+    "section": "unity"
   },
   {
     "name": "Descenders",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "descenders"
+    "id": "descenders",
+    "section": "unity"
   },
   {
     "name": "Digimon World: Next Order",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "digimon-world-next-order"
+    "id": "digimon-world-next-order",
+    "notes": "Swapchain Encoding: Gamma.",
+    "source_key": "unity:digimon-world-next-order",
+    "section": "unity"
   },
   {
     "name": "Dino Topia",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "dino-topia"
+    "id": "dino-topia",
+    "notes": "Upgrade R11G11B10_FLOAT",
+    "source_key": "unity:dino-topia",
+    "section": "unity"
   },
   {
     "name": "Diplomacy is Not an Option",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "diplomacy-is-not-an-option"
+    "id": "diplomacy-is-not-an-option",
+    "section": "unity"
   },
   {
     "name": "Disco Elysium",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "disco-elysium"
+    "id": "disco-elysium",
+    "section": "unity"
   },
   {
     "name": "Distance",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "distance"
+    "id": "distance",
+    "section": "unity"
   },
   {
     "name": "DRACOMATON",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "dracomaton"
+    "id": "dracomaton",
+    "notes": "Upgrade R11G11B10_FLOAT",
+    "source_key": "unity:dracomaton",
+    "section": "unity"
   },
   {
     "name": "DRAGON QUEST BUILDERS",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "dragon-quest-builders"
+    "id": "dragon-quest-builders",
+    "notes": "Enable Bloom in-game (can be disabled in addon)",
+    "source_key": "unity:dragon-quest-builders",
+    "section": "unity"
   },
   {
     "name": "Dread Delusion",
     "slug": "unityengine",
     "arch": "X86",
     "status": "construction",
-    "id": "dread-delusion"
+    "id": "dread-delusion",
+    "notes": "32-bit",
+    "source_key": "unity:dread-delusion",
+    "section": "unity"
   },
   {
     "name": "Dreamfall Chapters - The Final Cut",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "dreamfall-chapters-the-final-cut"
+    "id": "dreamfall-chapters-the-final-cut",
+    "notes": "Enable Swapchain Proxy. Game save preview pictures are broken.",
+    "source_key": "unity:dreamfall-chapters-the-final-cut",
+    "section": "unity"
   },
   {
     "name": "DREDGE",
     "slug": "unityengine",
     "arch": "X86",
     "status": "construction",
-    "id": "dredge"
+    "id": "dredge",
+    "notes": "32-bit",
+    "source_key": "unity:dredge",
+    "section": "unity"
   },
   {
     "name": "Dread Templar",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "dread-templar"
+    "id": "dread-templar",
+    "notes": "Works out of the box. Crashes when any settings are applied/saved but settings are saved anyways.",
+    "source_key": "unity:dread-templar",
+    "section": "unity"
   },
   {
     "name": "DROS",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "dros"
+    "id": "dros",
+    "section": "unity"
   },
   {
     "name": "Dungeons 2",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "dungeons-2"
+    "id": "dungeons-2",
+    "notes": "Scaling AND Tonemap offset = 1. Main Menu will be black, but everything is fine once loaded in game.",
+    "source_key": "unity:dungeons-2",
+    "section": "unity"
   },
   {
     "name": "Dungeons 3",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "dungeons-3"
+    "id": "dungeons-3",
+    "notes": "Swampchain proxy on.",
+    "source_key": "unity:dungeons-3",
+    "section": "unity"
   },
   {
     "name": "Dungeons 4",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "dungeons-4"
+    "id": "dungeons-4",
+    "notes": "Change game's Brightness (Gamma) setting to refresh LUT",
+    "source_key": "unity:dungeons-4",
+    "section": "unity"
   },
   {
     "name": "Dustborn",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "dustborn"
+    "id": "dustborn",
+    "section": "unity"
   },
   {
     "name": "Dyson Sphere Program",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "dyson-sphere-program"
+    "id": "dyson-sphere-program",
+    "section": "unity"
   },
   {
     "name": "Dystopika",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "dystopika"
+    "id": "dystopika",
+    "notes": "Upgrade R10G10B10A2_TYPELESS & R11G11B10_FLOAT",
+    "source_key": "unity:dystopika",
+    "section": "unity"
   },
   {
     "name": "Eastern Exorcist",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "eastern-exorcist"
+    "id": "eastern-exorcist",
+    "notes": "Both compatibility offsets +1",
+    "source_key": "unity:eastern-exorcist",
+    "section": "unity"
   },
   {
     "name": "Eastshade",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "eastshade"
+    "id": "eastshade",
+    "notes": "Click Game Brightness setting and save to refresh LUT",
+    "source_key": "unity:eastshade",
+    "section": "unity"
   },
   {
     "name": "Easy Delivery Co.",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "easy-delivery-co"
+    "id": "easy-delivery-co",
+    "section": "unity"
   },
   {
     "name": "Egging On",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "egging-on"
+    "id": "egging-on",
+    "notes": "Upgrade R10G10B10A2_TYPELESS",
+    "source_key": "unity:egging-on",
+    "section": "unity"
   },
   {
     "name": "Eiyuden Chronicle: Hundred Heroes",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "eiyuden-chronicle-hundred-heroes"
+    "id": "eiyuden-chronicle-hundred-heroes",
+    "notes": "Upgrade R11G11B10_FLOAT",
+    "source_key": "unity:eiyuden-chronicle-hundred-heroes",
+    "section": "unity"
   },
   {
     "name": "Eiyuden Chronicle: Rising",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "eiyuden-chronicle-rising"
+    "id": "eiyuden-chronicle-rising",
+    "notes": "Upgrade R11G11B10_FLOAT",
+    "source_key": "unity:eiyuden-chronicle-rising",
+    "section": "unity"
   },
   {
     "name": "ELDERBORN",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "elderborn"
+    "id": "elderborn",
+    "section": "unity"
   },
   {
     "name": "El Paso, Elsewhere",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "el-paso-elsewhere"
+    "id": "el-paso-elsewhere",
+    "notes": "Upgrade R11G11B10_FLOAT",
+    "source_key": "unity:el-paso-elsewhere",
+    "section": "unity"
   },
   {
     "name": "End Transmission?",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "end-transmission"
+    "id": "end-transmission",
+    "notes": "Upgrade R10G10B10A2_TYPELESS & R11G11B10_FLOAT",
+    "source_key": "unity:end-transmission",
+    "section": "unity"
   },
   {
     "name": "Encased",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "encased"
+    "id": "encased",
+    "notes": "Upgrade R11G11B10_FLOAT",
+    "source_key": "unity:encased",
+    "section": "unity"
   },
   {
     "name": "Enigma of Fear",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "enigma-of-fear"
+    "id": "enigma-of-fear",
+    "notes": "Upgrade R11G11B10_FLOAT",
+    "source_key": "unity:enigma-of-fear",
+    "section": "unity"
   },
   {
     "name": "Enter The Gungeon",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "enter-the-gungeon"
+    "id": "enter-the-gungeon",
+    "notes": "Enable Swapchain Proxy.",
+    "source_key": "unity:enter-the-gungeon",
+    "section": "unity"
   },
   {
     "name": "Ereban - Shadow Legacy",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "ereban-shadow-legacy"
+    "id": "ereban-shadow-legacy",
+    "notes": "Upgrade R11G11B10_FLOAT",
+    "source_key": "unity:ereban-shadow-legacy",
+    "section": "unity"
   },
   {
     "name": "Epistory - Typing Chronicles",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "epistory-typing-chronicles"
+    "id": "epistory-typing-chronicles",
+    "notes": "Enable Swapchain Proxy, Encoding: Gamma",
+    "source_key": "unity:epistory-typing-chronicles",
+    "section": "unity"
   },
   {
     "name": "Escape Academy",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "escape-academy"
+    "id": "escape-academy",
+    "section": "unity"
   },
   {
     "name": "Eternal Threads",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "eternal-threads"
+    "id": "eternal-threads",
+    "section": "unity"
   },
   {
     "name": "Exit The Gungeon",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "exit-the-gungeon"
+    "id": "exit-the-gungeon",
+    "notes": "Enable Swapchain Proxy.",
+    "source_key": "unity:exit-the-gungeon",
+    "section": "unity"
   },
   {
     "name": "Exo One",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "exo-one"
+    "id": "exo-one",
+    "section": "unity"
   },
   {
     "name": "Drova Forsaken Kin",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "drova-forsaken-kin"
+    "id": "drova-forsaken-kin",
+    "notes": "Use fullscreen windowed borderless. Swapchain encoding set to gamma.",
+    "source_key": "unity:drova-forsaken-kin",
+    "section": "unity"
   },
   {
     "name": "Fabledom",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "fabledom"
+    "id": "fabledom",
+    "notes": "Upgrade R11G11B10_FLOAT. (If game's Anti-aliasing is enabled, Compatibility Blit Copy: Scaling only)",
+    "source_key": "unity:fabledom",
+    "section": "unity"
   },
   {
     "name": "Fallen Aces",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "fallen-aces"
+    "id": "fallen-aces",
+    "notes": "Both compatibilty offsets +1",
+    "source_key": "unity:fallen-aces",
+    "section": "unity"
   },
   {
     "name": "Fantasy General II",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "fantasy-general-ii"
+    "id": "fantasy-general-ii",
+    "notes": "Enable Swapchain Proxy",
+    "source_key": "unity:fantasy-general-ii",
+    "section": "unity"
   },
   {
     "name": "FAR: Lone Sails",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "far-lone-sails"
+    "id": "far-lone-sails",
+    "notes": "Enable Swapchain Proxy",
+    "source_key": "unity:far-lone-sails",
+    "section": "unity"
   },
   {
     "name": "Fe",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "fe"
+    "id": "fe",
+    "notes": "Enable Swapchain Proxy.",
+    "source_key": "unity:fe",
+    "section": "unity"
   },
   {
     "name": "Feed the Deep",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "feed-the-deep"
+    "id": "feed-the-deep",
+    "section": "unity"
   },
   {
     "name": "Figment",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "figment"
+    "id": "figment",
+    "section": "unity"
   },
   {
     "name": "Figment 2: Creed Valley",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "figment-2-creed-valley"
+    "id": "figment-2-creed-valley",
+    "section": "unity"
   },
   {
     "name": "Firewatch",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "firewatch"
+    "id": "firewatch",
+    "notes": "Enable Swapchain Proxy",
+    "source_key": "unity:firewatch",
+    "section": "unity"
   },
   {
     "name": "Five Nights at Freddy's: Into the Pit",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "five-nights-at-freddy-s-into-the-pit"
+    "id": "five-nights-at-freddy-s-into-the-pit",
+    "notes": "Upgrade R11G11B10_FLOAT",
+    "source_key": "unity:five-nights-at-freddy-s-into-the-pit",
+    "section": "unity"
   },
   {
     "name": "Flashback 2",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "flashback-2"
+    "id": "flashback-2",
+    "notes": "Upgrade R11G11B10_FLOAT",
+    "source_key": "unity:flashback-2",
+    "section": "unity"
   },
   {
     "name": "For The King",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "for-the-king"
+    "id": "for-the-king",
+    "notes": "Enable Swapchain Proxy",
+    "source_key": "unity:for-the-king",
+    "section": "unity"
   },
   {
     "name": "For The King II",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "for-the-king-ii"
+    "id": "for-the-king-ii",
+    "notes": "Tonemap/color grading not in real time",
+    "source_key": "unity:for-the-king-ii",
+    "section": "unity"
   },
   {
     "name": "Forgotten 23",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "forgotten-23"
+    "id": "forgotten-23",
+    "notes": "Upgrade R11G11B10_FLOAT",
+    "source_key": "unity:forgotten-23",
+    "section": "unity"
   },
   {
     "name": "FRONT MISSION 2: Remake",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "front-mission-2-remake"
+    "id": "front-mission-2-remake",
+    "notes": "Upgrade R10G10B10A2_TYPELESS",
+    "source_key": "unity:front-mission-2-remake",
+    "section": "unity"
   },
   {
     "name": "FUMES",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "fumes"
+    "id": "fumes",
+    "section": "unity"
   },
   {
     "name": "Gang Beasts",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "gang-beasts"
+    "id": "gang-beasts",
+    "section": "unity"
   },
   {
     "name": "Gatekeeper",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "gatekeeper"
+    "id": "gatekeeper",
+    "notes": "Upgrade R11G11B10_FLOAT",
+    "source_key": "unity:gatekeeper",
+    "section": "unity"
   },
   {
     "name": "Gedonia",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "gedonia"
+    "id": "gedonia",
+    "section": "unity"
   },
   {
     "name": "Ghost of a Tale",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "ghost-of-a-tale"
+    "id": "ghost-of-a-tale",
+    "notes": "Enable Swapchain Proxy. Enable Bloom in-game (can be disabled in addon)",
+    "source_key": "unity:ghost-of-a-tale",
+    "section": "unity"
   },
   {
     "name": "Giggleland: Terry’s Vegetable Patch",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "giggleland-terry-s-vegetable-patch"
+    "id": "giggleland-terry-s-vegetable-patch",
+    "notes": "Upgrade R11G11B10_FLOAT",
+    "source_key": "unity:giggleland-terry-s-vegetable-patch",
+    "section": "unity"
   },
   {
     "name": "Gods Trigger",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "gods-trigger"
+    "id": "gods-trigger",
+    "section": "unity"
   },
   {
     "name": "Going Under",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "going-under"
+    "id": "going-under",
+    "section": "unity"
   },
   {
     "name": "Golf With Your Friends",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "golf-with-your-friends"
+    "id": "golf-with-your-friends",
+    "notes": "Upgrade ??????????????",
+    "source_key": "unity:golf-with-your-friends",
+    "section": "unity"
   },
   {
     "name": "Great God Grove",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "great-god-grove"
+    "id": "great-god-grove",
+    "notes": "Upgrade R11G11B10_FLOAT to Output Ratio",
+    "source_key": "unity:great-god-grove",
+    "section": "unity"
   },
   {
     "name": "GRIME",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "grime"
+    "id": "grime",
+    "section": "unity"
   },
   {
     "name": "Gunfire Reborn",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "gunfire-reborn"
+    "id": "gunfire-reborn",
+    "notes": "Upgrade ??????????????",
+    "source_key": "unity:gunfire-reborn",
+    "section": "unity"
   },
   {
     "name": "GUNTOUCHABLES",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "guntouchables"
+    "id": "guntouchables",
+    "section": "unity"
   },
   {
     "name": "Halve Demo",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "halve-demo"
+    "id": "halve-demo",
+    "notes": "Upgrade R11G11B10_FLOAT",
+    "source_key": "unity:halve-demo",
+    "section": "unity"
   },
   {
     "name": "Haste",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "haste"
+    "id": "haste",
+    "section": "unity"
   },
   {
     "name": "Have a Nice Death",
     "slug": "unityengine",
     "arch": "X86",
     "status": "construction",
-    "id": "have-a-nice-death"
+    "id": "have-a-nice-death",
+    "notes": "32-bit. Upgrade R11G11B10_FLOAT",
+    "source_key": "unity:have-a-nice-death",
+    "section": "unity"
   },
   {
     "name": "Heart of the Machine",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "heart-of-the-machine"
+    "id": "heart-of-the-machine",
+    "notes": "Compatibility Scaling Offset +1",
+    "source_key": "unity:heart-of-the-machine",
+    "section": "unity"
   },
   {
     "name": "Hell Clock",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "hell-clock"
+    "id": "hell-clock",
+    "section": "unity"
   },
   {
     "name": "Herdling",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "herdling"
+    "id": "herdling",
+    "notes": "Disable games's native HDR from game's config file.",
+    "source_key": "unity:herdling",
+    "section": "unity"
   },
   {
     "name": "Heroes of Might and Magic: Olden Era",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "heroes-of-might-and-magic-olden-era"
+    "id": "heroes-of-might-and-magic-olden-era",
+    "section": "unity"
   },
   {
     "name": "Hextech Mayhem: A League of Legends Story™",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "hextech-mayhem-a-league-of-legends-story"
+    "id": "hextech-mayhem-a-league-of-legends-story",
+    "section": "unity"
   },
   {
     "name": "Hollowbody",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "hollowbody"
+    "id": "hollowbody",
+    "section": "unity"
   },
   {
     "name": "Hollow Cocoon",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "hollow-cocoon"
+    "id": "hollow-cocoon",
+    "notes": "Upgrade R11G11B10_FLOAT. Game's Rendering Quality setting should be 100%",
+    "source_key": "unity:hollow-cocoon",
+    "section": "unity"
   },
   {
     "name": "Hordelord",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "hordelord"
+    "id": "hordelord",
+    "notes": "Upgrade R11G11B10_FLOAT",
+    "source_key": "unity:hordelord",
+    "section": "unity"
   },
   {
     "name": "House Flipper",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "house-flipper"
+    "id": "house-flipper",
+    "section": "unity"
   },
   {
     "name": "House Flipper 2",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "house-flipper-2"
+    "id": "house-flipper-2",
+    "notes": "Upgrade R11G11B10_FLOAT. Tonemap/color grading not in real time (change game Saturation setting to refresh)",
+    "source_key": "unity:house-flipper-2",
+    "section": "unity"
   },
   {
     "name": "Hover",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "hover"
+    "id": "hover",
+    "section": "unity"
   },
   {
     "name": "How to Fish",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "how-to-fish"
+    "id": "how-to-fish",
+    "section": "unity"
   },
   {
     "name": "Human Fall Flat",
     "slug": "unityengine",
     "arch": "X86",
     "status": "construction",
-    "id": "human-fall-flat"
+    "id": "human-fall-flat",
+    "notes": "32-bit. Enable Swapchain Proxy. Both compatibilty offsets +1",
+    "source_key": "unity:human-fall-flat",
+    "section": "unity"
   },
   {
     "name": "HUMANKIND",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "humankind"
+    "id": "humankind",
+    "section": "unity"
   },
   {
     "name": "HUNTER×HUNTER NEN×IMPACT",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "hunter-hunter-nen-impact"
+    "id": "hunter-hunter-nen-impact",
+    "notes": "Upgrade R11G11B10_FLOAT",
+    "source_key": "unity:hunter-hunter-nen-impact",
+    "section": "unity"
   },
   {
     "name": "Hymer 2000",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "hymer-2000"
+    "id": "hymer-2000",
+    "section": "unity"
   },
   {
     "name": "ICEY",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "icey"
+    "id": "icey",
+    "notes": "Enable Swapchain Proxy, Encoding: Gamma",
+    "source_key": "unity:icey",
+    "section": "unity"
   },
   {
     "name": "INCISION",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "incision"
+    "id": "incision",
+    "notes": "Enable Swapchain Proxy",
+    "source_key": "unity:incision",
+    "section": "unity"
   },
   {
     "name": "Inertial Drift",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "inertial-drift"
+    "id": "inertial-drift",
+    "section": "unity"
   },
   {
     "name": "In Sound Mind",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "in-sound-mind"
+    "id": "in-sound-mind",
+    "notes": "Upgrade R11G11B10_FLOAT",
+    "source_key": "unity:in-sound-mind",
+    "section": "unity"
   },
   {
     "name": "Iron Lung",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "iron-lung"
+    "id": "iron-lung",
+    "section": "unity"
   },
   {
     "name": "IRON NEST: Heavy Turret Simulator",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "iron-nest-heavy-turret-simulator"
+    "id": "iron-nest-heavy-turret-simulator",
+    "section": "unity"
   },
   {
     "name": "ISLANDERS",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "islanders"
+    "id": "islanders",
+    "section": "unity"
   },
   {
     "name": "ITORAH",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "itorah"
+    "id": "itorah",
+    "section": "unity"
   },
   {
     "name": "It Steals",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "it-steals"
+    "id": "it-steals",
+    "section": "unity"
   },
   {
     "name": "Jaded",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "jaded"
+    "id": "jaded",
+    "section": "unity"
   },
   {
     "name": "Jotunnslayer: Hordes of Hel",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "jotunnslayer-hordes-of-hel"
+    "id": "jotunnslayer-hordes-of-hel",
+    "notes": "Upgrade R11G11B10_FLOAT. Tonemap/color grading not in real time",
+    "source_key": "unity:jotunnslayer-hordes-of-hel",
+    "section": "unity"
   },
   {
     "name": "Katamari Damacy REROLL",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "katamari-damacy-reroll"
+    "id": "katamari-damacy-reroll",
+    "notes": "Enable Swapchain Proxy",
+    "source_key": "unity:katamari-damacy-reroll",
+    "section": "unity"
   },
   {
     "name": "Kaze and the Wild Masks",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "kaze-and-the-wild-masks"
+    "id": "kaze-and-the-wild-masks",
+    "notes": "Upgrade R8G8B8A8_TYPELESS to Any size",
+    "source_key": "unity:kaze-and-the-wild-masks",
+    "section": "unity"
   },
   {
     "name": "Keep Talking and Nobody Explodes",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "keep-talking-and-nobody-explodes"
+    "id": "keep-talking-and-nobody-explodes",
+    "notes": "Enable Swapchain Proxy",
+    "source_key": "unity:keep-talking-and-nobody-explodes",
+    "section": "unity"
   },
   {
     "name": "KeyWe",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "keywe"
+    "id": "keywe",
+    "notes": "Tonemap/color grading not in real time",
+    "source_key": "unity:keywe",
+    "section": "unity"
   },
   {
     "name": "Killer Frequency",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "killer-frequency"
+    "id": "killer-frequency",
+    "notes": "Upgrade R11G11B10_FLOAT",
+    "source_key": "unity:killer-frequency",
+    "section": "unity"
   },
   {
     "name": "KILL KNIGHT",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "kill-knight"
+    "id": "kill-knight",
+    "notes": "Upgrade R11G11B10_FLOAT",
+    "source_key": "unity:kill-knight",
+    "section": "unity"
   },
   {
     "name": "Kingdoms and Castles",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "kingdoms-and-castles"
+    "id": "kingdoms-and-castles",
+    "section": "unity"
   },
   {
     "name": "Klonoa Phantasy Reverie Series",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "klonoa-phantasy-reverie-series"
+    "id": "klonoa-phantasy-reverie-series",
+    "section": "unity"
   },
   {
     "name": "Kona",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "kona"
+    "id": "kona",
+    "notes": "Enable Swapchain Proxy",
+    "source_key": "unity:kona",
+    "section": "unity"
   },
   {
     "name": "Kona II: Brume",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "kona-ii-brume"
+    "id": "kona-ii-brume",
+    "section": "unity"
   },
   {
     "name": "LASERS",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "lasers"
+    "id": "lasers",
+    "section": "unity"
   },
   {
     "name": "Last Epoch",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "last-epoch"
+    "id": "last-epoch",
+    "section": "unity"
   },
   {
     "name": "LEGO® Bricktales",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "lego-bricktales"
+    "id": "lego-bricktales",
+    "notes": "Upgrade ??????????????",
+    "source_key": "unity:lego-bricktales",
+    "section": "unity"
   },
   {
     "name": "LEGO® Voyagers",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "lego-voyagers"
+    "id": "lego-voyagers",
+    "notes": "Enable Swapchain Proxy",
+    "source_key": "unity:lego-voyagers",
+    "section": "unity"
   },
   {
     "name": "Little Big Adventure - Twinsen's Quest",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "little-big-adventure-twinsen-s-quest"
+    "id": "little-big-adventure-twinsen-s-quest",
+    "section": "unity"
   },
   {
     "name": "Little Goody Two Shoes",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "little-goody-two-shoes"
+    "id": "little-goody-two-shoes",
+    "section": "unity"
   },
   {
     "name": "Little Kitty, Big City",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "little-kitty-big-city"
+    "id": "little-kitty-big-city",
+    "notes": "Upgrade R11G11B10_FLOAT",
+    "source_key": "unity:little-kitty-big-city",
+    "section": "unity"
   },
   {
     "name": "Little Noah: Scion of Paradise",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "little-noah-scion-of-paradise"
+    "id": "little-noah-scion-of-paradise",
+    "notes": "Upgrade R11G11B10_FLOAT",
+    "source_key": "unity:little-noah-scion-of-paradise",
+    "section": "unity"
   },
   {
     "name": "Little Witch in the Woods",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "little-witch-in-the-woods"
+    "id": "little-witch-in-the-woods",
+    "notes": "Upgrade R11G11B10_FLOAT",
+    "source_key": "unity:little-witch-in-the-woods",
+    "section": "unity"
   },
   {
     "name": "Lonely Mountains: Downhill",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "lonely-mountains-downhill"
+    "id": "lonely-mountains-downhill",
+    "section": "unity"
   },
   {
     "name": "Lost At Sea",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "lost-at-sea"
+    "id": "lost-at-sea",
+    "section": "unity"
   },
   {
     "name": "Lost In Random",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "lost-in-random"
+    "id": "lost-in-random",
+    "notes": "Upgrade R11G11B10_FLOAT",
+    "source_key": "unity:lost-in-random",
+    "section": "unity"
   },
   {
     "name": "Lost In Random: The Eternal Die",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "lost-in-random-the-eternal-die"
+    "id": "lost-in-random-the-eternal-die",
+    "section": "unity"
   },
   {
     "name": "Lost In Vivo",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "lost-in-vivo"
+    "id": "lost-in-vivo",
+    "notes": "Enable Swapchain Proxy",
+    "source_key": "unity:lost-in-vivo",
+    "section": "unity"
   },
   {
     "name": "Lost Ruins",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "lost-ruins"
+    "id": "lost-ruins",
+    "section": "unity"
   },
   {
     "name": "Lost Words: Beyond the Page",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "lost-words-beyond-the-page"
+    "id": "lost-words-beyond-the-page",
+    "section": "unity"
   },
   {
     "name": "Lumines Arise",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "lumines-arise"
+    "id": "lumines-arise",
+    "notes": "Upgrade R11G11B10_FLOAT by Output Ratio",
+    "source_key": "unity:lumines-arise",
+    "section": "unity"
   },
   {
     "name": "Lysfanga: The Time Shift Warrior",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "lysfanga-the-time-shift-warrior"
+    "id": "lysfanga-the-time-shift-warrior",
+    "notes": "Upgrade R11G11B10_FLOAT. Compatibilty Scaling offset +1.",
+    "source_key": "unity:lysfanga-the-time-shift-warrior",
+    "section": "unity"
   },
   {
     "name": "Mages of Mystralia",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "mages-of-mystralia"
+    "id": "mages-of-mystralia",
+    "notes": "Enable Swapchain Proxy",
+    "source_key": "unity:mages-of-mystralia",
+    "section": "unity"
   },
   {
     "name": "Mai: Child of Ages",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "mai-child-of-ages"
+    "id": "mai-child-of-ages",
+    "notes": "Upgrade R11G11B10_FLOAT",
+    "source_key": "unity:mai-child-of-ages",
+    "section": "unity"
   },
   {
     "name": "Maid of Sker",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "maid-of-sker"
+    "id": "maid-of-sker",
+    "notes": "Upgrade R11G11B10_FLOAT",
+    "source_key": "unity:maid-of-sker",
+    "section": "unity"
   },
   {
     "name": "Make Way",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "make-way"
+    "id": "make-way",
+    "section": "unity"
   },
   {
     "name": "Mars Attracts",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "mars-attracts"
+    "id": "mars-attracts",
+    "section": "unity"
   },
   {
     "name": "Megabonk",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "megabonk"
+    "id": "megabonk",
+    "section": "unity"
   },
   {
     "name": "Metal: Hellsinger",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "metal-hellsinger"
+    "id": "metal-hellsinger",
+    "notes": "Upgrade R11G11B10_FLOAT",
+    "source_key": "unity:metal-hellsinger",
+    "section": "unity"
   },
   {
     "name": "Mind Over Magic",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "mind-over-magic"
+    "id": "mind-over-magic",
+    "section": "unity"
   },
   {
     "name": "Minds Beneath Us",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "minds-beneath-us"
+    "id": "minds-beneath-us",
+    "section": "unity"
   },
   {
     "name": "MiSide",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "miside"
+    "id": "miside",
+    "section": "unity"
   },
   {
     "name": "Mon Bazou",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "mon-bazou"
+    "id": "mon-bazou",
+    "section": "unity"
   },
   {
     "name": "Monster Train",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "monster-train"
+    "id": "monster-train",
+    "notes": "Upgrade ??????????????",
+    "source_key": "unity:monster-train",
+    "section": "unity"
   },
   {
     "name": "Monster Train 2",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "monster-train-2"
+    "id": "monster-train-2",
+    "section": "unity"
   },
   {
     "name": "Monument Valley",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "monument-valley"
+    "id": "monument-valley",
+    "notes": "Swapchain encoding: Gamma",
+    "source_key": "unity:monument-valley",
+    "section": "unity"
   },
   {
     "name": "Monument Valley 2",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "monument-valley-2"
+    "id": "monument-valley-2",
+    "notes": "Swapchain encoding: Gamma",
+    "source_key": "unity:monument-valley-2",
+    "section": "unity"
   },
   {
     "name": "Moonlighter",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "moonlighter"
+    "id": "moonlighter",
+    "notes": "swapchain (enable proxy ?)",
+    "source_key": "unity:moonlighter",
+    "section": "unity"
   },
   {
     "name": "Morbid Metal (demo)",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "morbid-metal-demo"
+    "id": "morbid-metal-demo",
+    "notes": "Upgrade ??????????????",
+    "source_key": "unity:morbid-metal-demo",
+    "section": "unity"
   },
   {
     "name": "Mouthwashing",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "mouthwashing"
+    "id": "mouthwashing",
+    "notes": "Use borderless. Both compatibilty offsets +1. Upgrade R8G8B8A8_TYPELESS to Output Ratio.",
+    "source_key": "unity:mouthwashing",
+    "section": "unity"
   },
   {
     "name": "Mycopunk",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "mycopunk"
+    "id": "mycopunk",
+    "section": "unity"
   },
   {
     "name": "My Friendly Neighborhood",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "my-friendly-neighborhood"
+    "id": "my-friendly-neighborhood",
+    "notes": "Upgrade R11G11B10_FLOAT",
+    "source_key": "unity:my-friendly-neighborhood",
+    "section": "unity"
   },
   {
     "name": "My Friend Pedro",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "my-friend-pedro"
+    "id": "my-friend-pedro",
+    "notes": "Enable Swapchain Proxy. Tonemap/CG not in real time (restart level to reload)",
+    "source_key": "unity:my-friend-pedro",
+    "section": "unity"
   },
   {
     "name": "NECROPOLIS: BRUTAL EDITION",
     "slug": "unityengine",
     "arch": "X86",
     "status": "construction",
-    "id": "necropolis-brutal-edition"
+    "id": "necropolis-brutal-edition",
+    "notes": "32-bit. ReShade can be [asi-loaded](https://github.com/ThirteenAG/Ultimate-ASI-Loader/releases)",
+    "source_key": "unity:necropolis-brutal-edition",
+    "section": "unity"
   },
   {
     "name": "Neon Abyss",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "neon-abyss"
+    "id": "neon-abyss",
+    "notes": "Upgrade Upgrade_R16G16B16A16_TYPELESS. Enable Swapchain Proxy",
+    "source_key": "unity:neon-abyss",
+    "section": "unity"
   },
   {
     "name": "NEOVERSE",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "neoverse"
+    "id": "neoverse",
+    "notes": "Upgrade R11G11B10_FLOAT",
+    "source_key": "unity:neoverse",
+    "section": "unity"
   },
   {
     "name": "New Super Lucky's Tale",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "new-super-lucky-s-tale"
+    "id": "new-super-lucky-s-tale",
+    "notes": "Enable Swapchain Proxy, Encoding: Gamma",
+    "source_key": "unity:new-super-lucky-s-tale",
+    "section": "unity"
   },
   {
     "name": "NIGHT-RUNNERS PROLOGUE",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "night-runners-prologue"
+    "id": "night-runners-prologue",
+    "section": "unity"
   },
   {
     "name": "Nine Sols",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "nine-sols"
+    "id": "nine-sols",
+    "section": "unity"
   },
   {
     "name": "Nocturnal",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "nocturnal"
+    "id": "nocturnal",
+    "notes": "Upgrade R10G10B10A2_TYPELESS",
+    "source_key": "unity:nocturnal",
+    "section": "unity"
   },
   {
     "name": "NODE: The Last Favor of the Antarii",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "node-the-last-favor-of-the-antarii"
+    "id": "node-the-last-favor-of-the-antarii",
+    "notes": "Upgrade R11G11B10_FLOAT",
+    "source_key": "unity:node-the-last-favor-of-the-antarii",
+    "section": "unity"
   },
   {
     "name": "NOTTOLOT",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "nottolot"
+    "id": "nottolot",
+    "notes": "Upgrade R11G11B10_FLOAT. Both compatibilty offsets +1.",
+    "source_key": "unity:nottolot",
+    "section": "unity"
   },
   {
     "name": "Nova Lands",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "nova-lands"
+    "id": "nova-lands",
+    "notes": "swapchain (enable proxy ?)",
+    "source_key": "unity:nova-lands",
+    "section": "unity"
   },
   {
     "name": "Oblivion Override",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "oblivion-override"
+    "id": "oblivion-override",
+    "section": "unity"
   },
   {
     "name": "Observation",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "observation"
+    "id": "observation",
+    "notes": "Enable Swapchain Proxy.",
+    "source_key": "unity:observation",
+    "section": "unity"
   },
   {
     "name": "Oddworld: Soulstorm Enhanced Edition",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "oddworld-soulstorm-enhanced-edition"
+    "id": "oddworld-soulstorm-enhanced-edition",
+    "notes": "Upgrade R10G10B10A2_TYPELESS. Tonemap/CG not in real time (restart checkpoint/level to reload)",
+    "source_key": "unity:oddworld-soulstorm-enhanced-edition",
+    "section": "unity"
   },
   {
     "name": "Old School Rally",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "old-school-rally"
+    "id": "old-school-rally",
+    "section": "unity"
   },
   {
     "name": "Once Upon a Puppet",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "once-upon-a-puppet"
+    "id": "once-upon-a-puppet",
+    "section": "unity"
   },
   {
     "name": "One-Eyed Likho",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "one-eyed-likho"
+    "id": "one-eyed-likho",
+    "section": "unity"
   },
   {
     "name": "Operation Wolf Returns: First Mission",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "operation-wolf-returns-first-mission"
+    "id": "operation-wolf-returns-first-mission",
+    "notes": "Upgrade R11G11B10_FLOAT",
+    "source_key": "unity:operation-wolf-returns-first-mission",
+    "section": "unity"
   },
   {
     "name": "ORDER 13",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "order-13"
+    "id": "order-13",
+    "notes": "Upgrade R11G11B10_FLOAT. Tonemap/color grading not in real time (change Brightness in game settings to reload)",
+    "source_key": "unity:order-13",
+    "section": "unity"
   },
   {
     "name": "Osiris: New Dawn",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "osiris-new-dawn"
+    "id": "osiris-new-dawn",
+    "section": "unity"
   },
   {
     "name": "Outer Wilds",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "outer-wilds"
+    "id": "outer-wilds",
+    "notes": "Tonemap/color grading not in real time",
+    "source_key": "unity:outer-wilds",
+    "section": "unity"
   },
   {
     "name": "Outward Definitive Edition",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "outward-definitive-edition"
+    "id": "outward-definitive-edition",
+    "section": "unity"
   },
   {
     "name": "Overcooked",
     "slug": "unityengine",
     "arch": "X86",
     "status": "working",
-    "id": "overcooked"
+    "id": "overcooked",
+    "notes": "32-bit. Enable Swapchain Proxy, Encoding: Gamma",
+    "source_key": "unity:overcooked",
+    "section": "unity"
   },
   {
     "name": "Overcooked! 2",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "overcooked-2"
+    "id": "overcooked-2",
+    "notes": "Enable Swapchain Proxy",
+    "source_key": "unity:overcooked-2",
+    "section": "unity"
   },
   {
     "name": "Overcooked! All You Can Eat",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "overcooked-all-you-can-eat"
+    "id": "overcooked-all-you-can-eat",
+    "notes": "64-bit. Enable Swapchain Proxy, Encoding: Gamma. R8G8B8A8_TYPELESS Upgrade to Output ratio or Any Size",
+    "source_key": "unity:overcooked-all-you-can-eat",
+    "section": "unity"
   },
   {
     "name": "Oxenfree",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "oxenfree"
+    "id": "oxenfree",
+    "notes": "Swapchain Encoding: Gamma",
+    "source_key": "unity:oxenfree",
+    "section": "unity"
   },
   {
     "name": "OXENFREE II: Lost Signals",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "oxenfree-ii-lost-signals"
+    "id": "oxenfree-ii-lost-signals",
+    "notes": "Upgrade R11G11B10_FLOAT",
+    "source_key": "unity:oxenfree-ii-lost-signals",
+    "section": "unity"
   },
   {
     "name": "Parkitect",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "parkitect"
+    "id": "parkitect",
+    "section": "unity"
   },
   {
     "name": "Party Club",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "party-club"
+    "id": "party-club",
+    "notes": "Upgrade R10G10B10A2_TYPELESS & R11G11B10_FLOAT",
+    "source_key": "unity:party-club",
+    "section": "unity"
   },
   {
     "name": "Pathfinder: Kingmaker",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "pathfinder-kingmaker"
+    "id": "pathfinder-kingmaker",
+    "section": "unity"
   },
   {
     "name": "Phasmophobia",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "phasmophobia"
+    "id": "phasmophobia",
+    "notes": "Upgrade ??????????????",
+    "source_key": "unity:phasmophobia",
+    "section": "unity"
   },
   {
     "name": "PEAK",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "peak"
+    "id": "peak",
+    "notes": "Use DX11",
+    "source_key": "unity:peak",
+    "section": "unity"
   },
   {
     "name": "People Playground",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "people-playground"
+    "id": "people-playground",
+    "section": "unity"
   },
   {
     "name": "Phoenix Point",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "phoenix-point"
+    "id": "phoenix-point",
+    "section": "unity"
   },
   {
     "name": "Plan B: Terraform",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "plan-b-terraform"
+    "id": "plan-b-terraform",
+    "section": "unity"
   },
   {
     "name": "Planet of Lana 2",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "planet-of-lana-2"
+    "id": "planet-of-lana-2",
+    "section": "unity"
   },
   {
     "name": "Playing Kafka",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "playing-kafka"
+    "id": "playing-kafka",
+    "notes": "Enable Swapchain Proxy",
+    "source_key": "unity:playing-kafka",
+    "section": "unity"
   },
   {
     "name": "Plasma",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "plasma"
+    "id": "plasma",
+    "section": "unity"
   },
   {
     "name": "Pillars of Eternity",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "pillars-of-eternity"
+    "id": "pillars-of-eternity",
+    "notes": "Enable Swapchain Proxy. Set swapchain encoding to Gamma. Set scaling and tonemap offset to 1.",
+    "source_key": "unity:pillars-of-eternity",
+    "section": "unity"
   },
   {
     "name": "Pillars of Eternity II: Deadfire",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "pillars-of-eternity-ii-deadfire"
+    "id": "pillars-of-eternity-ii-deadfire",
+    "notes": "Enable Swapchain Proxy.",
+    "source_key": "unity:pillars-of-eternity-ii-deadfire",
+    "section": "unity"
   },
   {
     "name": "Poly Bridge 3",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "poly-bridge-3"
+    "id": "poly-bridge-3",
+    "section": "unity"
   },
   {
     "name": "POOLS",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "pools"
+    "id": "pools",
+    "section": "unity"
   },
   {
     "name": "POSTAL: Brain Damaged",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "postal-brain-damaged"
+    "id": "postal-brain-damaged",
+    "section": "unity"
   },
   {
     "name": "PowerWash Simulator",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "powerwash-simulator"
+    "id": "powerwash-simulator",
+    "section": "unity"
   },
   {
     "name": "Praey for the Gods",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "praey-for-the-gods"
+    "id": "praey-for-the-gods",
+    "notes": "Enable Swapchain Proxy.",
+    "source_key": "unity:praey-for-the-gods",
+    "section": "unity"
   },
   {
     "name": "Prince of Persia: The Lost Crown",
     "slug": "unityengine",
     "arch": "X64",
     "status": "unknown",
-    "id": "prince-of-persia-the-lost-crown"
+    "id": "prince-of-persia-the-lost-crown",
+    "notes": "Color grading unaffected (other than Peak and UI Brightness). Use the Luma Framework mod below",
+    "source_key": "unity:prince-of-persia-the-lost-crown",
+    "section": "unity"
   },
   {
     "name": "Pummel Party",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "pummel-party"
+    "id": "pummel-party",
+    "section": "unity"
   },
   {
     "name": "Quern - Undying Thoughts",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "quern-undying-thoughts"
+    "id": "quern-undying-thoughts",
+    "notes": "Enable Swapchain Proxy, Encoding: Gamma",
+    "source_key": "unity:quern-undying-thoughts",
+    "section": "unity"
   },
   {
     "name": "Raft",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "raft"
+    "id": "raft",
+    "section": "unity"
   },
   {
     "name": "ReCore: Definitive Edition",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "recore-definitive-edition"
+    "id": "recore-definitive-edition",
+    "section": "unity"
   },
   {
     "name": "REKA",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "reka"
+    "id": "reka",
+    "notes": "Upgrade R11G11B10_FLOAT",
+    "source_key": "unity:reka",
+    "section": "unity"
   },
   {
     "name": "Republique",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "republique"
+    "id": "republique",
+    "section": "unity"
   },
   {
     "name": "R.E.P.O.",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "r-e-p-o"
+    "id": "r-e-p-o",
+    "notes": "Upgrade `R8G8B8A8_TYPELESS` to `Any Size`",
+    "source_key": "unity:r-e-p-o",
+    "section": "unity"
   },
   {
     "name": "REVEIL",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "reveil"
+    "id": "reveil",
+    "notes": "Upgrade R11G11B10_FLOAT",
+    "source_key": "unity:reveil",
+    "section": "unity"
   },
   {
     "name": "RimWorld",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "rimworld"
+    "id": "rimworld",
+    "section": "unity"
   },
   {
     "name": "Risk of Rain 2",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "risk-of-rain-2"
+    "id": "risk-of-rain-2",
+    "section": "unity"
   },
   {
     "name": "Road 96: Mile 0",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "road-96-mile-0"
+    "id": "road-96-mile-0",
+    "notes": "Upgrade R11G11B10_FLOAT",
+    "source_key": "unity:road-96-mile-0",
+    "section": "unity"
   },
   {
     "name": "Road Redemption",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "road-redemption"
+    "id": "road-redemption",
+    "notes": "Tonemap/color grading not in real time",
+    "source_key": "unity:road-redemption",
+    "section": "unity"
   },
   {
     "name": "ROUNDS",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "rounds"
+    "id": "rounds",
+    "section": "unity"
   },
   {
     "name": "Ruined King: A League of Legends Story™",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "ruined-king-a-league-of-legends-story"
+    "id": "ruined-king-a-league-of-legends-story",
+    "notes": "Pause menu background is broken",
+    "source_key": "unity:ruined-king-a-league-of-legends-storytm",
+    "section": "unity"
   },
   {
     "name": "SaGa Emerald Beyond",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "saga-emerald-beyond"
+    "id": "saga-emerald-beyond",
+    "section": "unity"
   },
   {
     "name": "Satellite Reign",
     "slug": "unityengine",
     "arch": "X86",
     "status": "construction",
-    "id": "satellite-reign"
+    "id": "satellite-reign",
+    "notes": "32-bit.",
+    "source_key": "unity:satellite-reign",
+    "section": "unity"
   },
   {
     "name": "Saturnalia",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "saturnalia"
+    "id": "saturnalia",
+    "section": "unity"
   },
   {
     "name": "Schedule I",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "schedule-i"
+    "id": "schedule-i",
+    "section": "unity"
   },
   {
     "name": "Sea of Solitude",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "sea-of-solitude"
+    "id": "sea-of-solitude",
+    "section": "unity"
   },
   {
     "name": "Sektori",
     "slug": "unityengine",
     "arch": "X86",
     "status": "construction",
-    "id": "sektori"
+    "id": "sektori",
+    "notes": "32-bit. Upgrade R11G11B10_FLOAT",
+    "source_key": "unity:sektori",
+    "section": "unity"
   },
   {
     "name": "Shadow Labyrinth",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "shadow-labyrinth"
+    "id": "shadow-labyrinth",
+    "notes": "Upgrade R11G11B10_FLOAT",
+    "source_key": "unity:shadow-labyrinth",
+    "section": "unity"
   },
   {
     "name": "Shadow of the Road (demo)",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "shadow-of-the-road-demo"
+    "id": "shadow-of-the-road-demo",
+    "notes": "Upgrade R11G11B10_FLOAT",
+    "source_key": "unity:shadow-of-the-road-demo",
+    "section": "unity"
   },
   {
     "name": "Shadows: Awakening",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "shadows-awakening"
+    "id": "shadows-awakening",
+    "notes": "Tonemap/color grading not in real time",
+    "source_key": "unity:shadows-awakening",
+    "section": "unity"
   },
   {
     "name": "Shadows of Doubt",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "shadows-of-doubt"
+    "id": "shadows-of-doubt",
+    "notes": "Upgrade R11G11B10_FLOAT",
+    "source_key": "unity:shadows-of-doubt",
+    "section": "unity"
   },
   {
     "name": "Shady Knight",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "shady-knight"
+    "id": "shady-knight",
+    "section": "unity"
   },
   {
     "name": "Shape of Dreams",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "shape-of-dreams"
+    "id": "shape-of-dreams",
+    "notes": "Upgrade R11G11B10_FLOAT. Both compatibility offsets +1",
+    "source_key": "unity:shape-of-dreams",
+    "section": "unity"
   },
   {
     "name": "Shift 87",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "shift-87"
+    "id": "shift-87",
+    "notes": "Upgrade R11G11B10_FLOAT",
+    "source_key": "unity:shift-87",
+    "section": "unity"
   },
   {
     "name": "Skate Story",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "skate-story"
+    "id": "skate-story",
+    "notes": "Upgrade R11G11B10_FLOAT. Disable in-game HDR",
+    "source_key": "unity:skate-story",
+    "section": "unity"
   },
   {
     "name": "Sker Ritual",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "sker-ritual"
+    "id": "sker-ritual",
+    "notes": "Upgrade R11G11B10_FLOAT. Open game graphic settings and hit Apply to refresh Tonemap/Color grading.",
+    "source_key": "unity:sker-ritual",
+    "section": "unity"
   },
   {
     "name": "Sledders",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "sledders"
+    "id": "sledders",
+    "section": "unity"
   },
   {
     "name": "SNØ: Ultimate Freeriding",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "sn-ultimate-freeriding"
+    "id": "sn-ultimate-freeriding",
+    "section": "unity"
   },
   {
     "name": "Spellforce Conquest of Eo",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "spellforce-conquest-of-eo"
+    "id": "spellforce-conquest-of-eo",
+    "notes": "swapchain (enable proxy ?)",
+    "source_key": "unity:spellforce-conquest-of-eo",
+    "section": "unity"
   },
   {
     "name": "Soda Crisis",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "soda-crisis"
+    "id": "soda-crisis",
+    "section": "unity"
   },
   {
     "name": "Solasta: Crown of the Magister",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "solasta-crown-of-the-magister"
+    "id": "solasta-crown-of-the-magister",
+    "section": "unity"
   },
   {
     "name": "Song of the Deep",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "song-of-the-deep"
+    "id": "song-of-the-deep",
+    "section": "unity"
   },
   {
     "name": "Songs Of Silence",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "songs-of-silence"
+    "id": "songs-of-silence",
+    "notes": "Upgrade R10G10B10A2_TYPELESS & R11G11B10_FLOAT. Compatibility Scaling offset +2.",
+    "source_key": "unity:songs-of-silence",
+    "section": "unity"
   },
   {
     "name": "Soulstone Survivors",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "soulstone-survivors"
+    "id": "soulstone-survivors",
+    "notes": "Upgrade R11G11B10_FLOAT",
+    "source_key": "unity:soulstone-survivors",
+    "section": "unity"
   },
   {
     "name": "Spacebase Startopia",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "spacebase-startopia"
+    "id": "spacebase-startopia",
+    "notes": "Upgrade R11G11B10_FLOAT",
+    "source_key": "unity:spacebase-startopia",
+    "section": "unity"
   },
   {
     "name": "Space Crew",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "space-crew"
+    "id": "space-crew",
+    "notes": "Enable Swapchain Proxy",
+    "source_key": "unity:space-crew",
+    "section": "unity"
   },
   {
     "name": "Spark the Electric Jester 3",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "spark-the-electric-jester-3"
+    "id": "spark-the-electric-jester-3",
+    "section": "unity"
   },
   {
     "name": "SpeedRunners 2: King of Speed (Demo)",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "speedrunners-2-king-of-speed-demo"
+    "id": "speedrunners-2-king-of-speed-demo",
+    "section": "unity"
   },
   {
     "name": "Spiritfall",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "spiritfall"
+    "id": "spiritfall",
+    "notes": "Upgrade R11G11B10_FLOAT. Enable Swapchain Proxy",
+    "source_key": "unity:spiritfall",
+    "section": "unity"
   },
   {
     "name": "Spooky's Jump Scare Mansion: HD Renovation",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "spooky-s-jump-scare-mansion-hd-renovation"
+    "id": "spooky-s-jump-scare-mansion-hd-renovation",
+    "notes": "Swapchain Encoding: Gamma. Both Compatibility Offsets +1.",
+    "source_key": "unity:spooky-s-jump-scare-mansion-hd-renovation",
+    "section": "unity"
   },
   {
     "name": "STAR OCEAN THE SECOND STORY R",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "star-ocean-the-second-story-r"
+    "id": "star-ocean-the-second-story-r",
+    "section": "unity"
   },
   {
     "name": "Star Trucker",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "star-trucker"
+    "id": "star-trucker",
+    "section": "unity"
   },
   {
     "name": "SteamWorld Build",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "steamworld-build"
+    "id": "steamworld-build",
+    "section": "unity"
   },
   {
     "name": "Stick Fight: The Game",
     "slug": "unityengine",
     "arch": "X86",
     "status": "working",
-    "id": "stick-fight-the-game"
+    "id": "stick-fight-the-game",
+    "notes": "32-bit. Enable Swapchain Proxy.",
+    "source_key": "unity:stick-fight-the-game",
+    "section": "unity"
   },
   {
     "name": "Streets of Rogue",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "streets-of-rogue"
+    "id": "streets-of-rogue",
+    "notes": "Enable Swapchain Proxy",
+    "source_key": "unity:streets-of-rogue",
+    "section": "unity"
   },
   {
     "name": "SuchArt: Genius Artist Simulator",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "suchart-genius-artist-simulator"
+    "id": "suchart-genius-artist-simulator",
+    "section": "unity"
   },
   {
     "name": "Subnautica",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "subnautica"
+    "id": "subnautica",
+    "section": "unity"
   },
   {
     "name": "Subnautica : Below Zero",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "subnautica-below-zero"
+    "id": "subnautica-below-zero",
+    "section": "unity"
   },
   {
     "name": "Summoner's War: Chronicles",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "summoner-s-war-chronicles"
+    "id": "summoner-s-war-chronicles",
+    "notes": "Enable Bloom in game settings.",
+    "source_key": "unity:summoner-s-war-chronicles",
+    "section": "unity"
   },
   {
     "name": "Sunless Skies: Sovereign Edition",
     "slug": "unityengine",
     "arch": "X86",
     "status": "construction",
-    "id": "sunless-skies-sovereign-edition"
+    "id": "sunless-skies-sovereign-edition",
+    "notes": "32-bit",
+    "source_key": "unity:sunless-skies-sovereign-edition",
+    "section": "unity"
   },
   {
     "name": "Super Bunny Man",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "super-bunny-man"
+    "id": "super-bunny-man",
+    "section": "unity"
   },
   {
     "name": "SUPER CRAZY RHYTHM CASTLE",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "super-crazy-rhythm-castle"
+    "id": "super-crazy-rhythm-castle",
+    "notes": "Upgrade R11G11B10_FLOAT",
+    "source_key": "unity:super-crazy-rhythm-castle",
+    "section": "unity"
   },
   {
     "name": "SUPERHOT",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "superhot"
+    "id": "superhot",
+    "notes": "64 bit, Swapchain Encoding: Gamma.",
+    "source_key": "unity:superhot",
+    "section": "unity"
   },
   {
     "name": "SUPERHOT: MIND CONTROL DELETE",
     "slug": "unityengine",
     "arch": "X86",
     "status": "construction",
-    "id": "superhot-mind-control-delete"
+    "id": "superhot-mind-control-delete",
+    "notes": "32 bit, Enable Swapchain Proxy, Swapchain Encoding: Gamma.",
+    "source_key": "unity:superhot-mind-control-delete",
+    "section": "unity"
   },
   {
     "name": "Superliminal",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "superliminal"
+    "id": "superliminal",
+    "section": "unity"
   },
   {
     "name": "SWORN",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "sworn"
+    "id": "sworn",
+    "notes": "Upgrade R11G11B10_FLOAT",
+    "source_key": "unity:sworn",
+    "section": "unity"
   },
   {
     "name": "Syberia - Remastered",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "syberia-remastered"
+    "id": "syberia-remastered",
+    "notes": "Upgrade R11G11B10_FLOAT",
+    "source_key": "unity:syberia-remastered",
+    "section": "unity"
   },
   {
     "name": "Syberia - The World Before",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "syberia-the-world-before"
+    "id": "syberia-the-world-before",
+    "notes": "Upgrade R11G11B10_FLOAT",
+    "source_key": "unity:syberia-the-world-before",
+    "section": "unity"
   },
   {
     "name": "Tainted Grail: Conquest",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "tainted-grail-conquest"
+    "id": "tainted-grail-conquest",
+    "notes": "Upgrade R11G11B10_FLOAT",
+    "source_key": "unity:tainted-grail-conquest",
+    "section": "unity"
   },
   {
     "name": "Tainted Grail: The Fall of Avalon",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "tainted-grail-the-fall-of-avalon"
+    "id": "tainted-grail-the-fall-of-avalon",
+    "section": "unity"
   },
   {
     "name": "Tales of Berseria Remastered",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "tales-of-berseria-remastered"
+    "id": "tales-of-berseria-remastered",
+    "notes": "64-bit. Enable Swapchain Proxy, Encoding: Gamma. Upgrade R8G8B8A8_TYPELESS. FMV anime cutscenes also affected",
+    "source_key": "unity:tales-of-berseria-remastered",
+    "section": "unity"
   },
   {
     "name": "Tales of Xillia Remastered",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "tales-of-xillia-remastered"
+    "id": "tales-of-xillia-remastered",
+    "notes": "64-bit. Enable Swapchain Proxy, Encoding: Gamma. Upgrade R8G8B8A8_TYPELESS",
+    "source_key": "unity:tales-of-xillia-remastered",
+    "section": "unity"
   },
   {
     "name": "Tales of the Shire: A The Lord of The Rings™ Game",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "tales-of-the-shire-a-the-lord-of-the-rings-game"
+    "id": "tales-of-the-shire-a-the-lord-of-the-rings-game",
+    "notes": "64-bit. Enable Swapchain Proxy, Encoding: Gamma. Upgrade R8G8B8A8_TYPELESS",
+    "source_key": "unity:tales-of-the-shire-a-the-lord-of-the-ringstm-game",
+    "section": "unity"
   },
   {
     "name": "Teenage Mutant Ninja Turtles: Mutants Unleashed",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "teenage-mutant-ninja-turtles-mutants-unleashed"
+    "id": "teenage-mutant-ninja-turtles-mutants-unleashed",
+    "notes": "Upgrade R11G11B10_FLOAT",
+    "source_key": "unity:teenage-mutant-ninja-turtles-mutants-unleashed",
+    "section": "unity"
   },
   {
     "name": "TerraTech",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "terratech"
+    "id": "terratech",
+    "notes": "Enable Swapchain Proxy, Encoding: Gamma",
+    "source_key": "unity:terratech",
+    "section": "unity"
   },
   {
     "name": "The Dungeon Of Naheulbeuk: The Amulet Of Chaos",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "the-dungeon-of-naheulbeuk-the-amulet-of-chaos"
+    "id": "the-dungeon-of-naheulbeuk-the-amulet-of-chaos",
+    "section": "unity"
   },
   {
     "name": "The First Tree",
     "slug": "unityengine",
     "arch": "X86",
     "status": "construction",
-    "id": "the-first-tree"
+    "id": "the-first-tree",
+    "notes": "32-bit. Enable Swapchain Proxy.",
+    "source_key": "unity:the-first-tree",
+    "section": "unity"
   },
   {
     "name": "The Forest",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "the-forest"
+    "id": "the-forest",
+    "section": "unity"
   },
   {
     "name": "The Karters 2: Turbo Charged",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "the-karters-2-turbo-charged"
+    "id": "the-karters-2-turbo-charged",
+    "notes": "Upgrade R11G11B10_FLOAT",
+    "source_key": "unity:the-karters-2-turbo-charged",
+    "section": "unity"
   },
   {
     "name": "The Knightling",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "the-knightling"
+    "id": "the-knightling",
+    "notes": "Upgrade R11G11B10_FLOAT",
+    "source_key": "unity:the-knightling",
+    "section": "unity"
   },
   {
     "name": "The Last Stand: Aftermath",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "the-last-stand-aftermath"
+    "id": "the-last-stand-aftermath",
+    "section": "unity"
   },
   {
     "name": "The Long Dark",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "the-long-dark"
+    "id": "the-long-dark",
+    "section": "unity"
   },
   {
     "name": "The Long Drive",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "the-long-drive"
+    "id": "the-long-drive",
+    "section": "unity"
   },
   {
     "name": "The Looker",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "the-looker"
+    "id": "the-looker",
+    "section": "unity"
   },
   {
     "name": "The Pedestrian",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "the-pedestrian"
+    "id": "the-pedestrian",
+    "notes": "Enable Swapchain Proxy",
+    "source_key": "unity:the-pedestrian",
+    "section": "unity"
   },
   {
     "name": "The Precinct",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "the-precinct"
+    "id": "the-precinct",
+    "section": "unity"
   },
   {
     "name": "The Rogue Prince of Persia",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "the-rogue-prince-of-persia"
+    "id": "the-rogue-prince-of-persia",
+    "notes": "Upgrade R11G11B10_FLOAT",
+    "source_key": "unity:the-rogue-prince-of-persia",
+    "section": "unity"
   },
   {
     "name": "The Universim",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "the-universim"
+    "id": "the-universim",
+    "section": "unity"
   },
   {
     "name": "The Upturned",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "the-upturned"
+    "id": "the-upturned",
+    "notes": "Upgrade R11G11B10_FLOAT. Compatibility Scaling offset +1",
+    "source_key": "unity:the-upturned",
+    "section": "unity"
   },
   {
     "name": "Timelie",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "timelie"
+    "id": "timelie",
+    "section": "unity"
   },
   {
     "name": "Tin Can",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "tin-can"
+    "id": "tin-can",
+    "notes": "Upgrade R11G11B10_FLOAT",
+    "source_key": "unity:tin-can",
+    "section": "unity"
   },
   {
     "name": "Tinykin",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "tinykin"
+    "id": "tinykin",
+    "notes": "Upgrade R11G11B10_FLOAT",
+    "source_key": "unity:tinykin",
+    "section": "unity"
   },
   {
     "name": "Tormented Souls",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "tormented-souls"
+    "id": "tormented-souls",
+    "section": "unity"
   },
   {
     "name": "Total Chaos (Demo)",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "total-chaos-demo"
+    "id": "total-chaos-demo",
+    "section": "unity"
   },
   {
     "name": "Totally Accurate Battle Simulator",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "totally-accurate-battle-simulator"
+    "id": "totally-accurate-battle-simulator",
+    "section": "unity"
   },
   {
     "name": "Totally Reliable Delivery Service",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "totally-reliable-delivery-service"
+    "id": "totally-reliable-delivery-service",
+    "section": "unity"
   },
   {
     "name": "东方异域见闻 ~ Touhou Dystopian",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "touhou-dystopian"
+    "id": "touhou-dystopian",
+    "notes": "Upgrade R11G11B10_FLOAT",
+    "source_key": "unity:touhou-dystopian",
+    "section": "unity"
   },
   {
     "name": "Towa and the Guardians of the Sacred Tree",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "towa-and-the-guardians-of-the-sacred-tree"
+    "id": "towa-and-the-guardians-of-the-sacred-tree",
+    "notes": "Upgrade R10G10B10A2_TYPELESS & R11G11B10_FLOAT",
+    "source_key": "unity:towa-and-the-guardians-of-the-sacred-tree",
+    "section": "unity"
   },
   {
     "name": "Towaga: Among Shadows",
     "slug": "unityengine",
     "arch": "X86",
     "status": "construction",
-    "id": "towaga-among-shadows"
+    "id": "towaga-among-shadows",
+    "notes": "32-bit. Enable Swapchain Proxy. Enable Post-processing in game settings.",
+    "source_key": "unity:towaga-among-shadows",
+    "section": "unity"
   },
   {
     "name": "Trailmakers",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "trailmakers"
+    "id": "trailmakers",
+    "notes": "Enable Post Processing (any quality) and Internal HDR in game settings",
+    "source_key": "unity:trailmakers",
+    "section": "unity"
   },
   {
     "name": "TRY AGAIN",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "try-again"
+    "id": "try-again",
+    "section": "unity"
   },
   {
     "name": "Turbo Dismount 2",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "turbo-dismount-2"
+    "id": "turbo-dismount-2",
+    "section": "unity"
   },
   {
     "name": "Turbo Golf Racing",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "turbo-golf-racing"
+    "id": "turbo-golf-racing",
+    "notes": "Enable Post-Processing in game's graphics settings.",
+    "source_key": "unity:turbo-golf-racing",
+    "section": "unity"
   },
   {
     "name": "Turbo Overkill",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "turbo-overkill"
+    "id": "turbo-overkill",
+    "section": "unity"
   },
   {
     "name": "Tunguska The Visitation",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "tunguska-the-visitation"
+    "id": "tunguska-the-visitation",
+    "section": "unity"
   },
   {
     "name": "Two Point Hospital",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "two-point-hospital"
+    "id": "two-point-hospital",
+    "notes": "Enable Swapchain Proxy",
+    "source_key": "unity:two-point-hospital",
+    "section": "unity"
   },
   {
     "name": "Ultros",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "ultros"
+    "id": "ultros",
+    "notes": "Enable Color Grading in game settings.",
+    "source_key": "unity:ultros",
+    "section": "unity"
   },
   {
     "name": "UNDYING",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "undying"
+    "id": "undying",
+    "notes": "Upgrade R11G11B10_FLOAT (>= Output_Ratio) if using FSR1",
+    "source_key": "unity:undying",
+    "section": "unity"
   },
   {
     "name": "Unruly Heroes",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "unruly-heroes"
+    "id": "unruly-heroes",
+    "notes": "Enable Swapchain Proxy",
+    "source_key": "unity:unruly-heroes",
+    "section": "unity"
   },
   {
     "name": "Valley",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "valley"
+    "id": "valley",
+    "notes": "Enable Swapchain Proxy",
+    "source_key": "unity:valley",
+    "section": "unity"
   },
   {
     "name": "Viewfinder",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "viewfinder"
+    "id": "viewfinder",
+    "notes": "Upgrade R11G11B10_FLOAT. Enable Post-processing in game settings.",
+    "source_key": "unity:viewfinder",
+    "section": "unity"
   },
   {
     "name": "Void Crew",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "void-crew"
+    "id": "void-crew",
+    "notes": "Upgrade R11G11B10_FLOAT. DLSS clamps colors to bt709",
+    "source_key": "unity:void-crew",
+    "section": "unity"
   },
   {
     "name": "V Rising",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "v-rising"
+    "id": "v-rising",
+    "notes": "Toggle Pause or Options menu in solo to refresh LUT. In multi stay under the sun or in Graphic settings Calibrate Brightness > Confirm (leave 50 default value)",
+    "source_key": "unity:v-rising",
+    "section": "unity"
   },
   {
     "name": "Vigil: The Longest Night",
     "slug": "unityengine",
     "arch": "X86",
     "status": "construction",
-    "id": "vigil-the-longest-night"
+    "id": "vigil-the-longest-night",
+    "notes": "32-bit.",
+    "source_key": "unity:vigil-the-longest-night",
+    "section": "unity"
   },
   {
     "name": "Warhammer 40,000: Battlesector",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "warhammer-40-000-battlesector"
+    "id": "warhammer-40-000-battlesector",
+    "section": "unity"
   },
   {
     "name": "Warhammer 40,000: Mechanicus",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "warhammer-40-000-mechanicus"
+    "id": "warhammer-40-000-mechanicus",
+    "section": "unity"
   },
   {
     "name": "Warhammer 40,000: Rogue Trader",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "warhammer-40-000-rogue-trader"
+    "id": "warhammer-40-000-rogue-trader",
+    "section": "unity"
   },
   {
     "name": "Warhammer 40,000: Shootas, Blood & Teef",
     "slug": "unityengine",
     "arch": "X86",
     "status": "construction",
-    "id": "warhammer-40-000-shootas-blood-teef"
+    "id": "warhammer-40-000-shootas-blood-teef",
+    "notes": "32-bit.",
+    "source_key": "unity:warhammer-40-000-shootas-blood-teef",
+    "section": "unity"
   },
   {
     "name": "Warpips",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "warpips"
+    "id": "warpips",
+    "section": "unity"
   },
   {
     "name": "War for the Overlord",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "war-for-the-overlord"
+    "id": "war-for-the-overlord",
+    "section": "unity"
   },
   {
     "name": "Wasteland 2 Directors Cut",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "wasteland-2-directors-cut"
+    "id": "wasteland-2-directors-cut",
+    "notes": "Enable Swapchain Proxy.",
+    "source_key": "unity:wasteland-2-directors-cut",
+    "section": "unity"
   },
   {
     "name": "Wasteland 3",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "wasteland-3"
+    "id": "wasteland-3",
+    "notes": "Upgrade R11G11B10_FLOAT. Enable Swapchain Proxy. Compatibility Scaling offset +1",
+    "source_key": "unity:wasteland-3",
+    "section": "unity"
   },
   {
     "name": "Wavetale",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "wavetale"
+    "id": "wavetale",
+    "notes": "Upgrade R11G11B10_FLOAT",
+    "source_key": "unity:wavetale",
+    "section": "unity"
   },
   {
     "name": "We Were Here Expeditions: The FriendShip",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "we-were-here-expeditions-the-friendship"
+    "id": "we-were-here-expeditions-the-friendship",
+    "notes": "Upgrade R11G11B10_FLOAT",
+    "source_key": "unity:we-were-here-expeditions-the-friendship",
+    "section": "unity"
   },
   {
     "name": "Wheel World",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "wheel-world"
+    "id": "wheel-world",
+    "section": "unity"
   },
   {
     "name": "Whisper of the House",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "whisper-of-the-house"
+    "id": "whisper-of-the-house",
+    "section": "unity"
   },
   {
     "name": "Wildmender",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "wildmender"
+    "id": "wildmender",
+    "section": "unity"
   },
   {
     "name": "Windblown",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "windblown"
+    "id": "windblown",
+    "notes": "Upgrade R10G10B10A2_TYPELESS & R11G11B10_FLOAT if using FSR1",
+    "source_key": "unity:windblown",
+    "section": "unity"
   },
   {
     "name": "Windbound",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "windbound"
+    "id": "windbound",
+    "section": "unity"
   },
   {
     "name": "WitchSpring R - The Story of Pieberry",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "witchspring-r-the-story-of-pieberry"
+    "id": "witchspring-r-the-story-of-pieberry",
+    "notes": "Upgrade R11G11B10_FLOAT",
+    "source_key": "unity:witchspring-r-the-story-of-pieberry",
+    "section": "unity"
   },
   {
     "name": "Wizard with a Gun",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "wizard-with-a-gun"
+    "id": "wizard-with-a-gun",
+    "notes": "Enable Swapchain Proxy. Recommend raising highlights quite a bit as highlights are quite dim otherwise.",
+    "source_key": "unity:wizard-with-a-gun",
+    "section": "unity"
   },
   {
     "name": "XF Extreme Formula",
     "slug": "unityengine",
     "arch": "X64",
     "status": "working",
-    "id": "xf-extreme-formula"
+    "id": "xf-extreme-formula",
+    "section": "unity"
   },
   {
     "name": "Yooka-Replaylee",
     "slug": "unityengine",
     "arch": "X64",
     "status": "construction",
-    "id": "yooka-replaylee"
+    "id": "yooka-replaylee",
+    "notes": "Upgrade R11G11B10_FLOAT",
+    "source_key": "unity:yooka-replaylee",
+    "section": "unity"
   }
 ]

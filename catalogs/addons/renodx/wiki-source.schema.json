@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://renderpilot.app/schema/catalogs/addons/renodx/wiki-source.json",
+  "title": "RenoDX wiki source snapshot",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "url", "content_sha256"],
+  "properties": {
+    "schema_version": { "const": 1 },
+    "url": { "type": "string", "format": "uri", "pattern": "^https://" },
+    "content_sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" }
+  }
+}
