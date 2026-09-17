@@ -8915,8 +8915,8 @@
         {
           "fingerprint": "ad32f7941a3400f2c70150b4358ddf7daea570ae843af0517fd265e8c0a66f77",
           "disposition": {
-            "kind": "omitted",
-            "reason": "The required external DLSS mod is not a bounded OptiScaler policy."
+            "kind": "guidance",
+            "message_ids": ["optiscaler-assassins-creed-origins-dlss-mod"]
           }
         }
       ]
@@ -8932,8 +8932,8 @@
         {
           "fingerprint": "df5e4a30a1fbe570123b5f8b1cdc2d448e9625ddd5ea20791e2e48f969938076",
           "disposition": {
-            "kind": "omitted",
-            "reason": "The required external framework and mods are not a bounded OptiScaler policy."
+            "kind": "guidance",
+            "message_ids": ["optiscaler-devil-may-cry-5-reframework-pdperfplugin"]
           }
         }
       ]
@@ -8966,8 +8966,8 @@
         {
           "fingerprint": "912852fe0a7380941a4639cf973f95dbaced232080cfb8a4360cfbf0a5fa986b",
           "disposition": {
-            "kind": "omitted",
-            "reason": "The external base-mod requirement is not represented by a typed prerequisite."
+            "kind": "guidance",
+            "message_ids": ["optiscaler-elden-ring-erss-fg-mod"]
           }
         }
       ]
@@ -9168,8 +9168,8 @@
         {
           "fingerprint": "816f32a7845118ea098cd75b2c50a9a28a0335fbca3487abda3b5f8419ca8626",
           "disposition": {
-            "kind": "omitted",
-            "reason": "The external base-mod requirement is not represented by a typed prerequisite."
+            "kind": "guidance",
+            "message_ids": ["optiscaler-sekiro-shadows-die-twice-sekirotsr-mod"]
           }
         }
       ]
@@ -9185,8 +9185,8 @@
         {
           "fingerprint": "ad32f7941a3400f2c70150b4358ddf7daea570ae843af0517fd265e8c0a66f77",
           "disposition": {
-            "kind": "omitted",
-            "reason": "The required external DLSS mod is not a bounded OptiScaler policy."
+            "kind": "guidance",
+            "message_ids": ["optiscaler-ghost-recon-wildlands-dlss-mod"]
           }
         }
       ]

@@ -2416,6 +2416,86 @@
         "zh-Hans": "此游戏需要 REFramework 才能运行。",
         "zh-Hant": "此遊戲需要 REFramework 才能運作。"
       }
+    },
+    {
+      "id": "optiscaler-assassins-creed-origins-dlss-mod",
+      "fallback_text": "A third-party DLSS mod is required for this game to work with OptiScaler.",
+      "guidance_kind": "compatibility",
+      "context": "compatibility",
+      "translations": {
+        "de": "Für dieses Spiel ist eine DLSS-Mod eines Drittanbieters erforderlich, damit OptiScaler funktioniert.",
+        "es": "Este juego requiere un mod de DLSS de terceros para funcionar con OptiScaler.",
+        "fr": "Un mod DLSS tiers est requis pour que ce jeu fonctionne avec OptiScaler.",
+        "ja": "このゲームで OptiScaler を動作させるには、サードパーティ製の DLSS MOD が必要です。",
+        "pt-BR": "Um mod de DLSS de terceiros é necessário para que este jogo funcione com o OptiScaler.",
+        "ru": "Для работы OptiScaler в этой игре требуется сторонний мод с поддержкой DLSS.",
+        "zh-Hans": "此游戏需要第三方 DLSS 模组才能与 OptiScaler 配合使用。",
+        "zh-Hant": "此遊戲需要第三方 DLSS 模組才能與 OptiScaler 配合使用。"
+      }
+    },
+    {
+      "id": "optiscaler-ghost-recon-wildlands-dlss-mod",
+      "fallback_text": "A third-party DLSS mod is required for this game to work with OptiScaler.",
+      "guidance_kind": "compatibility",
+      "context": "compatibility",
+      "translations": {
+        "de": "Für dieses Spiel ist eine DLSS-Mod eines Drittanbieters erforderlich, damit OptiScaler funktioniert.",
+        "es": "Este juego requiere un mod de DLSS de terceros para funcionar con OptiScaler.",
+        "fr": "Un mod DLSS tiers est requis pour que ce jeu fonctionne avec OptiScaler.",
+        "ja": "このゲームで OptiScaler を動作させるには、サードパーティ製の DLSS MOD が必要です。",
+        "pt-BR": "Um mod de DLSS de terceiros é necessário para que este jogo funcione com o OptiScaler.",
+        "ru": "Для работы OptiScaler в этой игре требуется сторонний мод с поддержкой DLSS.",
+        "zh-Hans": "此游戏需要第三方 DLSS 模组才能与 OptiScaler 配合使用。",
+        "zh-Hant": "此遊戲需要第三方 DLSS 模組才能與 OptiScaler 配合使用。"
+      }
+    },
+    {
+      "id": "optiscaler-elden-ring-erss-fg-mod",
+      "fallback_text": "The ERSS-FG mod is required as a basis for upscaling and Frame Generation.",
+      "guidance_kind": "compatibility",
+      "context": "compatibility",
+      "translations": {
+        "de": "Die Mod ERSS-FG ist als Basis für Hochskalierung und Frame-Erstellung erforderlich.",
+        "es": "Se requiere el mod ERSS-FG como base para el escalado y la generación de fotogramas.",
+        "fr": "Le mod ERSS-FG est requis comme base pour la mise à l’échelle et la génération d’images.",
+        "ja": "アップスケーリングとフレーム生成のベースとして ERSS-FG MOD が必要です。",
+        "pt-BR": "O mod ERSS-FG é necessário como base para upscaling e geração de quadros.",
+        "ru": "Для масштабирования и генерации кадров требуется мод ERSS-FG.",
+        "zh-Hans": "需要使用 ERSS-FG 模组作为缩放和帧生成的基础。",
+        "zh-Hant": "需要使用 ERSS-FG 模組作為縮放和畫格生成基礎。"
+      }
+    },
+    {
+      "id": "optiscaler-sekiro-shadows-die-twice-sekirotsr-mod",
+      "fallback_text": "The SekiroTSR mod is required as a basis for DLSS inputs.",
+      "guidance_kind": "compatibility",
+      "context": "compatibility",
+      "translations": {
+        "de": "Die Mod SekiroTSR ist als Basis für DLSS-Eingaben erforderlich.",
+        "es": "Se requiere el mod SekiroTSR como base para las entradas DLSS.",
+        "fr": "Le mod SekiroTSR est requis comme base pour les entrées DLSS.",
+        "ja": "DLSS 入力のベースとして SekiroTSR MOD が必要です。",
+        "pt-BR": "O mod SekiroTSR é necessário como base para as entradas DLSS.",
+        "ru": "Для работы требуется мод SekiroTSR в качестве основы для режима DLSS.",
+        "zh-Hans": "需要使用 SekiroTSR 模组作为 DLSS 输入的基础。",
+        "zh-Hant": "需要使用 SekiroTSR 模組作為 DLSS 輸入的基礎。"
+      }
+    },
+    {
+      "id": "optiscaler-devil-may-cry-5-reframework-pdperfplugin",
+      "fallback_text": "REFramework (pd-upscaler branch) and PDPerfPlugin are required for this game to work.",
+      "guidance_kind": "compatibility",
+      "context": "compatibility",
+      "translations": {
+        "de": "Für dieses Spiel sind REFramework (pd-upscaler branch) und PDPerfPlugin erforderlich.",
+        "es": "Este juego requiere REFramework (pd-upscaler branch) y PDPerfPlugin.",
+        "fr": "Ce jeu nécessite REFramework (pd-upscaler branch) et PDPerfPlugin.",
+        "ja": "このゲームを動作させるには REFramework（pd-upscaler branch）と PDPerfPlugin が必要です。",
+        "pt-BR": "O REFramework (branch pd-upscaler) e o PDPerfPlugin são necessários para que este jogo funcione.",
+        "ru": "Для работы требуются REFramework (ветка pd-upscaler) и PDPerfPlugin.",
+        "zh-Hans": "此游戏需要 REFramework（pd-upscaler 分支）和 PDPerfPlugin 才能运行。",
+        "zh-Hant": "此遊戲需要 REFramework（pd-upscaler 分支）和 PDPerfPlugin 才能運作。"
+      }
     }
   ]
 }

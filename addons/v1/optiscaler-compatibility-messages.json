@@ -27,6 +27,12 @@
       "context": "game_setting"
     },
     {
+      "id": "optiscaler-assassins-creed-origins-dlss-mod",
+      "fallback_text": "A third-party DLSS mod is required for this game to work with OptiScaler.",
+      "guidance_kind": "compatibility",
+      "context": "compatibility"
+    },
+    {
       "id": "optiscaler-assassins-creed-shadows-overlay-hdr",
       "fallback_text": "Disable the Ubisoft Connect in-game overlay and HDR while using OptiScaler to avoid severe ghosting.",
       "guidance_kind": "game_setting",
@@ -219,6 +225,12 @@
       "context": "compatibility"
     },
     {
+      "id": "optiscaler-devil-may-cry-5-reframework-pdperfplugin",
+      "fallback_text": "REFramework (pd-upscaler branch) and PDPerfPlugin are required for this game to work.",
+      "guidance_kind": "compatibility",
+      "context": "compatibility"
+    },
+    {
       "id": "optiscaler-diablo-iv-dx12",
       "fallback_text": "Run the game in DirectX 12 mode.",
       "guidance_kind": "compatibility",
@@ -241,6 +253,12 @@
       "fallback_text": "When using FSR 4, select the Non-Linear sRGB input color space to fix screen flicker.",
       "guidance_kind": "game_setting",
       "context": "game_setting"
+    },
+    {
+      "id": "optiscaler-elden-ring-erss-fg-mod",
+      "fallback_text": "The ERSS-FG mod is required as a basis for upscaling and Frame Generation.",
+      "guidance_kind": "compatibility",
+      "context": "compatibility"
     },
     {
       "id": "optiscaler-escape-simulator-2-demo-dynamic-resolution",
@@ -313,6 +331,12 @@
       "fallback_text": "Use FSR input. If FSR 4 flickers at the Balanced preset, select the Non-Linear sRGB input color space.",
       "guidance_kind": "game_setting",
       "context": "game_setting"
+    },
+    {
+      "id": "optiscaler-ghost-recon-wildlands-dlss-mod",
+      "fallback_text": "A third-party DLSS mod is required for this game to work with OptiScaler.",
+      "guidance_kind": "compatibility",
+      "context": "compatibility"
     },
     {
       "id": "optiscaler-ghostrunner-2-dx12-performance",
@@ -671,6 +695,12 @@
     {
       "id": "optiscaler-scp-secret-files-dx12",
       "fallback_text": "Do not select an FSR 2 input; it can crash. DirectX 11 has lower performance and severe shimmer.",
+      "guidance_kind": "compatibility",
+      "context": "compatibility"
+    },
+    {
+      "id": "optiscaler-sekiro-shadows-die-twice-sekirotsr-mod",
+      "fallback_text": "The SekiroTSR mod is required as a basis for DLSS inputs.",
       "guidance_kind": "compatibility",
       "context": "compatibility"
     },

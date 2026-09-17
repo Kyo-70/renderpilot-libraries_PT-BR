@@ -854,7 +854,15 @@
         }
       ],
       "declared_inputs": ["dlss2_plus"],
-      "guidance": [],
+      "guidance": [
+        {
+          "kind": "compatibility",
+          "message": {
+            "id": "optiscaler-assassins-creed-origins-dlss-mod",
+            "fallback_text": "A third-party DLSS mod is required for this game to work with OptiScaler."
+          }
+        }
+      ],
       "variants": [
         {
           "proxy": {
@@ -4100,7 +4108,15 @@
         }
       ],
       "declared_inputs": ["dlss2_plus"],
-      "guidance": [],
+      "guidance": [
+        {
+          "kind": "compatibility",
+          "message": {
+            "id": "optiscaler-devil-may-cry-5-reframework-pdperfplugin",
+            "fallback_text": "REFramework (pd-upscaler branch) and PDPerfPlugin are required for this game to work."
+          }
+        }
+      ],
       "variants": [
         {
           "proxy": {
@@ -4801,7 +4817,15 @@
         }
       ],
       "declared_inputs": ["fsr2_plus", "xess"],
-      "guidance": [],
+      "guidance": [
+        {
+          "kind": "compatibility",
+          "message": {
+            "id": "optiscaler-elden-ring-erss-fg-mod",
+            "fallback_text": "The ERSS-FG mod is required as a basis for upscaling and Frame Generation."
+          }
+        }
+      ],
       "variants": [
         {
           "proxy": {
@@ -6323,7 +6347,15 @@
         }
       ],
       "declared_inputs": ["dlss2_plus"],
-      "guidance": [],
+      "guidance": [
+        {
+          "kind": "compatibility",
+          "message": {
+            "id": "optiscaler-ghost-recon-wildlands-dlss-mod",
+            "fallback_text": "A third-party DLSS mod is required for this game to work with OptiScaler."
+          }
+        }
+      ],
       "variants": [
         {
           "proxy": {
@@ -13098,7 +13130,15 @@
         }
       ],
       "declared_inputs": ["dlss2_plus"],
-      "guidance": [],
+      "guidance": [
+        {
+          "kind": "compatibility",
+          "message": {
+            "id": "optiscaler-sekiro-shadows-die-twice-sekirotsr-mod",
+            "fallback_text": "The SekiroTSR mod is required as a basis for DLSS inputs."
+          }
+        }
+      ],
       "variants": [
         {
           "proxy": {

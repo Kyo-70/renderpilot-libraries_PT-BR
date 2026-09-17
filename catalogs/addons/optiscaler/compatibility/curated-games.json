@@ -2376,7 +2376,12 @@
       "source_ref": "upscaler_mods:0004",
       "status": "working",
       "declared_inputs": ["fsr2_plus", "xess"],
-      "guidance": [],
+      "guidance": [
+        {
+          "kind": "compatibility",
+          "message_id": "optiscaler-elden-ring-erss-fg-mod"
+        }
+      ],
       "variants": [
         {
           "proxy": {
@@ -3416,7 +3421,12 @@
       "source_ref": "upscaler_mods:0016",
       "status": "working",
       "declared_inputs": ["dlss2_plus"],
-      "guidance": [],
+      "guidance": [
+        {
+          "kind": "compatibility",
+          "message_id": "optiscaler-sekiro-shadows-die-twice-sekirotsr-mod"
+        }
+      ],
       "variants": [
         {
           "proxy": {
@@ -6497,7 +6507,12 @@
       "source_ref": "upscaler_mods:0002",
       "status": "working",
       "declared_inputs": ["dlss2_plus"],
-      "guidance": [],
+      "guidance": [
+        {
+          "kind": "compatibility",
+          "message_id": "optiscaler-devil-may-cry-5-reframework-pdperfplugin"
+        }
+      ],
       "variants": [
         {
           "proxy": {
@@ -14157,7 +14172,12 @@
       "source_ref": "upscaler_mods:0001",
       "status": "working",
       "declared_inputs": ["dlss2_plus"],
-      "guidance": [],
+      "guidance": [
+        {
+          "kind": "compatibility",
+          "message_id": "optiscaler-assassins-creed-origins-dlss-mod"
+        }
+      ],
       "variants": [
         {
           "proxy": {
@@ -14195,7 +14215,12 @@
       "source_ref": "upscaler_mods:0017",
       "status": "working",
       "declared_inputs": ["dlss2_plus"],
-      "guidance": [],
+      "guidance": [
+        {
+          "kind": "compatibility",
+          "message_id": "optiscaler-ghost-recon-wildlands-dlss-mod"
+        }
+      ],
       "variants": [
         {
           "proxy": {

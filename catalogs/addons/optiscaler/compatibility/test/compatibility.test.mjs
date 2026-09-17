@@ -77,6 +77,42 @@ const EXPECTED_REFRAMEWORK_FAMILY = [
     fallbackText: "REFramework is required for this game to work.",
   },
 ];
+const EXPECTED_EXTERNAL_MOD_GUIDANCE_FAMILY = [
+  {
+    id: "assassins-creed-origins",
+    sourceKey: "upscaler_mods:0001",
+    messageId: "optiscaler-assassins-creed-origins-dlss-mod",
+    fallbackText:
+      "A third-party DLSS mod is required for this game to work with OptiScaler.",
+  },
+  {
+    id: "devil-may-cry-5",
+    sourceKey: "upscaler_mods:0002",
+    messageId: "optiscaler-devil-may-cry-5-reframework-pdperfplugin",
+    fallbackText:
+      "REFramework (pd-upscaler branch) and PDPerfPlugin are required for this game to work.",
+  },
+  {
+    id: "elden-ring",
+    sourceKey: "upscaler_mods:0004",
+    messageId: "optiscaler-elden-ring-erss-fg-mod",
+    fallbackText:
+      "The ERSS-FG mod is required as a basis for upscaling and Frame Generation.",
+  },
+  {
+    id: "sekiro-shadows-die-twice",
+    sourceKey: "upscaler_mods:0016",
+    messageId: "optiscaler-sekiro-shadows-die-twice-sekirotsr-mod",
+    fallbackText: "The SekiroTSR mod is required as a basis for DLSS inputs.",
+  },
+  {
+    id: "ghost-recon-wildlands",
+    sourceKey: "upscaler_mods:0017",
+    messageId: "optiscaler-ghost-recon-wildlands-dlss-mod",
+    fallbackText:
+      "A third-party DLSS mod is required for this game to work with OptiScaler.",
+  },
+];
 const GENERIC_PENDING_IDENTITY_REASON = "An exact runtime identity has not been curated.";
 const EXPECTED_PENDING_IDENTITY_REASONS = {
   "main:0013":
@@ -625,7 +661,7 @@ test("Russian compatibility guidance names technology modes and input color spac
   const technologyModeMessages = inputs.messages.messages.filter(
     (message) => isTechnologyInputMessage(message) && !isInputColorSpaceMessage(message),
   );
-  assert.equal(technologyModeMessages.length, 39);
+  assert.equal(technologyModeMessages.length, 40);
   for (const message of technologyModeMessages) {
     assert.match(
       message.translations.ru,
@@ -651,7 +687,7 @@ test("frame-generation guidance uses the localized term in every published local
     /frame generation/iu.test(message.fallback_text),
   );
 
-  assert.equal(frameGenerationMessages.length, 10);
+  assert.equal(frameGenerationMessages.length, 11);
   for (const message of frameGenerationMessages) {
     for (const [locale, term] of Object.entries(localizedTerms)) {
       const translation = message.translations[locale];
@@ -1054,6 +1090,46 @@ test("REFramework compatibility warnings preserve exact external requirements wi
         ?.rules.find((rule) => rule.kind === "steam_appid")?.value,
       expected.steamAppId,
     );
+    assert.equal(
+      catalog.entries.find((entry) => entry.id === expected.id) !== undefined,
+      true,
+    );
+  }
+});
+
+test("upscaler mods external requirements preserve exact user guidance messages", async () => {
+  const inputs = await fixture();
+  const { catalog, messageContract } = buildCompatibilityCatalog(inputs);
+  const ledgerBySource = new Map(inputs.ledger.rows.map((row) => [row.source_key, row]));
+  const entriesById = new Map(
+    inputs.curatedGames.entries.map((entry) => [entry.id, entry]),
+  );
+  const messagesById = new Map(
+    messageContract.messages.map((message) => [message.id, message]),
+  );
+
+  assert.equal(EXPECTED_EXTERNAL_MOD_GUIDANCE_FAMILY.length, 5);
+  for (const expected of EXPECTED_EXTERNAL_MOD_GUIDANCE_FAMILY) {
+    const entry = entriesById.get(expected.id);
+    assert.deepEqual(entry?.source_ref, expected.sourceKey);
+    assert.deepEqual(entry?.status, "working");
+    assert.deepEqual(entry?.guidance, [
+      { kind: "compatibility", message_id: expected.messageId },
+    ]);
+    assert.deepEqual(ledgerBySource.get(expected.sourceKey)?.disposition, {
+      kind: "published",
+      entry_id: expected.id,
+    });
+    assert.deepEqual(ledgerBySource.get(expected.sourceKey)?.notes?.[0]?.disposition, {
+      kind: "guidance",
+      message_ids: [expected.messageId],
+    });
+    assert.deepEqual(messagesById.get(expected.messageId), {
+      id: expected.messageId,
+      fallback_text: expected.fallbackText,
+      guidance_kind: "compatibility",
+      context: "compatibility",
+    });
     assert.equal(
       catalog.entries.find((entry) => entry.id === expected.id) !== undefined,
       true,
