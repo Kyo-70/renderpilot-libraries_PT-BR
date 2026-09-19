@@ -55,7 +55,11 @@ export function extractMarkdownTables(markdown) {
       const heading = headingMatch[1].trim().toLowerCase();
       isDeprecated = heading.includes("deprecated");
       isExcluded = isDeprecated || heading.includes("related mods");
-      if (heading.includes("ue extended") || heading.includes("ue-extended")) {
+      if (
+        heading.includes("ue extended") ||
+        heading.includes("ue-extended") ||
+        heading.includes("unreal engine extended")
+      ) {
         engineContext = "ue-extended";
       } else if (heading.includes("unity")) {
         engineContext = "unity";

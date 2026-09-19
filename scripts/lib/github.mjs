@@ -29,8 +29,9 @@ export function githubHeaders() {
     Accept: "application/vnd.github+json",
   };
 
-  if (process.env.GITHUB_TOKEN) {
-    headers.Authorization = `Bearer ${process.env.GITHUB_TOKEN}`;
+  const token = process.env.GITHUB_TOKEN || process.env.GH_TOKEN;
+  if (token) {
+    headers.Authorization = `Bearer ${token}`;
   }
 
   return headers;
