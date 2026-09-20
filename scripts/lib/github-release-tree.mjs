@@ -10,7 +10,6 @@ import {
   assertPeNamedExports,
   assertVendorSource,
   blobObjectKey,
-  legalDocumentObjectKey,
   recordImmutableObjectIdentity,
 } from "./library-catalog.mjs";
 import {

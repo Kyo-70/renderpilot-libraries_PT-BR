@@ -940,8 +940,12 @@ test("current Wiki refresh preserves the verified ordinal rekey and exact Zero C
     SHIFTED_MAIN_SOURCE_KEYS,
   );
   const stableShiftedPayloads = SHIFTED_MAIN_SOURCE_KEYS.map((sourceKey) => {
-    const { source_key, row_fingerprint, note_fingerprint, ...payload } =
-      snapshotBySource.get(sourceKey);
+    const {
+      source_key: _source_key,
+      row_fingerprint: _row_fingerprint,
+      note_fingerprint: _note_fingerprint,
+      ...payload
+    } = snapshotBySource.get(sourceKey);
     return JSON.stringify(payload);
   });
   assert.equal(

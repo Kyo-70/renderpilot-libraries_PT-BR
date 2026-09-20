@@ -2,7 +2,7 @@ import { validateCompatibilityAuthoring } from "./validate-authoring.mjs";
 
 /** Builds the two public, intentionally title-free compatibility documents. */
 export function buildCompatibilityCatalog(inputs) {
-  const { snapshot, curatedGames, messages } = inputs;
+  const { snapshot, curatedGames } = inputs;
   const { entries, messageIndex } = validateCompatibilityAuthoring(inputs);
   const orderedEntries = [...entries].sort((left, right) =>
     left.id.localeCompare(right.id),

@@ -9,7 +9,6 @@ import {
   jsonDocuments,
   libraryVendors,
   microsoftLibraryVendor,
-  publishedJsonDocuments,
   repoRoot,
 } from "../catalog.mjs";
 import {
@@ -789,10 +788,4 @@ function compositeSourceBuild() {
       },
     ],
   };
-}
-
-function normalizeNumericVersion(value) {
-  const parts = value.split(".");
-  while (parts.length > 1 && parts.at(-1) === "0") parts.pop();
-  return parts.map((part) => String(BigInt(part))).join(".");
 }
