@@ -191,7 +191,6 @@ test("buildManifest validates messages.json against curated_games.json guidance"
 test("buildManifest validates availability messages with availability.blocked context", () => {
   const baseCurated = loadJson(CURATED_PATH);
   const messagesData = loadJson(MESSAGES_PATH);
-  const registry = createMatchRegistry(loadJson(MATCH_REGISTRY_PATH));
 
   const curatedWithBlocked = [
     ...baseCurated,

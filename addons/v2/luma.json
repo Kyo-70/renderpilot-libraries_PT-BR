@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "generated_at": "2026-09-20T00:00:00Z",
   "minimum_reshade_version": "6.7.0",
   "games": [
@@ -963,7 +963,27 @@
           "id": "luma.ace-combat-7.engine_ini",
           "kind": "engine_ini",
           "fallback_text": "Apply the following settings manually in Engine.ini.",
-          "code": "[SystemSettings]\nr.DefaultFeature.AntiAliasing=2\nr.PostProcessAAQuality=4"
+          "code": "[SystemSettings]\nr.DefaultFeature.AntiAliasing=2\nr.PostProcessAAQuality=4",
+          "engine_ini": {
+            "schema_version": 1,
+            "revision": 1,
+            "sections": [
+              {
+                "name": "SystemSettings",
+                "entries": [
+                  {
+                    "key": "r.DefaultFeature.AntiAliasing",
+                    "value": "2"
+                  },
+                  {
+                    "key": "r.PostProcessAAQuality",
+                    "value": "4"
+                  }
+                ]
+              }
+            ],
+            "id": "luma.ace-combat-7.engine_ini"
+          }
         }
       ]
     },
@@ -1106,7 +1126,27 @@
           "id": "luma.ancestors-legacy.engine_ini",
           "kind": "engine_ini",
           "fallback_text": "Apply the following settings manually in Engine.ini.",
-          "code": "[SystemSettings]\nr.DefaultFeature.AntiAliasing=2\nr.PostProcessAAQuality=4"
+          "code": "[SystemSettings]\nr.DefaultFeature.AntiAliasing=2\nr.PostProcessAAQuality=4",
+          "engine_ini": {
+            "schema_version": 1,
+            "revision": 1,
+            "sections": [
+              {
+                "name": "SystemSettings",
+                "entries": [
+                  {
+                    "key": "r.DefaultFeature.AntiAliasing",
+                    "value": "2"
+                  },
+                  {
+                    "key": "r.PostProcessAAQuality",
+                    "value": "4"
+                  }
+                ]
+              }
+            ],
+            "id": "luma.ancestors-legacy.engine_ini"
+          }
         }
       ]
     },
@@ -1261,7 +1301,27 @@
           "id": "luma.circus-electrique.engine_ini",
           "kind": "engine_ini",
           "fallback_text": "Apply the following settings manually in Engine.ini.",
-          "code": "[SystemSettings]\nr.DefaultFeature.AntiAliasing=2\nr.PostProcessAAQuality=4"
+          "code": "[SystemSettings]\nr.DefaultFeature.AntiAliasing=2\nr.PostProcessAAQuality=4",
+          "engine_ini": {
+            "schema_version": 1,
+            "revision": 1,
+            "sections": [
+              {
+                "name": "SystemSettings",
+                "entries": [
+                  {
+                    "key": "r.DefaultFeature.AntiAliasing",
+                    "value": "2"
+                  },
+                  {
+                    "key": "r.PostProcessAAQuality",
+                    "value": "4"
+                  }
+                ]
+              }
+            ],
+            "id": "luma.circus-electrique.engine_ini"
+          }
         }
       ]
     },
@@ -1488,7 +1548,27 @@
           "id": "luma.cygni-all-guns-blazing.engine_ini",
           "kind": "engine_ini",
           "fallback_text": "Apply the following settings manually in Engine.ini.",
-          "code": "[SystemSettings]\nr.DefaultFeature.AntiAliasing=2\nr.PostProcessAAQuality=4"
+          "code": "[SystemSettings]\nr.DefaultFeature.AntiAliasing=2\nr.PostProcessAAQuality=4",
+          "engine_ini": {
+            "schema_version": 1,
+            "revision": 1,
+            "sections": [
+              {
+                "name": "SystemSettings",
+                "entries": [
+                  {
+                    "key": "r.DefaultFeature.AntiAliasing",
+                    "value": "2"
+                  },
+                  {
+                    "key": "r.PostProcessAAQuality",
+                    "value": "4"
+                  }
+                ]
+              }
+            ],
+            "id": "luma.cygni-all-guns-blazing.engine_ini"
+          }
         }
       ]
     },
@@ -1748,7 +1828,27 @@
           "id": "luma.dnf-duel.engine_ini",
           "kind": "engine_ini",
           "fallback_text": "Apply the following settings manually in Engine.ini.",
-          "code": "[SystemSettings]\nr.DefaultFeature.AntiAliasing=2\nr.PostProcessAAQuality=4"
+          "code": "[SystemSettings]\nr.DefaultFeature.AntiAliasing=2\nr.PostProcessAAQuality=4",
+          "engine_ini": {
+            "schema_version": 1,
+            "revision": 1,
+            "sections": [
+              {
+                "name": "SystemSettings",
+                "entries": [
+                  {
+                    "key": "r.DefaultFeature.AntiAliasing",
+                    "value": "2"
+                  },
+                  {
+                    "key": "r.PostProcessAAQuality",
+                    "value": "4"
+                  }
+                ]
+              }
+            ],
+            "id": "luma.dnf-duel.engine_ini"
+          }
         }
       ]
     },
@@ -1817,7 +1917,31 @@
           "id": "luma.dragon-quest-11-s.engine_ini",
           "kind": "engine_ini",
           "fallback_text": "Apply the following settings manually in Engine.ini.",
-          "code": "[SystemSettings]\nr.DefaultFeature.AntiAliasing=2\nr.PostProcessAAQuality=6\nr.TemporalAASamples=2"
+          "code": "[SystemSettings]\nr.DefaultFeature.AntiAliasing=2\nr.PostProcessAAQuality=6\nr.TemporalAASamples=2",
+          "engine_ini": {
+            "schema_version": 1,
+            "revision": 1,
+            "sections": [
+              {
+                "name": "SystemSettings",
+                "entries": [
+                  {
+                    "key": "r.DefaultFeature.AntiAliasing",
+                    "value": "2"
+                  },
+                  {
+                    "key": "r.PostProcessAAQuality",
+                    "value": "6"
+                  },
+                  {
+                    "key": "r.TemporalAASamples",
+                    "value": "2"
+                  }
+                ]
+              }
+            ],
+            "id": "luma.dragon-quest-11-s.engine_ini"
+          }
         }
       ]
     },
@@ -2011,7 +2135,27 @@
           "id": "luma.guilty-gear-strive.engine_ini",
           "kind": "engine_ini",
           "fallback_text": "Apply the following settings manually in Engine.ini.",
-          "code": "[SystemSettings]\nr.DefaultFeature.AntiAliasing=2\nr.PostProcessAAQuality=4"
+          "code": "[SystemSettings]\nr.DefaultFeature.AntiAliasing=2\nr.PostProcessAAQuality=4",
+          "engine_ini": {
+            "schema_version": 1,
+            "revision": 1,
+            "sections": [
+              {
+                "name": "SystemSettings",
+                "entries": [
+                  {
+                    "key": "r.DefaultFeature.AntiAliasing",
+                    "value": "2"
+                  },
+                  {
+                    "key": "r.PostProcessAAQuality",
+                    "value": "4"
+                  }
+                ]
+              }
+            ],
+            "id": "luma.guilty-gear-strive.engine_ini"
+          }
         }
       ]
     },
@@ -2054,7 +2198,23 @@
           "id": "luma.gylt.engine_ini",
           "kind": "engine_ini",
           "fallback_text": "For improved motion clarity, apply the following setting in Engine.ini.",
-          "code": "[SystemSettings]\nr.motionblur.amount=0"
+          "code": "[SystemSettings]\nr.motionblur.amount=0",
+          "engine_ini": {
+            "schema_version": 1,
+            "revision": 1,
+            "sections": [
+              {
+                "name": "SystemSettings",
+                "entries": [
+                  {
+                    "key": "r.motionblur.amount",
+                    "value": "0"
+                  }
+                ]
+              }
+            ],
+            "id": "luma.gylt.engine_ini"
+          }
         }
       ]
     },
@@ -2153,7 +2313,27 @@
           "id": "luma.just-die-already.engine_ini",
           "kind": "engine_ini",
           "fallback_text": "Apply the following settings manually in Engine.ini.",
-          "code": "[SystemSettings]\nr.DefaultFeature.AntiAliasing=2\nr.PostProcessAAQuality=4"
+          "code": "[SystemSettings]\nr.DefaultFeature.AntiAliasing=2\nr.PostProcessAAQuality=4",
+          "engine_ini": {
+            "schema_version": 1,
+            "revision": 1,
+            "sections": [
+              {
+                "name": "SystemSettings",
+                "entries": [
+                  {
+                    "key": "r.DefaultFeature.AntiAliasing",
+                    "value": "2"
+                  },
+                  {
+                    "key": "r.PostProcessAAQuality",
+                    "value": "4"
+                  }
+                ]
+              }
+            ],
+            "id": "luma.just-die-already.engine_ini"
+          }
         }
       ]
     },
@@ -2249,7 +2429,27 @@
           "id": "luma.kingdom-hearts-3.engine_ini",
           "kind": "engine_ini",
           "fallback_text": "Apply the following settings manually in Engine.ini.",
-          "code": "[SystemSettings]\nr.DefaultFeature.AntiAliasing=2\nr.AntiAliasingMethod=2"
+          "code": "[SystemSettings]\nr.DefaultFeature.AntiAliasing=2\nr.AntiAliasingMethod=2",
+          "engine_ini": {
+            "schema_version": 1,
+            "revision": 1,
+            "sections": [
+              {
+                "name": "SystemSettings",
+                "entries": [
+                  {
+                    "key": "r.DefaultFeature.AntiAliasing",
+                    "value": "2"
+                  },
+                  {
+                    "key": "r.AntiAliasingMethod",
+                    "value": "2"
+                  }
+                ]
+              }
+            ],
+            "id": "luma.kingdom-hearts-3.engine_ini"
+          }
         }
       ]
     },
@@ -2422,7 +2622,27 @@
           "id": "luma.mothergunship.engine_ini",
           "kind": "engine_ini",
           "fallback_text": "Apply the following settings manually in Engine.ini.",
-          "code": "[SystemSettings]\nr.DefaultFeature.AntiAliasing=2\nr.PostProcessAAQuality=4"
+          "code": "[SystemSettings]\nr.DefaultFeature.AntiAliasing=2\nr.PostProcessAAQuality=4",
+          "engine_ini": {
+            "schema_version": 1,
+            "revision": 1,
+            "sections": [
+              {
+                "name": "SystemSettings",
+                "entries": [
+                  {
+                    "key": "r.DefaultFeature.AntiAliasing",
+                    "value": "2"
+                  },
+                  {
+                    "key": "r.PostProcessAAQuality",
+                    "value": "4"
+                  }
+                ]
+              }
+            ],
+            "id": "luma.mothergunship.engine_ini"
+          }
         }
       ]
     },
@@ -2489,7 +2709,23 @@
           "id": "luma.mutant-year-zero-road-to-eden.engine_ini",
           "kind": "engine_ini",
           "fallback_text": "For improved motion clarity, apply the following setting in Engine.ini.",
-          "code": "[SystemSettings]\nr.motionblur.amount=0"
+          "code": "[SystemSettings]\nr.motionblur.amount=0",
+          "engine_ini": {
+            "schema_version": 1,
+            "revision": 1,
+            "sections": [
+              {
+                "name": "SystemSettings",
+                "entries": [
+                  {
+                    "key": "r.motionblur.amount",
+                    "value": "0"
+                  }
+                ]
+              }
+            ],
+            "id": "luma.mutant-year-zero-road-to-eden.engine_ini"
+          }
         }
       ]
     },
@@ -2563,7 +2799,27 @@
           "id": "luma.project-wingman.engine_ini",
           "kind": "engine_ini",
           "fallback_text": "Apply the following settings manually in Engine.ini.",
-          "code": "[SystemSettings]\nr.DefaultFeature.AntiAliasing=2\nr.PostProcessAAQuality=4"
+          "code": "[SystemSettings]\nr.DefaultFeature.AntiAliasing=2\nr.PostProcessAAQuality=4",
+          "engine_ini": {
+            "schema_version": 1,
+            "revision": 1,
+            "sections": [
+              {
+                "name": "SystemSettings",
+                "entries": [
+                  {
+                    "key": "r.DefaultFeature.AntiAliasing",
+                    "value": "2"
+                  },
+                  {
+                    "key": "r.PostProcessAAQuality",
+                    "value": "4"
+                  }
+                ]
+              }
+            ],
+            "id": "luma.project-wingman.engine_ini"
+          }
         }
       ]
     },
@@ -2742,7 +2998,27 @@
           "id": "luma.remnant-from-the-ashes.engine_ini",
           "kind": "engine_ini",
           "fallback_text": "Apply the following settings manually in Engine.ini.",
-          "code": "[SystemSettings]\nr.DefaultFeature.AntiAliasing=2\nr.PostProcessAAQuality=4"
+          "code": "[SystemSettings]\nr.DefaultFeature.AntiAliasing=2\nr.PostProcessAAQuality=4",
+          "engine_ini": {
+            "schema_version": 1,
+            "revision": 1,
+            "sections": [
+              {
+                "name": "SystemSettings",
+                "entries": [
+                  {
+                    "key": "r.DefaultFeature.AntiAliasing",
+                    "value": "2"
+                  },
+                  {
+                    "key": "r.PostProcessAAQuality",
+                    "value": "4"
+                  }
+                ]
+              }
+            ],
+            "id": "luma.remnant-from-the-ashes.engine_ini"
+          }
         }
       ]
     },
@@ -3158,7 +3434,27 @@
           "id": "luma.styx-shards-of-darkness.engine_ini",
           "kind": "engine_ini",
           "fallback_text": "Apply the following settings manually in Engine.ini.",
-          "code": "[SystemSettings]\nr.DefaultFeature.AntiAliasing=2\nr.PostProcessAAQuality=4"
+          "code": "[SystemSettings]\nr.DefaultFeature.AntiAliasing=2\nr.PostProcessAAQuality=4",
+          "engine_ini": {
+            "schema_version": 1,
+            "revision": 1,
+            "sections": [
+              {
+                "name": "SystemSettings",
+                "entries": [
+                  {
+                    "key": "r.DefaultFeature.AntiAliasing",
+                    "value": "2"
+                  },
+                  {
+                    "key": "r.PostProcessAAQuality",
+                    "value": "4"
+                  }
+                ]
+              }
+            ],
+            "id": "luma.styx-shards-of-darkness.engine_ini"
+          }
         }
       ]
     },
@@ -3352,7 +3648,31 @@
           "id": "luma.tekken-7.engine_ini",
           "kind": "engine_ini",
           "fallback_text": "Apply the following settings manually in Engine.ini.",
-          "code": "[/Script/Engine.RendererSettings]\nr.DefaultFeature.AntiAliasing=2\nr.PostProcessAAQuality=4\nr.TemporalAASamples=16"
+          "code": "[/Script/Engine.RendererSettings]\nr.DefaultFeature.AntiAliasing=2\nr.PostProcessAAQuality=4\nr.TemporalAASamples=16",
+          "engine_ini": {
+            "schema_version": 1,
+            "revision": 1,
+            "sections": [
+              {
+                "name": "/Script/Engine.RendererSettings",
+                "entries": [
+                  {
+                    "key": "r.DefaultFeature.AntiAliasing",
+                    "value": "2"
+                  },
+                  {
+                    "key": "r.PostProcessAAQuality",
+                    "value": "4"
+                  },
+                  {
+                    "key": "r.TemporalAASamples",
+                    "value": "16"
+                  }
+                ]
+              }
+            ],
+            "id": "luma.tekken-7.engine_ini"
+          }
         }
       ]
     },
@@ -3419,7 +3739,27 @@
           "id": "luma.tetris-effect-connected.engine_ini",
           "kind": "engine_ini",
           "fallback_text": "Apply the following settings manually in Engine.ini.",
-          "code": "[/Script/Engine.RendererSettings]\nr.DefaultFeature.AntiAliasing=2\nr.TemporalAA.Upsampling=1"
+          "code": "[/Script/Engine.RendererSettings]\nr.DefaultFeature.AntiAliasing=2\nr.TemporalAA.Upsampling=1",
+          "engine_ini": {
+            "schema_version": 1,
+            "revision": 1,
+            "sections": [
+              {
+                "name": "/Script/Engine.RendererSettings",
+                "entries": [
+                  {
+                    "key": "r.DefaultFeature.AntiAliasing",
+                    "value": "2"
+                  },
+                  {
+                    "key": "r.TemporalAA.Upsampling",
+                    "value": "1"
+                  }
+                ]
+              }
+            ],
+            "id": "luma.tetris-effect-connected.engine_ini"
+          }
         }
       ]
     },
@@ -3688,7 +4028,27 @@
           "id": "luma.tribes-of-midgard.engine_ini",
           "kind": "engine_ini",
           "fallback_text": "Apply the following settings manually in Engine.ini.",
-          "code": "[SystemSettings]\nr.DefaultFeature.AntiAliasing=2\nr.PostProcessAAQuality=4"
+          "code": "[SystemSettings]\nr.DefaultFeature.AntiAliasing=2\nr.PostProcessAAQuality=4",
+          "engine_ini": {
+            "schema_version": 1,
+            "revision": 1,
+            "sections": [
+              {
+                "name": "SystemSettings",
+                "entries": [
+                  {
+                    "key": "r.DefaultFeature.AntiAliasing",
+                    "value": "2"
+                  },
+                  {
+                    "key": "r.PostProcessAAQuality",
+                    "value": "4"
+                  }
+                ]
+              }
+            ],
+            "id": "luma.tribes-of-midgard.engine_ini"
+          }
         }
       ]
     },
@@ -3784,7 +4144,27 @@
           "id": "luma.warhammer-40000-boltgun.engine_ini",
           "kind": "engine_ini",
           "fallback_text": "Apply the following settings manually in Engine.ini.",
-          "code": "[SystemSettings]\nr.DefaultFeature.AntiAliasing=2\nr.PostProcessAAQuality=4"
+          "code": "[SystemSettings]\nr.DefaultFeature.AntiAliasing=2\nr.PostProcessAAQuality=4",
+          "engine_ini": {
+            "schema_version": 1,
+            "revision": 1,
+            "sections": [
+              {
+                "name": "SystemSettings",
+                "entries": [
+                  {
+                    "key": "r.DefaultFeature.AntiAliasing",
+                    "value": "2"
+                  },
+                  {
+                    "key": "r.PostProcessAAQuality",
+                    "value": "4"
+                  }
+                ]
+              }
+            ],
+            "id": "luma.warhammer-40000-boltgun.engine_ini"
+          }
         }
       ]
     },
@@ -3856,7 +4236,51 @@
           "id": "luma.what-remains-of-edith-finch.engine_ini",
           "kind": "engine_ini",
           "fallback_text": "Apply the following settings manually in Engine.ini.",
-          "code": "[SystemSettings]\nr.TranslucencyLightingVolumeDim=64\nr.RefractionQuality=2\nr.SSR.Quality=4\nr.SceneColorFormat=3\nr.DetailMode=2\nr.TranslucencyVolumeBlur=1\nr.MaterialQualityLevel=1\nr.SSR.Temporal=0"
+          "code": "[SystemSettings]\nr.TranslucencyLightingVolumeDim=64\nr.RefractionQuality=2\nr.SSR.Quality=4\nr.SceneColorFormat=3\nr.DetailMode=2\nr.TranslucencyVolumeBlur=1\nr.MaterialQualityLevel=1\nr.SSR.Temporal=0",
+          "engine_ini": {
+            "schema_version": 1,
+            "revision": 1,
+            "sections": [
+              {
+                "name": "SystemSettings",
+                "entries": [
+                  {
+                    "key": "r.TranslucencyLightingVolumeDim",
+                    "value": "64"
+                  },
+                  {
+                    "key": "r.RefractionQuality",
+                    "value": "2"
+                  },
+                  {
+                    "key": "r.SSR.Quality",
+                    "value": "4"
+                  },
+                  {
+                    "key": "r.SceneColorFormat",
+                    "value": "3"
+                  },
+                  {
+                    "key": "r.DetailMode",
+                    "value": "2"
+                  },
+                  {
+                    "key": "r.TranslucencyVolumeBlur",
+                    "value": "1"
+                  },
+                  {
+                    "key": "r.MaterialQualityLevel",
+                    "value": "1"
+                  },
+                  {
+                    "key": "r.SSR.Temporal",
+                    "value": "0"
+                  }
+                ]
+              }
+            ],
+            "id": "luma.what-remains-of-edith-finch.engine_ini"
+          }
         }
       ]
     },
@@ -3966,7 +4390,23 @@
           "id": "luma.song-of-nunu.engine_ini",
           "kind": "engine_ini",
           "fallback_text": "To reduce temporal jitter, apply the following setting in Engine.ini.",
-          "code": "[SystemSettings]\nr.TemporalAASamples=4"
+          "code": "[SystemSettings]\nr.TemporalAASamples=4",
+          "engine_ini": {
+            "schema_version": 1,
+            "revision": 1,
+            "sections": [
+              {
+                "name": "SystemSettings",
+                "entries": [
+                  {
+                    "key": "r.TemporalAASamples",
+                    "value": "4"
+                  }
+                ]
+              }
+            ],
+            "id": "luma.song-of-nunu.engine_ini"
+          }
         },
         {
           "id": "luma.song-of-nunu.warning",
@@ -5041,7 +5481,31 @@
           "id": "luma.dragonquestxiechoesofanelusiveage.engine_ini",
           "kind": "engine_ini",
           "fallback_text": "Apply the following settings manually in Engine.ini.",
-          "code": "[SystemSettings]\nr.DefaultFeature.AntiAliasing=2\nr.PostProcessAAQuality=6\nr.TemporalAASamples=2"
+          "code": "[SystemSettings]\nr.DefaultFeature.AntiAliasing=2\nr.PostProcessAAQuality=6\nr.TemporalAASamples=2",
+          "engine_ini": {
+            "schema_version": 1,
+            "revision": 1,
+            "sections": [
+              {
+                "name": "SystemSettings",
+                "entries": [
+                  {
+                    "key": "r.DefaultFeature.AntiAliasing",
+                    "value": "2"
+                  },
+                  {
+                    "key": "r.PostProcessAAQuality",
+                    "value": "6"
+                  },
+                  {
+                    "key": "r.TemporalAASamples",
+                    "value": "2"
+                  }
+                ]
+              }
+            ],
+            "id": "luma.dragonquestxiechoesofanelusiveage.engine_ini"
+          }
         }
       ]
     },
@@ -5689,7 +6153,27 @@
           "id": "luma.no-more-heroes-3.engine_ini",
           "kind": "engine_ini",
           "fallback_text": "Apply the following settings manually in Engine.ini.",
-          "code": "[SystemSettings]\nr.DefaultFeature.AntiAliasing=2\nr.PostProcessAAQuality=4"
+          "code": "[SystemSettings]\nr.DefaultFeature.AntiAliasing=2\nr.PostProcessAAQuality=4",
+          "engine_ini": {
+            "schema_version": 1,
+            "revision": 1,
+            "sections": [
+              {
+                "name": "SystemSettings",
+                "entries": [
+                  {
+                    "key": "r.DefaultFeature.AntiAliasing",
+                    "value": "2"
+                  },
+                  {
+                    "key": "r.PostProcessAAQuality",
+                    "value": "4"
+                  }
+                ]
+              }
+            ],
+            "id": "luma.no-more-heroes-3.engine_ini"
+          }
         }
       ]
     },
@@ -5758,7 +6242,27 @@
           "id": "luma.solar-ash.engine_ini",
           "kind": "engine_ini",
           "fallback_text": "Apply the following settings manually in Engine.ini.",
-          "code": "[SystemSettings]\nr.DefaultFeature.AntiAliasing=2\nr.PostProcessAAQuality=4"
+          "code": "[SystemSettings]\nr.DefaultFeature.AntiAliasing=2\nr.PostProcessAAQuality=4",
+          "engine_ini": {
+            "schema_version": 1,
+            "revision": 1,
+            "sections": [
+              {
+                "name": "SystemSettings",
+                "entries": [
+                  {
+                    "key": "r.DefaultFeature.AntiAliasing",
+                    "value": "2"
+                  },
+                  {
+                    "key": "r.PostProcessAAQuality",
+                    "value": "4"
+                  }
+                ]
+              }
+            ],
+            "id": "luma.solar-ash.engine_ini"
+          }
         }
       ]
     },
@@ -5822,7 +6326,27 @@
           "id": "luma.octopath-traveler.engine_ini",
           "kind": "engine_ini",
           "fallback_text": "Apply the following settings manually in Engine.ini.",
-          "code": "[SystemSettings]\nr.DefaultFeature.AntiAliasing=2\nr.PostProcessAAQuality=4"
+          "code": "[SystemSettings]\nr.DefaultFeature.AntiAliasing=2\nr.PostProcessAAQuality=4",
+          "engine_ini": {
+            "schema_version": 1,
+            "revision": 1,
+            "sections": [
+              {
+                "name": "SystemSettings",
+                "entries": [
+                  {
+                    "key": "r.DefaultFeature.AntiAliasing",
+                    "value": "2"
+                  },
+                  {
+                    "key": "r.PostProcessAAQuality",
+                    "value": "4"
+                  }
+                ]
+              }
+            ],
+            "id": "luma.octopath-traveler.engine_ini"
+          }
         }
       ]
     }

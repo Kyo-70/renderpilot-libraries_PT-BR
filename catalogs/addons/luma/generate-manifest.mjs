@@ -1,10 +1,11 @@
 #!/usr/bin/env node
-// Generate the Luma Framework v1 manifest from its single curated profile
+// Generate the Luma Framework v1 and v2 manifests from one curated profile
 // document.
 //
 // The app fetches the Luma add-on live from a single upstream rolling GitHub
 // Release, so this manifest carries no artifacts or hashes. The authoring
-// inputs stay in this folder; the served manifest is written under addons/v1/.
+// inputs stay in this folder; the served manifests are written under addons/v1/
+// and addons/v2/.
 
 import { buildManifest } from "./lib/build-manifest.mjs";
 import { readJsonFile } from "../../../scripts/lib/json.mjs";
@@ -18,13 +19,14 @@ const FILES = Object.freeze({
   matchRegistry: addonCatalogs.luma.sources.matchRegistry,
   outputs: {
     manifest: addonCatalogs.luma.outputs.manifest.file,
+    manifestV2: addonCatalogs.luma.outputs.manifestV2.file,
     pending: addonCatalogs.luma.sources.pending,
   },
 });
 
 const HELP_TEXT = `Usage: node generate-manifest.mjs [--check]
 
-Generate the v1 Luma document from curated_games.json.
+Generate the v1 and v2 Luma documents from curated_games.json.
 
   --check   Do not write files; fail if generated outputs differ.
   -h, --help
@@ -37,7 +39,11 @@ runGenerateManifestMain(() => ({
   build: (inputs) => {
     const result = buildManifest(inputs);
     return {
-      outputs: { manifest: result.manifest, pending: result.pending },
+      outputs: {
+        manifest: result.manifestV1,
+        manifestV2: result.manifestV2,
+        pending: result.pending,
+      },
       stats: result.stats,
     };
   },

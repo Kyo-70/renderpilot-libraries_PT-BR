@@ -14,12 +14,8 @@ import {
   normalizeExternalRequirement,
   normalizeGameDirectoryFile,
 } from "./managed-dependency.mjs";
-import {
-  ENGINE_PROFILES,
-  UNREAL_ASSET,
-  isSharedEngineAsset,
-  sharedAssetForProfile,
-} from "./v1.mjs";
+import { normalizeEngineIniRecipe, renderEngineIniRecipe } from "../../engine-ini.mjs";
+import { ENGINE_PROFILES, isSharedEngineAsset, sharedAssetForProfile } from "./v1.mjs";
 
 const ARCHITECTURES = new Set(["X86", "X64"]);
 const ASSET_PREFIX = "Luma-";
@@ -232,11 +228,41 @@ function normalizeGuidance(value, context) {
     } else if (code !== undefined) {
       throw new Error(`${itemContext}.code is only valid for engine_ini guidance`);
     }
+    const engineIni = normalizeEngineIni(item.engine_ini, id, itemContext, kind);
+    if (kind === "engine_ini" && engineIni === undefined) {
+      throw new Error(`${itemContext}.engine_ini is required for engine_ini guidance`);
+    }
+    if (engineIni !== undefined) {
+      const { id: _guidanceId, ...renderableEngineIni } = engineIni;
+      if (code !== renderEngineIniRecipe(renderableEngineIni)) {
+        throw new Error(
+          `${itemContext}.code does not match canonical Engine.ini rendering`,
+        );
+      }
+    }
 
-    return code === undefined
-      ? { id, kind, fallback_text: fallbackText }
-      : { id, kind, fallback_text: fallbackText, code };
+    return {
+      id,
+      kind,
+      fallback_text: fallbackText,
+      ...(code === undefined ? {} : { code }),
+      ...(engineIni === undefined ? {} : { engine_ini: engineIni }),
+    };
   });
+}
+
+function normalizeEngineIni(value, guidanceId, context, kind) {
+  if (value === undefined) return undefined;
+  if (kind !== "engine_ini") {
+    throw new Error(`${context}.engine_ini is only valid for engine_ini guidance`);
+  }
+  assertPlainObject(value, `${context}.engine_ini`);
+  const { id: sourceId, ...recipe } = value;
+  if (sourceId !== undefined && sourceId !== null && sourceId !== guidanceId) {
+    throw new Error(`${context}.engine_ini.id must match its guidance id`);
+  }
+  const normalized = normalizeEngineIniRecipe(recipe, `${context}.engine_ini`);
+  return { ...normalized, id: guidanceId };
 }
 
 function normalizeWikiNoteReviews(value, context, hasLaunchArguments) {

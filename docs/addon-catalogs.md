@@ -8,7 +8,8 @@ RenderPilot consumes versioned manifests for RenoDX, Luma Framework, the shared 
 | -------------------------------------------------- | ------------------- | -------------------------------------------- |
 | `addons/v1/renodx.json`                            | Current RenderPilot | RenoDX v1                                    |
 | `addons/v2/renodx.json`                            | Current RenderPilot | RenoDX structured guidance v2                |
-| `addons/v1/luma.json`                              | Current RenderPilot | Luma v1                                      |
+| `addons/v1/luma.json`                              | Legacy clients      | Luma v1 (manual-code compatible)             |
+| `addons/v2/luma.json`                              | Current RenderPilot | Luma v2 (typed Engine.ini recipes)           |
 | `addons/v1/reshade.json`                           | Current RenderPilot | ReShade v1                                   |
 | `addons/v1/optiscaler.json`                        | Current RenderPilot | OptiScaler release v1                        |
 | `addons/v1/optiscaler-compatibility.json`          | Current RenderPilot | OptiScaler compatibility v1                  |
@@ -51,6 +52,9 @@ A public manifest can describe reviewed requirements or instructions. It does no
   Related Mods are excluded rather than converted to runtime blocks.
 - RenoDX `Engine.ini` guidance stores exact copyable code separately from concise
   prose; launch arguments and setting/value pairs remain structured.
+- Luma exact copyable `code` is reserved for `engine_ini` guidance. Launch
+  arguments remain structured in authoring `launch_args` and public
+  `requirements.launch_arguments`.
 - Luma game-specific payloads omit `profile`; engine profiles explicitly use `"unreal"` or `"unity"`.
 - Public Luma v1 restricts the profile enum to `"game" | "unreal" | "unity"`.
 - Luma feature status is required only for Unreal profiles and is never inferred from free-form Wiki text.
@@ -82,7 +86,8 @@ See [Operations and publishing](operations.md#refreshing-add-ons) for the exact 
 - [Catalog registry](../scripts/catalog.mjs)
 - [RenoDX manifest schema](../catalogs/addons/renodx/manifest-v1.schema.json)
 - [RenoDX v2 manifest schema](../catalogs/addons/renodx/manifest-v2.schema.json)
-- [Luma manifest schema](../catalogs/addons/luma/manifest-v1.schema.json)
+- [Luma v1 manifest schema](../catalogs/addons/luma/manifest-v1.schema.json)
+- [Luma v2 manifest schema](../catalogs/addons/luma/manifest-v2.schema.json)
 - [ReShade manifest schema](../catalogs/addons/reshade/manifest-v1.schema.json)
 - [OptiScaler source schema](../catalogs/addons/optiscaler/manifest-source.schema.json)
 - [OptiScaler manifest schema](../catalogs/addons/optiscaler/manifest-v1.schema.json)

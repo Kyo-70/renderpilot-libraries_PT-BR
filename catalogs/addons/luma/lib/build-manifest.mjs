@@ -5,7 +5,8 @@ import {
   reserveOutputId,
 } from "../../../../scripts/lib/build-manifest-shared.mjs";
 import { normalizeCuratedGames } from "./authoring-profile.mjs";
-import { SCHEMA_VERSION } from "./v1.mjs";
+import { SCHEMA_VERSION as V1_SCHEMA_VERSION } from "./v1.mjs";
+import { SCHEMA_VERSION as V2_SCHEMA_VERSION } from "./v2.mjs";
 
 // Luma's add-on-loader compatibility floor for reusing an already-present
 // ReShade host. Download URLs live in the standalone ReShade v1 catalogue.
@@ -22,7 +23,7 @@ export const LUMA_LOCALES = Object.freeze([
   "zh-Hant",
 ]);
 
-/** Builds the public Luma v1 wire document from normalized authoring profiles. */
+/** Builds both public Luma wire documents from normalized authoring profiles. */
 export function buildManifest({ curatedGames, messages, registry, generatedAt } = {}) {
   const profiles = normalizeCuratedGames(curatedGames, registry);
   const games = [];
@@ -64,15 +65,44 @@ export function buildManifest({ curatedGames, messages, registry, generatedAt } 
   assertUniqueGuidanceIds(games);
   validateLumaMessages(messages, games);
 
+  const manifestV2 = {
+    schema_version: V2_SCHEMA_VERSION,
+    generated_at: generatedAt,
+    minimum_reshade_version: MIN_RESHADE_VERSION,
+    games,
+  };
+  const manifestV1 = projectV1Manifest(manifestV2);
+
   return {
-    manifest: {
-      schema_version: SCHEMA_VERSION,
-      generated_at: generatedAt,
-      minimum_reshade_version: MIN_RESHADE_VERSION,
-      games,
-    },
+    // `manifest` remains the v1-compatible projection for existing tooling;
+    // the generator writes both explicit versioned outputs below.
+    manifest: manifestV1,
+    manifestV1,
+    manifestV2,
     pending,
     stats: buildStats(games, pending),
+  };
+}
+
+/**
+ * Explicitly project the common normalized model to the v1 wire-compatible
+ * contract retained for legacy clients. Display `code` remains available to
+ * old clients; only the v2 structured mutation authority is omitted.
+ */
+function projectV1Manifest(manifestV2) {
+  return {
+    ...manifestV2,
+    schema_version: V1_SCHEMA_VERSION,
+    games: manifestV2.games.map((game) => ({
+      ...game,
+      ...(game.guidance
+        ? {
+            guidance: game.guidance.map(
+              ({ engine_ini: _engineIni, ...guidance }) => guidance,
+            ),
+          }
+        : {}),
+    })),
   };
 }
 

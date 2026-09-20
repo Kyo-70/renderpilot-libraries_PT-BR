@@ -109,6 +109,7 @@ const SCHEMAS = Object.freeze({
   renodxWikiSource: "catalogs/addons/renodx/wiki-source.schema.json",
   renodxMessagesSource: "catalogs/addons/renodx/messages-source.schema.json",
   lumaManifestV1: "catalogs/addons/luma/manifest-v1.schema.json",
+  lumaManifestV2: "catalogs/addons/luma/manifest-v2.schema.json",
   lumaMessagesSource: "catalogs/addons/luma/messages-source.schema.json",
   reshadeManifestV1: "catalogs/addons/reshade/manifest-v1.schema.json",
   optiscalerManifestSource: "catalogs/addons/optiscaler/manifest-source.schema.json",
@@ -139,7 +140,7 @@ const defineDocuments = (documents) =>
  * `dlss_settings.json` is intentionally not published because it is bundled into
  * the app at compile time.
  *
- * Current add-on catalogues are versioned under `addons/v1/`.
+ * Current add-on catalogues are versioned under `addons/vN/`.
  */
 export const jsonDocuments = defineDocuments([
   ...curatedLibraryVendors.map(({ sourceFile }) => ({
@@ -243,6 +244,12 @@ export const jsonDocuments = defineDocuments([
     file: "addons/v1/luma.json",
     schema: SCHEMAS.lumaManifestV1,
     r2Key: "addons/v1/luma.json",
+    publishedToR2: true,
+  },
+  {
+    file: "addons/v2/luma.json",
+    schema: SCHEMAS.lumaManifestV2,
+    r2Key: "addons/v2/luma.json",
     publishedToR2: true,
   },
   {
@@ -362,7 +369,7 @@ export const addonCatalogs = Object.freeze({
       pending: "pending_match.json",
       unmatched: "unmatched.json",
     },
-    { manifest: "addons/v1/luma.json" },
+    { manifest: "addons/v1/luma.json", manifestV2: "addons/v2/luma.json" },
   ),
   renodx: addonCatalog(
     "renodx",

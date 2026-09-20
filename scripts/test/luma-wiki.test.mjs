@@ -197,6 +197,208 @@ test("reconcileLumaStatuses blocks a changed Wiki note without publishing its ra
   ]);
 });
 
+test("reconcileLumaStatuses requires typed Engine.ini guidance for published UE notes", () => {
+  const note =
+    "Recommended to use `r.motionblur.amount=0` via Engine.ini for motion clarity";
+  const result = reconcileLumaStatuses({
+    curatedGames: [
+      {
+        id: "engine-note",
+        name: "Engine Note",
+        asset: "Luma-Unreal_Engine.zip",
+        profile: "unreal",
+        status: "unknown",
+        features: { dlss_fsr: "unknown", hdr: "unknown" },
+        guidance: [
+          {
+            id: "engine-note.warning",
+            kind: "warning",
+            fallback_text: "A warning.",
+          },
+          {
+            id: "engine-note.engine_ini",
+            kind: "engine_ini",
+            fallback_text: "Configure Engine.ini.",
+          },
+        ],
+        wiki_note_reviews: [
+          {
+            section: "unreal",
+            name: "Engine Note",
+            fingerprint: lumaWikiNoteFingerprint(note),
+            disposition: "published",
+            guidance_ids: ["engine-note.warning"],
+          },
+        ],
+      },
+    ],
+    wikiRows: [
+      {
+        name: "Engine Note",
+        section: "unreal",
+        asset: "Luma-Unreal_Engine.zip",
+        status: "working",
+        features: { dlss_fsr: "supported", hdr: "unknown" },
+        note,
+      },
+    ],
+  });
+
+  assert.deepEqual(result.reviewDrift, [
+    {
+      type: "missing_typed_engine_ini",
+      section: "unreal",
+      name: "Engine Note",
+      game: "Engine Note",
+    },
+  ]);
+});
+
+test("reconcileLumaStatuses rejects a referenced Engine.ini item without a recipe", () => {
+  const note = "Set the Engine.ini value for sharper motion.";
+  const result = reconcileLumaStatuses({
+    curatedGames: [
+      {
+        id: "untyped-engine-note",
+        name: "Untyped Engine Note",
+        asset: "Luma-Unreal_Engine.zip",
+        profile: "unreal",
+        status: "unknown",
+        features: { dlss_fsr: "unknown", hdr: "unknown" },
+        guidance: [
+          {
+            id: "untyped-engine-note.engine_ini",
+            kind: "engine_ini",
+            fallback_text: "Configure Engine.ini.",
+          },
+          {
+            id: "untyped-engine-note.warning",
+            kind: "warning",
+            fallback_text: "A warning.",
+          },
+        ],
+        wiki_note_reviews: [
+          {
+            section: "unreal",
+            name: "Untyped Engine Note",
+            fingerprint: lumaWikiNoteFingerprint(note),
+            disposition: "published",
+            guidance_ids: ["untyped-engine-note.engine_ini"],
+          },
+        ],
+      },
+    ],
+    wikiRows: [
+      {
+        name: "Untyped Engine Note",
+        section: "unreal",
+        asset: "Luma-Unreal_Engine.zip",
+        status: "working",
+        features: { dlss_fsr: "supported", hdr: "unknown" },
+        note,
+      },
+    ],
+  });
+
+  assert.deepEqual(result.reviewDrift, [
+    {
+      type: "missing_typed_engine_ini",
+      section: "unreal",
+      name: "Untyped Engine Note",
+      game: "Untyped Engine Note",
+    },
+  ]);
+});
+
+test("reconcileLumaStatuses rejects a referenced malformed Engine.ini recipe", () => {
+  const note = "Set the Engine.ini value for sharper motion.";
+  const result = reconcileLumaStatuses({
+    curatedGames: [
+      {
+        id: "malformed-engine-note",
+        name: "Malformed Engine Note",
+        asset: "Luma-Unreal_Engine.zip",
+        profile: "unreal",
+        status: "unknown",
+        features: { dlss_fsr: "unknown", hdr: "unknown" },
+        guidance: [
+          {
+            id: "malformed-engine-note.engine_ini",
+            kind: "engine_ini",
+            fallback_text: "Configure Engine.ini.",
+            engine_ini: {},
+          },
+        ],
+        wiki_note_reviews: [
+          {
+            section: "unreal",
+            name: "Malformed Engine Note",
+            fingerprint: lumaWikiNoteFingerprint(note),
+            disposition: "published",
+            guidance_ids: ["malformed-engine-note.engine_ini"],
+          },
+        ],
+      },
+    ],
+    wikiRows: [
+      {
+        name: "Malformed Engine Note",
+        section: "unreal",
+        asset: "Luma-Unreal_Engine.zip",
+        status: "working",
+        features: { dlss_fsr: "supported", hdr: "unknown" },
+        note,
+      },
+    ],
+  });
+
+  assert.deepEqual(result.reviewDrift, [
+    {
+      type: "missing_typed_engine_ini",
+      section: "unreal",
+      name: "Malformed Engine Note",
+      game: "Malformed Engine Note",
+    },
+  ]);
+});
+
+test("reconcileLumaStatuses permits an explicitly omitted Engine.ini note", () => {
+  const note = "Modify Engine.ini only for an unsupported experiment.";
+  const result = reconcileLumaStatuses({
+    curatedGames: [
+      {
+        id: "omitted-engine-note",
+        name: "Omitted Engine Note",
+        asset: "Luma-Unreal_Engine.zip",
+        profile: "unreal",
+        status: "unknown",
+        features: { dlss_fsr: "unknown", hdr: "unknown" },
+        wiki_note_reviews: [
+          {
+            section: "unreal",
+            name: "Omitted Engine Note",
+            fingerprint: lumaWikiNoteFingerprint(note),
+            disposition: "omitted",
+            reason: "Not suitable for a general profile.",
+          },
+        ],
+      },
+    ],
+    wikiRows: [
+      {
+        name: "Omitted Engine Note",
+        section: "unreal",
+        asset: "Luma-Unreal_Engine.zip",
+        status: "working",
+        features: { dlss_fsr: "supported", hdr: "unknown" },
+        note,
+      },
+    ],
+  });
+
+  assert.deepEqual(result.reviewDrift, []);
+});
+
 test("reconcileLumaStatuses rejects conflicting asset and name matches", () => {
   const result = reconcileLumaStatuses({
     curatedGames: [

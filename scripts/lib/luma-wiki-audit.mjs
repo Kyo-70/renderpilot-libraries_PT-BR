@@ -3,12 +3,26 @@ import {
   UNITY_ASSET,
   UNITY_ASSET_X32,
 } from "../../catalogs/addons/luma/lib/v1.mjs";
+import { normalizeEngineIniRecipe } from "../../catalogs/addons/engine-ini.mjs";
 import { lumaWikiNoteFingerprint, normalizeLumaName } from "./luma-wiki-parser.mjs";
 
 const WIKI_NOTE_SECTIONS = new Set(["completed", "unreal"]);
 const SHARED_ENGINE_ASSETS = new Set([UNREAL_ASSET, UNITY_ASSET, UNITY_ASSET_X32]);
 
 const reviewKey = (section, name) => `${section}:${normalizeLumaName(name)}`;
+
+function hasValidTypedEngineIniRecipe(guidance) {
+  const recipe = guidance?.engine_ini;
+  if (!recipe || typeof recipe !== "object" || Array.isArray(recipe)) return false;
+
+  try {
+    const { id: _recipeId, ...recipeWithoutIdentity } = recipe;
+    normalizeEngineIniRecipe(recipeWithoutIdentity, "wiki guidance engine_ini");
+    return true;
+  } catch {
+    return false;
+  }
+}
 
 export function auditLumaWiki({
   curatedGames,
@@ -91,6 +105,26 @@ function collectReviewDrift({
     if (entry.review.fingerprint !== lumaWikiNoteFingerprint(row.note)) {
       reviewDrift.push({
         type: "changed",
+        section: row.section,
+        name: row.name,
+        game: entry.game.name,
+      });
+    }
+    if (
+      row.section === "unreal" &&
+      /\bengine\.ini\b/i.test(row.note) &&
+      entry.review.disposition !== "omitted" &&
+      !(entry.review.guidance_ids ?? []).some((guidanceId) =>
+        (entry.game.guidance ?? []).some(
+          (guidance) =>
+            guidance.id === guidanceId &&
+            guidance.kind === "engine_ini" &&
+            hasValidTypedEngineIniRecipe(guidance),
+        ),
+      )
+    ) {
+      reviewDrift.push({
+        type: "missing_typed_engine_ini",
         section: row.section,
         name: row.name,
         game: entry.game.name,

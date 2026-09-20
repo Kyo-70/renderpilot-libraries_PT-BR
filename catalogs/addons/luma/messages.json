@@ -579,18 +579,18 @@
     },
     {
       "id": "luma.guilty-gear-strive.warning",
-      "fallback_text": "Anti-aliasing does not work on the character selection screen. In-game: AA \"Temporal Anti Aliasing\". In Engine.ini under [SystemSettings], add: r.DefaultFeature.AntiAliasing=2 and r.PostProcessAAQuality=4.",
+      "fallback_text": "Anti-aliasing does not work on the character selection screen.",
       "kind": "warning",
       "context": "guidance.warning",
       "translations": {
-        "de": "Antialiasing funktioniert im Charakterauswahlbildschirm nicht. Wähle im Spiel: AA „Temporal Anti Aliasing“. Ergänze in der Engine.ini unter [SystemSettings]: r.DefaultFeature.AntiAliasing=2 und r.PostProcessAAQuality=4.",
-        "es": "El suavizado no funciona en la pantalla de selección de personajes. En el juego: AA «Temporal Anti Aliasing». En Engine.ini en [SystemSettings], añade: r.DefaultFeature.AntiAliasing=2 y r.PostProcessAAQuality=4.",
-        "fr": "L’anticrénelage ne fonctionne pas sur l’écran de sélection des personnages. En jeu : AA « Temporal Anti Aliasing ». Dans Engine.ini sous [SystemSettings], ajoutez : r.DefaultFeature.AntiAliasing=2 et r.PostProcessAAQuality=4.",
-        "ja": "キャラクター選択画面ではアンチエイリアスが機能しません。ゲーム内設定: AA「Temporal Anti Aliasing」。Engine.ini の [SystemSettings] に追加: r.DefaultFeature.AntiAliasing=2 および r.PostProcessAAQuality=4。",
-        "pt-BR": "O antisserrilhamento não funciona na tela de seleção de personagens. No jogo, use AA “Temporal Anti Aliasing”. No Engine.ini, em [SystemSettings], adicione r.DefaultFeature.AntiAliasing=2 e r.PostProcessAAQuality=4.",
-        "ru": "Сглаживание не работает на экране выбора персонажа. В игре: AA «Temporal Anti Aliasing». В Engine.ini в секции [SystemSettings] добавьте: r.DefaultFeature.AntiAliasing=2 и r.PostProcessAAQuality=4.",
-        "zh-Hans": "抗锯齿在角色选择界面无效。游戏内设置：AA “Temporal Anti Aliasing”。在 Engine.ini 的 [SystemSettings] 下添加：r.DefaultFeature.AntiAliasing=2 与 r.PostProcessAAQuality=4。",
-        "zh-Hant": "反鋸齒在角色選擇畫面無效。遊戲內設定：AA 「Temporal Anti Aliasing」。在 Engine.ini 的 [SystemSettings] 下新增：r.DefaultFeature.AntiAliasing=2 與 r.PostProcessAAQuality=4。"
+        "de": "Antialiasing funktioniert im Charakterauswahlbildschirm nicht.",
+        "es": "El suavizado no funciona en la pantalla de selección de personajes.",
+        "fr": "L’anticrénelage ne fonctionne pas sur l’écran de sélection des personnages.",
+        "ja": "キャラクター選択画面ではアンチエイリアスが機能しません。",
+        "pt-BR": "O antisserrilhamento não funciona na tela de seleção de personagens.",
+        "ru": "Сглаживание не работает на экране выбора персонажа.",
+        "zh-Hans": "抗锯齿在角色选择界面无效。",
+        "zh-Hant": "反鋸齒在角色選擇畫面無效。"
       }
     },
     {
@@ -867,18 +867,18 @@
     },
     {
       "id": "luma.mutant-year-zero-road-to-eden.game_setting",
-      "fallback_text": "In the game settings, use: AA \"High\". For improved motion clarity, set r.motionblur.amount=0 in Engine.ini.",
+      "fallback_text": "In the game settings, use: AA \"High\".",
       "kind": "game_setting",
       "context": "guidance.game_setting",
       "translations": {
-        "de": "Wähle in den Spieleinstellungen: AA „High“. Für klarere Bewegung setze r.motionblur.amount=0 in der Engine.ini.",
-        "es": "En los ajustes del juego, usa: AA «High». Para mayor claridad de movimiento, se recomienda r.motionblur.amount=0 en Engine.ini.",
-        "fr": "Dans les paramètres du jeu, utilisez : AA « High ». Pour une meilleure netteté des mouvements, définissez r.motionblur.amount=0 dans Engine.ini.",
-        "ja": "ゲーム設定: AA「High」。動きの鮮明さを向上させるには、Engine.ini で r.motionblur.amount=0 を設定することを推奨します。",
-        "pt-BR": "Nas configurações do jogo, selecione AA “High”. Para melhorar a nitidez em movimento, defina r.motionblur.amount=0 no Engine.ini.",
-        "ru": "В настройках игры выберите AA «High». Для лучшей чёткости в движении задайте r.motionblur.amount=0 в Engine.ini.",
-        "zh-Hans": "在游戏设置中选择：AA “High”。为了获得更清晰的动态画面，建议在 Engine.ini 中设置 r.motionblur.amount=0。",
-        "zh-Hant": "在遊戲設定中選擇：AA 「High」。為了獲得更清晰的動態畫面，建議在 Engine.ini 中設定 r.motionblur.amount=0。"
+        "de": "Wähle in den Spieleinstellungen: AA „High“.",
+        "es": "En los ajustes del juego, usa: AA «High».",
+        "fr": "Dans les paramètres du jeu, utilisez : AA « High ».",
+        "ja": "ゲーム設定: AA「High」。",
+        "pt-BR": "Nas configurações do jogo, selecione AA “High”.",
+        "ru": "В настройках игры выберите AA «High».",
+        "zh-Hans": "在游戏设置中选择：AA “High”。",
+        "zh-Hant": "在遊戲設定中選擇：AA 「High」。"
       }
     },
     {
@@ -1439,6 +1439,134 @@
         "ru": "Игра работает нестабильно в разрешении 4K. Перед внесением настроек в Engine.ini установите Effects на Low.",
         "zh-Hans": "该游戏在 4K 分辨率下运行不稳定。在手动应用 Engine.ini 设置前，请将 Effects 设为 Low。",
         "zh-Hant": "該遊戲在 4K 解析度下運作不穩定。在手動套用 Engine.ini 設定前，請將 Effects 設為 Low。"
+      }
+    },
+    {
+      "id": "luma.guilty-gear-strive.game_setting",
+      "fallback_text": "In the game settings, use: AA \"Temporal Anti Aliasing\".",
+      "kind": "game_setting",
+      "context": "guidance.game_setting",
+      "translations": {
+        "de": "Wähle in den Spieleinstellungen: AA „Temporal Anti Aliasing“.",
+        "es": "En los ajustes del juego, usa: AA «Temporal Anti Aliasing».",
+        "fr": "Dans les paramètres du jeu, utilisez : AA « Temporal Anti Aliasing ».",
+        "ja": "ゲーム設定: AA「Temporal Anti Aliasing」。",
+        "pt-BR": "Nas configurações do jogo, use AA “Temporal Anti Aliasing”.",
+        "ru": "В настройках игры выберите AA «Temporal Anti Aliasing».",
+        "zh-Hans": "在游戏设置中选择：AA “Temporal Anti Aliasing”。",
+        "zh-Hant": "在遊戲設定中選擇：AA 「Temporal Anti Aliasing」。"
+      }
+    },
+    {
+      "id": "luma.guilty-gear-strive.engine_ini",
+      "fallback_text": "Apply the following settings manually in Engine.ini.",
+      "kind": "engine_ini",
+      "context": "guidance.engine_ini",
+      "translations": {
+        "de": "Übernimm die folgenden Einstellungen manuell in Engine.ini.",
+        "es": "Aplica los siguientes ajustes manualmente en Engine.ini.",
+        "fr": "Appliquez manuellement les paramètres suivants dans Engine.ini.",
+        "ja": "次の設定を Engine.ini に手動で適用してください。",
+        "pt-BR": "Aplique manualmente as seguintes configurações no Engine.ini.",
+        "ru": "Вручную добавьте в Engine.ini следующие настройки.",
+        "zh-Hans": "请在 Engine.ini 中手动应用以下设置。",
+        "zh-Hant": "請在 Engine.ini 中手動套用以下設定。"
+      }
+    },
+    {
+      "id": "luma.mutant-year-zero-road-to-eden.engine_ini",
+      "fallback_text": "For improved motion clarity, apply the following setting in Engine.ini.",
+      "kind": "engine_ini",
+      "context": "guidance.engine_ini",
+      "translations": {
+        "de": "Übernimm für klarere Bewegungen die folgende Einstellung in Engine.ini.",
+        "es": "Para mejorar la claridad del movimiento, aplica este ajuste en Engine.ini.",
+        "fr": "Pour améliorer la netteté des mouvements, appliquez le paramètre suivant dans Engine.ini.",
+        "ja": "動きをより鮮明にするには、次の設定を Engine.ini に適用してください。",
+        "pt-BR": "Para melhorar a nitidez em movimento, aplique a seguinte configuração no Engine.ini.",
+        "ru": "Для лучшей чёткости в движении добавьте в Engine.ini следующую настройку.",
+        "zh-Hans": "为了获得更清晰的动态画面，请在 Engine.ini 中应用以下设置。",
+        "zh-Hant": "為了獲得更清晰的動態畫面，請在 Engine.ini 中套用以下設定。"
+      }
+    },
+    {
+      "id": "luma.gylt.game_setting",
+      "fallback_text": "In the game settings, set Upscaling Method to \"TAAU, 100%\".",
+      "kind": "game_setting",
+      "context": "guidance.game_setting",
+      "translations": {
+        "de": "Setze in den Spieleinstellungen Upscaling Method auf „TAAU, 100 %“.",
+        "es": "En los ajustes del juego, establece Upscaling Method en «TAAU, 100 %».",
+        "fr": "Dans les paramètres du jeu, réglez Upscaling Method sur « TAAU, 100 % ».",
+        "ja": "ゲーム設定の Upscaling Method を「TAAU, 100%」に設定してください。",
+        "pt-BR": "Nas configurações do jogo, defina Upscaling Method como “TAAU, 100%”.",
+        "ru": "В настройках игры установите Upscaling Method: «TAAU, 100%».",
+        "zh-Hans": "在游戏设置中将 Upscaling Method 设为“TAAU, 100%”。",
+        "zh-Hant": "在遊戲設定中將 Upscaling Method 設為「TAAU, 100%」。"
+      }
+    },
+    {
+      "id": "luma.gylt.engine_ini",
+      "fallback_text": "For improved motion clarity, apply the following setting in Engine.ini.",
+      "kind": "engine_ini",
+      "context": "guidance.engine_ini",
+      "translations": {
+        "de": "Übernimm für klarere Bewegungen die folgende Einstellung in Engine.ini.",
+        "es": "Para mejorar la claridad del movimiento, aplica este ajuste en Engine.ini.",
+        "fr": "Pour améliorer la netteté des mouvements, appliquez le paramètre suivant dans Engine.ini.",
+        "ja": "動きをより鮮明にするには、次の設定を Engine.ini に適用してください。",
+        "pt-BR": "Para melhorar a nitidez em movimento, aplique a seguinte configuração no Engine.ini.",
+        "ru": "Для лучшей чёткости в движении добавьте в Engine.ini следующую настройку.",
+        "zh-Hans": "为了获得更清晰的动态画面，请在 Engine.ini 中应用以下设置。",
+        "zh-Hant": "為了獲得更清晰的動態畫面，請在 Engine.ini 中套用以下設定。"
+      }
+    },
+    {
+      "id": "luma.song-of-nunu.game_setting",
+      "fallback_text": "In the game settings, use: AA \"High\".",
+      "kind": "game_setting",
+      "context": "guidance.game_setting",
+      "translations": {
+        "de": "Wähle in den Spieleinstellungen: AA „High“.",
+        "es": "En los ajustes del juego, usa: AA «High».",
+        "fr": "Dans les paramètres du jeu, utilisez : AA « High ».",
+        "ja": "ゲーム設定: AA「High」。",
+        "pt-BR": "Nas configurações do jogo, selecione AA “High”.",
+        "ru": "В настройках игры выберите AA «High».",
+        "zh-Hans": "在游戏设置中选择：AA “High”。",
+        "zh-Hant": "在遊戲設定中選擇：AA 「High」。"
+      }
+    },
+    {
+      "id": "luma.song-of-nunu.engine_ini",
+      "fallback_text": "To reduce temporal jitter, apply the following setting in Engine.ini.",
+      "kind": "engine_ini",
+      "context": "guidance.engine_ini",
+      "translations": {
+        "de": "Übernimm zur Verringerung von temporärem Flimmern die folgende Einstellung in Engine.ini.",
+        "es": "Para reducir el temblor temporal, aplica este ajuste en Engine.ini.",
+        "fr": "Pour réduire le scintillement temporel, appliquez le paramètre suivant dans Engine.ini.",
+        "ja": "時間的なちらつきを減らすには、次の設定を Engine.ini に適用してください。",
+        "pt-BR": "Para reduzir a instabilidade temporal, aplique a seguinte configuração no Engine.ini.",
+        "ru": "Чтобы уменьшить временное дрожание изображения, добавьте в Engine.ini следующую настройку.",
+        "zh-Hans": "为减少时间抖动，请在 Engine.ini 中应用以下设置。",
+        "zh-Hant": "為減少時間抖動，請在 Engine.ini 中套用以下設定。"
+      }
+    },
+    {
+      "id": "luma.song-of-nunu.warning",
+      "fallback_text": "Visible jittering may occur in foliage and very small details.",
+      "kind": "warning",
+      "context": "guidance.warning",
+      "translations": {
+        "de": "Bei Vegetation und sehr kleinen Details kann sichtbares Flimmern auftreten.",
+        "es": "Puede aparecer un temblor visible en la vegetación y en los detalles muy pequeños.",
+        "fr": "Un scintillement visible peut apparaître dans la végétation et les très petits détails.",
+        "ja": "植生や非常に細かいディテールで目立つちらつきが発生する場合があります。",
+        "pt-BR": "Pode ocorrer instabilidade visível na vegetação e em detalhes muito pequenos.",
+        "ru": "На растительности и очень мелких деталях может быть заметно дрожание изображения.",
+        "zh-Hans": "植被和非常细小的细节可能出现明显抖动。",
+        "zh-Hant": "植被與非常細小的細節可能出現明顯抖動。"
       }
     }
   ]
