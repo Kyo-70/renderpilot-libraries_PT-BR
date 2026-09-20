@@ -39,7 +39,7 @@ export const RESOLVED_TITLE_GUIDANCE = Object.freeze({
   flyknight: [
     {
       id: "renodx.unreal.flyknight.filter_warning",
-      kind: "warning",
+      kind: "compatibility",
       message_id: "renodx.unreal.flyknight.filter_warning",
       fallback_text: "In-game filters can alter HDR presentation.",
     },
@@ -53,7 +53,7 @@ export const RESOLVED_TITLE_GUIDANCE = Object.freeze({
   "ghostrunner-2": [
     {
       id: "renodx.unreal.ghostrunner-2.limited_testing",
-      kind: "warning",
+      kind: "compatibility",
       message_id: "renodx.unreal.ghostrunner-2.limited_testing",
       fallback_text: "Tonemapping issues remain; testing was limited.",
     },
@@ -69,7 +69,7 @@ export const RESOLVED_TITLE_GUIDANCE = Object.freeze({
   "the-first-berserker-khazan": [
     {
       id: "renodx.the_first_berserker_khazan.tonemapping",
-      kind: "warning",
+      kind: "compatibility",
       message_id: "renodx.the_first_berserker_khazan.tonemapping",
       fallback_text: "Tonemapping issues remain; testing was limited.",
     },
@@ -129,7 +129,7 @@ omit(
   "The upstream note only redirects to another page and contains no actionable instruction.",
 );
 assign(keyList("main", "assassin-s-creed-iv-black-flagtm"), [
-  warn("The mod is playable, but some graphics issues remain unresolved."),
+  info("The mod is playable, but some graphics issues remain unresolved."),
 ]);
 assign(
   keyList(
@@ -146,7 +146,7 @@ assign(keyList("main", "clive-barker-s-jericho"), [
   warn("ACES output is currently broken in this build."),
 ]);
 assign(keyList("main", "crimson-desert"), [
-  warn(
+  info(
     "Frequent game updates can break the mod; re-check compatibility after each update.",
   ),
 ]);
@@ -187,10 +187,10 @@ assign(keyList("main", "sonic-unleashed-recompiled"), [
   warn("The current mod build does not work on GeForce RTX 50-series GPUs."),
 ]);
 assign(keyList("main", "tomb-raider-2013-definitive-edition"), [
-  warn("The mod can break lighting in some areas, including Chasm Monastery."),
+  info("The mod can break lighting in some areas, including Chasm Monastery."),
 ]);
 assign(keyList("main", "trackmania"), [
-  warn("HDR works well, but some customization menus are broken."),
+  info("HDR works well, but some customization menus are broken."),
 ]);
 assign(keyList("main", "yakuza-kiwami-1"), [
   info(
@@ -223,7 +223,7 @@ assign(keyList("ue-extended", "days-gone"), [
 ]);
 assign(
   keyList("ue-extended", "astroneer"),
-  [warn("Color-grading errors and flickering may still occur.")],
+  [info("Color-grading errors and flickering may still occur.")],
   { processingPath: "upgrade" },
 );
 assign(
@@ -357,7 +357,7 @@ assign(
 );
 assign(keyList("ue-extended", "gothic-1-remake lords-of-the-fallen"), [
   addonSetting("Native HDR", "On", "Enable the game's native HDR."),
-  warn("Tonemapping issues may still occur."),
+  info("Tonemapping issues may still occur."),
 ]);
 assign(keyList("ue-extended", "it-takes-two"), [], { processingPath: "upgrade" });
 assign(
@@ -378,10 +378,10 @@ assign(
       { name: "Upgrade Copy Destinations", value: "Off" },
       { name: "R8G8R8A8_TYPELESS", value: "Any Size" },
     ]),
-    warn(
+    info(
       "The Engine.ini HDR path overexposes shading; this title uses the compatible Upgrade Path.",
     ),
-    warn("Gameplay highlights are clamped to the UI brightness setting."),
+    info("Gameplay highlights are clamped to the UI brightness setting."),
   ],
   { processingPath: "upgrade" },
 );
@@ -392,7 +392,7 @@ assign(
       { name: "Upgrade Copy Destinations", value: "Off" },
       { name: "B8G8R8A8_TYPELESS", value: "Any Size" },
     ]),
-    warn(
+    info(
       "Some communication and stage lighting remain clamped or do not produce HDR highlights.",
     ),
   ],
@@ -400,7 +400,7 @@ assign(
 );
 assign(
   keyList("ue-extended", "little-nightmares-ii"),
-  [warn("Color-grading issues remain.")],
+  [info("Color-grading issues remain.")],
   { processingPath: "upgrade" },
 );
 assign(
@@ -411,13 +411,13 @@ assign(
 assign(keyList("ue-extended", "persona-3-reload"), [], { processingPath: "upgrade" });
 assign(
   keyList("ue-extended", "sifu"),
-  [warn("Peak brightness remains limited in some content.")],
+  [info("Peak brightness remains limited in some content.")],
   { processingPath: "upgrade" },
 );
 assign(
   keyList("ue-extended", "what-remains-of-edith-finch"),
   [
-    warn(
+    info(
       "If HDR is clamped with high-DPI scaling, temporarily set Windows scaling to 100%, launch the game once, then restore the preferred scaling.",
     ),
   ],
@@ -524,7 +524,7 @@ assign(
       "Output Size",
       "Set the B8G8R8A8_TYPELESS resource upgrade to Output Size.",
     ),
-    warn("Text can glitch during loading and in the backpack or mission log."),
+    info("Text can glitch during loading and in the backpack or mission log."),
   ],
   { inheritCommon: true },
 );
@@ -563,7 +563,7 @@ assign(
 );
 assign(
   keyList("unreal", "the-cabin-factory"),
-  [warn("The mod works without resource upgrades, but color grading is not corrected.")],
+  [info("The mod works without resource upgrades, but color grading is not corrected.")],
   { inheritCommon: true },
 );
 assign(
@@ -581,7 +581,7 @@ assign(
   keyList("unreal", "chernobylite"),
   [
     info("Use DirectX 12."),
-    warn(
+    info(
       "Changing DLSS quality can temporarily disable the game's excessive sharpening, but the workaround must be repeated each session.",
     ),
     addonSettings([
@@ -599,7 +599,7 @@ assign(
       "Windowed Fullscreen",
       "Set the game to Windowed Fullscreen manually.",
     ),
-    warn("Cutscenes can cause brightness problems."),
+    info("Cutscenes can cause brightness problems."),
     addonSetting(
       "B8G8R8A8_TYPELESS",
       "Output Size",
@@ -610,7 +610,7 @@ assign(
 );
 assign(
   keyList("unreal", "colony-ship-a-post-earth-role-playing-game"),
-  [warn("Some menus and the loading screen still need fixes.")],
+  [info("Some menus and the loading screen still need fixes.")],
   { inheritCommon: true },
 );
 assign(
@@ -653,7 +653,7 @@ assign(
 );
 assign(
   keyList("unreal", "darksiders-3"),
-  [warn("Non-boss enemy health bars do not update correctly.")],
+  [info("Non-boss enemy health bars do not update correctly.")],
   {
     inheritCommon: true,
   },
@@ -661,7 +661,7 @@ assign(
 assign(
   keyList("unreal", "darksiders-genesis"),
   [
-    warn("Some loading-screen text can render as solid blocks."),
+    info("Some loading-screen text can render as solid blocks."),
     addonSetting(
       "B8G8R8A8_TYPELESS",
       "Output Size",
@@ -709,7 +709,7 @@ assign(
 assign(
   keyList("unreal", "dragon-ball-z-kakarot"),
   [
-    warn("Some colors remain inaccurate."),
+    info("Some colors remain inaccurate."),
     addonSettings([
       { name: "B8G8R8A8_TYPELESS", value: "Output Size at 100% render resolution" },
       { name: "B8G8R8A8_TYPELESS", value: "Output Ratio at other render resolutions" },
@@ -758,7 +758,7 @@ assign(
 assign(
   keyList("unreal", "forgive-me-father"),
   [
-    warn("Some text can render as solid blocks."),
+    info("Some text can render as solid blocks."),
     addonSetting(
       "B8G8R8A8_TYPELESS",
       "Output Size",
@@ -796,7 +796,7 @@ assign(
 assign(
   keyList("unreal", "ghostrunner-2"),
   [
-    warn("Output remains limited to BT.709."),
+    info("Output remains limited to BT.709."),
     addonSetting(
       "B8G8R8A8_TYPELESS",
       "Output Size",
@@ -808,7 +808,7 @@ assign(
 assign(
   keyList("unreal", "granblue-fantasy-versus"),
   [
-    warn("Character and map highlights are clamped to the UI brightness level."),
+    info("Character and map highlights are clamped to the UI brightness level."),
     addonSetting(
       "B8G8R8A8_TYPELESS",
       "Output Size",
@@ -865,7 +865,7 @@ assign(
 assign(
   keyList("unreal", "islands-of-insight"),
   [
-    warn("Output remains limited to BT.709."),
+    info("Output remains limited to BT.709."),
     addonSetting(
       "B8G8R8A8_TYPELESS",
       "Output Size",
@@ -878,7 +878,7 @@ assign(
   keyList("unreal", "it-takes-two"),
   [
     info("A full playthrough completed without general failures."),
-    warn(
+    info(
       "Underwater sections remain SDR; some space scenes have incorrect colors, and some fades to white look wrong.",
     ),
   ],
@@ -898,7 +898,7 @@ assign(
 );
 assign(
   keyList("unreal", "kena-bridge-of-spirits"),
-  [warn("Cutscene brightness is clamped to the UI brightness level.")],
+  [info("Cutscene brightness is clamped to the UI brightness level.")],
   {
     inheritCommon: true,
   },
@@ -906,7 +906,7 @@ assign(
 assign(
   keyList("unreal", "kingdom-hearts-iii"),
   [
-    warn("Texture flickering can occur."),
+    info("Texture flickering can occur."),
     addonSetting(
       "B8G8R8A8_TYPELESS",
       "Output Size",
@@ -1011,7 +1011,7 @@ assign(
   keyList("unreal", "the-medium"),
   [
     gameSetting("Native HDR", "Off", "Disable the game's native HDR."),
-    warn("Highlights in the spirit world are clamped to the UI brightness level."),
+    info("Highlights in the spirit world are clamped to the UI brightness level."),
     addonSetting(
       "R10G10B10A2_UNORM",
       "Any Size",
@@ -1023,7 +1023,7 @@ assign(
 assign(
   keyList("unreal", "metal-eden"),
   [
-    warn("The main menu and respawn screen can show corruption."),
+    info("The main menu and respawn screen can show corruption."),
     info("This profile was tested only with the demo."),
     addonSetting(
       "R10G10B10A2_UNORM",
@@ -1125,7 +1125,7 @@ assign(
   keyList("unreal", "the-outer-worlds-2"),
   [
     gameSetting("Native HDR", "Off", "Disable the game's native HDR."),
-    warn("Invalid color values can appear during FMVs."),
+    info("Invalid color values can appear during FMVs."),
     addonSetting(
       "R10G10B10A2_UNORM",
       "Output Size",
@@ -1148,7 +1148,7 @@ assign(
 assign(
   keyList("unreal", "persona-3-reload"),
   [
-    warn("The map background is excessively bright while its entrance animation plays."),
+    info("The map background is excessively bright while its entrance animation plays."),
     addonSetting(
       "B8G8R8A8_TYPELESS",
       "Output Size",
@@ -1281,7 +1281,7 @@ assign(
 assign(
   keyList("unreal", "sifu"),
   [
-    warn(
+    info(
       "Most content remains near SDR brightness; only specular highlights, fire, and the sun become substantially brighter.",
     ),
     addonSetting(
@@ -1295,7 +1295,7 @@ assign(
 assign(
   keyList("unreal", "six-days-in-fallujah"),
   [
-    warn("A dark artifact can appear around the sun, and smoke may render too dark."),
+    info("A dark artifact can appear around the sun, and smoke may render too dark."),
     addonSettings([
       { name: "B8G8R8A8_TYPELESS", value: "Output Size" },
       { name: "R10G10B10A2_UNORM", value: "Output Size" },
@@ -1318,7 +1318,7 @@ assign(
   keyList("unreal", "sonic-racing-crossworlds"),
   [
     info("Slider changes apply after restarting the track."),
-    warn(
+    info(
       "Bright elements are clamped to UI brightness, and the Water Palace sky remains excessively bright.",
     ),
     addonSetting(
@@ -1368,7 +1368,7 @@ assign(
 assign(
   keyList("unreal", "tales-of-arise"),
   [
-    warn("Bloom can occasionally render incorrectly."),
+    info("Bloom can occasionally render incorrectly."),
     gameSetting(
       "Anti-Aliasing",
       "TAA or Off",
@@ -1395,7 +1395,7 @@ assign(
 assign(
   keyList("unreal", "tekken-7"),
   [
-    warn("Some stages are clamped to the UI brightness level."),
+    info("Some stages are clamped to the UI brightness level."),
     addonSetting(
       "B8G8R8A8_TYPELESS",
       "Output Size",
@@ -1407,7 +1407,7 @@ assign(
 assign(
   keyList("unreal", "the-thaumaturge"),
   [
-    warn("Some scenes remain brightness-clamped."),
+    info("Some scenes remain brightness-clamped."),
     addonSetting(
       "R10G10B10A2_UNORM",
       "Output Size",
@@ -1446,7 +1446,7 @@ assign(
 assign(
   keyList("unreal", "vampire-the-masquerade-bloodlines-2"),
   [
-    warn("Cutscenes remain brightness-clamped."),
+    info("Cutscenes remain brightness-clamped."),
     addonSetting(
       "R10G10B10A2_UNORM",
       "Output Size",
@@ -1728,7 +1728,7 @@ assign(
   keyList("unity", "dreamfall-chapters-the-final-cut"),
   [
     addonSetting("Swapchain Proxy", "On", "Enable RenoDX Swapchain Proxy."),
-    warn("Save-preview images are broken."),
+    info("Save-preview images are broken."),
   ],
   { inheritCommon: true },
 );
@@ -2089,7 +2089,7 @@ assign(
   { inheritCommon: true },
 );
 assign(keyList("unity", "prince-of-persia-the-lost-crown"), [
-  warn("RenoDX cannot affect color grading beyond Peak and UI Brightness in this game."),
+  info("RenoDX cannot affect color grading beyond Peak and UI Brightness in this game."),
   external(
     "Use the dedicated Luma Framework mod for full correction.",
     "https://github.com/Filoppi/Luma-Framework",
@@ -2097,7 +2097,7 @@ assign(keyList("unity", "prince-of-persia-the-lost-crown"), [
 ]);
 assign(
   keyList("unity", "ruined-king-a-league-of-legends-storytm"),
-  [warn("The pause-menu background is broken.")],
+  [info("The pause-menu background is broken.")],
   {
     inheritCommon: true,
   },
@@ -2287,7 +2287,7 @@ assign(
       "Upgrade",
       "Upgrade the R11G11B10_FLOAT resource format.",
     ),
-    warn("DLSS clamps colors to BT.709."),
+    info("DLSS clamps colors to BT.709."),
   ],
   { inheritCommon: true },
 );

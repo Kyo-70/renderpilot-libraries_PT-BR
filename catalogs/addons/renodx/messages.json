@@ -100,8 +100,8 @@
     {
       "id": "renodx.main.assassin.s.creed.iv.black.flagtm.1",
       "fallback_text": "The mod is playable, but some graphics issues remain unresolved.",
-      "kind": "warning",
-      "context": "guidance.warning",
+      "kind": "compatibility",
+      "context": "guidance.compatibility",
       "translations": {
         "de": "Die Mod ist spielbar, einige Grafikprobleme bleiben jedoch ungelöst.",
         "es": "El mod es jugable, pero algunos problemas gráficos permanecen sin resolver.",
@@ -180,8 +180,8 @@
     {
       "id": "renodx.main.crimson.desert.1",
       "fallback_text": "Frequent game updates can break the mod; re-check compatibility after each update.",
-      "kind": "warning",
-      "context": "guidance.warning",
+      "kind": "compatibility",
+      "context": "guidance.compatibility",
       "translations": {
         "de": "Häufige Spielupdates können dazu führen, dass die Mod nicht mehr funktioniert; prüfe die Kompatibilität nach jedem Update erneut.",
         "es": "Las actualizaciones frecuentes del juego pueden hacer que el mod deje de funcionar; vuelve a comprobar la compatibilidad tras cada actualización.",
@@ -420,8 +420,8 @@
     {
       "id": "renodx.main.trackmania.1",
       "fallback_text": "HDR works well, but some customization menus are broken.",
-      "kind": "warning",
-      "context": "guidance.warning",
+      "kind": "compatibility",
+      "context": "guidance.compatibility",
       "translations": {
         "de": "HDR funktioniert gut, einige Anpassungsmenüs sind jedoch fehlerhaft.",
         "es": "El HDR funciona bien, pero algunos menús de personalización presentan fallos.",
@@ -452,8 +452,8 @@
     {
       "id": "renodx.page.hdr.disable-double-tonemapping",
       "fallback_text": "If the image looks washed out, disable Auto HDR and RTX HDR to avoid double tonemapping.",
-      "kind": "warning",
-      "context": "guidance.warning",
+      "kind": "compatibility",
+      "context": "guidance.compatibility",
       "translations": {
         "de": "Wenn das Bild ausgewaschen wirkt, deaktiviere Auto HDR und RTX HDR, um doppeltes Tonemapping zu vermeiden.",
         "es": "Si la imagen se ve descolorida, desactiva Auto HDR y RTX HDR para evitar un doble mapeo tonal.",
@@ -468,8 +468,8 @@
     {
       "id": "renodx.the_first_berserker_khazan.tonemapping",
       "fallback_text": "Tonemapping issues remain; testing was limited.",
-      "kind": "warning",
-      "context": "guidance.warning",
+      "kind": "compatibility",
+      "context": "guidance.compatibility",
       "translations": {
         "de": "Tonemapping-Probleme bleiben bestehen; Tests waren nur eingeschränkt möglich.",
         "es": "Persisten problemas de mapeo tonal; las pruebas fueron limitadas.",
@@ -532,8 +532,8 @@
     {
       "id": "renodx.ue_extended.ue4_engine_ini_warning",
       "fallback_text": "General Engine.ini HDR tweaks are not recommended for Unreal Engine 4 games.",
-      "kind": "warning",
-      "context": "guidance.warning",
+      "kind": "compatibility",
+      "context": "guidance.compatibility",
       "translations": {
         "de": "Allgemeine HDR-Optimierungen in Engine.ini werden für Spiele auf Unreal Engine 4 nicht empfohlen.",
         "es": "No se recomiendan ajustes generales de HDR en Engine.ini para juegos de Unreal Engine 4.",
@@ -612,8 +612,8 @@
     {
       "id": "renodx.ue.extended.astroneer.1",
       "fallback_text": "Color-grading errors and flickering may still occur.",
-      "kind": "warning",
-      "context": "guidance.warning",
+      "kind": "compatibility",
+      "context": "guidance.compatibility",
       "translations": {
         "de": "Farbkorrekturfehler und Flackern können weiterhin auftreten.",
         "es": "Todavía pueden ocurrir errores de gradación de color y parpadeos.",
@@ -980,8 +980,8 @@
     {
       "id": "renodx.ue.extended.hi.fi.rush.2",
       "fallback_text": "The Engine.ini HDR path overexposes shading; this title uses the compatible Upgrade Path.",
-      "kind": "warning",
-      "context": "guidance.warning",
+      "kind": "compatibility",
+      "context": "guidance.compatibility",
       "translations": {
         "de": "Der HDR-Pfad über Engine.ini überbelichtet Schattierungen; dieser Titel nutzt den kompatiblen Upgrade Path.",
         "es": "La ruta HDR de Engine.ini sobreexpone el sombreado; este juego utiliza el Upgrade Path compatible.",
@@ -996,8 +996,8 @@
     {
       "id": "renodx.ue.extended.hi.fi.rush.3",
       "fallback_text": "Gameplay highlights are clamped to the UI brightness setting.",
-      "kind": "warning",
-      "context": "guidance.warning",
+      "kind": "compatibility",
+      "context": "guidance.compatibility",
       "translations": {
         "de": "Gameplay-Spitzlichter sind auf die UI-Helligkeitseinstellung begrenzt.",
         "es": "Las altas luces del juego están limitadas por el ajuste de brillo de la interfaz.",
@@ -1140,8 +1140,8 @@
     {
       "id": "renodx.ue.extended.little.nightmares.ii.1",
       "fallback_text": "Color-grading issues remain.",
-      "kind": "warning",
-      "context": "guidance.warning",
+      "kind": "compatibility",
+      "context": "guidance.compatibility",
       "translations": {
         "de": "Probleme bei der Farbkorrektur bleiben bestehen.",
         "es": "Persisten problemas de gradación de color.",
@@ -1364,8 +1364,8 @@
     {
       "id": "renodx.ue.extended.sifu.1",
       "fallback_text": "Peak brightness remains limited in some content.",
-      "kind": "warning",
-      "context": "guidance.warning",
+      "kind": "compatibility",
+      "context": "guidance.compatibility",
       "translations": {
         "de": "Die Spitzenhelligkeit bleibt in manchen Inhalten begrenzt.",
         "es": "El brillo máximo sigue limitado en parte del contenido.",
@@ -1476,8 +1476,8 @@
     {
       "id": "renodx.ue.extended.the.idolm.ster.starlit.season.2",
       "fallback_text": "Some communication and stage lighting remain clamped or do not produce HDR highlights.",
-      "kind": "warning",
-      "context": "guidance.warning",
+      "kind": "compatibility",
+      "context": "guidance.compatibility",
       "translations": {
         "de": "Einige Dialog- und Bühnenbeleuchtungen bleiben beschnitten oder erzeugen keine HDR-Spitzlichter.",
         "es": "Cierta iluminación de diálogos y escenarios permanece recortada o no genera altas luces HDR.",
@@ -1524,8 +1524,8 @@
     {
       "id": "renodx.ue.extended.what.remains.of.edith.finch.1",
       "fallback_text": "If HDR is clamped with high-DPI scaling, temporarily set Windows scaling to 100%, launch the game once, then restore the preferred scaling.",
-      "kind": "warning",
-      "context": "guidance.warning",
+      "kind": "compatibility",
+      "context": "guidance.compatibility",
       "translations": {
         "de": "Wenn HDR bei hoher DPI-Skalierung beschnitten wird, stelle die Windows-Skalierung vorübergehend auf 100 %, starte das Spiel einmal und stelle die gewünschte Skalierung wieder her.",
         "es": "Si el HDR se recorta con un escalado PPP alto, establece temporalmente el escalado de Windows en el 100 %, inicia el juego una vez y luego restablece el escalado deseado.",
@@ -1572,8 +1572,8 @@
     {
       "id": "renodx.unity.advanced_restart",
       "fallback_text": "Switch RenoDX from Simple to Advanced, then restart the game to unlock all sliders.",
-      "kind": "warning",
-      "context": "guidance.warning",
+      "kind": "compatibility",
+      "context": "guidance.compatibility",
       "translations": {
         "de": "Schalte RenoDX von Simple auf Advanced um und starte das Spiel neu, um alle Schieberegler freizuschalten.",
         "es": "Cambia RenoDX de Simple a Advanced y luego reinicia el juego para desbloquear todos los controles deslizantes.",
@@ -2564,8 +2564,8 @@
     {
       "id": "renodx.unity.dreamfall.chapters.the.final.cut.2",
       "fallback_text": "Save-preview images are broken.",
-      "kind": "warning",
-      "context": "guidance.warning",
+      "kind": "compatibility",
+      "context": "guidance.compatibility",
       "translations": {
         "de": "Vorschaubilder für Speicherstände sind fehlerhaft.",
         "es": "Las imágenes de vista previa de guardado no se muestran correctamente.",
@@ -4260,8 +4260,8 @@
     {
       "id": "renodx.unity.prince.of.persia.the.lost.crown.1",
       "fallback_text": "RenoDX cannot affect color grading beyond Peak and UI Brightness in this game.",
-      "kind": "warning",
-      "context": "guidance.warning",
+      "kind": "compatibility",
+      "context": "guidance.compatibility",
       "translations": {
         "de": "RenoDX kann in diesem Spiel die Farbkorrektur über Peak- und UI-Helligkeit hinaus nicht beeinflussen.",
         "es": "En este juego, RenoDX no puede modificar la gradación de color más allá de Peak y UI Brightness.",
@@ -4404,8 +4404,8 @@
     {
       "id": "renodx.unity.ruined.king.a.league.of.legends.storytm.1",
       "fallback_text": "The pause-menu background is broken.",
-      "kind": "warning",
-      "context": "guidance.warning",
+      "kind": "compatibility",
+      "context": "guidance.compatibility",
       "translations": {
         "de": "Der Hintergrund des Pausemenüs ist fehlerhaft.",
         "es": "El fondo del menú de pausa no funciona correctamente.",
@@ -5348,8 +5348,8 @@
     {
       "id": "renodx.unity.void.crew.2",
       "fallback_text": "DLSS clamps colors to BT.709.",
-      "kind": "warning",
-      "context": "guidance.warning",
+      "kind": "compatibility",
+      "context": "guidance.compatibility",
       "translations": {
         "de": "DLSS begrenzt Farben auf BT.709.",
         "es": "DLSS limita los colores al espacio BT.709.",
@@ -5524,8 +5524,8 @@
     {
       "id": "renodx.unreal_legacy.advanced_restart",
       "fallback_text": "Switch RenoDX from Simple to Advanced, then restart the game to unlock all sliders.",
-      "kind": "warning",
-      "context": "guidance.warning",
+      "kind": "compatibility",
+      "context": "guidance.compatibility",
       "translations": {
         "de": "Schalte RenoDX von Simple auf Advanced um und starte das Spiel neu, um alle Schieberegler freizuschalten.",
         "es": "Cambia RenoDX de Simple a Advanced y luego reinicia el juego para desbloquear todos los controles deslizantes.",
@@ -5796,8 +5796,8 @@
     {
       "id": "renodx.unreal.chernobylite.2",
       "fallback_text": "Changing DLSS quality can temporarily disable the game's excessive sharpening, but the workaround must be repeated each session.",
-      "kind": "warning",
-      "context": "guidance.warning",
+      "kind": "compatibility",
+      "context": "guidance.compatibility",
       "translations": {
         "de": "Das Ändern der DLSS-Qualität kann die übermäßige Nachschärfung des Spiels vorübergehend deaktivieren, muss jedoch in jeder Sitzung wiederholt werden.",
         "es": "Cambiar la calidad de DLSS puede desactivar temporalmente el enfoque excesivo del juego, pero esta solución temporal debe repetirse en cada sesión.",
@@ -5860,8 +5860,8 @@
     {
       "id": "renodx.unreal.colony.ship.a.post.earth.role.playing.game.1",
       "fallback_text": "Some menus and the loading screen still need fixes.",
-      "kind": "warning",
-      "context": "guidance.warning",
+      "kind": "compatibility",
+      "context": "guidance.compatibility",
       "translations": {
         "de": "Einige Menüs und der Ladebildschirm benötigen noch Korrekturen.",
         "es": "Algunos menús y la pantalla de carga aún necesitan correcciones.",
@@ -5940,8 +5940,8 @@
     {
       "id": "renodx.unreal.darksiders.3.1",
       "fallback_text": "Non-boss enemy health bars do not update correctly.",
-      "kind": "warning",
-      "context": "guidance.warning",
+      "kind": "compatibility",
+      "context": "guidance.compatibility",
       "translations": {
         "de": "Lebensbalken normaler Gegner werden nicht korrekt aktualisiert.",
         "es": "Las barras de salud de los enemigos comunes no se actualizan correctamente.",
@@ -5956,8 +5956,8 @@
     {
       "id": "renodx.unreal.darksiders.genesis.1",
       "fallback_text": "Some loading-screen text can render as solid blocks.",
-      "kind": "warning",
-      "context": "guidance.warning",
+      "kind": "compatibility",
+      "context": "guidance.compatibility",
       "translations": {
         "de": "Mancher Text auf dem Ladebildschirm kann als durchgehender Block dargestellt werden.",
         "es": "Cierto texto de la pantalla de carga puede renderizarse como bloques sólidos.",
@@ -6068,8 +6068,8 @@
     {
       "id": "renodx.unreal.dragon.ball.z.kakarot.1",
       "fallback_text": "Some colors remain inaccurate.",
-      "kind": "warning",
-      "context": "guidance.warning",
+      "kind": "compatibility",
+      "context": "guidance.compatibility",
       "translations": {
         "de": "Einige Farben bleiben ungenau.",
         "es": "Algunos colores siguen siendo inexactos.",
@@ -6276,8 +6276,8 @@
     {
       "id": "renodx.unreal.flyknight.filter_warning",
       "fallback_text": "In-game filters can alter HDR presentation.",
-      "kind": "warning",
-      "context": "guidance.warning",
+      "kind": "compatibility",
+      "context": "guidance.compatibility",
       "translations": {
         "de": "Spieleeigene Filter können die HDR-Darstellung verändern.",
         "es": "Los filtros del juego pueden alterar la visualización en HDR.",
@@ -6308,8 +6308,8 @@
     {
       "id": "renodx.unreal.forgive.me.father.1",
       "fallback_text": "Some text can render as solid blocks.",
-      "kind": "warning",
-      "context": "guidance.warning",
+      "kind": "compatibility",
+      "context": "guidance.compatibility",
       "translations": {
         "de": "Mancher Text kann als durchgehender Block dargestellt werden.",
         "es": "Cierto texto puede renderizarse como bloques sólidos.",
@@ -6356,8 +6356,8 @@
     {
       "id": "renodx.unreal.ghostrunner-2.limited_testing",
       "fallback_text": "Tonemapping issues remain; testing was limited.",
-      "kind": "warning",
-      "context": "guidance.warning",
+      "kind": "compatibility",
+      "context": "guidance.compatibility",
       "translations": {
         "de": "Tonemapping-Probleme bleiben bestehen; Tests waren nur eingeschränkt möglich.",
         "es": "Persisten problemas de mapeo tonal; las pruebas fueron limitadas.",
@@ -6372,8 +6372,8 @@
     {
       "id": "renodx.unreal.ghostrunner.2.1",
       "fallback_text": "Output remains limited to BT.709.",
-      "kind": "warning",
-      "context": "guidance.warning",
+      "kind": "compatibility",
+      "context": "guidance.compatibility",
       "translations": {
         "de": "Die Ausgabe bleibt auf BT.709 begrenzt.",
         "es": "La salida permanece limitada a BT.709.",
@@ -6420,8 +6420,8 @@
     {
       "id": "renodx.unreal.granblue.fantasy.versus.1",
       "fallback_text": "Character and map highlights are clamped to the UI brightness level.",
-      "kind": "warning",
-      "context": "guidance.warning",
+      "kind": "compatibility",
+      "context": "guidance.compatibility",
       "translations": {
         "de": "Charakter- und Karten-Spitzlichter sind auf die UI-Helligkeitsstufe begrenzt.",
         "es": "Las altas luces de personajes y del mapa están limitadas por el nivel de brillo de la interfaz.",
@@ -6644,8 +6644,8 @@
     {
       "id": "renodx.unreal.islands.of.insight.1",
       "fallback_text": "Output remains limited to BT.709.",
-      "kind": "warning",
-      "context": "guidance.warning",
+      "kind": "compatibility",
+      "context": "guidance.compatibility",
       "translations": {
         "de": "Die Ausgabe bleibt auf BT.709 begrenzt.",
         "es": "La salida permanece limitada a BT.709.",
@@ -6740,8 +6740,8 @@
     {
       "id": "renodx.unreal.kena.bridge.of.spirits.1",
       "fallback_text": "Cutscene brightness is clamped to the UI brightness level.",
-      "kind": "warning",
-      "context": "guidance.warning",
+      "kind": "compatibility",
+      "context": "guidance.compatibility",
       "translations": {
         "de": "Die Helligkeit in Zwischensequenzen ist auf die UI-Helligkeitsstufe begrenzt.",
         "es": "El brillo en las cinemáticas está limitado por el nivel de brillo de la interfaz.",
@@ -6756,8 +6756,8 @@
     {
       "id": "renodx.unreal.kingdom.hearts.iii.1",
       "fallback_text": "Texture flickering can occur.",
-      "kind": "warning",
-      "context": "guidance.warning",
+      "kind": "compatibility",
+      "context": "guidance.compatibility",
       "translations": {
         "de": "Texturflackern kann auftreten.",
         "es": "Puede producirse parpadeo en las texturas.",
@@ -7012,8 +7012,8 @@
     {
       "id": "renodx.unreal.metal.eden.1",
       "fallback_text": "The main menu and respawn screen can show corruption.",
-      "kind": "warning",
-      "context": "guidance.warning",
+      "kind": "compatibility",
+      "context": "guidance.compatibility",
       "translations": {
         "de": "Im Hauptmenü und auf dem Respawn-Bildschirm können Grafikfehler auftreten.",
         "es": "El menú principal y la pantalla de reaparición pueden mostrar fallos gráficos.",
@@ -7556,8 +7556,8 @@
     {
       "id": "renodx.unreal.six.days.in.fallujah.1",
       "fallback_text": "A dark artifact can appear around the sun, and smoke may render too dark.",
-      "kind": "warning",
-      "context": "guidance.warning",
+      "kind": "compatibility",
+      "context": "guidance.compatibility",
       "translations": {
         "de": "Ein dunkles Artefakt kann um die Sonne auftreten, und Rauch wird möglicherweise zu dunkel dargestellt.",
         "es": "Puede aparecer un artefacto oscuro alrededor del sol y el humo puede verse demasiado oscuro.",
@@ -7620,8 +7620,8 @@
     {
       "id": "renodx.unreal.sonic.racing.crossworlds.2",
       "fallback_text": "Bright elements are clamped to UI brightness, and the Water Palace sky remains excessively bright.",
-      "kind": "warning",
-      "context": "guidance.warning",
+      "kind": "compatibility",
+      "context": "guidance.compatibility",
       "translations": {
         "de": "Helle Elemente sind auf die UI-Helligkeit begrenzt, und der Himmel im Water Palace bleibt übermäßig hell.",
         "es": "Los elementos brillantes están limitados por el brillo de la interfaz y el cielo de Water Palace sigue siendo excesivamente brillante.",
@@ -7828,8 +7828,8 @@
     {
       "id": "renodx.unreal.tales.of.arise.1",
       "fallback_text": "Bloom can occasionally render incorrectly.",
-      "kind": "warning",
-      "context": "guidance.warning",
+      "kind": "compatibility",
+      "context": "guidance.compatibility",
       "translations": {
         "de": "Bloom kann gelegentlich fehlerhaft dargestellt werden.",
         "es": "El bloom puede renderizarse incorrectamente en ocasiones.",
@@ -7892,8 +7892,8 @@
     {
       "id": "renodx.unreal.tekken.7.1",
       "fallback_text": "Some stages are clamped to the UI brightness level.",
-      "kind": "warning",
-      "context": "guidance.warning",
+      "kind": "compatibility",
+      "context": "guidance.compatibility",
       "translations": {
         "de": "Einige Stages sind auf die UI-Helligkeitsstufe begrenzt.",
         "es": "Algunas fases están limitadas por el nivel de brillo de la interfaz.",
@@ -7972,8 +7972,8 @@
     {
       "id": "renodx.unreal.the.cabin.factory.1",
       "fallback_text": "The mod works without resource upgrades, but color grading is not corrected.",
-      "kind": "warning",
-      "context": "guidance.warning",
+      "kind": "compatibility",
+      "context": "guidance.compatibility",
       "translations": {
         "de": "Die Mod funktioniert ohne Ressourcen-Upgrades, jedoch wird das Color-Grading nicht korrigiert.",
         "es": "El mod funciona sin Resource Upgrades, pero la gradación de color no se corrige.",
@@ -8036,8 +8036,8 @@
     {
       "id": "renodx.unreal.the.medium.2",
       "fallback_text": "Highlights in the spirit world are clamped to the UI brightness level.",
-      "kind": "warning",
-      "context": "guidance.warning",
+      "kind": "compatibility",
+      "context": "guidance.compatibility",
       "translations": {
         "de": "Spitzlichter in der Geisterwelt sind auf die UI-Helligkeitsstufe begrenzt.",
         "es": "Las altas luces en el mundo espiritual están limitadas por el nivel de brillo de la interfaz.",
@@ -8180,8 +8180,8 @@
     {
       "id": "renodx.unreal.the.thaumaturge.1",
       "fallback_text": "Some scenes remain brightness-clamped.",
-      "kind": "warning",
-      "context": "guidance.warning",
+      "kind": "compatibility",
+      "context": "guidance.compatibility",
       "translations": {
         "de": "Die Helligkeit einiger Szenen bleibt begrenzt.",
         "es": "El brillo de algunas escenas sigue limitado.",
@@ -8292,8 +8292,8 @@
     {
       "id": "renodx.unreal.vampire.the.masquerade.bloodlines.2.1",
       "fallback_text": "Cutscenes remain brightness-clamped.",
-      "kind": "warning",
-      "context": "guidance.warning",
+      "kind": "compatibility",
+      "context": "guidance.compatibility",
       "translations": {
         "de": "Die Helligkeit von Zwischensequenzen bleibt begrenzt.",
         "es": "El brillo de las cinemáticas sigue limitado.",

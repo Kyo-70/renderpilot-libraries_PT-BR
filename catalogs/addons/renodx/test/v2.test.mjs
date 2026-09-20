@@ -285,6 +285,14 @@ test("generated Engine.ini guidance has exactly one manual exception", () => {
   }
 });
 
+test("double-tonemapping advice is neutral compatibility guidance", () => {
+  const item = manifest.page_guidance.find(
+    (candidate) => candidate.id === "renodx.page.hdr.disable-double-tonemapping",
+  );
+  assert.ok(item);
+  assert.equal(item.kind, "compatibility");
+});
+
 test("processing policy is the reviewed UE Extended matrix", () => {
   const ueExtended = manifest.games.filter((game) => game.profile_id === "ue_extended");
   assert.equal(ueExtended.length, 60);

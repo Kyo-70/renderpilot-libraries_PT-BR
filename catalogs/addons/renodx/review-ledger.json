@@ -61,7 +61,7 @@
     "page_guidance": [
       {
         "id": "renodx.page.hdr.disable-double-tonemapping",
-        "kind": "warning",
+        "kind": "compatibility",
         "message_id": "renodx.page.hdr.disable-double-tonemapping",
         "fallback_text": "If the image looks washed out, disable Auto HDR and RTX HDR to avoid double tonemapping."
       }

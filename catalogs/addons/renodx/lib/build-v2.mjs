@@ -47,7 +47,7 @@ const UE_COMMON = Object.freeze([
   UE_LUT,
   {
     id: "renodx.ue_extended.ue4_engine_ini_warning",
-    kind: "warning",
+    kind: "compatibility",
     message_id: "renodx.ue_extended.ue4_engine_ini_warning",
     fallback_text:
       "General Engine.ini HDR tweaks are not recommended for Unreal Engine 4 games.",
@@ -58,7 +58,7 @@ const UE_COMMON = Object.freeze([
 const LEGACY_COMMON = Object.freeze([
   {
     id: "renodx.unreal_legacy.advanced_restart",
-    kind: "warning",
+    kind: "compatibility",
     message_id: "renodx.unreal_legacy.advanced_restart",
     fallback_text:
       "Switch RenoDX from Simple to Advanced, then restart the game to unlock all sliders.",
@@ -75,7 +75,7 @@ const LEGACY_COMMON = Object.freeze([
 const UNITY_COMMON = Object.freeze([
   {
     id: "renodx.unity.advanced_restart",
-    kind: "warning",
+    kind: "compatibility",
     message_id: "renodx.unity.advanced_restart",
     fallback_text:
       "Switch RenoDX from Simple to Advanced, then restart the game to unlock all sliders.",
