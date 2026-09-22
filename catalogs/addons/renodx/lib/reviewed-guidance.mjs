@@ -215,10 +215,10 @@ assign(
     "ue-extended",
     "assetto-corsa-rally borderlands-4 dead-as-disco deep-rock-galactic far-far-west ghostwire-tokyo jusant mafia-the-old-country s-t-a-l-k-e-r-2-heart-of-chornobyl star-wars-zero-companytm tokyo-xtreme-racer until-dawn",
   ),
-  [addonSetting("Native HDR", "On", "Enable the game's native HDR.")],
+  [gameSetting("Native HDR", "On", "Enable the game's native HDR.")],
 );
 assign(keyList("ue-extended", "days-gone"), [
-  addonSetting("Native HDR", "On", "Enable the game's native HDR."),
+  gameSetting("Native HDR", "On", "Enable the game's native HDR."),
   info("This configuration has limited playtesting."),
 ]);
 assign(
@@ -262,7 +262,7 @@ assign(
     "goat-simulator-3 ghostrunner hydroneer little-nightmares little-nightmares-enhanced scorn stray the-alters vholume",
   ),
   [],
-  { processingPath: "upgrade" },
+  { inheritCommon: true, processingPath: "upgrade" },
 );
 omit(
   keyList(
@@ -356,17 +356,20 @@ assign(
   { processingPath: "upgrade" },
 );
 assign(keyList("ue-extended", "gothic-1-remake lords-of-the-fallen"), [
-  addonSetting("Native HDR", "On", "Enable the game's native HDR."),
+  gameSetting("Native HDR", "On", "Enable the game's native HDR."),
   info("Tonemapping issues may still occur."),
 ]);
-assign(keyList("ue-extended", "it-takes-two"), [], { processingPath: "upgrade" });
+assign(keyList("ue-extended", "it-takes-two"), [], {
+  inheritCommon: true,
+  processingPath: "upgrade",
+});
 assign(
   keyList(
     "ue-extended",
     "hellblade-ii-senua-s-saga lego-batmantm-legacy-of-the-dark-knight lies-of-p",
   ),
   [
-    addonSetting("Native HDR", "On", "Enable the game's native HDR."),
+    gameSetting("Native HDR", "On", "Enable the game's native HDR."),
     info("RenoDX slider changes do not apply in real time in this game."),
     info("This configuration has limited playtesting."),
   ],
@@ -376,7 +379,7 @@ assign(
   [
     addonSettings([
       { name: "Upgrade Copy Destinations", value: "Off" },
-      { name: "R8G8R8A8_TYPELESS", value: "Any Size" },
+      { name: "R8G8B8A8_TYPELESS", value: "Any Size" },
     ]),
     info(
       "The Engine.ini HDR path overexposes shading; this title uses the compatible Upgrade Path.",
@@ -408,7 +411,10 @@ assign(
   [info("RenoDX slider changes do not apply in real time in this game.")],
   { processingPath: "upgrade" },
 );
-assign(keyList("ue-extended", "persona-3-reload"), [], { processingPath: "upgrade" });
+assign(keyList("ue-extended", "persona-3-reload"), [], {
+  inheritCommon: true,
+  processingPath: "upgrade",
+});
 assign(
   keyList("ue-extended", "sifu"),
   [info("Peak brightness remains limited in some content.")],
@@ -737,7 +743,7 @@ assign(
       "Use the 64-bit RSG-Win64-Shipping.exe. This configuration was tested only with the GOG release.",
     ),
     addonSettings([
-      { name: "R8G8R8A8_TYPELESS", value: "Output Size" },
+      { name: "R8G8B8A8_TYPELESS", value: "Output Size" },
       { name: "B8G8R8A8_TYPELESS", value: "Output Size" },
     ]),
   ],
@@ -844,12 +850,10 @@ assign(
   ],
   { inheritCommon: true },
 );
-assign(keyList("unreal", "hogwarts-legacy"), [
-  external(
-    "Use the build published in the RenoDX Unreal Engine channel.",
-    "https://discord.com/channels/1408098019194310818/1411800884303626311/1456454195732549887",
-  ),
-]);
+omit(
+  keyList("unreal", "hogwarts-legacy"),
+  "The upstream note only redirects to the RenoDX Discord channel for the generic Unreal Engine build that RenderPilot already provides automatically.",
+);
 assign(
   keyList("unreal", "industria"),
   [
@@ -1323,8 +1327,8 @@ assign(
     ),
     addonSetting(
       "R10G10B10A2_UNORM",
-      "Output Size",
-      "Set the R10G10B10A2_UNORM resource upgrade to Output Size.",
+      "Output Ratio",
+      "Set the R10G10B10A2_UNORM resource upgrade to Output Ratio.",
     ),
   ],
   { inheritCommon: true },
@@ -1380,10 +1384,7 @@ assign(
 assign(
   keyList("unreal", "tales-of-kenzera-zau"),
   [
-    external(
-      "Update libxess.dll before using XeSS to prevent crashes.",
-      "https://github.com/intel/xess/releases",
-    ),
+    warn("Update libxess.dll before using XeSS to prevent crashes."),
     addonSetting(
       "B8G8R8A8_TYPELESS",
       "Output Size",

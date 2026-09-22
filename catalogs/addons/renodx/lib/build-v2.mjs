@@ -36,50 +36,11 @@ const UE_LUT = Object.freeze({
   condition: { engine: "unreal", unreal_major: 5, unreal_minor_min: 3 },
 });
 
-const UE_COMMON = Object.freeze([
-  {
-    id: "renodx.ue_extended.native_hdr",
-    kind: "game_setting",
-    message_id: "renodx.ue_extended.native_hdr",
-    fallback_text: "Use Native HDR.",
-  },
-  UE_HDR,
-  UE_LUT,
-  {
-    id: "renodx.ue_extended.ue4_engine_ini_warning",
-    kind: "compatibility",
-    message_id: "renodx.ue_extended.ue4_engine_ini_warning",
-    fallback_text:
-      "General Engine.ini HDR tweaks are not recommended for Unreal Engine 4 games.",
-    condition: { engine: "unreal", unreal_major: 4 },
-  },
-]);
+const UE_COMMON = Object.freeze([UE_HDR, UE_LUT]);
 
-const LEGACY_COMMON = Object.freeze([
-  {
-    id: "renodx.unreal_legacy.advanced_restart",
-    kind: "compatibility",
-    message_id: "renodx.unreal_legacy.advanced_restart",
-    fallback_text:
-      "Switch RenoDX from Simple to Advanced, then restart the game to unlock all sliders.",
-  },
-  {
-    id: "renodx.unreal_legacy.slider_refresh",
-    kind: "compatibility",
-    message_id: "renodx.unreal_legacy.slider_refresh",
-    fallback_text:
-      "In many Unreal games, slider changes appear only after changing scenes or returning from the menu.",
-  },
-]);
+const LEGACY_COMMON = Object.freeze([]);
 
 const UNITY_COMMON = Object.freeze([
-  {
-    id: "renodx.unity.advanced_restart",
-    kind: "compatibility",
-    message_id: "renodx.unity.advanced_restart",
-    fallback_text:
-      "Switch RenoDX from Simple to Advanced, then restart the game to unlock all sliders.",
-  },
   {
     id: "renodx.unity.reset_display_controls",
     kind: "game_setting",
@@ -281,7 +242,7 @@ function materializeGuidance(
         : profile === "unity"
           ? UNITY_COMMON
           : [];
-  if (decision && curated.length) {
+  if (decision) {
     return clone([
       ...(decision.inherit_common ? common : []),
       ...curated,
@@ -294,6 +255,98 @@ function materializeGuidance(
   if (profile === "unreal_legacy") return clone(LEGACY_COMMON);
   if (profile === "unity") return clone(UNITY_COMMON);
   return [];
+}
+
+const RESOURCE_FORMATS = new Set([
+  "B8G8R8A8_TYPELESS",
+  "B8G8R8A8_UNORM",
+  "R8G8B8A8_TYPELESS",
+  "R8G8B8A8_UNORM",
+  "R10G10B10A2_UNORM",
+  "R10G10B10A2_TYPELESS",
+  "R11G11B10_FLOAT",
+  "R16G16B16A16_TYPELESS",
+]);
+
+const RESOURCE_VALUES = new Map([
+  ["Any Size (optional)", null],
+  ["Output Size at 100% render resolution", 2],
+  ["Output Ratio at other render resolutions", 2],
+  ["Output Size at 100% render resolution; Output Ratio otherwise", 2],
+  ["Output Ratio or Any Size", 2],
+  ["Output Ratio or higher", 2],
+  ["Upgrade", 1],
+  ["Upgrade when using FSR 1", 1],
+  ["Output Size", 1],
+  ["Output Size (automatic)", 1],
+  ["Output Ratio", 2],
+  ["Output Ratio (automatic)", 2],
+  ["Output Ratio (optional)", 2],
+  ["Any Size", 3],
+]);
+
+export function resourceValue(name, value, gameId) {
+  if (RESOURCE_VALUES.has(value)) return RESOURCE_VALUES.get(value);
+  throw new Error(
+    `Unrecognized RenoDX resource value for ${gameId}: ${name}=${JSON.stringify(value)}`,
+  );
+}
+
+/** Compiles reviewed presentation settings into a closed install-time contract. */
+function compileRenoDxConfig(guidance, profile, gameId) {
+  const settings = [];
+  const add = (key, value) => {
+    const existing = settings.find((entry) => entry.key === key);
+    if (existing && existing.value === value) return;
+    if (existing) {
+      throw new Error(`Duplicate RenoDX config key for ${gameId}: ${key}`);
+    }
+    settings.push({ key, value });
+  };
+  for (const item of guidance) {
+    if (item.kind !== "addon_setting") continue;
+    for (const setting of item.settings ?? []) {
+      const { name, value } = setting;
+      if (RESOURCE_FORMATS.has(name)) {
+        const mapped = resourceValue(name, value, gameId);
+        if (mapped !== null) add(`Upgrade_${name}`, mapped);
+      } else if (name === "Upgrade Copy Destinations") {
+        if (value === "Off") add("Upgrade_CopyDestinations", 0);
+        else if (value === "On") add("Upgrade_CopyDestinations", 1);
+        else if (profile === "unity" && value === "Auto-Upgrade")
+          add("Upgrade_CopyDestinations", 2);
+        else
+          throw new Error(
+            `Unrecognized RenoDX copy-destination value for ${gameId}: ${value}`,
+          );
+      } else if (name === "Force Borderless") {
+        if (value === "Disabled") add("ForceBorderless", 0);
+        else if (value === "Enabled") add("ForceBorderless", 1);
+        else
+          throw new Error(`Unrecognized RenoDX borderless value for ${gameId}: ${value}`);
+      } else if (name === "Swap Chain Format" && value === "scRGB")
+        add("Upgrade_UseSCRGB", 1);
+      else if (name === "Swapchain Encoding" && value === "Gamma")
+        add("Swapchain_Encoding", 1);
+      else if (name === "Compatibility Scaling Offset" && /^\+[0-9]+$/.test(value))
+        add("Scaling_Offset", Number(value.slice(1)));
+      else if (name === "Compatibility Tonemap Offset" && /^\+[0-9]+$/.test(value))
+        add("Tonemap_Offset", Number(value.slice(1)));
+      else if (name === "Compatibility Blit Copy" && value === "Scaling only")
+        add("Blit_Copy_Hack", 3);
+      else if (name === "Swapchain Proxy" && value === "On") add("Use_Swapchain_Proxy", 1);
+      else if (name === "Swapchain Proxy" && value === "Compatibility")
+        add("Use_Swapchain_Proxy", 2);
+      else if (name === "Color Grading Preset" && value === "SDR Grading Bypass") {
+        add("ColorGradeContrast", 80);
+        add("ColorGradeSaturation", 80);
+        add("ColorGradeBlowout", 80);
+      } else {
+        throw new Error(`Unrecognized RenoDX setting for ${gameId}: ${name}=${value}`);
+      }
+    }
+  }
+  return settings.length ? { settings } : undefined;
 }
 
 /** Builds the v2 document from an already-normalized v1 document. */
@@ -309,10 +362,21 @@ export function buildV2Manifest(
     const sourceGame = wikiGame ? { ...game, ...wikiGame } : game;
     const profileId = profileForGame(sourceGame);
     const decision = decisionForWikiGame(sourceGame, wikiMessages);
-    const guidance = normalizeGuidance(
-      materializeGuidance(sourceGame, wikiMessages, decision),
-      `game "${game.id}"`,
-    );
+    const materialized = materializeGuidance(sourceGame, wikiMessages, decision);
+    const config = compileRenoDxConfig(materialized, profileId, game.id);
+    const presentation = materialized.flatMap((item) => {
+      if (item.kind !== "addon_setting") return [item];
+      const intentionallyUncompiled = item.settings?.some(
+        ({ name, value }) =>
+          RESOURCE_FORMATS.has(name) && resourceValue(name, value, game.id) === null,
+      );
+      if (intentionallyUncompiled) {
+        const { settings: _settings, ...rest } = item;
+        return [{ ...rest, kind: "compatibility" }];
+      }
+      return [];
+    });
+    const guidance = normalizeGuidance(presentation, `game "${game.id}"`);
     const result = {
       id: game.id,
       name: game.name,
@@ -325,9 +389,19 @@ export function buildV2Manifest(
       if (game[field] !== undefined) result[field] = game[field];
     }
     if (guidance.length) result.guidance = guidance;
+    if (config) result.renodx_config = config;
     if (profileId) result.profile_id = profileId;
     if (game.id === "black-myth-wukong") result.inherit_page_guidance = false;
-    const processingPath = decision?.processing_path;
+    const nativeHdrOn = materialized.some(
+      (item) =>
+        item.kind === "game_setting" &&
+        item.settings?.some(
+          (setting) => setting.name === "Native HDR" && setting.value === "On",
+        ),
+    );
+    const processingPath =
+      decision?.processing_path ??
+      (profileId === "ue_extended" && nativeHdrOn ? "native" : null);
     if (profileId === "ue_extended" && processingPath)
       result.processing_path = processingPath;
     if (decision?.launch) result.requirements = { launch: clone(decision.launch) };
@@ -364,7 +438,7 @@ export function buildV2Manifest(
             : { slug: "unrealengine" },
       message: profile.message,
       guidance: normalizeGuidance(profile.guidance, `profile "${profile.id}"`),
-      processing_path: profile.id === "ue_extended" ? "native" : "unmanaged",
+      processing_path: "unmanaged",
     })),
   };
 }

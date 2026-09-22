@@ -10,7 +10,7 @@ import {
   renderEngineIniRecipe,
   UE_HDR_ENGINE_INI_RECIPE,
 } from "../lib/engine-ini.mjs";
-import { normalizeGuidance } from "../lib/build-v2.mjs";
+import { normalizeGuidance, resourceValue } from "../lib/build-v2.mjs";
 
 const wiki = JSON.parse(readFileSync(new URL("../wiki_games.json", import.meta.url)));
 const messages = JSON.parse(
@@ -105,6 +105,106 @@ test("v2 schema publishes a closed structured Engine.ini recipe contract", () =>
     },
   });
   assert.equal(validate(invalidScalar), false);
+});
+
+test("v2 schema publishes a closed RenoDX configuration contract", () => {
+  const validate = compileV2Schema();
+  const accepted = emptyManifest();
+  accepted.games.push({
+    id: "gothic",
+    name: "Gothic",
+    architecture: "X64",
+    status: "working",
+    match: [{ kind: "exe_name", value: "gothic.exe", tier: 1 }],
+    addon: { slug: "gothic" },
+    profile_id: "unreal_legacy",
+    renodx_config: {
+      settings: [{ key: "Upgrade_R10G10B10A2_UNORM", value: 1 }],
+    },
+  });
+  assert.equal(validate(accepted), true, JSON.stringify(validate.errors, null, 2));
+
+  const unknownKey = structuredClone(accepted);
+  unknownKey.games[0].renodx_config.settings[0].key = "Set_Path";
+  assert.equal(validate(unknownKey), false);
+
+  const misspelledResourceKey = structuredClone(accepted);
+  misspelledResourceKey.games[0].renodx_config.settings[0].key =
+    "Upgrade_R8G8R8A8_TYPELESS";
+  assert.equal(validate(misspelledResourceKey), false);
+
+  const invalidValue = structuredClone(accepted);
+  invalidValue.games[0].renodx_config.settings[0].value = 99;
+  assert.equal(validate(invalidValue), false);
+
+  const profileless = structuredClone(accepted);
+  delete profileless.games[0].profile_id;
+  assert.equal(validate(profileless), false);
+
+  const representativeValues = structuredClone(accepted);
+  representativeValues.games[0].profile_id = "unity";
+  representativeValues.games[0].renodx_config.settings = [
+    { key: "Upgrade_R10G10B10A2_UNORM", value: 3 },
+    { key: "Upgrade_CopyDestinations", value: 2 },
+    { key: "Swapchain_Encoding", value: 1 },
+    { key: "Scaling_Offset", value: 8 },
+    { key: "ColorGradeContrast", value: 100 },
+  ];
+  assert.equal(validate(representativeValues), true, JSON.stringify(validate.errors));
+
+  const duplicateKey = structuredClone(accepted);
+  duplicateKey.games[0].renodx_config.settings.push({
+    key: "Upgrade_R10G10B10A2_UNORM",
+    value: 2,
+  });
+  assert.equal(validate(duplicateKey), false);
+
+  const incompatibleProfile = structuredClone(accepted);
+  incompatibleProfile.games[0].profile_id = "ue_extended";
+  incompatibleProfile.games[0].renodx_config.settings[0].key = "ForceBorderless";
+  assert.equal(validate(incompatibleProfile), false);
+
+  const unknownField = structuredClone(accepted);
+  unknownField.games[0].renodx_config.settings[0].unsafe = "[renodx]";
+  assert.equal(validate(unknownField), false);
+});
+
+test("RenoDX resource values use an exact closed mapping", () => {
+  const accepted = [
+    ["Any Size (optional)", null],
+    ["Output Size at 100% render resolution", 2],
+    ["Output Ratio at other render resolutions", 2],
+    ["Output Size at 100% render resolution; Output Ratio otherwise", 2],
+    ["Output Ratio or Any Size", 2],
+    ["Output Ratio or higher", 2],
+    ["Upgrade", 1],
+    ["Upgrade when using FSR 1", 1],
+    ["Output Size", 1],
+    ["Output Size (automatic)", 1],
+    ["Output Ratio", 2],
+    ["Output Ratio (automatic)", 2],
+    ["Output Ratio (optional)", 2],
+    ["Any Size", 3],
+  ];
+  for (const [value, expected] of accepted) {
+    assert.equal(resourceValue("R8G8B8A8_TYPELESS", value, "sample-game"), expected, value);
+  }
+
+  for (const value of [
+    "prefix Any Size (optional)",
+    "Any Size (optional) suffix",
+    "Output Ratio or higher (reviewed)",
+    "output ratio",
+  ]) {
+    assert.throws(
+      () => resourceValue("R8G8B8A8_TYPELESS", value, "sample-game"),
+      /Unrecognized RenoDX resource value for sample-game: R8G8B8A8_TYPELESS=/,
+    );
+  }
+  assert.throws(
+    () => resourceValue("R10G10B10A2_UNORM", "Unknown value", "sample-game"),
+    /Unrecognized RenoDX resource value for sample-game: R10G10B10A2_UNORM="Unknown value"/,
+  );
 });
 
 test("Engine.ini recipe helper is deterministic, strict, and canonical", () => {
@@ -219,7 +319,7 @@ test("v2 profiles and title-specific Wukong suppression are materialized", () =>
   );
   assert.deepEqual(
     manifest.engine_profiles.map((profile) => profile.processing_path),
-    ["native", "unmanaged", "unmanaged"],
+    ["unmanaged", "unmanaged", "unmanaged"],
   );
   assert.equal(
     manifest.games.some((game) => game.profile_id === "game"),
@@ -246,18 +346,8 @@ test("v2 profiles and title-specific Wukong suppression are materialized", () =>
     (profile) => profile.id === "ue_extended",
   );
   assert.deepEqual(
-    ueExtended.guidance
-      .filter((item) => item.kind === "engine_ini")
-      .map((item) => item.code),
-    [
-      "[SystemSettings]\nr.AllowHDR=1\nr.HDR.EnableHDROutput=1\nr.HDR.Display.OutputDevice=3\nr.HDR.Display.ColorGamut=2\nr.HDR.UI.CompositeMode=1",
-      "[/Script/Engine.RendererSettings]\nr.LUT.UpdateEveryFrame=1",
-    ],
-  );
-  assert.equal(
-    ueExtended.guidance.find((item) => item.id.endsWith("lut_update")).condition
-      .unreal_minor_min,
-    3,
+    ueExtended.guidance.map((item) => item.id),
+    ["renodx.ue_extended.hdr_engine_ini", "renodx.ue_extended.lut_update"],
   );
 });
 
@@ -282,6 +372,36 @@ test("generated Engine.ini guidance has exactly one manual exception", () => {
   );
   for (const item of structured) {
     assert.equal(item.code, renderEngineIniRecipe(item.engine_ini), item.id);
+  }
+});
+
+test("UE Extended typed Engine.ini recipes cover the reviewed fallback titles", () => {
+  const recipeIds = ["renodx.ue_extended.hdr_engine_ini", "renodx.ue_extended.lut_update"];
+  const affected = manifest.games
+    .filter((game) => (game.guidance ?? []).some((item) => recipeIds.includes(item.id)))
+    .map((game) => game.id)
+    .sort();
+  assert.deepEqual(affected, [
+    "chromatic-conundrum",
+    "ghostrunner",
+    "goat-simulator-3",
+    "hydroneer",
+    "it-takes-two",
+    "little-nightmares",
+    "little-nightmares-enhanced-edition",
+    "persona-3-reload",
+    "scorn",
+    "stray",
+    "the-alters",
+    "vholume",
+  ]);
+  for (const gameId of affected) {
+    const game = manifest.games.find((candidate) => candidate.id === gameId);
+    assert.deepEqual(
+      game.guidance.filter((item) => recipeIds.includes(item.id)).map((item) => item.id),
+      recipeIds,
+      gameId,
+    );
   }
 });
 
@@ -330,8 +450,27 @@ test("processing policy is the reviewed UE Extended matrix", () => {
     upgradeIds,
   );
   assert.deepEqual(
-    ueExtended.filter((game) => game.processing_path === "native").map((game) => game.id),
-    ["chromatic-conundrum"],
+    ueExtended
+      .filter((game) => game.processing_path === "native")
+      .map((game) => game.id)
+      .sort(),
+    [
+      "assetto-corsa-rally",
+      "borderlands-4",
+      "chromatic-conundrum",
+      "dead-as-disco",
+      "deep-rock-galactic",
+      "far-far-west",
+      "hellblade-ii-senua-s-saga",
+      "jusant",
+      "lego-batmantm-legacy-of-the-dark-knight",
+      "lies-of-p",
+      "mafia-the-old-country",
+      "s-t-a-l-k-e-r-2-heart-of-chornobyl",
+      "star-wars-zero-companytm",
+      "tokyo-xtreme-racer",
+      "until-dawn",
+    ].sort(),
   );
   assert.equal(
     manifest.games.find((game) => game.id === "black-myth-wukong").processing_path,
@@ -357,6 +496,76 @@ test("processing policy is the reviewed UE Extended matrix", () => {
   assert.equal(JSON.stringify(manifest).includes("Set RenoDX Upgrade Path to On"), false);
 });
 
+test("generated game guidance contains no addon settings and keeps Native HDR in-game", () => {
+  const guidance = manifest.games.flatMap((game) => game.guidance ?? []);
+  assert.equal(
+    guidance.some((item) => item.kind === "addon_setting"),
+    false,
+  );
+
+  const nativeHdrItems = guidance.filter((item) =>
+    item.settings?.some((setting) => setting.name === "Native HDR"),
+  );
+  assert.ok(nativeHdrItems.length > 0);
+  assert.equal(
+    nativeHdrItems.every((item) => item.kind === "game_setting"),
+    true,
+  );
+});
+
+test("typed config lowers reviewed resource curation without exposing manual INI settings", () => {
+  const sonic = manifest.games.find((game) => game.id === "sonic-racing-crossworlds");
+  assert.deepEqual(sonic?.renodx_config?.settings, [
+    { key: "Upgrade_R10G10B10A2_UNORM", value: 2 },
+  ]);
+
+  const conditional = manifest.games.find((game) => game.id === "abzu");
+  assert.equal(
+    conditional?.renodx_config?.settings.find(
+      (setting) => setting.key === "Upgrade_B8G8R8A8_TYPELESS",
+    )?.value,
+    2,
+  );
+
+  const spacer = manifest.games.find(
+    (game) => game.id === "the-outer-worlds-spacer-s-choice-edition",
+  );
+  assert.equal(spacer?.renodx_config, undefined);
+  assert.equal(spacer?.guidance?.[0]?.kind, "compatibility");
+  assert.equal(spacer?.guidance?.[0]?.settings, undefined);
+
+  const borderlands = manifest.games.find((game) => game.id === "borderlands-3");
+  assert.deepEqual(borderlands?.renodx_config?.settings, [
+    { key: "Upgrade_CopyDestinations", value: 1 },
+    { key: "Upgrade_R8G8B8A8_TYPELESS", value: 2 },
+    { key: "Upgrade_B8G8R8A8_TYPELESS", value: 2 },
+    { key: "Upgrade_R11G11B10_FLOAT", value: 2 },
+  ]);
+  assert.equal(
+    borderlands?.guidance?.some(
+      (item) => item.fallback_text === "Apply these RenoDX settings for this game.",
+    ) ?? false,
+    false,
+  );
+  assert.equal(
+    spacer?.guidance?.some((item) => item.fallback_text.includes("breaks FMVs")),
+    true,
+  );
+
+  const hiFiRush = manifest.games.find((game) => game.id === "hi-fi-rush");
+  assert.deepEqual(hiFiRush?.renodx_config?.settings, [
+    { key: "Upgrade_CopyDestinations", value: 0 },
+    { key: "Upgrade_R8G8B8A8_TYPELESS", value: 3 },
+  ]);
+
+  const everspace = manifest.games.find((game) => game.id === "everspace");
+  assert.deepEqual(everspace?.renodx_config?.settings, [
+    { key: "Upgrade_R8G8B8A8_TYPELESS", value: 1 },
+    { key: "Upgrade_B8G8R8A8_TYPELESS", value: 1 },
+  ]);
+  assert.equal(JSON.stringify(manifest).includes("R8G8R8A8_TYPELESS"), false);
+});
+
 test("resolved legacy and dedicated titles retain manually curated caveats", () => {
   const guidanceText = (id) =>
     (manifest.games.find((game) => game.id === id)?.guidance ?? [])
@@ -365,12 +574,10 @@ test("resolved legacy and dedicated titles retain manually curated caveats", () 
 
   assert.match(guidanceText("flyknight"), /in-game filters can alter HDR presentation/i);
   assert.match(guidanceText("flyknight"), /limited testing/i);
-  assert.match(guidanceText("flyknight"), /B8G8R8A8_TYPELESS/);
   assert.match(
     guidanceText("ghostrunner-2"),
     /tonemapping issues remain; testing was limited/i,
   );
-  assert.match(guidanceText("ghostrunner-2"), /BT\.709/);
   assert.match(guidanceText("palworld"), /limited testing/i);
   assert.match(guidanceText("palworld"), /DLSS because it clamps output to SDR/i);
   assert.match(
@@ -565,4 +772,9 @@ test("normalizeGuidance rejects conflicting text and fallback_text", () => {
       ),
     /text and fallback_text must match/,
   );
+});
+
+test("committed RenoDX v2 manifest complies with manifest-v2.schema.json", () => {
+  const validate = compileV2Schema();
+  assert.equal(validate(manifest), true, JSON.stringify(validate.errors, null, 2));
 });

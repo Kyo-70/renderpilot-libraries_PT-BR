@@ -62,8 +62,6 @@ export const RUSSIAN_TRANSLATIONS = Object.freeze({
     "Добавьте эти настройки в Engine.ini для расширенного HDR-пути Unreal Engine.",
   "For the UE Extended HDR path, add only this line to Engine.ini.":
     "Для расширенного HDR-пути Unreal Engine добавьте в Engine.ini только эту строку.",
-  "Switch RenoDX from Simple to Advanced, then restart the game to unlock all sliders.":
-    "Переключите RenoDX с Simple на Advanced, затем перезапустите игру, чтобы разблокировать все ползунки.",
   "In many Unreal games, slider changes appear only after changing scenes or returning from the menu.":
     "Во многих играх на Unreal изменения ползунков применяются только после смены сцены или возврата из меню.",
   "Keep the game's brightness, contrast, and gamma controls at their default values unless a title note says otherwise.":
@@ -291,9 +289,6 @@ export const RUSSIAN_TRANSLATIONS = Object.freeze({
     "Если изображение выглядит блёклым, отключите Auto HDR и RTX HDR во избежание двойного тонмаппинга.",
   "Uses the shared Unreal Engine Extended profile.":
     "Использует общий профиль Unreal Engine Extended.",
-  "Use Native HDR.": "Используйте нативный HDR.",
-  "General Engine.ini HDR tweaks are not recommended for Unreal Engine 4 games.":
-    "Общие настройки HDR в Engine.ini не рекомендуются для игр на Unreal Engine 4.",
   "Uses a title-specific legacy Unreal Engine profile.":
     "Использует отдельный устаревший профиль Unreal Engine для этой игры.",
   "Get the add-on from Nexus Mods, then install the downloaded file.":
@@ -383,8 +378,6 @@ export const GERMAN_TRANSLATIONS = Object.freeze({
     "Füge diese Einstellungen für den erweiterten UE-HDR-Pfad zu Engine.ini hinzu.",
   "For the UE Extended HDR path, add only this line to Engine.ini.":
     "Füge für den erweiterten UE-HDR-Pfad nur diese Zeile zu Engine.ini hinzu.",
-  "Switch RenoDX from Simple to Advanced, then restart the game to unlock all sliders.":
-    "Schalte RenoDX von Simple auf Advanced um und starte das Spiel neu, um alle Schieberegler freizuschalten.",
   "In many Unreal games, slider changes appear only after changing scenes or returning from the menu.":
     "In vielen Unreal-Spielen werden Schieberegler-Änderungen erst nach einem Szenenwechsel oder nach Rückkehr aus dem Menü sichtbar.",
   "Keep the game's brightness, contrast, and gamma controls at their default values unless a title note says otherwise.":
@@ -610,9 +603,6 @@ export const GERMAN_TRANSLATIONS = Object.freeze({
     "Wenn das Bild ausgewaschen wirkt, deaktiviere Auto HDR und RTX HDR, um doppeltes Tonemapping zu vermeiden.",
   "Uses the shared Unreal Engine Extended profile.":
     "Verwendet das gemeinsame Unreal Engine Extended-Profil.",
-  "Use Native HDR.": "Verwende natives HDR.",
-  "General Engine.ini HDR tweaks are not recommended for Unreal Engine 4 games.":
-    "Allgemeine HDR-Optimierungen in Engine.ini werden für Spiele auf Unreal Engine 4 nicht empfohlen.",
   "Uses a title-specific legacy Unreal Engine profile.":
     "Verwendet ein titelspezifisches älteres Unreal-Engine-Profil.",
   "Get the add-on from Nexus Mods, then install the downloaded file.":
@@ -700,8 +690,6 @@ export const FRENCH_TRANSLATIONS = Object.freeze({
     "Ajoutez ces paramètres à Engine.ini pour le chemin Unreal Engine Extended HDR.",
   "For the UE Extended HDR path, add only this line to Engine.ini.":
     "Pour le chemin Unreal Engine Extended HDR, ajoutez uniquement cette ligne à Engine.ini.",
-  "Switch RenoDX from Simple to Advanced, then restart the game to unlock all sliders.":
-    "Basculez RenoDX de Simple à Advanced, puis redémarrez le jeu pour déverrouiller tous les curseurs.",
   "In many Unreal games, slider changes appear only after changing scenes or returning from the menu.":
     "Dans de nombreux jeux Unreal, les modifications de curseurs n'apparaissent qu'après un changement de scène ou un retour depuis le menu.",
   "Keep the game's brightness, contrast, and gamma controls at their default values unless a title note says otherwise.":
@@ -926,9 +914,6 @@ export const FRENCH_TRANSLATIONS = Object.freeze({
     "Si l'image paraît délavée, désactivez Auto HDR et RTX HDR pour éviter un double mappage tonal.",
   "Uses the shared Unreal Engine Extended profile.":
     "Utilise le profil partagé Unreal Engine Extended.",
-  "Use Native HDR.": "Utilisez le HDR natif.",
-  "General Engine.ini HDR tweaks are not recommended for Unreal Engine 4 games.":
-    "Les optimisations générales HDR dans Engine.ini ne sont pas recommandées pour les jeux Unreal Engine 4.",
   "Uses a title-specific legacy Unreal Engine profile.":
     "Utilise un profil hérité d'Unreal Engine spécifique à ce jeu.",
   "Get the add-on from Nexus Mods, then install the downloaded file.":
@@ -1016,8 +1001,6 @@ export const SPANISH_TRANSLATIONS = Object.freeze({
     "Añade estos ajustes a Engine.ini para la ruta HDR extendida de Unreal Engine.",
   "For the UE Extended HDR path, add only this line to Engine.ini.":
     "Para la ruta HDR extendida de Unreal Engine, añade únicamente esta línea a Engine.ini.",
-  "Switch RenoDX from Simple to Advanced, then restart the game to unlock all sliders.":
-    "Cambia RenoDX de Simple a Advanced y luego reinicia el juego para desbloquear todos los controles deslizantes.",
   "In many Unreal games, slider changes appear only after changing scenes or returning from the menu.":
     "En muchos juegos de Unreal, los cambios en los controles deslizantes solo se reflejan tras cambiar de escena o volver desde el menú.",
   "Keep the game's brightness, contrast, and gamma controls at their default values unless a title note says otherwise.":
@@ -1245,9 +1228,6 @@ export const SPANISH_TRANSLATIONS = Object.freeze({
     "Si la imagen se ve descolorida, desactiva Auto HDR y RTX HDR para evitar un doble mapeo tonal.",
   "Uses the shared Unreal Engine Extended profile.":
     "Usa el perfil compartido Unreal Engine Extended.",
-  "Use Native HDR.": "Usa HDR nativo.",
-  "General Engine.ini HDR tweaks are not recommended for Unreal Engine 4 games.":
-    "No se recomiendan ajustes generales de HDR en Engine.ini para juegos de Unreal Engine 4.",
   "Uses a title-specific legacy Unreal Engine profile.":
     "Usa un perfil heredado de Unreal Engine específico para este juego.",
   "Get the add-on from Nexus Mods, then install the downloaded file.":
@@ -1336,8 +1316,6 @@ export const JAPANESE_TRANSLATIONS = Object.freeze({
     "UE Extended の HDR パスを利用するには、これらの設定を Engine.ini に追加してください。",
   "For the UE Extended HDR path, add only this line to Engine.ini.":
     "UE Extended の HDR パスを利用するには、この行のみを Engine.ini に追加してください。",
-  "Switch RenoDX from Simple to Advanced, then restart the game to unlock all sliders.":
-    "RenoDX を Simple から Advanced に切り替え、ゲームを再起動してすべてのスライダーのロックを解除してください。",
   "In many Unreal games, slider changes appear only after changing scenes or returning from the menu.":
     "多くの Unreal Engine ゲームでは、スライダーの変更はシーンを切り替えるかメニューから戻った後にのみ反映されます。",
   "Keep the game's brightness, contrast, and gamma controls at their default values unless a title note says otherwise.":
@@ -1567,9 +1545,6 @@ export const JAPANESE_TRANSLATIONS = Object.freeze({
     "画面が白っぽく色あせて見える場合は、二重のトーンマッピングを防ぐため Auto HDR と RTX HDR を無効にしてください。",
   "Uses the shared Unreal Engine Extended profile.":
     "共通の Unreal Engine Extended プロファイルを使用します。",
-  "Use Native HDR.": "ネイティブ HDR を使用してください。",
-  "General Engine.ini HDR tweaks are not recommended for Unreal Engine 4 games.":
-    "Unreal Engine 4 ゲームでは、一般的な Engine.ini の HDR 調整は推奨されません。",
   "Uses a title-specific legacy Unreal Engine profile.":
     "タイトル専用のレガシー Unreal Engine プロファイルを使用します。",
   "Get the add-on from Nexus Mods, then install the downloaded file.":
@@ -1656,8 +1631,6 @@ export const BRAZILIAN_PORTUGUESE_TRANSLATIONS = Object.freeze({
     "Adicione estas configurações ao Engine.ini para o caminho HDR do UE Extended.",
   "For the UE Extended HDR path, add only this line to Engine.ini.":
     "Para o caminho HDR do UE Extended, adicione apenas esta linha ao Engine.ini.",
-  "Switch RenoDX from Simple to Advanced, then restart the game to unlock all sliders.":
-    "Alterne o RenoDX de Simple para Advanced e reinicie o jogo para desbloquear todos os controles deslizantes.",
   "In many Unreal games, slider changes appear only after changing scenes or returning from the menu.":
     "Em muitos jogos da Unreal, as alterações nos controles deslizantes só aparecem após trocar de cena ou retornar do menu.",
   "Keep the game's brightness, contrast, and gamma controls at their default values unless a title note says otherwise.":
@@ -1884,9 +1857,6 @@ export const BRAZILIAN_PORTUGUESE_TRANSLATIONS = Object.freeze({
     "Se a imagem parecer desbotada, desative o Auto HDR e o RTX HDR para evitar duplo mapeamento de tom.",
   "Uses the shared Unreal Engine Extended profile.":
     "Usa o perfil compartilhado Unreal Engine Extended.",
-  "Use Native HDR.": "Use o HDR nativo.",
-  "General Engine.ini HDR tweaks are not recommended for Unreal Engine 4 games.":
-    "Ajustes gerais de HDR no Engine.ini não são recomendados para jogos da Unreal Engine 4.",
   "Uses a title-specific legacy Unreal Engine profile.":
     "Usa um perfil legado da Unreal Engine específico para este título.",
   "Get the add-on from Nexus Mods, then install the downloaded file.":
@@ -1971,8 +1941,6 @@ export const SIMPLIFIED_CHINESE_TRANSLATIONS = Object.freeze({
     "请将这些设置添加到 Engine.ini 以使用 UE Extended HDR 路径。",
   "For the UE Extended HDR path, add only this line to Engine.ini.":
     "如需使用 UE Extended HDR 路径，只需将此行添加到 Engine.ini。",
-  "Switch RenoDX from Simple to Advanced, then restart the game to unlock all sliders.":
-    "请将 RenoDX 从 Simple 切换为 Advanced，然后重启游戏以解锁所有滑块。",
   "In many Unreal games, slider changes appear only after changing scenes or returning from the menu.":
     "在许多虚幻引擎游戏中，滑块更改仅在切换场景或从菜单返回后才会生效。",
   "Keep the game's brightness, contrast, and gamma controls at their default values unless a title note says otherwise.":
@@ -2173,9 +2141,6 @@ export const SIMPLIFIED_CHINESE_TRANSLATIONS = Object.freeze({
     "如果画面显得发白发灰，请禁用 Auto HDR 和 RTX HDR 以避免二次色调映射。",
   "Uses the shared Unreal Engine Extended profile.":
     "使用共享的 Unreal Engine Extended 配置文件。",
-  "Use Native HDR.": "请使用原生 HDR。",
-  "General Engine.ini HDR tweaks are not recommended for Unreal Engine 4 games.":
-    "不建议对虚幻引擎 4 游戏进行常规 Engine.ini HDR 调整。",
   "Uses a title-specific legacy Unreal Engine profile.":
     "使用针对该游戏的旧版虚幻引擎配置文件。",
   "Get the add-on from Nexus Mods, then install the downloaded file.":
@@ -2257,8 +2222,6 @@ export const TRADITIONAL_CHINESE_TRANSLATIONS = Object.freeze({
     "請將這些設定加入 Engine.ini 以使用 UE Extended HDR 路徑。",
   "For the UE Extended HDR path, add only this line to Engine.ini.":
     "如需使用 UE Extended HDR 路徑，只需將此行加入 Engine.ini。",
-  "Switch RenoDX from Simple to Advanced, then restart the game to unlock all sliders.":
-    "請將 RenoDX 從 Simple 切換為 Advanced，然後重新啟動遊戲以解鎖所有滑桿。",
   "In many Unreal games, slider changes appear only after changing scenes or returning from the menu.":
     "在許多虛幻引擎遊戲中，滑桿變更僅在切換場景或從選單返回後才會生效。",
   "Keep the game's brightness, contrast, and gamma controls at their default values unless a title note says otherwise.":
@@ -2459,9 +2422,6 @@ export const TRADITIONAL_CHINESE_TRANSLATIONS = Object.freeze({
     "若畫面顯得泛白褪色，請停用 Auto HDR 與 RTX HDR 以避免二次色調映射。",
   "Uses the shared Unreal Engine Extended profile.":
     "使用共用的 Unreal Engine Extended 設定檔。",
-  "Use Native HDR.": "請使用原生 HDR。",
-  "General Engine.ini HDR tweaks are not recommended for Unreal Engine 4 games.":
-    "不建議對虛幻引擎 4 遊戲進行一般 Engine.ini HDR 調整。",
   "Uses a title-specific legacy Unreal Engine profile.":
     "使用針對該遊戲的舊版虛幻引擎設定檔。",
   "Get the add-on from Nexus Mods, then install the downloaded file.":

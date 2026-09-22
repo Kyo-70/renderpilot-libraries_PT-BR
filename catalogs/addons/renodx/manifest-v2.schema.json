@@ -23,6 +23,354 @@
     "architecture": { "enum": ["X86", "X64"] },
     "engine": { "enum": ["unreal", "unity"] },
     "processingPath": { "enum": ["upgrade", "native", "unmanaged"] },
+    "renodxConfigSetting": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["key", "value"],
+      "properties": {
+        "key": {
+          "enum": [
+            "Upgrade_B8G8R8A8_TYPELESS",
+            "Upgrade_B8G8R8A8_UNORM",
+            "Upgrade_R8G8B8A8_TYPELESS",
+            "Upgrade_R8G8B8A8_UNORM",
+            "Upgrade_R10G10B10A2_UNORM",
+            "Upgrade_R10G10B10A2_TYPELESS",
+            "Upgrade_R11G11B10_FLOAT",
+            "Upgrade_R16G16B16A16_TYPELESS",
+            "Upgrade_CopyDestinations",
+            "ForceBorderless",
+            "Upgrade_UseSCRGB",
+            "Swapchain_Encoding",
+            "Scaling_Offset",
+            "Tonemap_Offset",
+            "Blit_Copy_Hack",
+            "Use_Swapchain_Proxy",
+            "ColorGradeContrast",
+            "ColorGradeSaturation",
+            "ColorGradeBlowout"
+          ]
+        },
+        "value": { "type": "integer", "minimum": 0, "maximum": 100 }
+      },
+      "allOf": [
+        {
+          "if": {
+            "required": ["key"],
+            "properties": {
+              "key": {
+                "enum": [
+                  "Upgrade_B8G8R8A8_TYPELESS",
+                  "Upgrade_B8G8R8A8_UNORM",
+                  "Upgrade_R8G8B8A8_TYPELESS",
+                  "Upgrade_R8G8B8A8_UNORM",
+                  "Upgrade_R10G10B10A2_UNORM",
+                  "Upgrade_R10G10B10A2_TYPELESS",
+                  "Upgrade_R11G11B10_FLOAT",
+                  "Upgrade_R16G16B16A16_TYPELESS"
+                ]
+              }
+            }
+          },
+          "then": { "properties": { "value": { "maximum": 3 } } }
+        },
+        {
+          "if": {
+            "required": ["key"],
+            "properties": {
+              "key": { "enum": ["Upgrade_CopyDestinations", "Use_Swapchain_Proxy"] }
+            }
+          },
+          "then": { "properties": { "value": { "maximum": 2 } } }
+        },
+        {
+          "if": {
+            "required": ["key"],
+            "properties": {
+              "key": {
+                "enum": ["ForceBorderless", "Upgrade_UseSCRGB", "Swapchain_Encoding"]
+              }
+            }
+          },
+          "then": { "properties": { "value": { "maximum": 1 } } }
+        },
+        {
+          "if": {
+            "required": ["key"],
+            "properties": { "key": { "enum": ["Scaling_Offset", "Tonemap_Offset"] } }
+          },
+          "then": { "properties": { "value": { "maximum": 8 } } }
+        },
+        {
+          "if": {
+            "required": ["key"],
+            "properties": { "key": { "const": "Blit_Copy_Hack" } }
+          },
+          "then": { "properties": { "value": { "maximum": 3 } } }
+        }
+      ]
+    },
+    "renodxConfig": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["settings"],
+      "allOf": [
+        {
+          "not": {
+            "properties": {
+              "settings": {
+                "contains": {
+                  "required": ["key"],
+                  "properties": { "key": { "const": "Upgrade_B8G8R8A8_TYPELESS" } }
+                },
+                "minContains": 2
+              }
+            }
+          }
+        },
+        {
+          "not": {
+            "properties": {
+              "settings": {
+                "contains": {
+                  "required": ["key"],
+                  "properties": { "key": { "const": "Upgrade_B8G8R8A8_UNORM" } }
+                },
+                "minContains": 2
+              }
+            }
+          }
+        },
+        {
+          "not": {
+            "properties": {
+              "settings": {
+                "contains": {
+                  "required": ["key"],
+                  "properties": { "key": { "const": "Upgrade_R8G8B8A8_TYPELESS" } }
+                },
+                "minContains": 2
+              }
+            }
+          }
+        },
+        {
+          "not": {
+            "properties": {
+              "settings": {
+                "contains": {
+                  "required": ["key"],
+                  "properties": { "key": { "const": "Upgrade_R8G8B8A8_UNORM" } }
+                },
+                "minContains": 2
+              }
+            }
+          }
+        },
+        {
+          "not": {
+            "properties": {
+              "settings": {
+                "contains": {
+                  "required": ["key"],
+                  "properties": { "key": { "const": "Upgrade_R10G10B10A2_UNORM" } }
+                },
+                "minContains": 2
+              }
+            }
+          }
+        },
+        {
+          "not": {
+            "properties": {
+              "settings": {
+                "contains": {
+                  "required": ["key"],
+                  "properties": { "key": { "const": "Upgrade_R10G10B10A2_TYPELESS" } }
+                },
+                "minContains": 2
+              }
+            }
+          }
+        },
+        {
+          "not": {
+            "properties": {
+              "settings": {
+                "contains": {
+                  "required": ["key"],
+                  "properties": { "key": { "const": "Upgrade_R11G11B10_FLOAT" } }
+                },
+                "minContains": 2
+              }
+            }
+          }
+        },
+        {
+          "not": {
+            "properties": {
+              "settings": {
+                "contains": {
+                  "required": ["key"],
+                  "properties": { "key": { "const": "Upgrade_R16G16B16A16_TYPELESS" } }
+                },
+                "minContains": 2
+              }
+            }
+          }
+        },
+        {
+          "not": {
+            "properties": {
+              "settings": {
+                "contains": {
+                  "required": ["key"],
+                  "properties": { "key": { "const": "Upgrade_CopyDestinations" } }
+                },
+                "minContains": 2
+              }
+            }
+          }
+        },
+        {
+          "not": {
+            "properties": {
+              "settings": {
+                "contains": {
+                  "required": ["key"],
+                  "properties": { "key": { "const": "ForceBorderless" } }
+                },
+                "minContains": 2
+              }
+            }
+          }
+        },
+        {
+          "not": {
+            "properties": {
+              "settings": {
+                "contains": {
+                  "required": ["key"],
+                  "properties": { "key": { "const": "Upgrade_UseSCRGB" } }
+                },
+                "minContains": 2
+              }
+            }
+          }
+        },
+        {
+          "not": {
+            "properties": {
+              "settings": {
+                "contains": {
+                  "required": ["key"],
+                  "properties": { "key": { "const": "Swapchain_Encoding" } }
+                },
+                "minContains": 2
+              }
+            }
+          }
+        },
+        {
+          "not": {
+            "properties": {
+              "settings": {
+                "contains": {
+                  "required": ["key"],
+                  "properties": { "key": { "const": "Scaling_Offset" } }
+                },
+                "minContains": 2
+              }
+            }
+          }
+        },
+        {
+          "not": {
+            "properties": {
+              "settings": {
+                "contains": {
+                  "required": ["key"],
+                  "properties": { "key": { "const": "Tonemap_Offset" } }
+                },
+                "minContains": 2
+              }
+            }
+          }
+        },
+        {
+          "not": {
+            "properties": {
+              "settings": {
+                "contains": {
+                  "required": ["key"],
+                  "properties": { "key": { "const": "Blit_Copy_Hack" } }
+                },
+                "minContains": 2
+              }
+            }
+          }
+        },
+        {
+          "not": {
+            "properties": {
+              "settings": {
+                "contains": {
+                  "required": ["key"],
+                  "properties": { "key": { "const": "Use_Swapchain_Proxy" } }
+                },
+                "minContains": 2
+              }
+            }
+          }
+        },
+        {
+          "not": {
+            "properties": {
+              "settings": {
+                "contains": {
+                  "required": ["key"],
+                  "properties": { "key": { "const": "ColorGradeContrast" } }
+                },
+                "minContains": 2
+              }
+            }
+          }
+        },
+        {
+          "not": {
+            "properties": {
+              "settings": {
+                "contains": {
+                  "required": ["key"],
+                  "properties": { "key": { "const": "ColorGradeSaturation" } }
+                },
+                "minContains": 2
+              }
+            }
+          }
+        },
+        {
+          "not": {
+            "properties": {
+              "settings": {
+                "contains": {
+                  "required": ["key"],
+                  "properties": { "key": { "const": "ColorGradeBlowout" } }
+                },
+                "minContains": 2
+              }
+            }
+          }
+        }
+      ],
+      "properties": {
+        "settings": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/renodxConfigSetting" }
+        }
+      }
+    },
     "message": {
       "type": "object",
       "additionalProperties": false,
@@ -236,6 +584,99 @@
       "type": "object",
       "additionalProperties": false,
       "required": ["id", "name", "architecture", "status", "match", "addon"],
+      "allOf": [
+        {
+          "if": { "required": ["renodx_config"] },
+          "then": { "required": ["profile_id"] }
+        },
+        {
+          "if": {
+            "required": ["profile_id"],
+            "properties": { "profile_id": { "const": "ue_extended" } }
+          },
+          "then": {
+            "properties": {
+              "renodx_config": {
+                "properties": {
+                  "settings": {
+                    "items": {
+                      "properties": {
+                        "key": {
+                          "enum": [
+                            "Upgrade_B8G8R8A8_TYPELESS",
+                            "Upgrade_B8G8R8A8_UNORM",
+                            "Upgrade_R8G8B8A8_TYPELESS",
+                            "Upgrade_R8G8B8A8_UNORM",
+                            "Upgrade_R10G10B10A2_UNORM",
+                            "Upgrade_R10G10B10A2_TYPELESS",
+                            "Upgrade_R11G11B10_FLOAT",
+                            "Upgrade_R16G16B16A16_TYPELESS",
+                            "Upgrade_CopyDestinations"
+                          ]
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "required": ["profile_id"],
+            "properties": { "profile_id": { "const": "unreal_legacy" } }
+          },
+          "then": {
+            "properties": {
+              "renodx_config": {
+                "properties": {
+                  "settings": {
+                    "items": {
+                      "properties": {
+                        "key": {
+                          "not": {
+                            "enum": [
+                              "Swapchain_Encoding",
+                              "Scaling_Offset",
+                              "Tonemap_Offset",
+                              "Blit_Copy_Hack",
+                              "Use_Swapchain_Proxy"
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "required": ["profile_id"],
+            "properties": { "profile_id": { "const": "unity" } }
+          },
+          "then": {
+            "properties": {
+              "renodx_config": {
+                "properties": {
+                  "settings": {
+                    "items": {
+                      "properties": {
+                        "key": {
+                          "not": { "enum": ["ForceBorderless", "Upgrade_UseSCRGB"] }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
       "properties": {
         "id": { "type": "string", "minLength": 1 },
         "name": { "type": "string", "minLength": 1 },
@@ -245,6 +686,7 @@
         "addon": { "$ref": "#/$defs/addon" },
         "profile_id": { "enum": ["ue_extended", "unreal_legacy", "unity"] },
         "processing_path": { "$ref": "#/$defs/processingPath" },
+        "renodx_config": { "$ref": "#/$defs/renodxConfig" },
         "inherit_page_guidance": { "type": "boolean" },
         "guidance": { "type": "array", "items": { "$ref": "#/$defs/guidance" } },
         "requirements": { "$ref": "#/$defs/requirements" },

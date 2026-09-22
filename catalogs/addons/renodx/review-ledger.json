@@ -1615,8 +1615,8 @@
       "section": "unreal",
       "profile_source": "unrealengine",
       "note_sha256": "9752f2394300f684aa2ce604d80fc81c4e0c3e51f600ea748cad20e1a059e5b9",
-      "disposition": "curated_manual",
-      "reason": null
+      "disposition": "omitted",
+      "reason": "The upstream note only redirects to the RenoDX Discord channel for the generic Unreal Engine build that RenderPilot already provides automatically."
     },
     {
       "source_key": "unreal:hyper-light-breaker",
