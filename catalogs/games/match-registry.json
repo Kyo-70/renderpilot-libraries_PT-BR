@@ -3076,7 +3076,7 @@
           "value": "49520",
           "provenance": {
             "source": "luma-curated-games",
-            "locator": "catalogs/addons/luma/curated_games.json#borderlands-2-and-the-pre-sequel"
+            "locator": "catalogs/addons/luma/curated_games.json#borderlands-2"
           }
         }
       ]
@@ -3141,7 +3141,7 @@
           "value": "261640",
           "provenance": {
             "source": "luma-curated-games",
-            "locator": "catalogs/addons/luma/curated_games.json#borderlands-2-and-the-pre-sequel"
+            "locator": "catalogs/addons/luma/curated_games.json#borderlands-the-pre-sequel"
           }
         }
       ]

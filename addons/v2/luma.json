@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-09-20T00:00:00Z",
+  "generated_at": "2026-09-23T00:00:00Z",
   "minimum_reshade_version": "6.7.0",
   "games": [
     {
@@ -4557,7 +4557,7 @@
     },
     {
       "id": "borderlands-2",
-      "name": "Borderlands 2 and The Pre-Sequel",
+      "name": "Borderlands 2",
       "architecture": "X86",
       "status": "working",
       "match": [
@@ -4625,7 +4625,7 @@
     },
     {
       "id": "borderlands-the-pre-sequel",
-      "name": "Borderlands 2 and The Pre-Sequel",
+      "name": "Borderlands: The Pre-Sequel",
       "architecture": "X86",
       "status": "working",
       "match": [

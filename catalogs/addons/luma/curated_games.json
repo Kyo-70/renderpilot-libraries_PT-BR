@@ -3337,11 +3337,12 @@
     "addon_file": "Luma-Borderlands GOTY Enhanced.addon",
     "arch": "X64",
     "status": "working",
+    "wiki_aliases": ["Borderlands GOTY Enhanced"],
     "game_target_ids": ["borderlands-goty-enhanced"]
   },
   {
-    "id": "borderlands-2-and-the-pre-sequel",
-    "name": "Borderlands 2 and The Pre-Sequel",
+    "id": "borderlands-2",
+    "name": "Borderlands 2",
     "asset": "Luma-Borderlands_2_and_The_Pre-Sequel-x32.zip",
     "addon_file": "Luma-Borderlands 2 and The Pre-Sequel.addon",
     "arch": "X86",
@@ -3397,13 +3398,79 @@
     "wiki_note_reviews": [
       {
         "section": "completed",
-        "name": "Borderlands 2 and The Pre-Sequel",
+        "name": "Borderlands 2",
         "fingerprint": "a1af92993113ce7ab195bb0e77aac1e6e122bc53adcc066c9744c6688090df15",
         "disposition": "omitted",
         "reason": "RenderPilot installs and configures the managed dgVoodoo dependency."
       }
     ],
-    "game_target_ids": ["borderlands-2", "borderlands-the-pre-sequel"]
+    "game_target_ids": ["borderlands-2"]
+  },
+  {
+    "id": "borderlands-the-pre-sequel",
+    "name": "Borderlands: The Pre-Sequel",
+    "asset": "Luma-Borderlands_2_and_The_Pre-Sequel-x32.zip",
+    "addon_file": "Luma-Borderlands 2 and The Pre-Sequel.addon",
+    "arch": "X86",
+    "status": "working",
+    "external_requirement": {
+      "kind": "dgvoodoo2",
+      "version": "2.87.3",
+      "accepted_detected_apis": ["D3D9"],
+      "reshade_proxy_dll": "dxgi.dll",
+      "source": {
+        "url": "https://github.com/dege-diosg/dgVoodoo2/releases/download/v2.87.3/dgVoodoo2_87_3.zip",
+        "sha256": "6fb954bed55bf70e948c5045a663a9df31ea206faf105e327bafe46c318f867f",
+        "size": 9082391
+      },
+      "install_map": [
+        {
+          "source": "MS/x86/D3D9.dll",
+          "dest": "D3D9.dll",
+          "sha256": "c13e3c0969d2c70a1a63cf96b83c7cd3bc47f925f28ec92c07d5b72d6df4c240",
+          "size": 485888
+        }
+      ],
+      "config_file": "dgVoodoo.conf",
+      "config": [
+        {
+          "section": "General",
+          "entries": [
+            {
+              "key": "OutputAPI",
+              "value": "d3d11_fl11_0"
+            }
+          ]
+        },
+        {
+          "section": "DirectX",
+          "entries": [
+            {
+              "key": "VideoCard",
+              "value": "geforce_9800_gt"
+            },
+            {
+              "key": "dgVoodooWatermark",
+              "value": "false"
+            },
+            {
+              "key": "VRAM",
+              "value": "1024"
+            }
+          ]
+        }
+      ]
+    },
+    "wiki_note_reviews": [
+      {
+        "section": "completed",
+        "name": "Borderlands: The Pre-Sequel",
+        "fingerprint": "a1af92993113ce7ab195bb0e77aac1e6e122bc53adcc066c9744c6688090df15",
+        "disposition": "omitted",
+        "reason": "RenderPilot installs and configures the managed dgVoodoo dependency."
+      }
+    ],
+    "game_target_ids": ["borderlands-the-pre-sequel"]
   },
   {
     "id": "deus-ex-mankind-divided",
