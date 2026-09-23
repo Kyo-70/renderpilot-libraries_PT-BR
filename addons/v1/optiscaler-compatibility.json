@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "revision": "2026-09-16.1",
+  "revision": "2026-09-23.1",
   "upstream": {
     "source": "optiscaler-wiki-compatibility-list",
-    "snapshot_revision": "2026-09-16",
-    "snapshot_sha256": "a89d83543eec78dc06461e53c9b2f32575eb4245dbdfa4096743cd875f30658e"
+    "snapshot_revision": "2026-09-23",
+    "snapshot_sha256": "7d5d004e76315aa4b8063231e5417b739bed69d2b671917fdb69adce687313f4"
   },
   "entries": [
     {
@@ -16388,7 +16388,7 @@
           "value": "sora_1st.exe"
         }
       ],
-      "declared_inputs": ["fsr2_plus"],
+      "declared_inputs": ["dlss2_plus", "fsr2_plus"],
       "guidance": [
         {
           "kind": "game_setting",

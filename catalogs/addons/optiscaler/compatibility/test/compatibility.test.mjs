@@ -15,13 +15,13 @@ import { createMatchRegistry } from "../../../../../scripts/lib/match-registry.m
 const ROOT = path.resolve(import.meta.dirname, "../../../../..");
 const EXPECTED_PUBLISHED_ENTRY_COUNT = 689;
 const CURRENT_WIKI_SNAPSHOT = {
-  revision: "2026-09-16",
-  sha256: "a89d83543eec78dc06461e53c9b2f32575eb4245dbdfa4096743cd875f30658e",
-  rows: 703,
+  revision: "2026-09-23",
+  sha256: "7d5d004e76315aa4b8063231e5417b739bed69d2b671917fdb69adce687313f4",
+  rows: 705,
 };
 const SHIFTED_MAIN_SOURCE_KEYS = Array.from(
-  { length: 146 },
-  (_, index) => `main:${String(517 + index).padStart(4, "0")}`,
+  { length: 175 },
+  (_, index) => `main:${String(490 + index).padStart(4, "0")}`,
 );
 const EXPECTED_REFRAMEWORK_FAMILY = [
   {
@@ -129,10 +129,13 @@ const EXPECTED_PENDING_IDENTITY_REASONS = {
     "Store results are different products and do not establish an exact title binding.",
   "main:0464": "The upstream source deliberately provides no bindable identity.",
   "main:0479": "No exact verifiable store identity is available.",
-  "main:0540":
+  "main:0489":
+    "Unreleased game; no verified runtime executable or match target is available.",
+  "main:0541":
     "An Epic candidate exists, but no verified exact Epic Games Store identity is available.",
-  "main:0582":
+  "main:0583":
     "The prior Steam AppID 3763780 is no longer a current app; other Rift results are distinct games.",
+  "main:0605": "No verified exact match target or executable observation is available.",
 };
 const EXPECTED_REAUDITED_BINDINGS = {
   "main:0029": {
@@ -165,27 +168,27 @@ const EXPECTED_REAUDITED_BINDINGS = {
     targetId: "protocol-terminate",
     identity: { kind: "steam_appid", value: "3710560" },
   },
-  "main:0526": {
+  "main:0527": {
     entryId: "stygian-outer-gods",
     targetId: "stygian-outer-gods",
     identity: { kind: "steam_appid", value: "2581410" },
   },
-  "main:0568": {
+  "main:0569": {
     entryId: "the-last-oricru",
     targetId: "the-last-oricru",
     identity: { kind: "steam_appid", value: "1663640" },
   },
-  "main:0577": {
+  "main:0578": {
     entryId: "the-other-side",
     targetId: "the-other-side",
     identity: { kind: "steam_appid", value: "2764750" },
   },
-  "main:0610": {
+  "main:0612": {
     entryId: "undertaker",
     targetId: "undertaker",
     identity: { kind: "steam_appid", value: "4030360" },
   },
-  "main:0649": {
+  "main:0651": {
     entryId: "wonder-ball",
     targetId: "wonder-ball",
     identity: { kind: "steam_appid", value: "2640030" },
@@ -960,12 +963,12 @@ test("current Wiki refresh preserves the verified ordinal rekey and exact Zero C
       `${sourceKey} must retain its exact post-rekey source binding`,
     );
   }
-  assert.equal(snapshotBySource.get("main:0662")?.title, "Zouhri: The Cursed Blood Demo");
+  assert.equal(snapshotBySource.get("main:0664")?.title, "Zouhri: The Cursed Blood Demo");
 
   const zero = entriesById.get("star-wars-zero-company");
   assert.deepEqual(zero, {
     id: "star-wars-zero-company",
-    source_ref: "main:0516",
+    source_ref: "main:0517",
     status: "working",
     declared_inputs: ["dlss2_plus", "fsr2_plus", "xess"],
     guidance: [
@@ -985,11 +988,11 @@ test("current Wiki refresh preserves the verified ordinal rekey and exact Zero C
     ],
     game_target_id: "star-wars-zero-company",
   });
-  assert.deepEqual(ledgerBySource.get("main:0516")?.disposition, {
+  assert.deepEqual(ledgerBySource.get("main:0517")?.disposition, {
     kind: "published",
     entry_id: "star-wars-zero-company",
   });
-  assert.deepEqual(ledgerBySource.get("main:0516")?.notes?.[0]?.disposition, {
+  assert.deepEqual(ledgerBySource.get("main:0517")?.notes?.[0]?.disposition, {
     kind: "guidance",
     message_ids: ["optiscaler-star-wars-zero-company-vendor-options"],
   });
