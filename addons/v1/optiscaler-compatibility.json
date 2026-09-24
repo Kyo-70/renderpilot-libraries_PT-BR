@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "revision": "2026-09-23.1",
+  "revision": "2026-09-24.1",
   "upstream": {
     "source": "optiscaler-wiki-compatibility-list",
     "snapshot_revision": "2026-09-23",
-    "snapshot_sha256": "7d5d004e76315aa4b8063231e5417b739bed69d2b671917fdb69adce687313f4"
+    "snapshot_sha256": "fffae60096d1c975cd9c93870e207a33bfd6c7c475b32323689e4f256d0493f8"
   },
   "entries": [
     {
@@ -12821,15 +12821,7 @@
         }
       ],
       "declared_inputs": ["dlss2_plus", "fsr2_plus", "xess"],
-      "guidance": [
-        {
-          "kind": "compatibility",
-          "message": {
-            "id": "optiscaler-stalker-2-fsr31-input-quality",
-            "fallback_text": "Use DLSS or XeSS inputs; FSR 3.1 input image quality is poor."
-          }
-        }
-      ],
+      "guidance": [],
       "variants": [
         {
           "proxy": {

@@ -2,7 +2,7 @@
   "schema_version": 1,
   "source": "optiscaler-wiki-compatibility-list",
   "snapshot_revision": "2026-09-23",
-  "snapshot_sha256": "7d5d004e76315aa4b8063231e5417b739bed69d2b671917fdb69adce687313f4",
+  "snapshot_sha256": "fffae60096d1c975cd9c93870e207a33bfd6c7c475b32323689e4f256d0493f8",
   "rows": [
     {
       "source_key": "main:0001",
@@ -5399,9 +5399,8 @@
       "status": "working",
       "declared_inputs": ["dlss2_plus", "fsr2_plus", "xess"],
       "optipatcher_supported": true,
-      "note": "FSR3.1 upscaling inputs seem to have bad image quality, recommend using DLSS/XeSS inputs instead.",
-      "row_fingerprint": "a8fb846652f0e594dcf3d47a256740f81127c9f614b4f966f60739080875c8fb",
-      "note_fingerprint": "282514afb2dd4ded7ca83896372cf33e10174b258ce8dd7c26b76432df961c38"
+      "note": null,
+      "row_fingerprint": "d8e4592699f9a506ba6ef641cb0950418723911169e04e2eaf17c70334db1292"
     },
     {
       "source_key": "main:0512",

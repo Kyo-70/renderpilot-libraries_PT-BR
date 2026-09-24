@@ -16,7 +16,7 @@ const ROOT = path.resolve(import.meta.dirname, "../../../../..");
 const EXPECTED_PUBLISHED_ENTRY_COUNT = 689;
 const CURRENT_WIKI_SNAPSHOT = {
   revision: "2026-09-23",
-  sha256: "7d5d004e76315aa4b8063231e5417b739bed69d2b671917fdb69adce687313f4",
+  sha256: "fffae60096d1c975cd9c93870e207a33bfd6c7c475b32323689e4f256d0493f8",
   rows: 705,
 };
 const SHIFTED_MAIN_SOURCE_KEYS = Array.from(
@@ -664,7 +664,7 @@ test("Russian compatibility guidance names technology modes and input color spac
   const technologyModeMessages = inputs.messages.messages.filter(
     (message) => isTechnologyInputMessage(message) && !isInputColorSpaceMessage(message),
   );
-  assert.equal(technologyModeMessages.length, 40);
+  assert.equal(technologyModeMessages.length, 39);
   for (const message of technologyModeMessages) {
     assert.match(
       message.translations.ru,
@@ -742,8 +742,8 @@ test("reviewed game-setting literals and quality warnings preserve their exact m
   }
 
   assert.equal(
-    messagesById.get("optiscaler-stalker-2-fsr31-input-quality")?.translations.ja,
-    "DLSS または XeSS 入力を使用してください。FSR 3.1 入力の画質は低いです。",
+    messagesById.get("optiscaler-shatterline-dx11-upscaler-quality")?.translations.ja,
+    "DX11 では、アップスケーラーの画質がネイティブより低下する場合があります。",
   );
 });
 

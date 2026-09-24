@@ -2066,22 +2066,6 @@
       }
     },
     {
-      "id": "optiscaler-stalker-2-fsr31-input-quality",
-      "fallback_text": "Use DLSS or XeSS inputs; FSR 3.1 input image quality is poor.",
-      "guidance_kind": "compatibility",
-      "context": "compatibility",
-      "translations": {
-        "de": "Verwende DLSS- oder XeSS-Eingaben; die Bildqualität der FSR-3.1-Eingabe ist schlecht.",
-        "es": "Usa entradas DLSS o XeSS; la calidad de imagen de la entrada FSR 3.1 es baja.",
-        "fr": "Utilisez les entrées DLSS ou XeSS ; la qualité d’image de l’entrée FSR 3.1 est faible.",
-        "ja": "DLSS または XeSS 入力を使用してください。FSR 3.1 入力の画質は低いです。",
-        "pt-BR": "Use entradas DLSS ou XeSS; a entrada FSR 3.1 apresenta baixa qualidade de imagem.",
-        "ru": "Используйте режим DLSS или XeSS: при выборе FSR 3.1 качество изображения низкое.",
-        "zh-Hans": "请使用 DLSS 或 XeSS 输入；FSR 3.1 输入的画质较差。",
-        "zh-Hant": "請使用 DLSS 或 XeSS 輸入；FSR 3.1 輸入的畫質較差。"
-      }
-    },
-    {
       "id": "optiscaler-stranded-alien-dawn-fsr2-input",
       "fallback_text": "FSR 2 inputs may not work.",
       "guidance_kind": "compatibility",
